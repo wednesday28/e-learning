@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useAuthStore } from '../../store/useAuthStore';
 import { supabase } from '../../lib/supabase';
 import { Card, Button, Input } from '../../components/ui';
-import { User, Mail, Shield, Trophy, Edit2, Save, X } from 'lucide-react';
+import { User, Mail, Shield, Edit2, Save, X } from 'lucide-react';
 
 const ProfilePage = () => {
   const { profile, setProfile } = useAuthStore();

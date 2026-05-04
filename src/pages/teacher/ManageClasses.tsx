@@ -47,7 +47,7 @@ const ManageClasses = () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) throw new Error('Sesi tidak ditemukan. Silakan login kembali.');
 
-      const { data, error } = await supabase.from('classes').insert({
+      const { error } = await supabase.from('classes').insert({
         name: newClassName,
         subject_id: selectedSubject,
         teacher_id: user.id,

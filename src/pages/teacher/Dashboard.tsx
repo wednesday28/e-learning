@@ -1,10 +1,6 @@
-import { Card, Button } from '../../components/ui';
-import { useAuthStore } from '../../store/useAuthStore';
-import { ShieldAlert, Clock, CheckCircle, Users, BookOpen, Activity } from 'lucide-react';
-
 import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
-import { Card, Button, Spinner } from '../../components/ui';
+import { Card, Button } from '../../components/ui';
 import { useAuthStore } from '../../store/useAuthStore';
 import { ShieldAlert, Clock, CheckCircle, Users, BookOpen, Activity, TrendingUp } from 'lucide-react';
 import { 
@@ -219,7 +215,7 @@ const TeacherDashboard = () => {
                    contentStyle={{borderRadius: '16px', border: 'none', boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1)', padding: '12px'}}
                 />
                 <Bar dataKey="count" radius={[8, 8, 0, 0]}>
-                  {performanceData.map((entry, index) => (
+                  {performanceData.map((_, index) => (
                     <Cell key={`cell-${index}`} fill={index === 3 ? '#6366f1' : '#e2e8f0'} />
                   ))}
                 </Bar>
