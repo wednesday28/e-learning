@@ -23,10 +23,17 @@ const UserControl = () => {
       }
 
       const { data, error } = await query;
+      console.log('DEBUG: Fetch Users Data:', data);
+      console.log('DEBUG: Fetch Users Error:', error);
+      
       if (error) throw error;
+      if (data && data.length === 0) {
+        console.warn('DEBUG: Query successful but returned 0 rows');
+      }
       setUsers(data || []);
     } catch (err: any) {
       console.error('Error fetching users:', err.message);
+      alert('Debug Error: ' + err.message);
     } finally {
       setIsLoading(false);
     }
