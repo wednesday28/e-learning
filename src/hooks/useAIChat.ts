@@ -1,5 +1,5 @@
 import { useCallback } from 'react'
-import { useAIStore, Message } from '../store/useAIStore'
+import { useAIStore } from '../store/useAIStore'
 
 interface ChatContext {
   subject?: string

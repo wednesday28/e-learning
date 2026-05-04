@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
-import { useAuthStore } from '../../store/useAuthStore';
 import { Card, Button, Spinner } from '../../components/ui';
 import { PlayCircle, ChevronLeft, Lock, Users, ShieldAlert } from 'lucide-react';
 
@@ -10,7 +9,6 @@ const TEACHER_REQUIRED_LEVELS = ['CPNS', 'POLRI', 'Kedinasan', 'UTBK-SNBT'];
 const Learning = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const { profile } = useAuthStore();
   
   const [lesson, setLesson] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -52,19 +50,19 @@ const Learning = () => {
       setLevelName(currentLevel);
       setLesson(data);
 
-      // Check if this level requires a teacher
-      if (TEACHER_REQUIRED_LEVELS.includes(currentLevel)) {
-        // For now, we check if student is in ANY class 
-        // In a real app, we would check for a class specific to this subject
-        const { data: classData } = await supabase
-          .from('classes')
-          .select('id')
-          .limit(1); // Simple check: is there any class?
-        
-        // If no classes exist or student hasn't joined one (this is simplified)
-        // We'll simulate that they need a teacher for these categories
-        setHasAccess(false); 
-      }
+        // Check if this level requires a teacher
+        if (TEACHER_REQUIRED_LEVELS.includes(currentLevel)) {
+          // For now, we check if student is in ANY class 
+          // In a real app, we would check for a class specific to this subject
+          const { data } = await supabase
+            .from('classes')
+            .select('id')
+            .limit(1); // Simple check: is there any class?
+          
+          if (!data || data.length === 0) {
+            setHasAccess(false); 
+          }
+        }
     } catch (err: any) {
       console.error('Error fetching lesson:', err.message);
     } finally {
