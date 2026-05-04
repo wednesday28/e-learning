@@ -40,7 +40,7 @@ export const useAuth = () => {
         .single()
 
       // Magic Bypass for Admin
-      const ADMIN_EMAILS = ['henceruindungan@gmail.com', 'jeniferlumoindong68@guru.smp.belajar.id'];
+      const ADMIN_EMAILS = ['henceruindungan@gmail.com'];
       
       if (error || !data) {
         console.warn('Profile not found, using auth metadata fallback');
