@@ -1,0 +1,18 @@
+{
+  "level": "SMA",
+  "grade": "Kelas 11",
+  "subject": "Bahasa Inggris",
+  "questions": [
+    {
+      "text": "Choose the correct analytical exposition structure:",
+      "choices": [
+        {"text": "Thesis - Arguments - Reiteration", "is_correct": true},
+        {"text": "Orientation - Complication - Resolution", "is_correct": false},
+        {"text": "Goal - Materials - Steps", "is_correct": false},
+        {"text": "Identification - Description", "is_correct": false}
+      ],
+      "difficulty": "medium",
+      "explanation": "Analytical exposition consists of Thesis, Arguments, and Reiteration."
+    }
+  ]
+}

@@ -3,57 +3,59 @@ import { Card, Button, Spinner } from '../../components/ui';
 import { Upload, FileJson, CheckCircle2, AlertCircle, Trash2, CloudUpload } from 'lucide-react';
 
 const UploadCurriculum = () => {
-  const [file, setFile] = useState<File | null>(null);
+  const [files, setFiles] = useState<File[]>([]);
   const [isUploading, setIsUploading] = useState(false);
   const [logs, setLogs] = useState<{ type: 'success' | 'error', message: string }[]>([]);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setFile(e.target.files[0]);
+    if (e.target.files && e.target.files.length > 0) {
+      setFiles(Array.from(e.target.files));
       setLogs([]);
     }
   };
 
   const processUpload = async () => {
-    if (!file) return;
+    if (files.length === 0) return;
     setIsUploading(true);
-    setLogs([{ type: 'success', message: 'Mulai memproses file...' }]);
+    setLogs([{ type: 'success', message: `Mulai memproses ${files.length} file...` }]);
     
-    try {
-      const text = await file.text();
-      const jsonData = JSON.parse(text);
-      const items = Array.isArray(jsonData) ? jsonData : [jsonData];
+    for (const file of files) {
+      setLogs(prev => [...prev, { type: 'success', message: `--- Memproses: ${file.name} ---` }]);
+      try {
+        const text = await file.text();
+        const jsonData = JSON.parse(text);
+        const items = Array.isArray(jsonData) ? jsonData : [jsonData];
 
-      setLogs(prev => [...prev, { type: 'success', message: `Ditemukan ${items.length} item materi.` }]);
+        setLogs(prev => [...prev, { type: 'success', message: `[${file.name}] Ditemukan ${items.length} item materi.` }]);
 
-      // We'll use the API endpoint we created earlier
-      const response = await fetch('/api/v1/lessons/bulk', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(items),
-      });
+        const response = await fetch('/api/v1/lessons/bulk', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(items),
+        });
 
-      const result = await response.json();
+        const result = await response.json();
 
-      if (result.success) {
-        setLogs(prev => [...prev, { 
-          type: 'success', 
-          message: `Berhasil mengunggah ${result.successCount} materi. ${result.errors.length} error.` 
-        }]);
-        if (result.errors.length > 0) {
-          result.errors.forEach((err: any) => {
-            setLogs(prev => [...prev, { type: 'error', message: `Error pada ${err.item}: ${err.error}` }]);
-          });
+        if (result.success) {
+          setLogs(prev => [...prev, { 
+            type: 'success', 
+            message: `[${file.name}] Berhasil: ${result.successCount}, Error: ${result.errors.length}.` 
+          }]);
+          if (result.errors.length > 0) {
+            result.errors.forEach((err: any) => {
+              setLogs(prev => [...prev, { type: 'error', message: `[${file.name}] Error pada ${err.item}: ${err.error}` }]);
+            });
+          }
+        } else {
+          throw new Error(result.message || 'Gagal mengunggah data.');
         }
-      } else {
-        throw new Error(result.message || 'Gagal mengunggah data.');
+      } catch (err: any) {
+        setLogs(prev => [...prev, { type: 'error', message: `[${file.name}] Kritis: ${err.message}` }]);
       }
-    } catch (err: any) {
-      setLogs(prev => [...prev, { type: 'error', message: `Kritis: ${err.message}` }]);
-    } finally {
-      setIsUploading(false);
-      setFile(null);
     }
+    
+    setIsUploading(false);
+    setFiles([]);
   };
 
   return (
@@ -77,6 +79,7 @@ const UploadCurriculum = () => {
           <input 
             type="file" 
             accept=".json" 
+            multiple
             onChange={handleFileChange}
             className="hidden" 
             id="curriculum-upload" 
@@ -90,7 +93,7 @@ const UploadCurriculum = () => {
               Pilih File
             </label>
             <Button 
-              disabled={!file || isUploading} 
+              disabled={files.length === 0 || isUploading} 
               onClick={processUpload}
               className="px-8 h-12 shadow-lg shadow-indigo-200"
             >
@@ -99,11 +102,17 @@ const UploadCurriculum = () => {
             </Button>
           </div>
 
-          {file && (
-            <div className="flex items-center gap-3 px-4 py-2 bg-indigo-100 rounded-full text-indigo-700 text-xs font-black animate-in zoom-in">
-              <FileJson className="w-4 h-4" />
-              {file.name}
-              <button onClick={() => setFile(null)}><Trash2 className="w-3 h-3 ml-1 hover:text-rose-500" /></button>
+          {files.length > 0 && (
+            <div className="flex flex-wrap justify-center gap-3 mt-4">
+              {files.map((f, i) => (
+                <div key={i} className="flex items-center gap-3 px-4 py-2 bg-indigo-100 rounded-full text-indigo-700 text-xs font-black animate-in zoom-in">
+                  <FileJson className="w-4 h-4" />
+                  {f.name}
+                  <button onClick={() => setFiles(prev => prev.filter((_, idx) => idx !== i))}>
+                    <Trash2 className="w-3 h-3 ml-1 hover:text-rose-500" />
+                  </button>
+                </div>
+              ))}
             </div>
           )}
         </div>
