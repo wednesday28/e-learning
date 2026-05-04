@@ -7,7 +7,7 @@ import type { Profile } from '../../store/useAuthStore';
 const UserControl = () => {
   const [users, setUsers] = useState<Profile[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [filter, setFilter] = useState<'all' | 'pending'>('pending');
+  const [filter, setFilter] = useState<'all' | 'pending'>('all');
 
   useEffect(() => {
     fetchUsers();
