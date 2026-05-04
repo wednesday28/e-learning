@@ -38,9 +38,15 @@ const ProtectedRoute = ({ children, allowedRoles }: { children: React.ReactNode;
   const { user, profile, isLoading } = useAuthStore()
   if (isLoading) return <div className="h-screen w-full flex items-center justify-center"><Spinner /></div>
   if (!user) return <Navigate to="/login" />
-  
-  // If user is logged in but has no role assigned yet, force role selection
-  if (user && !profile?.role && window.location.pathname !== '/role-selection') {
+
+  // If user is logged in but profile is still null, it might be an RLS or fetch error
+  // We allow it to proceed to dashboard where it might show a fallback or retry
+  if (user && !profile && !isLoading && window.location.pathname !== '/role-selection') {
+     // Optional: you could retry fetchProfile here or just let it be
+  }
+
+  // Only redirect to role-selection if the profile exists but HAS NO ROLE
+  if (user && profile && !profile.role && window.location.pathname !== '/role-selection') {
     return <Navigate to="/role-selection" />
   }
 
