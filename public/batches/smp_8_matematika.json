@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Sistem Persamaan Linear Dua Variabel (SPLDV)" },
+    "subtopic": "Konsep SPLDV",
+    "lesson": { 
+      "title": "Pengertian dan Bentuk Umum SPLDV",
+      "content": "SPLDV adalah sistem yang terdiri dari dua persamaan linear dengan dua variabel. Bentuk umumnya adalah ax + by = c dan dx + ey = f."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Sistem Persamaan Linear Dua Variabel (SPLDV)" },
+    "subtopic": "Konsep SPLDV",
+    "lesson": { 
+      "title": "Metode Grafik",
+      "content": "Menyelesaikan SPLDV dengan menggambar garis pada koordinat Kartesius. Titik potong kedua garis merupakan solusinya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Sistem Persamaan Linear Dua Variabel (SPLDV)" },
+    "subtopic": "Konsep SPLDV",
+    "lesson": { 
+      "title": "Memodelkan Masalah Nyata ke SPLDV",
+      "content": "Mengubah soal cerita menjadi model matematika menggunakan dua variabel untuk mencari solusi harga barang atau jumlah unit."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Sistem Persamaan Linear Dua Variabel (SPLDV)" },
+    "subtopic": "Metode Aljabar",
+    "lesson": { 
+      "title": "Metode Substitusi",
+      "content": "Mengganti salah satu variabel dengan ekspresi dari variabel lain. Sangat efektif jika salah satu variabel memiliki koefisien satu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Sistem Persamaan Linear Dua Variabel (SPLDV)" },
+    "subtopic": "Metode Aljabar",
+    "lesson": { 
+      "title": "Metode Eliminasi",
+      "content": "Menghilangkan salah satu variabel dengan menjumlahkan atau mengurangkan persamaan setelah menyamakan koefisiennya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Sistem Persamaan Linear Dua Variabel (SPLDV)" },
+    "subtopic": "Metode Aljabar",
+    "lesson": { 
+      "title": "Metode Campuran",
+      "content": "Menggabungkan eliminasi untuk mendapatkan variabel pertama, lalu menggunakan substitusi untuk mendapatkan variabel kedua."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi & Relasi" },
+    "subtopic": "Memahami Relasi",
+    "lesson": { 
+      "title": "Pengertian Relasi",
+      "content": "Relasi adalah hubungan antara anggota himpunan domain ke kodomain. Bisa disajikan dengan diagram panah atau pasangan berurutan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi & Relasi" },
+    "subtopic": "Memahami Relasi",
+    "lesson": { 
+      "title": "Domain, Kodomain, dan Range",
+      "content": "Domain adalah daerah asal, kodomain adalah daerah kawan, dan range adalah daerah hasil yang memiliki pasangan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi & Relasi" },
+    "subtopic": "Memahami Relasi",
+    "lesson": { 
+      "title": "Menyajikan Relasi dalam Diagram Kartesius",
+      "content": "Memplot pasangan anggota himpunan pada sumbu x dan y untuk melihat pola hubungan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi & Relasi" },
+    "subtopic": "Konsep Fungsi",
+    "lesson": { 
+      "title": "Pengertian Fungsi (Pemetaan)",
+      "content": "Fungsi adalah relasi khusus di mana setiap anggota domain dipasangkan dengan tepat satu anggota kodomain."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi & Relasi" },
+    "subtopic": "Konsep Fungsi",
+    "lesson": { 
+      "title": "Notasi dan Rumus Fungsi",
+      "content": "Fungsi biasanya ditulis f(x) = ax + b. Kita belajar menghitung nilai fungsi untuk nilai x tertentu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi & Relasi" },
+    "subtopic": "Konsep Fungsi",
+    "lesson": { 
+      "title": "Korespondensi Satu-Satu",
+      "content": "Relasi di mana setiap anggota domain tepat satu pasangan di kodomain, dan sebaliknya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Teorema Pythagoras" },
+    "subtopic": "Konsep Dasar Pythagoras",
+    "lesson": { 
+      "title": "Membuktikan Teorema Pythagoras",
+      "content": "Kuadrat sisi miring sama dengan jumlah kuadrat sisi tegaknya (a^2 + b^2 = c^2) pada segitiga siku-siku."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Teorema Pythagoras" },
+    "subtopic": "Konsep Dasar Pythagoras",
+    "lesson": { 
+      "title": "Tripel Pythagoras",
+      "content": "Kelompok tiga bilangan asli yang memenuhi rumus Pythagoras, seperti (3, 4, 5)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Teorema Pythagoras" },
+    "subtopic": "Konsep Dasar Pythagoras",
+    "lesson": { 
+      "title": "Menentukan Jenis Segitiga",
+      "content": "Menggunakan kebalikan Pythagoras untuk menentukan segitiga lancip, tumpul, atau siku-siku."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Teorema Pythagoras" },
+    "subtopic": "Penerapan Pythagoras",
+    "lesson": { 
+      "title": "Perbandingan Sisi Segitiga Siku-Siku Khusus",
+      "content": "Mempelajari segitiga dengan sudut 30-60-90 derajat dan 45-45-90 derajat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Teorema Pythagoras" },
+    "subtopic": "Penerapan Pythagoras",
+    "lesson": { 
+      "title": "Menghitung Jarak Dua Titik",
+      "content": "Menggunakan rumus Pythagoras untuk mencari jarak antara dua koordinat pada bidang Kartesius."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Teorema Pythagoras" },
+    "subtopic": "Penerapan Pythagoras",
+    "lesson": { 
+      "title": "Penerapan Pythagoras dalam Kehidupan",
+      "content": "Menghitung panjang tangga atau tinggi tiang menggunakan prinsip segitiga siku-siku."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang Sisi Datar" },
+    "subtopic": "Kubus dan Balok Lanjutan",
+    "lesson": { 
+      "title": "Luas Permukaan Kubus dan Balok",
+      "content": "Menghitung total luas seluruh bidang sisi bangun ruang sisi datar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang Sisi Datar" },
+    "subtopic": "Kubus dan Balok Lanjutan",
+    "lesson": { 
+      "title": "Diagonal Bidang dan Diagonal Ruang",
+      "content": "Menghitung panjang garis melintasi sisi atau bagian dalam bangun ruang."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang Sisi Datar" },
+    "subtopic": "Kubus dan Balok Lanjutan",
+    "lesson": { 
+      "title": "Jaring-jaring Bangun Ruang",
+      "content": "Mengenal pola bidang datar yang membentuk kubus atau balok."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang Sisi Datar" },
+    "subtopic": "Prisma dan Limas",
+    "lesson": { 
+      "title": "Unsur dan Sifat Prisma",
+      "content": "Mengenal prisma segitiga dan segiempat beserta jumlah rusuk dan sisinya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang Sisi Datar" },
+    "subtopic": "Prisma dan Limas",
+    "lesson": { 
+      "title": "Luas Permukaan dan Volume Prisma",
+      "content": "Rumus volume prisma adalah luas alas dikali tinggi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang Sisi Datar" },
+    "subtopic": "Prisma dan Limas",
+    "lesson": { 
+      "title": "Volume dan Luas Permukaan Limas",
+      "content": "Limas memiliki puncak satu titik. Volume adalah 1/3 luas alas dikali tinggi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Peluang Teoritik",
+    "lesson": { 
+      "title": "Ruang Sampel dan Titik Sampel",
+      "content": "Mempelajari semua kemungkinan hasil dari suatu percobaan acak."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Peluang Teoritik",
+    "lesson": { 
+      "title": "Menghitung Peluang Suatu Kejadian",
+      "content": "Rumus peluang P(A) = n(A) / n(S) dengan nilai antara 0 sampai 1."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Peluang Teoritik",
+    "lesson": { 
+      "title": "Peluang Empirik",
+      "content": "Menghitung peluang berdasarkan frekuensi relatif dari percobaan nyata."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Diagram Pencar (Scatter Plot)",
+    "lesson": { 
+      "title": "Mengenal Diagram Pencar",
+      "content": "Menyajikan dua variabel dalam koordinat Kartesius untuk melihat hubungan data."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Diagram Pencar (Scatter Plot)",
+    "lesson": { 
+      "title": "Tren dan Korelasi Data",
+      "content": "Memahami hubungan positif, negatif, atau tidak ada hubungan antar variabel."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Diagram Pencar (Scatter Plot)",
+    "lesson": { 
+      "title": "Analisis Data Dua Variabel",
+      "content": "Menarik kesimpulan dari diagram pencar untuk prediksi tren data."
+    }
+  }
+]

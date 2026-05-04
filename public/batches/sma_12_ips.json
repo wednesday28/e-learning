@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Disintegrasi Bangsa" },
+    "subtopic": "Sejarah Konflik",
+    "lesson": { 
+      "title": "Pemberontakan PKI Madiun 1948",
+      "content": "Analisis latar belakang jatuhnya kabinet Amir Sjarifuddin and keinginan mengganti dasar negara menjadi komunis. Contoh: Konflik antara pasukan pemerintah dengan kelompok pendukung Muso. Penjelasan: Pemberontakan ini menjadi ancaman serius bagi persatuan di tengah perjuangan melawan Belanda."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Disintegrasi Bangsa" },
+    "subtopic": "Sejarah Konflik",
+    "lesson": { 
+      "title": "Gerakan DI/TII di Berbagai Wilayah",
+      "content": "Pemberontakan yang dipimpin Kartosuwiryo di Jawa Barat, Kahar Muzakkar di Sulsel, and Daud Beureueh di Aceh. Contoh: Deklarasi Negara Islam Indonesia (NII) sebagai bentuk ketidakpuasan terhadap pemerintah pusat. Penjelasan: Konflik ideologis ini menunjukkan kerentanan integrasi bangsa di masa awal kemerdekaan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Disintegrasi Bangsa" },
+    "subtopic": "Sejarah Konflik",
+    "lesson": { 
+      "title": "Konflik Berkaitan dengan Kepentingan (APRA, Andi Aziz, RMS)",
+      "content": "Analisis pemberontakan yang dipicu oleh keinginan mempertahankan status quo atau pembentukan negara bagian. Contoh: Pemberontakan RMS di Maluku yang ingin memisahkan diri dari NKRI. Penjelasan: Pertahanan integrasi memerlukan penguatan identitas nasional and keadilan pembangunan daerah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Wilayah dan Tata Ruang" },
+    "subtopic": "Geografi Wilayah",
+    "lesson": { 
+      "title": "Konsep Wilayah dan Perwilayahan",
+      "content": "Perbedaan wilayah formal (berdasarkan fisik) and wilayah fungsional (berdasarkan aktivitas ekonomi/sosial). Contoh: Wilayah Jabodetabek sebagai wilayah fungsional yang saling terhubung transportasinya. Penjelasan: Perwilayahan dilakukan untuk memudahkan perencanaan pembangunan and administrasi pemerintahan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Wilayah dan Tata Ruang" },
+    "subtopic": "Geografi Wilayah",
+    "lesson": { 
+      "title": "Teori Pusat Pertumbuhan (Growth Pole)",
+      "content": "Mempelajari bagaimana suatu titik perkembangan ekonomi dapat memicu pertumbuhan di wilayah sekitarnya (multiplier effect). Contoh: Peran pelabuhan atau kawasan industri sebagai magnet ekonomi bagi desa sekitarnya. Penjelasan: Penentuan pusat pertumbuhan yang tepat mempercepat pemerataan ekonomi daerah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Wilayah dan Tata Ruang" },
+    "subtopic": "Geografi Wilayah",
+    "lesson": { 
+      "title": "Rencana Tata Ruang Wilayah (RTRW) Nasional",
+      "content": "Kebijakan penggunaan lahan untuk pemukiman, hutan lindung, industri, and infrastruktur strategis nasional. Contoh: Penetapan kawasan Ibu Kota Nusantara (IKN) dalam peta tata ruang nasional. Penjelasan: Tata ruang yang baik mencegah konflik penggunaan lahan and meminimalisir risiko bencana."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Perubahan Sosial" },
+    "subtopic": "Sosiologi Modern",
+    "lesson": { 
+      "title": "Teori Perubahan Sosial (Siklus, Linier, Konflik)",
+      "content": "Cara pandang sosiolog dalam melihat pola perubahan di masyarakat dari masa ke masa. Contoh: Teori linier menjelaskan masyarakat berkembang dari tradisional menuju modern (industri). Penjelasan: Perubahan sosial tidak dapat dihindari and dipengaruhi oleh kemajuan IPTEK serta kebijakan negara."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Perubahan Sosial" },
+    "subtopic": "Sosiologi Modern",
+    "lesson": { 
+      "title": "Dampak Perubahan Sosial bagi Masyarakat",
+      "content": "Munculnya gaya hidup baru, pergeseran nilai keluarga, hingga reorganisasi struktur sosial. Contoh: Pergeseran pola belanja dari pasar tradisional ke toko daring (e-commerce). Penjelasan: Masyarakat harus memiliki kesiapan mental and keahlian untuk beradaptasi dengan perubahan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Perubahan Sosial" },
+    "subtopic": "Sosiologi Modern",
+    "lesson": { 
+      "title": "Modernisasi dan Globalisasi di Indonesia",
+      "content": "Proses transformasi masyarakat menuju sistem kehidupan yang lebih rasional, efisien, and terhubung secara global. Contoh: Adopsi teknologi pendidikan (EdTech) di sekolah-sekolah pelosok. Penjelasan: Modernisasi tanpa kehilangan kearifan lokal adalah tantangan utama bangsa Indonesia saat ini."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Akuntansi Dasar" },
+    "subtopic": "Keuangan Perusahaan",
+    "lesson": { 
+      "title": "Akuntansi sebagai Sistem Informasi",
+      "content": "Proses pencatatan, penggolongan, and pelaporan transaksi keuangan untuk pengambilan keputusan bisnis. Contoh: Penggunaan laporan laba rugi untuk melihat kinerja perusahaan dalam satu periode. Penjelasan: Akuntansi menjamin transparansi and akuntabilitas dalam pengelolaan modal."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Akuntansi Dasar" },
+    "subtopic": "Keuangan Perusahaan",
+    "lesson": { 
+      "title": "Persamaan Dasar Akuntansi",
+      "content": "Prinsip keseimbangan antara Harta (Aset) dengan Hutang (Liabilitas) ditambah Modal (Ekuitas). Contoh: Jika perusahaan membeli mesin tunai, maka aset tetap bertambah and kas berkurang. Penjelasan: Persamaan ini adalah fondasi dalam penyusunan neraca keuangan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Akuntansi Dasar" },
+    "subtopic": "Keuangan Perusahaan",
+    "lesson": { 
+      "title": "Siklus Akuntansi Perusahaan Jasa",
+      "content": "Tahapan mulai dari jurnal umum, buku besar, neraca saldo, hingga laporan keuangan akhir. Contoh: Pencatatan transaksi pendapatan dari jasa konsultan atau transportasi. Penjelasan: Siklus yang rapi memudahkan audit and perencanaan pajak perusahaan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Era Demokrasi" },
+    "subtopic": "Sejarah Politik",
+    "lesson": { 
+      "title": "Keberhasilan dan Kegagalan Demokrasi Liberal",
+      "content": "Sistem multi-partai yang dinamis namun sering terjadi pergantian kabinet yang menghambat stabilitas. Contoh: Penyelenggaraan Pemilu pertama tahun 1955 yang demokratis. Penjelasan: Ketidakstabilan politik mendorong lahirnya konsep Demokrasi Terpimpin oleh Soekarno."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Era Demokrasi" },
+    "subtopic": "Sejarah Politik",
+    "lesson": { 
+      "title": "Politik Mercusuar Masa Demokrasi Terpimpin",
+      "content": "Kebijakan luar negeri yang ambisius and pembangunan proyek-proyek besar di Jakarta sebagai simbol kejayaan bangsa. Contoh: Pembangunan Gelora Bung Karno and Monumen Nasional. Penjelasan: Fokus pada politik luar negeri menyebabkan krisis ekonomi and inflasi yang sangat tinggi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Era Demokrasi" },
+    "subtopic": "Sejarah Politik",
+    "lesson": { 
+      "title": "Tragedi G30S/PKI dan Berakhirnya Orde Lama",
+      "content": "Peristiwa penculikan para jenderal yang memicu gejolak politik hebat and pelarangan ideologi komunis di Indonesia. Contoh: Lahirnya Surat Perintah Sebelas Maret (Supersemar). Penjelasan: Tragedi ini menjadi titik balik perubahan rezim pemerintahan dari Orde Lama ke Orde Baru."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Interaksi Desa-Kota" },
+    "subtopic": "Geografi Sosial",
+    "lesson": { 
+      "title": "Potensi Desa dan Klasifikasinya",
+      "content": "Desa sebagai penyedia bahan baku pangan, tenaga kerja, and pelestari budaya. Klasifikasi: Swadaya, Swakarya, Swasembada. Contoh: Desa Swasembada yang sudah memiliki industri kecil and ekonomi mandiri. Penjelasan: Desa adalah penyokong utama keberlangsungan kehidupan di wilayah perkotaan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Interaksi Desa-Kota" },
+    "subtopic": "Geografi Sosial",
+    "lesson": { 
+      "title": "Zonasi Ruang Kota dan Permasalahannya",
+      "content": "Pembagian wilayah kota menjadi pusat bisnis (CBD), zona transisi, pemukiman kelas menengah, hingga kelas atas. Contoh: Munculnya daerah kumuh di sela-sela gedung pencakar langit akibat urbanisasi liar. Penjelasan: Perencanaan kota yang tidak tepat memicu kemacetan, polusi, and kerawanan sosial."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Interaksi Desa-Kota" },
+    "subtopic": "Geografi Sosial",
+    "lesson": { 
+      "title": "Dampak Interaksi Desa-Kota bagi Kedua Wilayah",
+      "content": "Aliran barang, jasa, and informasi yang mempengaruhi perubahan gaya hidup di desa and kepadatan di kota. Contoh: Terjadinya penetrasi budaya kota (modern) ke dalam tradisi masyarakat desa. Penjelasan: Interaksi harus saling menguntungkan (simbiosis mutualisme) agar tidak terjadi eksploitasi desa."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Ketimpangan Global" },
+    "subtopic": "Isu Kontemporer",
+    "lesson": { 
+      "title": "Ketimpangan Sosial sebagai Dampak Globalisasi",
+      "content": "Perbedaan kesejahteraan yang tajam antara negara maju (Utara) and negara berkembang (Selatan). Contoh: Dominasi perusahaan multinasional yang mematikan industri lokal kecil. Penjelasan: Globalisasi seringkali memperlebar jarak antara si kaya and si miskin di tingkat dunia."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Ketimpangan Global" },
+    "subtopic": "Isu Kontemporer",
+    "lesson": { 
+      "title": "Strategi Pemberdayaan Komunitas Lokal",
+      "content": "Upaya meningkatkan kemandirian and kemampuan masyarakat lokal dalam mengelola sumber dayanya sendiri. Contoh: Pembentukan kelompok sadar wisata (Pokdarwis) di desa wisata. Penjelasan: Pemberdayaan adalah kunci agar masyarakat lokal tidak hanya menjadi penonton dalam arus globalisasi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Ketimpangan Global" },
+    "subtopic": "Isu Kontemporer",
+    "lesson": { 
+      "title": "Evaluasi Aksi Pemberdayaan Masyarakat",
+      "content": "Proses menilai keberhasilan and dampak dari program pembangunan yang telah dijalankan di komunitas. Contoh: Mengukur peningkatan pendapatan warga setelah adanya program pelatihan UMKM. Penjelasan: Evaluasi diperlukan untuk memperbaiki strategi agar tujuan kesejahteraan benar-benar tercapai."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Manajemen Bisnis" },
+    "subtopic": "Ekonomi Terapan",
+    "lesson": { 
+      "title": "Fungsi Manajemen (POAC)",
+      "content": "Planning (Perencanaan), Organizing (Pengorganisasian), Actuating (Penggerakan), and Controlling (Pengawasan). Contoh: Seorang manajer toko merencanakan target penjualan bulanan and membagi tugas karyawan. Penjelasan: Manajemen yang efektif menjamin ketercapaian tujuan organisasi secara efisien."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Manajemen Bisnis" },
+    "subtopic": "Ekonomi Terapan",
+    "lesson": { 
+      "title": "Unsur-unsur Manajemen (6M)",
+      "content": "Man (Manusia), Money (Uang), Materials (Bahan), Machines (Mesin), Methods (Metode), and Market (Pasar). Contoh: Memilih bahan baku berkualitas untuk menghasilkan produk unggulan. Penjelasan: Keterpaduan seluruh unsur 6M menentukan daya saing and keberlanjutan sebuah bisnis."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Manajemen Bisnis" },
+    "subtopic": "Ekonomi Terapan",
+    "lesson": { 
+      "title": "Penerapan Manajemen dalam Koperasi Sekolah",
+      "content": "Praktik nyata bagi siswa dalam mengelola usaha bersama dengan asas kekeluargaan and demokrasi ekonomi. Contoh: Pengurus koperasi melakukan rapat anggota tahunan (RAT) untuk pembagian SHU. Penjelasan: Koperasi sekolah adalah sarana edukasi karakter and kewirausahaan bagi pelajar."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Perjuangan Diplomasi Lanjut" },
+    "subtopic": "Sejarah Kemerdekaan",
+    "lesson": { 
+      "title": "Peran Indonesia dalam Konferensi Asia Afrika (KAA)",
+      "content": "Inisiatif Indonesia menggalang persatuan bangsa-bangsa di Asia and Afrika untuk melawan kolonialisme di tahun 1955. Contoh: Dasasila Bandung sebagai hasil kesepakatan KAA yang mendunia. Penjelasan: KAA meningkatkan posisi tawar Indonesia sebagai pemimpin negara-negara berkembang (Dunia Ketiga)."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Perjuangan Diplomasi Lanjut" },
+    "subtopic": "Sejarah Kemerdekaan",
+    "lesson": { 
+      "title": "Gerakan Non-Blok (GNB) dan Perdamaian Dunia",
+      "content": "Upaya Indonesia bersikap netral di tengah persaingan negara adidaya (Blok Barat vs Blok Timur) selama Perang Dingin. Contoh: Presiden Soekarno sebagai salah satu tokoh utama pendiri GNB. Penjelasan: GNB menunjukkan konsistensi politik luar negeri Indonesia yang bebas aktif."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Perjuangan Diplomasi Lanjut" },
+    "subtopic": "Sejarah Kemerdekaan",
+    "lesson": { 
+      "title": "Misi Perdamaian Pasukan Garuda (Kontingen Garuda)",
+      "content": "Pengiriman pasukan TNI di bawah bendera PBB untuk membantu menjaga kedamaian di daerah konflik luar negeri. Contoh: Misi Pasukan Garuda di Sinai, Kongo, hingga Lebanon. Penjelasan: Partisipasi ini adalah wujud nyata kontribusi Indonesia terhadap keamanan global sesuai amanat UUD 1945."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Geopasial dan SIG" },
+    "subtopic": "Teknologi Geografi",
+    "lesson": { 
+      "title": "Pemanfaatan Penginderaan Jauh (Citra Satelit)",
+      "content": "Penggunaan sensor satelit untuk memantau kondisi permukaan bumi tanpa kontak langsung. Contoh: Deteksi luas kebakaran hutan atau perkembangan lahan pertanian melalui citra Landsat. Penjelasan: Penginderaan jauh mempercepat pengumpulan data wilayah yang luas and sulit dijangkau."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Geopasial dan SIG" },
+    "subtopic": "Teknologi Geografi",
+    "lesson": { 
+      "title": "Sistem Informasi Geografis (SIG) untuk Pembangunan",
+      "content": "Sistem komputer untuk mengolah, menganalisis, and menampilkan data keruangan dalam bentuk peta digital. Contoh: Analisis lokasi strategis untuk pembangunan rumah sakit baru menggunakan SIG. Penjelasan: SIG memberikan dasar yang akurat bagi pemerintah dalam mengambil kebijakan tata kota."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Geopasial dan SIG" },
+    "subtopic": "Teknologi Geografi",
+    "lesson": { 
+      "title": "Peran Peta Tematik dalam Perencanaan Wilayah",
+      "content": "Peta yang menyajikan informasi khusus seperti peta curah hujan, peta kepadatan penduduk, atau peta rawan bencana. Contoh: Penggunaan peta rawan banjir untuk menentukan zonasi larangan pemukiman di bantaran sungai. Penjelasan: Peta tematik membantu memvisualisasikan masalah spesifik di suatu daerah secara efisien."
+    }
+  }
+]

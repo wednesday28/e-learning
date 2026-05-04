@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Peta dan Lokasi" },
+    "subtopic": "Komponen Peta",
+    "lesson": { 
+      "title": "Mengenal Judul dan Skala Peta",
+      "content": "Peta yang baik memiliki judul untuk menjelaskan wilayah yang digambar. Skala peta menunjukkan perbandingan jarak pada peta dengan jarak sebenarnya di lapangan. Contoh: Skala 1:100.000 berarti 1 cm di peta sama dengan 1 km di lapangan. Penjelasan: Skala membantu kita menghitung jarak antar kota dengan akurat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Peta dan Lokasi" },
+    "subtopic": "Komponen Peta",
+    "lesson": { 
+      "title": "Legenda dan Simbol Peta",
+      "content": "Legenda berisi keterangan simbol-simbol yang digunakan pada peta, seperti garis biru untuk sungai atau titik merah untuk ibu kota. Contoh: Simbol segitiga hitam menunjukkan gunung berapi yang sudah tidak aktif. Penjelasan: Memahami simbol memudahkan kita membaca informasi penting di dalam peta."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Peta dan Lokasi" },
+    "subtopic": "Komponen Peta",
+    "lesson": { 
+      "title": "Garis Lintang dan Garis Bujur",
+      "content": "Garis khayal yang melingkari bumi secara mendatar (lintang) dan tegak (bujur) untuk menentukan posisi koordinat. Contoh: Indonesia terletak di daerah khatulistiwa (0 derajat lintang). Penjelasan: Koordinat digunakan oleh pelaut dan pilot untuk navigasi perjalanan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Sumber Daya Alam" },
+    "subtopic": "Pemanfaatan SDA",
+    "lesson": { 
+      "title": "SDA yang Dapat Diperbaharui",
+      "content": "Sumber daya alam yang tidak akan habis jika digunakan terus menerus karena bisa dipulihkan kembali. Contoh: Air, udara, tanah, tumbuhan, dan hewan. Penjelasan: Meskipun dapat diperbaharui, kita tetap harus menjaga kelestariannya agar tidak rusak."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Sumber Daya Alam" },
+    "subtopic": "Pemanfaatan SDA",
+    "lesson": { 
+      "title": "SDA yang Tidak Dapat Diperbaharui",
+      "content": "Sumber daya yang jumlahnya terbatas dan akan habis jika diambil terus menerus. Contoh: Minyak bumi, emas, perak, dan batubara. Penjelasan: Penggunaan energi alternatif (seperti matahari) sangat penting untuk menghemat SDA ini."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Sumber Daya Alam" },
+    "subtopic": "Pemanfaatan SDA",
+    "lesson": { 
+      "title": "Dampak Pengambilan SDA Berlebihan",
+      "content": "Hutan yang ditebang sembarangan menyebabkan banjir dan tanah longsor. Ikan yang ditangkap dengan bom merusak terumbu karang. Contoh: Kerusakan ekosistem akibat tambang ilegal. Penjelasan: Kita harus menerapkan sistem tebang pilih dan reboisasi demi masa depan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Keragaman Budaya" },
+    "subtopic": "Suku dan Adat",
+    "lesson": { 
+      "title": "Rumah Adat di Indonesia",
+      "content": "Setiap provinsi memiliki bentuk rumah adat yang unik sesuai dengan kondisi lingkungannya. Contoh: Rumah Gadang di Sumatera Barat dan Rumah Joglo di Jawa Tengah. Penjelasan: Arsitektur rumah adat mengandung nilai luhur dan kearifan lokal masyarakat setempat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Keragaman Budaya" },
+    "subtopic": "Suku dan Adat",
+    "lesson": { 
+      "title": "Pakaian Adat dan Senjata Tradisional",
+      "content": "Digunakan saat upacara adat atau acara pernikahan. Mencerminkan kebanggaan identitas daerah. Contoh: Kebaya dan Keris dari Jawa, Koteka dari Papua. Penjelasan: Keberagaman ini adalah kekayaan bangsa yang harus kita lestarikan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Keragaman Budaya" },
+    "subtopic": "Suku dan Adat",
+    "lesson": { 
+      "title": "Tarian Daerah dan Alat Musik",
+      "content": "Tarian daerah memiliki makna cerita atau ungkapan syukur. Alat musik dimainkan untuk mengiringi tarian. Contoh: Tari Kecak dari Bali dan alat musik Angklung dari Jawa Barat. Penjelasan: Seni budaya Indonesia sangat dikagumi oleh masyarakat dunia."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Sejarah Hindu-Buddha" },
+    "subtopic": "Kerajaan Masa Lalu",
+    "lesson": { 
+      "title": "Kerajaan Kutai: Kerajaan Tertua",
+      "content": "Terletak di Kalimantan Timur dan dikenal melalui prasasti Yupa. Raja yang terkenal adalah Mulawarman. Contoh: Sedekah 20.000 ekor sapi kepada para brahmana. Penjelasan: Prasasti Yupa merupakan bukti tertua masuknya pengaruh India di Indonesia."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Sejarah Hindu-Buddha" },
+    "subtopic": "Kerajaan Masa Lalu",
+    "lesson": { 
+      "title": "Masa Kejayaan Kerajaan Sriwijaya",
+      "content": "Kerajaan maritim yang menjadi pusat perdagangan dan penyebaran agama Buddha di Asia Tenggara. Contoh: Menguasai jalur perdagangan di Selat Malaka. Penjelasan: Raja Balaputradewa membawa Sriwijaya mencapai puncak kemasyhuran di bidang ekonomi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Sejarah Hindu-Buddha" },
+    "subtopic": "Kerajaan Masa Lalu",
+    "lesson": { 
+      "title": "Kerajaan Majapahit dan Sumpah Palapa",
+      "content": "Kerajaan terbesar yang berhasil menyatukan Nusantara di bawah kepemimpinan Raja Hayam Wuruk dan Gajah Mada. Contoh: Sumpah Gajah Mada untuk tidak makan enak sebelum Nusantara bersatu. Penjelasan: Semangat persatuan Majapahit menjadi inspirasi bangsa Indonesia saat ini."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Sejarah Islam" },
+    "subtopic": "Penyebaran Islam",
+    "lesson": { 
+      "title": "Kerajaan Samudera Pasai",
+      "content": "Kerajaan Islam pertama di Indonesia yang terletak di Aceh. Menjadi pusat perdagangan lada dan jalur sutra. Contoh: Sultan Malik as-Saleh sebagai raja pertamanya. Penjelasan: Islam masuk melalui jalur perdagangan yang damai dan adaptasi budaya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Sejarah Islam" },
+    "subtopic": "Penyebaran Islam",
+    "lesson": { 
+      "title": "Kerajaan Demak: Benteng Islam di Jawa",
+      "content": "Didirikan oleh Raden Patah dengan bantuan Wali Songo. Memiliki Masjid Agung Demak sebagai pusat kegiatan agama. Contoh: Perjuangan Adipati Unus menyerang Portugis di Malaka. Penjelasan: Demak berperan besar dalam meruntuhkan pengaruh kekuasaan Majapahit yang melemah."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Sejarah Islam" },
+    "subtopic": "Penyebaran Islam",
+    "lesson": { 
+      "title": "Peran Wali Songo di Nusantara",
+      "content": "Sembilan tokoh ulama yang menyebarkan Islam melalui pendekatan seni, budaya, dan pendidikan pesantren. Contoh: Sunan Kalijaga menggunakan media wayang kulit untuk berdakwah. Penjelasan: Cara Wali Songo membuat Islam mudah diterima oleh masyarakat Jawa saat itu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Kenampakan Alam" },
+    "subtopic": "Wilayah Indonesia",
+    "lesson": { 
+      "title": "Bentang Alam Gunung dan Pegunungan",
+      "content": "Indonesia berada di jalur gunung api dunia. Tanah di sekitar gunung sangat subur untuk pertanian. Contoh: Gunung Merapi di Yogyakarta. Penjelasan: Abu vulkanik hasil letusan mengandung mineral yang baik bagi tanaman."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Kenampakan Alam" },
+    "subtopic": "Wilayah Indonesia",
+    "lesson": { 
+      "title": "Manfaat Pantai dan Hutan Bakau",
+      "content": "Pantai digunakan untuk wisata dan tambak garam. Hutan bakau (mangrove) melindungi daratan dari abrasi air laut. Contoh: Penanaman bakau di pesisir utara Jawa. Penjelasan: Ekosistem laut yang sehat akan menghasilkan banyak ikan bagi nelayan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Kenampakan Alam" },
+    "subtopic": "Wilayah Indonesia",
+    "lesson": { 
+      "title": "Cuaca dan Iklim di Indonesia",
+      "content": "Indonesia memiliki iklim tropis dengan dua musim: musim kemarau dan musim hujan. Contoh: Petani mulai menanam padi saat musim hujan tiba. Penjelasan: Curah hujan yang tinggi sepanjang tahun mendukung kekayaan hutan hujan tropis."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Kegiatan Ekonomi" },
+    "subtopic": "Produksi dan Distribusi",
+    "lesson": { 
+      "title": "Kegiatan Produksi Barang",
+      "content": "Kegiatan menghasilkan barang mentah menjadi barang jadi untuk menambah nilai guna. Contoh: Pabrik tekstil mengolah kapas menjadi kain dan baju. Penjelasan: Orang yang melakukan kegiatan produksi disebut produsen."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Kegiatan Ekonomi" },
+    "subtopic": "Produksi dan Distribusi",
+    "lesson": { 
+      "title": "Kegiatan Distribusi dan Konsumsi",
+      "content": "Distribusi adalah penyaluran barang dari produsen ke konsumen. Konsumsi adalah kegiatan menghabiskan nilai guna barang. Contoh: Truk mengantar beras dari desa ke kota. Penjelasan: Lancarnya distribusi menjamin ketersediaan barang di seluruh daerah."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Kegiatan Ekonomi" },
+    "subtopic": "Produksi dan Distribusi",
+    "lesson": { 
+      "title": "Peran Pasar dalam Ekonomi",
+      "content": "Pasar menjadi tempat bertemunya penjual dan pembeli untuk menetapkan harga barang. Contoh: Pasar terapung di Kalimantan. Penjelasan: Pasar mendukung pemenuhan kebutuhan masyarakat secara efisien."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Koperasi" },
+    "subtopic": "Kesejahteraan Rakyat",
+    "lesson": { 
+      "title": "Mengenal Koperasi Indonesia",
+      "content": "Badan usaha yang beranggotakan orang-orang dengan prinsip kekeluargaan untuk meningkatkan kesejahteraan. Contoh: Koperasi Unit Desa (KUD). Penjelasan: Bapak Koperasi Indonesia adalah Mohammad Hatta."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Koperasi" },
+    "subtopic": "Kesejahteraan Rakyat",
+    "lesson": { 
+      "title": "Tujuan dan Manfaat Koperasi",
+      "content": "Koperasi membantu anggota mendapatkan barang dengan harga murah dan pinjaman bunga rendah. Contoh: Membeli alat tulis di koperasi sekolah. Penjelasan: Sisa Hasil Usaha (SHU) koperasi akan dibagikan kembali kepada anggota."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Koperasi" },
+    "subtopic": "Kesejahteraan Rakyat",
+    "lesson": { 
+      "title": "Menabung di Koperasi Sekolah",
+      "content": "Siswa belajar disiplin mengatur uang dengan menyimpan sebagian uang sakunya di koperasi. Contoh: Tabungan untuk biaya tamasya akhir tahun. Penjelasan: Kebiasaan menabung melatih kita untuk hidup hemat dan berencana."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Pahlawan Nasional" },
+    "subtopic": "Perjuangan Bangsa",
+    "lesson": { 
+      "title": "Pattimura: Pahlawan dari Maluku",
+      "content": "Thomas Matulessy berjuang melawan penjajah Belanda yang melakukan monopoli perdagangan rempah-rempah. Contoh: Pertempuran di Benteng Duurstede. Penjelasan: Keberanian Pattimura membuktikan rakyat Maluku tidak mau dijajah."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Pahlawan Nasional" },
+    "subtopic": "Perjuangan Bangsa",
+    "lesson": { 
+      "title": "Cut Nyak Dien: Srikandi dari Aceh",
+      "content": "Pejuang wanita yang gigih melawan Belanda di tengah hutan demi martabat tanah air. Contoh: Melanjutkan perjuangan suaminya, Teuku Umar. Penjelasan: Semangat wanita Indonesia dalam berjuang sangat kuat dan membanggakan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Pahlawan Nasional" },
+    "subtopic": "Perjuangan Bangsa",
+    "lesson": { 
+      "title": "Sikap Meneladani Jasa Pahlawan",
+      "content": "Kita menghormati pahlawan dengan cara belajar tekun, disiplin, dan mencintai produk dalam negeri. Contoh: Menjaga persatuan di sekolah tanpa membeda-bedakan suku. Penjelasan: Perjuangan masa kini adalah mengisi kemerdekaan dengan karya nyata."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Teknologi Produksi" },
+    "subtopic": "Masa Lalu vs Masa Kini",
+    "lesson": { 
+      "title": "Perkembangan Alat Pertanian",
+      "content": "Dahulu petani menggunakan kerbau untuk membajak sawah, sekarang sudah menggunakan traktor mesin yang cepat. Contoh: Penggunaan mesin penggiling padi otomatis. Penjelasan: Teknologi modern meningkatkan jumlah hasil panen secara drastis."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Teknologi Produksi" },
+    "subtopic": "Masa Lalu vs Masa Kini",
+    "lesson": { 
+      "title": "Transformasi Alat Komunikasi",
+      "content": "Dahulu orang mengirim telegraf atau surat lewat pos, sekarang bisa video call dengan smartphone. Contoh: Mengirim email dalam hitungan detik ke seluruh dunia. Penjelasan: Komunikasi cepat mempermudah koordinasi bisnis dan keluarga."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "IPS",
+    "topic": { "name": "Teknologi Produksi" },
+    "subtopic": "Masa Lalu vs Masa Kini",
+    "lesson": { 
+      "title": "Alat Transportasi Udara dan Laut",
+      "content": "Pesawat jet dan kapal kargo besar menghubungkan antar pulau dan negara dalam waktu singkat. Contoh: Pesawat Garuda Indonesia yang melintasi samudera. Penjelasan: Transportasi modern memajukan sektor pariwisata dan perdagangan internasional."
+    }
+  }
+]

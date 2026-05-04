@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Perencanaan Produk" },
+    "subtopic": "Peluang Usaha and Analisis SWOT",
+    "lesson": {
+      "title": "Melihat Peluang: Menemukan Ide Bisnis dari Keahlian SMK",
+      "content": "Selamat datang di dunia wirausaha! Di kelas 12, kamu ditantang untuk mengubah keahlian teknismu menjadi uang. Langkah pertama adalah **Analisis SWOT** (Strengths, Weaknesses, Opportunities, Threats). Apa kelebihan produkmu dibanding yang lain? Masalah apa di masyarakat yang bisa kamu selesaikan with keahlianmu?\n\nBagi siswa SMK, peluang usaha ada di depan mata. Jika kamu anak otomotif, peluangnya ada di bengkel servis panggil. Jika kamu anak tata boga, peluangnya ada di makanan sehat siap saji. Kita belajar cara melakukan riset pasar sederhana untuk memastikan ide bisnismu bukan sekadar mimpi, tapi memiliki konsumen yang nyata and siap membeli. Mari kita mulai perjalananmu menjadi bos bagi dirimu sendiri!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Perencanaan Produk" },
+    "subtopic": "Desain and Prototype Produk Kreatif",
+    "lesson": {
+      "title": "Dari Gambar ke Nyata: Membuat Prototype Produk",
+      "content": "Prototype adalah model pertama dari produkmu. Kita belajar cara membuat prototype yang fungsional with biaya minimal (MVP - Minimum Viable Product). Prototype digunakan untuk menguji apakah ide bisnismu benar-benar bekerja and disukai oleh calon pelanggan sebelum diproduksi secara massal.\n\nJangan takut with kegagalan pada tahap prototype. Justru di sini kamu harus banyak melakukan kesalahan agar produk akhirnya nanti sempurna. Kamu belajar cara mendokumentasikan setiap perubahan desain. Desain yang baik adalah desain yang menjawab kebutuhan pengguna. Mari kita wujudkan imajinasimu dalam bentuk benda nyata yang memiliki nilai jual tinggi and mampu bersaing di pasar industri kreatif Indonesia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Manajemen Keuangan" },
+    "subtopic": "Penghitungan Biaya Produksi and Harga Jual",
+    "lesson": {
+      "title": "Hitung-Hitungan Bisnis: Menentukan Harga yang Tepat",
+      "content": "Bisnis bukan hanya soal hobi, tapi soal profit. Kita belajar cara menghitung **HPP (Harga Pokok Produksi)**: biaya bahan baku, biaya tenaga kerja, and biaya overhead (listrik, sewa, dll). Jangan sampai kamu menjual produk with harga yang merugikan dirimu sendiri karena salah perhitungan.\n\nKamu juga belajar cara menentukan margin keuntungan and membandingkannya with harga pesaing. Matematika ekonomi ini adalah kunci keberlanjutan usahamu. Jika harga terlalu mahal, produk tidak laku; jika terlalu murah, bisnismu bangkrut. Kita asah kemampuanmu dalam mengelola angka agar setiap rupiah yang keluar and masuk dapat dipertanggungjawabkan with transparan and akurat untuk pertumbuhan bisnis yang sehat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Pemasaran dan Penjualan" },
+    "subtopic": "Strategi Digital Marketing and Branding",
+    "lesson": {
+      "title": "Go Digital: Membangun Brand and Pemasaran Online",
+      "content": "Di era internet, produk bagus tidak cukup, produkmu harus 'terlihat'. Kita belajar cara membangun **Brand Identity** (Logo, Warna, Slogan) and cara memasarkannya melalui media sosial and marketplace. Kamu belajar teknik 'Copywriting' untuk menarik perhatian pembeli dalam hitungan detik.\n\nDigital marketing memungkinkan usahamu menjangkau pelanggan di luar kota bahkan luar negeri. Kamu belajar cara menggunakan iklan berbayar (Ads) and cara bekerja sama with influencer. Branding adalah janji kualitas kepada pelanggan. Dengan strategi pemasaran yang tepat, produk karya siswa SMK bisa sejajar with brand internasional yang sudah mapan. Mari kita buat brand-mu menjadi bahan pembicaraan yang positif di jagat maya!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Legalitas dan HAKI" },
+    "subtopic": "Hak Atas Kekayaan Intelektual (HAKI) and Izin Usaha",
+    "lesson": {
+      "title": "Melindungi Karya: Pentingnya HAKI and Izin Usaha",
+      "content": "Jangan biarkan ide or desainmu dicuri orang lain. Kita belajar cara mendaftarkan **Merek, Paten, or Hak Cipta** (HAKI). Memiliki perlindungan hukum akan membuat nilaimu di mata investor meningkat. Kamu juga belajar cara mengurus izin usaha (NIB) agar bisnismu legal and aman dari masalah hukum.\n\nLegalitas adalah tanda bahwa kamu serius berbisnis. Usaha yang memiliki izin akan lebih mudah mendapatkan modal dari bank or kerjasama with instansi pemerintah. Kita belajar untuk menghargai karya orang lain and menjaga karya sendiri. Dengan memahami aspek hukum, kamu sedang membangun fondasi bisnis yang kokoh and profesional untuk jangka panjang, menjamin keamanan aset intelektual yang telah kamu bangun with susah payah."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Produksi Massal" },
+    "subtopic": "Perencanaan and Pengendalian Produksi",
+    "lesson": {
+      "title": "Skala Besar: Mengelola Produksi Massal",
+      "content": "Saat permintaan meningkat, kamu tidak bisa bekerja sendirian lagi. Kita belajar cara menyusun **Alur Produksi** yang efisien, manajemen stok (inventory), and standar operasional prosedur (SOP). Produksi massal membutuhkan disiplin and kontrol kualitas (Quality Control) yang ketat agar setiap unit produk tetap sama bagusnya.\n\nKamu belajar cara memilih supplier yang andal and cara mengelola tim produksi. Efisiensi adalah kunci keuntungan dalam skala besar. Jangan sampai ada waktu or bahan yang terbuang sia-sia (waste). Matematika industri sangat berperan di sini untuk menghitung kapasitas maksimal produksimu. Mari kita transformasikan 'bengkel kecil' menjadi 'pabrik modern' with sistem manajemen yang tertata rapi and produktivitas yang tinggi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Laporan Keuangan" },
+    "subtopic": "Laporan Laba Rugi and Arus Kas Sederhana",
+    "lesson": {
+      "title": "Jujur with Angka: Membuat Laporan Keuangan",
+      "content": "Seorang pengusaha sukses harus melek finansial. Kita belajar cara membuat **Laporan Laba Rugi** and **Arus Kas (Cash Flow)**. Laporan keuangan adalah cermin kesehatan bisnismu. Apakah usahamu benar-benar untung? Apakah ada kebocoran biaya? Kamu harus bisa menjawabnya with data, bukan sekadar perasaan.\n\nArus kas sangat penting; banyak bisnis bangkrut bukan karena tidak ada pembeli, tapi karena kehabisan uang tunai untuk operasional. Kamu belajar cara memisahkan uang pribadi with uang perusahaan. Kedisiplinan finansial ini adalah pembeda antara pedagang biasa with pengusaha profesional. Dengan laporan yang rapi, kamu siap untuk melakukan audit mandiri and merencanakan investasi pengembangan usaha di tahun-tahun mendatang."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Pengembangan Usaha" },
+    "subtopic": "Evaluasi and Pengembangan Bisnis",
+    "lesson": {
+      "title": "Naik Kelas: Evaluasi and Inovasi Berkelanjutan",
+      "content": "Dunia berubah, bisnis pun harus berubah. Kita belajar cara melakukan evaluasi berkala terhadap bisnismu: Apa yang disukai pelanggan? Apa yang harus diperbaiki? Kita belajar cara melakukan **Pivot** (berubah arah) jika ide awal tidak lagi relevan with pasar. Inovasi adalah nyawa dari kewirausahaan.\n\nJangan cepat puas with kesuksesan kecil. Kita belajar cara mencari modal tambahan (pendanaan), baik dari bagi hasil, pinjaman, or investor. Kamu belajar cara mempresentasikan bisnismu (Pitching) di depan calon mitra. Wirausahawan sejati adalah pembelajar seumur hidup yang selalu haus akan peluang baru and cara-cara baru untuk memberikan nilai tambah bagi masyarakat melalui produk and layanan kreatifnya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Business Model Canvas" },
+    "subtopic": "Menyusun Sembilan Elemen BMC",
+    "lesson": {
+      "title": "Peta Bisnis: Menyusun Business Model Canvas (BMC)",
+      "content": "Sebelum membuat rencana bisnis yang tebal, kita gunakan **Business Model Canvas (BMC)**. Dalam satu lembar, kamu memetakan: Customer Segments, Value Propositions, Channels, Customer Relationships, Revenue Streams, Key Activities, Key Resources, Key Partnerships, and Cost Structure. BMC membantumu melihat gambaran besar bisnismu secara visual.\n\nKamu belajar bagaimana setiap elemen saling terhubung. Misalnya, jika target pelangganmu adalah remaja, maka 'Channel' pemasarannya haruslah media sosial yang relevan. BMC adalah alat berpikir strategis yang digunakan oleh startup di seluruh dunia. Mari kita bedah ide bisnismu with BMC agar setiap langkah yang kamu ambil memiliki dasar yang kuat and terintegrasi with visi besarmu untuk masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Menjadi Alumni SMK yang Mandiri and Berdampak",
+    "lesson": {
+      "title": "Refleksi Akhir: Lahirnya Wirausahawan Muda Indonesia",
+      "content": "Selamat! Kamu telah menyelesaikan perjalanan kewirausahaan di SMK. Kamu kini bukan hanya tenaga ahli, tapi juga memiliki mental pengusaha. Ingatlah, kewirausahaan bukan hanya soal berjualan, tapi soal **Mentalitas**: berani bermimpi, berani bertindak, and berani bertanggung jawab atas kegagalan.\n\nJangan pernah takut untuk memulai dari yang kecil. Semua perusahaan raksasa dulunya adalah ide kecil di sebuah garasi or ruang kelas. Teruslah berkarya, teruslah berinovasi, and jadilah solusi bagi masalah bangsa. Indonesia butuh jutaan wirausahawan muda seperti kamu untuk menjadi negara maju. Sukses untukmu, sang kreator masa depan! Merdeka!\n\nJadilah cahaya yang menerangi ekonomi keluarga and bangsamu with kemandirian and integritas tinggi selamanya!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Riset Pasar" },
+    "subtopic": "Teknik Wawancara Pelanggan and Kuesioner",
+    "lesson": {
+      "title": "Mendengar Pelanggan: Riset Pasar yang Efektif",
+      "content": "Jangan menebak apa yang orang inginkan. Tanyakan pada mereka. Kita belajar teknik wawancara mendalam and cara membuat kuesioner online yang tidak membosankan. Kamu belajar menganalisis jawaban pelanggan untuk menemukan 'Pain Points' (masalah) yang bisa kamu selesaikan with produkmu. Data dari pelanggan adalah 'harta karun' yang akan mengarahkan pengembangan fitur produkmu agar tepat sasaran. Wirausahawan yang cerdas adalah pendengar yang baik; mereka menciptakan apa yang dibutuhkan pasar, bukan hanya apa yang ingin mereka buat sendiri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Prototype" },
+    "subtopic": "Iterasi and Feedback User pada Prototype",
+    "lesson": {
+      "title": "Perbaikan Tiada Henti: Iterasi Berdasarkan Feedback",
+      "content": "Setelah prototype jadi, berikan pada calon pengguna. Kita belajar cara menerima kritik with lapang dada and menggunakannya untuk memperbaiki produk. Proses ini disebut **Iterasi**. Kamu belajar bahwa produk sempurna lahir dari puluhan perbaikan kecil. Jangan jatuh cinta pada ide pertamamu; jatuh cintalah pada solusi yang benar-benar memuaskan pelanggan. Setiap feedback adalah peluang untuk membuat produkmu lebih unggul dari kompetitor. Ketekunan dalam melakukan iterasi akan membedakan produk amatir with produk profesional yang layak dipasarkan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Branding" },
+    "subtopic": "Psikologi Warna and Tipografi dalam Branding",
+    "lesson": {
+      "title": "Bahasa Visual: Psikologi di Balik Logo and Brand",
+      "content": "Mengapa brand makanan sering pakai warna merah? Mengapa brand teknologi sering pakai biru? Kita belajar psikologi warna and pemilihan huruf (font) yang sesuai with karakter brand-mu. Branding visual membantu membangun kepercayaan (trust) and emosi pelanggan. Kamu belajar cara membuat identitas visual yang konsisten di semua platform, mulai dari kemasan produk hingga foto profil Instagram bisnis. Brand yang kuat memiliki 'jiwa' yang bisa dirasakan oleh pelanggan, membuat mereka loyal and bangga menggunakan produk buatan tanganmu sendiri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Digital Marketing" },
+    "subtopic": "Search Engine Optimization (SEO) Sederhana",
+    "lesson": {
+      "title": "Ditemukan Pelanggan: Dasar-Dasar SEO untuk Usaha Kecil",
+      "content": "Bagaimana agar usahamu muncul di halaman pertama Google saat orang mencari jasa di daerahmu? Kita belajar dasar SEO: penggunaan kata kunci (keywords) yang tepat, optimasi foto produk, and pentingnya 'Google Maps/Google My Business'. SEO adalah cara pemasaran gratis yang sangat efektif untuk jangka panjang. Kamu belajar cara menulis deskripsi produk yang tidak hanya menarik bagi manusia, tapi juga 'disukai' oleh mesin pencari. Dengan SEO, tokomu akan selalu terbuka bagi siapa saja yang mencari solusi di internet, kapan pun and di mana pun."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Supply Chain" },
+    "subtopic": "Etika Negosiasi with Supplier",
+    "lesson": {
+      "title": "Mencari Mitra: Teknik Negosiasi with Supplier",
+      "content": "Supplier adalah partner bisnismu, bukan lawan. Kita belajar cara mencari supplier yang memberikan harga terbaik with kualitas stabil. Kamu belajar etika negosiasi: cara meminta diskon, tempo pembayaran, and jaminan retur barang cacat. Hubungan yang baik with supplier akan menjamin kelancaran produksimu saat permintaan sedang tinggi. Kamu belajar untuk selalu memiliki 'Supplier Cadangan' untuk menghindari risiko produksi terhenti. Integritas and kejujuran dalam berbisnis with mitra akan membangun reputasi yang baik bagi namamu di dunia industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Financial Planning" },
+    "subtopic": "Menghitung Break Even Point (BEP)",
+    "lesson": {
+      "title": "Titik Impas: Kapan Bisnismu Mulai Untung?",
+      "content": "Kamu harus tahu berapa banyak barang yang harus terjual agar semua biaya tertutup. Itulah **Break Even Point (BEP)**. Kita belajar rumus menghitung BEP unit and BEP rupiah. Mengetahui BEP membantumu menentukan target penjualan harian and bulanan with lebih realistis. Tanpa tahu BEP, kamu seperti menyetir mobil with mata tertutup; kamu tidak tahu apakah kamu sedang maju or malah mundur. Matematika BEP memberikanmu kepercayaan diri untuk mengambil keputusan besar, seperti kapan waktu yang tepat untuk menyewa ruko or menambah karyawan baru."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Salesmanship" },
+    "subtopic": "Teknik Closing and Handling Objections",
+    "lesson": {
+      "title": "Seni Menjual: Mengubah Penolakan Menjadi Penjualan",
+      "content": "Seringkali pembeli ragu with alasan 'harganya mahal' or 'tanya suami/istri dulu'. Kita belajar teknik menjawab keberatan (objections) with sopan and memberikan solusi yang meyakinkan. Kamu juga belajar teknik 'Closing' (menutup penjualan) agar calon pembeli segera memutuskan untuk membeli. Menjual adalah seni berkomunikasi and meyakinkan orang lain tentang nilai manfaat produkmu. Jangan takut with penolakan; setiap 'Tidak' membawamu lebih dekat pada jawaban 'Ya'. Latih terus kemampuan bicaramu agar setiap interaksi with pelanggan berakhir with senyuman and transaksi yang sukses."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Ethics" },
+    "subtopic": "Etika Bisnis and Tanggung Jawab Sosial",
+    "lesson": {
+      "title": "Bisnis Berkah: Integritas and Kepedulian Sosial",
+      "content": "Untung besar tidak boleh dilakukan with cara yang curang. Kita belajar pentingnya etika bisnis: jujur with kualitas bahan, tepat waktu dalam pengiriman, and ramah terhadap lingkungan. Kamu juga belajar tentang CSR (Corporate Social Responsibility) sederhana—bagaimana usahamu bisa membantu masyarakat sekitar. Bisnis yang berkah adalah bisnis yang memberikan manfaat bagi orang banyak. Integritasmu sebagai pengusaha akan menjadi 'iklan' terbaik yang tidak bisa dibeli with uang. Mari kita bangun ekosistem bisnis Indonesia yang bersih, jujur, and penuh rasa kemanusiaan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Pitching" },
+    "subtopic": "Membuat Elevator Pitch 60 Detik",
+    "lesson": {
+      "title": "Pitch Perfect: Menjelaskan Bisnis dalam 60 Detik",
+      "content": "Bayangkan kamu bertemu investor di dalam lift. Kamu hanya punya waktu 60 detik sebelum dia keluar. Apa yang akan kamu katakan? Kita belajar menyusun **Elevator Pitch**: Masalah -> Solusi -> Keunggulan -> Call to Action. Latihan ini melatihmu untuk bicara to-the-point and penuh karisma. Kamu belajar cara menyampaikan inti bisnis with bahasa yang sederhana tapi menggugah rasa ingin tahu. Kemampuan memikat hati orang lain dalam waktu singkat adalah skill kepemimpinan tingkat tinggi yang akan membukakan banyak pintu kesempatan dalam karier and bisnismu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Digital Tools" },
+    "subtopic": "Aplikasi Kasir (POS) and Akuntansi Digital",
+    "lesson": {
+      "title": "Smart Tools: Mengelola Bisnis with Aplikasi Digital",
+      "content": "Jangan lagi catat manual di buku tulis yang mudah hilang. Kita belajar menggunakan aplikasi Point of Sale (POS) gratis and software akuntansi sederhana di smartphone. Teknologi ini memudahkanmu memantau stok, mencatat penjualan, and membuat laporan keuangan secara otomatis. Kamu belajar cara membaca Dashboard data untuk melihat jam berapa tokomu paling ramai and produk mana yang paling laris. Dengan digitalisasi, kamu bisa mengelola bisnis with lebih profesional, efisien, and memiliki data yang akurat untuk melakukan evaluasi performa bisnis setiap harinya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Innovation" },
+    "subtopic": "Creative Problem Solving and Design Thinking",
+    "lesson": {
+      "title": "Inovator Sejati: Berpikir Kreatif Menembus Batas",
+      "content": "Inovasi bukan hanya soal teknologi tinggi, tapi soal cara baru menyelesaikan masalah lama. Kita belajar metodologi **Design Thinking**: Empathize, Define, Ideate, Prototype, and Test. Kamu belajar cara brainstorming yang efektif without menghakimi ide orang lain. Kemampuan berpikir kreatif akan membuat bisnismu selalu selangkah lebih maju dari pesaing. Jangan pernah puas with status quo. Teruslah bertanya 'Mengapa?' and 'Bagaimana jika?'. Dunia ini penuh with masalah yang menunggu sentuhan kreatifmu untuk diubah menjadi peluang bisnis yang cemerlang and berdampak luas."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Teamwork" },
+    "subtopic": "Membangun Tim and Budaya Kerja Perusahaan",
+    "lesson": {
+      "title": "The Dream Team: Memilih Partner and Memimpin Tim",
+      "content": "Bisnis yang besar tidak dibangun sendirian. Kita belajar cara memilih partner bisnis yang melengkapi keahlianmu. Kamu belajar cara mendelegasikan tugas with jelas and membangun budaya kerja yang positif: jujur, disiplin, and saling mendukung. Sebagai pemimpin (owner), tugasmu adalah memastikan semua orang dalam tim memiliki visi yang sama. Kamu belajar cara memberikan apresiasi (reward) and teguran (punishment) yang adil. Tim yang solid with semangat kekeluargaan yang tinggi akan menjadi mesin pertumbuhan yang luar biasa bagi usahamu di masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Customer Experience" },
+    "subtopic": "Strategi Layanan Purna Jual (After Sales)",
+    "lesson": {
+      "title": "Pelanggan Setia: Menjaga Hubungan Setelah Penjualan",
+      "content": "Menjual satu kali itu mudah, tapi membuat pelanggan datang kembali itu yang sulit. Kita belajar strategi **After Sales Service**: garansi, konsultasi gratis, or sekadar ucapan terima kasih. Kamu belajar cara menangani keluhan with cepat agar pelanggan tidak kecewa and malah memberikan rating buruk. Pelanggan yang puas adalah 'sales' terbaikmu; mereka akan mempromosikan usahamu kepada teman and keluarga secara gratis. Biaya mendapatkan pelanggan baru 5 kali lebih mahal daripada menjaga pelanggan lama. Jadilah pengusaha yang sangat menghargai setiap orang yang telah mempercayakan uangnya pada karyamu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "E-Commerce" },
+    "subtopic": "Strategi Jualan di Marketplace (Shopee, Tokopedia, dll)",
+    "lesson": {
+      "title": "Pasar Global: Optimalisasi Toko di Marketplace",
+      "content": "Kita belajar cara 'perang' di marketplace: cara mengambil foto produk yang estetik, menulis judul yang ramah SEO, and mengelola ulasan pelanggan. Kamu belajar pentingnya kecepatan respon chat and pengiriman yang tepat waktu untuk mendapatkan lencana 'Star Seller'. Marketplace adalah panggung raksasa; jika kamu tahu triknya, produk SMK-mu bisa mengalahkan produk dari pabrik besar. Kamu juga belajar cara membaca statistik kunjungan untuk menentukan promo yang tepat (seperti Gratis Ongkir or Flash Sale). Mari kita buat tokomu menjadi tujuan utama para pembelanja online!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Scale Up" },
+    "subtopic": "Diversifikasi Produk and Ekspansi Pasar",
+    "lesson": {
+      "title": "Ekspansi Bisnis: Menambah Produk and Wilayah",
+      "content": "Jika satu produk sudah stabil, saatnya menambah varian baru (**Diversifikasi**). Kita belajar cara melihat kebutuhan sampingan dari pelanggan lamamu. Misalnya, jika kamu jual kursi, mungkin pelanggan butuh bantal or jasa perbaikan kursi. Kamu juga belajar cara membuka cabang or sistem kemitraan (franchise/reseller) untuk memperluas jangkauan pasarmu. Ekspansi harus dilakukan with hati-hati and berdasarkan data keuangan yang kuat. Jangan sampai terlalu cepat besar tapi keropos di dalam. Belajarlah cara tumbuh secara berkelanjutan with manajemen risiko yang matang."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Content Creator" },
+    "subtopic": "Video Marketing and Storytelling di TikTok/Reels",
+    "lesson": {
+      "title": "Viral Business: Membuat Konten Video yang Menjual",
+      "content": "Video pendek adalah cara tercepat menarik pembeli saat ini. Kita belajar cara membuat video 'Behind the Scenes' (di balik layar pembuatan produk), video testimoni, and video edukasi produk yang menarik. Kamu belajar bahwa orang tidak suka 'dijualin', tapi orang suka 'diceritain'. Gunakan teknik storytelling untuk menunjukkan perjuanganmu membangun bisnis ini. Video yang otentik and jujur akan lebih mudah viral and mendapatkan hati pelanggan. Jadilah pengusaha yang kreatif di depan kamera, tunjukkan semangat and kualitas kerjamu kepada jutaan calon pembeli di media sosial."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Budgeting" },
+    "subtopic": "Manajemen Dana Darurat and Investasi Bisnis",
+    "lesson": {
+      "title": "Ketahanan Bisnis: Menabung and Investasi Kembali",
+      "content": "Keuntungan bisnis tidak boleh langsung dihabiskan untuk konsumsi pribadi. Kita belajar cara menyisihkan 'Dana Darurat' perusahaan untuk menghadapi masa sulit or kerusakan alat mendadak. Kamu juga belajar cara melakukan 'Reinvestment'—menginvestasikan kembali keuntungan untuk membeli mesin yang lebih canggih or melatih karyawan agar lebih ahli. Bisnis yang kuat adalah bisnis yang memiliki cadangan oksigen (uang) yang cukup and terus memperbarui kemampuannya. Jadilah manajer keuangan yang bijak, yang memikirkan pertumbuhan jangka panjang daripada kesenangan sesaat di depan mata."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Crisis Management" },
+    "subtopic": "Menghadapi Kegagalan and Keluhan Viral",
+    "lesson": {
+      "title": "Crisis Control: Tetap Tenang di Tengah Masalah",
+      "content": "Apa yang dilakukan jika produkmu gagal or ada pelanggan yang marah-marah di media sosial? Kita belajar **Manajemen Krisis**: minta maaf with tulus, berikan solusi secepat mungkin, and jadikan itu pelajaran untuk perbaikan sistem. Jangan pernah menghapus komentar negatif; hadapi with profesionalisme tinggi. Kamu belajar cara mengubah 'Haters' menjadi 'Lovers' through pelayanan yang luar biasa saat terjadi masalah. Kemampuan mengelola krisis akan membuktikan seberapa kuat karaktermu sebagai pemimpin bisnis. Pengusaha sejati tidak lari dari masalah, tapi menyelesaikannya with kepala dingin and hati yang lapang."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Packaging" },
+    "subtopic": "Desain Kemasan yang Menjual and Aman",
+    "lesson": {
+      "title": "Unboxing Experience: Pentingnya Kemasan Produk",
+      "content": "Kemasan adalah 'Salesman' yang diam. Kita belajar cara mendesain kemasan yang tidak hanya cantik secara visual, tapi juga mampu melindungi produk with aman saat dikirim lewat ekspedisi. Kamu belajar tentang bahan kemasan yang ramah lingkungan (eco-friendly) sebagai nilai tambah bagi pelanggan. Kemasan yang bagus memberikan pengalaman 'unboxing' yang menyenangkan, yang seringkali memicu pelanggan untuk membagikannya di media sosial secara sukarela. Mari kita buat kemasan yang membuat orang merasa bahwa mereka membeli produk 'Premium' with harga yang tetap bersahabat, meningkatkan nilai jual produk SMK-mu berkali-kali lipat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Projek Kreatif dan Kewirausahaan",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Rencana Bisnis Pasca Lulus (Business Plan)",
+    "lesson": {
+      "title": "Pesan Penutup: Terbanglah Tinggi, Wirausaha Muda!",
+      "content": "Tugas akhirmu adalah menyusun draf Business Plan sederhana untuk usaha yang ingin kamu rintis setelah lulus. Kamu telah memiliki semua bekalnya: ide, hitungan biaya, strategi marketing, hingga aspek legal. Jadilah pribadi yang mandiri, yang tidak hanya mencari kerja, tapi mampu menciptakan lapangan kerja bagi orang lain. Ingatlah, suksesmu adalah doa orang tuamu and kebanggaan bangsamu. Jangan pernah lelah untuk mencoba. Dunia menanti karya-karyamu. Selamat berjuang, selamat berbisnis, and jadilah kebanggaan Indonesia Emas 2045! Merdeka! Sampai jumpa di puncak kejayaan ekonomi kreatif Indonesia!"
+    }
+  }
+]

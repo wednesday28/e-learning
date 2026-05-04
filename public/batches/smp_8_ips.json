@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Interaksi Negara ASEAN" },
+    "subtopic": "Geografi ASEAN",
+    "lesson": { 
+      "title": "Mengenal Karakteristik Negara-negara ASEAN",
+      "content": "Negara ASEAN memiliki karakteristik unik berdasarkan letak astronomis, geografis, and geologisnya. Sebagian besar beriklim tropis and kaya akan sumber daya alam. Contoh: Filipina and Indonesia sebagai negara kepulauan, sedangkan Laos satu-satunya negara ASEAN yang tidak memiliki laut. Penjelasan: Perbedaan bentang alam ini mempengaruhi potensi ekonomi masing-masing negara."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Interaksi Negara ASEAN" },
+    "subtopic": "Geografi ASEAN",
+    "lesson": { 
+      "title": "Faktor Pendorong Kerjasama ASEAN",
+      "content": "Kerjasama ASEAN didorong oleh kesamaan nasib (pernah dijajah), kedekatan wilayah, and keinginan untuk meningkatkan pertumbuhan ekonomi. Contoh: Pembentukan kawasan perdagangan bebas AFTA. Penjelasan: Solidaritas antar negara anggota sangat penting untuk menjaga stabilitas politik di kawasan Asia Tenggara."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Interaksi Negara ASEAN" },
+    "subtopic": "Geografi ASEAN",
+    "lesson": { 
+      "title": "Pengaruh Konversi Lahan di Negara ASEAN",
+      "content": "Alih fungsi lahan dari pertanian menjadi pemukiman atau industri akibat pertumbuhan penduduk and modernisasi. Contoh: Berkurangnya sawah di sekitar kota besar untuk pembangunan pabrik. Penjelasan: Konversi lahan yang tidak terkendali dapat mengancam ketahanan pangan and kelestarian lingkungan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Mobilitas Sosial" },
+    "subtopic": "Dinamika Sosial",
+    "lesson": { 
+      "title": "Pengertian dan Bentuk Mobilitas Sosial",
+      "content": "Perpindahan posisi seseorang atau sekelompok orang dari lapisan satu ke lapisan lain, baik secara vertikal maupun horizontal. Contoh: Seorang karyawan biasa yang dipromosikan menjadi manajer (mobilitas vertikal naik). Penjelasan: Mobilitas sosial menunjukkan adanya kesempatan bagi individu untuk memperbaiki taraf hidupnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Mobilitas Sosial" },
+    "subtopic": "Dinamika Sosial",
+    "lesson": { 
+      "title": "Saluran-Saluran Mobilitas Sosial",
+      "content": "Cara yang digunakan individu untuk naik ke lapisan sosial yang lebih tinggi, seperti melalui pendidikan, organisasi politik, and ekonomi. Contoh: Pendidikan adalah saluran utama (social elevator) bagi masyarakat kurang mampu untuk sukses. Penjelasan: Memanfaatkan saluran yang tepat akan mempercepat terjadinya mobilitas vertikal positif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Mobilitas Sosial" },
+    "subtopic": "Dinamika Sosial",
+    "lesson": { 
+      "title": "Dampak Positif dan Negatif Mobilitas Sosial",
+      "content": "Dampak positifnya adalah mendorong orang untuk maju, sedangkan dampak negatifnya bisa menimbulkan konflik antar kelas sosial. Contoh: Persaingan tidak sehat antar rekan kerja untuk merebutkan jabatan. Penjelasan: Penyesuaian diri yang baik diperlukan agar perubahan status tidak menimbulkan stres sosial."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Pluralitas Masyarakat Indonesia" },
+    "subtopic": "Keberagaman",
+    "lesson": { 
+      "title": "Keragaman Agama dan Kepercayaan",
+      "content": "Indonesia mengakui enam agama resmi and berbagai aliran kepercayaan yang hidup berdampingan. Contoh: Sikap saling menghormati saat perayaan hari besar keagamaan teman yang berbeda agama. Penjelasan: Pluralitas agama merupakan kekayaan spiritual yang memperkuat toleransi nasional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Pluralitas Masyarakat Indonesia" },
+    "subtopic": "Keberagaman",
+    "lesson": { 
+      "title": "Keanekaragaman Suku Bangsa dan Budaya",
+      "content": "Setiap suku bangsa di Indonesia memiliki ciri khas dalam bahasa, rumah adat, tarian, and sistem kekerabatan. Contoh: Tradisi lompat batu (Fahombo) di Nias sebagai ujian kedewasaan. Penjelasan: Budaya daerah adalah akar dari kebudayaan nasional yang harus dijaga dari kepunahan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Pluralitas Masyarakat Indonesia" },
+    "subtopic": "Keberagaman",
+    "lesson": { 
+      "title": "Peran dan Fungsi Keragaman Budaya",
+      "content": "Keragaman budaya berfungsi sebagai daya tarik wisata, pemersatu bangsa, and sumber inovasi bagi industri kreatif. Contoh: Batik yang kini menjadi tren fashion internasional. Penjelasan: Mengelola keragaman dengan bijak akan menjadikan Indonesia bangsa yang berkarakter kuat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Keunggulan Antarruang" },
+    "subtopic": "Ekonomi Nasional",
+    "lesson": { 
+      "title": "Keunggulan Alam sebagai Potensi Ekonomi",
+      "content": "Perbedaan potensi SDA antar daerah mendorong terjadinya perdagangan and spesialisasi produk. Contoh: Maluku sebagai penghasil rempah-rempah and Jawa sebagai penghasil padi. Penjelasan: Saling melengkapi kebutuhan antar daerah menciptakan integrasi ekonomi nasional yang kuat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Keunggulan Antarruang" },
+    "subtopic": "Ekonomi Nasional",
+    "lesson": { 
+      "title": "Penguatan Ekonomi Maritim Indonesia",
+      "content": "Memanfaatkan potensi laut yang luas untuk perikanan, pelayaran, and pariwisata bahari demi kesejahteraan rakyat. Contoh: Pembangunan tol laut untuk menekan biaya logistik di wilayah Timur Indonesia. Penjelasan: Sebagai negara kepulauan, ekonomi maritim harus menjadi pilar utama kemajuan bangsa."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Keunggulan Antarruang" },
+    "subtopic": "Ekonomi Nasional",
+    "lesson": { 
+      "title": "Pengembangan Ekonomi Agrikultur",
+      "content": "Meningkatkan produktivitas pertanian melalui modernisasi alat and ketersediaan pupuk agar Indonesia mandiri pangan. Contoh: Pemanfaatan teknologi hidroponik and smart farming di pedesaan. Penjelasan: Sektor agrikultur menyerap banyak tenaga kerja and menjamin kedaulatan pangan nasional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Kolonialisme dan Perlawanan" },
+    "subtopic": "Sejarah Penjajahan",
+    "lesson": { 
+      "title": "Latar Belakang Kedatangan Bangsa Barat",
+      "content": "Didorong oleh semboyan Gold (kekayaan), Glory (kejayaan), and Gospel (penyebaran agama) serta pencarian rempah-rempah. Contoh: Kedatangan bangsa Portugis di Malaka pada tahun 1511. Penjelasan: Jatuhnya Konstantinopel memaksa bangsa Eropa mencari jalan langsung ke sumber rempah-rempah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Kolonialisme dan Perlawanan" },
+    "subtopic": "Sejarah Penjajahan",
+    "lesson": { 
+      "title": "Kebijakan Monopoli dan Kerja Paksa Belanda",
+      "content": "Belanda melalui VOC menerapkan monopoli perdagangan and sistem tanam paksa (Cultuurstelsel) yang menyengsarakan rakyat. Contoh: Pembangunan jalan raya pos Anyer-Panarukan oleh Daendels. Penjelasan: Eksploitasi kekayaan alam and tenaga manusia dilakukan demi keuntungan pihak penjajah semata."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Kolonialisme dan Perlawanan" },
+    "subtopic": "Sejarah Penjajahan",
+    "lesson": { 
+      "title": "Perlawanan Rakyat terhadap Kolonialisme",
+      "content": "Munculnya tokoh-tokoh daerah yang gigih berjuang mempertahankan wilayahnya dari penguasaan asing. Contoh: Perlawanan Sultan Hasanuddin di Makassar and Pangeran Antasari di Banjar. Penjelasan: Meskipun awalnya bersifat kedaerahan, semangat perlawanan ini menjadi benih nasionalisme."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Nasionalisme Indonesia" },
+    "subtopic": "Pergerakan Nasional",
+    "lesson": { 
+      "title": "Organisasi Budi Utomo dan Kebangkitan Nasional",
+      "content": "Lahirnya organisasi modern pertama yang berjuang melalui jalur pendidikan and kesadaran berbangsa pada 20 Mei 1908. Contoh: Peran mahasiswa STOVIA dalam menyebarkan gagasan kemajuan bangsa. Penjelasan: Kebangkitan nasional mengubah strategi perjuangan dari senjata menjadi diplomasi organisasi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Nasionalisme Indonesia" },
+    "subtopic": "Pergerakan Nasional",
+    "lesson": { 
+      "title": "Sumpah Pemuda 28 Oktober 1928",
+      "content": "Ikrar persatuan pemuda dari berbagai daerah untuk mengaku bertumpah darah, berbangsa, and berbahasa satu: Indonesia. Contoh: Dinyanyikannya lagu Indonesia Raya untuk pertama kalinya dalam kongres. Penjelasan: Sumpah Pemuda adalah tonggak sejarah paling penting bagi bersatunya seluruh rakyat Indonesia."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Nasionalisme Indonesia" },
+    "subtopic": "Pergerakan Nasional",
+    "lesson": { 
+      "title": "Peran Tokoh Pergerakan Nasional",
+      "content": "Mengenal perjuangan Soekarno, Hatta, Ki Hajar Dewantara, and tokoh lainnya dalam menyebarkan semangat merdeka. Contoh: Ki Hajar Dewantara berjuang melalui pendidikan di Taman Siswa. Penjelasan: Kecerdasan and keberanian para tokoh ini menjadi inspirasi bagi perjuangan generasi berikutnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Konflik dan Integrasi" },
+    "subtopic": "Sosiologi Politik",
+    "lesson": { 
+      "title": "Penyebab Konflik dalam Masyarakat",
+      "content": "Konflik muncul akibat perbedaan kepentingan, perbedaan kebudayaan, atau perubahan sosial yang terlalu cepat. Contoh: Konflik lahan antara perusahaan and warga lokal. Penjelasan: Konflik adalah hal yang wajar dalam dinamika sosial, namun harus dikelola agar tidak destruktif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Konflik dan Integrasi" },
+    "subtopic": "Sosiologi Politik",
+    "lesson": { 
+      "title": "Proses Integrasi Sosial",
+      "content": "Proses penyesuaian antar unsur-unsur yang berbeda dalam masyarakat sehingga menjadi satu kesatuan yang utuh. Contoh: Integrasi bangsa Indonesia melalui penggunaan bahasa persatuan Bahasa Indonesia. Penjelasan: Integrasi memerlukan komitmen bersama untuk saling menghargai perbedaan demi tujuan besar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Konflik dan Integrasi" },
+    "subtopic": "Sosiologi Politik",
+    "lesson": { 
+      "title": "Sikap Toleransi sebagai Pemersatu",
+      "content": "Menghormati hak orang lain untuk berbeda pendapat, keyakinan, and adat istiadat tanpa merasa paling benar. Contoh: Gotong royong membangun fasilitas desa melibatkan semua warga tanpa sekat suku. Penjelasan: Toleransi adalah kunci utama mencegah konflik horizontal di masyarakat yang majemuk."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Ekonomi ASEAN Lanjut" },
+    "subtopic": "Perdagangan Internasional",
+    "lesson": { 
+      "title": "Kegiatan Ekspor dan Impor ASEAN",
+      "content": "Negara-negara ASEAN saling bertukar komoditas unggulan untuk melengkapi kebutuhan domestik masing-masing. Contoh: Indonesia mengekspor batu bara ke Vietnam and mengimpor beras dari Thailand. Penjelasan: Perdagangan intra-ASEAN memperkuat ketahanan ekonomi kawasan menghadapi gejolak global."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Ekonomi ASEAN Lanjut" },
+    "subtopic": "Perdagangan Internasional",
+    "lesson": { 
+      "title": "Peran Wisata dalam Ekonomi Regional",
+      "content": "Sektor pariwisata menjadi penyumbang devisa yang besar bagi banyak negara ASEAN melalui promosi keindahan alam. Contoh: Kampanye 'Wonderful Indonesia' and 'Truly Asia' (Malaysia). Penjelasan: Integrasi pariwisata melalui bebas visa antar anggota memudahkan pergerakan wisatawan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Ekonomi ASEAN Lanjut" },
+    "subtopic": "Perdagangan Internasional",
+    "lesson": { 
+      "title": "Hambatan Perdagangan Internasional",
+      "content": "Tarif pajak yang tinggi, kuota impor, and perbedaan standar kualitas barang sering menjadi kendala transaksi. Contoh: Kebijakan proteksi produk dalam negeri agar tidak kalah saing dengan barang impor. Penjelasan: ASEAN terus berupaya menghilangkan hambatan ini melalui perjanjian pasar bebas regional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Masa Pendudukan Jepang" },
+    "subtopic": "Sejarah Kemerdekaan",
+    "lesson": { 
+      "title": "Masuknya Jepang ke Indonesia",
+      "content": "Jepang datang dengan propaganda 'Saudara Tua' and gerakan 3A untuk menarik simpati rakyat Indonesia. Contoh: Keberhasilan Jepang mengusir Belanda dari Indonesia pada tahun 1942. Penjelasan: Meskipun awalnya disambut baik, Jepang kemudian melakukan pemerasan sumber daya untuk perang."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Masa Pendudukan Jepang" },
+    "subtopic": "Sejarah Kemerdekaan",
+    "lesson": { 
+      "title": "Penderitaan Rakyat Masa Romusha",
+      "content": "Sistem kerja paksa yang diterapkan Jepang untuk membangun infrastruktur pertahanan and lapangan terbang di berbagai daerah. Contoh: Ribuan rakyat meninggal akibat kelaparan and kelelahan saat dipaksa bekerja oleh Jepang. Penjelasan: Kekejaman masa pendudukan Jepang meninggalkan trauma mendalam bagi sejarah bangsa."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Masa Pendudukan Jepang" },
+    "subtopic": "Sejarah Kemerdekaan",
+    "lesson": { 
+      "title": "Pembentukan Organisasi Militer (PETA)",
+      "content": "Jepang melatih pemuda Indonesia menjadi tentara Pembela Tanah Air (PETA) untuk membantu menghadapi serangan Sekutu. Contoh: Latihan kedisiplinan militer yang sangat keras bagi para pemuda. Penjelasan: Bekal militer dari PETA ini nantinya sangat berguna bagi pejuang dalam mempertahankan kemerdekaan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Budaya dan Identitas" },
+    "subtopic": "Warisan Bangsa",
+    "lesson": { 
+      "title": "Melestarikan Kesenian Tradisional",
+      "content": "Upaya menjaga agar tarian, musik, and teater daerah tetap eksis di tengah kepungan budaya modern. Contoh: Mengadakan festival seni tahunan di sekolah and komunitas daerah. Penjelasan: Kesenian tradisional adalah cara kita menunjukkan keunikan identitas bangsa kepada dunia."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Budaya dan Identitas" },
+    "subtopic": "Warisan Bangsa",
+    "lesson": { 
+      "title": "Pemanfaatan Museum sebagai Media Edukasi",
+      "content": "Museum menyimpan bukti-bukti sejarah yang bisa dijadikan sumber belajar bagi generasi muda untuk mengenal jati diri. Contoh: Mengunjungi Museum Nasional untuk melihat sejarah perkembangan peradaban Nusantara. Penjelasan: Mempelajari masa lalu adalah langkah penting untuk membangun masa depan yang lebih baik."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPS",
+    "topic": { "name": "Bahasa Indonesia sebagai Identitas Nasional" },
+    "subtopic": "Warisan Bangsa",
+    "lesson": { 
+      "title": "Bahasa Indonesia sebagai Identitas Nasional",
+      "content": "Bahasa Indonesia berfungsi sebagai alat komunikasi pemersatu dari ribuan bahasa daerah yang ada di Indonesia. Contoh: Menggunakan bahasa Indonesia yang baik and benar dalam forum resmi. Penjelasan: Bangga menggunakan bahasa nasional merupakan wujud rasa cinta tanah air yang nyata."
+    }
+  }
+]

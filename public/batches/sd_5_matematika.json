@@ -1,0 +1,242 @@
+[
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Campuran & Persen" },
+    "subtopic": "Mengenal Pecahan Campuran",
+    "lesson": { "title": "Bentuk Pecahan Campuran" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Campuran & Persen" },
+    "subtopic": "Mengenal Pecahan Campuran",
+    "lesson": { "title": "Mengubah Pecahan Biasa ke Campuran" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Campuran & Persen" },
+    "subtopic": "Mengenal Pecahan Campuran",
+    "lesson": { "title": "Mengubah Pecahan Campuran ke Biasa" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Campuran & Persen" },
+    "subtopic": "Persen dan Desimal Lanjutan",
+    "lesson": { "title": "Hubungan Pecahan dan Persen" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Campuran & Persen" },
+    "subtopic": "Persen dan Desimal Lanjutan",
+    "lesson": { "title": "Mengubah Persen ke Pecahan Desimal" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Campuran & Persen" },
+    "subtopic": "Persen dan Desimal Lanjutan",
+    "lesson": { "title": "Menghitung Nilai Persen dari Suatu Bilangan" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Pecahan" },
+    "subtopic": "Penjumlahan dan Pengurangan Pecahan",
+    "lesson": { "title": "Penjumlahan Pecahan Beda Penyebut" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Pecahan" },
+    "subtopic": "Penjumlahan dan Pengurangan Pecahan",
+    "lesson": { "title": "Pengurangan Pecahan Beda Penyebut" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Pecahan" },
+    "subtopic": "Penjumlahan dan Pengurangan Pecahan",
+    "lesson": { "title": "Operasi Hitung Campuran Penjumlahan & Pengurangan" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Pecahan" },
+    "subtopic": "Perkalian dan Pembagian Pecahan",
+    "lesson": { "title": "Perkalian Pecahan Biasa" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Pecahan" },
+    "subtopic": "Perkalian dan Pembagian Pecahan",
+    "lesson": { "title": "Pembagian Pecahan Biasa" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Pecahan" },
+    "subtopic": "Perkalian dan Pembagian Pecahan",
+    "lesson": { "title": "Perkalian dan Pembagian Pecahan Campuran" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Kecepatan & Debit" },
+    "subtopic": "Satuan Jarak dan Waktu",
+    "lesson": { "title": "Konversi Satuan Waktu Jam, Menit, Detik" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Kecepatan & Debit" },
+    "subtopic": "Satuan Jarak dan Waktu",
+    "lesson": { "title": "Konversi Satuan Jarak (km ke m)" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Kecepatan & Debit" },
+    "subtopic": "Satuan Jarak dan Waktu",
+    "lesson": { "title": "Mengenal Hubungan Jarak, Waktu, dan Kecepatan" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Kecepatan & Debit" },
+    "subtopic": "Debit Air Sederhana",
+    "lesson": { "title": "Mengenal Satuan Volume (Liter, m3)" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Kecepatan & Debit" },
+    "subtopic": "Debit Air Sederhana",
+    "lesson": { "title": "Konsep Debit Sebagai Aliran Air" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Kecepatan & Debit" },
+    "subtopic": "Debit Air Sederhana",
+    "lesson": { "title": "Menghitung Debit dalam Masalah Sehari-hari" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Volume Bangun Ruang" },
+    "subtopic": "Kubus dan Balok",
+    "lesson": { "title": "Mengenal Sifat-sifat Kubus" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Volume Bangun Ruang" },
+    "subtopic": "Kubus dan Balok",
+    "lesson": { "title": "Mengenal Sifat-sifat Balok" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Volume Bangun Ruang" },
+    "subtopic": "Kubus dan Balok",
+    "lesson": { "title": "Mengenal Pangkat Tiga dan Akar Pangkat Tiga" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Volume Bangun Ruang" },
+    "subtopic": "Menghitung Volume",
+    "lesson": { "title": "Rumus Volume Kubus" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Volume Bangun Ruang" },
+    "subtopic": "Menghitung Volume",
+    "lesson": { "title": "Rumus Volume Balok" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Volume Bangun Ruang" },
+    "subtopic": "Menghitung Volume",
+    "lesson": { "title": "Volume Gabungan Kubus dan Balok" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Penyajian Data",
+    "lesson": { "title": "Membaca Data dari Daftar" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Penyajian Data",
+    "lesson": { "title": "Membuat Diagram Gambar (Piktogram)" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Penyajian Data",
+    "lesson": { "title": "Mengolah Data Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Diagram Lingkaran Dasar",
+    "lesson": { "title": "Membaca Diagram Lingkaran" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Diagram Lingkaran Dasar",
+    "lesson": { "title": "Menghitung Persentase dalam Diagram Lingkaran" }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Diagram Lingkaran Dasar",
+    "lesson": { "title": "Menafsirkan Informasi dari Berbagai Diagram" }
+  }
+]

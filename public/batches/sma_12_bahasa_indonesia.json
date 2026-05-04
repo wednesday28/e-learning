@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Surat Lamaran Pekerjaan" },
+    "subtopic": "Format dan Etika Penulisan",
+    "lesson": { 
+      "title": "Unsur-unsur Surat Lamaran Pekerjaan",
+      "content": "Surat lamaran pekerjaan harus mencantumkan tempat dan tanggal pembuatan, lampiran, perihal, alamat surat, salam pembuka, alinea pembuka, isi, penutup, salam penutup, serta tanda tangan dan nama terang. Contoh: Penulisan alamat surat yang benar (Tanpa kata 'Kepada'). Penjelasan: Setiap unsur memiliki aturan baku yang harus dipatuhi untuk menunjukkan profesionalisme pelamar kerja."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Surat Lamaran Pekerjaan" },
+    "subtopic": "Format dan Etika Penulisan",
+    "lesson": { 
+      "title": "Menulis Alinea Pembuka yang Menarik",
+      "content": "Menyebutkan sumber info lowongan dan posisi yang diinginkan dengan bahasa yang santun dan antusias. Contoh: 'Berdasarkan informasi dari media sosial, saya bermaksud melamar sebagai...'. Penjelasan: Alinea pembuka adalah kesan pertama perusahaan terhadap pelamar, sehingga harus ditulis dengan sangat hati-hati."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Surat Lamaran Pekerjaan" },
+    "subtopic": "Format dan Etika Penulisan",
+    "lesson": { 
+      "title": "Mendeskripsikan Kualifikasi Diri (Isi Surat)",
+      "content": "Menjelaskan pendidikan, keahlian, dan pengalaman yang relevan dengan pekerjaan yang dilamar. Contoh: Deskripsi kemampuan penguasaan bahasa asing atau perangkat lunak. Penjelasan: Bagian ini adalah 'jualan' utama pelamar agar perusahaan tertarik untuk memanggil ke tahap wawancara."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Surat Lamaran Pekerjaan" },
+    "subtopic": "Kebahasaan Surat Resmi",
+    "lesson": { 
+      "title": "Penggunaan Bahasa Baku dan Efektif",
+      "content": "Menghindari penggunaan bahasa gaul atau singkatan yang tidak resmi. Contoh: Menggunakan 'saya' bukan 'aku', 'yang' bukan 'yg'. Penjelasan: Surat resmi menuntut penggunaan bahasa Indonesia yang baik dan benar sesuai kaidah PUEBI."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Surat Lamaran Pekerjaan" },
+    "subtopic": "Kebahasaan Surat Resmi",
+    "lesson": { 
+      "title": "Menulis Daftar Riwayat Hidup (Curriculum Vitae)",
+      "content": "Menyusun biodata, riwayat pendidikan, dan organisasi secara kronologis dan rapi. Contoh: Format CV yang modern dan mudah dibaca. Penjelasan: CV adalah lampiran terpenting yang melengkapi informasi dalam surat lamaran pekerjaan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Surat Lamaran Pekerjaan" },
+    "subtopic": "Kebahasaan Surat Resmi",
+    "lesson": { 
+      "title": "Latihan Simulasi Mengirim Lamaran via Email",
+      "content": "Memperhatikan etika penulisan subjek email dan isi bodi email agar tidak dianggap spam. Contoh: Subjek 'Lamaran Pekerjaan_Nama Lengkap_Posisi'. Penjelasan: Di era digital, pengiriman lamaran via email memiliki aturan etika tersendiri yang harus dipahami siswa."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Sejarah" },
+    "subtopic": "Fakta vs Fiksi Sejarah",
+    "lesson": { 
+      "title": "Pengertian dan Jenis Teks Sejarah",
+      "content": "Membedakan teks sejarah (fakta murni) dan novel sejarah (fakta yang dibumbui imajinasi). Contoh: Novel 'Gajah Mada' karya Langit Kresna Hariadi. Penjelasan: Teks cerita sejarah membantu kita memahami peristiwa masa lalu dengan cara yang lebih hidup dan menarik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Sejarah" },
+    "subtopic": "Fakta vs Fiksi Sejarah",
+    "lesson": { 
+      "title": "Menganalisis Unsur Intrinsik Cerita Sejarah",
+      "content": "Menemukan tema, tokoh, alur, dan latar yang sesuai dengan fakta sejarah yang ada. Contoh: Analisis latar waktu masa kolonial Belanda. Penjelasan: Kesesuaian latar sangat penting untuk menjaga keaslian nuansa sejarah dalam cerita."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Sejarah" },
+    "subtopic": "Fakta vs Fiksi Sejarah",
+    "lesson": { 
+      "title": "Struktur Teks Cerita Sejarah",
+      "content": "Orientasi, urutan peristiwa (insiden), dan reorientasi (pandangan penulis). Contoh: Struktur cerita perlawanan rakyat terhadap penjajah. Penjelasan: Alur yang kronologis memudahkan pembaca mengikuti perkembangan peristiwa sejarah dari awal hingga akhir."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Sejarah" },
+    "subtopic": "Menulis Narasi Sejarah",
+    "lesson": { 
+      "title": "Menggunakan Keterangan Waktu Lampau",
+      "content": "Menggunakan kata-kata seperti 'kala itu', 'dahulu kala', 'pada masa itu' untuk membangun suasana. Contoh: Penggunaan konjungsi temporal dalam narasi perang Diponegoro. Penjelasan: Pilihan kata waktu lampau memperkuat kesan sejarah dalam tulisan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Sejarah" },
+    "subtopic": "Menulis Narasi Sejarah",
+    "lesson": { 
+      "title": "Verba Material dan Mental dalam Sejarah",
+      "content": "Verba material menjelaskan aksi perang/perjuangan, verba mental menjelaskan perasaan tokoh sejarah. Contoh: 'Berjuang' (material), 'Mencemaskan' (mental). Penjelasan: Perpaduan aksi dan emosi membuat tokoh sejarah terasa lebih manusiawi bagi pembaca."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Sejarah" },
+    "subtopic": "Menulis Narasi Sejarah",
+    "lesson": { 
+      "title": "Latihan Menulis Memoar Keluarga",
+      "content": "Menuliskan sejarah singkat tentang asal-usul keluarga atau perjuangan orang tua sebagai bentuk narasi sejarah pribadi. Contoh: Kisah kakek saat masa kemerdekaan. Penjelasan: Sejarah tidak selalu tentang tokoh besar, tapi juga tentang nilai perjuangan di lingkungan terdekat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial Kompleks" },
+    "subtopic": "Opini Redaksi dan Solusi",
+    "lesson": { 
+      "title": "Menganalisis Pandangan Penulis dalam Editorial",
+      "content": "Menemukan keberpihakan media massa terhadap suatu isu nasional yang sedang hangat. Contoh: Editorial tentang kenaikan harga BBM. Penjelasan: Editorial mencerminkan sikap dan ideologi sebuah lembaga media dalam merespons masalah publik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial Kompleks" },
+    "subtopic": "Opini Redaksi dan Solusi",
+    "lesson": { 
+      "title": "Membedakan Fakta dan Opini Redaksi",
+      "content": "Mengekstrak data berita yang nyata dan memisahkannya dari argumen subyektif redaksi. Contoh: Data angka kemiskinan (fakta) vs saran kebijakan (opini). Penjelasan: Kemampuan memilah fakta dan opini membantu kita menjadi pembaca media yang kritis dan cerdas."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial Kompleks" },
+    "subtopic": "Opini Redaksi dan Solusi",
+    "lesson": { 
+      "title": "Solusi dan Harapan dalam Editorial",
+      "content": "Menganalisis jalan keluar yang ditawarkan media untuk menyelesaikan masalah yang dibahas. Contoh: Saran redaksi untuk perbaikan sistem pendidikan. Penjelasan: Editorial yang baik harus konstruktif, artinya memberikan saran yang bisa dipraktikkan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial Kompleks" },
+    "subtopic": "Menulis Tajuk Rencana",
+    "lesson": { 
+      "title": "Menentukan Isu Strategis untuk Editorial",
+      "content": "Memilih topik yang memiliki dampak luas bagi masyarakat, bukan sekadar berita biasa. Contoh: Isu tentang perubahan iklim atau krisis energi. Penjelasan: Pemilihan isu yang tepat menentukan relevansi editorial di mata pembaca."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial Kompleks" },
+    "subtopic": "Menulis Tajuk Rencana",
+    "lesson": { 
+      "title": "Gaya Bahasa Retoris dalam Editorial",
+      "content": "Menggunakan pertanyaan yang menggugah kesadaran pembaca tanpa perlu dijawab. Contoh: 'Akankah kita terus diam melihat alam rusak?'. Penjelasan: Kalimat retoris berfungsi untuk menegaskan posisi media dan mengajak pembaca merenung."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial Kompleks" },
+    "subtopic": "Menulis Tajuk Rencana",
+    "lesson": { 
+      "title": "Latihan Menulis Editorial Sekolah",
+      "content": "Menulis pandangan tentang isu di sekolah, misalnya 'Pemanfaatan Perpustakaan Digital'. Contoh: Draf editorial majalah dinding sekolah. Penjelasan: Latihan ini mengasah keberanian siswa dalam menyampaikan pendapat yang sistematis dan bertanggung jawab."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Artikel Opini" },
+    "subtopic": "Argumentasi di Media Massa",
+    "lesson": { 
+      "title": "Karakteristik Artikel Opini Populer",
+      "content": "Tulisan lepas yang berisi pendapat seseorang tentang suatu isu, ditulis dengan gaya bahasa yang populer dan mudah dimengerti. Contoh: Artikel opini tentang 'Gaya Hidup Minimalis'. Penjelasan: Artikel opini bertujuan membagikan pemikiran pribadi penulis kepada khalayak luas melalui media."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Artikel Opini" },
+    "subtopic": "Argumentasi di Media Massa",
+    "lesson": { 
+      "title": "Menyusun Tesis dalam Artikel",
+      "content": "Menetapkan gagasan utama atau klaim yang akan dibuktikan kebenarannya sepanjang tulisan. Contoh: Tesis 'Teknologi AI tidak akan menggantikan kreativitas manusia'. Penjelasan: Tesis yang kuat dan orisinal adalah kunci utama daya tarik sebuah artikel opini."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Artikel Opini" },
+    "subtopic": "Argumentasi di Media Massa",
+    "lesson": { 
+      "title": "Menggunakan Fakta Pendukung yang Akurat",
+      "content": "Menyertakan hasil riset, kutipan ahli, atau berita terbaru untuk memperkuat opini penulis. Contoh: Kutipan ilmuwan tentang dampak sampah plastik. Penjelasan: Opini tanpa fakta pendukung hanya akan dianggap sebagai omong kosong yang tidak kredibel."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Artikel Opini" },
+    "subtopic": "Kebahasaan Artikel",
+    "lesson": { 
+      "title": "Adverbia Frekuentatif dalam Artikel",
+      "content": "Menggunakan kata keterangan seperti 'sering', 'kadang-kadang', 'selalu' untuk menunjukkan frekuensi peristiwa. Contoh: 'Siswa sering kali lupa waktu saat bermain game'. Penjelasan: Adverbia membantu penulis memberikan gambaran umum tentang pola perilaku dalam masyarakat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Artikel Opini" },
+    "subtopic": "Kebahasaan Artikel",
+    "lesson": { 
+      "title": "Konjungsi untuk Menata Argumentasi",
+      "content": "Menggunakan kata hubung seperti 'pertama', 'kedua', 'selain itu', 'sebagai simpulan'. Contoh: Penomoran argumen dalam teks artikel. Penjelasan: Penataan argumen yang rapi membuat pembaca lebih mudah memahami alur logika penulis."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Artikel Opini" },
+    "subtopic": "Kebahasaan Artikel",
+    "lesson": { 
+      "title": "Latihan Mengirim Artikel ke Media Online",
+      "content": "Mempelajari format dan cara mengirimkan tulisan ke portal berita atau blog edukasi. Contoh: Tips menembus redaksi media massa. Penjelasan: Mempublikasikan karya adalah langkah nyata siswa dalam berkontribusi pada pemikiran bangsa."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Kritik dan Esai" },
+    "subtopic": "Evaluasi Karya Sastra",
+    "lesson": { 
+      "title": "Perbedaan Kritik Sastra dan Esai",
+      "content": "Kritik sastra fokus pada penilaian kualitas karya dengan ukuran objektif, sedangkan esai lebih ke arah pandangan pribadi penulis secara luas. Contoh: Kritik terhadap novel 'Saman' vs Esai tentang 'Budaya Membaca'. Penjelasan: Keduanya merupakan bentuk tulisan analitis yang mengasah ketajaman berpikir siswa."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Kritik dan Esai" },
+    "subtopic": "Evaluasi Karya Sastra",
+    "lesson": { 
+      "title": "Prinsip Kritik Sastra yang Membangun",
+      "content": "Memberikan penilaian berdasarkan kriteria estetik, logik, dan etik tanpa bermaksud menjatuhkan penulisnya. Contoh: Kritik tentang penggambaran tokoh yang kurang kuat. Penjelasan: Kritik yang baik membantu pengarang untuk memperbaiki kualitas karyanya di masa depan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Kritik dan Esai" },
+    "subtopic": "Evaluasi Karya Sastra",
+    "lesson": { 
+      "title": "Menulis Esai dengan Gaya Personal",
+      "content": "Menyampaikan pemikiran tentang fenomena budaya atau kehidupan dengan sentuhan gaya bahasa yang khas. Contoh: Esai tentang 'Kerinduan pada Kampung Halaman'. Penjelasan: Esai adalah ruang bagi penulis untuk menunjukkan karakter dan keunikan cara pandangnya terhadap dunia."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Kritik dan Esai" },
+    "subtopic": "Teknik Menulis Analitis",
+    "lesson": { 
+      "title": "Struktur Esai: Pendahuluan, Isi, Penutup",
+      "content": "Memperhatikan kesatuan ide antar paragraf agar tulisan tidak terasa melompat-lompat. Contoh: Alur pembahasan esai tentang 'Digitalisasi Tradisi'. Penjelasan: Struktur yang solid membuat pesan dalam esai tersampaikan secara utuh dan berkesan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Kritik dan Esai" },
+    "subtopic": "Teknik Menulis Analitis",
+    "lesson": { 
+      "title": "Menggunakan Referensi dalam Kritik",
+      "content": "Mendukung penilaian dengan teori sastra atau perbandingan dengan karya sejenis. Contoh: Membandingkan gaya bahasa dua penyair kontemporer. Penjelasan: Referensi yang kuat membuat kritik sastra menjadi lebih berbobot dan diakui secara akademis."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Kritik dan Esai" },
+    "subtopic": "Teknik Menulis Analitis",
+    "lesson": { 
+      "title": "Menyusun Esai Foto di Media Sosial",
+      "content": "Latihan menggabungkan narasi esai pendek dengan serangkaian foto yang bercerita. Contoh: Esai foto tentang 'Pasar Tradisional'. Penjelasan: Esai modern dapat memanfaatkan berbagai media visual untuk memperkuat pesan yang ingin disampaikan."
+    }
+  }
+]

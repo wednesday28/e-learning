@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Reproduksi" },
+    "subtopic": "Reproduksi Manusia",
+    "lesson": { 
+      "title": "Pembelahan Sel: Mitosis dan Meiosis",
+      "content": "Mitosis menghasilkan sel anakan yang identik untuk pertumbuhan, meiosis menghasilkan sel kelamin dengan jumlah kromosom setengahnya. Contoh: Pertumbuhan sel kulit (mitosis) dan pembentukan sperma (meiosis). Penjelasan: Pembelahan sel adalah dasar bagi pewarisan sifat dan kelangsungan hidup jenis."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Reproduksi" },
+    "subtopic": "Reproduksi Manusia",
+    "lesson": { 
+      "title": "Organ Reproduksi Laki-laki",
+      "content": "Terdiri dari testis (penghasil sperma), vas deferens, dan penis. Contoh: Peran testis dalam menghasilkan hormon testosteron. Penjelasan: Sperma adalah sel kelamin jantan yang membawa informasi genetik dari ayah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Reproduksi" },
+    "subtopic": "Reproduksi Manusia",
+    "lesson": { 
+      "title": "Organ Reproduksi Perempuan",
+      "content": "Terdiri dari ovarium (penghasil sel telur), tuba fallopi, uterus (rahim), dan vagina. Contoh: Proses ovulasi atau pelepasan sel telur setiap bulan. Penjelasan: Rahim adalah tempat janin tumbuh dan berkembang selama masa kehamilan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Reproduksi Makhluk Hidup" },
+    "subtopic": "Teknologi Reproduksi",
+    "lesson": { 
+      "title": "Hidroponik dan Aeroponik",
+      "content": "Budidaya tanaman tanpa tanah, menggunakan air bernutrisi (hidroponik) atau udara lembap (aeroponik). Contoh: Menanam selada di dalam pipa air di perkotaan. Penjelasan: Teknologi ini sangat efektif untuk lahan sempit dan menghasilkan sayuran yang lebih bersih."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Reproduksi Makhluk Hidup" },
+    "subtopic": "Teknologi Reproduksi",
+    "lesson": { 
+      "title": "Inseminasi Buatan pada Ternak",
+      "content": "Proses memasukkan sperma hewan jantan ke dalam saluran reproduksi betina dengan bantuan alat. Contoh: Program peningkatan kualitas sapi potong di peternakan. Penjelasan: Inseminasi buatan bertujuan mendapatkan bibit unggul secara cepat dan efisien."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Reproduksi Makhluk Hidup" },
+    "subtopic": "Teknologi Reproduksi",
+    "lesson": { 
+      "title": "Kultur Jaringan Tumbuhan",
+      "content": "Mengembangkan bagian kecil tumbuhan (eksplan) di laboratorium yang steril untuk menghasilkan bibit banyak. Contoh: Perbanyakan bibit jati emas melalui laboratorium. Penjelasan: Satu helai daun bisa menghasilkan ribuan tanaman baru yang seragam sifatnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Pewarisan Sifat" },
+    "subtopic": "Hukum Mendel",
+    "lesson": { 
+      "title": "Mengenal Gen dan Kromosom",
+      "content": "Gen adalah unit instruksi genetik, kromosom adalah pembawa gen di dalam inti sel. Contoh: Warna mata dan bentuk rambut yang diwarisi dari orang tua. Penjelasan: DNA adalah molekul panjang yang menyimpan seluruh data cetak biru makhluk hidup."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Pewarisan Sifat" },
+    "subtopic": "Hukum Mendel",
+    "lesson": { 
+      "title": "Persilangan Monohibrid (Satu Sifat)",
+      "content": "Persilangan antara dua individu dengan satu sifat beda yang menonjol. Contoh: Persilangan kacang ercis batang tinggi dengan batang pendek. Penjelasan: Sifat dominan akan menutupi sifat resesif pada keturunan generasi pertama."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Pewarisan Sifat" },
+    "subtopic": "Hukum Mendel",
+    "lesson": { 
+      "title": "Persilangan Dihibrid (Dua Sifat)",
+      "content": "Persilangan yang memperhatikan dua sifat beda sekaligus. Contoh: Kacang ercis biji bulat kuning disilangkan dengan biji kisut hijau. Penjelasan: Sifat-sifat akan memisah dan bergabung secara bebas menurut hukum II Mendel."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Listrik Statis" },
+    "subtopic": "Muatan dan Interaksi",
+    "lesson": { 
+      "title": "Terbentuknya Muatan Listrik",
+      "content": "Benda menjadi bermuatan karena perpindahan elektron saat digosok. Contoh: Penggaris plastik yang digosok kain wol menarik kertas. Penjelasan: Muatan sejenis tolak-menolak, muatan berbeda jenis tarik-menarik."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Listrik Statis" },
+    "subtopic": "Muatan dan Interaksi",
+    "lesson": { 
+      "title": "Hukum Coulomb: Gaya Listrik",
+      "content": "Besarnya gaya tarik atau tolak antara dua muatan dipengaruhi oleh besar muatan dan jaraknya. Contoh: Balon yang menempel di dinding setelah digosok rambut. Penjelasan: Semakin dekat jarak kedua muatan, semakin kuat gaya listrik yang dirasakan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Listrik Statis" },
+    "subtopic": "Muatan dan Interaksi",
+    "lesson": { 
+      "title": "Fenomena Petir dan Penangkal Petir",
+      "content": "Loncatan muatan listrik raksasa antara awan ke bumi yang mencari jalur tercepat. Contoh: Ujung penangkal petir yang runcing untuk menangkap muatan. Penjelasan: Penangkal petir menyalurkan energi listrik petir langsung ke dalam tanah (grounding)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Listrik Dinamis" },
+    "subtopic": "Hukum Ohm dan Arus",
+    "lesson": { 
+      "title": "Arus Listrik dan Beda Potensial",
+      "content": "Arus mengalir dari potensial tinggi ke rendah, berlawanan dengan arah aliran elektron. Contoh: Air mengalir dari tempat tinggi ke rendah sebagai analogi. Penjelasan: Beda potensial (tegangan) diukur dalam satuan Volt, arus dalam Ampere."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Listrik Dinamis" },
+    "subtopic": "Hukum Ohm dan Arus",
+    "lesson": { 
+      "title": "Hukum Ohm: Hubungan V, I, R",
+      "content": "Tegangan berbanding lurus dengan arus dan hambatan (V = I x R). Contoh: Menghitung arus yang mengalir pada lampu dengan hambatan tertentu. Penjelasan: Hambatan kawat dipengaruhi oleh jenis bahan, panjang, dan luas penampang kawat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Listrik Dinamis" },
+    "subtopic": "Hukum Ohm dan Arus",
+    "lesson": { 
+      "title": "Energi dan Biaya Listrik Bulanan",
+      "content": "Menghitung pemakaian energi listrik (kWh) dan biaya yang harus dibayar ke PLN. Contoh: Mengalikan daya lampu (watt) dengan durasi pemakaian (jam). Penjelasan: Mematikan alat elektronik yang tidak perlu adalah cara paling efektif menghemat biaya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Kemagnetan" },
+    "subtopic": "Gaya Lorentz",
+    "lesson": { 
+      "title": "Teori Kemagnetan Bumi",
+      "content": "Bumi memiliki kutub magnet yang sedikit bergeser dari kutub geografis (deklinasi). Contoh: Jarum kompas menunjuk arah utara magnet bumi. Penjelasan: Hewan seperti burung dan penyu menggunakan magnet bumi sebagai navigasi saat migrasi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Kemagnetan" },
+    "subtopic": "Gaya Lorentz",
+    "lesson": { 
+      "title": "Membuat Magnet dengan Arus (Elektromagnet)",
+      "content": "Kumparan kawat yang dialiri listrik akan menghasilkan medan magnet di sekitarnya. Contoh: Bel listrik dan pengunci pintu otomatis (solenoid). Penjelasan: Kekuatan magnet bisa ditambah dengan memperbanyak lilitan atau memperbesar arus."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Kemagnetan" },
+    "subtopic": "Gaya Lorentz",
+    "lesson": { 
+      "title": "Motor Listrik dan Transformator",
+      "content": "Menggunakan gaya Lorentz untuk mengubah energi listrik menjadi gerak putar. Contoh: Mesin pompa air dan kipas angin. Penjelasan: Transformator digunakan untuk menaikkan atau menurunkan tegangan listrik AC."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Bioteknologi" },
+    "subtopic": "Konvensional dan Modern",
+    "lesson": { 
+      "title": "Bioteknologi Pangan Tradisional",
+      "content": "Memanfaatkan mikroorganisme (jamur/bakteri) untuk mengolah makanan melalui fermentasi. Contoh: Tempe (Rhizopus), Tape (Saccharomyces), Yoghurt (Lactobacillus). Penjelasan: Proses fermentasi mengubah tekstur dan meningkatkan gizi bahan pangan dasar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Bioteknologi" },
+    "subtopic": "Konvensional dan Modern",
+    "lesson": { 
+      "title": "Rekayasa Genetika dan GMO",
+      "content": "Memodifikasi DNA makhluk hidup untuk menghasilkan sifat baru yang diinginkan. Contoh: Tanaman padi yang tahan hama atau buah tanpa biji. Penjelasan: Bioteknologi modern memberikan solusi bagi ketahanan pangan dunia di masa depan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Bioteknologi" },
+    "subtopic": "Konvensional dan Modern",
+    "lesson": { 
+      "title": "Bayi Tabung dan Kloning",
+      "content": "Pembuahan sel telur di luar tubuh (IVF) atau menghasilkan individu identik dari sel tubuh. Contoh: Domba Dolly sebagai hasil kloning pertama di dunia. Penjelasan: Penerapan bioteknologi pada manusia harus memperhatikan etika dan norma yang berlaku."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Partikel Materi" },
+    "subtopic": "Atom dan Molekul",
+    "lesson": { 
+      "title": "Struktur Atom: Proton, Neutron, Elektron",
+      "content": "Atom terdiri dari inti (proton, neutron) dan elektron yang mengelilingi inti. Contoh: Model atom Bohr seperti tata surya mini. Penjelasan: Nomor atom ditentukan oleh jumlah proton yang ada di dalam inti atom tersebut."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Partikel Materi" },
+    "subtopic": "Atom dan Molekul",
+    "lesson": { 
+      "title": "Molekul Unsur dan Molekul Senyawa",
+      "content": "Molekul unsur terdiri dari atom yang sama, senyawa terdiri dari atom yang berbeda. Contoh: Gas oksigen (O2) dan molekul air (H2O). Penjelasan: Gabungan atom-atom membentuk ikatan kimia untuk mencapai kestabilan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Partikel Materi" },
+    "subtopic": "Atom dan Molekul",
+    "lesson": { 
+      "title": "Ion: Atom yang Bermuatan",
+      "content": "Terbentuk jika atom melepaskan atau menerima elektron. Contoh: Garam dapur terdiri dari ion Natrium (+) dan ion Klorida (-). Penjelasan: Adanya ion membuat suatu larutan dapat menghantarkan arus listrik (elektrolit)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Tanah dan Kehidupan" },
+    "subtopic": "Organisme Tanah",
+    "lesson": { 
+      "title": "Peran Cacing Tanah bagi Kesuburan",
+      "content": "Cacing menggemburkan tanah dan kotorannya kaya akan nutrisi bagi tanaman. Contoh: Tanah yang banyak cacingnya terasa lebih gembur dan hitam. Penjelasan: Organisme tanah berfungsi sebagai dekomposer (pengurai) materi organik."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Tanah dan Kehidupan" },
+    "subtopic": "Organisme Tanah",
+    "lesson": { 
+      "title": "Mikroba Tanah: Pengikat Nitrogen",
+      "content": "Bakteri Rhizobium pada akar tanaman kacang-kacangan membantu menyerap gas nitrogen dari udara. Contoh: Benjolan pada akar kedelai. Penjelasan: Kerjasama antara bakteri dan tanaman meningkatkan ketersediaan pupuk alami di tanah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Tanah dan Kehidupan" },
+    "subtopic": "Organisme Tanah",
+    "lesson": { 
+      "title": "Menjaga Tekstur Tanah agar Tidak Rusak",
+      "content": "Hindari penggunaan pestisida kimia berlebih yang dapat membunuh mikroorganisme baik di tanah. Contoh: Penggunaan pupuk kompos lebih baik daripada pupuk kimia. Penjelasan: Tanah yang sehat adalah fondasi bagi ketahanan pangan dan lingkungan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Teknologi Ramah Lingkungan" },
+    "subtopic": "Prinsip Berkelanjutan",
+    "lesson": { 
+      "title": "Panel Surya: Energi dari Cahaya",
+      "content": "Mengubah energi foton matahari langsung menjadi listrik tanpa limbah asap. Contoh: Lampu lalu lintas bertenaga surya. Penjelasan: Teknologi ini sangat cocok dikembangkan di Indonesia yang kaya sinar matahari."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Teknologi Ramah Lingkungan" },
+    "subtopic": "Prinsip Berkelanjutan",
+    "lesson": { 
+      "title": "Bio-Gas dari Limbah Organik",
+      "content": "Mengolah kotoran ternak atau sampah dapur menjadi gas metana untuk bahan bakar. Contoh: Tabung digester biogas di desa mandiri energi. Penjelasan: Biogas merupakan solusi energi murah dan mengurangi polusi udara dari gas metana liar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPA",
+    "topic": { "name": "Teknologi Ramah Lingkungan" },
+    "subtopic": "Prinsip Berkelanjutan",
+    "lesson": { 
+      "title": "Fitoremediasi: Pembersihan dengan Tanaman",
+      "content": "Menggunakan tanaman tertentu untuk menyerap logam berat dan polutan dari tanah atau air. Contoh: Eceng gondok yang digunakan untuk membersihkan air danau dari limbah. Penjelasan: Teknologi ramah lingkungan mengutamakan keseimbangan alam dalam memecahkan masalah polusi."
+    }
+  }
+]

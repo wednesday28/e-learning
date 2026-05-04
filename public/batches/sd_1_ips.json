@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Identitas Diri dan Keluarga" },
+    "subtopic": "Mengenal Diri Sendiri",
+    "lesson": { 
+      "title": "Namaku dan Identitasku",
+      "content": "Setiap orang memiliki nama lengkap dan nama panggilan. Kita harus bangga dengan nama kita. Selain nama, kita juga punya hobi dan kegemaran yang berbeda-beda. Contoh: Nama saya Budi, hobi saya bermain bola. Penjelasan: Mengenal diri sendiri membantu kita percaya diri."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Identitas Diri dan Keluarga" },
+    "subtopic": "Mengenal Diri Sendiri",
+    "lesson": { 
+      "title": "Jenis Kelamin: Laki-laki dan Perempuan",
+      "content": "Tuhan menciptakan manusia dalam dua jenis kelamin: laki-laki dan perempuan. Kita harus saling menghormati perbedaan ini. Contoh: Kakak saya laki-laki, adik saya perempuan. Penjelasan: Laki-laki dan perempuan memiliki peran yang sama dalam keluarga."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Identitas Diri dan Keluarga" },
+    "subtopic": "Mengenal Diri Sendiri",
+    "lesson": { 
+      "title": "Mengetahui Tanggal Lahir",
+      "content": "Tanggal lahir adalah hari kita lahir ke dunia. Setiap tahun kita merayakan hari ulang tahun. Contoh: Saya lahir tanggal 10 Januari. Penjelasan: Tanggal lahir dicatat dalam akta kelahiran sebagai bukti identitas."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Identitas Diri dan Keluarga" },
+    "subtopic": "Anggota Keluarga",
+    "lesson": { 
+      "title": "Keluarga Inti: Ayah, Ibu, Anak",
+      "content": "Keluarga inti terdiri dari ayah, ibu, dan anak-anak. Mereka tinggal bersama dalam satu rumah. Contoh: Di rumah ada Ayah, Ibu, Kakak, dan Saya. Penjelasan: Ayah adalah kepala keluarga yang bekerja mencari nafkah."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Identitas Diri dan Keluarga" },
+    "subtopic": "Anggota Keluarga",
+    "lesson": { 
+      "title": "Tugas Anggota Keluarga",
+      "content": "Ibu bertugas mengurus rumah tangga dan menyayangi kita. Anak bertugas belajar dan membantu orang tua. Contoh: Membantu ibu menyapu lantai. Penjelasan: Semua anggota keluarga harus bekerja sama agar rumah nyaman."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Identitas Diri dan Keluarga" },
+    "subtopic": "Anggota Keluarga",
+    "lesson": { 
+      "title": "Keluarga Besar: Kakek dan Nenek",
+      "content": "Keluarga besar terdiri dari keluarga inti ditambah kakek, nenek, paman, dan bibi. Contoh: Saat Lebaran kita berkunjung ke rumah Nenek. Penjelasan: Kita harus sopan dan hormat kepada anggota keluarga yang lebih tua."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Rumah dan Lingkungan" },
+    "subtopic": "Alamat Tinggal",
+    "lesson": { 
+      "title": "Pentingnya Tahu Alamat Rumah",
+      "content": "Alamat rumah terdiri dari nama jalan, nomor rumah, RT, dan RW. Kita harus hafal alamat rumah kita. Contoh: Rumah saya di Jalan Melati No. 5. Penjelasan: Tahu alamat rumah penting agar kita tidak tersesat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Rumah dan Lingkungan" },
+    "subtopic": "Alamat Tinggal",
+    "lesson": { 
+      "title": "Mengenal Tetangga",
+      "content": "Tetangga adalah orang yang rumahnya dekat dengan rumah kita. Kita harus ramah kepada tetangga. Contoh: Menyapa tetangga saat bertemu di jalan. Penjelasan: Tetangga adalah saudara terdekat kita saat di rumah."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Rumah dan Lingkungan" },
+    "subtopic": "Alamat Tinggal",
+    "lesson": { 
+      "title": "Denah Sederhana Menuju Rumah",
+      "content": "Denah adalah gambar yang menunjukkan letak suatu tempat. Kita bisa membuat denah dari sekolah ke rumah. Contoh: Rumah saya dekat dengan masjid atau pasar. Penjelasan: Penunjuk jalan (patokan) memudahkan orang mencari rumah kita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Peristiwa dalam Hidup" },
+    "subtopic": "Cerita Masa Kecil",
+    "lesson": { 
+      "title": "Foto dan Kenangan Masa Bayi",
+      "content": "Foto masa kecil menunjukkan perubahan kita dari bayi hingga sekarang. Contoh: Melihat foto saat pertama kali belajar berjalan. Penjelasan: Foto adalah bukti sejarah pribadi yang sangat berharga."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Peristiwa dalam Hidup" },
+    "subtopic": "Cerita Masa Kecil",
+    "lesson": { 
+      "title": "Pengalaman Menyenangkan",
+      "content": "Pengalaman menyenangkan adalah peristiwa yang membuat kita bahagia. Contoh: Pergi berwisata ke kebun binatang bersama Ayah. Penjelasan: Mengingat kejadian indah membuat perasaan kita tenang."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Peristiwa dalam Hidup" },
+    "subtopic": "Cerita Masa Kecil",
+    "lesson": { 
+      "title": "Pengalaman Menyedihkan",
+      "content": "Pengalaman menyedihkan adalah peristiwa yang membuat kita sedih. Kita harus tetap semangat. Contoh: Terjatuh dari sepeda dan terluka. Penjelasan: Dari kejadian sedih, kita bisa belajar untuk lebih berhati-hati."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Kasih Sayang" },
+    "subtopic": "Sikap Terpuji",
+    "lesson": { 
+      "title": "Menyayangi Orang Tua",
+      "content": "Kasih sayang orang tua sangat besar. Kita membalasnya dengan cara patuh dan membantu. Contoh: Mendoakan orang tua setiap hari. Penjelasan: Anak yang berbakti akan disayangi oleh semua orang."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Kasih Sayang" },
+    "subtopic": "Sikap Terpuji",
+    "lesson": { 
+      "title": "Rukun dengan Saudara",
+      "content": "Hidup rukun artinya tidak bertengkar dengan kakak atau adik. Saling berbagi mainan dan makanan. Contoh: Meminjamkan pensil warna kepada adik. Penjelasan: Kerukunan dalam rumah membuat suasana menjadi damai."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Kasih Sayang" },
+    "subtopic": "Sikap Terpuji",
+    "lesson": { 
+      "title": "Hormat kepada Guru",
+      "content": "Guru adalah orang tua kita di sekolah. Kita harus mendengarkan penjelasan guru dengan baik. Contoh: Mengucapkan salam saat bertemu guru. Penjelasan: Guru membimbing kita agar menjadi anak yang pintar dan baik."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Kebutuhan Hidup" },
+    "subtopic": "Kebutuhan Dasar",
+    "lesson": { 
+      "title": "Makanan Sehat dan Bergizi",
+      "content": "Manusia butuh makan untuk tumbuh. Pilihlah makanan yang bersih dan sehat. Contoh: Nasi, sayur, lauk pauk, buah, dan susu. Penjelasan: Makanan memberikan energi agar kita kuat beraktivitas."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Kebutuhan Hidup" },
+    "subtopic": "Kebutuhan Dasar",
+    "lesson": { 
+      "title": "Pakaian untuk Melindungi Tubuh",
+      "content": "Pakaian berguna untuk melindungi tubuh dari panas, dingin, dan debu. Contoh: Memakai jaket saat cuaca dingin. Penjelasan: Berpakaian yang rapi dan bersih adalah bagian dari menjaga kesehatan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Kebutuhan Hidup" },
+    "subtopic": "Kebutuhan Dasar",
+    "lesson": { 
+      "title": "Rumah sebagai Tempat Berteduh",
+      "content": "Rumah melindungi kita dari hujan dan panas matahari. Rumah juga tempat berkumpul keluarga. Contoh: Membersihkan tempat tidur sendiri. Penjelasan: Rumah yang bersih akan menjauhkan kita dari penyakit."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Cita-cita dan Pekerjaan" },
+    "subtopic": "Masa Depan",
+    "lesson": { 
+      "title": "Mengenal Berbagai Profesi",
+      "content": "Ada banyak pekerjaan seperti dokter, guru, polisi, dan pilot. Setiap pekerjaan sangat berguna. Contoh: Dokter membantu menyembuhkan orang sakit. Penjelasan: Pekerjaan dilakukan untuk melayani masyarakat dan mencari nafkah."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Cita-cita dan Pekerjaan" },
+    "subtopic": "Masa Depan",
+    "lesson": { 
+      "title": "Apa Cita-citamu?",
+      "content": "Cita-cita adalah impian tentang pekerjaan di masa depan. Kita harus rajin belajar untuk mencapainya. Contoh: Saya ingin menjadi astronot agar bisa ke bulan. Penjelasan: Belajar dengan giat adalah cara menggapai cita-cita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Cita-cita dan Pekerjaan" },
+    "subtopic": "Masa Depan",
+    "lesson": { 
+      "title": "Menghargai Hasil Kerja Orang Lain",
+      "content": "Kita harus menghargai barang yang kita punya karena didapat dari kerja keras orang tua. Contoh: Merawat buku sekolah dengan baik. Penjelasan: Sikap menghargai menunjukkan kita anak yang bersyukur."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Lingkungan Sekolah" },
+    "subtopic": "Sekolahku",
+    "lesson": { 
+      "title": "Mengenal Gedung Sekolah",
+      "content": "Sekolah memiliki ruang kelas, perpustakaan, kantin, dan lapangan olahraga. Contoh: Membaca buku di perpustakaan. Penjelasan: Sekolah adalah tempat kita menuntut ilmu bersama teman-teman."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Lingkungan Sekolah" },
+    "subtopic": "Sekolahku",
+    "lesson": { 
+      "title": "Warga Sekolah",
+      "content": "Warga sekolah terdiri dari kepala sekolah, guru, murid, dan penjaga sekolah. Contoh: Murid-murid belajar dengan tekun di kelas. Penjelasan: Semua warga sekolah harus menjaga ketertiban dan kebersihan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Lingkungan Sekolah" },
+    "subtopic": "Sekolahku",
+    "lesson": { 
+      "title": "Aturan dan Tata Tertib Sekolah",
+      "content": "Tata tertib dibuat agar kegiatan belajar lancar. Kita harus datang tepat waktu dan memakai seragam. Contoh: Tidak boleh membuang sampah sembarangan. Penjelasan: Mematuhi aturan sekolah melatih kita menjadi disiplin."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Sejarah Sederhana" },
+    "subtopic": "Benda Bersejarah",
+    "lesson": { 
+      "title": "Benda Milik Pribadi",
+      "content": "Benda yang kita miliki sejak kecil seperti mainan atau pakaian bayi. Contoh: Boneka kesayangan saat masih TK. Penjelasan: Benda-benda ini menyimpan cerita tentang pertumbuhan kita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Sejarah Sederhana" },
+    "subtopic": "Benda Bersejarah",
+    "lesson": { 
+      "title": "Dokumen Penting: Akta Kelahiran",
+      "content": "Akta kelahiran adalah surat tanda lahir yang dikeluarkan pemerintah. Contoh: Melihat nama orang tua di dalam akta kelahiran. Penjelasan: Dokumen penting harus disimpan dengan rapi dan tidak boleh hilang."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Sejarah Sederhana" },
+    "subtopic": "Benda Bersejarah",
+    "lesson": { 
+      "title": "Album Foto Keluarga",
+      "content": "Kumpulan foto ayah, ibu, dan anak yang disusun dalam satu buku. Contoh: Foto pernikahan ayah dan ibu. Penjelasan: Album foto membantu kita mengenal silsilah atau asal-usul keluarga."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Kegiatan Ekonomi" },
+    "subtopic": "Mengenal Uang",
+    "lesson": { 
+      "title": "Kegunaan Uang",
+      "content": "Uang digunakan sebagai alat tukar untuk membeli barang kebutuhan. Contoh: Membeli pensil di koperasi sekolah. Penjelasan: Kita harus menggunakan uang dengan bijak dan hemat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Kegiatan Ekonomi" },
+    "subtopic": "Mengenal Uang",
+    "lesson": { 
+      "title": "Belajar Menabung",
+      "content": "Menabung adalah menyisihkan uang saku untuk disimpan di celengan atau bank. Contoh: Memasukkan uang koin ke dalam celengan ayam. Penjelasan: Rajin menabung pangkal kaya dan berguna di masa depan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "IPS",
+    "topic": { "name": "Kegiatan Ekonomi" },
+    "subtopic": "Mengenal Uang",
+    "lesson": { 
+      "title": "Kebutuhan vs Keinginan",
+      "content": "Kebutuhan adalah hal yang wajib ada (makan), keinginan adalah hal yang kita mau tapi tidak wajib (mainan baru). Contoh: Mendahulukan beli buku daripada beli es krim. Penjelasan: Belajar membedakan kebutuhan membantu kita hidup sederhana."
+    }
+  }
+]

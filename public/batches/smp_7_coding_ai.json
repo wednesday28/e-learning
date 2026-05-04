@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Algoritma Pemrograman" },
+    "subtopic": "Dasar Algoritma",
+    "lesson": { 
+      "title": "Konsep Algoritma dalam Pemecahan Masalah",
+      "content": "Selamat datang di jenjang SMP! Di sini, koding bukan lagi sekadar bermain blok warna-warni, tapi tentang membangun logika yang kuat untuk memecahkan masalah nyata. Algoritma adalah urutan langkah logis yang disusun secara sistematis untuk menyelesaikan sebuah tugas. Di dunia koding, algoritma adalah 'resep' yang harus diikuti komputer dengan presisi 100%. Algoritma yang baik harus memenuhi tiga syarat utama: memiliki titik mulai (input), langkah yang jelas dan tidak membingungkan (proses), serta hasil akhir yang diinginkan (output). Sebagai seorang pelajar SMP, kamu harus mulai membiasakan diri untuk merancang algoritma sebelum menyentuh komputer. Bayangkan kamu ingin membuat program yang bisa menghitung luas segitiga. Algoritmanya: 1. Masukkan nilai alas, 2. Masukkan nilai tinggi, 3. Kalikan alas dengan tinggi, 4. Bagi hasilnya dengan dua, 5. Tampilkan hasil luas. Jika langkah nomor 4 terlewat, hasilnya akan salah. Inilah pentingnya presisi. Algoritma membantu kita berpikir jernih dan menghindari kesalahan konyol yang sering disebut 'logical error'. Dengan menguasai konsep dasar algoritma, kamu sebenarnya sedang membangun fondasi paling penting dalam ilmu komputer yang akan kamu gunakan terus hingga tingkat profesional nanti."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Algoritma Pemrograman" },
+    "subtopic": "Dasar Algoritma",
+    "lesson": { 
+      "title": "Penulisan Pseudocode Standar",
+      "content": "Setelah memahami konsepnya, kita perlu cara untuk menuliskan algoritma tersebut agar mudah dibaca oleh sesama manusia namun tetap mendekati bahasa komputer. Cara ini disebut Pseudocode. 'Pseudo' berarti semu atau tiruan, jadi pseudocode adalah kode tiruan. Tidak ada aturan baku yang kaku dalam penulisan pseudocode, tapi biasanya kita menggunakan kata kunci bahasa Inggris sederhana seperti 'READ' untuk mengambil data, 'SET' untuk menyimpan data ke variabel, 'IF-THEN' untuk keputusan, dan 'PRINT' untuk menampilkan hasil. Contoh pseudocode menghitung luas: 'READ alas; READ tinggi; SET luas = 0.5 * alas * tinggi; PRINT luas;'. Mengapa kita tidak langsung menulis kode asli saja? Karena bahasa pemrograman asli (seperti Python atau C++) punya aturan penulisan (syntax) yang sangat detail, seperti tanda titik koma atau kurung yang harus pas. Jika kita terjebak pada detail teknis tersebut di awal, logika kita bisa terganggu. Pseudocode memungkinkan kita fokus pada 'apa' yang ingin kita capai, bukan 'bagaimana' cara mengetiknya secara teknis. Berlatih menulis pseudocode akan membuatmu sangat handal dalam merancang logika program yang kompleks. Ini adalah bahasa universal para programmer saat mereka sedang berdiskusi merancang sistem besar sebelum masuk ke tahap pengetikan kode yang sesungguhnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Algoritma Pemrograman" },
+    "subtopic": "Dasar Algoritma",
+    "lesson": { 
+      "title": "Optimasi Langkah Algoritma",
+      "content": "Seorang koding jagoan tidak hanya puas dengan algoritma yang 'jalan', tapi ia selalu mencari algoritma yang 'paling cepat dan hemat'. Proses ini disebut Optimasi. Bayangkan ada dua orang yang disuruh mencari angka terbesar dari daftar 100 angka. Orang pertama mengecek angka satu persatu dari depan ke belakang. Orang kedua mengurutkan angkanya dulu baru mengambil yang paling belakang. Mana yang lebih cepat? Dalam dunia komputer, setiap langkah algoritma membutuhkan waktu (time complexity) dan ruang memori (space complexity). Jika programmu punya sejuta langkah yang sebenarnya bisa diringkas menjadi sepuluh langkah, maka programmu akan lambat dan boros baterai. Optimasi melibatkan pemikiran kritis untuk membuang langkah-langkah yang tidak perlu atau repetitif. Misalnya, daripada mengecek kondisi yang sama berulang kali, simpanlah hasil pengecekan tersebut dalam sebuah variabel. Belajar optimasi melatihmu untuk menjadi efisien dan perfeksionis dalam hal kualitas. Di era data besar (Big Data) saat ini, algoritma yang dioptimalkan dengan baik adalah kunci keberhasilan perusahaan teknologi besar seperti Google dan Facebook. Dengan belajar mengoptimalkan algoritmamu sendiri sejak kelas 7, kamu sedang mengasah ketajaman berpikirmu untuk selalu memberikan solusi terbaik dengan cara yang paling efektif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Algoritma Pemrograman" },
+    "subtopic": "Struktur Kontrol",
+    "lesson": { 
+      "title": "Sequence (Urutan) dalam Program",
+      "content": "Struktur kontrol paling dasar dalam koding adalah Sequence atau Urutan. Ini berarti instruksi dijalankan baris demi baris, mulai dari yang paling atas sampai yang paling bawah tanpa ada yang melompat. Meskipun terlihat sederhana, urutan adalah fondasi stabilitas program. Kesalahan urutan satu baris saja bisa merusak seluruh logika. Misalnya dalam program pendaftaran akun: kamu harus mengecek apakah email sudah terdaftar (Langkah 1) sebelum membuat akun baru (Langkah 2). Jika urutannya tertukar, kamu bisa menciptakan akun ganda yang berantakan. Mempelajari sequence melatih kedisiplinan dan ketelitianmu. Kamu belajar bahwa komputer adalah mesin yang sangat patuh dan tidak punya inisiatif; ia hanya melakukan apa yang kamu perintahkan sesuai urutan yang kamu tulis. Programmer pemula seringkali terburu-buru ingin langsung ke bagian yang canggih dan melupakan urutan dasar yang benar. Padahal, debugging (pencarian kesalahan) paling sering dilakukan pada masalah urutan ini. Saat kamu menulis kode di Blockly atau Scratch, perhatikan kaitan antar blokmu. Apakah aliran informasinya masuk akal dari atas ke bawah? Dengan memahami sequence secara mendalam, kamu akan memiliki kontrol penuh terhadap alur kerja aplikasimu dan memastikan setiap proses berjalan lancar tanpa ada instruksi yang bertabrakan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Algoritma Pemrograman" },
+    "subtopic": "Struktur Kontrol",
+    "lesson": { 
+      "title": "Pengenalan Looping (Perulangan)",
+      "content": "Pernahkah kamu harus menulis namamu sebanyak 100 kali sebagai hukuman? Pasti sangat membosankan. Komputer diciptakan untuk melakukan tugas-tugas membosankan seperti itu tanpa pernah mengeluh. Di koding, kita menggunakan struktur kontrol 'Looping' atau Perulangan. Ada dua jenis utama loop yang harus kamu ketahui: 'FOR' loop untuk pengulangan yang jumlahnya sudah pasti (misal: ulangi 10 kali), dan 'WHILE' loop untuk pengulangan yang terus berjalan selama sebuah kondisi terpenuhi (misal: ulangi terus selama baterai masih di atas 5%). Looping membuat kodemu menjadi sangat ringkas dan elegan. Daripada menulis perintah 'Jalan 1 langkah' sebanyak sepuluh kali, kamu cukup menulis 'Ulangi 10 kali: Jalan 1 langkah'. Ini menghemat banyak waktu dan tenaga. Namun, hati-hatilah terhadap 'Infinite Loop' atau pengulangan tanpa akhir yang bisa membuat komputermu macet (hang) karena terus bekerja tanpa henti tanpa ada perintah untuk berhenti. Belajar looping melatih kemampuan abstraksi dan generalisasi-mu. Kamu belajar melihat pola berulang dalam sebuah tugas dan merumuskannya menjadi satu perintah loop yang cerdas. Kemampuan ini sangat penting saat kamu mulai mengolah data dalam jumlah banyak atau membuat animasi yang butuh gerakan terus-menerus."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Algoritma Pemrograman" },
+    "subtopic": "Struktur Kontrol",
+    "lesson": { 
+      "title": "Percabangan Sederhana",
+      "content": "Struktur kontrol terakhir yang memberikan 'otak' pada programmu adalah Percabangan atau Selection. Ini memungkinkan program untuk mengambil keputusan berdasarkan situasi yang ada. Instruksi dasarnya adalah 'IF (kondisi) THEN (tindakan)'. Jika kondisinya benar, jalankan tindakannya. Jika salah, abaikan. Kita juga punya 'ELSE' untuk memberikan instruksi cadangan jika kondisi pertama tidak terpenuhi. Contoh: 'IF nilai > 75 THEN Tampilkan \"LULUS\" ELSE Tampilkan \"REMIDI\"'. Percabangan membuat programmu menjadi dinamis dan interaktif. Program tidak lagi berjalan satu arah, tapi bisa bercabang-cabang sesuai input dari pengguna. Inilah yang membuat sebuah aplikasi terasa pintar. Saat kamu bermain game, sistem percabangan inilah yang mengecek apakah karaktermu masih punya nyawa atau sudah mati. Mempelajari percabangan melatih kemampuan analisismu untuk memikirkan segala kemungkinan (skenario) yang mungkin terjadi. Seorang programmer yang baik harus mampu mengantisipasi semua kemungkinan input, termasuk input yang salah atau tidak terduga, agar programnya tetap berjalan stabil. Dengan menguasai percabangan, kamu sudah siap untuk membangun aplikasi yang bisa berinteraksi dengan manusia secara cerdas dan memberikan respon yang tepat untuk setiap situasi yang berbeda."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Koding dengan Blockly/Scratch" },
+    "subtopic": "Project Koding Visual",
+    "lesson": { 
+      "title": "Transisi dari Animasi ke Game",
+      "content": "Di tingkat SMP, kita akan mulai merubah cara pandang kita terhadap Scratch atau Blockly. Jika di SD kita lebih banyak membuat animasi cerita, sekarang kita akan fokus pada pembuatan 'Game Mechanics' atau mekanisme permainan yang kompleks. Sebuah game berbeda dari animasi karena game membutuhkan interaksi dua arah yang intens dan sistem aturan yang ketat. Kamu harus belajar tentang konsep 'Game Loop' yang berjalan terus menerus untuk mengecek posisi karakter, skor, dan kondisi game over dalam setiap milidetik. Kamu akan mulai menggunakan variabel untuk menyimpan data-data penting tersebut secara dinamis. Transisi ini menuntutmu untuk berpikir lebih logis dan sistematis. Kamu tidak lagi sekadar menaruh blok gerakan, tapi harus memikirkan 'kenapa' dan 'kapan' gerakan itu terjadi. Misalnya, bagaimana cara membuat gravitasi sederhana agar karakter jatuh kembali setelah melompat? Kamu butuh variabel 'kecepatan_y' yang terus berkurang setiap saat. Belajar membuat mekanisme game melatih kreativitas teknismu. Kamu belajar bahwa keseruan sebuah game bukan hanya dari gambarnya yang bagus, tapi dari logika permainannya yang menantang dan bebas bug. Gunakan platform visual ini sebagai laboratorium-mu untuk bereksperimen dengan berbagai logika matematika dan fisika sederhana yang akan membuat projekmu terasa lebih nyata dan menarik untuk dimainkan oleh siapapun."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Koding dengan Blockly/Scratch" },
+    "subtopic": "Project Koding Visual",
+    "lesson": { 
+      "title": "Manajemen Aset dan Koordinat Panggung",
+      "content": "Projek yang besar membutuhkan pengorganisasian yang rapi. Di tingkat SMP, kamu harus mulai belajar tentang Manajemen Aset. Aset bukan hanya gambar dan suara, tapi juga bagaimana kamu mengelolanya di dalam memori program. Hindarilah menggunakan nama aset default seperti 'Sprite1' atau 'Sprite2'. Berikanlah nama yang deskriptif seperti 'PemainUtama' atau 'MusuhLevel1'. Ini akan sangat membantumu saat kodemu mulai panjang dan rumit. Selain itu, kamu harus benar-benar menguasai sistem koordinat Kartesius (X dan Y) pada panggung kodingmu. Panggung koding adalah sebuah bidang dua dimensi di mana setiap titik punya alamat angka yang pasti. X untuk horizontal (kiri-kanan) dan Y untuk vertikal (atas-bawah). Memahami rentang nilai koordinat (misal di Scratch -240 sampai 240 untuk X) sangat krusial untuk mengatur gerakan objek yang presisi. Kamu akan belajar bagaimana menggunakan operasi matematika dasar untuk menghitung jarak antar objek atau menentukan batas-batas area permainan (boundary). Manajemen aset dan koordinat yang baik adalah tanda bahwa kamu sudah mulai bekerja secara profesional. Kamu tidak lagi mengandalkan keberuntungan atau 'kira-kira' dalam menaruh objek, tapi kamu menggunakan data angka yang pasti untuk menciptakan tata letak panggung yang harmonis dan navigasi karakter yang mulus tanpa ada objek yang saling tumpang tindih secara tidak sengaja."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Koding dengan Blockly/Scratch" },
+    "subtopic": "Project Koding Visual",
+    "lesson": { 
+      "title": "Debugging pada Pemrograman Visual",
+      "content": "Bahkan programmer paling hebat sekalipun pasti pernah menemui kesalahan dalam kodenya. Kemampuan paling berharga di dunia koding bukanlah menulis kode tanpa salah, tapi kemampuan untuk menemukan dan memperbaiki kesalahan tersebut, yang kita sebut Debugging. Di pemrograman visual, debugging bisa dilakukan dengan cara mengamati jalannya blok kode saat program dijalankan. Blok yang sedang berjalan biasanya akan menyala atau memiliki garis tepi kuning. Jika ada bagian yang seharusnya jalan tapi tidak menyala, berarti ada masalah pada logikamu. Gunakanlah teknik 'Isolasi Masalah': matikan bagian kode yang lain dan fokuslah mengetes bagian yang rusak saja. Kamu juga bisa menggunakan bantuan variabel 'Debug' untuk melihat isi data di layar secara real-time. Misalnya, tampilkan variabel skor atau posisi X untuk memastikan apakah angkanya berubah sesuai keinginan. Debugging melatih kesabaran, ketelitian, dan kemampuan berpikir kritis. Jangan pernah marah atau putus asa saat menemukan bug; anggaplah bug itu sebagai tantangan teka-teki yang akan membuatmu semakin pintar setelah berhasil memecahkannya. Setiap bug yang kamu perbaiki adalah satu pelajaran baru tentang cara kerja komputer yang tidak akan kamu lupakan. Seorang koding jagoan adalah mereka yang tetap tenang di depan layar yang error dan terus mencoba berbagai kemungkinan solusi sampai programnya berjalan sempurna kembali."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Koding dengan Blockly/Scratch" },
+    "subtopic": "Event Driven Programming",
+    "lesson": { 
+      "title": "Broadcast and Receive Messages",
+      "content": "Dalam projek yang memiliki banyak objek (sprite), bagaimana cara mereka berkomunikasi satu sama lain? Di koding visual, kita menggunakan konsep 'Broadcast and Receive Messages' (Siarkan dan Terima Pesan). Ini adalah inti dari pemrograman berbasis kejadian (Event Driven Programming). Bayangkan ada satu objek yang bertugas sebagai 'Sutradara' yang menyiarkan pesan 'MULAI_GAME'. Saat pesan itu disiarkan ke seluruh panggung, semua objek lain yang sedang mendengarkan pesan tersebut akan mulai melakukan tugasnya masing-masing secara bersamaan. Pemain mulai bergerak, musuh mulai muncul, dan musik mulai diputar. Ini jauh lebih efisien daripada harus memberi perintah satu per satu secara manual. Konsep ini mengajarkanmu tentang organisasi dan delegasi tugas. Kamu belajar bahwa sebuah sistem besar bisa berjalan harmonis karena adanya sinyal-sinyal komunikasi yang jelas antar komponennya. Broadcast juga sangat berguna untuk membuat perpindahan level atau layar game over. Misalnya, jika pemain menabrak musuh, siarkan pesan 'TAMAT'. Maka layar latar belakang akan berganti dan semua gerakan objek akan dihentikan secara serentak. Menguasai komunikasi antar objek ini akan membuat projekmu menjadi sangat teratur dan mudah dikelola meskipun fiturnya bertambah banyak. Kamu belajar cara membangun sistem yang terintegrasi di mana setiap bagian tahu kapan harus beraksi dan kapan harus menunggu sinyal dari bagian yang lain."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Koding dengan Blockly/Scratch" },
+    "subtopic": "Event Driven Programming",
+    "lesson": { 
+      "title": "Sinkronisasi Antar Objek",
+      "content": "Setelah memahami cara berkirim pesan, tantangan berikutnya adalah Sinkronisasi atau pengaturan waktu agar semua objek bergerak serempak dan tidak saling bertabrakan secara logika. Sinkronisasi sangat penting dalam adegan-adegan yang membutuhkan kerjasama tim antar karakter. Misalnya dalam adegan percakapan: Tokoh A bicara, Tokoh B harus menunggu sampai Tokoh A selesai baru kemudian membalas. Tanpa sinkronisasi yang baik, mereka akan bicara bersamaan dan ceritamu jadi kacau. Di koding, kita menggunakan blok 'Broadcast and Wait' atau menggunakan variabel 'Status' untuk memberitahukan objek lain bahwa sebuah tugas sedang dikerjakan. Sinkronisasi melatih kemampuanmu untuk memikirkan alur waktu (timing). Kamu harus memperkirakan berapa lama sebuah aksi berlangsung sebelum aksi berikutnya dimulai. Ini adalah dasar dari animasi yang halus dan mekanisme game yang responsif. Di dunia nyata, sinkronisasi digunakan dalam pengaturan lampu lalu lintas yang saling terhubung atau dalam sistem produksi pabrik yang menggunakan banyak lengan robot. Dengan belajar menyinkronkan objek di panggung kodingmu, kamu sedang belajar cara mengelola sistem yang kompleks agar berjalan dengan harmoni yang indah tanpa ada gangguan teknis yang merusak pengalaman pengguna karyamu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Koding dengan Blockly/Scratch" },
+    "subtopic": "Event Driven Programming",
+    "lesson": { 
+      "title": "Interaktivitas Pengguna yang Kompleks",
+      "content": "Interaktivitas adalah jantung dari setiap aplikasi modern. Di tingkat SMP, kita ingin melampaui sekadar menekan tombol panah. Kita ingin membuat sistem interaksi yang lebih kompleks, misalnya interaksi drag-and-drop, interaksi dengan klik mouse pada bagian tertentu, atau bahkan interaksi menggunakan input suara dan video sensing (sensor kamera). Kamu akan belajar cara menggunakan blok 'Ask and Wait' untuk menanyakan nama atau jawaban pemain dan menyimpannya ke dalam variabel 'Answer' untuk digunakan nanti di dalam program. Ini membuat aplikasi kita terasa sangat personal dan ramah bagi pengguna. Selain itu, kamu bisa membuat sistem menu yang interaktif, di mana setiap tombol punya respon visual saat kursor mouse mendekat (hover effect). Belajar membangun interaktivitas kompleks melatih kemampuanmu untuk berempati kepada pengguna. Kamu belajar memikirkan: 'Bagaimana cara termudah bagi orang lain untuk mengerti dan menggunakan aplikasiku?'. Program yang hebat bukan hanya yang kodenya pintar di dalam, tapi yang interaksinya terasa natural dan menyenangkan bagi manusia yang menggunakannya. Jadilah perancang pengalaman yang cerdas dengan menciptakan fitur-fitur interaktif yang kreatif, bermanfaat, dan memberikan kesan yang mendalam bagi siapapun yang mencoba projek kodingmu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Variabel & Tipe Data" },
+    "subtopic": "Penggunaan Variabel",
+    "lesson": { 
+      "title": "Deklarasi dan Inisialisasi Variabel",
+      "content": "Variabel adalah salah satu konsep paling fundamental di seluruh bahasa pemrograman di dunia. Bayangkan variabel sebagai sebuah kotak atau wadah yang punya nama unik di luarnya dan bisa menyimpan satu nilai di dalamnya. Proses membuat kotak tersebut dan memberinya nama disebut 'Deklarasi'. Sedangkan proses memasukkan nilai pertama kali ke dalam kotak tersebut disebut 'Inisialisasi'. Di koding SMP, kamu harus mulai membiasakan diri untuk melakukan inisialisasi di awal setiap program (biasanya setelah bendera hijau diklik). Misalnya, 'SET skor TO 0' atau 'SET nyawa TO 3'. Mengapa ini penting? Karena jika tidak diatur di awal, programmu mungkin akan membawa nilai dari permainan sebelumnya yang sudah selesai, sehingga skor tidak mulai dari nol. Memahami siklus hidup variabel ini sangat krusial. Kamu belajar bahwa komputer butuh kepastian data sebelum mulai bekerja. Nama variabel haruslah bermakna; gunakan 'kecepatan_lari' alih-alih hanya 'x' atau 'y' agar kamu tidak bingung sendiri saat kodemu sudah mencapai ratusan baris. Dengan melakukan deklarasi dan inisialisasi yang rapi, kamu sedang membangun fondasi data yang kuat bagi aplikasimu. Ini adalah langkah awal untuk membuat program yang dinamis, di mana nilai-nilai di dalamnya bisa berubah-ubah sesuai kejadian, namun tetap terkontrol dengan baik dari awal hingga akhir."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Variabel & Tipe Data" },
+    "subtopic": "Penggunaan Variabel",
+    "lesson": { 
+      "title": "Scope Variabel (Global vs Lokal)",
+      "content": "Dalam projek yang besar dengan banyak objek, kamu akan menemui konsep 'Scope' atau jangkauan variabel. Ada dua jenis variabel berdasarkan jangkauannya: Variabel Global dan Variabel Lokal. Variabel Global adalah variabel yang bisa dilihat dan diubah oleh semua objek yang ada di panggung. Contohnya adalah 'Skor' atau 'Waktu', karena semua karakter harus tahu skor total game tersebut. Sedangkan Variabel Lokal (di Scratch disebut 'For this sprite only') adalah variabel yang hanya dimiliki dan diketahui oleh satu objek saja. Contohnya adalah 'Energi' atau 'Status' milik satu musuh tertentu. Mengapa kita tidak menjadikan semua variabel global saja agar mudah? Karena jika terlalu banyak variabel global, risiko terjadinya 'tabrakan data' sangat tinggi. Satu objek bisa saja tidak sengaja merubah data milik objek lain dan menyebabkan bug yang sulit dicari. Penggunaan variabel lokal membuat kodemu menjadi lebih rapi dan aman (konsep enkapsulasi). Belajar tentang scope variabel melatihmu untuk berpikir tentang privasi dan organisasi data. Kamu belajar untuk memilah mana informasi yang harus dibagikan ke seluruh sistem dan mana informasi yang cukup disimpan sendiri oleh masing-masing bagian. Ini adalah prinsip dasar arsitektur perangkat lunak modern yang akan sangat membantumu dalam mengelola projek teknologi berskala besar nantinya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Variabel & Tipe Data" },
+    "subtopic": "Penggunaan Variabel",
+    "lesson": { 
+      "title": "Manipulasi Nilai Variabel",
+      "content": "Kegunaan utama variabel adalah nilainya bisa dimanipulasi atau diubah-ubah selama program berjalan. Kamu bisa menambah, mengurangi, mengali, atau membagi nilai yang ada di dalam kotak variabel tersebut. Di koding, kita menggunakan operator matematika (+, -, *, /) untuk melakukan ini. Contoh manipulasi paling umum adalah 'Change skor by 1' setiap kali pemain mendapatkan poin. Tapi manipulasi variabel bisa jauh lebih canggih dari itu. Kamu bisa membuat sistem kenaikan level yang otomatis: 'SET level TO skor / 100'. Jadi setiap skor mencapai kelipatan 100, level akan otomatis naik. Kamu juga bisa membandingkan nilai antar variabel, misalnya 'IF skor > skor_tertinggi THEN SET skor_tertinggi TO skor'. Ini adalah logika dasar dari fitur High Score di semua game populer. Manipulasi variabel melatih kemampuan logikamu dalam mengolah data menjadi informasi yang berguna. Kamu belajar bahwa koding bukan sekadar menampilkan gambar, tapi tentang memproses angka-angka di balik layar untuk menciptakan pengalaman yang menantang. Teruslah bereksperimen dengan rumus-rumus matematika sederhana di dalam variabelmu. Dengan manipulasi yang kreatif, kamu bisa menciptakan tingkat kesulitan game yang seimbang, sistem ekonomi dalam simulasi, atau penghitungan statistik yang akurat bagi para pengguna aplikasi buatanmu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Variabel & Tipe Data" },
+    "subtopic": "Tipe Data Dasar",
+    "lesson": { 
+      "title": "String (Teks) dan Operasinya",
+      "content": "Tipe data pertama yang harus kamu kuasai adalah String. String adalah istilah koding untuk data berupa teks atau kumpulan karakter (huruf, angka, simbol). Ciri khas string adalah ia tidak bisa digunakan untuk operasi matematika meskipun isinya angka. Contoh string: 'Halo Dunia!', 'Alamat Rumah No 10', atau 'Admin123'. Di dalam program, string digunakan untuk menyimpan nama pengguna, menampilkan pesan dialog, atau memberikan petunjuk permainan. Kamu bisa melakukan berbagai operasi pada string, yang paling populer adalah 'Concatenation' atau penggabungan teks. Di Scratch, kita menggunakan blok 'Join'. Misalnya, jika variabel 'Nama' berisi 'Budi', kamu bisa menggabungkannya menjadi pesan sapaan: 'Join (Halo ) (Nama)' yang akan menghasilkan 'Halo Budi'. Memahami tipe data string sangat penting karena sebagian besar interaksi manusia dengan komputer melibatkan teks. Kamu akan belajar bagaimana cara memotong teks (substring), menghitung panjang karakter, atau mengubah huruf menjadi besar/kecil. Pengolahan string yang baik membuat aplikasimu terasa lebih komunikatif dan profesional. Di masa depan, kemampuan ini akan menjadi dasar bagi kamu untuk belajar tentang Natural Language Processing (NLP) atau kecerdasan buatan yang bisa memahami bahasa manusia secara mendalam dan otomatis."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Variabel & Tipe Data" },
+    "subtopic": "Tipe Data Dasar",
+    "lesson": { 
+      "title": "Integer dan Float (Angka)",
+      "content": "Tipe data angka adalah bahan bakar utama bagi logika kodingmu. Ada dua jenis utama angka yang diproses komputer: Integer dan Float. Integer adalah bilangan bulat, baik positif maupun negatif, tanpa ada tanda koma (misal: 10, -5, 0, 100). Integer biasanya digunakan untuk hal-hal yang sifatnya hitungan pasti, seperti jumlah skor, nyawa, atau nomor level. Sedangkan Float (atau Decimal) adalah bilangan yang memiliki angka di belakang koma (misal: 3.14, 0.5, 99.9). Float sangat penting saat kamu membutuhkan akurasi tinggi, misalnya menghitung koordinat yang sangat halus, mengatur waktu dengan presisi milidetik, atau dalam simulasi fisika di mana ada nilai gravitasi dan gesekan. Kamu harus berhati-hati saat mencampurkan kedua tipe data ini; beberapa bahasa pemrograman sangat ketat mengenai hal ini. Meskipun di koding visual seperti Scratch perbedaan ini seringkali tidak terlihat secara langsung di blok kodenya, memahami konsepnya di kepala akan membantumu saat nanti pindah ke bahasa pemrograman teks seperti Python atau JavaScript. Memahami tipe data angka melatih ketelitianmu dalam berhitung. Kamu belajar bahwa komputer memproses setiap angka dengan logika yang berbeda-beda tergantung jenisnya. Dengan penggunaan angka yang tepat, programmu akan memiliki tingkat akurasi yang tinggi dan bebas dari kesalahan pembulatan yang bisa merusak hasil akhir perhitungan logikamu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Variabel & Tipe Data" },
+    "subtopic": "Tipe Data Dasar",
+    "lesson": { 
+      "title": "Boolean dalam Variabel",
+      "content": "Tipe data yang paling sederhana namun paling kuat kekuasaannya dalam menentukan alur program adalah Boolean. Boolean hanya punya dua nilai kemungkinan: True (Benar) atau False (Salah). Tipe data ini dinamai berdasarkan George Boole, seorang matematikawan yang merumuskan logika biner. Di koding, kita sering menyimpan status sebuah kejadian dalam variabel Boolean. Contohnya, variabel 'Apakah_Game_Selesai' bisa berisi 'False' saat game baru dimulai, dan berubah jadi 'True' saat pemain kalah. Atau variabel 'Sudah_Punya_Kunci' yang menentukan apakah pemain bisa membuka pintu rahasia atau tidak. Boolean adalah fondasi dari semua pengambilan keputusan (percabangan) dalam koding. Setiap kali kamu menggunakan blok 'IF', komputer sebenarnya sedang mengecek apakah kondisi di dalamnya bernilai True atau False. Memahami Boolean melatih kejernihan berpikirmu. Kamu belajar untuk merumuskan pertanyaan yang jawabannya pasti dan tidak ambigu bagi komputer. Di tingkat sistem yang lebih rendah, Boolean adalah representasi dari tegangan listrik: Nyala atau Mati. Dengan menguasai penggunaan variabel Boolean, kamu bisa membangun sistem kontrol yang sangat canggih dan responsif, di mana setiap aksi dalam aplikasimu didasari oleh status-status logis yang terjaga dengan baik dan sangat akurat akurasinya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Logika Percabangan" },
+    "subtopic": "Kondisional (If-Else)",
+    "lesson": { 
+      "title": "Struktur If-Then-Else",
+      "content": "Struktur If-Then-Else adalah tulang punggung dari kecerdasan buatan dan interaktivitas program. Struktur ini memungkinkan program kita untuk memiliki 'jalur cadangan' jika kondisi utama tidak terpenuhi. Logikanya sederhana: JIKA kondisi terpenuhi (Benar), MAKA jalankan perintah A. JIKA TIDAK (Salah), MAKA jalankan perintah B. Bayangkan program pengecekan login: JIKA kata sandi benar, MAKA tampilkan halaman utama. ELSE (Jika Salah), tampilkan pesan error 'Sandi Salah'. Tanpa ELSE, programmu hanya akan diam saja saat pengguna melakukan kesalahan, dan itu akan sangat membingungkan pengguna. Penggunaan If-Else yang tepat menunjukkan bahwa kamu peduli pada pengalaman pengguna (User Experience). Kamu memberikan respon untuk setiap kemungkinan tindakan mereka. Belajar struktur ini melatih kemampuanmu untuk memikirkan dua sisi dari sebuah mata uang. Kamu belajar untuk selalu punya rencana cadangan (Plan B) dalam logikamu. Di dunia nyata, If-Else digunakan dalam hampir semua sistem otomatis, mulai dari mesin ATM yang mengeluarkan uang atau menolak karena saldo kurang, hingga sistem pengereman otomatis pada mobil pintar. Dengan menguasai struktur If-Then-Else, kamu sedang belajar cara berkomunikasi dengan komputer secara lebih luwes dan memastikan bahwa programmu selalu memberikan jawaban yang pasti bagi penggunanya di situasi apapun."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Logika Percabangan" },
+    "subtopic": "Kondisional (If-Else)",
+    "lesson": { 
+      "title": "Nested If (Percabangan Bersarang)",
+      "content": "Terkadang, hidup ini lebih rumit daripada sekadar satu pertanyaan benar atau salah. Ada kalanya sebuah keputusan bergantung pada keputusan lainnya. Inilah yang kita sebut sebagai Nested If atau Percabangan Bersarang. Nested If adalah kondisi di mana ada blok 'IF' di dalam blok 'IF' lainnya. Bayangkan sistem pembelian tiket bioskop: IF (Umur >= 17) THEN { IF (Punya KTP) THEN { Boleh beli tiket film dewasa } ELSE { Maaf, harus bawa KTP } } ELSE { Maaf, hanya boleh nonton film anak }. Dalam contoh ini, pengecekan KTP hanya dilakukan jika syarat umur sudah terpenuhi. Jika syarat umur saja belum lewat, program tidak perlu lagi mengecek KTP. Nested If memungkinkan kita membangun logika yang sangat detail dan berlapis-lapis. Namun, hati-hatilah jangan sampai 'sarang' kondisimu terlalu dalam dan membingungkan (sering disebut 'Spaghetti Code'). Jika logikanya mulai terlalu rumit, cobalah gunakan operator logika tambahan untuk menyederhanakannya. Belajar Nested If melatih ketajaman berpikirmu dalam menyusun hierarki keputusan. Kamu belajar memilah mana syarat utama dan mana syarat tambahan. Kemampuan ini sangat penting saat kamu merancang sistem keamanan yang ketat atau mekanisme game yang memiliki banyak sekali aturan dan kondisi kemenangan yang berbeda-beda di setiap levelnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Logika Percabangan" },
+    "subtopic": "Kondisional (If-Else)",
+    "lesson": { 
+      "title": "Case Study: Sistem Penilaian Otomatis",
+      "content": "Mari kita terapkan ilmu percabangan kita pada sebuah proyek nyata: membuat sistem yang mengubah angka nilai menjadi huruf (Grade). Aturannya: Nilai 90-100 dapat 'A', 80-89 dapat 'B', 70-79 dapat 'C', dan di bawah 70 dapat 'D'. Bagaimana logikanya? Kita bisa menggunakan Nested If: 'IF nilai >= 90 THEN SET grade TO A. ELSE (artinya di bawah 90) IF nilai >= 80 THEN SET grade TO B. ELSE IF nilai >= 70 THEN SET grade TO C. ELSE SET grade TO D'. Perhatikan urutan pengecekannya. Kita harus mulai dari angka yang paling besar. Mengapa? Karena jika kita cek 'IF nilai >= 70' di urutan pertama, maka orang yang dapat nilai 95 juga akan dianggap dapat 'C' karena 95 memang lebih besar dari 70. Inilah pentingnya logika urutan dalam percabangan bersarang. Studi kasus ini mengajarkanmu bahwa komputer tidak punya pemahaman umum tentang nilai; kamu-lah yang harus mendefinisikan batas-batas angka tersebut dengan sangat teliti. Sistem penilaian otomatis ini adalah contoh aplikasi kecil yang sangat bermanfaat dan digunakan di sekolah-sekolah di seluruh dunia. Dengan memahami cara kerjanya, kamu bisa mengembangkan aplikasi lain yang serupa, misalnya sistem klasifikasi berat badan, sistem penentuan kategori usia pelanggan, atau sistem pemberi diskon belanja berdasarkan total transaksi yang dilakukan pengguna secara otomatis dan akurat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Logika Percabangan" },
+    "subtopic": "Logika Perbandingan",
+    "lesson": { 
+      "title": "Operator Logika (AND, OR, NOT)",
+      "content": "Bagaimana jika kita ingin mengecek dua syarat sekaligus dalam satu baris kode? Di sinilah kita butuh Operator Logika: AND, OR, dan NOT. Operator 'AND' digunakan jika KEDUA syarat harus benar (misal: JIKA (Punya Tiket) AND (Datang Tepat Waktu) MAKA Boleh Masuk). Jika salah satu saja salah, maka hasilnya dianggap salah. Operator 'OR' digunakan jika SALAH SATU syarat saja sudah cukup untuk dianggap benar (misal: JIKA (Bawa Uang Tunai) OR (Punya Kartu ATM) MAKA Boleh Belanja). Operator 'NOT' digunakan untuk membalikkan nilai logika (misal: JIKA NOT (Hari Libur) MAKA Pergi ke Sekolah). Operator logika membuat kodemu menjadi jauh lebih pendek, bersih, dan mudah dibaca. Daripada menggunakan Nested If yang bertumpuk-tumpuk, kamu bisa menggabungkan banyak kondisi menjadi satu kalimat logika yang elegan. Penggunaan operator logika ini adalah dasar dari pemrograman tingkat tinggi dan desain sirkuit digital. Kamu akan belajar bagaimana menggabungkan berbagai sensor di dalam game (misal: menyentuh koin AND skor belum penuh) untuk menciptakan interaksi yang lebih kaya. Memahami operator logika melatihmu untuk berpikir secara matematis dan presisi. Kamu belajar merumuskan kondisi yang sangat spesifik untuk mengatur jalannya program agar selalu sesuai dengan niat awalmu sebagai seorang arsitek solusi digital yang cerdas dan handal."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Logika Percabangan" },
+    "subtopic": "Logika Perbandingan",
+    "lesson": { 
+      "title": "Operator Perbandingan (>, <, ==)",
+      "content": "Kondisi di dalam blok 'IF' biasanya dibuat menggunakan Operator Perbandingan. Kamu pasti sudah mengenal mereka di pelajaran matematika: '>' (Lebih Besar Dari), '<' (Lebih Kecil Dari), dan '==' (Sama Dengan). Perhatikan bahwa di banyak bahasa koding, kita menggunakan tanda sama dengan dua kali (==) untuk membandingkan, karena tanda sama dengan satu kali (=) sudah digunakan untuk menyimpan nilai ke variabel (assignment). Operator perbandingan adalah alat untuk mengubah angka menjadi nilai Boolean (True/False). Contoh: '10 > 5' menghasilkan True. '3 < 1' menghasilkan False. Dalam koding, kita sering membandingkan isi variabel dengan sebuah angka target. Misal: 'IF sisa_nyawa == 0 THEN Tampilkan GAME OVER'. Atau 'IF waktu_tersisa < 10 THEN Putar Suara Detik Jam'. Selain angka, kamu juga bisa membandingkan String (Teks). Misal: 'IF jawaban_user == \"Indonesia\" THEN Tampilkan BENAR!'. Kamu harus sangat teliti dengan penggunaan tanda 'sama dengan' atau 'lebih besar sama dengan' (>=). Perbedaan satu angka saja bisa membuat bug yang fatal. Belajar operator perbandingan melatih ketelitianmu dalam melihat detail angka dan teks. Ini adalah jembatan yang menghubungkan data numerik yang kaku dengan logika pengambilan keputusan yang dinamis di dalam dunia koding dan pengembangan aplikasi yang cerdas dan fungsional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Logika Percabangan" },
+    "subtopic": "Logika Perbandingan",
+    "lesson": { 
+      "title": "Validasi Input Pengguna",
+      "content": "Salah satu aturan emas dalam koding adalah: 'Jangan pernah percaya pada input dari pengguna'. Mengapa? Karena manusia sering melakukan kesalahan atau bahkan sengaja mencoba merusak programmu. Validasi Input adalah proses pengecekan data yang masuk sebelum diproses lebih lanjut oleh program. Misalnya, jika kamu menanyakan umur, pastikan yang dimasukkan adalah Angka, bukan Teks. Dan pastikan angkanya masuk akal (misal: antara 0 sampai 120). JIKA pengguna memasukkan umur 500 tahun, programmu harus bisa mendeteksi lewat logika percabangan: 'IF umur > 120 OR umur < 0 THEN Tampilkan PESAN SALAH'. Validasi input mencegah terjadinya error yang bisa membuat program berhenti mendadak (crash). Selain itu, validasi juga penting untuk keamanan. Banyak hacker yang mencoba membobol sistem dengan cara memasukkan kode berbahaya ke dalam kotak input nama atau komentar. Dengan melakukan validasi yang ketat menggunakan perbandingan dan operator logika, kamu sedang membangun 'Benteng Pertahanan' bagi aplikasimu. Belajar validasi melatih tanggung jawabmu sebagai penyedia teknologi. Kamu belajar untuk tidak hanya membuat program yang bisa jalan, tapi membuat program yang 'Tangguh' (Robust) dan aman dari berbagai kesalahan serta serangan dari luar yang tidak diinginkan demi kenyamanan dan kepercayaan pengguna aplikasimu nantinya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika Digital" },
+    "subtopic": "Keamanan Siber Dasar",
+    "lesson": { 
+      "title": "Ancaman Malware dan Cara Kerjanya",
+      "content": "Di dunia digital, ada program jahat yang dirancang khusus untuk merusak, mencuri, atau memata-matai datamu, yang kita sebut Malware (Malicious Software). Jenis malware yang populer antara lain Virus (menyebar lewat file), Worm (menyebar lewat jaringan), Trojan (berpura-pura jadi program baik), dan Ransomware (menyandera datamu dan minta tebusan). Bagaimana malware bisa masuk ke komputermu? Biasanya lewat link email yang mencurigakan, mengunduh game bajakan dari website ilegal, atau lewat flashdisk yang sudah terinfeksi. Sebagai seorang pelajar koding, kamu harus paham cara kerjanya agar bisa melindunginya. Malware seringkali mengeksploitasi 'celah keamanan' (vulnerability) di dalam kode program yang ditulis dengan ceroboh. Inilah sebabnya mengapa menulis kode yang aman dan selalu memperbarui (update) software sangatlah penting. Keamanan siber bukan hanya tentang memasang antivirus, tapi tentang kewaspadaanmu saat beraktivitas online. Jangan mudah tergiur oleh tawaran aplikasi gratis yang tidak resmi. Memahami ancaman malware melatih sikap waspadamu dan tanggung jawabmu terhadap perangkat teknologi yang kamu gunakan. Dengan memiliki kebiasaan keamanan yang baik, kamu tidak hanya melindungi dirimu sendiri, tapi juga melindungi keluarga dan jaringan internet di sekitarmu dari penyebaran program jahat yang merugikan banyak orang di seluruh dunia digital saat ini."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika Digital" },
+    "subtopic": "Keamanan Siber Dasar",
+    "lesson": { 
+      "title": "Pentingnya Two-Factor Authentication (2FA)",
+      "content": "Bahkan jika kamu sudah punya kata sandi yang sangat kuat dan panjang, akunmu masih berisiko dibobol jika ada kebocoran data di server aplikasi tersebut. Oleh karena itu, kita butuh lapisan pertahanan kedua yang disebut Two-Factor Authentication (2FA) atau Autentikasi Dua Faktor. 2FA mengharuskanmu memberikan dua bukti identitas sebelum bisa masuk ke akun. Lapisan pertama adalah hal yang kamu 'tahu' (kata sandi), dan lapisan kedua adalah hal yang kamu 'punya' (kode OTP di HP atau kunci fisik) atau hal yang 'melekat' pada dirimu (sidik jari/wajah). Dengan 2FA aktif, meskipun hacker berhasil mencuri kata sandimu, mereka tetap tidak bisa masuk karena tidak punya kode rahasia yang dikirimkan ke HP-mu. Saat ini, hampir semua aplikasi besar seperti Google, WhatsApp, dan Instagram sudah menyediakan fitur 2FA. Aktifkanlah fitur ini sekarang juga di semua akun pentingmu! Pentingnya 2FA adalah konsep dasar keamanan digital modern yang wajib kamu pahami dan praktekkan. Belajar tentang 2FA melatihmu untuk berpikir tentang pertahanan berlapis. Jangan pernah menaruh semua kepercayaanmu pada satu pintu saja. Dengan menjaga keamanan akunmu secara serius, kamu sedang membangun integritas digitalmu dan memastikan bahwa identitas serta hasil karyamu di dunia maya tetap aman dan hanya bisa diakses oleh dirimu sendiri sebagai pemilik yang sah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika Digital" },
+    "subtopic": "Keamanan Siber Dasar",
+    "lesson": { 
+      "title": "Menjaga Privasi Data Pribadi",
+      "content": "Data adalah mata uang baru di dunia digital. Informasi tentang siapa kamu, di mana kamu tinggal, apa yang kamu suka, dan siapa teman-temanmu adalah hal yang sangat berharga bagi perusahaan iklan maupun penjahat siber. Menjaga Privasi berarti mengontrol siapa saja yang boleh melihat informasi pribadimu tersebut. Jangan pernah membagikan data sensitif seperti nomor KTP, alamat rumah yang detail, nomor telepon, atau foto lokasi sekolahmu di media sosial atau aplikasi yang tidak terpercaya. Ingatlah bahwa sekali data itu terunggah, ia akan sangat sulit untuk dihapus sepenuhnya. Banyak aplikasi yang meminta izin untuk mengakses kontak, lokasi, dan kamera; bacalah dengan teliti sebelum menekan tombol 'Izinkan'. Jika sebuah aplikasi edit foto meminta izin akses ke lokasi GPS, tanyakan pada dirimu: 'Kenapa aplikasi ini butuh tahu lokasi saya?'. Selalu bersikap skeptis dan berhati-hati adalah kunci menjaga privasi. Belajar tentang privasi melatihmu untuk menghargai batas-batas dirimu sendiri dan orang lain. Kamu juga harus menghormati privasi temanmu; jangan mengunggah foto atau video mereka tanpa izin. Dengan menjadi penjaga privasi yang baik, kamu sedang berkontribusi menciptakan ekosistem internet yang lebih aman, saling menghargai, dan bermartabat bagi semua orang di seluruh belahan dunia tanpa terkecuali."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika Digital" },
+    "subtopic": "Hak Kekayaan Intelektual (HAKI)",
+    "lesson": { 
+      "title": "Mengenal Lisensi Open Source (MIT, GPL)",
+      "content": "Sebagai seorang programmer, kamu akan banyak menggunakan kode atau perpustakaan (library) yang dibuat oleh orang lain agar kerjamu lebih cepat. Namun, kamu tidak boleh asal ambil! Kamu harus memperhatikan Lisensi-nya. Lisensi adalah izin tertulis dari pembuat karya tentang bagaimana karyanya boleh digunakan. Di dunia koding, ada budaya berbagi yang hebat yang disebut Open Source. Ada berbagai jenis lisensi open source, misalnya Lisensi MIT yang sangat bebas (boleh dipakai untuk apa saja asal mencantumkan nama pembuatnya), atau Lisensi GPL yang mengharuskan karyamu juga ikut menjadi open source jika menggunakan kodenya. Memahami lisensi adalah bentuk penghormatanmu terhadap hak kekayaan intelektual (HAKI) orang lain. Jangan sampai kamu membangun bisnis besar di masa depan namun ternyata kodenya melanggar lisensi orang lain; kamu bisa dituntut secara hukum. Belajar tentang lisensi melatih ketaatanmu pada aturan dan integritasmu sebagai pencipta. Gunakanlah aset dan kode yang berlisensi bebas (seperti Creative Commons) untuk projek belajarmu. Dengan memahami cara kerja lisensi, kamu juga bisa memilih lisensi yang tepat saat nanti kamu ingin membagikan karyamu sendiri kepada dunia agar karyamu terlindungi namun tetap bisa bermanfaat bagi kemajuan ilmu pengetahuan dan komunitas teknologi global secara luas."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika Digital" },
+    "subtopic": "Hak Kekayaan Intelektual (HAKI)",
+    "lesson": { 
+      "title": "Plagiarisme Digital dan Dampaknya",
+      "content": "Plagiarisme adalah tindakan menyalin karya atau ide orang lain dan mengaku-ngaku sebagai buatan sendiri. Di dunia digital, plagiarisme sangat mudah dilakukan hanya dengan klik kanan dan 'copy-paste'. Namun, dampak negatifnya sangat besar bagi karakter dan reputasimu. Jika kamu ketahuan melakukan plagiarisme kode, kamu akan kehilangan kepercayaan dari komunitas programmer dunia. Selain itu, kamu tidak akan pernah benar-benar pintar karena kamu hanya meniru tanpa memahami logika di baliknya. Seorang programmer sejati adalah mereka yang mau berusaha memecahkan masalah dengan otaknya sendiri. Jika kamu mengambil inspirasi dari kode orang lain, cantumkanlah sumbernya dengan jujur (konsep atribusi). Plagiarisme digital juga melanggar hak moral pembuat aslinya yang sudah bekerja keras berhari-hari. Belajar menghindari plagiarisme melatih kejujuran dan rasa percaya dirimu. Kamu akan merasa jauh lebih bangga saat melihat karyamu yang sederhana namun asli buatanmu sendiri, daripada karya yang terlihat canggih tapi hasil curian dari internet. Di era AI saat ini, tantangan kejujuran intelektual semakin berat; gunakanlah AI sebagai asisten belajar, bukan sebagai mesin pembuat tugas otomatis yang mematikan kemampuan berpikir kritis dan kreativitas orisinalmu sebagai manusia pencipta masa depan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika Digital" },
+    "subtopic": "Hak Kekayaan Intelektual (HAKI)",
+    "lesson": { 
+      "title": "Cara Menghargai Kreativitas Digital",
+      "content": "Bagaimana cara kita sebagai pelajar SMP menghargai kreativitas di dunia digital? Pertama, dengan selalu memberikan apresiasi yang positif terhadap karya teman-temanmu. Jika kamu menyukai projek koding mereka, berikanlah 'Like', 'Favorite', atau komentar yang membangun. Kedua, jangan menyebarkan software atau game bajakan. Membeli software atau menggunakan versi gratis yang legal adalah cara kita menghargai para pengembang yang sudah menginvestasikan waktu dan biaya untuk membuatnya. Ketiga, jadilah kreator yang beretika. Saat kamu membuat konten atau aplikasi, pikirkan apakah karyamu memberikan manfaat bagi orang lain atau justru merugikan. Menghargai kreativitas berarti menghargai proses, bukan hanya hasil akhir. Kamu belajar bahwa di balik setiap baris kode, ada manusia yang bercita-cita dan berinovasi. Dengan membangun budaya saling menghargai sejak sekarang, kamu sedang menciptakan lingkungan digital yang sehat, inspiratif, dan penuh dengan karya-karya orisinal yang membanggakan. Kreativitas digital adalah salah satu kekayaan terbesar bangsa di masa depan. Jadilah bagian dari generasi yang menjunjung tinggi etika karya agar Indonesia dikenal sebagai bangsa yang inovatif, jujur, dan beradab di mata dunia internasional melalui hasil-hasil teknologi yang bermutu dan penuh dengan nilai-nilai kemanusiaan yang luhur."
+    }
+  }
+]

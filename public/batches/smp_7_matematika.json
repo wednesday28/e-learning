@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat & Pecahan" },
+    "subtopic": "Operasi Bilangan Bulat",
+    "lesson": { 
+      "title": "Konsep Bilangan Bulat dan Garis Bilangan",
+      "content": "Bilangan bulat terdiri dari bilangan bulat positif, nol, dan bilangan bulat negatif. Pada garis bilangan, bilangan positif di kanan nol dan negatif di kiri nol."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat & Pecahan" },
+    "subtopic": "Operasi Bilangan Bulat",
+    "lesson": { 
+      "title": "Penjumlahan dan Pengurangan Bilangan Bulat",
+      "content": "Operasi hitung menggunakan garis bilangan. Penjumlahan bergerak ke kanan, pengurangan bergerak ke kiri."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat & Pecahan" },
+    "subtopic": "Operasi Bilangan Bulat",
+    "lesson": { 
+      "title": "Perkalian dan Pembagian Bilangan Bulat",
+      "content": "Aturan tanda: positif kali positif = positif, negatif kali negatif = positif, positif kali negatif = negatif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat & Pecahan" },
+    "subtopic": "Bilangan Pecahan",
+    "lesson": { 
+      "title": "Membandingkan dan Mengurutkan Pecahan",
+      "content": "Menyamakan penyebut menggunakan KPK atau mengubah ke bentuk desimal untuk membandingkan nilai pecahan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat & Pecahan" },
+    "subtopic": "Bilangan Pecahan",
+    "lesson": { 
+      "title": "Operasi Hitung Penjumlahan dan Pengurangan Pecahan",
+      "content": "Wajib menyamakan penyebut sebelum menjumlahkan atau mengurangkan pembilang pecahan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat & Pecahan" },
+    "subtopic": "Bilangan Pecahan",
+    "lesson": { 
+      "title": "Perkalian dan Pembagian Pecahan",
+      "content": "Perkalian: pembilang x pembilang, penyebut x penyebut. Pembagian: kalikan dengan kebalikan pecahan pembagi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Aljabar" },
+    "subtopic": "Mengenal Bentuk Aljabar",
+    "lesson": { 
+      "title": "Unsur-unsur Bentuk Aljabar",
+      "content": "Mengenal variabel, koefisien, dan konstanta dalam ekspresi matematika."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Aljabar" },
+    "subtopic": "Mengenal Bentuk Aljabar",
+    "lesson": { 
+      "title": "Menyederhanakan Bentuk Aljabar",
+      "content": "Menggabungkan suku-suku sejenis (variabel dan pangkat yang sama)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Aljabar" },
+    "subtopic": "Mengenal Bentuk Aljabar",
+    "lesson": { 
+      "title": "Operasi Penjumlahan dan Pengurangan Aljabar",
+      "content": "Hanya suku sejenis yang bisa dijumlahkan atau dikurangkan koefisiennya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Aljabar" },
+    "subtopic": "Operasi Aljabar",
+    "lesson": { 
+      "title": "Perkalian Bentuk Aljabar Suku Tunggal",
+      "content": "Mengalikan konstanta dengan variabel menggunakan sifat distributif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Aljabar" },
+    "subtopic": "Operasi Aljabar",
+    "lesson": { 
+      "title": "Perkalian Suku Dua (Binomial)",
+      "content": "Metode skema pelangi atau FOIL untuk mengalikan dua buah suku dua."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Aljabar" },
+    "subtopic": "Operasi Aljabar",
+    "lesson": { 
+      "title": "Pembagian Bentuk Aljabar",
+      "content": "Membagi suku aljabar dengan variabel atau konstanta, memperhatikan aturan pangkat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan & Pertidaksamaan Linear Satu Variabel" },
+    "subtopic": "Persamaan Linear Satu Variabel (PLSV)",
+    "lesson": { 
+      "title": "Mengenal Kalimat Terbuka dan Persamaan",
+      "content": "Kalimat matematika yang memuat variabel dan tanda sama dengan (=)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan & Pertidaksamaan Linear Satu Variabel" },
+    "subtopic": "Persamaan Linear Satu Variabel (PLSV)",
+    "lesson": { 
+      "title": "Penyelesaian PLSV dengan Penjumlahan dan Pengurangan",
+      "content": "Menjaga keseimbangan kedua ruas dengan menambah atau mengurang angka yang sama."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan & Pertidaksamaan Linear Satu Variabel" },
+    "subtopic": "Persamaan Linear Satu Variabel (PLSV)",
+    "lesson": { 
+      "title": "Penyelesaian PLSV dengan Perkalian dan Pembagian",
+      "content": "Membagi atau mengalikan kedua ruas untuk mendapatkan nilai tunggal variabel."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan & Pertidaksamaan Linear Satu Variabel" },
+    "subtopic": "Pertidaksamaan Linear Satu Variabel (PtLSV)",
+    "lesson": { 
+      "title": "Mengenal Simbol Pertidaksamaan",
+      "content": "Penggunaan simbol <, >, <=, dan >= untuk menyatakan rentang nilai."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan & Pertidaksamaan Linear Satu Variabel" },
+    "subtopic": "Pertidaksamaan Linear Satu Variabel (PtLSV)",
+    "lesson": { 
+      "title": "Menyelesaikan PtLSV dan Aturan Perkalian Negatif",
+      "content": "Penting: Tanda pertidaksamaan dibalik jika dikali atau dibagi bilangan negatif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan & Pertidaksamaan Linear Satu Variabel" },
+    "subtopic": "Pertidaksamaan Linear Satu Variabel (PtLSV)",
+    "lesson": { 
+      "title": "Penerapan PLSV dan PtLSV dalam Masalah Nyata",
+      "content": "Menerjemahkan soal cerita menjadi model pertidaksamaan linear."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Perbandingan & Skala" },
+    "subtopic": "Konsep Perbandingan",
+    "lesson": { 
+      "title": "Rasio dan Perbandingan Dua Besaran",
+      "content": "Membandingkan dua nilai dengan satuan yang sama dalam bentuk paling sederhana."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Perbandingan & Skala" },
+    "subtopic": "Konsep Perbandingan",
+    "lesson": { 
+      "title": "Perbandingan Senilai",
+      "content": "Jika satu besaran naik, besaran lainnya ikut naik dengan perbandingan tetap."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Perbandingan & Skala" },
+    "subtopic": "Konsep Perbandingan",
+    "lesson": { 
+      "title": "Perbandingan Berbalik Nilai",
+      "content": "Jika satu besaran naik, besaran lainnya justru menurun (misal: jumlah pekerja vs waktu)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Perbandingan & Skala" },
+    "subtopic": "Skala dan Peta",
+    "lesson": { 
+      "title": "Pengertian Skala pada Peta",
+      "content": "Perbandingan jarak pada peta dengan jarak sebenarnya di lapangan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Perbandingan & Skala" },
+    "subtopic": "Skala dan Peta",
+    "lesson": { 
+      "title": "Menghitung Jarak Sebenarnya dan Jarak pada Peta",
+      "content": "Menggunakan rumus Skala = JP / JS dengan memperhatikan konversi satuan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Perbandingan & Skala" },
+    "subtopic": "Skala dan Peta",
+    "lesson": { 
+      "title": "Penerapan Skala pada Model dan Denah",
+      "content": "Membuat miniatur atau denah bangunan berdasarkan skala tertentu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Penyajian Data",
+    "lesson": { 
+      "title": "Pengumpulan Data dan Tabel Frekuensi",
+      "content": "Metode pengumpulan data dan penyusunannya dalam tabel distribusi frekuensi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Penyajian Data",
+    "lesson": { 
+      "title": "Penyajian Data dengan Diagram Batang dan Garis",
+      "content": "Memvisualisasikan data kategori atau tren waktu dalam bentuk grafik."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Penyajian Data",
+    "lesson": { 
+      "title": "Penyajian Data dengan Diagram Lingkaran",
+      "content": "Menghitung sudut dan persentase untuk pembagian data dalam lingkaran."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Ukuran Pemusatan Data",
+    "lesson": { 
+      "title": "Menghitung Nilai Rata-rata (Mean)",
+      "content": "Mencari nilai perwakilan dengan membagi total nilai dengan jumlah data."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Ukuran Pemusatan Data",
+    "lesson": { 
+      "title": "Menentukan Median dan Modus",
+      "content": "Median adalah nilai tengah data terurut, Modus adalah nilai paling sering muncul."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Ukuran Pemusatan Data",
+    "lesson": { 
+      "title": "Interpretasi Data dan Pengambilan Kesimpulan",
+      "content": "Membaca makna di balik hasil pengolahan data statistik."
+    }
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Tingkat Lanjut" },
+    "subtopic": "Struktur Data List & Dictionary",
+    "lesson": { 
+      "title": "Mengelola Data Kompleks dengan List",
+      "content": "Selamat datang di kelas 9! Sebagai jenjang terakhir di SMP, kita akan belajar cara mengelola data yang lebih besar dan lebih nyata. Salah satu caranya adalah dengan menguasai 'List' tingkat lanjut. Di koding, List bukan hanya sekadar daftar nama, tapi bisa berisi objek-objek lain, bahkan List di dalam List (Nested List). Ini sangat berguna untuk menyimpan data yang memiliki struktur seperti tabel atau koordinat map game. Kamu akan belajar metode untuk memanipulasi List secara efisien, seperti 'append' untuk menambah, 'pop' untuk menghapus, dan 'sort' untuk mengurutkan. Kemampuan mengelola list dengan cerdas adalah pembeda antara programmer amatir dan profesional. Bayangkan kamu sedang membangun aplikasi manajemen perpustakaan; semua judul buku, nama pengarang, dan status pinjam disimpan dalam list-list yang saling terhubung. Memahami list melatih kemampuan pengorganisasian datamu secara sistematis. Kamu belajar bagaimana mencari satu informasi di antara ribuan data dalam waktu kurang dari satu detik. Penguasaan atas struktur data ini adalah kunci untuk membangun aplikasi yang cepat, handal, dan mampu menangani volume informasi yang besar tanpa membuat programmu menjadi lambat atau macet."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Tingkat Lanjut" },
+    "subtopic": "Struktur Data List & Dictionary",
+    "lesson": { 
+      "title": "Konsep Key-Value pada Dictionary",
+      "content": "Jika List menggunakan angka (indeks) untuk memanggil data, 'Dictionary' (Kamus) menggunakan kata kunci atau 'Key'. Struktur ini disebut Key-Value Pair. Contoh: Key 'nama' berisi Value 'Budi'. Dictionary sangat hebat karena kita bisa memanggil data berdasarkan namanya, bukan urutannya. Ini sangat mirip dengan cara kerja database asli. Dictionary memungkinkan kita menyimpan informasi yang detail untuk satu objek. Misalnya, satu objek 'User' bisa punya key: nama, email, level, dan skor. Kamu tidak perlu ingat Budi ada di urutan keberapa, cukup panggil 'user[\"nama\"]'. Belajar menggunakan dictionary melatih kemampuan pemodelan datamu. Kamu belajar melihat dunia sebagai kumpulan objek yang memiliki sifat-sifat (atribut) tertentu. Konsep ini adalah dasar dari Pemrograman Berorientasi Objek (OOP) yang akan kamu pelajari di tingkat SMA nanti. Dengan dictionary, kodemu akan menjadi jauh lebih mudah dibaca (readable) dan logis. Kamu sedang membangun cara berpikir yang terstruktur untuk mengelola identitas digital secara profesional di dalam aplikasi-aplikasi modern yang sangat bergantung pada pertukaran data yang cepat dan akurat berdasarkan kunci-kunci informasi yang spesifik."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Tingkat Lanjut" },
+    "subtopic": "Struktur Data List & Dictionary",
+    "lesson": { 
+      "title": "JSON sebagai Format Pertukaran Data",
+      "content": "Pernahkah kamu bertanya-tanya bagaimana sebuah aplikasi di HP bisa 'mengobrol' dengan server di internet? Mereka menggunakan bahasa universal yang disebut JSON (JavaScript Object Notation). JSON adalah format teks yang sangat mirip dengan struktur Dictionary yang baru saja kita pelajari. JSON sangat ringan, mudah dibaca manusia, dan mudah diproses oleh mesin. Hampir semua teknologi di internet saat ini, mulai dari Twitter hingga sistem perbankan, menggunakan JSON untuk mengirimkan data. Sebagai pelajar kelas 9, kamu harus paham cara membaca dan menulis format JSON. Ini adalah keterampilan wajib jika kamu ingin membuat aplikasi yang terhubung ke internet. Belajar JSON melatihmu untuk memahami standarisasi global. Kamu belajar bahwa teknologi yang berbeda (misal HP Android dan server Linux) bisa bekerja sama jika mereka menggunakan format data yang sama. Dengan memahami JSON, kamu sudah siap untuk menjelajahi dunia API (Application Programming Interface) di mana kamu bisa mengambil data cuaca, data saham, atau data berita dari seluruh dunia dan menampilkannya di dalam aplikasi buatanmu sendiri dengan cara yang sangat efisien dan terstandar secara internasional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Tingkat Lanjut" },
+    "subtopic": "Pemrograman Modular (Library)",
+    "lesson": { 
+      "title": "Menggunakan Library Standar Python/JS",
+      "content": "Kamu tidak perlu membuat semuanya dari nol. Bahasa pemrograman modern seperti Python dan JavaScript sudah dilengkapi dengan 'Library' atau perpustakaan kode yang sangat lengkap. Library adalah kumpulan fungsi yang sudah dibuatkan oleh para ahli untuk membantu kita melakukan tugas-tugas sulit dengan cepat. Misalnya, library 'math' untuk perhitungan matematika rumit, library 'random' untuk membuat angka acak, atau library 'datetime' untuk mengelola waktu. Untuk menggunakannya, kamu cukup mengetik perintah 'import'. Memahami cara mencari dan menggunakan library yang tepat adalah kecerdasan seorang programmer. Ini disebut 'Jangan membuat ulang roda' (Don't reinvent the wheel). Jika sudah ada alat yang bagus dan teruji, gunakanlah! Belajar menggunakan library melatih efisiensi kerjamu. Kamu bisa fokus pada ide kreatif projekmu tanpa harus pusing memikirkan cara menghitung akar kuadrat atau cara menghasilkan angka acak secara manual. Penguasaan atas library standar akan membuatmu mampu membangun aplikasi fungsional dalam waktu yang jauh lebih singkat. Ini adalah cara kerja profesional di mana kita berdiri di atas bahu para raksasa teknologi sebelumnya untuk menciptakan inovasi-inovasi baru yang lebih canggih dan bermanfaat bagi masyarakat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Tingkat Lanjut" },
+    "subtopic": "Pemrograman Modular (Library)",
+    "lesson": { 
+      "title": "Menginstal Package dengan PIP/NPM",
+      "content": "Selain library standar, ada jutaan 'Package' tambahan yang dibuat oleh komunitas programmer di seluruh dunia yang bisa kamu unduh dan gunakan secara gratis. Di Python kita menggunakan alat bernama 'PIP', dan di JavaScript/Node.js kita menggunakan 'NPM'. Dengan alat ini, kamu bisa mengunduh fitur-fitur luar biasa hanya dengan satu baris perintah di terminal. Ingin membuat grafik yang indah? Instal package 'Matplotlib'. Ingin membuat game 2D? Instal 'Pygame'. Ingin membuat kecerdasan buatan? Instal 'TensorFlow'. Kemampuan mengelola package ini disebut Dependency Management. Kamu harus belajar cara memilih package yang aman, populer, dan selalu diperbarui agar aplikasimu tidak rusak atau terkena virus. Belajar menginstal package membuka pintu menuju kemungkinan yang tak terbatas. Kamu tidak lagi dibatasi oleh apa yang ada di komputermu, tapi kamu memiliki akses ke seluruh penemuan teknologi dunia. Ini adalah era kolaborasi global; saat kamu menginstal sebuah package, kamu sebenarnya sedang bekerja sama dengan ribuan programmer hebat lainnya untuk membangun mahakaryamu. Jadilah penjelajah ekosistem teknologi yang cerdas dan gunakanlah sumber daya global ini untuk mempercepat perkembangan bakat dan projek-projek inovatifmu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Tingkat Lanjut" },
+    "subtopic": "Pemrograman Modular (Library)",
+    "lesson": { 
+      "title": "Membuat Library Sendiri (Module)",
+      "content": "Setelah mahir menggunakan library orang lain, saatnya kamu belajar cara membuat 'Module' atau library-mu sendiri. Jika kamu punya sekumpulan fungsi yang sering kamu gunakan di berbagai projek yang berbeda, jangan copy-paste kodenya berkali-kali. Simpanlah fungsi-fungsi tersebut dalam satu file terpisah (misal: 'alat_saya.py'), lalu import file tersebut ke projek-projekmu yang lain. Inilah yang disebut Pemrograman Modular. Modularitas membuat kodemu menjadi sangat rapi, mudah dikelola, dan profesional. Kamu belajar untuk memecah sistem besar menjadi modul-modul kecil yang mandiri. Jika ada bagian yang ingin kamu tingkatkan, kamu cukup merubah satu modul tersebut tanpa perlu menyentuh bagian lain dari programmu. Membuat modul sendiri melatih kemampuan arsitektur perangkat lunakmu. Kamu belajar bagaimana mendesain sebuah alat agar bisa digunakan oleh orang lain dengan mudah. Ini adalah langkah awal jika nanti kamu ingin membagikan karyamu ke komunitas open source dunia. Dengan koding yang modular, kamu sedang membangun aset digital jangka panjang yang akan terus membantumu di masa depan saat kamu mengerjakan projek-projek teknologi yang jauh lebih besar, rumit, dan menantang."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Aplikasi AI sederhana" },
+    "subtopic": "API & Integrasi Layanan AI",
+    "lesson": { 
+      "title": "Apa itu API (Application Programming Interface)?",
+      "content": "API adalah 'pelayan' digital yang menghubungkan satu aplikasi dengan aplikasi lainnya. Bayangkan kamu berada di restoran; kamu adalah Pengguna, dapur adalah Server yang punya data/masakan, dan API adalah Pelayan yang mengantarkan pesananmu ke dapur lalu membawakan hasilnya kembali kepadamu. Dengan API, aplikasimu bisa menggunakan kekuatan super milik perusahaan besar. Misalnya, kamu tidak perlu membuat sistem peta sendiri, cukup panggil API Google Maps. Kamu tidak perlu membuat sistem cuaca sendiri, cukup panggil API OpenWeather. Di era sekarang, API adalah kunci utama dari inovasi digital. Aplikasi modern tidak lagi berdiri sendiri, tapi saling terhubung melalui ribuan API. Memahami konsep API melatihmu untuk berpikir tentang integrasi sistem. Kamu belajar bahwa kekuatan aplikasimu bisa berlipat ganda jika kamu tahu cara memanfaatkan layanan-layanan hebat yang sudah ada di internet. Belajar menggunakan API juga melatihmu tentang protokol komunikasi data seperti HTTP request (GET, POST). Penguasaan atas API akan menjadikannmu seorang pengembang aplikasi yang sangat kompetitif dan mampu membangun solusi teknologi yang canggih, terhubung secara global, dan memiliki fitur-fitur luar biasa yang disukai oleh pengguna di seluruh dunia."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Aplikasi AI sederhana" },
+    "subtopic": "API & Integrasi Layanan AI",
+    "lesson": { 
+      "title": "Mengambil Data dari API Publik",
+      "content": "Mari kita coba mempraktekkan cara mengambil data dari internet menggunakan Python atau JavaScript. Kita akan menggunakan library 'requests' (Python) atau 'fetch' (JS). Prosesnya: 1. Tentukan alamat URL API-nya (Endpoint), 2. Kirim permintaan (Request), 3. Terima jawaban dalam format JSON (Response), 4. Olah datanya untuk ditampilkan. Misalnya, kita mengambil data harga Bitcoin terbaru atau data gempa bumi dari BMKG. Saat melakukan ini, kamu akan menemui konsep 'Asynchronous Programming', di mana program tidak langsung mendapatkan hasil tapi harus menunggu beberapa saat karena perjalanan data lewat kabel internet. Belajar mengambil data dari API publik melatih kesabaran dan ketelitianmu dalam menangani ketidakpastian. Kamu belajar bahwa dunia internet itu sangat dinamis dan datanya selalu berubah setiap detik. Kamu juga harus belajar tentang 'API Key', yaitu kunci rahasia yang diberikan penyedia API agar mereka tahu siapa yang mengambil data tersebut. Menjaga kerahasiaan API Key adalah bagian dari etika koding profesional. Dengan kemampuan mengambil data dari internet, aplikasimu akan terasa 'hidup' karena informasinya selalu paling baru (real-time), akurat, dan sangat bermanfaat bagi pengguna yang membutuhkan informasi terkini dari berbagai penjuru dunia secara otomatis."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Aplikasi AI sederhana" },
+    "subtopic": "API & Integrasi Layanan AI",
+    "lesson": { 
+      "title": "Integrasi API Kecerdasan Buatan (Text-to-Speech/Vision)",
+      "content": "Kini saatnya kita memberikan 'Indera' pada aplikasimu menggunakan API Kecerdasan Buatan (AI API). Kamu bisa menggunakan layanan seperti OpenAI, Google Cloud AI, atau Microsoft Azure untuk memberikan kemampuan melihat, mendengar, dan berbicara pada programmu. Misalnya, gunakan API Text-to-Speech agar aplikasimu bisa membacakan teks dengan suara manusia yang merdu. Atau gunakan API Computer Vision untuk mendeteksi benda apa saja yang ada di dalam sebuah foto yang diunggah pengguna. Integrasi ini membuat aplikasimu terasa sangat ajaib dan futuristik. Kamu tidak perlu menjadi ahli matematika AI yang rumit untuk bisa menciptakan aplikasi cerdas; kamu cukup tahu cara 'memanggil' kecerdasan tersebut lewat API. Belajar integrasi AI melatih imajinasi dan kreativitas teknismu. Kamu mulai melihat peluang-peluang baru untuk membantu orang lain, misalnya membuat kacamata pintar untuk tuna netra yang bisa menyebutkan nama benda di depannya lewat API Vision dan Speech. Kemampuan ini adalah tiketmu menuju industri teknologi masa depan yang didominasi oleh AI. Dengan menggabungkan logika kodingmu yang kuat dan API AI yang canggih, tidak ada batasan lagi bagi jenis inovasi hebat yang bisa kamu ciptakan untuk merubah dunia menjadi tempat yang lebih baik, lebih cerdas, dan lebih inklusif bagi semua orang."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Aplikasi AI sederhana" },
+    "subtopic": "Pembuatan Chatbot Sederhana",
+    "lesson": { 
+      "title": "Logika Natural Language Processing Sederhana",
+      "content": "Bagaimana komputer bisa mengerti bahasa manusia? Bidang ini disebut Natural Language Processing (NLP). Di tingkat SMP, kita akan belajar logika NLP dasar menggunakan teknik 'Keyword Matching' dan 'String Manipulation'. Chatbot sederhanamu akan mencari kata-kata kunci tertentu di dalam kalimat yang diketik pengguna. Misalnya, jika ditemukan kata 'jam' atau 'pukul', chatbot akan memberikan jawaban waktu sekarang. Jika ditemukan kata 'halo' atau 'hai', chatbot membalas dengan sapaan. Namun, bahasa manusia sangat fleksibel. Orang bisa bilang 'Kapan ya jam istirahat?' atau 'Jam berapa istirahatnya?'. Kamu harus belajar cara membersihkan teks (seperti menghilangkan tanda baca dan merubah ke huruf kecil) agar pencarian kata kuncinya lebih akurat. Belajar logika NLP melatih kemampuan analisismu terhadap struktur bahasa. Kamu belajar bahwa di balik percakapan yang terlihat alami, ada algoritma-algoritma cerdas yang bekerja membedah kalimat tersebut menjadi bagian-bagian bermakna (tokenizing). Meskipun sederhana, ini adalah fondasi untuk memahami AI yang lebih besar seperti ChatGPT. Dengan logika ini, kamu bisa membangun asisten virtual pertama mu yang mampu membantu menjawab pertanyaan umum atau memberikan informasi layanan secara otomatis kepada teman-teman atau keluargamu dengan cara yang interaktif dan menyenangkan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Aplikasi AI sederhana" },
+    "subtopic": "Pembuatan Chatbot Sederhana",
+    "lesson": { 
+      "title": "Alur Percakapan dalam Chatbot",
+      "content": "Chatbot yang bagus tidak hanya menjawab satu pertanyaan, tapi bisa melakukan percakapan yang mengalir (Conversation Flow). Untuk ini, kamu butuh konsep 'State Management'. Chatbot harus ingat di tahap mana percakapan sedang berlangsung. Misalnya, jika chatbot bertanya 'Siapa namamu?', ia harus menunggu input berikutnya dan menyimpannya sebagai Nama, baru kemudian lanjut ke pertanyaan kedua. Alur ini biasanya digambar dalam bentuk 'Decision Tree' atau pohon keputusan. JIKA pengguna memilih menu A, MAKA chatbot lanjut ke cabang A. Jika memilih B, lanjut ke cabang B. Mempelajari alur percakapan melatih kemampuan empati dan desain interaksimu. Kamu belajar untuk memposisikan diri sebagai pengguna dan memikirkan segala kemungkinan jawaban yang mereka berikan agar chatbot tidak pernah merasa bingung atau memberikan jawaban yang tidak nyambung. Desain alur yang baik membuat teknologi terasa lebih manusiawi dan tidak kaku. Dengan menguasai manajemen alur ini, kamu bisa menciptakan chatbot yang sangat berguna, misalnya chatbot untuk pendaftaran ekskul sekolah, chatbot kuis interaktif, atau chatbot bantuan teknis sederhana yang mampu memandu pengguna langkah demi langkah untuk menyelesaikan masalah mereka dengan cara yang sangat efektif dan efisien."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Aplikasi AI sederhana" },
+    "subtopic": "Pembuatan Chatbot Sederhana",
+    "lesson": { 
+      "title": "Deployment Chatbot ke Platform (Telegram/Web)",
+      "content": "Setelah chatbot-mu selesai dibuat di komputermu sendiri, saatnya membagikannya agar bisa digunakan orang lain. Proses memindahkan kode dari komputermu ke internet agar bisa diakses kapan saja disebut 'Deployment'. Salah satu platform paling ramah untuk pemula adalah Telegram. Kamu bisa membuat bot lewat 'BotFather' di Telegram, mendapatkan API Token, lalu menghubungkannya dengan kode Python atau JS-mu. Sekarang, siapapun yang punya Telegram bisa mengobrol dengan karyamu! Selain itu, kamu juga bisa memasang chatbot-mu di sebuah website sederhana. Belajar deployment melatih tanggung jawabmu dalam menjaga program agar tetap menyala (up-time). Kamu belajar tentang konsep 'Hosting' atau menyewa komputer di internet (server) yang menyala 24 jam. Ini adalah tahap paling memuaskan karena karyamu benar-benar menjadi 'nyata' dan bisa bermanfaat bagi publik luas. Kamu akan merasakan kebanggaan luar biasa saat melihat orang asing menggunakan aplikasi yang kamu buat. Deployment adalah langkah terakhir dari sebuah siklus pengembangan produk teknologi. Dengan berhasil melakukan ini, kamu sudah membuktikan bahwa kamu bukan lagi sekadar pelajar koding, tapi sudah menjadi seorang pengembang aplikasi yang mampu merilis produk digital yang fungsional ke pasar global secara mandiri dan profesional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Keamanan Siber" },
+    "subtopic": "Enkripsi & Hashing",
+    "lesson": { 
+      "title": "Perbedaan Enkripsi Simetris dan Asimetris",
+      "content": "Di dunia siber yang penuh pengintai, kita butuh cara untuk merahasiakan pesan. Teknik ini disebut Kriptografi. Ada dua jenis utama enkripsi: Simetris dan Asimetris. Enkripsi Simetris menggunakan satu kunci yang sama untuk mengunci (enkripsi) dan membuka (dekripsi) pesan. Ini seperti peti harta karun yang hanya punya satu kunci fisik; kamu dan temanmu harus punya kunci yang sama persis. Kelemahannya: bagaimana cara mengirimkan kunci itu dengan aman tanpa dicuri orang? Untuk itulah ada Enkripsi Asimetris. Teknik ini menggunakan dua kunci yang berbeda namun berpasangan: Kunci Publik (boleh disebar ke siapa saja) dan Kunci Privat (harus disimpan sangat rahasia). Orang lain mengunci pesan pakai Kunci Publik-mu, tapi hanya Kunci Privat-mu yang bisa membukanya. Inilah rahasia keamanan internet modern, termasuk saat kamu bertransaksi bank online atau menggunakan WhatsApp. Memahami konsep ini melatih kesadaranmu akan pentingnya perlindungan data. Kamu belajar bahwa di balik kemudahan komunikasi digital, ada matematika rumit yang bekerja keras melindungi privasimu. Sebagai calon pencipta teknologi, pemahaman tentang enkripsi akan membantumu membangun aplikasi yang dipercaya oleh pengguna karena kamu menjamin keamanan data mereka dari tangan-tangan jahil yang tidak bertanggung jawab."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Keamanan Siber" },
+    "subtopic": "Enkripsi & Hashing",
+    "lesson": { 
+      "title": "Kegunaan Hashing untuk Keamanan Password",
+      "content": "Sebuah aturan emas dalam database: 'Jangan pernah menyimpan kata sandi dalam bentuk teks asli'. Mengapa? Karena jika database dicuri, hacker akan langsung tahu semua sandi pengguna. Solusinya adalah 'Hashing'. Hashing adalah proses mengubah teks menjadi deretan karakter acak yang unik (Fingerprint Digital). Berbeda dengan enkripsi, hasil hashing tidak bisa diubah kembali menjadi teks aslinya (satu arah). Saat kamu login, komputer menghash sandi yang kamu ketik lalu membandingkan hasilnya dengan hash yang ada di database. Jika sama, berarti sandinya benar. Hashing menggunakan algoritma seperti SHA-256. Sedikit saja perbedaan pada sandimu (misal huruf besar jadi kecil), hasil hash-nya akan berubah total. Belajar tentang hashing melatihmu untuk menjadi pengembang yang bertanggung jawab terhadap privasi orang lain. Kamu belajar untuk selalu berpikir tentang 'Skenario Terburuk': bagaimana jika dataku bocor? Dengan hashing, kebocoran data tidak akan langsung merugikan pengguna karena sandi asli mereka tetap tidak diketahui. Penguasaan atas konsep hashing adalah standar minimal bagi siapapun yang ingin membangun sistem login yang aman dan memenuhi standar keamanan siber internasional saat ini."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Keamanan Siber" },
+    "subtopic": "Enkripsi & Hashing",
+    "lesson": { 
+      "title": "Sertifikat Digital dan HTTPS",
+      "content": "Pernahkah kamu melihat ikon gembok di browser saat membuka website? Itu tandanya website tersebut menggunakan HTTPS. Huruf 'S' berarti Secure (Aman). HTTPS bekerja menggunakan Sertifikat Digital yang dikeluarkan oleh lembaga resmi (Certificate Authority). Sertifikat ini membuktikan dua hal: pertama, bahwa website tersebut benar-benar milik orang yang sah (bukan website palsu untuk menipu), dan kedua, bahwa seluruh komunikasi antara browser-mu dan server terenkripsi dengan aman. Tanpa HTTPS, siapapun yang berada di jaringan WiFi yang sama denganmu bisa mengintip apa yang kamu ketik, termasuk username dan password-mu. Memahami cara kerja sertifikat digital melatihmu untuk menjadi warga digital yang cerdas dan waspada. Jangan pernah memasukkan data sensitif di website yang tidak ada ikon gemboknya (masih HTTP). Sebagai programmer, kamu juga harus belajar cara memasang sertifikat keamanan pada aplikasi web buatanmu nanti agar penggunamu merasa aman. Keamanan bukan lagi sekadar fitur tambahan, tapi sudah menjadi syarat mutlak dalam membangun ekosistem digital yang sehat, terpercaya, dan profesional bagi seluruh masyarakat pengguna teknologi di era informasi yang sangat terbuka dan penuh risiko keamanan ini."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Keamanan Siber" },
+    "subtopic": "Keamanan Web Dasar (OWASP)",
+    "lesson": { 
+      "title": "Mengenal Serangan SQL Injection",
+      "content": "Salah satu serangan paling berbahaya dan paling tua di internet adalah SQL Injection. Serangan ini terjadi saat hacker memasukkan perintah database jahat ke dalam kotak input (seperti kotak pencarian atau login) yang tidak divalidasi dengan benar oleh programmer. Misalnya, hacker mengetikkan perintah yang memerintahkan database untuk 'tampilkan semua pengguna' atau 'hapus semua tabel'. Jika programmer tidak melakukan 'Sanitization' atau pembersihan input, perintah jahat itu akan dijalankan oleh server seolah-olah itu perintah resmi. Akibatnya, data bisa dicuri atau seluruh website bisa rusak total. Memahami serangan ini melatih ketelitianmu dalam menulis kode database. Kamu belajar untuk selalu waspada terhadap segala bentuk input dari luar. Gunakanlah teknik 'Parameterized Queries' yang memisahkan antara perintah database dan data pengguna agar perintah jahat tidak bisa menyusup masuk. Belajar tentang keamanan siber membuatmu menyadari bahwa koding bukan hanya soal membuat fitur yang canggih, tapi tentang membangun sistem yang tangguh dari serangan. Pengetahuan tentang SQL Injection akan menjadikannmu seorang pengembang backend yang handal dan sangat dihargai karena mampu menjaga aset data perusahaan dengan sangat aman dan teruji kekuatannya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Keamanan Siber" },
+    "subtopic": "Keamanan Web Dasar (OWASP)",
+    "lesson": { 
+      "title": "Mengenal Serangan XSS (Cross-Site Scripting)",
+      "content": "Jika SQL Injection menyerang database di server, Cross-Site Scripting (XSS) menyerang browser pengguna lain. XSS terjadi saat hacker menyisipkan kode JavaScript jahat ke dalam sebuah website (misalnya lewat kolom komentar). Saat orang lain membaca komentar tersebut, kode jahat itu otomatis berjalan di browser mereka. Efeknya bisa bermacam-macam: mulai dari mencuri 'Session Cookie' agar hacker bisa masuk ke akunmu tanpa password, hingga mengarahkanmu ke website penipuan. Solusinya sama: Programmer harus melakukan 'Escape' atau pembersihan pada setiap data yang akan ditampilkan ke layar agar kode HTML/JS dari pengguna tidak dijalankan sebagai program oleh browser. Belajar tentang XSS melatih kewaspadaanmu dalam membangun antarmuka web. Kamu belajar bahwa tampilan yang indah saja tidak cukup jika tidak dibarengi dengan sistem keamanan yang ketat. Selalu anggap setiap data dari pengguna adalah data yang berpotensi berbahaya sampai terbukti bersih. Dengan memahami risiko XSS, kamu sedang membangun standar keamanan yang tinggi bagi aplikasi-aplikasi web ciptaanmu sehingga setiap orang yang mengunjunginya bisa merasa tenang dan terlindungi dari berbagai ancaman kejahatan siber yang terus berkembang dan semakin cerdik modusnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Keamanan Siber" },
+    "subtopic": "Keamanan Web Dasar (OWASP)",
+    "lesson": { 
+      "title": "Prinsip Least Privilege dalam Keamanan",
+      "content": "Salah satu prinsip paling dasar dalam keamanan sistem informasi adalah 'Least Privilege' atau Hak Akses Terkecil. Prinsip ini menyatakan bahwa setiap pengguna, program, atau proses hanya boleh diberikan hak akses seminimal mungkin yang dibutuhkan untuk mengerjakan tugasnya. Contoh: Seorang editor majalah sekolah hanya butuh akses untuk merubah teks berita, tidak perlu akses untuk merubah pengaturan server atau menghapus database pengguna. Jika akun editor tersebut dibobol hacker, kerusakan yang ditimbulkan akan terbatas karena hak aksesnya memang kecil. Begitu juga dalam koding; berikanlah izin akses file atau database yang paling terbatas agar jika terjadi bug atau serangan, dampaknya tidak menyebar luas (Blast Radius). Memahami prinsip ini melatih kemampuan manajerial dan desain sistemmu. Kamu belajar untuk tidak sembarangan memberikan 'Kunci Utama' (Root/Admin) kepada siapapun atau aplikasi manapun. Desain keamanan yang baik adalah desain yang berlapis dan memiliki batas-batas yang jelas. Dengan menerapkan prinsip Least Privilege, kamu sedang membangun infrastruktur digital yang sangat tangguh, aman, dan mudah untuk diaudit serta dikelola secara profesional dalam jangka panjang bagi organisasi atau bisnismu di masa depan nantinya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Visualisasi Data",
+    "lesson": { 
+      "title": "Membuat Grafik dengan Matplotlib/Chart.js",
+      "content": "Data yang hanya berupa barisan angka di dalam tabel seringkali sangat membosankan dan sulit dimengerti. Untuk itu, kita butuh Visualisasi Data. Visualisasi adalah seni mengubah angka menjadi gambar yang bermakna, seperti grafik batang, grafik garis, atau diagram lingkaran (pie chart). Di Python kita punya library 'Matplotlib' yang sangat hebat, dan di web kita punya 'Chart.js'. Melalui grafik, kita bisa melihat 'Tren' atau 'Pola' yang tersembunyi dengan sekejap mata. Misalnya, kamu bisa melihat bahwa penjualan kantin sekolah meningkat drastis setiap hari Jumat, atau nilai rata-rata kelasmu naik setelah diberikan kuis interaktif. Belajar visualisasi melatih kemampuan analisismu dan kemampuan bercerita lewat data. Kamu belajar memilih jenis grafik yang tepat untuk informasi yang berbeda. Jangan gunakan pie chart jika kamu ingin menunjukkan perubahan nilai dari waktu ke waktu; gunakanlah grafik garis. Visualisasi yang baik bukan hanya yang terlihat cantik, tapi yang mampu menyampaikan pesan yang akurat dan jujur tanpa menyesatkan pembaca. Penguasaan atas visualisasi data akan membuatmu sangat handal dalam menyajikan laporan projek, melakukan presentasi ilmiah, atau bahkan membantu perusahaan besar dalam membaca peluang pasar melalui dasbor-dasbor informasi yang dinamis dan sangat mudah dipahami oleh siapapun."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Visualisasi Data",
+    "lesson": { 
+      "title": "Membersihkan Data Kotor (Data Cleaning)",
+      "content": "Di dunia nyata, data yang kita dapatkan seringkali 'kotor'. Apa maksudnya? Mungkin ada data yang kosong (Null), ada salah ketik (misal umur tertulis 200 tahun), atau ada data yang ganda (duplikat). Data kotor akan menghasilkan analisis yang salah. Itulah sebabnya 80% pekerjaan seorang Data Scientist adalah 'Data Cleaning' atau Pembersihan Data. Kamu harus belajar cara mencari dan memperbaiki atau menghapus data yang tidak valid menggunakan kode. Misalnya, mengganti semua data kosong dengan nilai rata-rata, atau menghapus baris yang datanya tidak masuk akal. Belajar membersihkan data melatih ketelitian, kesabaran, dan integritasmu. Kamu belajar bahwa hasil akhir yang hebat dimulai dari bahan baku yang bersih. Jangan pernah melakukan analisis pada data yang berantakan karena hasilnya akan menyesatkan. Pembersihan data menuntut pemahaman logikamu yang kuat tentang batasan-batasan data yang benar (domain knowledge). Dengan menguasai teknik pembersihan ini, kamu akan memiliki fondasi yang kuat untuk masuk ke dunia Big Data dan Machine Learning, di mana akurasi model kecerdasan buatan sangat bergantung pada seberapa bersih dan berkualitas data yang diberikan manusia kepadanya saat proses pelatihan awal yang sangat krusial tersebut berlangsung."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Visualisasi Data",
+    "lesson": { 
+      "title": "Storytelling dengan Data",
+      "content": "Data hanyalah sekumpulan fakta, tapi 'Data Storytelling' adalah cara kita memberikan makna pada fakta tersebut agar orang lain tergerak untuk bertindak. Setelah kamu punya grafik yang bagus dan data yang bersih, tantangan berikutnya adalah bagaimana cara menjelaskannya. Jangan hanya berkata 'Ini grafik penjualan'. Katakanlah: 'Berdasarkan grafik ini, kita melihat ada penurunan minat pada produk A di kalangan remaja, oleh karena itu kita perlu merubah strategi pemasaran'. Storytelling menggabungkan kemampuan teknis kodingmu dengan kemampuan komunikasimu. Kamu harus bisa menjawab pertanyaan 'Terus kenapa?' (So what?). Apa dampaknya data ini bagi kehidupan nyata? Belajar storytelling melatih kepemimpinan dan pengaruhmu. Kamu belajar bahwa seorang programmer yang paling dihargai adalah mereka yang bukan hanya pintar koding, tapi mampu menjelaskan manfaat kodingnya bagi organisasi. Gunakanlah data untuk mendukung argumenmu dengan bukti yang tak terbantahkan. Dengan kemampuan bercerita lewat data, kamu akan menjadi orang yang sangat berpengaruh dalam setiap diskusi, mampu memberikan saran yang bijak, dan membantu menciptakan perubahan positif di lingkungan sekitarmu melalui wawasan-wawasan cerdas yang didukung oleh analisis data yang sangat kuat, akurat, dan meyakinkan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Pengambilan Keputusan Berbasis Data",
+    "lesson": { 
+      "title": "Mencari Nilai Rata-rata, Median, dan Modus lewat Kode",
+      "content": "Statistika dasar adalah alat perang utama dalam analisis data. Kamu harus belajar cara menghitung Mean (Rata-rata), Median (Nilai tengah), dan Modus (Nilai paling sering muncul) menggunakan bahasa pemrograman. Mengapa tidak pakai kalkulator saja? Karena koding memungkinkanmu menghitung jutaan data dalam sekejap. Kamu akan belajar bahwa masing-masing nilai ini memberikan sudut pandang yang berbeda. Misalnya, jika kamu menghitung rata-rata gaji di sebuah perusahaan dan ada satu orang bos yang gajinya sangat besar sekali, maka rata-ratanya akan terlihat tinggi meskipun gaji karyawan lain kecil. Di sinilah Median lebih jujur untuk menggambarkan keadaan yang sebenarnya. Belajar statistika lewat koding melatih objektivitasmu. Kamu belajar untuk tidak tertipu oleh angka yang terlihat di permukaan saja. Kamu belajar membedah kebenaran dari berbagai sudut pandang matematis yang berbeda. Kemampuan ini sangat penting saat kamu merancang sistem cerdas, misalnya menentukan harga pasar otomatis atau mengevaluasi kinerja sebuah aplikasi berdasarkan durasi penggunaan para penggunanya. Penguasaan atas statistika dasar akan menjadikannmu seorang analis data yang kritis, tidak mudah tertipu oleh hoax data, dan mampu memberikan kesimpulan yang sangat akurat bagi perkembangan bisnis atau riset ilmiah yang sedang kamu kerjakan secara profesional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Pengambilan Keputusan Berbasis Data",
+    "lesson": { 
+      "title": "Korelasi dan Hubungan Antar Data",
+      "content": "Tahap analisis yang lebih tinggi adalah mencari 'Korelasi' atau hubungan antara dua hal yang berbeda. Misalnya: 'Apakah ada hubungan antara waktu tidur siswa dengan nilai ujian mereka?'. Lewat koding, kamu bisa menghitung koefisien korelasi dan menggambar 'Scatter Plot' (titik-titik sebaran). Jika titik-titiknya membentuk garis naik, berarti ada korelasi positif: semakin lama tidur, semakin bagus nilainya. Namun, ingatlah hukum emas analisis data: 'Correlation is not Causation' (Korelasi bukan berarti sebab-akibat). Hanya karena dua hal terjadi bersamaan, belum tentu yang satu menyebabkan yang lain. Mungkin saja ada faktor ketiga yang tidak kita ukur. Belajar tentang korelasi melatih logika sebab-akibatmu dan sikap skeptismu yang sehat. Kamu belajar untuk menggali lebih dalam sebelum mengambil kesimpulan besar. Kemampuan menemukan hubungan antar data ini adalah dasar dari ilmu pengetahuan modern dan strategi bisnis tingkat dunia. Dengan memahami hubungan antar variabel, kamu bisa memprediksi masa depan dengan lebih baik, merancang eksperimen yang lebih cerdas, dan membantu menciptakan inovasi teknologi yang benar-benar menyentuh akar masalah yang ada di masyarakat melalui wawasan data yang mendalam dan sangat komprehensif analisisnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Pengambilan Keputusan Berbasis Data",
+    "lesson": { 
+      "title": "Membuat Dashboard Laporan Sederhana",
+      "content": "Puncak dari kemampuan analisis data adalah menyajikannya dalam sebuah 'Dashboard'. Dashboard adalah papan kontrol satu layar yang berisi berbagai grafik dan angka penting (Key Performance Indicators - KPI) yang selalu diperbarui secara otomatis. Kamu bisa menggunakan web development sederhana untuk membuat dashboard ini. Bayangkan kepala sekolahmu punya dashboard yang menampilkan kehadiran siswa setiap pagi, jumlah buku yang dipinjam di perpustakaan, dan rata-rata nilai kuis hari ini, semuanya dalam satu tampilan yang cantik dan interaktif. Membuat dashboard melatih kemampuan integrasimu. Kamu harus menghubungkan database, logika pengolahan data (statistika), dan visualisasi ke dalam satu wadah yang harmonis. Dashboard adalah alat bantu bagi manusia untuk mengambil keputusan yang cepat dan tepat berdasarkan fakta, bukan perasaan semata (data-driven decision making). Dengan membangun dashboard, kamu sedang belajar cara menjadi seorang 'Solution Architect' yang mampu memberikan gambaran besar bagi sebuah organisasi. Kemampuan ini sangat dicari di era transformasi digital saat ini, di mana setiap pemimpin butuh navigasi data yang jernih untuk bisa membawa organisasinya menuju kesuksesan di tengah persaingan yang sangat ketat dan penuh dengan banjir informasi digital setiap harinya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Proyek Akhir Koding" },
+    "subtopic": "Perancangan Sistem & UI/UX",
+    "lesson": { 
+      "title": "Wireframing dan Prototyping Aplikasi",
+      "content": "Sebelum kamu menulis satu baris kode untuk proyek akhirmu, kamu harus membuat 'Cetak Biru'-nya terlebih dahulu melalui Wireframing. Wireframing adalah proses menggambar tata letak aplikasi dalam bentuk kotak-kotak sederhana (tanpa warna atau gambar indah) untuk menentukan di mana posisi tombol, teks, dan gambar akan diletakkan. Setelah wireframe siap, kamu bisa membuat 'Prototype' atau simulasi interaktif di mana tombolnya sudah bisa diklik meskipun kodenya belum dibuat. Alat seperti Figma sering digunakan untuk tahap ini. Mengapa ini penting? Agar kamu tidak membuang waktu koding hal-hal yang ternyata tidak disukai pengguna atau sulit digunakan. Perencanaan visual ini menghemat banyak waktu dan tenaga di masa depan. Belajar wireframing melatih sisi desain dan psikologimu. Kamu belajar memikirkan kenyamanan pengguna (User Experience) sejak detik pertama. Sebuah aplikasi yang sukses dimulai dari rancangan yang matang dan dipikirkan dengan sangat teliti kegunaannya. Jangan terburu-buru koding; nikmatilah tahap perancangan ini untuk bereksperimen dengan berbagai ide kreatif agar aplikasimu nanti bukan hanya pintar di dalam, tapi juga sangat nyaman dan intuitif saat digunakan oleh siapapun, termasuk orang yang baru pertama kali menyentuh teknologi buatanmu tersebut."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Proyek Akhir Koding" },
+    "subtopic": "Perancangan Sistem & UI/UX",
+    "lesson": { 
+      "title": "Prinsip Desain UI yang Responsif",
+      "content": "Di era sekarang, orang membuka aplikasi lewat berbagai perangkat: HP yang layarnya kecil, tablet yang sedang, atau laptop yang layarnya lebar. Sebagai pengembang, kamu harus memastikan aplikasimu 'Responsif', artinya tampilannya bisa otomatis menyesuaikan ukuran layar tanpa terlihat rusak atau berantakan. Kamu harus belajar tentang konsep Grid System, Flexbox, dan Media Queries (jika menggunakan web). Desain UI yang responsif bukan hanya soal estetika, tapi soal 'Inklusivitas' dan aksesibilitas. Kamu ingin semua orang bisa menikmati karyamu tanpa peduli apa perangkat yang mereka miliki. Belajar desain responsif melatih ketelitian visual dan kemampuan analisismu terhadap berbagai skenario penggunaan. Kamu belajar tentang prioritas; konten mana yang harus tetap ada di layar HP yang sempit dan mana yang boleh disembunyikan. Prinsip-prinsip desain ini akan membuat aplikasimu terlihat sangat profesional dan berkelas dunia. Pengguna akan merasa dihargai saat mereka melihat aplikasimu tampil sempurna di perangkat apapun yang mereka gunakan. Dengan penguasaan desain responsif, kamu sudah siap untuk masuk ke pasar pengembangan aplikasi modern yang menuntut kualitas visual dan fungsionalitas yang tinggi di segala medan dan kondisi perangkat teknologi yang sangat beragam saat ini."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Proyek Akhir Koding" },
+    "subtopic": "Perancangan Sistem & UI/UX",
+    "lesson": { 
+      "title": "User Testing dan Pengumpulan Feedback",
+      "content": "Setelah prototypemu siap atau koding awalmu jalan, kamu harus melakukan 'User Testing'. Berikan aplikasimu kepada teman atau keluarga, lalu amati mereka saat menggunakannya tanpa memberitahu cara pakainya. Lihatlah di mana mereka bingung, di mana mereka melakukan kesalahan, atau bagian mana yang menurut mereka lambat. Catatlah semua 'Feedback' atau masukan tersebut dengan lapang dada. Jangan defensif atau marah saat karyamu dikritik; kritik adalah 'emas' bagi seorang pengembang karena itulah satu-satunya cara untuk membuat produk yang sempurna. User testing melatih kerendahhatian dan kematangan sikapmu. Kamu belajar bahwa kamu membuat aplikasi untuk 'Orang Lain', bukan untuk dirimu sendiri. Terkadang apa yang menurut kita mudah, ternyata sulit bagi orang lain. Melakukan perbaikan berdasarkan masukan pengguna (iterasi) adalah kunci dari kesuksesan perusahaan besar seperti Apple dan Google. Dengan melakukan pengujian secara terbuka dan jujur, kamu sedang menjamin bahwa proyek akhirmu nanti akan benar-benar memberikan solusi yang nyata dan disukai oleh penggunanya. Jadilah pendengar yang baik bagi penggunamu, dan aplikasimu akan tumbuh menjadi karya yang luar biasa yang mampu memberikan dampak positif yang nyata bagi kehidupan banyak orang di sekitarmu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Proyek Akhir Koding" },
+    "subtopic": "Pengembangan & Testing Proyek",
+    "lesson": { 
+      "title": "Version Control dengan GIT (Dasar)",
+      "content": "Dalam mengerjakan proyek besar, kamu akan sering merubah kode. Terkadang, setelah merubah kode, eh malah aplikasinya jadi rusak total! Bagaimana cara kembali ke versi kemarin yang masih benar? Untuk itu kita butuh 'Version Control' menggunakan alat bernama GIT. GIT bertindak seperti 'Mesin Waktu' bagi kodemu. Setiap kali kamu melakukan kemajuan yang stabil, kamu melakukan 'Commit' atau menyimpan catatan permanen di sejarah proyekmu. Jika terjadi kesalahan fatal, kamu tinggal 'Rollback' atau kembali ke commit sebelumnya dengan mudah. Selain itu, GIT memungkinkanmu bekerja sama dalam tim (Collaboration) tanpa takut menimpa kode teman satu timmu melalui fitur 'Branching'. Belajar dasar GIT adalah syarat mutlak untuk bekerja di industri teknologi manapun. Kamu belajar tentang kedisiplinan kerja dan manajemen risiko. Jangan pernah bekerja tanpa version control karena itu seperti mengendarai motor tanpa helm; sangat berbahaya bagi keselamatan karyamu. Dengan GIT, kamu bisa bereksperimen dengan bebas mencoba fitur-fitur gila tanpa takut merusak apa yang sudah jadi. Penguasaan atas GIT akan membuatmu terlihat sangat profesional di mata pengembang lain dan siap untuk berkolaborasi dalam projek-projek open source tingkat dunia yang inspiratif dan penuh dengan tantangan inovasi teknologi yang mutakhir."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Proyek Akhir Koding" },
+    "subtopic": "Pengembangan & Testing Proyek",
+    "lesson": { 
+      "title": "Dokumentasi Teknis Proyek Akhir",
+      "content": "Sebuah aplikasi yang hebat harus dibarengi dengan dokumentasi yang hebat pula. Dokumentasi Teknis adalah buku panduan yang menjelaskan cara memasang aplikasi, cara menjalankan kodenya, dan bagaimana logika di dalamnya bekerja. Biasanya dokumentasi ini ditulis di file bernama 'README.md' menggunakan bahasa Markdown yang simpel tapi rapi. Jelaskan tujuan proyekmu, fitur-fitur utamanya, library apa saja yang harus diinstal, dan bagaimana cara kerja fitur kecerdasan buatan (AI) yang kamu masukkan. Dokumentasi melatih kemampuan komunikasi tulismu dan integritasmu sebagai programmer. Kamu belajar untuk tidak egois; kamu ingin orang lain bisa mempelajari dan mengembangkan kodemu lebih jauh di masa depan. Di dunia kerja, dokumentasi adalah aset yang sangat berharga untuk proses 'Handover' atau serah terima pekerjaan. Dengan menulis dokumentasi yang jelas, lengkap, dan mudah dimengerti, kamu sedang membuktikan bahwa kamu adalah seorang teknokrat yang bertanggung jawab dan memiliki visi jangka panjang. Karyamu akan terus hidup dan bermanfaat bagi orang lain meskipun kamu sudah tidak lagi mengerjakan projek tersebut, karena petunjuk yang kamu tinggalkan sudah sangat jelas dan bisa diikuti oleh siapa saja yang tertarik untuk belajar dari mahakaryamu tersebut."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Proyek Akhir Koding" },
+    "subtopic": "Pengembangan & Testing Proyek",
+    "lesson": { 
+      "title": "Presentasi dan Demo Produk Teknologi",
+      "content": "Inilah saatnya menunjukkan hasil kerja kerasmu selama 3 tahun di jenjang SMP! Dalam presentasi akhir, jangan hanya menunjukkan kode yang membosankan. Tunjukkanlah 'Masalah' yang kamu selesaikan dan 'Dampak' dari solusimu. Lakukan 'Live Demo' atau demonstrasi langsung di mana kamu menunjukkan fitur-fitur unggulan aplikasimu berjalan dengan mulus. Jelaskan juga kendala terbesar yang kamu hadapi dan bagaimana kamu berhasil mengatasinya lewat kreativitas dan logika. Kemampuan presentasi (Public Speaking) sangat penting agar ide-idemu bisa diterima dan didanai oleh orang lain. Kamu belajar untuk percaya diri dan bangga atas identitasmu sebagai pencipta teknologi. Jangan takut jika ada bug kecil saat demo; jelaskan secara jujur dan bagaimana rencana perbaikannya. Ini adalah penutup yang indah bagi perjalanan belajarmu di SMP. Kamu telah bertransformasi dari sekadar bermain-main dengan koding visual hingga mampu membangun sistem cerdas yang terintegrasi, aman, dan bermanfaat secara nyata. Teruslah berkarya, jaga semangat inovasimu, dan bersiaplah untuk tantangan yang jauh lebih seru, lebih dalam, dan lebih menantang di jenjang SMA nanti, di mana kamu akan masuk ke dunia spesialisasi teknologi yang akan menentukan arah karir masa depanmu di industri global yang luar biasa dinamis ini."
+    }
+  }
+]

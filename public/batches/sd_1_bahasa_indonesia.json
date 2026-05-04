@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Huruf & Suku Kata" },
+    "subtopic": "Mengenal Huruf Abjad",
+    "lesson": { 
+      "title": "Huruf Vokal (a, i, u, e, o)",
+      "content": "Ayo kita belajar huruf vokal! Huruf vokal ada lima, yaitu a, i, u, e, dan o. Huruf ini sangat penting untuk membuat kata. Contoh: a untuk apel, i untuk ikan, u untuk ular, e untuk elang, dan o untuk obat. Penjelasan: Huruf vokal memberikan suara pada kata-kata kita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Huruf & Suku Kata" },
+    "subtopic": "Mengenal Huruf Abjad",
+    "lesson": { 
+      "title": "Huruf Konsonan b, c, d, f, g",
+      "content": "Huruf konsonan adalah huruf selain vokal. Mari kita lihat huruf b, c, d, f, dan g. Contoh: b untuk bola, c untuk cacing, d untuk dadu. Penjelasan: Kita menggabungkan huruf konsonan dengan vokal untuk membaca."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Huruf & Suku Kata" },
+    "subtopic": "Mengenal Huruf Abjad",
+    "lesson": { 
+      "title": "Huruf Konsonan h, j, k, l, m",
+      "content": "Mari lanjut mengenal huruf h, j, k, l, dan m. Contoh: h untuk harimau, j untuk jambu, k untuk kaki. Penjelasan: Hafalkan bentuk hurufnya ya!"
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Huruf & Suku Kata" },
+    "subtopic": "Merangkai Suku Kata",
+    "lesson": { 
+      "title": "Suku Kata bo-la dan bu-ku",
+      "content": "Suku kata adalah potongan kata. Kata 'bola' terdiri dari bo dan la. Kata 'buku' terdiri dari bu dan ku. Contoh: bo-la, bu-ku. Penjelasan: Membaca suku kata memudahkan kita membaca kata yang panjang."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Huruf & Suku Kata" },
+    "subtopic": "Merangkai Suku Kata",
+    "lesson": { 
+      "title": "Suku Kata ma-ma dan pa-pa",
+      "content": "Kata 'mama' terdiri dari ma dan ma. Kata 'papa' terdiri dari pa dan pa. Contoh: ma-ma, pa-pa. Penjelasan: Huruf m ditambah a jadi ma."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Huruf & Suku Kata" },
+    "subtopic": "Merangkai Suku Kata",
+    "lesson": { 
+      "title": "Latihan Membaca Suku Kata Variasi",
+      "content": "Ayo coba baca: ba-bi-bu, ca-ci-cu, da-di-du. Contoh: ba-ju, cu-ci. Penjelasan: Berlatih terus supaya lancar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kosakata Dasar" },
+    "subtopic": "Anggota Tubuh",
+    "lesson": { 
+      "title": "Nama-nama Bagian Kepala",
+      "content": "Di kepala ada mata, hidung, telinga, dan mulut. Contoh: Mata untuk melihat. Penjelasan: Kita harus mengenal nama bagian tubuh kita sendiri."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kosakata Dasar" },
+    "subtopic": "Anggota Tubuh",
+    "lesson": { 
+      "title": "Tangan dan Kaki",
+      "content": "Kita punya dua tangan dan dua kaki. Contoh: Tangan untuk memegang, kaki untuk berjalan. Penjelasan: Jaga kebersihan tangan dan kaki ya!"
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kosakata Dasar" },
+    "subtopic": "Anggota Tubuh",
+    "lesson": { 
+      "title": "Kegunaan Panca Indra",
+      "content": "Mata melihat, telinga mendengar, hidung mencium bau. Contoh: Saya mencium bau bunga. Penjelasan: Panca indra membantu kita mengenal dunia."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kosakata Dasar" },
+    "subtopic": "Benda di Sekitar",
+    "lesson": { 
+      "title": "Alat Tulis di Sekolah",
+      "content": "Ada pensil, buku, penggaris, dan tas. Contoh: Saya menulis dengan pensil. Penjelasan: Siapkan alat tulismu sebelum belajar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kosakata Dasar" },
+    "subtopic": "Benda di Sekitar",
+    "lesson": { 
+      "title": "Benda di Dalam Rumah",
+      "content": "Ada meja, kursi, lampu, dan tempat tidur. Contoh: Ibu duduk di kursi. Penjelasan: Sebutkan benda yang kamu lihat sekarang."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kosakata Dasar" },
+    "subtopic": "Benda di Sekitar",
+    "lesson": { 
+      "title": "Mainan Kesukaanku",
+      "content": "Ada boneka, mobil-mobilan, dan bola. Contoh: Adik main boneka. Penjelasan: Bermain itu menyenangkan!"
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Sederhana" },
+    "subtopic": "Menyusun Kata Jadi Kalimat",
+    "lesson": { 
+      "title": "Kalimat Subjek dan Predikat",
+      "content": "Kalimat butuh orang yang melakukan dan apa yang dilakukan. Contoh: Ibu memasak. Penjelasan: Ibu adalah subjek, memasak adalah predikat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Sederhana" },
+    "subtopic": "Menyusun Kata Jadi Kalimat",
+    "lesson": { 
+      "title": "Kalimat Budi dan Iwan",
+      "content": "Contoh: Budi bermain bola. Iwan membaca buku. Penjelasan: Susunan kata harus benar supaya artinya jelas."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Sederhana" },
+    "subtopic": "Menyusun Kata Jadi Kalimat",
+    "lesson": { 
+      "title": "Melengkapi Kalimat Rumpang",
+      "content": "Ayo isi titik-titik ini: Saya makan ... (nasi). Contoh: Kucing tidur di ... (lantai). Penjelasan: Cari kata yang pas untuk kalimatnya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Sederhana" },
+    "subtopic": "Kalimat Tanya dan Perintah",
+    "lesson": { 
+      "title": "Kata Tanya Siapa dan Apa",
+      "content": "Siapa untuk orang, apa untuk benda. Contoh: Siapa namamu? Apa ini? Penjelasan: Gunakan tanda tanya (?) di akhir."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Sederhana" },
+    "subtopic": "Kalimat Tanya dan Perintah",
+    "lesson": { 
+      "title": "Kalimat Ajakan Ayo dan Mari",
+      "content": "Kita mengajak teman bermain. Contoh: Ayo kita main! Mari kita belajar. Penjelasan: Gunakan kata yang sopan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Sederhana" },
+    "subtopic": "Kalimat Tanya dan Perintah",
+    "lesson": { 
+      "title": "Kalimat Larangan Jangan",
+      "content": "Jangan melakukan hal berbahaya. Contoh: Jangan lari di tangga. Penjelasan: Kalimat larangan untuk menjaga keselamatan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Permulaan" },
+    "subtopic": "Membaca Kata Pendek",
+    "lesson": { 
+      "title": "Membaca Kata Tiga Huruf",
+      "content": "Kata pendek seperti tas, ban, cat. Contoh: Tas biru. Penjelasan: Eja hurufnya satu per satu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Permulaan" },
+    "subtopic": "Membaca Kata Pendek",
+    "lesson": { 
+      "title": "Membaca Kata Empat Huruf",
+      "content": "Kata seperti bola, buku, meja, topi. Contoh: Topi saya bulat. Penjelasan: Gabungkan suku kata yang sudah dipelajari."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Permulaan" },
+    "subtopic": "Membaca Kata Pendek",
+    "lesson": { 
+      "title": "Latihan Kelancaran Membaca",
+      "content": "Bacalah kalimat ini: Ini Budi. Budi main bola. Contoh: Ibu ke pasar. Penjelasan: Baca pelan-pelan asal benar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Permulaan" },
+    "subtopic": "Memahami Isi Bacaan",
+    "lesson": { 
+      "title": "Cerita Budi Berangkat Sekolah",
+      "content": "Budi bangun pagi. Budi mandi. Budi pakai seragam. Contoh: Kapan Budi bangun? Penjelasan: Mengingat isi cerita itu penting."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Permulaan" },
+    "subtopic": "Memahami Isi Bacaan",
+    "lesson": { 
+      "title": "Cerita Kucing Manis",
+      "content": "Saya punya kucing. Namanya Manis. Manis suka ikan. Contoh: Apa makanan Manis? Penjelasan: Perhatikan kata kunci dalam cerita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Permulaan" },
+    "subtopic": "Memahami Isi Bacaan",
+    "lesson": { 
+      "title": "Menemukan Jawaban dalam Teks",
+      "content": "Membaca teliti untuk menjawab soal. Contoh: Di mana burung terbang? (Di langit). Penjelasan: Jawaban ada di dalam tulisan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Huruf" },
+    "subtopic": "Menulis Huruf Tegak",
+    "lesson": { 
+      "title": "Menulis Huruf Huruf Besar A-E",
+      "content": "Perhatikan garisnya. Tulis A, B, C, D, E. Contoh: Tulis namamu. Penjelasan: Mulai dari atas ke bawah."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Huruf" },
+    "subtopic": "Menulis Huruf Tegak",
+    "lesson": { 
+      "title": "Menulis Huruf Kecil a-e",
+      "content": "Tulis a, b, c, d, e ukuran kecil. Contoh: apel, buku. Penjelasan: Huruf kecil biasanya di tengah garis."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Huruf" },
+    "subtopic": "Menulis Huruf Tegak",
+    "lesson": { 
+      "title": "Menyalin Kata Sederhana",
+      "content": "Salinlah kata: Saya, Makan, Nasi. Contoh: Ibu, Ayah. Penjelasan: Jaga jarak antar kata supaya rapi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Huruf" },
+    "subtopic": "Kerapian Menulis",
+    "lesson": { 
+      "title": "Menulis di Antara Garis",
+      "content": "Gunakan buku kotak atau buku garis tiga. Contoh: Menulis abjad. Penjelasan: Tulisan yang rapi mudah dibaca teman."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Huruf" },
+    "subtopic": "Kerapian Menulis",
+    "lesson": { 
+      "title": "Tanda Titik dan Huruf Kapital",
+      "content": "Gunakan huruf besar di awal nama orang. Contoh: Budi makan. Penjelasan: Titik (.) untuk mengakhiri kalimat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Huruf" },
+    "subtopic": "Kerapian Menulis",
+    "lesson": { 
+      "title": "Latihan Menulis Kalimat Pendek",
+      "content": "Tulis: Ini ibu saya. Saya sayang ibu. Contoh: Menulis pesan singkat. Penjelasan: Teruslah berlatih setiap hari!"
+    }
+  }
+]

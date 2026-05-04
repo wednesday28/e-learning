@@ -1,0 +1,242 @@
+[
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah Besar" },
+    "subtopic": "Membaca dan Menulis Bilangan Besar",
+    "lesson": { "title": "Membaca Bilangan sampai Ratus Ribu" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah Besar" },
+    "subtopic": "Membaca dan Menulis Bilangan Besar",
+    "lesson": { "title": "Menulis Nilai Tempat Ratus Ribuan" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah Besar" },
+    "subtopic": "Membaca dan Menulis Bilangan Besar",
+    "lesson": { "title": "Membandingkan Bilangan Besar" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah Besar" },
+    "subtopic": "Pembulatan dan Penaksiran",
+    "lesson": { "title": "Pembulatan Bilangan ke Puluhan Terdekat" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah Besar" },
+    "subtopic": "Pembulatan dan Penaksiran",
+    "lesson": { "title": "Pembulatan Bilangan ke Ratusan Terdekat" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah Besar" },
+    "subtopic": "Pembulatan dan Penaksiran",
+    "lesson": { "title": "Menaksir Hasil Operasi Hitung" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Bilangan Besar" },
+    "subtopic": "Penjumlahan dan Pengurangan",
+    "lesson": { "title": "Penjumlahan Ratus Ribuan" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Bilangan Besar" },
+    "subtopic": "Penjumlahan dan Pengurangan",
+    "lesson": { "title": "Pengurangan Ratus Ribuan" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Bilangan Besar" },
+    "subtopic": "Penjumlahan dan Pengurangan",
+    "lesson": { "title": "Soal Cerita Bilangan Besar" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Bilangan Besar" },
+    "subtopic": "Perkalian dan Pembagian",
+    "lesson": { "title": "Perkalian Bilangan Tiga Angka" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Bilangan Besar" },
+    "subtopic": "Perkalian dan Pembagian",
+    "lesson": { "title": "Pembagian dengan Cara Bersusun (Porogapit)" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Bilangan Besar" },
+    "subtopic": "Perkalian dan Pembagian",
+    "lesson": { "title": "Sifat Komutatif dan Asosiatif" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Senilai & Desimal" },
+    "subtopic": "Konsep Pecahan Senilai",
+    "lesson": { "title": "Menemukan Pecahan Senilai" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Senilai & Desimal" },
+    "subtopic": "Konsep Pecahan Senilai",
+    "lesson": { "title": "Menyederhanakan Pecahan" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Senilai & Desimal" },
+    "subtopic": "Konsep Pecahan Senilai",
+    "lesson": { "title": "Membandingkan Pecahan Senilai" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Senilai & Desimal" },
+    "subtopic": "Pecahan Desimal dan Persen",
+    "lesson": { "title": "Mengenal Pecahan Desimal" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Senilai & Desimal" },
+    "subtopic": "Pecahan Desimal dan Persen",
+    "lesson": { "title": "Mengubah Pecahan ke Desimal" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Senilai & Desimal" },
+    "subtopic": "Pecahan Desimal dan Persen",
+    "lesson": { "title": "Mengenal Bentuk Persen" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar: Segiempat & Segitiga" },
+    "subtopic": "Jenis-jenis Bangun Datar",
+    "lesson": { "title": "Ciri-ciri Persegi dan Persegi Panjang" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar: Segiempat & Segitiga" },
+    "subtopic": "Jenis-jenis Bangun Datar",
+    "lesson": { "title": "Jenis-jenis Segitiga" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar: Segiempat & Segitiga" },
+    "subtopic": "Jenis-jenis Bangun Datar",
+    "lesson": { "title": "Mengenal Jajar Genjang dan Trapesium" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar: Segiempat & Segitiga" },
+    "subtopic": "Keliling dan Luas Lanjutan",
+    "lesson": { "title": "Luas Persegi dan Persegi Panjang" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar: Segiempat & Segitiga" },
+    "subtopic": "Keliling dan Luas Lanjutan",
+    "lesson": { "title": "Luas Segitiga Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar: Segiempat & Segitiga" },
+    "subtopic": "Keliling dan Luas Lanjutan",
+    "lesson": { "title": "Menyelesaikan Masalah Bangun Datar" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Dasar" },
+    "subtopic": "Pengumpulan Data",
+    "lesson": { "title": "Membaca Tabel Data" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Dasar" },
+    "subtopic": "Pengumpulan Data",
+    "lesson": { "title": "Mengelompokkan Data Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Dasar" },
+    "subtopic": "Pengumpulan Data",
+    "lesson": { "title": "Membuat Tabel Frekuensi" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Dasar" },
+    "subtopic": "Diagram Batang dan Garis",
+    "lesson": { "title": "Membaca Diagram Batang" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Dasar" },
+    "subtopic": "Diagram Batang dan Garis",
+    "lesson": { "title": "Mengenal Diagram Garis" }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Dasar" },
+    "subtopic": "Diagram Batang dan Garis",
+    "lesson": { "title": "Menafsirkan Data dari Diagram" }
+  }
+]

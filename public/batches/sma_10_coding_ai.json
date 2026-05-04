@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Algoritma & Struktur Data" },
+    "subtopic": "Kompleksitas Algoritma (Big O)",
+    "lesson": { 
+      "title": "Analisis Kecepatan Algoritma (Time Complexity)",
+      "content": "Selamat datang di jenjang SMA! Di tingkat ini, kita tidak lagi sekadar bertanya 'Apakah kode ini jalan?', tapi 'Seberapa cepat kode ini berjalan saat datanya menjadi jutaan?'. Inilah inti dari Analisis Kompleksitas Waktu atau Time Complexity. Kita menggunakan notasi matematika yang disebut 'Big O Notation' untuk mengukur performa sebuah algoritma. Ada algoritma yang kecepatannya tetap (O(1)), ada yang bertambah sesuai jumlah data (O(n)), dan ada yang melambat secara drastis saat data bertambah sedikit saja (O(n^2)). Sebagai programmer SMA, kamu harus belajar menghindari algoritma yang lambat (seperti nested loop yang tidak perlu) untuk tugas-tugas besar. Analisis ini sangat penting karena di dunia nyata, server perusahaan besar harus melayani jutaan permintaan per detik. Jika algoritmanya tidak efisien, server akan panas, boros listrik, dan pengguna akan kabur karena aplikasi terasa lemot. Mempelajari Time Complexity melatih kemampuan analisis matematis dan logika berpikirmu pada level yang sangat dalam. Kamu belajar untuk selalu mencari solusi yang elegan dan paling optimal secara teknis. Ini adalah keahlian yang membedakan seorang coder biasa dengan seorang Software Engineer profesional yang handal."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Algoritma & Struktur Data" },
+    "subtopic": "Kompleksitas Algoritma (Big O)",
+    "lesson": { 
+      "title": "Penggunaan Memori (Space Complexity)",
+      "content": "Selain kecepatan, hal kedua yang harus diperhatikan adalah berapa banyak memori (RAM) yang digunakan oleh programmu. Ini disebut Space Complexity. Sebuah algoritma mungkin sangat cepat, tapi jika ia membutuhkan memori yang sangat besar sampai komputermu kehabisan RAM (Memory Leak), maka program tersebut tetap tidak bagus. Kamu akan belajar bagaimana mengelola variabel dan struktur data agar tidak boros tempat. Misalnya, daripada menduplikasi seluruh daftar data yang besar, lebih baik kita menggunakan referensi atau pointer ke data aslinya. Memahami Space Complexity sangat krusial saat kamu mengembangkan aplikasi untuk perangkat dengan sumber daya terbatas, seperti smartphone lama, jam tangan pintar (smartwatch), atau perangkat IoT (Internet of Things). Belajar mengoptimalkan memori melatih ketelitian dan efisiensi kerjamu. Kamu belajar bahwa sumber daya komputer itu terbatas dan berharga. Programmer yang hebat adalah mereka yang mampu menciptakan aplikasi yang canggih namun tetap ringan dan responsif di berbagai perangkat. Kemampuan ini menunjukkan kematanganmu dalam memahami arsitektur komputer dan dedikasimu untuk memberikan pengalaman terbaik bagi pengguna tanpa membebani perangkat keras yang mereka miliki."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Algoritma & Struktur Data" },
+    "subtopic": "Kompleksitas Algoritma (Big O)",
+    "lesson": { 
+      "title": "Algoritma Pencarian Efisien (Binary Search)",
+      "content": "Mari kita bandingkan dua cara mencari satu nama di buku telepon yang berisi satu juta nama yang sudah terurut. Cara pertama: cek satu-satu dari halaman pertama (Linear Search). Jika nama itu ada di halaman terakhir, kamu butuh sejuta langkah. Cara kedua: buka tengah-tengah buku. Jika nama sasaran ada di abjad setelahnya, buang setengah buku yang awal. Ulangi lagi buka tengah-tengah dari sisa buku. Cara ini disebut Binary Search. Tahukah kamu? Untuk mencari satu data di antara satu juta data yang terurut, Binary Search hanya butuh maksimal 20 langkah! Perbandingannya sangat jauh: 1.000.000 vs 20. Inilah keajaiban algoritma yang efisien (logaritmik). Binary Search adalah dasar dari sistem database tercepat di dunia. Mempelajari ini melatihmu untuk berpikir secara cerdik dan mencari jalan pintas yang logis. Kamu belajar bahwa kerja keras saja tidak cukup; kamu butuh strategi yang pintar. Syarat mutlak Binary Search adalah datanya harus sudah terurut (sorted). Dengan menguasai konsep pencarian ini, kamu sedang mempelajari salah satu pilar utama ilmu komputer yang memungkinkan teknologi pencarian modern seperti Google mampu memberikan hasil dalam hitungan milidetik dari triliunan data di seluruh internet."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Algoritma & Struktur Data" },
+    "subtopic": "Struktur Data Stack & Queue",
+    "lesson": { 
+      "title": "LIFO (Last In First Out) pada Stack",
+      "content": "Stack (Tumpukan) adalah struktur data yang mengikuti prinsip LIFO: data yang terakhir masuk adalah yang pertama keluar. Bayangkan tumpukan piring; kamu tidak bisa mengambil piring yang paling bawah tanpa memindahkan piring yang di atasnya. Di dunia koding, Stack sangat penting. Contoh paling nyata adalah fitur 'Undo' (Ctrl+Z) di semua aplikasi. Setiap kali kamu melakukan perubahan, aplikasimu 'menumpuk' riwayat perubahan tersebut ke dalam Stack. Saat kamu menekan Undo, aplikasi mengambil data yang paling atas (terakhir) dari tumpukan tersebut. Selain itu, tombol 'Back' di browser juga menggunakan Stack untuk mengingat urutan website yang kamu kunjungi. Mempelajari Stack melatihmu memahami alur proses yang bersifat rekursif dan terurut ke belakang. Kamu belajar bagaimana mengelola memori yang bersifat dinamis namun tetap terkontrol. Operasi utama pada Stack adalah 'Push' (memasukkan data) dan 'Pop' (mengambil data teratas). Dengan memahami mekanisme tumpukan ini, kamu sedang mempelajari cara kerja internal sistem operasi dan perangkat lunak yang sangat canggih dalam mengelola riwayat aksi pengguna secara otomatis dan sangat efisien strukturnya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Algoritma & Struktur Data" },
+    "subtopic": "Struktur Data Stack & Queue",
+    "lesson": { 
+      "title": "FIFO (First In First Out) pada Queue",
+      "content": "Berbeda dengan Stack, Queue (Antrean) mengikuti prinsip FIFO: data yang pertama masuk adalah yang pertama keluar. Persis seperti antrean di kasir supermarket atau antrean tiket. Data yang datang duluan harus dilayani duluan. Di dunia digital, Queue digunakan untuk mengelola tugas-tugas yang harus dikerjakan secara berurutan. Contohnya: antrean dokumen yang akan dicetak di printer, atau pengiriman pesan di WhatsApp saat sinyalmu jelek; pesan akan masuk ke antrean dan dikirim satu per satu sesuai urutan saat sinyal kembali normal. Operasi utama pada Queue adalah 'Enqueue' (masuk antrean) dan 'Dequeue' (keluar antrean). Memahami Queue melatihmu untuk merancang sistem yang adil dan teratur. Kamu belajar tentang konsep 'Buffer' atau penyangga data yang sangat penting dalam streaming video atau musik agar tidak macet (lag). Dengan menguasai konsep antrean ini, kamu siap untuk membangun aplikasi yang mampu menangani ribuan tugas sekaligus tanpa ada tugas yang terlewat atau tertukar urutannya, yang merupakan kunci stabilitas dari sistem komunikasi data dan layanan cloud computing berskala besar yang ada saat ini."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Algoritma & Struktur Data" },
+    "subtopic": "Struktur Data Stack & Queue",
+    "lesson": { 
+      "title": "Implementasi Struktur Data dalam Kehidupan Nyata",
+      "content": "Mengapa kita harus belajar struktur data seperti Stack dan Queue? Karena ini adalah cara kita memodelkan masalah dunia nyata ke dalam kode. Misal, kamu ingin membuat aplikasi navigasi GPS. Peta jalanan bisa dimodelkan menggunakan struktur data 'Graph' (Graf), di mana setiap perempatan adalah titik dan setiap jalan adalah garis penghubungnya. Pencarian rute tercepat kemudian menggunakan algoritma yang memanfaatkan Queue untuk mengecek titik-titik terdekat. Atau saat kamu bermain game kartu, dek kartumu adalah sebuah Stack. Tanpa struktur data yang tepat, programmu akan menjadi sangat kacau dan sulit dikelola. Struktur data adalah kerangka bangunan, sedangkan kode adalah semennya. Mempelajari implementasi ini melatih daya imajinasi teknismu untuk melihat struktur di balik setiap teknologi yang kamu sentuh. Kamu belajar bahwa programmer yang hebat adalah mereka yang mampu memilih 'wadah' yang paling pas untuk data yang mereka miliki. Dengan pemilihan struktur data yang cerdas, aplikasimu akan menjadi sangat efisien, mudah dipelihara, dan mampu menangani skenario-skenario rumit yang ada di kehidupan nyata dengan sangat elegan dan profesional melalui baris-baris kode yang tersusun rapi dan terencana dengan sangat baik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Berorientasi Objek (OOP)" },
+    "subtopic": "Class & Object",
+    "lesson": { 
+      "title": "Blueprint dalam Pemrograman (Class)",
+      "content": "Pemrograman Berorientasi Objek (Object Oriented Programming - OOP) adalah cara berpikir paling populer dalam pembuatan perangkat lunak modern. Konsep utamanya adalah 'Class'. Bayangkan Class sebagai sebuah 'Blueprint' atau denah rancangan. Jika kamu ingin membuat mobil, kamu buat dulu denahnya: apa saja fiturnya (roda, mesin, warna) dan apa saja kemampuannya (maju, belok, ngerem). Denah ini bukan mobil sungguhan, ia hanya aturan atau cetakan. Dalam koding, Class mendefinisikan struktur data dan perilaku dari sesuatu. Dengan menggunakan Class, kodemu menjadi sangat rapi dan modular. Kamu bisa membuat satu Class 'User' dan menggunakannya untuk membuat ribuan akun pengguna dengan aturan yang sama persis. Belajar tentang Class melatihmu untuk berpikir secara abstrak dan struktural. Kamu belajar melihat sistem sebagai kumpulan definisi yang terorganisir. Ini adalah fondasi jika nanti kamu ingin bekerja di perusahaan teknologi besar yang memiliki jutaan baris kode. Tanpa konsep Class, kodemu akan menjadi sangat sulit dikelola dan diperbaiki. Class memberikan standarisasi dan keteraturan yang luar biasa bagi setiap projek koding besar yang akan kamu bangun di masa depan agar tetap stabil dan mudah untuk dikembangkan lebih jauh lagi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Berorientasi Objek (OOP)" },
+    "subtopic": "Class & Object",
+    "lesson": { 
+      "title": "Atribut dan Metode (Properti & Fungsi)",
+      "content": "Di dalam sebuah Class, ada dua komponen utama: Atribut dan Metode. Atribut (sering disebut Properti atau Variabel) adalah apa yang 'dimiliki' oleh objek tersebut. Contoh untuk Class 'Mobil', atributnya adalah 'warna', 'merek', dan 'jumlah_bensin'. Sedangkan Metode (sering disebut Fungsi atau Perilaku) adalah apa yang bisa 'dilakukan' oleh objek tersebut. Contoh metode mobil adalah 'tambah_kecepatan()' atau 'bunyikan_klakson()'. Pemisahan antara 'data' (atribut) dan 'aksi' (metode) inilah yang membuat koding OOP sangat mirip dengan cara kita melihat benda-benda di dunia nyata. Ini memudahkan kita dalam merancang logika program yang kompleks. Kamu akan belajar bagaimana cara menjaga atribut agar tidak sembarangan dirubah dari luar (konsep Encapsulation). Mempelajari atribut dan metode melatih kemampuan analisismu dalam membedah sebuah entitas. Kamu belajar memberikan tanggung jawab yang jelas pada setiap bagian program. Seorang programmer OOP yang handal adalah mereka yang mampu merancang atribut dan metode yang sangat pas sehingga objek-objek di dalam program bisa saling bekerja sama dengan harmonis tanpa menimbulkan kebingungan data atau konflik instruksi yang merusak kestabilan aplikasi buatanmu."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Berorientasi Objek (OOP)" },
+    "subtopic": "Class & Object",
+    "lesson": { 
+      "title": "Instansiasi Objek dari Class",
+      "content": "Setelah punya Blueprint (Class), sekarang saatnya kita membuat benda nyatanya. Proses membuat benda nyata dari cetakan Class disebut 'Instansiasi', dan benda hasilnya disebut 'Object'. Contoh: dari Class 'Mobil', kita buat objek 'mobil_budi' yang berwarna merah dan objek 'mobil_ani' yang berwarna biru. Meskipun keduanya dibuat dari cetakan yang sama, mereka adalah dua entitas yang berbeda di dalam memori komputer. Perubahan pada bensin mobil Budi tidak akan mempengaruhi bensin mobil Ani. Inilah kekuatan OOP: kita bisa membuat banyak 'Pemain' yang independen namun memiliki aturan dasar yang seragam. Memahami instansiasi melatihmu mengelola sumber daya dan identitas data. Kamu belajar bahwa setiap aksi di dunia digital harus tertuju pada objek yang spesifik. Di dalam game, setiap musuh yang muncul di layar adalah hasil instansiasi dari Class 'Musuh'. Dengan penguasaan atas instansiasi objek, kamu siap untuk membangun aplikasi yang dinamis dan kaya akan interaksi, di mana ribuan objek bisa hidup berdampingan secara tertib sesuai dengan aturan-aturan cerdas yang sudah kamu tuliskan di dalam Blueprint-nya secara profesional dan terukur kualitasnya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Berorientasi Objek (OOP)" },
+    "subtopic": "Inheritance & Polymorphism",
+    "lesson": { 
+      "title": "Konsep Pewarisan Sifat (Inheritance)",
+      "content": "Pilar kedua dari OOP adalah Inheritance atau Pewarisan. Bayangkan kamu ingin membuat program tentang berbagai jenis hewan. Kamu tidak perlu menulis ulang kode 'makan' dan 'tidur' untuk setiap hewan. Kamu cukup buat satu Class induk bernama 'Hewan' yang punya kemampuan umum. Lalu, kamu buat Class anak seperti 'Kucing' dan 'Burung' yang 'Mewarisi' (Inherit) sifat dari Class Hewan. Class anak secara otomatis mendapatkan semua atribut dan metode milik induknya, tapi ia juga bisa punya kemampuan tambahan sendiri (misal: Burung punya metode 'terbang'). Ini sangat menghemat waktu dan mencegah duplikasi kode yang membosankan. Inheritance memungkinkan kita membangun hierarki kode yang logis dan rapi. Mempelajari pewarisan melatih kemampuan generalisasi dan klasifikasi-mu. Kamu belajar untuk tidak bekerja dua kali (DRY - Don't Repeat Yourself). Di dunia profesional, inheritance digunakan untuk membangun sistem yang sangat besar, seperti framework aplikasi di mana ribuan fitur dibangun di atas pondasi induk yang sudah sangat stabil. Dengan menguasai pewarisan sifat ini, kamu sedang belajar cara mengorganisir pengetahuan teknologi secara cerdas agar kodemu mudah dikembangkan dan dipelihara dalam jangka panjang."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Berorientasi Objek (OOP)" },
+    "subtopic": "Inheritance & Polymorphism",
+    "lesson": { 
+      "title": "Mengubah Perilaku Metode (Overriding)",
+      "content": "Terkadang, meskipun seorang anak mewarisi sifat induknya, si anak ingin melakukan tugas tersebut dengan caranya sendiri yang berbeda. Dalam koding, ini disebut Method Overriding. Contoh: Class induk 'Hewan' punya metode 'bersuara()'. Namun, Class anak 'Kucing' ingin bersuara 'Meong' dan Class 'Anjing' ingin 'Guk-guk'. Kita bisa menulis ulang kode metode 'bersuara()' di dalam masing-masing Class anak. Meskipun namanya sama, perilakunya berubah sesuai identitas objeknya. Overriding memberikan fleksibilitas yang luar biasa pada programmu. Kamu bisa memiliki aturan umum yang bisa disesuaikan dengan kebutuhan khusus. Belajar overriding melatih ketajaman logikamu dalam menangani variasi masalah. Kamu belajar bahwa sebuah sistem yang baik harus memberikan ruang untuk perbedaan perilaku tanpa merusak struktur besarnya. Kemampuan ini sangat penting saat kamu merancang sistem plugin atau tema aplikasi, di mana fitur dasar tetap sama tapi tampilannya bisa berbeda-beda. Dengan penguasaan atas overriding, kamu sedang belajar cara membangun teknologi yang luwes, adaptif, dan mampu menangani berbagai skenario spesifik dengan cara yang sangat elegan dan terintegrasi secara harmonis di dalam satu ekosistem koding yang besar."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pemrograman Berorientasi Objek (OOP)" },
+    "subtopic": "Inheritance & Polymorphism",
+    "lesson": { 
+      "title": "Keuntungan Modularitas dengan OOP",
+      "content": "Tujuan akhir dari mempelajari Class, Object, dan Inheritance adalah menciptakan Modularitas. Modularitas berarti programmu tersusun dari kepingan-kepingan (modul) yang mandiri dan bisa dicopot-pasang dengan mudah. Jika Class 'Mesin' di aplikasimu rusak, kamu cukup memperbaiki Class tersebut tanpa perlu membongkar seluruh program. Ini sangat memudahkan proses debugging dan pengembangan tim. Kamu bisa memberikan tugas pembuatan Class 'User' ke temanmu, dan kamu fokus membuat Class 'Payment'. Karena sudah ada kontrak aturan yang jelas di dalam Class, kedua bagian itu pasti akan bisa tersambung dengan mulus. Modularitas adalah kunci utama dari pembuatan software raksasa yang tahan lama. Belajar modularitas melatih kemampuan manajemen proyek dan kolaborasimu. Kamu belajar untuk menghargai batasan-batasan tanggung jawab dalam koding. Programmer yang hebat bukan yang bisa menulis ribuan baris kode dalam satu file, tapi yang bisa memecahnya menjadi ratusan Class kecil yang cantik dan saling bekerja sama dengan sempurna. Inilah standar industri dunia saat ini, dan dengan memahaminya di kelas 10, kamu sudah selangkah lebih maju untuk menjadi seorang insinyur perangkat lunak kelas dunia yang handal, produktif, dan sangat dihormati di komunitas pengembang global."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Web Development Dasar" },
+    "subtopic": "Struktur HTML5 & CSS3",
+    "lesson": { 
+      "title": "Semantik HTML untuk SEO dan Aksesibilitas",
+      "content": "Web development bukan sekadar membuat halaman yang terlihat bagus, tapi juga halaman yang 'Pintar' dan bisa dibaca oleh semua orang serta mesin pencari (Google). Di tingkat SMA, kita tidak lagi menggunakan tag generik seperti <div> untuk segalanya. Kita menggunakan HTML Semantik. Tag seperti <header>, <nav>, <main>, <article>, dan <footer> memberikan arti pada kontenmu. Mengapa ini penting? Pertama, untuk SEO (Search Engine Optimization); Google akan lebih mudah memberikan peringkat tinggi pada websitemu karena ia tahu persis mana bagian artikel utamanya. Kedua, untuk Aksesibilitas (Accessibility); teman-teman tuna netra yang menggunakan aplikasi pembaca layar (screen reader) akan terbantu karena aplikasi tersebut bisa membacakan struktur websitemu dengan benar. Mempelajari HTML semantik melatih rasa empatimu dan tanggung jawab sosialmu sebagai warga digital. Kamu belajar bahwa teknologi harus inklusif dan bermanfaat bagi semua orang. Dengan menulis HTML yang rapi dan bermakna, kamu sedang membangun pondasi web yang kokoh, profesional, dan berstandar internasional yang akan memudahkanmu dalam tahap pemberian gaya (CSS) dan interaksi (JavaScript) nantinya dengan jauh lebih mudah dan terstruktur secara logis."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Web Development Dasar" },
+    "subtopic": "Struktur HTML5 & CSS3",
+    "lesson": { 
+      "title": "Modern Layout dengan Flexbox dan Grid",
+      "content": "Zaman dulu, mengatur tata letak (layout) website sangatlah sulit dan sering berantakan. Sekarang, kita punya dua senjata rahasia di CSS3: Flexbox dan Grid. Flexbox sangat hebat untuk mengatur susunan elemen dalam satu baris atau satu kolom (satu dimensi), misalnya menaruh menu navigasi di tengah atau menyusun kartu produk agar rapi. Sedangkan CSS Grid digunakan untuk merancang tata letak seluruh halaman yang kompleks (dua dimensi), di mana ada area header, sidebar, konten utama, dan footer yang ukurannya bisa berubah-ubah secara otomatis. Menguasai kedua teknik ini akan membuatmu mampu membuat desain website apa pun yang kamu bayangkan tanpa perlu pusing dengan trik-trik lama yang membingungkan. Belajar layout modern melatih kemampuan visualisasi spasial dan desainmu. Kamu belajar bagaimana membagi ruang secara proporsional. Websitemu akan terlihat profesional dan modern seperti website-website startup teknologi ternama. Penguasaan atas Flexbox dan Grid adalah syarat mutlak bagi seorang Frontend Developer saat ini. Dengan kedua alat ini, kamu bisa menciptakan pengalaman pengguna yang mulus di mana setiap elemen berada tepat di posisinya dengan presisi yang sempurna, membuat pengunjung betah berlama-lama di dalam website buatanmu karena kenyamanan navigasi dan keindahan tampilannya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Web Development Dasar" },
+    "subtopic": "Struktur HTML5 & CSS3",
+    "lesson": { 
+      "title": "Variabel CSS dan Responsive Design Dasar",
+      "content": "Agar websitemu mudah dikelola, kamu harus belajar tentang CSS Variables (Custom Properties). Bayangkan jika kamu punya 100 halaman web dan ingin merubah warna tema dari biru ke merah. Tanpa variabel, kamu harus merubah satu per satu di ribuan baris kode. Dengan variabel, kamu cukup ubah di satu tempat, dan seluruh website akan otomatis berubah. Ini adalah prinsip efisiensi koding. Selain itu, kamu harus belajar Responsive Design menggunakan Media Queries. Websitemu harus tetap terlihat cantik saat dibuka di HP yang layarnya kecil maupun di monitor PC yang lebar. Kamu akan belajar bagaimana merubah ukuran font, menyembunyikan gambar yang terlalu besar, atau merubah susunan kolom menjadi baris saat layar menyempit. Belajar desain responsif melatih ketelitianmu terhadap detail perangkat. Kamu belajar bahwa pengguna teknologimu sangat beragam dan kamu ingin melayani mereka semua dengan kualitas yang sama baiknya. Website yang responsif dan mudah dikelola dengan variabel adalah tanda kematanganmu sebagai pengembang web profesional. Kamu sudah siap untuk membangun projek-projek web yang skalabel dan mampu bersaing di pasar global karena kualitas teknis dan kemudahan perawatannya yang sangat terjamin dan teruji standarnya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Web Development Dasar" },
+    "subtopic": "JavaScript DOM Manipulation",
+    "lesson": { 
+      "title": "Menangkap Event Klik dan Input",
+      "content": "HTML memberikan struktur, CSS memberikan keindahan, dan JavaScript (JS) memberikan 'Nyawa' pada websitemu. Salah satu tugas utama JS di browser adalah menangani kejadian atau Event. Kamu akan belajar cara mendengarkan (Event Listener) saat pengguna mengklik tombol, mengetik di keyboard, atau mengarahkan mouse ke sebuah gambar. Saat event tersebut terjadi, kamu bisa menjalankan fungsi JS untuk meresponnya. Misalnya, saat tombol 'Kirim' diklik, jalankan fungsi untuk memvalidasi apakah kotak input sudah terisi. Tanpa JS, websitemu hanyalah dokumen diam yang membosankan. Dengan JS, websitemu menjadi aplikasi interaktif yang hidup. Mempelajari event handling melatih kemampuan analisismu terhadap perilaku pengguna. Kamu belajar untuk merancang interaksi yang responsif dan memuaskan. Kamu juga belajar tentang alur data dari input fisik (klik/ketik) menjadi aksi digital di dalam program. Penguasaan atas event adalah langkah awal untuk membuat game web, aplikasi chat, atau dashboard interaktif yang canggih. Inilah yang membuat profesi Web Developer sangat menarik; kamu memiliki kekuatan untuk menciptakan dunia digital yang bisa bereaksi dan berinteraksi secara cerdas dengan penggunanya di seluruh penjuru dunia melalui browser internet yang mereka miliki."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Web Development Dasar" },
+    "subtopic": "JavaScript DOM Manipulation",
+    "lesson": { 
+      "title": "Merubah Elemen Halaman secara Dinamis",
+      "content": "Setelah menangkap event, biasanya kita ingin merubah tampilan halaman tanpa harus memuat ulang (refresh) seluruh website. Inilah yang disebut DOM Manipulation (Document Object Model). JS bisa mengakses setiap elemen HTML dan merubah teksnya, warnanya, atau bahkan menghapus dan menambah elemen baru secara instan. Contoh: saat pengguna mengklik ikon 'Love', warnanya berubah jadi merah dan angka jumlah like bertambah otomatis. Atau saat pengguna mengetik di kolom pencarian, daftar hasil pencarian muncul di bawahnya secara real-time. Kemampuan merubah halaman secara dinamis memberikan pengalaman yang sangat halus dan cepat bagi pengguna. Belajar manipulasi DOM melatih kreativitas teknismu dalam menyajikan informasi. Kamu belajar bahwa tampilan website bukanlah sesuatu yang kaku, tapi bisa berubah bentuk sesuai dengan logika program yang kamu tulis. Ini adalah inti dari modern web apps seperti Facebook atau Gmail. Dengan menguasai manipulasi DOM, kamu sudah bisa membangun antarmuka pengguna (User Interface) yang sangat canggih, dinamis, dan memberikan kepuasan instan bagi siapapun yang berinteraksi dengan karya teknologi web ciptaanmu secara profesional dan terintegrasi dengan sangat baik sistemnya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Web Development Dasar" },
+    "subtopic": "JavaScript DOM Manipulation",
+    "lesson": { 
+      "title": "Fetching Data untuk Konten Web",
+      "content": "Tugas terakhir JS yang paling hebat adalah mengambil data dari server atau API lain tanpa menutup halaman web tersebut, yang sering disebut AJAX atau Fetching. Kamu akan belajar menggunakan fungsi 'fetch()' untuk mengambil data JSON (misal berita terbaru atau skor bola) lalu menampilkannya di dalam elemen HTML menggunakan manipulasi DOM. Ini membuat websitemu selalu memiliki konten yang paling baru (fresh) secara otomatis. Bayangkan sebuah widget cuaca di websitemu yang angkanya selalu berubah mengikuti kondisi di luar sana. Mempelajari fetching data melatih pemahamanmu tentang komunikasi jaringan (networking). Kamu belajar bahwa websitemu adalah bagian dari ekosistem internet yang luas yang saling berbagi data. Kamu juga akan belajar menangani kesalahan (error handling), misalnya apa yang harus ditampilkan jika koneksi internet terputus saat sedang mengambil data. Penguasaan atas fetching data adalah tiketmu untuk menjadi seorang Fullstack Developer yang handal. Kamu mampu menghubungkan antara keindahan tampilan depan (Frontend) dengan kekayaan data di belakang layar (Backend) secara sinkron, cepat, dan sangat efisien, menciptakan aplikasi web yang benar-benar bermanfaat bagi banyak orang di seluruh dunia digital saat ini."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Database & SQL" },
+    "subtopic": "Relational Database & ERD",
+    "lesson": { 
+      "title": "Merancang Tabel yang Saling Terhubung",
+      "content": "Di tingkat SMA, kita akan belajar tentang Relational Database (Basis Data Relasional). Ini adalah sistem database di mana informasi tidak disimpan dalam satu tabel raksasa yang berantakan, tapi dibagi-bagi ke dalam banyak tabel kecil yang saling terhubung secara logis. Misalnya, kita punya tabel 'Siswa' dan tabel 'Kelas'. Di dalam tabel Siswa, kita cukup simpan 'ID_Kelas' saja. Hubungan ini membuat datamu menjadi sangat rapi, hemat tempat, dan bebas dari duplikasi (Redundancy). Mengapa ini penting? Agar saat ada perubahan data (misal nama kelas berubah), kamu cukup ubah di satu tempat saja, dan otomatis semua data siswa yang terhubung akan ikut benar. Mempelajari perancangan database melatih kemampuan berpikir sistemik dan organisasimu. Kamu belajar melihat hubungan antar entitas di dunia nyata dan menerjemahkannya ke dalam struktur digital yang efisien. Perancangan yang baik adalah kunci dari aplikasi yang cepat dan mudah dikembangkan. Dengan memahami cara menghubungkan tabel secara cerdas, kamu sedang membangun 'Ingatan' aplikasi yang sangat kuat, akurat, dan terorganisir dengan standar industri yang digunakan oleh jutaan aplikasi di seluruh penjuru dunia saat ini."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Database & SQL" },
+    "subtopic": "Relational Database & ERD",
+    "lesson": { 
+      "title": "One-to-Many dan Many-to-Many Relationship",
+      "content": "Ada berbagai jenis hubungan (Relationship) antar tabel yang harus kamu kuasai. Pertama, 'One-to-Many' (Satu ke Banyak); contohnya: satu Guru bisa mengajar banyak Kelas, tapi satu Kelas hanya punya satu Wali Kelas. Kedua, yang lebih rumit, 'Many-to-Many' (Banyak ke Banyak); contohnya: satu Siswa bisa mengambil banyak Mata Pelajaran, dan satu Mata Pelajaran diambil oleh banyak Siswa. Untuk hubungan Many-to-Many, kita butuh 'Tabel Perantara' (Junction Table). Memahami jenis hubungan ini sangat krusial agar kamu tidak salah dalam merancang struktur data aplikasimu. Salah merancang hubungan bisa berakibat data yang tumpang tindih atau hilangnya informasi penting. Mempelajari relationship melatih logika analisismu dalam melihat interaksi di kehidupan nyata. Kamu belajar memberikan aturan yang pasti bagi setiap data yang masuk. Kemampuan ini sangat dibutuhkan dalam pembuatan sistem informasi yang kompleks seperti sistem rumah sakit, sistem e-commerce, atau sistem media sosial. Dengan penguasaan atas relasi antar tabel, kamu sudah siap untuk menjadi seorang Database Designer yang handal dan mampu membangun infrastruktur informasi yang sangat kokoh, logis, dan profesional bagi setiap kebutuhan organisasi maupun bisnis digital yang sedang berkembang pesat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Database & SQL" },
+    "subtopic": "Relational Database & ERD",
+    "lesson": { 
+      "title": "Normalisasi Data untuk Efisiensi",
+      "content": "Normalisasi adalah proses teknis untuk memastikan database-mu dirancang dengan cara yang paling efisien dan bebas dari risiko kesalahan data (Anomali). Ada beberapa tingkat normalisasi (seperti 1NF, 2NF, 3NF). Intinya adalah: setiap kolom dalam tabel harus bergantung langsung pada Primary Key-nya saja. Jangan simpan nama alamat rumah siswa berkali-kali di tabel nilai; simpanlah alamat di tabel siswa, dan di tabel nilai cukup hubungkan dengan ID Siswa saja. Normalisasi mencegah terjadinya 'Update Anomaly' (saat kamu ganti alamat tapi hanya berubah di satu tempat dan salah di tempat lain). Mempelajari normalisasi melatih disiplin berpikirmu dalam hal efisiensi dan integritas data. Kamu belajar untuk tidak malas dalam merancang struktur; rancangan yang agak rumit di awal akan menyelamatkanmu dari ribuan jam kerja lembur untuk memperbaiki data yang rusak di masa depan. Database yang ternormalisasi dengan baik adalah tanda profesionalisme seorang Backend Developer. Kamu sedang belajar standar emas industri informasi yang akan menjamin bahwa datamu selalu konsisten, akurat, dan sangat mudah untuk dikelola oleh tim pengembang yang besar sekalipun di dalam sebuah projek teknologi yang ambisius."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Database & SQL" },
+    "subtopic": "Query SQL (DML & DDL)",
+    "lesson": { 
+      "title": "Membuat dan Menghapus Tabel (DDL)",
+      "content": "Untuk berbicara dengan database, kita menggunakan bahasa standar dunia bernama SQL (Structured Query Language). SQL dibagi menjadi dua kelompok besar, yang pertama adalah DDL (Data Definition Language). Sesuai namanya, DDL digunakan untuk 'Mendefinisikan' struktur gudang datamu. Perintah utamanya adalah 'CREATE TABLE' untuk membuat tabel baru lengkap dengan nama kolom dan tipe datanya, 'ALTER TABLE' untuk merubah struktur tabel (misal menambah kolom baru), dan 'DROP TABLE' untuk menghapus tabel. Di tingkat SMA, kamu harus belajar menulis perintah DDL ini dengan tangan, bukan hanya mengandalkan klik-klik di aplikasi visual. Menguasai DDL berarti kamu memiliki kendali penuh atas arsitektur informasimu. Kamu belajar untuk merancang 'Wadah' yang kuat sebelum memasukkan isi datanya. Ketelitian sangat penting di sini; jika kamu salah menentukan tipe data di DDL (misal harusnya angka tapi kamu buat teks), maka seluruh aplikasimu bisa terganggu logikanya. Dengan pemahaman DDL yang kuat, kamu siap untuk menjadi administrator basis data yang mampu membangun dan memelihara sistem penyimpanan informasi yang besar, aman, dan sangat terorganisir sesuai dengan standar kualitas industri teknologi perangkat lunak masa kini."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Database & SQL" },
+    "subtopic": "Query SQL (DML & DDL)",
+    "lesson": { 
+      "title": "Manipulasi Baris Data (DML)",
+      "content": "Kelompok kedua dari SQL adalah DML (Data Manipulation Language). DML digunakan untuk mengelola 'Isi' atau baris data di dalam tabel yang sudah dibuat lewat DDL. Perintah utamanya adalah CRUD yang sudah kita singgung sebelumnya: 'INSERT' untuk menambah data, 'SELECT' untuk mengambil data, 'UPDATE' untuk merubah data, dan 'DELETE' untuk menghapus data. Di tingkat SMA, kamu akan belajar query DML yang lebih canggih, misalnya menggunakan fungsi agregasi (SUM, AVG, COUNT) untuk menghitung total penjualan atau rata-rata nilai secara instan lewat satu baris perintah SQL saja. Kamu juga akan belajar cara membatasi hasil pencarian dengan 'LIMIT' dan mengurutkannya dengan 'ORDER BY'. Penguasaan atas DML membuatmu mampu mengolah jutaan baris data menjadi laporan yang ringkas dalam hitungan detik. Belajar manipulasi data melatih kemampuan analisismu dalam menggali informasi yang berharga. Kamu belajar bahwa data mentah tidak ada gunanya tanpa kemampuan untuk memprosesnya secara cerdas. Dengan query SQL yang mahir, kamu bisa memberikan wawasan (insight) yang sangat penting bagi pengambilan keputusan di bidang apa pun, mulai dari riset pasar hingga analisis performa atlet olahraga, secara otomatis dan akurat datanya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Database & SQL" },
+    "subtopic": "Query SQL (DML & DDL)",
+    "lesson": { 
+      "title": "Join Tabel untuk Laporan Kompleks",
+      "content": "Kekuatan sejati dari Relational Database muncul saat kita menggabungkan data dari beberapa tabel yang berbeda menggunakan perintah 'JOIN'. Misalnya, kamu ingin menampilkan laporan: 'Nama Siswa, Nama Kelas, dan Nama Wali Kelasnya'. Karena data-data tersebut tersimpan di tiga tabel yang berbeda, kamu harus melakukan JOIN untuk menyatukannya kembali saat ditampilkan. Ada beberapa jenis Join: INNER JOIN (hanya mengambil data yang ada pasangannya di kedua tabel), LEFT JOIN (mengambil semua data tabel kiri meskipun tidak ada pasangannya di kanan), dan lainnya. Memahami Join melatih kemampuan logika relasional dan visualisasi datamu. Kamu belajar bagaimana kepingan-kepingan informasi yang terpisah bisa dirangkai kembali menjadi sebuah cerita utuh yang bermakna. Inilah cara kerja laporan bank, struk belanja supermarket, atau rapor sekolahmu yang dicetak secara otomatis. Penguasaan atas Join akan menjadikannmu seorang ahli data yang sangat handal yang mampu menyajikan informasi yang sangat detail dan komprehensif dari struktur database yang sangat kompleks sekalipun. Ini adalah keterampilan tingkat tinggi yang sangat dicari di dunia industri Data Science dan Business Intelligence yang sedang sangat populer dan bergengsi saat ini."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika AI & Dampak Sosial" },
+    "subtopic": "Bias dalam Algoritma AI",
+    "lesson": { 
+      "title": "Mengapa AI Bisa Menjadi Rasis atau Diskriminatif?",
+      "content": "Meskipun AI adalah mesin, ia bisa memiliki 'Bias' atau prasangka yang tidak adil. Mengapa? Karena AI belajar dari data buatan manusia. Jika data yang dipelajari AI mengandung prasangka sejarah (misalnya data lamaran kerja di masa lalu yang selalu menolak wanita), maka AI akan belajar pola yang salah tersebut dan ikut menolak pelamar wanita secara otomatis di masa depan. Ini disebut 'Algorithmic Bias'. Bias juga bisa muncul jika tim pembuat AI tidak beragam (misalnya hanya terdiri dari satu suku bangsa saja), sehingga mereka tidak menyadari ada kelompok orang yang tidak terwakili dalam data latihannya. Mempelajari bias AI melatih sikap kritis dan integritas moralmu sebagai pengembang teknologi. Kamu belajar bahwa teknologi tidaklah netral; ia membawa nilai-nilai pembuatnya. Kamu harus waspada: jangan sampai kamu membuat sistem yang cerdas tapi tidak adil. Memahami risiko diskriminasi digital ini sangat penting agar kita bisa membangun teknologi yang menjunjung tinggi keadilan sosial. Kita tidak ingin AI memperburuk ketidakadilan yang sudah ada di dunia nyata, tapi kita ingin AI membantu kita menjadi lebih objektif dan inklusif bagi seluruh umat manusia tanpa membeda-bedakan latar belakang apapun secara tidak adil dan merugikan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika AI & Dampak Sosial" },
+    "subtopic": "Bias dalam Algoritma AI",
+    "lesson": { 
+      "title": "Cara Mendeteksi Bias pada Dataset",
+      "content": "Sebagai programmer SMA yang berintegritas, kamu harus belajar cara mendeteksi apakah datamu mengandung bias sebelum digunakan untuk melatih AI. Caranya adalah dengan melakukan 'Audit Data'. Periksa apakah semua kelompok terwakili secara proporsional. Misalnya, jika kamu membuat AI pengenal suara untuk seluruh Indonesia, pastikan datamu mencakup berbagai dialek dan aksen dari Sabang sampai Merauke. Jika datamu hanya berisi aksen Jakarta, maka AI-mu akan gagal melayani orang-orang di daerah lain. Kamu bisa menggunakan statistik untuk melihat sebaran datamu. Mendeteksi bias melatih ketelitian ilmiah dan rasa tanggung jawabmu. Kamu belajar bahwa persiapan data (data preprocessing) adalah tahap yang paling suci dalam pembuatan AI. Programmer yang hebat adalah mereka yang berani mengakui jika datanya kurang bagus dan bersedia mencari data tambahan agar sistemnya lebih adil. Upaya deteksi ini bukan hanya soal teknis, tapi soal komitmen etika untuk tidak membiarkan teknologi menjadi alat penindasan yang tidak terlihat. Dengan data yang bersih dari bias, kamu sedang membangun kecerdasan buatan yang benar-benar cerdas karena ia memahami keragaman dunia nyata secara akurat, jujur, dan tidak berpihak secara keliru kepada satu kelompok saja."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika AI & Dampak Sosial" },
+    "subtopic": "Bias dalam Algoritma AI",
+    "lesson": { 
+      "title": "Algorithmic Accountability (Tanggung Jawab Algoritma)",
+      "content": "Jika sebuah mobil otonom (tanpa sopir) menabrak seseorang, siapa yang harus bertanggung jawab? Pembuat kodenya? Perusahaan mobilnya? Atau pemilik mobilnya? Inilah masalah besar dalam 'Algorithmic Accountability'. Di tingkat SMA, kamu harus mulai mendiskusikan masalah hukum dan etika ini. Kita tidak bisa sekadar menyalahkan mesin dengan berkata 'Itu kan keputusan komputer'. Manusia yang membuat algoritma tersebut harus bisa menjelaskan mengapa komputer mengambil keputusan itu (konsep Explainable AI). Akuntabilitas berarti kita harus transparan tentang cara kerja sistem kita. Jika sebuah bank menolak pinjamanmu lewat AI, kamu berhak tahu alasannya secara logis, bukan sekadar 'Sistem bilang TIDAK'. Mempelajari akuntabilitas melatih kedewasaan dan tanggung jawab profesimu. Kamu belajar bahwa setiap baris kode yang kamu tulis memiliki dampak nyata pada hidup orang lain. Membangun teknologi yang akuntabel berarti membangun kepercayaan publik. Tanpa kepercayaan, kemajuan AI tidak akan bisa diterima sepenuhnya oleh masyarakat. Dengan menjunjung tinggi akuntabilitas, kamu sedang ikut serta merancang kerangka etika dan hukum bagi peradaban digital masa depan agar tetap aman, terkendali, dan menjunjung tinggi martabat kemanusiaan di atas segala kemajuan mesin yang ada."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika AI & Dampak Sosial" },
+    "subtopic": "Masa Depan Pekerjaan di Era Otomasi",
+    "lesson": { 
+      "title": "Pekerjaan yang Terancam dan Terbuka oleh AI",
+      "content": "Setiap revolusi teknologi selalu merubah peta pekerjaan. Begitu juga dengan AI. Pekerjaan yang bersifat rutin, berulang, dan didasarkan pada aturan yang tetap (seperti kasir, admin input data, atau operator pabrik) memang sangat berisiko digantikan oleh otomasi AI. Namun, jangan takut! Di saat yang sama, AI juga membuka jutaan lapangan kerja baru yang belum pernah ada sebelumnya. Ada kebutuhan besar untuk 'AI Prompt Engineer' (orang yang ahli memberi perintah pada AI), 'Data Analyst', 'AI Ethicist' (ahli etika teknologi), dan pengembang sistem keamanan siber. Selain itu, pekerjaan yang membutuhkan empati manusia, kreativitas tingkat tinggi, dan pemecahan masalah yang tidak terduga akan menjadi semakin mahal harganya. Mempelajari tren ini melatihmu untuk menjadi orang yang adaptif dan visioner. Kamu belajar untuk tidak melawan arus teknologi, tapi justru berselancar di atasnya. Kamu harus pintar memilih keahlian apa yang ingin kamu dalami agar tetap relevan di masa depan. Mengetahui perubahan ini membantumu merencanakan karir dengan lebih matang. Kamu ingin menjadi orang yang membangun sistem AI tersebut, bukan orang yang digantikan olehnya. Masa depan adalah milik mereka yang mampu bekerja sama secara harmonis dengan kecerdasan buatan untuk menciptakan nilai tambah yang tidak bisa dilakukan oleh mesin sendirian."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika AI & Dampak Sosial" },
+    "subtopic": "Masa Depan Pekerjaan di Era Otomasi",
+    "lesson": { 
+      "title": "Skill Manusia yang Tidak Bisa Digantikan AI",
+      "content": "Di tengah canggihnya AI, ada beberapa kemampuan unik manusia yang sangat sulit (bahkan mungkin tidak akan pernah bisa) ditiru secara sempurna oleh mesin. Pertama adalah Empati dan Kecerdasan Emosional. AI bisa mendeteksi wajah sedih, tapi ia tidak bisa benar-benar merasakan kesedihan atau memberikan kenyamanan tulus seperti seorang sahabat atau perawat. Kedua adalah Kreativitas Orisinal yang melibatkan intuisi dan perasaan mendalam. AI hanya bisa merangkai ulang apa yang sudah ada, tapi manusia bisa menciptakan sesuatu yang benar-benar baru dari nol. Ketiga adalah Pengambilan Keputusan Etis yang kompleks, di mana tidak ada jawaban benar atau salah secara matematis. Memahami keunggulan manusiamu sendiri melatih kepercayaan diri dan rasa banggamu sebagai manusia. Kamu belajar bahwa koding adalah alat untuk meningkatkan kemampuanmu, bukan untuk menggantikan kemanusiaanmu. Fokuslah untuk mengasah kemampuan komunikasimu, kolaborasi tim, dan kepemimpinanmu. Inilah 'Soft Skills' yang akan menjadikannmu pemimpin di era AI. Dengan menggabungkan kemahiran teknis (hard skills) dan kearifan manusiawi (soft skills), kamu akan menjadi individu yang luar biasa tangguh dan tidak tergantikan dalam bidang apa pun yang kamu pilih untuk ditekuni di masa depan nantinya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Etika AI & Dampak Sosial" },
+    "subtopic": "Masa Depan Pekerjaan di Era Otomasi",
+    "lesson": { 
+      "title": "Belajar Sepanjang Hayat (Lifelong Learning) di Dunia Teknologi",
+      "content": "Dunia teknologi bergerak sangat cepat. Apa yang kamu pelajari hari ini mungkin akan usang dalam lima tahun ke depan. Oleh karena itu, kemampuan paling penting bagi seorang programmer bukanlah bahasa pemrograman tertentu, tapi kemampuan untuk 'Belajar Cara Belajar' (Learning how to learn). Kamu harus memiliki mentalitas Belajar Sepanjang Hayat (Lifelong Learning). Jangan pernah merasa sudah pintar. Selalu penasaran dengan teknologi baru, baca dokumentasi terbaru, dan ikut serta dalam komunitas teknologi. Di era AI, pengetahuan bisa didapat dengan mudah lewat bantuan AI itu sendiri; tantangannya adalah bagaimana kamu menyaring dan menerapkan pengetahuan tersebut secara bijak. Mempelajari konsep ini melatih kerendahhatian dan ketangguhan mentalmu (grit). Kamu belajar untuk menjadi pembelajar yang mandiri dan tidak tergantung pada sekolah saja. Programmer yang sukses adalah mereka yang selalu merasa lapar akan ilmu pengetahuan dan tidak takut mencoba hal-hal baru yang sulit. Dengan memiliki semangat belajar yang tidak pernah padam, kamu akan selalu relevan, selalu dicari oleh industri, dan mampu terus memberikan kontribusi terbaik bagi kemajuan teknologi dan kesejahteraan umat manusia di sepanjang perjalanan karir dan kehidupanmu yang penuh dengan inovasi-inovasi luar biasa di masa depan yang menanti."
+    }
+  }
+]

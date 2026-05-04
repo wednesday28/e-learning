@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Berpikir Komputasional" },
+    "subtopic": "Fondasi Berpikir Komputasional",
+    "lesson": {
+      "title": "Computational Thinking: Cara Berpikir Ala Insinyur Digital",
+      "content": "Selamat datang di pelajaran Informatika kelas 10 SMK! Di era Industri 4.0, kemampuan paling berharga bukan hanya mengoperasikan komputer, tapi **Berpikir Komputasional (Computational Thinking)**. Ini adalah cara memecahkan masalah kompleks secara sistematis. Ada empat fondasi utama: **Dekomposisi** (memecah masalah besar menjadi kecil), **Pengenalan Pola** (mencari kesamaan), **Abstraksi** (fokus pada hal penting saja), and **Algoritma** (menyusun langkah-langkah solusi).\n\nBayangkan kamu sedang memperbaiki mesin motor or merancang menu restoran. Dengan dekomposisi, kamu mengurai setiap bagian mesin or bahan masakan. Dengan pengenalan pola, kamu tahu gejala kerusakan yang sama or selera pelanggan. Abstraksi membantumu mengabaikan detail yang tidak relevan, and algoritma adalah prosedur kerja (SOP) yang kamu buat. Berpikir komputasional membuatmu menjadi problem solver yang cerdas di bidang apapun. Informatika adalah tentang bagaimana kita menggunakan otak kita seefisien komputer."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Teknologi Informasi dan Komunikasi (TIK)" },
+    "subtopic": "Integrasi Konten Aplikasi Perkantoran",
+    "lesson": {
+      "title": "Produktivitas Digital: Integrasi Word, Excel, dan PPT",
+      "content": "Sebagai siswa SMK, kamu harus mahir menggunakan aplikasi perkantoran (Office) secara profesional. Pelajaran ini fokus pada **Integrasi Konten**. Pernahkah kamu membuat laporan di Word yang datanya otomatis update dari Excel? Or memasukkan grafik Excel ke dalam presentasi PowerPoint? Ini disebut **Object Linking and Embedding (OLE)**. Integrasi ini sangat penting untuk efisiensi kerja di kantor or saat membuat laporan proyek akhir.\n\nKamu akan belajar fitur-fitur lanjutan seperti **Mail Merge** untuk membuat surat massal, penggunaan **Table of Contents** otomatis, hingga fitur **Collaborative Editing** (bekerja bersama dalam satu dokumen secara online). Di dunia industri, waktu adalah uang. Menguasai pintasan (shortcuts) and integrasi aplikasi akan membuatmu bekerja 10 kali lebih cepat. Informatika bukan hanya soal mengetik, tapi soal bagaimana mengelola informasi secara cerdas and terintegrasi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Teknologi Informasi dan Komunikasi (TIK)" },
+    "subtopic": "Pencarian Informasi dan Manajemen File",
+    "lesson": {
+      "title": "Cerdas Mencari: Mesin Pencari dan Folder Organisasi",
+      "content": "Internet adalah perpustakaan terbesar di dunia, tapi kamu harus tahu cara mencari buku yang tepat. Kita akan belajar teknik **Advance Search** menggunakan operator seperti 'site:', 'filetype:', and tanda kutip (\"\") untuk mencari informasi yang spesifik and valid. Selain itu, **Manajemen File** adalah kunci kerapian kerja. Jangan biarkan desktop-mu penuh dengan file bernama 'tugas1', 'tugas fix', 'tugas beneran fix'. Gunakan struktur folder yang logis and penamaan file yang standar."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Sistem Komputer" },
+    "subtopic": "Perangkat Keras (Hardware)",
+    "lesson": {
+      "title": "Di Balik Casing: Memahami Perangkat Keras Komputer",
+      "content": "Komputer bukan hanya layar and keyboard. Di dalamnya terdapat komponen-komponen vital yang bekerja sama. Kita akan mengenal **CPU** (Otak), **RAM** (Memori Sementara), **Storage** (HDD/SSD sebagai Memori Permanen), and **Motherboard** (Saraf Pusat). Kamu harus tahu perbedaan fungsi masing-masing agar bisa memilih spesifikasi komputer yang tepat untuk kebutuhan pekerjaanmu—apakah untuk desain grafis, koding berat, or sekadar administrasi kantor."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Sistem Komputer" },
+    "subtopic": "Sistem Operasi (OS)",
+    "lesson": {
+      "title": "Sistem Operasi: Jembatan Antara Manusia dan Mesin",
+      "content": "**Sistem Operasi (OS)** seperti Windows, Linux, and Android adalah software pertama yang berjalan saat komputer dinyalakan. OS bertugas mengelola hardware and menyediakan antarmuka (GUI) bagi pengguna. Pelajaran ini membahas fungsi OS dalam **Manajemen Memori**, **Manajemen File**, and **Penjadwalan Tugas (Multitasking)**. Tanpa OS, hardware komputer hanyalah benda mati yang tidak bisa diperintah."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Sistem Komputer" },
+    "subtopic": "Perangkat Lunak (Software) dan Lisensi",
+    "lesson": {
+      "title": "Software dan Lisensi: Etika Menggunakan Aplikasi",
+      "content": "Software dibagi menjadi tiga kategori utama: **System Software** (OS), **Application Software** (Word, Chrome), and **Programming Tools** (VS Code). Namun, yang paling penting adalah memahami **Lisensi Software**. Ada software Berbayar (Proprietary), Gratis (Freeware), and Terbuka (Open Source). Sebagai siswa SMK yang profesional, kamu harus menghargai hak kekayaan intelektual dengan tidak menggunakan software bajakan (pirated)."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Jaringan Komputer dan Internet" },
+    "subtopic": "Topologi Jaringan",
+    "lesson": {
+      "title": "Menghubungkan Dunia: Dasar Jaringan Komputer",
+      "content": "Jaringan komputer memungkinkan perangkat saling berkomunikasi and berbagi data. Kita akan belajar tentang **LAN** (Lokal), **MAN** (Kota), and **WAN** (Global/Internet). Selain itu, kita mengenal **Topologi Jaringan** (Bus, Star, Ring, Mesh) yang menentukan bagaimana kabel and perangkat disusun. Topologi **Star** adalah yang paling umum digunakan di kantor and lab sekolah karena kemudahannya dalam maintenance."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Jaringan Komputer dan Internet" },
+    "subtopic": "Alamat IP dan Protokol Internet",
+    "lesson": {
+      "title": "Alamat di Dunia Maya: Memahami IP Address",
+      "content": "Agar data sampai ke tujuan yang benar, setiap perangkat di jaringan butuh identitas yang disebut **IP Address** (Internet Protocol). Kita akan belajar tentang **IPv4** (format angka) and **IPv6** yang lebih modern. IP address bekerja seperti alamat rumah; tanpa alamat yang jelas, paket data akan nyasar. Selain itu, kita mengenal **DNS** (Domain Name System) yang mengubah nama website (google.com) menjadi angka IP yang dimengerti mesin."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Jaringan Komputer dan Internet" },
+    "subtopic": "Keamanan Jaringan dan Cyber Hygiene",
+    "lesson": {
+      "title": "Benteng Digital: Keamanan Jaringan dan Data",
+      "content": "Internet adalah tempat yang berbahaya jika kita tidak waspada. Kita akan belajar tentang ancaman **Malware** (Virus, Ransomware), **Phishing** (penipuan email), and **Social Engineering**. Pelajaran ini menekankan pentingnya **Cyber Hygiene**: kebiasaan sehat dalam berinternet seperti menggunakan password yang kuat, mengaktifkan **2FA** (Two-Factor Authentication), and tidak sembarangan mengklik link yang mencurigakan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Pengumpulan dan Pengolahan Data",
+    "lesson": {
+      "title": "Data adalah Emas Baru: Dasar Analisis Data",
+      "content": "Di era digital, data adalah aset yang sangat berharga. Pelajaran ini fokus pada siklus data: **Pengumpulan**, **Pengolahan**, and **Visualisasi**. Kamu belajar cara mengumpulkan data melalui survei online, sensor, or log sistem. Data yang mentah harus dibersihkan (data cleaning) agar tidak ada kesalahan sebelum dianalisis. Kita akan menggunakan software spreadsheet sebagai alat utama untuk mengolah ribuan baris data secara otomatis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Privasi Data dan Perlindungan Informasi",
+    "lesson": {
+      "title": "Privasi Anda: Melindungi Data Pribadi",
+      "content": "Tahukah kamu bahwa data pribadimu seringkali dikumpulkan and dijual oleh perusahaan teknologi? Kita akan belajar tentang **Privasi Data** and UU Perlindungan Data Pribadi (PDP). Kamu harus tahu data apa saja yang boleh dibagikan and data apa yang harus dirahasiakan (seperti NIK, alamat, or data biometrik). Privasi bukan berarti menyembunyikan sesuatu, tapi hak untuk mengontrol informasi tentang diri kita sendiri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Logika Pemrograman dan Flowchart",
+    "lesson": {
+      "title": "Peta Logika: Membuat Flowchart Algoritma",
+      "content": "Sebelum mengetik koding, kita harus merancang logikanya terlebih dahulu. Kita menggunakan **Flowchart** (Diagram Alir) untuk memvisualisasikan langkah-langkah solusi. Simbol-simbol seperti Oval (Start/End), Jajaran Genjang (Input/Output), Persegi Panjang (Proses), and Belah Ketupat (Decision/Percabangan) adalah bahasa universal para programmer. Flowchart membantumu mendeteksi kesalahan logika (bug) sebelum program dibuat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Pengenalan Bahasa Pemrograman (Python)",
+    "lesson": {
+      "title": "Halo Dunia: Memulai Pemrograman dengan Python",
+      "content": "Python adalah bahasa pemrograman yang sangat populer karena sintaksnya yang mudah dibaca, mirip bahasa Inggris. Kita akan belajar konsep dasar: **Variabel**, **Tipe Data** (String, Integer, Float), and **Input/Output**. Kamu akan menulis program pertamamu: `print(\"Hello World\")`. Meskipun sederhana, ini adalah langkah awalmu menjadi seorang pencipta teknologi, bukan hanya pengguna."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Struktur Kontrol: Percabangan",
+    "lesson": {
+      "title": "Mengambil Keputusan: Logika Percabangan If-Else",
+      "content": "Komputer menjadi pintar karena bisa mengambil keputusan. Kita menggunakan struktur **If-Else** (Jika-Maka). Contohnya: 'Jika nilai >= 75, maka Lulus. Jika tidak, maka Remidial'. Pelajaran ini membahas operator perbandingan (>, <, ==, !=) and operator logika (AND, OR, NOT). Percabangan adalah jantung dari setiap aplikasi, mulai dari sistem login hingga kontrol otomatis pada mesin industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Struktur Kontrol: Perulangan",
+    "lesson": {
+      "title": "Bekerja Tanpa Lelah: Logika Perulangan (Loops)",
+      "content": "Salah satu kelebihan komputer adalah tidak pernah bosan melakukan hal yang sama ribuan kali. Kita menggunakan **Loops** (Perulangan) seperti `for` and `while`. Perulangan digunakan untuk menampilkan data dalam jumlah banyak, melakukan pengecekan berulang, or menjalankan proses secara kontinu. Bayangkan harus mengetik 'Saya tidak akan telat' sebanyak 100 kali secara manual vs menggunakan koding 3 baris. Inilah efisiensi informatika."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Fungsi dan Modularisasi Program",
+    "lesson": {
+      "title": "Bongkar Pasang Kode: Memahami Fungsi (Functions)",
+      "content": "Program yang besar harus dipecah menjadi bagian-bagian kecil yang disebut **Fungsi (Function)**. Fungsi adalah blok kode yang bisa dipanggil berkali-kali tanpa harus menulis ulang. Ini disebut **Modularisasi**. Dengan fungsi, kodingmu menjadi lebih rapi, mudah dibaca, and mudah diperbaiki (maintenance). Kita belajar tentang parameter (input fungsi) and return value (output fungsi). Fungsi adalah bentuk dekomposisi dalam pemrograman."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Dampak Sosial Informatika" },
+    "subtopic": "Etika Digital dan Literasi Media",
+    "lesson": {
+      "title": "Warga Digital yang Bijak: Etika di Internet",
+      "content": "Setiap tindakanmu di internet meninggalkan **Jejak Digital** yang permanen. Pelajaran ini membahas tentang **Etika Digital** (Netiquette): bagaimana berkomunikasi dengan sopan di media sosial, menghargai perbedaan pendapat, and tidak menyebarkan kebencian (Hate Speech). Kamu juga belajar tentang **Literasi Media**: cara membedakan berita asli dengan berita bohong (Hoaks) melalui cek fakta (fact-checking)."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Dampak Sosial Informatika" },
+    "subtopic": "HAKI",
+    "lesson": {
+      "title": "Hak Milik Digital: Memahami HAKI",
+      "content": "**Hak Kekayaan Intelektual (HAKI)** melindungi karya digital seperti software, musik, film, and desain grafis dari pembajakan. Pelajaran ini membahas pentingnya menghargai hak cipta (Copyright) and mengenal berbagai jenis lisensi seperti Creative Commons. Membajak karya orang lain bukan hanya masalah hukum, tapi juga mematikan kreativitas and ekonomi kreatif nasional. Sebagai calon profesional, kamu harus bangga menggunakan produk asli."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Dampak Sosial Informatika" },
+    "subtopic": "Masa Depan Pekerjaan dan AI",
+    "lesson": {
+      "title": "Bekerja Bareng Robot: AI dan Masa Depan Karier",
+      "content": "**Kecerdasan Artifisial (AI)** bukan lagi fiksi ilmiah, tapi kenyataan di tempat kerja. AI membantu dokter mendiagnosis penyakit, membantu desainer membuat sketsa, hingga membantu koder menulis program. Namun, AI tidak akan mengganti manusia yang tahu cara menggunakannya. Pelajaran ini membahas cara berkolaborasi dengan AI secara bijak (Human-AI Collaboration). Kamu belajar tentang **Prompt Engineering**: cara memberikan instruksi yang tepat kepada AI."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Teknologi Baru" },
+    "subtopic": "Cloud Computing dan SaaS",
+    "lesson": {
+      "title": "Komputasi Awan: Bekerja di Mana Saja",
+      "content": "**Cloud Computing** adalah teknologi yang memungkinkan kita menyimpan data and menjalankan aplikasi melalui internet, bukan di harddisk lokal. Kamu mengenal layanan **SaaS** (Software as a Service) seperti Google Docs or Canva. Kelebihannya: kamu bisa bekerja dari perangkat mana saja and datamu selalu ter-sinkronisasi. Bagi siswa SMK, cloud computing memudahkan kolaborasi tim dalam mengerjakan proyek sekolah or industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Teknologi Baru" },
+    "subtopic": "Big Data dan Analisis Tren",
+    "lesson": {
+      "title": "Big Data: Mengolah Jutaan Informasi",
+      "content": "**Big Data** adalah kumpulan data yang sangat besar, cepat, and beragam (3V: Volume, Velocity, Variety). Perusahaan besar menggunakan big data untuk memprediksi tren pasar and perilaku konsumen. Kamu belajar bahwa setiap 'like' and 'klik' yang kamu lakukan menjadi data yang berharga. Informatika mengajarkan kita cara memproses tumpukan data raksasa menjadi wawasan (insight) yang berguna untuk kemajuan bisnis and pelayanan publik."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Teknologi Baru" },
+    "subtopic": "Internet of Things (IoT)",
+    "lesson": {
+      "title": "Internet of Things: Saat Benda Mulai Berbicara",
+      "content": "**Internet of Things (IoT)** menghubungkan benda-benda fisik ke internet, seperti lampu pintar, kulkas pintar, hingga mesin pabrik yang otomatis. Dengan sensor and konektivitas, benda-benda ini bisa mengirim data and dikendalikan dari jarak jauh. Bagi siswa SMK Teknik, IoT adalah masa depan otomasi industri. Kamu belajar bagaimana sensor suhu or kelembapan bisa memberikan laporan otomatis ke smartphone-mu untuk tindakan cepat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Desain Digital" },
+    "subtopic": "Dasar UI/UX Design",
+    "lesson": {
+      "title": "Desain untuk Pengguna: Mengenal UI dan UX",
+      "content": "**UI (User Interface)** adalah tampilan visual aplikasi, sedangkan **UX (User Experience)** adalah kenyamanan pengguna saat memakai aplikasi. Desain yang baik bukan hanya yang 'cantik', tapi yang 'mudah digunakan'. Kamu belajar prinsip desain seperti kontras, ruang kosong (whitespace), and konsistensi. Bagi siswa SMK Multimedia or IT, UI/UX adalah kunci agar aplikasi yang kamu buat disukai and digunakan oleh banyak orang."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Sistem Informasi" },
+    "subtopic": "Content Management System (CMS)",
+    "lesson": {
+      "title": "Membuat Web Tanpa Koding: Mengenal CMS",
+      "content": "**CMS** seperti WordPress or Blogger memungkinkan siapa saja membuat website dengan cepat tanpa harus mahir koding. Kamu belajar cara mengelola konten, memasang tema, and menggunakan plugin. Bagi siswa SMK Bisnis, CMS adalah alat yang hebat untuk membuat toko online or portofolio digital. Informatika memberikanmu berbagai alat untuk eksis di dunia digital dengan cara yang paling efisien and profesional."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Bisnis Digital" },
+    "subtopic": "E-Commerce dan Digital Marketing",
+    "lesson": {
+      "title": "Jualan Zaman Now: E-Commerce dan Marketing",
+      "content": "Dunia perdagangan telah berpindah ke platform **E-Commerce**. Kamu belajar tentang sistem marketplace, payment gateway (pembayaran digital), and logistik pengiriman. Selain itu, **Digital Marketing** melalui SEO, SEM, and Social Media Ads membantu produkmu dikenal dunia. Informatika mengajarkan kita untuk memanfaatkan platform digital sebagai mesin uang yang legal and menjanjikan di masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Kolaborasi Digital" },
+    "subtopic": "Alat Kerja Kolaboratif",
+    "lesson": {
+      "title": "Bekerja Bersama: Trello, Slack, dan Github",
+      "content": "Di dunia kerja, kamu akan bekerja dalam tim besar. Alat kolaborasi seperti **Trello** (manajemen tugas), **Slack** (komunikasi tim), and **Github** (kolaborasi koding) sangat membantu koordinasi. Kamu belajar cara berbagi tugas, memberikan feedback, and memantau progres proyek secara transparan. Informatika melatihmu untuk menjadi pemain tim yang handal dalam ekosistem kerja digital yang dinamis and modern."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Otomasi" },
+    "subtopic": "Dasar Robotika dan Otomasi",
+    "lesson": {
+      "title": "Dunia Otomatis: Pengantar Robotika",
+      "content": "Robotika menggabungkan mekanik, elektronik, and informatika. Robot diciptakan untuk melakukan tugas yang berbahaya, berulang, or membutuhkan presisi tinggi. Kamu belajar tentang **Aktuator** (penggerak) and **Sensor** (indra robot). Otomasi membantu meningkatkan produktivitas pabrik secara signifikan. Bagi siswa SMK, memahami logika robotika akan membuatmu siap bekerja di industri manufaktur masa depan yang serba otomatis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Informatika Hijau" },
+    "subtopic": "Green Computing",
+    "lesson": {
+      "title": "Teknologi Ramah Lingkungan: Green Computing",
+      "content": "Teknologi juga harus peduli pada bumi. **Green Computing** adalah praktik menggunakan komputer and sumber daya IT secara efisien and ramah lingkungan. Contohnya: mematikan komputer saat tidak digunakan, menggunakan perangkat hemat energi, and mendaur ulang sampah elektronik. Informatika mengajarkan kita untuk menjadi inovator yang tidak hanya pintar, tapi juga bertanggung jawab terhadap kelestarian alam untuk generasi mendatang."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Karier Informatika" },
+    "subtopic": "Menyusun Portofolio Digital",
+    "lesson": {
+      "title": "Showcase Diri: Membangun Portofolio Digital",
+      "content": "Ijazah saja tidak cukup; kamu butuh bukti karya. **Portofolio Digital** adalah kumpulan hasil kerjamu (desain, koding, laporan, foto) yang disajikan secara online. Kamu bisa menggunakan LinkedIn, Behance, or website pribadi. Portofolio yang bagus akan menarik perhatian HRD and klien internasional. Informatika membantu kamu 'menjual' keahlianmu ke seluruh dunia dengan cara yang elegan and meyakinkan. Mulailah mendokumentasikan setiap karyamu hari ini!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Informatika",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Informatika Sebagai Kunci Masa Depan",
+    "lesson": {
+      "title": "Pesan Penutup: Menjadi Pemimpin di Era Digital",
+      "content": "Selamat! Kamu telah menyelesaikan perjalanan kurikulum Informatika kelas 10 SMK. Kita telah belajar mulai dari cara berpikir komputasional hingga membangun portofolio digital. Pelajaran terpenting adalah: **Informatika bukan hanya tentang komputer, tapi tentang cara kita memecahkan masalah di dunia nyata**. Apapun jurusanmu, informatika akan menjadi 'booster' bagi kariermu. Teruslah bereksplorasi, teruslah koding, and jadilah legenda di era digital! Merdeka!"
+    }
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Biologi Molekuler" },
+    "subtopic": "Metabolisme Sel",
+    "lesson": { 
+      "title": "Enzim dan Cara Kerjanya",
+      "content": "Enzim adalah protein yang bertindak sebagai katalis biologis dengan menurunkan energi aktivasi. Contoh: Model kunci dan gembok (lock and key) pada substrat. Penjelasan: Aktivitas enzim dipengaruhi oleh faktor lingkungan seperti pH dan suhu yang ekstrem."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Biologi Molekuler" },
+    "subtopic": "Metabolisme Sel",
+    "lesson": { 
+      "title": "Respirasi Aerob: Katabolisme Karbohidrat",
+      "content": "Proses pemecahan glukosa menjadi energi (ATP) dengan bantuan oksigen melalui 4 tahap utama. Contoh: Glikolisis, Dekarboksilasi Oksidatif, Siklus Krebs, dan Transpor Elektron. Penjelasan: Satu molekul glukosa menghasilkan sekitar 36-38 ATP pada sel eukariotik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Biologi Molekuler" },
+    "subtopic": "Metabolisme Sel",
+    "lesson": { 
+      "title": "Fotosintesis: Anabolisme Karbohidrat",
+      "content": "Penyusunan senyawa organik kompleks dari senyawa anorganik sederhana menggunakan energi cahaya. Contoh: Reaksi Terang di tilakoid dan Reaksi Gelap (Siklus Calvin) di stroma. Penjelasan: Klorofil menangkap foton cahaya matahari untuk mengaktifkan aliran elektron."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Fisika Modern" },
+    "subtopic": "Fisika Kuantum",
+    "lesson": { 
+      "title": "Radiasi Benda Hitam",
+      "content": "Radiasi elektromagnetik termal yang dipancarkan oleh benda dalam kesetimbangan termodinamika. Contoh: Mengapa besi yang dipanaskan memancarkan warna kemerahan lalu putih. Penjelasan: Teori kuantum Planck menjelaskan bahwa energi dipancarkan dalam paket-paket kecil bernama kuanta."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Fisika Modern" },
+    "subtopic": "Fisika Kuantum",
+    "lesson": { 
+      "title": "Efek Fotolistrik",
+      "content": "Pengeluaran elektron dari permukaan logam ketika disinari oleh cahaya dengan frekuensi tertentu. Contoh: Cara kerja sensor pada lampu jalan otomatis. Penjelasan: Gejala ini membuktikan bahwa cahaya memiliki sifat partikel (foton) selain sifat gelombang."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Fisika Modern" },
+    "subtopic": "Fisika Kuantum",
+    "lesson": { 
+      "title": "Dualisme Gelombang Partikel",
+      "content": "Konsep bahwa cahaya dan materi memiliki sifat sebagai gelombang sekaligus sebagai partikel. Contoh: Percobaan celah ganda untuk elektron. Penjelasan: Panjang gelombang de Broglie menghubungkan momentum partikel dengan sifat gelombangnya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Kimia Larutan" },
+    "subtopic": "Sifat Koligatif",
+    "lesson": { 
+      "title": "Penurunan Tekanan Uap",
+      "content": "Tekanan uap larutan selalu lebih rendah daripada tekanan uap pelarut murninya. Contoh: Laut mati yang memiliki tekanan uap sangat rendah karena kadar garam tinggi. Penjelasan: Partikel zat terlarut menghalangi molekul pelarut untuk menguap ke permukaan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Kimia Larutan" },
+    "subtopic": "Sifat Koligatif",
+    "lesson": { 
+      "title": "Kenaikan Titik Didih dan Penurunan Titik Beku",
+      "content": "Penambahan zat terlarut menaikkan suhu didih dan menurunkan suhu beku larutan. Contoh: Menaburkan garam di jalan bersalju agar es cepat mencair. Penjelasan: Besarnya perubahan suhu berbanding lurus dengan molalitas zat terlarut dalam larutan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Kimia Larutan" },
+    "subtopic": "Sifat Koligatif",
+    "lesson": { 
+      "title": "Tekanan Osmotik Larutan",
+      "content": "Tekanan minimum yang diperlukan untuk mencegah terjadinya osmosis pada larutan. Contoh: Penggunaan infus yang harus isotonik dengan tekanan osmotik darah. Penjelasan: Tekanan osmotik dimanfaatkan dalam proses desalinasi air laut menjadi air tawar (osmosis balik)."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Genetika Lanjut" },
+    "subtopic": "Hereditas Manusia",
+    "lesson": { 
+      "title": "Penyakit Menurun terpaut Autosom",
+      "content": "Kelainan genetik yang diwariskan melalui kromosom tubuh, bukan kromosom kelamin. Contoh: Albinisme, Polidaktili, dan Thalasemia. Penjelasan: Penyakit ini bisa muncul jika kedua orang tua membawa gen resesif (carrier) meskipun mereka normal."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Genetika Lanjut" },
+    "subtopic": "Hereditas Manusia",
+    "lesson": { 
+      "title": "Penyakit Menurun terpaut Gonosom",
+      "content": "Kelainan genetik yang gennya terletak pada kromosom kelamin (X atau Y). Contoh: Buta warna dan Hemofilia (darah sukar membeku). Penjelasan: Laki-laki lebih sering terkena buta warna karena hanya memiliki satu kromosom X."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Genetika Lanjut" },
+    "subtopic": "Hereditas Manusia",
+    "lesson": { 
+      "title": "Mutasi Gen dan Kromosom",
+      "content": "Perubahan urutan basa nitrogen pada DNA atau perubahan jumlah dan struktur kromosom. Contoh: Sindrom Down akibat kelebihan kromosom nomor 21 (Trisomi). Penjelasan: Mutasi dapat disebabkan oleh faktor alam (radiasi) maupun zat kimia buatan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Redoks dan Elektrokimia" },
+    "subtopic": "Sel Volta dan Elektrolisis",
+    "lesson": { 
+      "title": "Penyetaraan Reaksi Redoks",
+      "content": "Menyeimbangkan jumlah atom dan muatan pada reaksi oksidasi-reduksi menggunakan metode bilangan oksidasi. Contoh: Reaksi antara ion permanganat dengan ion oksalat. Penjelasan: Reaksi redoks melibatkan perpindahan elektron antar spesi kimia."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Redoks dan Elektrokimia" },
+    "subtopic": "Sel Volta dan Elektrolisis",
+    "lesson": { 
+      "title": "Sel Volta: Energi Kimia ke Listrik",
+      "content": "Alat yang menghasilkan arus listrik dari reaksi kimia spontan di anoda dan katoda. Contoh: Baterai kering, Akumulator (Aki), dan Sel Bahan Bakar. Penjelasan: Potensial sel standar (E0) digunakan untuk memprediksi kespontanan suatu reaksi kimia."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Redoks dan Elektrokimia" },
+    "subtopic": "Sel Volta dan Elektrolisis",
+    "lesson": { 
+      "title": "Sel Elektrolisis: Energi Listrik ke Kimia",
+      "content": "Menggunakan arus listrik luar untuk menjalankan reaksi kimia yang tidak spontan. Contoh: Proses penyepuhan logam (electroplating) emas atau perak. Penjelasan: Hukum Faraday digunakan untuk menghitung massa zat yang mengendap pada elektroda."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Evolusi" },
+    "subtopic": "Teori dan Bukti Evolusi",
+    "lesson": { 
+      "title": "Seleksi Alam Charles Darwin",
+      "content": "Individu yang paling mampu beradaptasi dengan lingkungan akan bertahan hidup dan mewariskan sifatnya. Contoh: Perubahan panjang paruh burung Finch di kepulauan Galapagos. Penjelasan: Variasi genetik adalah bahan baku bagi terjadinya seleksi alam selama jutaan tahun."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Evolusi" },
+    "subtopic": "Teori dan Bukti Evolusi",
+    "lesson": { 
+      "title": "Homologi dan Analogi Organ",
+      "content": "Persamaan struktur asal organ (homologi) vs persamaan fungsi organ (analogi). Contoh: Tangan manusia dan sayap burung (homolog); sayap kupu-kupu dan sayap burung (analog). Penjelasan: Bukti homologi menunjukkan adanya kekerabatan evolusioner antar spesies."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Evolusi" },
+    "subtopic": "Teori dan Bukti Evolusi",
+    "lesson": { 
+      "title": "Hukum Hardy-Weinberg",
+      "content": "Frekuensi gen dan genotipe dalam populasi akan tetap stabil jika tidak ada faktor pengganggu. Contoh: Menghitung persentase pembawa sifat (carrier) dalam suatu populasi. Penjelasan: Syarat berlakunya hukum ini adalah populasi besar, perkawinan acak, dan tidak ada mutasi/migrasi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Fisika Inti" },
+    "subtopic": "Radioaktivitas",
+    "lesson": { 
+      "title": "Energi Ikat Inti dan Defek Massa",
+      "content": "Selisih massa antara penyusun inti atom dengan massa inti atom itu sendiri yang berubah menjadi energi. Contoh: Besarnya energi yang mengikat proton dan neutron di dalam nukleus. Penjelasan: Rumus Einstein E=mc2 menjelaskan konversi massa menjadi energi ikat yang sangat besar."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Fisika Inti" },
+    "subtopic": "Radioaktivitas",
+    "lesson": { 
+      "title": "Peluruhan Radioaktif (Alfa, Beta, Gamma)",
+      "content": "Proses perubahan inti atom yang tidak stabil menjadi stabil dengan memancarkan radiasi. Contoh: Penggunaan isotop Karbon-14 untuk menentukan usia fosil purba. Penjelasan: Waktu paruh adalah waktu yang diperlukan zat radioaktif untuk meluruh menjadi setengahnya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Fisika Inti" },
+    "subtopic": "Radioaktivitas",
+    "lesson": { 
+      "title": "Reaksi Fisi dan Fusi Nuklir",
+      "content": "Pembelahan inti berat (fisi) atau penggabungan inti ringan (fusi) yang menghasilkan energi dahsyat. Contoh: Reaksi fusi di matahari dan reaksi fisi di reaktor nuklir (PLTN). Penjelasan: Energi nuklir merupakan sumber energi yang sangat padat namun memerlukan penanganan limbah yang sangat hati-hati."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Kimia Unsur" },
+    "subtopic": "Gas Mulia dan Halogen",
+    "lesson": { 
+      "title": "Sifat Keperiodikan Unsur Gas Mulia",
+      "content": "Unsur golongan VIIIA yang sangat stabil (inert) karena memiliki konfigurasi elektron penuh. Contoh: Penggunaan gas Helium untuk balon udara dan Neon untuk lampu hias. Penjelasan: Karena kestabilannya, gas mulia sangat sulit membentuk senyawa dengan unsur lain di alam."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Kimia Unsur" },
+    "subtopic": "Gas Mulia dan Halogen",
+    "lesson": { 
+      "title": "Reaktivitas Golongan Halogen",
+      "content": "Unsur golongan VIIA yang sangat reaktif karena hanya butuh satu elektron lagi untuk stabil. Contoh: Klorin sebagai desinfektan air dan Iodin untuk mencegah penyakit gondok. Penjelasan: Sifat oksidator halogen berkurang dari atas ke bawah dalam tabel periodik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Kimia Unsur" },
+    "subtopic": "Gas Mulia dan Halogen",
+    "lesson": { 
+      "title": "Logam Alkali dan Alkali Tanah",
+      "content": "Logam yang sangat reaktif (Alkali) dan logam penyusun kerak bumi yang penting (Alkali Tanah). Contoh: Natrium yang meledak jika terkena air dan Kalsium untuk kekuatan tulang. Penjelasan: Unsur-unsur ini selalu ditemukan dalam bentuk senyawa di alam karena kereaktifannya yang tinggi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Bioteknologi Lanjut" },
+    "subtopic": "Teknik Rekayasa Genetika",
+    "lesson": { 
+      "title": "Teknologi DNA Rekombinan",
+      "content": "Menggabungkan DNA dari dua sumber yang berbeda untuk menciptakan organisme transgenik. Contoh: Produksi hormon insulin manusia menggunakan bakteri E. coli. Penjelasan: Enzim restriksi digunakan sebagai 'gunting biologi' untuk memotong bagian DNA yang diinginkan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Bioteknologi Lanjut" },
+    "subtopic": "Teknik Rekayasa Genetika",
+    "lesson": { 
+      "title": "Teknik PCR dan DNA Profiling",
+      "content": "Perbanyakan molekul DNA secara cepat di laboratorium untuk keperluan identifikasi. Contoh: Penggunaan tes DNA untuk membuktikan garis keturunan atau forensik kriminal. Penjelasan: PCR (Polymerase Chain Reaction) merevolusi diagnosis penyakit dan studi genetik modern."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Bioteknologi Lanjut" },
+    "subtopic": "Teknik Rekayasa Genetika",
+    "lesson": { 
+      "title": "Bioetika dalam Bioteknologi",
+      "content": "Kajian tentang isu moral dan etika yang muncul akibat kemajuan bioteknologi pada makhluk hidup. Contoh: Perdebatan mengenai kloning manusia atau pengeditan gen bayi (designer babies). Penjelasan: Bioetika memastikan kemajuan sains tetap menghargai harkat dan martabat kehidupan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Listrik dan Magnet SMA" },
+    "subtopic": "Arus Bolak-Balik (AC)",
+    "lesson": { 
+      "title": "Rangkaian R-L-C Seri",
+      "content": "Rangkaian listrik AC yang terdiri dari resistor, induktor, dan kapasitor yang disusun sejajar. Contoh: Cara kerja radio dalam mencari frekuensi siaran (resonansi). Penjelasan: Hambatan total dalam rangkaian AC disebut Impedansi (Z) yang nilainya dipengaruhi frekuensi arus."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Listrik dan Magnet SMA" },
+    "subtopic": "Arus Bolak-Balik (AC)",
+    "lesson": { 
+      "title": "Gelombang Elektromagnetik",
+      "content": "Perambatan medan listrik dan medan magnet yang saling tegak lurus tanpa memerlukan medium. Contoh: Cahaya tampak, Sinar-X, dan gelombang Mikro (Microwave). Penjelasan: Spektrum elektromagnetik diurutkan berdasarkan panjang gelombang dan tingkat energinya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "IPA",
+    "topic": { "name": "Listrik dan Magnet SMA" },
+    "subtopic": "Arus Bolak-Balik (AC)",
+    "lesson": { 
+      "title": "Pemanfaatan Sinar Radioaktif dalam Medis",
+      "content": "Penggunaan radiasi untuk diagnosis dan terapi penyakit berbahaya. Contoh: Sinar Gamma untuk membunuh sel kanker (radioterapi) dan Sinar-X untuk rontgen. Penjelasan: Dosis radiasi harus dikontrol ketat agar tidak merusak jaringan tubuh yang sehat."
+    }
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Berita" },
+    "subtopic": "Unsur dan Struktur Berita",
+    "lesson": { 
+      "title": "Unsur Berita 5W+1H (ADIKSIMBA)",
+      "content": "Berita yang baik harus mengandung unsur Apa, Di mana, Kapan, Siapa, Mengapa, dan Bagaimana. Contoh: Berita tentang 'Siswa SMP Memenangkan Olimpiade Sains'. Penjelasan: Unsur ADIKSIMBA memastikan pembaca mendapatkan informasi yang lengkap dan akurat tentang suatu peristiwa."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Berita" },
+    "subtopic": "Unsur dan Struktur Berita",
+    "lesson": { 
+      "title": "Struktur Piramida Terbalik",
+      "content": "Informasi paling penting diletakkan di bagian awal (kepala berita), diikuti data pendukung (tubuh berita), dan informasi tambahan di akhir (ekor berita). Contoh: Analisis struktur berita kebakaran. Penjelasan: Struktur ini membantu pembaca yang sibuk agar langsung mendapatkan inti berita di paragraf pertama."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Berita" },
+    "subtopic": "Unsur dan Struktur Berita",
+    "lesson": { 
+      "title": "Ciri Kebahasaan Teks Berita",
+      "content": "Menggunakan bahasa baku, kalimat langsung dan tidak langsung, serta kata kerja mental. Contoh: Penggunaan kalimat langsung dalam wawancara saksi. Penjelasan: Bahasa yang objektif dan netral sangat penting untuk menjaga kepercayaan publik terhadap berita tersebut."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Berita" },
+    "subtopic": "Menulis dan Menyampaikan Berita",
+    "lesson": { 
+      "title": "Langkah-langkah Menulis Teks Berita",
+      "content": "Menentukan peristiwa, mengumpulkan fakta, menyusun draf, dan menyunting tulisan. Contoh: Menulis berita kegiatan 'Bazar Sekolah'. Penjelasan: Menulis berita melatih kemampuan mengamati dan melaporkan kejadian secara jujur."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Berita" },
+    "subtopic": "Menulis dan Menyampaikan Berita",
+    "lesson": { 
+      "title": "Teknik Membacakan Berita (News Reading)",
+      "content": "Memperhatikan intonasi, artikulasi, dan kontak mata dengan kamera atau audiens. Contoh: Video latihan presenter berita. Penjelasan: Pembaca berita harus tampil tenang dan meyakinkan agar pesan tersampaikan dengan baik."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Berita" },
+    "subtopic": "Menulis dan Menyampaikan Berita",
+    "lesson": { 
+      "title": "Membedakan Berita Fakta dan Hoaks",
+      "content": "Mengecek kredibilitas sumber dan membandingkan dengan media lain yang terpercaya. Contoh: Analisis berita viral yang ternyata salah. Penjelasan: Menjadi pembaca kritis sangat penting di era informasi digital yang sangat cepat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Iklan, Slogan, dan Poster" },
+    "subtopic": "Unsur dan Fungsi",
+    "lesson": { 
+      "title": "Perbedaan Iklan, Slogan, dan Poster",
+      "content": "Iklan memadukan gambar, kata, gerak, dan suara. Slogan fokus pada kata-kata pendek yang menarik. Poster fokus pada gambar dan kata di media cetak besar. Contoh: Analisis media promosi sekolah. Penjelasan: Ketiganya memiliki tujuan yang sama yaitu membujuk atau memberi informasi kepada khalayak."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Iklan, Slogan, dan Poster" },
+    "subtopic": "Unsur dan Fungsi",
+    "lesson": { 
+      "title": "Fungsi Informatif dan Persuasif",
+      "content": "Informatif memberikan fakta produk/jasa. Persuasif membujuk orang untuk membeli atau mengikuti ajakan. Contoh: Iklan produk minuman kesehatan. Penjelasan: Keseimbangan antara informasi dan ajakan membuat iklan lebih efektif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Iklan, Slogan, dan Poster" },
+    "subtopic": "Unsur dan Fungsi",
+    "lesson": { 
+      "title": "Unsur-unsur Pembentuk Iklan",
+      "content": "Sumber, pesan, media, penerima, efek, dan umpan balik. Contoh: Alur komunikasi dalam iklan televisi. Penjelasan: Memahami setiap unsur membantu kita merancang iklan yang tepat sasaran."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Iklan, Slogan, dan Poster" },
+    "subtopic": "Menyusun Media Kreatif",
+    "lesson": { 
+      "title": "Membuat Slogan yang Ikonik",
+      "content": "Menggunakan rima dan kata-kata yang mudah diingat. Contoh: Slogan lingkungan 'Hijaukan Bumi, Birukan Langit'. Penjelasan: Slogan yang kuat akan melekat di ingatan masyarakat dalam waktu yang sangat lama."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Iklan, Slogan, dan Poster" },
+    "subtopic": "Menyusun Media Kreatif",
+    "lesson": { 
+      "title": "Desain Poster yang Efektif",
+      "content": "Memadukan warna yang kontras, tipografi yang jelas, dan gambar yang mewakili pesan. Contoh: Poster lomba baca puisi. Penjelasan: Poster harus bisa menyampaikan pesan hanya dalam sekali lihat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Iklan, Slogan, dan Poster" },
+    "subtopic": "Menyusun Media Kreatif",
+    "lesson": { 
+      "title": "Menganalisis Bahasa Iklan di Media Sosial",
+      "content": "Mempelajari penggunaan kata-kata populer dan tagar untuk menjangkau audiens muda. Contoh: Analisis iklan produk kekinian di Instagram. Penjelasan: Bahasa iklan di media sosial cenderung lebih santai dan interaktif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksposisi" },
+    "subtopic": "Struktur dan Kaidah",
+    "lesson": { 
+      "title": "Ciri-ciri Teks Eksposisi",
+      "content": "Teks yang memaparkan informasi atau pengetahuan secara singkat, padat, dan akurat berdasarkan fakta. Contoh: Teks tentang 'Manfaat Menabung'. Penjelasan: Eksposisi bertujuan menambah wawasan pembaca tanpa bermaksud membujuk secara paksa."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksposisi" },
+    "subtopic": "Struktur dan Kaidah",
+    "lesson": { 
+      "title": "Struktur Eksposisi: Tesis dan Argumen",
+      "content": "Tesis berisi sudut pandang penulis, argumen berisi alasan pendukung berupa fakta dan data. Contoh: Tesis tentang bahaya polusi udara. Penjelasan: Argumen yang kuat membuat gagasan penulis lebih kredibel."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksposisi" },
+    "subtopic": "Struktur dan Kaidah",
+    "lesson": { 
+      "title": "Struktur Eksposisi: Penegasan Ulang",
+      "content": "Bagian akhir yang merangkum kembali pendapat penulis dengan kata-kata yang berbeda. Contoh: Simpulan teks tentang pentingnya sarapan. Penjelasan: Penegasan ulang memberikan kesan penutup yang mantap bagi pembaca."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksposisi" },
+    "subtopic": "Menulis Eksposisi Kreatif",
+    "lesson": { 
+      "title": "Menemukan Topik Eksposisi yang Relevan",
+      "content": "Memilih masalah yang sering dijumpai siswa, seperti cara belajar efektif. Contoh: Topik 'Efek Media Sosial bagi Siswa'. Penjelasan: Topik yang relevan akan lebih menarik minat pembaca sebaya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksposisi" },
+    "subtopic": "Menulis Eksposisi Kreatif",
+    "lesson": { 
+      "title": "Menggunakan Data Statistik dalam Eksposisi",
+      "content": "Menyisipkan angka-angka hasil penelitian untuk memperkuat argumen. Contoh: 'Menurut data, 80% siswa suka olahraga...'. Penjelasan: Angka memberikan bukti nyata yang sulit dibantah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksposisi" },
+    "subtopic": "Menulis Eksposisi Kreatif",
+    "lesson": { 
+      "title": "Menyunting Kalimat Tidak Efektif",
+      "content": "Menghapus kata-kata mubazir agar penjelasan lebih padat dan bermakna. Contoh: Memperbaiki kalimat yang berbelit-belit. Penjelasan: Keefektifan kalimat sangat penting dalam teks paparan ilmu pengetahuan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Puisi" },
+    "subtopic": "Unsur Pembangun Puisi",
+    "lesson": { 
+      "title": "Diksi: Pilihan Kata yang Indah",
+      "content": "Memilih kata yang memiliki makna kiasan atau konotatif untuk menimbulkan kesan puitis. Contoh: 'Mentari tersenyum' menggantikan 'Matahari terbit'. Penjelasan: Diksi yang tepat membangun suasana batin pembaca puisi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Puisi" },
+    "subtopic": "Unsur Pembangun Puisi",
+    "lesson": { 
+      "title": "Majas dan Imaji dalam Puisi",
+      "content": "Menggunakan gaya bahasa (personifikasi, metafora) dan kata-kata yang memancing panca indra. Contoh: Imaji penglihatan 'Sawah menghijau membentang'. Penjelasan: Imaji membantu pembaca membayangkan dunia di dalam puisi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Puisi" },
+    "subtopic": "Unsur Pembangun Puisi",
+    "lesson": { 
+      "title": "Rima dan Ritme dalam Puisi",
+      "content": "Persamaan bunyi di akhir atau tengah baris untuk menciptakan keindahan suara. Contoh: Puisi dengan sajak a-a-b-b. Penjelasan: Rima memberikan musik dalam sebuah bait puisi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Puisi" },
+    "subtopic": "Apresiasi dan Menulis Puisi",
+    "lesson": { 
+      "title": "Menemukan Makna dan Amanat Puisi",
+      "content": "Menganalisis pesan moral atau perasaan yang ingin disampaikan penyair. Contoh: Menganalisis puisi 'Hujan Bulan Juni' karya Sapardi Djoko Damono. Penjelasan: Puisi sering menyimpan pesan yang mendalam di balik kata-kata sederhana."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Puisi" },
+    "subtopic": "Apresiasi dan Menulis Puisi",
+    "lesson": { 
+      "title": "Latihan Menulis Puisi Bebas",
+      "content": "Menuliskan perasaan spontan tanpa terikat aturan jumlah baris atau rima. Contoh: Puisi tentang 'Sahabat Terbaik'. Penjelasan: Menulis puisi adalah cara mengekspresikan diri yang sangat kreatif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Puisi" },
+    "subtopic": "Apresiasi dan Menulis Puisi",
+    "lesson": { 
+      "title": "Pembacaan Puisi yang Ekspresif",
+      "content": "Memperhatikan vokal, mimik, dan gestur saat membacakan karya sendiri atau orang lain. Contoh: Teknik deklamasi puisi. Penjelasan: Pembacaan puisi yang baik membawa ruh puisi tersebut sampai ke hati pendengar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Proses Kejadian",
+    "lesson": { 
+      "title": "Pengertian Teks Eksplanasi",
+      "content": "Teks yang menjelaskan proses terjadinya fenomena alam, sosial, atau budaya secara ilmiah. Contoh: Teks tentang 'Tsunami'. Penjelasan: Eksplanasi menjawab pertanyaan 'mengapa' sesuatu bisa terjadi dengan penjelasan sebab-akibat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Proses Kejadian",
+    "lesson": { 
+      "title": "Struktur Eksplanasi: Identifikasi Fenomena",
+      "content": "Bagian awal yang memberikan gambaran umum tentang peristiwa yang akan dibahas. Contoh: Pendahuluan tentang fenomena 'Aurora'. Penjelasan: Memberikan konteks awal bagi pembaca sebelum masuk ke penjelasan teknis."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Proses Kejadian",
+    "lesson": { 
+      "title": "Struktur Eksplanasi: Penggambaran Rangkaian Kejadian",
+      "content": "Menjelaskan urutan proses terjadinya fenomena tahap demi tahap. Contoh: Proses siklus air dari penguapan hingga hujan. Penjelasan: Kejelasan urutan waktu dan sebab-akibat adalah inti dari eksplanasi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Kebahasaan Eksplanasi",
+    "lesson": { 
+      "title": "Penggunaan Konjungsi Kausalitas",
+      "content": "Menggunakan kata hubung sebab-akibat seperti 'sebab', 'karena', 'oleh karena itu'. Contoh: Analisis kalimat sebab-akibat dalam teks gempa bumi. Penjelasan: Konjungsi kausalitas menghubungkan satu peristiwa dengan peristiwa lainnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Kebahasaan Eksplanasi",
+    "lesson": { 
+      "title": "Penggunaan Konjungsi Kronologis",
+      "content": "Menggunakan kata hubung urutan waktu seperti 'lalu', 'kemudian', 'akhirnya'. Contoh: Urutan kejadian proses terjadinya pelangi. Penjelasan: Kronologi membantu pembaca mengikuti tahapan fenomena dengan mudah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Kebahasaan Eksplanasi",
+    "lesson": { 
+      "title": "Menyusun Teks Eksplanasi Fenomena Sosial",
+      "content": "Menjelaskan proses terjadinya kemiskinan atau pengangguran secara objektif. Contoh: Laporan eksplanasi tentang budaya gotong royong. Penjelasan: Eksplanasi tidak hanya untuk alam, tapi juga untuk memahami perubahan di masyarakat."
+    }
+  }
+]

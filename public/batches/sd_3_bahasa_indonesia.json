@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Benda",
+    "lesson": { 
+      "title": "Ciri-ciri Benda Padat",
+      "content": "Benda padat memiliki bentuk tetap dan bisa dipegang. Contoh: Meja kayu ini berwarna cokelat, permukaannya rata, dan sangat kuat. Penjelasan: Teks deskripsi menjelaskan ciri fisik benda agar orang lain bisa membayangkannya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Benda",
+    "lesson": { 
+      "title": "Mendeskripsikan Buah-buahan",
+      "content": "Buah jeruk bentuknya bulat, kulitnya berwarna oranye, dan rasanya manis agak asam. Contoh: Kalimat deskripsi tentang jeruk. Penjelasan: Gunakan panca indra (penglihatan, peraba, perasa) untuk mendeskripsikan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Benda",
+    "lesson": { 
+      "title": "Mendeskripsikan Sekolahku",
+      "content": "Sekolahku memiliki halaman yang luas, banyak pohon rindang, dan gedung yang bersih. Contoh: Sekolahku nyaman. Penjelasan: Deskripsi tempat membantu orang mengenal lokasi tersebut."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Hewan",
+    "lesson": { 
+      "title": "Deskripsi Kelinci Lucu",
+      "content": "Kelinci memiliki telinga panjang, bulu halus, dan suka melompat. Makanannya adalah wortel. Contoh: Sifat kelinci yang lincah. Penjelasan: Jelaskan bagian tubuh dan kebiasaan hewan tersebut."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Hewan",
+    "lesson": { 
+      "title": "Deskripsi Ikan Mas Koki",
+      "content": "Ikan mas koki berwarna emas terang, memiliki sirip lebar, dan hidup di air. Contoh: Ikan berenang dengan sirip. Penjelasan: Fokus pada warna dan cara bergeraknya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Hewan",
+    "lesson": { 
+      "title": "Tebak Hewan dari Deskripsi",
+      "content": "Aku punya leher panjang, kulit bercak cokelat, dan makan daun pohon yang tinggi. Siapa aku? (Jerapah). Contoh: Teka-teki deskripsi. Penjelasan: Latihan mendeskripsikan ciri khas yang paling menonjol."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi" },
+    "subtopic": "Unsur Cerita",
+    "lesson": { 
+      "title": "Menemukan Tokoh Utama",
+      "content": "Tokoh utama adalah orang atau hewan yang paling sering diceritakan. Contoh: Dalam cerita Kancil, tokoh utamanya adalah Kancil. Penjelasan: Narasi adalah teks yang menceritakan urutan kejadian."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi" },
+    "subtopic": "Unsur Cerita",
+    "lesson": { 
+      "title": "Mengenal Latar Tempat dan Waktu",
+      "content": "Latar adalah tempat dan waktu terjadinya cerita. Contoh: 'Di hutan pada pagi hari'. Penjelasan: Latar membantu kita membayangkan suasana cerita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi" },
+    "subtopic": "Unsur Cerita",
+    "lesson": { 
+      "title": "Urutan Kejadian (Alur)",
+      "content": "Cerita mengalir dari awal, tengah, sampai akhir. Contoh: Awalnya lapar, lalu makan, lalu kenyang. Penjelasan: Alur yang runtut membuat cerita mudah dipahami."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi" },
+    "subtopic": "Menceritakan Kembali",
+    "lesson": { 
+      "title": "Teknik Meringkas Cerita",
+      "content": "Menceritakan inti cerita dengan bahasa sendiri tanpa menghilangkan pesan penting. Contoh: Ringkasan cerita Malin Kundang. Penjelasan: Ringkasan harus singkat dan jelas."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi" },
+    "subtopic": "Menceritakan Kembali",
+    "lesson": { 
+      "title": "Berlatih Bercerita di Depan Teman",
+      "content": "Gunakan suara yang lantang dan gerakan tubuh yang sesuai. Contoh: Mendongeng di depan kelas. Penjelasan: Bercerita meningkatkan rasa percaya diri."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi" },
+    "subtopic": "Menceritakan Kembali",
+    "lesson": { 
+      "title": "Menilai Cerita Teman",
+      "content": "Memberikan saran yang baik tentang cara bercerita teman. Contoh: 'Suaramu sudah bagus tapi agak cepat'. Penjelasan: Belajar menghargai usaha orang lain."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Depan" },
+    "subtopic": "Penggunaan di, ke, dari",
+    "lesson": { 
+      "title": "Kata Depan 'di' untuk Tempat",
+      "content": "Kata 'di' dipisah jika menunjukkan tempat. Contoh: di rumah, di pasar, di sekolah. Penjelasan: Jangan digabung jika itu lokasi tetap."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Depan" },
+    "subtopic": "Penggunaan di, ke, dari",
+    "lesson": { 
+      "title": "Kata Depan 'ke' untuk Tujuan",
+      "content": "Kata 'ke' menunjukkan arah atau tujuan. Contoh: pergi ke pantai, lari ke lapangan. Penjelasan: 'Ke' dipisah dari nama tempat tujuan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Depan" },
+    "subtopic": "Penggunaan di, ke, dari",
+    "lesson": { 
+      "title": "Kata Depan 'dari' untuk Asal",
+      "content": "Kata 'dari' menunjukkan asal benda atau orang. Contoh: datang dari desa, hadiah dari ayah. Penjelasan: 'Dari' memberi tahu dari mana sesuatu berasal."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Depan" },
+    "subtopic": "Latihan Menulis Kata Depan",
+    "lesson": { 
+      "title": "Membedakan Awalan di- dan Kata Depan di",
+      "content": "Awalan 'di-' untuk kata kerja digabung (dimakan), kata depan 'di' untuk tempat dipisah (di meja). Contoh: Ikan dimakan di dapur. Penjelasan: Ini adalah kesalahan tulis yang paling sering terjadi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Depan" },
+    "subtopic": "Latihan Menulis Kata Depan",
+    "lesson": { 
+      "title": "Melengkapi Kalimat dengan Kata Depan",
+      "content": "Ayo pilih: Saya duduk ... kursi. (di). Ibu pulang ... kantor. (dari). Contoh: Soal latihan pilihan kata depan. Penjelasan: Pahami maksud kalimatnya dulu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Depan" },
+    "subtopic": "Latihan Menulis Kata Depan",
+    "lesson": { 
+      "title": "Memperbaiki Kalimat Salah Tulis",
+      "content": "Perbaiki: 'Budi pergi kepasar'. Seharusnya: 'Budi pergi ke pasar'. Contoh: Koreksi penulisan kata depan. Penjelasan: Teliti saat menulis spasi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Majemuk" },
+    "subtopic": "Kalimat Majemuk Setara",
+    "lesson": { 
+      "title": "Menggunakan Kata Sambung 'dan'",
+      "content": "Menghubungkan dua hal yang setara. Contoh: Ibu membeli sayur dan buah. Penjelasan: Kalimat majemuk adalah gabungan dua kalimat tunggal."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Majemuk" },
+    "subtopic": "Kalimat Majemuk Setara",
+    "lesson": { 
+      "title": "Menggunakan Kata Sambung 'atau'",
+      "content": "Menunjukkan pilihan antara dua hal. Contoh: Kamu mau minum susu atau teh? Penjelasan: Gunakan 'atau' saat ada dua opsi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Majemuk" },
+    "subtopic": "Kalimat Majemuk Setara",
+    "lesson": { 
+      "title": "Menggunakan Kata Sambung 'tetapi'",
+      "content": "Menunjukkan perlawanan atau perbedaan. Contoh: Iwan ingin bermain tetapi sedang hujan. Penjelasan: 'Tetapi' menghubungkan hal yang bertentangan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Majemuk" },
+    "subtopic": "Kalimat Majemuk Bertingkat Dasar",
+    "lesson": { 
+      "title": "Hubungan Sebab: Kata 'karena'",
+      "content": "Menjelaskan alasan terjadinya sesuatu. Contoh: Andi sakit karena kehujanan. Penjelasan: Satu bagian menjadi alasan bagi bagian lainnya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Majemuk" },
+    "subtopic": "Kalimat Majemuk Bertingkat Dasar",
+    "lesson": { 
+      "title": "Hubungan Waktu: Kata 'ketika'",
+      "content": "Menunjukkan kapan sesuatu terjadi. Contoh: Adik tidur ketika ibu memasak. Penjelasan: Dua kegiatan terjadi bersamaan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Majemuk" },
+    "subtopic": "Kalimat Majemuk Bertingkat Dasar",
+    "lesson": { 
+      "title": "Hubungan Tujuan: Kata 'agar/supaya'",
+      "content": "Menunjukkan maksud suatu tindakan. Contoh: Belajarlah agar kamu pintar. Penjelasan: Mengaitkan perbuatan dengan tujuannya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Cerita" },
+    "subtopic": "Menulis Cerita Gambar Seri",
+    "lesson": { 
+      "title": "Mengamati Gambar Seri",
+      "content": "Perhatikan urutan gambar dengan teliti. Gambar 1 sedang apa? Gambar 2 apa? Contoh: Gambar anak jatuh dari sepeda. Penjelasan: Gambar membantu kita menemukan ide cerita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Cerita" },
+    "subtopic": "Menulis Cerita Gambar Seri",
+    "lesson": { 
+      "title": "Menyusun Kalimat Berdasarkan Gambar",
+      "content": "Tulis satu kalimat untuk setiap gambar. Contoh: 'Budi sedang menuntun sepedanya'. Penjelasan: Kalimat harus sesuai dengan apa yang terlihat di gambar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Cerita" },
+    "subtopic": "Menulis Cerita Gambar Seri",
+    "lesson": { 
+      "title": "Menggabungkan Kalimat Jadi Cerita Utuh",
+      "content": "Gunakan kata sambung agar cerita mengalir. Contoh: 'Setelah itu, Budi sampai di rumah'. Penjelasan: Cerita utuh terdiri dari beberapa kalimat yang nyambung."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Cerita" },
+    "subtopic": "Imajinasi dan Kreativitas",
+    "lesson": { 
+      "title": "Membuat Judul yang Menarik",
+      "content": "Judul harus singkat and mewakili isi cerita. Contoh: 'Petualangan di Kebun Binatang'. Penjelasan: Judul yang bagus membuat orang ingin membaca."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Cerita" },
+    "subtopic": "Imajinasi dan Kreativitas",
+    "lesson": { 
+      "title": "Menulis Akhir Cerita (Ending)",
+      "content": "Akhiri cerita dengan perasaan atau hasil kegiatan. Contoh: 'Kami pulang dengan hati yang gembira'. Penjelasan: Penutup yang baik membuat cerita terasa lengkap."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Cerita" },
+    "subtopic": "Imajinasi dan Kreativitas",
+    "lesson": { 
+      "title": "Menghias Cerita dengan Ilustrasi",
+      "content": "Gambar sendiri tokoh ceritamu agar lebih menarik. Contoh: Gambar pahlawan dalam ceritamu. Penjelasan: Gambar buatan sendiri menambah keunikan karyamu."
+    }
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Makhluk Hidup dan Lingkungannya" },
+    "subtopic": "Ekosistem dan Interaksi Antarkomponen",
+    "lesson": {
+      "title": "Keseimbangan Alam: Ekosistem di Sekitar Kita",
+      "content": "Ekosistem adalah kesatuan fungsional antara makhluk hidup (biotik) dengan lingkungannya (abiotik) yang saling berinteraksi. Kamu akan belajar tentang rantai makanan, jaring-jaring makanan, and bagaimana setiap organisme memiliki peran penting dalam menjaga keseimbangan alam. Bagi siswa SMK, memahami ekosistem sangat penting agar kita sadar bahwa aktivitas industri kita bisa merusak keseimbangan ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Makhluk Hidup dan Lingkungannya" },
+    "subtopic": "Pencemaran Lingkungan dan Dampaknya",
+    "lesson": {
+      "title": "Polusi dan Tantangan Industri: Menjaga Kelestarian",
+      "content": "Aktivitas manusia seringkali menghasilkan limbah yang menyebabkan Pencemaran Lingkungan. Kita mengenal pencemaran air, udara, tanah, hingga pencemaran suara. Polusi bukan hanya merusak pemandangan, tapi mengancam kesehatan manusia and kelangsungan makhluk hidup lainnya. Pelajaran ini membahas tentang jenis-jenis polutan and dampaknya bagi ekosistem secara global."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Makhluk Hidup dan Lingkungannya" },
+    "subtopic": "Upaya Pelestarian Lingkungan dan AMDAL",
+    "lesson": {
+      "title": "AMDAL: Prosedur Pembangunan Berwawasan Lingkungan",
+      "content": "Sebelum proyek industri dilaksanakan, pemerintah mewajibkan adanya AMDAL (Analisis Mengenai Dampak Lingkungan). Ini adalah studi untuk memprediksi dampak lingkungan yang mungkin timbul and merancang langkah pencegahannya. Kita belajar bahwa kemajuan ekonomi tidak boleh mengorbankan hak lingkungan hidup yang sehat bagi masyarakat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Makhluk Hidup dan Lingkungannya" },
+    "subtopic": "Asal Usul Kehidupan",
+    "lesson": {
+      "title": "Keanekaragaman Hayati: Kekayaan Flora dan Fauna Indonesia",
+      "content": "Indonesia adalah negara megabiodiversitas. Kita memiliki ribuan spesies yang unik. Pelajaran ini membahas tentang klasifikasi makhluk hidup and pentingnya menjaga keanekaragaman hayati (biodiversity) untuk riset obat-obatan, ketahanan pangan, and keseimbangan alam. Hilangnya satu spesies berarti hilangnya potensi ilmu pengetahuan masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Zat dan Perubahannya" },
+    "subtopic": "Sifat Fisika dan Sifat Kimia Zat",
+    "lesson": {
+      "title": "Mengenal Material: Sifat Fisika dan Kimia",
+      "content": "Dunia industri bekerja dengan berbagai jenis materi. Untuk memilih bahan yang tepat, kita harus memahami Sifat Fisika (warna, wujud, titik didih) and Sifat Kimia (korosifitas, daya ledak). Pengetahuan tentang materi adalah kunci keamanan and efisiensi dalam bekerja di bengkel or laboratorium."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Zat dan Perubahannya" },
+    "subtopic": "Perubahan Fisika dan Perubahan Kimia",
+    "lesson": {
+      "title": "Transformasi Materi: Perubahan Fisika dan Kimia",
+      "content": "Zat bisa berubah bentuk or sifat. Perubahan Fisika tidak menghasilkan zat baru (seperti mencair), sedangkan Perubahan Kimia menghasilkan zat baru (seperti berkarat). Dalam industri, kita memanfaatkan kedua jenis perubahan ini untuk memproses bahan mentah menjadi produk jadi yang berguna."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Zat dan Perubahannya" },
+    "subtopic": "Unsur, Senyawa, dan Campuran",
+    "lesson": {
+      "title": "Komposisi Materi: Unsur, Senyawa, dan Campuran",
+      "content": "Zat diklasifikasikan menjadi Unsur, Senyawa, and Campuran. Memahami komposisi zat sangat penting bagi siswa SMK Farmasi dalam meracik obat, or bagi siswa Teknik Sipil dalam membuat campuran beton yang kokoh. Sedikit perbedaan komposisi bisa mengubah kekuatan material secara drastis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Zat dan Perubahannya" },
+    "subtopic": "Teknik Pemisahan Campuran",
+    "lesson": {
+      "title": "Pemisahan Zat: Teknik Filtrasi hingga Distilasi",
+      "content": "Seringkali kita perlu memisahkan zat dari campurannya untuk mendapatkan zat murni. Kita mengenal teknik Filtrasi, Evaporasi, Sentrifugasi, hingga Distilasi. Industri minyak bumi sangat bergantung pada distilasi bertingkat untuk memisahkan bensin dari minyak mentah."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Energi dan Perubahannya" },
+    "subtopic": "Bentuk-Bentuk Energi",
+    "lesson": {
+      "title": "Energi: Penggerak Utama Peradaban dan Industri",
+      "content": "Energi tidak dapat diciptakan or dimusnahkan, hanya dapat berubah bentuk. Kita mengenal energi kinetik, potensial, kimia, listrik, panas, and nuklir. Memahami efisiensi energi sangat penting bagi siswa SMK Teknik untuk penghematan biaya produksi di industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Energi dan Perubahannya" },
+    "subtopic": "Sumber Energi Terbarukan",
+    "lesson": {
+      "title": "Masa Depan Energi: Terbarukan vs Tak Terbarukan",
+      "content": "Sumber energi Tak Terbarukan jumlahnya terbatas and mencemari lingkungan. Sebaliknya, energi Terbarukan (matahari, angin, air) tersedia melimpah and ramah lingkungan. Transisi energi bersih adalah tantangan and peluang karier masa depan bagi siswa SMK."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Energi dan Perubahannya" },
+    "subtopic": "Penghematan Energi",
+    "lesson": {
+      "title": "Audit Energi: Langkah Nyata Penghematan",
+      "content": "Cara paling murah mendapatkan energi adalah dengan menghematnya. Pelajaran ini membahas teknik audit energi sederhana untuk menghitung konsumsi daya peralatan listrik and mengidentifikasi pemborosan di rumah maupun industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Energi dan Perubahannya" },
+    "subtopic": "Bioenergi",
+    "lesson": {
+      "title": "Bioenergi: Energi dari Makhluk Hidup",
+      "content": "Kita bisa mendapatkan energi dari bahan organik seperti limbah pertanian or kotoran hewan (Biogas/Biodiesel). Ini adalah solusi energi mandiri bagi daerah terpencil and cara mengurangi tumpukan sampah organik di perkotaan. Peluang besar bagi sektor agroindustri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Bumi dan Antariksa" },
+    "subtopic": "Struktur Bumi dan Mitigasi",
+    "lesson": {
+      "title": "Bumi yang Dinamis: Struktur dan Mitigasi Bencana",
+      "content": "Indonesia terletak di Ring of Fire, rawan gempa and gunung meletus. Memahami struktur bumi membantu kita merancang langkah mitigasi bencana yang tepat untuk meminimalkan kerugian and menyelamatkan nyawa di lingkungan kerja."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Bumi dan Antariksa" },
+    "subtopic": "Sistem Tata Surya",
+    "lesson": {
+      "title": "Menjelajah Langit: Tata Surya dan Teknologi Satelit",
+      "content": "Bumi hanyalah satu titik di Tata Surya. Kita belajar tentang matahari, planet, and peran penting satelit bagi komunikasi modern. Pengetahuan astronomi membantu kita memahami fenomena alam seperti pergantian musim and pasang surut air laut."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Bumi dan Antariksa" },
+    "subtopic": "Mitigasi Hidrometeorologi",
+    "lesson": {
+      "title": "Waspada Banjir dan Longsor: Mitigasi Hidrometeorologi",
+      "content": "Perubahan cuaca ekstrem menyebabkan banjir and longsor. Kita belajar cara membaca tanda-tanda alam and melakukan pencegahan seperti penghijauan and pemeliharaan drainase. Keamanan infrastruktur industri sangat bergantung pada pemahaman kita terhadap risiko cuaca."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Keruangan dan Konektivitas" },
+    "subtopic": "Interaksi Antarruang",
+    "lesson": {
+      "title": "Dunia yang Terhubung: Konektivitas Antarruang",
+      "content": "Terjadi interaksi antar daerah melalui perdagangan and migrasi. Konektivitas sangat bergantung pada infrastruktur transportasi and komunikasi. Memahami alur pergerakan barang and orang adalah kunci sukses di bidang logistik and ekonomi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Keruangan dan Konektivitas" },
+    "subtopic": "Urbanisasi",
+    "lesson": {
+      "title": "Urbanisasi: Tantangan dan Peluang Kota Besar",
+      "content": "Perpindahan penduduk dari desa ke kota menciptakan dinamika sosial-ekonomi yang kompleks. Kita belajar tentang dampak urbanisasi terhadap ketersediaan lahan, pekerjaan, and fasilitas umum, serta bagaimana SMK berperan menyiapkan tenaga kerja di perkotaan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Interaksi dan Dinamika Sosial" },
+    "subtopic": "Interaksi Sosial",
+    "lesson": {
+      "title": "Seni Berhubungan: Interaksi dan Komunikasi Sosial",
+      "content": "Kemampuan berkomunikasi (soft skills) adalah kunci sukses di dunia kerja. Kita belajar cara mendengarkan aktif and berempati pada rekan kerja untuk membangun tim yang solid and harmonis di lingkungan industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Interaksi dan Dinamika Sosial" },
+    "subtopic": "Institusi Sosial",
+    "lesson": {
+      "title": "Aturan Main: Institusi Sosial dan Perannya",
+      "content": "Keluarga, sekolah, and perusahaan adalah institusi sosial yang memiliki aturan. Menghargai struktur organisasi and norma yang berlaku akan membuatmu menjadi profesional yang disiplin and berintegritas tinggi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Interaksi dan Dinamika Sosial" },
+    "subtopic": "Perubahan Sosial",
+    "lesson": {
+      "title": "Dunia yang Berubah: Teknologi dan Perubahan Sosial",
+      "content": "Teknologi digital mengubah cara kita hidup and bekerja. Kita harus adaptif terhadap perubahan namun tetap memegang teguh etika and nilai moral bangsa agar tidak kehilangan jati diri di tengah arus globalisasi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Interaksi dan Dinamika Sosial" },
+    "subtopic": "Budaya Lokal",
+    "lesson": {
+      "title": "Kearifan Lokal: Menjaga Identitas di Tengah Globalisasi",
+      "content": "Globalisasi membawa budaya luar, namun kita tidak boleh melupakan kearifan lokal. Mempelajari nilai-nilai luhur daerah membantu kita tetap rendah hati and memiliki karakter yang kuat saat bersaing di kancah internasional."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Interaksi dan Dinamika Sosial" },
+    "subtopic": "Dinamika Kelompok",
+    "lesson": {
+      "title": "Bekerja dalam Tim: Dinamika dan Resolusi Konflik",
+      "content": "Kerja sama tim adalah jantung industri. Kita belajar cara mengelola perbedaan pendapat and mencari solusi damai (resolusi konflik) agar produktivitas tim tetap terjaga and tujuan bersama tercapai."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Perilaku Ekonomi" },
+    "subtopic": "Kebutuhan vs Keinginan",
+    "lesson": {
+      "title": "Seni Memilih: Kebutuhan, Keinginan, dan Kelangkaan",
+      "content": "Masalah ekonomi adalah kelangkaan sumber daya. Kita harus pintar menentukan skala prioritas antara kebutuhan primer dengan keinginan agar kesejahteraan finansial pribadi and keluarga tetap terjaga."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Perilaku Ekonomi" },
+    "subtopic": "Kegiatan Ekonomi",
+    "lesson": {
+      "title": "Rantai Ekonomi: Produksi, Distribusi, dan Konsumsi",
+      "content": "Roda ekonomi berputar melalui produksi (penciptaan nilai), distribusi (penyaluran), and konsumsi (penggunaan). Siswa SMK berperan sebagai produsen handal yang memberikan nilai tambah bagi ekonomi nasional."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Perilaku Ekonomi" },
+    "subtopic": "Literasi Keuangan",
+    "lesson": {
+      "title": "Cerdas Finansial: Mengelola Uang dan Investasi",
+      "content": "Literasi keuangan adalah kemampuan mengelola uang, menabung, and berinvestasi. Di era digital, kita harus waspada terhadap penipuan online and pinjaman ilegal agar masa depan finansial tetap aman."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Perilaku Ekonomi" },
+    "subtopic": "Koperasi",
+    "lesson": {
+      "title": "Koperasi: Pilar Ekonomi Berasaskan Kekeluargaan",
+      "content": "Koperasi adalah badan usaha yang mengutamakan kesejahteraan anggota. Memahami prinsip koperasi melatih kita berjiwa gotong-royong and mandiri secara ekonomi melalui kekuatan kolektif."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Perilaku Ekonomi" },
+    "subtopic": "Lembaga Keuangan",
+    "lesson": {
+      "title": "Peran Perbankan dalam Pembangunan Ekonomi",
+      "content": "Bank and lembaga keuangan lainnya berfungsi sebagai pengelola sirkulasi uang and penyedia modal usaha. Kita belajar cara memanfaatkan layanan perbankan secara aman untuk mengembangkan bisnis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Ekonomi Hijau" },
+    "subtopic": "Pembangunan Berkelanjutan",
+    "lesson": {
+      "title": "Ekonomi Hijau: Kemakmuran Tanpa Merusak Alam",
+      "content": "Model ekonomi masa depan mengutamakan kesejahteraan manusia sekaligus kelestarian alam. Ekonomi hijau menuntut efisiensi sumber daya and pengurangan limbah di setiap proses industri modern."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Ekonomi Hijau" },
+    "subtopic": "Wirausaha Sosial",
+    "lesson": {
+      "title": "Social Entrepreneurship: Berbisnis Sambil Berbagi",
+      "content": "Wirausaha sosial tidak hanya mencari untung, tapi juga menyelesaikan masalah sosial di masyarakat. Ini adalah panggilan bagi siswa SMK untuk menciptakan bisnis yang memberikan dampak positif bagi orang banyak."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "IPAS",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Insan SMK Cerdas Alam dan Sosial",
+    "lesson": {
+      "title": "Refleksi Akhir: Harmoni Alam dan Sosial di Tanganmu",
+      "content": "Segala sesuatu di dunia saling berhubungan. Tindakanmu pada alam berdampak pada sosial, and sebaliknya. Kamu adalah bagian dari sistem besar yang harus dijaga harmoninya demi masa depan Indonesia yang lebih baik."
+    }
+  }
+]

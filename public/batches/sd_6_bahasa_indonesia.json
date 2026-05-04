@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Argumentasi" },
+    "subtopic": "Menyusun Pendapat",
+    "lesson": { 
+      "title": "Ciri-ciri Teks Argumentasi",
+      "content": "Teks argumentasi bertujuan untuk meyakinkan pembaca melalui alasan, bukti, dan fakta yang kuat. Isinya berupa pendapat yang disertai dengan data yang nyata. Contoh: Teks tentang pentingnya sarapan bagi siswa. Penjelasan: Argumentasi harus logis dan tidak hanya berdasarkan perasaan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Argumentasi" },
+    "subtopic": "Menyusun Pendapat",
+    "lesson": { 
+      "title": "Struktur Teks Argumentasi",
+      "content": "Terdiri dari pendahuluan (isu), tubuh argumen (alasan dan bukti), serta simpulan (penegasan pendapat). Contoh: Kerangka teks argumentasi tentang 'Sekolah Tanpa Plastik'. Penjelasan: Struktur yang sistematis membantu pembaca mengikuti alur pikir penulis."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Argumentasi" },
+    "subtopic": "Menyusun Pendapat",
+    "lesson": { 
+      "title": "Menulis Argumen yang Logis",
+      "content": "Gunakan kata hubung seperti 'oleh karena itu', 'selain itu', dan 'akibatnya'. Contoh: Memberikan alasan mengapa olahraga itu penting. Penjelasan: Argumen yang kuat didukung oleh fakta ilmiah atau pengalaman nyata."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Argumentasi" },
+    "subtopic": "Menganalisis Pendapat",
+    "lesson": { 
+      "title": "Membedakan Opini dan Fakta dalam Argumentasi",
+      "content": "Fakta adalah data yang terbukti (Angka literasi naik), opini adalah penilaian (Membaca itu menyenangkan). Contoh: Soal identifikasi kalimat dalam teks. Penjelasan: Penulis yang baik menggunakan fakta untuk memperkuat opininya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Argumentasi" },
+    "subtopic": "Menganalisis Pendapat",
+    "lesson": { 
+      "title": "Menemukan Simpulan dalam Teks",
+      "content": "Simpulan adalah inti dari seluruh argumen yang disampaikan di akhir tulisan. Contoh: Ringkasan pendapat tentang penggunaan gadget. Penjelasan: Simpulan sering kali berupa saran atau ajakan bertindak."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Argumentasi" },
+    "subtopic": "Menganalisis Pendapat",
+    "lesson": { 
+      "title": "Latihan Menulis Teks Argumentasi Pendek",
+      "content": "Pilihlah satu isu di sekolah dan buatlah dua paragraf pendapat. Contoh: Isu tentang seragam batik sekolah. Penjelasan: Berlatih menyampaikan pikiran secara tertulis dengan rapi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial" },
+    "subtopic": "Memahami Tajuk Rencana",
+    "lesson": { 
+      "title": "Apa itu Teks Editorial?",
+      "content": "Editorial atau tajuk rencana adalah artikel dalam koran yang berisi pendapat resmi pengelola media tentang suatu berita hangat. Contoh: Editorial tentang prestasi atlet cilik. Penjelasan: Editorial mewakili suara lembaga, bukan individu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial" },
+    "subtopic": "Memahami Tajuk Rencana",
+    "lesson": { 
+      "title": "Fungsi Teks Editorial",
+      "content": "Menjelaskan berita, memberikan latar belakang, dan memberikan kritik atau saran. Contoh: Teks editorial tentang hari pahlawan. Penjelasan: Editorial membantu pembaca memahami makna di balik suatu kejadian."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial" },
+    "subtopic": "Memahami Tajuk Rencana",
+    "lesson": { 
+      "title": "Gaya Bahasa dalam Editorial",
+      "content": "Menggunakan bahasa yang formal, tegas, namun tetap mudah dimengerti khalayak luas. Contoh: Analisis pilihan kata dalam kutipan editorial. Penjelasan: Bahasa editorial mencerminkan kewibawaan media tersebut."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial" },
+    "subtopic": "Menulis Editorial Sederhana",
+    "lesson": { 
+      "title": "Menentukan Isu Aktual untuk Editorial",
+      "content": "Pilihlah berita yang sedang ramai dibicarakan di sekolah atau lingkungan rumah. Contoh: Isu tentang lomba kebersihan antar kelas. Penjelasan: Editorial harus membahas hal yang nyata terjadi saat ini."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial" },
+    "subtopic": "Menulis Editorial Sederhana",
+    "lesson": { 
+      "title": "Menyampaikan Solusi dalam Editorial",
+      "content": "Editorial yang baik tidak hanya mengkritik, tapi juga memberikan jalan keluar. Contoh: Memberi saran untuk mengatasi banjir di halaman sekolah. Penjelasan: Solusi menunjukkan kepedulian penulis terhadap masalah."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Editorial" },
+    "subtopic": "Menulis Editorial Sederhana",
+    "lesson": { 
+      "title": "Membuat Judul Editorial yang Tajam",
+      "content": "Judul harus menarik dan menunjukkan sikap penulis. Contoh: 'Wujudkan Sekolah Ramah Anak!'. Penjelasan: Judul adalah jendela pertama yang dilihat pembaca."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Ungkapan & Peribahasa" },
+    "subtopic": "Makna Ungkapan (Idiom)",
+    "lesson": { 
+      "title": "Mengenal Ungkapan Populer",
+      "content": "Ungkapan adalah gabungan kata yang membentuk arti baru. Contoh: 'Ringan tangan' (Suka menolong), 'Besar kepala' (Sombong). Penjelasan: Ungkapan memperkaya cara kita berkomunikasi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Ungkapan & Peribahasa" },
+    "subtopic": "Makna Ungkapan (Idiom)",
+    "lesson": { 
+      "title": "Ungkapan Bertema Anggota Tubuh",
+      "content": "Contoh: 'Buah bibir' (Bahan pembicaraan), 'Kaki tangan' (Anak buah). Penjelasan: Banyak ungkapan bahasa Indonesia berasal dari kata bagian tubuh."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Ungkapan & Peribahasa" },
+    "subtopic": "Makna Ungkapan (Idiom)",
+    "lesson": { 
+      "title": "Menggunakan Ungkapan dalam Cerita",
+      "content": "Tuliskan satu paragraf tentang persahabatan menggunakan ungkapan. Contoh: 'Siti adalah anak yang rendah hati'. Penjelasan: Ungkapan membuat narasi cerita lebih menarik."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Ungkapan & Peribahasa" },
+    "subtopic": "Memahami Peribahasa",
+    "lesson": { 
+      "title": "Pengertian Peribahasa",
+      "content": "Peribahasa adalah kelompok kata yang mempunyai susunan tetap dan berisi nasihat atau kiasan. Contoh: 'Ada gula ada semut'. Penjelasan: Peribahasa mengandung kearifan lokal yang turun-temurun."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Ungkapan & Peribahasa" },
+    "subtopic": "Memahami Peribahasa",
+    "lesson": { 
+      "title": "Peribahasa Bertema Ketekunan",
+      "content": "Contoh: 'Sedikit-sedikit lama-lama menjadi bukit'. Penjelasan: Mengajarkan kita untuk sabar menabung atau belajar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Ungkapan & Peribahasa" },
+    "subtopic": "Memahami Peribahasa",
+    "lesson": { 
+      "title": "Mencocokkan Peribahasa dengan Situasi",
+      "content": "Jika seseorang sombong setelah sukses, peribahasa apa yang tepat? (Kacang lupa kulitnya). Contoh: Kuis logika peribahasa. Penjelasan: Memahami konteks penggunaan peribahasa."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Debat Sederhana" },
+    "subtopic": "Etika Berargumen Lisan",
+    "lesson": { 
+      "title": "Pengertian Debat di Sekolah",
+      "content": "Debat adalah pertukaran pendapat tentang suatu hal dengan memberikan alasan dari dua sudut pandang berbeda (Pro dan Kontra). Contoh: Debat tentang 'PR di Sekolah'. Penjelasan: Debat melatih kita berpikir kritis dan berani bicara."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Debat Sederhana" },
+    "subtopic": "Etika Berargumen Lisan",
+    "lesson": { 
+      "title": "Menghargai Pendapat Lawan",
+      "content": "Dengarkan lawan bicara sampai selesai sebelum membalas argumennya. Contoh: Cara menyanggah dengan sopan. Penjelasan: Debat bukan tentang bertengkar, tapi tentang adu gagasan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Debat Sederhana" },
+    "subtopic": "Etika Berargumen Lisan",
+    "lesson": { 
+      "title": "Menggunakan Bukti untuk Menyanggah",
+      "content": "Jangan hanya bilang 'tidak setuju', tapi sampaikan datanya. Contoh: 'Saya tidak setuju karena data menunjukkan...'. Penjelasan: Bukti membuat argumen kita sulit dipatahkan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Debat Sederhana" },
+    "subtopic": "Peran dalam Debat",
+    "lesson": { 
+      "title": "Tugas Moderator Debat",
+      "content": "Moderator bertugas memimpin jalannya debat, mengatur waktu, dan menjaga ketertiban. Contoh: Kalimat pembuka moderator. Penjelasan: Moderator harus bersikap netral (tidak memihak)."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Debat Sederhana" },
+    "subtopic": "Peran dalam Debat",
+    "lesson": { 
+      "title": "Tugas Tim Afirmasi (Setuju)",
+      "content": "Menyampaikan poin-poin positif dan alasan mengapa suatu isu harus didukung. Contoh: Argumen setuju tentang 'Sekolah 5 Hari'. Penjelasan: Fokus pada manfaat dan keuntungan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Debat Sederhana" },
+    "subtopic": "Peran dalam Debat",
+    "lesson": { 
+      "title": "Tugas Tim Oposisi (Tidak Setuju)",
+      "content": "Menyampaikan kelemahan atau dampak negatif dari suatu isu. Contoh: Argumen tidak setuju tentang 'Sekolah 5 Hari'. Penjelasan: Fokus pada risiko dan kerugian."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Karya Ilmiah Sederhana" },
+    "subtopic": "Laporan Penelitian Kecil",
+    "lesson": { 
+      "title": "Mengenal Karya Tulis Ilmiah (KTI)",
+      "content": "Karya tulis yang disusun berdasarkan hasil pengamatan atau percobaan sederhana secara urut. Contoh: KTI tentang 'Sampah Plastik di Kantin'. Penjelasan: KTI bersifat objektif dan dapat dibuktikan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Karya Ilmiah Sederhana" },
+    "subtopic": "Laporan Penelitian Kecil",
+    "lesson": { 
+      "title": "Menentukan Rumusan Masalah",
+      "content": "Masalah yang akan diteliti dalam bentuk kalimat tanya. Contoh: 'Bagaimana cara mengurangi sampah plastik di sekolah?'. Penjelasan: Rumusan masalah menjadi panduan penelitian."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Karya Ilmiah Sederhana" },
+    "subtopic": "Laporan Penelitian Kecil",
+    "lesson": { 
+      "title": "Mengumpulkan Data dengan Observasi",
+      "content": "Melihat dan mencatat fakta yang terjadi di lapangan secara jujur. Contoh: Mencatat jumlah botol plastik dalam satu hari. Penjelasan: Data yang jujur adalah kunci ilmu pengetahuan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Karya Ilmiah Sederhana" },
+    "subtopic": "Format Penulisan KTI",
+    "lesson": { 
+      "title": "Menulis Daftar Pustaka Sederhana",
+      "content": "Mencantumkan buku atau website yang menjadi sumber informasi tulisanmu. Contoh: Format Nama Penulis. Tahun. Judul Buku. Penjelasan: Menghargai karya orang lain dengan mencantumkan sumbernya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Karya Ilmiah Sederhana" },
+    "subtopic": "Format Penulisan KTI",
+    "lesson": { 
+      "title": "Menyusun Kesimpulan dan Saran",
+      "content": "Menyimpulkan hasil penelitian dan memberi masukan untuk masa depan. Contoh: 'Disarankan siswa membawa botol minum sendiri'. Penjelasan: Saran memberikan manfaat nyata bagi pembaca."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Karya Ilmiah Sederhana" },
+    "subtopic": "Format Penulisan KTI",
+    "lesson": { 
+      "title": "Presentasi Hasil Karya Tulis",
+      "content": "Menjelaskan hasil tulisanmu di depan teman-teman menggunakan poster atau slide. Contoh: Cara menjelaskan grafik data. Penjelasan: Berbagi ilmu pengetahuan sangatlah mulia."
+    }
+  }
+]

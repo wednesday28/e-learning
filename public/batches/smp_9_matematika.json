@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan Kuadrat" },
+    "subtopic": "Konsep Dasar Persamaan Kuadrat",
+    "lesson": { 
+      "title": "Bentuk Umum Persamaan Kuadrat",
+      "content": "Persamaan kuadrat adalah persamaan dengan variabel berpangkat tertinggi dua. Bentuk umumnya adalah ax^2 + bx + c = 0."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan Kuadrat" },
+    "subtopic": "Konsep Dasar Persamaan Kuadrat",
+    "lesson": { 
+      "title": "Akar-akar Persamaan Kuadrat",
+      "content": "Akar persamaan kuadrat adalah nilai x yang membuat persamaan menjadi nol."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan Kuadrat" },
+    "subtopic": "Konsep Dasar Persamaan Kuadrat",
+    "lesson": { 
+      "title": "Menentukan Akar dengan Faktorisasi",
+      "content": "Metode memecah bentuk kuadrat menjadi perkalian dua faktor linear."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan Kuadrat" },
+    "subtopic": "Metode Penyelesaian Kuadrat",
+    "lesson": { 
+      "title": "Melengkapkan Kuadrat Sempurna",
+      "content": "Mengubah bentuk persamaan agar salah satu ruas menjadi bentuk kuadrat sempurna."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan Kuadrat" },
+    "subtopic": "Metode Penyelesaian Kuadrat",
+    "lesson": { 
+      "title": "Rumus Kuadrat (Rumus ABC)",
+      "content": "Menggunakan rumus x = (-b ± √(b^2 - 4ac)) / 2a untuk mencari akar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Persamaan Kuadrat" },
+    "subtopic": "Metode Penyelesaian Kuadrat",
+    "lesson": { 
+      "title": "Diskriminan dan Jenis Akar",
+      "content": "Mempelajari nilai D = b^2 - 4ac untuk mengetahui jenis akar persamaan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi Kuadrat & Grafiknya" },
+    "subtopic": "Grafik Fungsi Kuadrat",
+    "lesson": { 
+      "title": "Karakteristik Grafik Fungsi Kuadrat",
+      "content": "Mengenal bentuk parabola yang terbuka ke atas atau ke bawah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi Kuadrat & Grafiknya" },
+    "subtopic": "Grafik Fungsi Kuadrat",
+    "lesson": { 
+      "title": "Titik Potong Sumbu X dan Sumbu Y",
+      "content": "Mencari titik di mana grafik memotong sumbu koordinat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi Kuadrat & Grafiknya" },
+    "subtopic": "Grafik Fungsi Kuadrat",
+    "lesson": { 
+      "title": "Sumbu Simetri dan Titik Puncak",
+      "content": "Menghitung koordinat titik tertinggi atau terendah parabola."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi Kuadrat & Grafiknya" },
+    "subtopic": "Aplikasi Fungsi Kuadrat",
+    "lesson": { 
+      "title": "Menggambar Grafik Fungsi Kuadrat",
+      "content": "Langkah memplot titik penting untuk membentuk kurva parabola."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi Kuadrat & Grafiknya" },
+    "subtopic": "Aplikasi Fungsi Kuadrat",
+    "lesson": { 
+      "title": "Menentukan Nilai Maksimum dan Minimum",
+      "content": "Menerapkan fungsi kuadrat untuk mencari nilai optimal."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi Kuadrat & Grafiknya" },
+    "subtopic": "Aplikasi Fungsi Kuadrat",
+    "lesson": { 
+      "title": "Menyusun Persamaan Fungsi Kuadrat",
+      "content": "Membentuk rumus f(x) berdasarkan titik-titik koordinat yang dilalui."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Transformasi Geometri" },
+    "subtopic": "Refleksi dan Translasi",
+    "lesson": { 
+      "title": "Refleksi (Pencerminan)",
+      "content": "Memindahkan titik terhadap garis cermin dengan jarak yang sama."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Transformasi Geometri" },
+    "subtopic": "Refleksi dan Translasi",
+    "lesson": { 
+      "title": "Translasi (Pergeseran)",
+      "content": "Memindahkan titik dengan jarak dan arah tertentu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Transformasi Geometri" },
+    "subtopic": "Refleksi dan Translasi",
+    "lesson": { 
+      "title": "Komposisi Refleksi dan Translasi",
+      "content": "Hasil bayangan dari dua transformasi yang dilakukan berurutan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Transformasi Geometri" },
+    "subtopic": "Rotasi dan Dilatasi",
+    "lesson": { 
+      "title": "Rotasi (Perputaran)",
+      "content": "Memutar titik terhadap pusat tertentu dengan sudut tertentu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Transformasi Geometri" },
+    "subtopic": "Rotasi dan Dilatasi",
+    "lesson": { 
+      "title": "Dilatasi (Perkalian)",
+      "content": "Mengubah ukuran bangun terhadap pusat dengan faktor skala."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Transformasi Geometri" },
+    "subtopic": "Rotasi dan Dilatasi",
+    "lesson": { 
+      "title": "Transformasi dalam Koordinat Kartesius",
+      "content": "Menghitung koordinat bayangan akhir menggunakan rumus transformasi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Kesebangunan & Kekongruenan" },
+    "subtopic": "Kekongruenan Bangun Datar",
+    "lesson": { 
+      "title": "Syarat Dua Bangun Kongruen",
+      "content": "Dua bangun identik dalam bentuk dan ukuran."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Kesebangunan & Kekongruenan" },
+    "subtopic": "Kekongruenan Bangun Datar",
+    "lesson": { 
+      "title": "Kekongruenan pada Segitiga",
+      "content": "Syarat segitiga kongruen: SSS, SAS, atau ASA."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Kesebangunan & Kekongruenan" },
+    "subtopic": "Kekongruenan Bangun Datar",
+    "lesson": { 
+      "title": "Membuktikan Dua Segitiga Kongruen",
+      "content": "Latihan logika pembuktian kesamaan dua segitiga."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Kesebangunan & Kekongruenan" },
+    "subtopic": "Kesebangunan Bangun Datar",
+    "lesson": { 
+      "title": "Syarat Dua Bangun Sebangun",
+      "content": "Bentuk sama, ukuran sebanding (proporsional)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Kesebangunan & Kekongruenan" },
+    "subtopic": "Kesebangunan Bangun Datar",
+    "lesson": { 
+      "title": "Kesebangunan pada Segitiga",
+      "content": "Perbandingan sisi pada segitiga yang sudutnya sama besar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Kesebangunan & Kekongruenan" },
+    "subtopic": "Kesebangunan Bangun Datar",
+    "lesson": { 
+      "title": "Penerapan Kesebangunan dalam Masalah Nyata",
+      "content": "Menghitung tinggi objek menggunakan konsep bayangan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Populasi dan Sampel",
+    "lesson": { 
+      "title": "Pengertian Populasi dan Sampel",
+      "content": "Populasi adalah seluruh objek, sampel adalah perwakilannya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Populasi dan Sampel",
+    "lesson": { 
+      "title": "Cara Mengambil Sampel yang Benar",
+      "content": "Teknik sampling agar data mewakili populasi tanpa bias."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Populasi dan Sampel",
+    "lesson": { 
+      "title": "Analisis Data dari Sampel",
+      "content": "Menarik kesimpulan populasi dari data sampel."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Mean Gabungan",
+    "lesson": { 
+      "title": "Konsep Rata-rata Gabungan",
+      "content": "Menghitung rata-rata baru dari penggabungan kelompok data."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Mean Gabungan",
+    "lesson": { 
+      "title": "Rumus Mean Gabungan",
+      "content": "Menggunakan rumus rata-rata tertimbang untuk data kelompok."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Mean Gabungan",
+    "lesson": { 
+      "title": "Masalah Lanjutan Mean Gabungan",
+      "content": "Mencari variabel yang hilang dalam data rata-rata gabungan."
+    }
+  }
+]

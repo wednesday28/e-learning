@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Objek Wisata",
+    "lesson": { 
+      "title": "Ciri Umum Teks Deskripsi",
+      "content": "Teks deskripsi bertujuan menggambarkan objek secara rinci agar pembaca seolah-olah melihat, mendengar, atau merasakan sendiri. Objek bisa berupa tempat, benda, atau orang. Contoh: Deskripsi Pantai Parangtritis yang luas dan berpasir hitam. Penjelasan: Penggunaan kata-kata konkret dan majas sering ditemukan untuk menghidupkan gambaran objek."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Objek Wisata",
+    "lesson": { 
+      "title": "Struktur Teks Deskripsi",
+      "content": "Terdiri dari Identifikasi (nama objek, lokasi), Deskripsi Bagian (perincian bagian objek), dan Simpulan/Kesan (perasaan penulis). Contoh: Struktur teks tentang 'Rumah Gadang'. Penjelasan: Struktur yang runtut memudahkan pembaca memahami kemegahan suatu tempat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Objek Wisata",
+    "lesson": { 
+      "title": "Penggunaan Kata Sifat Berderet",
+      "content": "Menggunakan beberapa kata sifat sekaligus untuk memperkuat deskripsi. Contoh: 'Wajahnya ramah, teduh, dan penuh kasih sayang'. Penjelasan: Deretan kata sifat membantu memberikan detail kepribadian atau suasana yang mendalam."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Seseorang",
+    "lesson": { 
+      "title": "Mendeskripsikan Fisik dan Karakter",
+      "content": "Jelaskan bentuk wajah, rambut, hingga sifat atau kebiasaan tokoh tersebut. Contoh: Deskripsi tentang 'Ibu, Inspirasiku'. Penjelasan: Deskripsi orang sering kali mengandung nilai emosional yang menyentuh hati pembaca."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Seseorang",
+    "lesson": { 
+      "title": "Penggunaan Majas Personifikasi dalam Deskripsi",
+      "content": "Memberikan sifat manusia pada benda sekitar objek. Contoh: 'Nyiur di pantai itu melambai-lambai mengajakku berenang'. Penjelasan: Majas memperindah bahasa deskripsi sehingga tidak terasa kaku."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Deskripsi" },
+    "subtopic": "Mendeskripsikan Seseorang",
+    "lesson": { 
+      "title": "Menyusun Teks Deskripsi Lisan",
+      "content": "Latihan menceritakan sebuah objek di depan kelas dengan intonasi yang menggambarkan kekaguman. Contoh: Mendeskripsikan tas kesayangan. Penjelasan: Deskripsi lisan melatih kelancaran bicara dan pemilihan kata yang tepat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi (Cerita Fantasi)" },
+    "subtopic": "Unsur Intrinsik Fantasi",
+    "lesson": { 
+      "title": "Ciri Cerita Fantasi",
+      "content": "Cerita fantasi memiliki keajaiban, keanehan, atau kemisteriusan yang tidak ada di dunia nyata. Tokoh bisa memiliki kekuatan super. Contoh: Cerita tentang 'Kekuatan Ekor Biru Nataga'. Penjelasan: Imajinasi penulis menjadi kunci utama dalam membangun dunia fantasi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi (Cerita Fantasi)" },
+    "subtopic": "Unsur Intrinsik Fantasi",
+    "lesson": { 
+      "title": "Latar Lintas Waktu",
+      "content": "Tokoh bisa berpindah dari zaman sekarang ke masa lalu atau masa depan. Contoh: Petualangan menembus lubang waktu. Penjelasan: Latar waktu yang unik membuat petualangan terasa lebih seru dan tak terduga."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi (Cerita Fantasi)" },
+    "subtopic": "Unsur Intrinsik Fantasi",
+    "lesson": { 
+      "title": "Watak Tokoh Unik",
+      "content": "Tokoh dalam fantasi sering kali memiliki ciri fisik atau sifat yang luar biasa. Contoh: Naga yang bijaksana atau kurcaci yang pemberani. Penjelasan: Watak tokoh yang kuat menentukan jalannya konflik dalam cerita."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi (Cerita Fantasi)" },
+    "subtopic": "Menulis Cerita Fantasi",
+    "lesson": { 
+      "title": "Menemukan Ide Cerita Fantasi",
+      "content": "Ide bisa datang dari pengamatan benda biasa yang diberi kekuatan ajaib. Contoh: 'Pensil Ajaib yang Bisa Menghidupkan Gambar'. Penjelasan: Berandai-andai 'bagaimana jika' adalah awal dari cerita fantasi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi (Cerita Fantasi)" },
+    "subtopic": "Menulis Cerita Fantasi",
+    "lesson": { 
+      "title": "Mengembangkan Kerangka Cerita",
+      "content": "Tentukan awal (perkenalan), tengah (munculnya keajaiban/konflik), dan akhir (penyelesaian). Contoh: Struktur cerita 'Berlian Tiga Warna'. Penjelasan: Kerangka cerita menjaga agar imajinasi tidak melantur terlalu jauh."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Narasi (Cerita Fantasi)" },
+    "subtopic": "Menulis Cerita Fantasi",
+    "lesson": { 
+      "title": "Penggunaan Kata Sambung Urutan Waktu",
+      "content": "Menggunakan kata seperti 'tiba-tiba', 'kemudian', 'setelah itu' untuk mempercepat atau memperlambat tempo cerita. Contoh: Penggunaan konjungsi dalam adegan aksi. Penjelasan: Kata sambung membantu pembaca memahami alur waktu yang kompleks."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Membuat dan Melakukan",
+    "lesson": { 
+      "title": "Jenis-jenis Teks Prosedur",
+      "content": "Ada teks prosedur cara membuat (makanan/kerajinan), cara menggunakan alat, and cara melakukan kegiatan (tarian/senam). Contoh: Cara membuat wedang jahe. Penjelasan: Setiap jenis memiliki fokus yang berbeda pada alat atau gerak."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Membuat dan Melakukan",
+    "lesson": { 
+      "title": "Penggunaan Kata Kerja Imperatif",
+      "content": "Kata perintah yang lugas dan jelas. Contoh: 'Masukkan', 'Gilinglah', 'Tekanlah'. Penjelasan: Imperatif memberikan instruksi langsung kepada pembaca agar tidak salah langkah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Membuat dan Melakukan",
+    "lesson": { 
+      "title": "Kalimat Larangan dan Saran",
+      "content": "Memberi tahu hal yang tidak boleh dilakukan atau tips tambahan. Contoh: 'Jangan gunakan api besar', 'Sebaiknya gunakan santan segar'. Penjelasan: Larangan dan saran memastikan hasil akhir sesuai harapan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Ciri Kebahasaan Prosedur",
+    "lesson": { 
+      "title": "Penggunaan Kata Ukuran Akurat",
+      "content": "Menentukan jumlah yang pasti agar hasil presisi. Contoh: '500 gram tepung', '2 sendok makan gula'. Penjelasan: Ketepatan ukuran sangat penting terutama dalam resep masakan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Ciri Kebahasaan Prosedur",
+    "lesson": { 
+      "title": "Kata Keterangan Cara dan Alat",
+      "content": "Menjelaskan bagaimana cara melakukan sesuatu. Contoh: 'Potonglah dengan tipis', 'Aduk dengan sendok kayu'. Penjelasan: Keterangan memberikan detail teknis yang memudahkan eksekusi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Ciri Kebahasaan Prosedur",
+    "lesson": { 
+      "title": "Menyunting Teks Prosedur",
+      "content": "Memeriksa urutan langkah agar tidak tertukar and kalimatnya tidak bermakna ganda. Contoh: Memperbaiki prosedur yang tidak logis. Penjelasan: Teks prosedur harus mudah diikuti bahkan oleh pemula."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Hasil Observasi Alam",
+    "lesson": { 
+      "title": "Definisi Teks Laporan Hasil Observasi (LHO)",
+      "content": "Teks yang memberikan informasi secara umum tentang sesuatu berdasarkan fakta hasil pengamatan langsung. Contoh: Laporan tentang 'Wayang' atau 'Manggis'. Penjelasan: LHO bersifat ilmiah and objektif, berbeda dengan teks deskripsi yang subjektif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Hasil Observasi Alam",
+    "lesson": { 
+      "title": "Struktur LHO: Klasifikasi Umum",
+      "content": "Bagian awal yang berisi definisi atau pengelompokan objek secara garis besar. Contoh: 'Sapi adalah hewan ternak mamalia...'. Penjelasan: Klasifikasi membantu pembaca memetakan objek ke dalam kategori tertentu."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Hasil Observasi Alam",
+    "lesson": { 
+      "title": "Struktur LHO: Deskripsi Manfaat",
+      "content": "Bagian yang menjelaskan kegunaan atau manfaat objek bagi kehidupan. Contoh: Manfaat madu untuk kesehatan. Penjelasan: Setiap objek yang diamati biasanya memiliki nilai guna yang perlu dilaporkan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Ciri Kebahasaan LHO",
+    "lesson": { 
+      "title": "Penggunaan Kata Istilah (Teknis)",
+      "content": "Menggunakan kosakata khusus bidang ilmu tertentu. Contoh: 'Fotosintesis', 'Herbivora', 'Ekosistem'. Penjelasan: Istilah teknis memperkuat keilmiahan sebuah laporan hasil observasi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Ciri Kebahasaan LHO",
+    "lesson": { 
+      "title": "Kalimat Definisi dan Deskripsi",
+      "content": "Definisi menggunakan 'adalah', 'merupakan'. Deskripsi menggunakan kata yang menjelaskan ciri fisik. Contoh: Membedakan kalimat definisi and deskripsi. Penjelasan: Kombinasi keduanya membuat laporan terasa lengkap and mendalam."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Ciri Kebahasaan LHO",
+    "lesson": { 
+      "title": "Menulis Laporan Hasil Kunjungan Museum",
+      "content": "Latihan menyusun data artefak yang dilihat menjadi paragraf laporan yang padu. Contoh: Laporan museum purbakala. Penjelasan: Melatih ketelitian dalam mencatat fakta sejarah and budaya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Puisi Rakyat" },
+    "subtopic": "Pantun dan Gurindam",
+    "lesson": { 
+      "title": "Ciri-ciri Pantun",
+      "content": "Tiap bait 4 baris, bersajak a-b-a-b, baris 1-2 sampiran, baris 3-4 isi. Contoh: Pantun nasihat belajar. Penjelasan: Pantun adalah warisan budaya yang penuh makna kiasan and rima."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Puisi Rakyat" },
+    "subtopic": "Pantun dan Gurindam",
+    "lesson": { 
+      "title": "Memahami Gurindam Dua Baris",
+      "content": "Puisi lama yang tiap baitnya 2 baris bersajak a-a, berisi nasihat agama atau moral. Contoh: Gurindam 12. Penjelasan: Gurindam memiliki pesan yang sangat padat and mendalam."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Puisi Rakyat" },
+    "subtopic": "Pantun dan Gurindam",
+    "lesson": { 
+      "title": "Syair sebagai Puisi Naratif",
+      "content": "Berasal dari Arab, tiap bait 4 baris bersajak a-a-a-a, semua baris adalah isi. Contoh: Syair perahu. Penjelasan: Syair sering digunakan untuk menceritakan kisah kepahlawanan atau agama."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Puisi Rakyat" },
+    "subtopic": "Menulis Puisi Rakyat",
+    "lesson": { 
+      "title": "Latihan Membuat Pantun Jenaka",
+      "content": "Memilih sampiran yang lucu namun isinya tetap bermakna menghibur. Contoh: Pantun tentang kucing tidur. Penjelasan: Membuat pantun melatih kreativitas dalam mencari kata rima."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Puisi Rakyat" },
+    "subtopic": "Menulis Puisi Rakyat",
+    "lesson": { 
+      "title": "Mengubah Puisi Rakyat Jadi Prosa",
+      "content": "Menceritakan kembali isi pantun atau syair dalam bentuk paragraf cerita. Contoh: Parafrase syair sejarah. Penjelasan: Memastikan pemahaman mendalam terhadap pesan tersembunyi dalam puisi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Puisi Rakyat" },
+    "subtopic": "Menulis Puisi Rakyat",
+    "lesson": { 
+      "title": "Musikalisasi Puisi Rakyat Sederhana",
+      "content": "Membacakan pantun atau syair dengan iringan alat musik perkusi atau tepukan tangan. Contoh: Penampilan grup pantun berirama. Penjelasan: Menghargai keindahan bunyi and rima dalam tradisi lisan."
+    }
+  }
+]

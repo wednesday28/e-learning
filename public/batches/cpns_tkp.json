@@ -1,0 +1,630 @@
+[
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Pelayanan Publik",
+    "question": "Seorang pelanggan lanjut usia kesulitan memahami prosedur pengisian formulir digital di instansi Anda. Sikap Anda...",
+    "options": {
+      "A": "Membantu mengisikan seluruh data sambil menjelaskan prosedurnya",
+      "B": "Meminta pelanggan tersebut pulang dan mengajak anaknya untuk membantu",
+      "C": "Memberikan brosur panduan dan memintanya membaca dengan teliti",
+      "D": "Menyuruh pelanggan menunggu sampai ada petugas khusus yang datang",
+      "E": "Melayaninya dengan manual saja agar lebih cepat selesai"
+    },
+    "scores": {
+      "A": 5,
+      "B": 1,
+      "C": 3,
+      "D": 2,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan orientasi pelayanan yang proaktif dan bantuan langsung kepada kelompok rentan. Skor 4: Memberikan solusi namun kurang mengedukasi digitalisasi."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Pelayanan Publik",
+    "question": "Instansi Anda sedang penuh sesak oleh pengunjung, sementara jam kerja hampir berakhir. Tindakan Anda adalah...",
+    "options": {
+      "A": "Menutup loket tepat waktu tanpa peduli sisa antrean",
+      "B": "Tetap melayani semua pengunjung yang sudah ada di dalam ruangan meskipun lembur",
+      "C": "Meminta pengunjung datang kembali besok pagi sekali",
+      "D": "Melayani dengan sangat cepat sehingga kurang teliti",
+      "E": "Marah-marah karena pengunjung datang di waktu yang tidak tepat"
+    },
+    "scores": {
+      "A": 2,
+      "B": 5,
+      "C": 3,
+      "D": 4,
+      "E": 1
+    },
+    "explanation": "Skor 5: Menunjukkan komitmen tinggi terhadap pelayanan publik dan tanggung jawab profesi."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Pelayanan Publik",
+    "question": "Ada pengaduan dari masyarakat mengenai layanan yang Anda berikan dianggap kurang memuaskan. Sikap Anda...",
+    "options": {
+      "A": "Mencari siapa yang mengadu dan memarahinya",
+      "B": "Menjadikannya bahan evaluasi untuk memperbaiki kualitas layanan ke depan",
+      "C": "Mengabaikannya karena Anda merasa sudah bekerja sesuai SOP",
+      "D": "Meminta atasan untuk membela Anda",
+      "E": "Berhenti memberikan layanan untuk sementara waktu"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 3,
+      "D": 4,
+      "E": 2
+    },
+    "explanation": "Skor 5: Menunjukkan sikap terbuka terhadap kritik dan kemauan untuk terus berkembang (Continuous Improvement)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Pelayanan Publik",
+    "question": "Seorang teman akrab meminta Anda mendahulukan berkasnya tanpa melalui antrean resmi. Tindakan Anda...",
+    "options": {
+      "A": "Mendahulukannya karena dia adalah teman baik",
+      "B": "Menolaknya dengan sopan dan memintanya mengikuti prosedur antrean",
+      "C": "Memintanya menunggu di ruangan Anda agar tidak terlihat orang lain",
+      "D": "Menitipkan berkasnya kepada rekan kerja lain agar diproses cepat",
+      "E": "Pura-pura tidak mengenalnya di depan umum"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 3,
+      "D": 2,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan integritas dan keadilan dalam pelayanan publik tanpa pandang bulu."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Pelayanan Publik",
+    "question": "Fasilitas pendingin ruangan di ruang tunggu instansi mati, sehingga pengunjung kegerahan. Tindakan Anda...",
+    "options": {
+      "A": "Meminta maaf kepada pengunjung dan segera melaporkan ke bagian sarana prasarana",
+      "B": "Membiarkannya saja karena bukan tugas Anda memperbaiki AC",
+      "C": "Menyuruh pengunjung membawa kipas angin sendiri",
+      "D": "Menutup kantor sementara sampai AC diperbaiki",
+      "E": "Mengeluh bersama pengunjung mengenai fasilitas kantor yang buruk"
+    },
+    "scores": {
+      "A": 5,
+      "B": 2,
+      "C": 1,
+      "D": 3,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan empati dan respons cepat terhadap kenyamanan pengguna layanan."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Jejaring Kerja",
+    "question": "Dalam sebuah rapat tim, ide Anda ditolak mentah-mentah oleh rekan kerja. Sikap Anda adalah...",
+    "options": {
+      "A": "Marah dan tidak mau ikut rapat lagi",
+      "B": "Menanyakan alasan penolakan dan berusaha memperbaiki ide tersebut",
+      "C": "Menerima keputusan rapat dengan lapang dada dan mendukung ide yang terpilih",
+      "D": "Mencari kesalahan pada ide rekan kerja yang diterima",
+      "E": "Menyebarkan gosip buruk tentang rekan yang menolak ide Anda"
+    },
+    "scores": {
+      "A": 1,
+      "B": 4,
+      "C": 5,
+      "D": 3,
+      "E": 2
+    },
+    "explanation": "Skor 5: Menunjukkan kematangan emosi dan kemampuan kolaborasi tim yang baik."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Jejaring Kerja",
+    "question": "Rekan kerja Anda sedang mengalami kesulitan keluarga sehingga pekerjaannya terbengkalai. Sikap Anda...",
+    "options": {
+      "A": "Melaporkannya ke atasan agar dia segera diganti",
+      "B": "Membantunya menyelesaikan pekerjaan tersebut tanpa mengharap imbalan",
+      "C": "Memarahinya karena dianggap tidak profesional",
+      "D": "Mengabaikannya asalkan pekerjaan Anda sendiri selesai",
+      "E": "Menawarkan bantuan secara proporsional sesuai kemampuan Anda"
+    },
+    "scores": {
+      "A": 2,
+      "B": 4,
+      "C": 1,
+      "D": 3,
+      "E": 5
+    },
+    "explanation": "Skor 5: Menunjukkan solidaritas dan empati dalam tim kerja secara dewasa dan seimbang."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Jejaring Kerja",
+    "question": "Anda ditugaskan ke luar kota bersama rekan kerja yang sangat tidak Anda sukai. Tindakan Anda...",
+    "options": {
+      "A": "Menolak tugas tersebut dengan berbagai alasan",
+      "B": "Tetap berangkat dan berusaha menjalin komunikasi profesional demi kelancaran tugas",
+      "C": "Berangkat namun tidak mau berbicara sama sekali dengannya",
+      "D": "Meminta pimpinan untuk mengganti rekan tersebut",
+      "E": "Mengerjakan tugas masing-masing tanpa koordinasi"
+    },
+    "scores": {
+      "A": 2,
+      "B": 5,
+      "C": 3,
+      "D": 1,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan profesionalisme dan kemampuan adaptasi dalam lingkungan kerja."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Jejaring Kerja",
+    "question": "Instansi Anda mengadakan acara gathering untuk mempererat hubungan antar divisi. Sikap Anda...",
+    "options": {
+      "A": "Tidak datang karena merasa hanya membuang waktu",
+      "B": "Datang dan aktif berkenalan dengan rekan dari divisi lain",
+      "C": "Datang tapi hanya mengobrol dengan rekan satu divisi saja",
+      "D": "Datang dan hanya duduk di pojokan sambil main HP",
+      "E": "Hanya datang saat sesi pembagian doorprize saja"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 4,
+      "D": 2,
+      "E": 3
+    },
+    "explanation": "Skor 5: Menunjukkan inisiatif dalam membangun jejaring kerja lintas sektoral/divisi."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Jejaring Kerja",
+    "question": "Seorang rekan kerja memberikan masukan yang membangun bagi cara kerja Anda. Sikap Anda...",
+    "options": {
+      "A": "Merasa tersinggung dan menganggapnya mencampuri urusan Anda",
+      "B": "Menerima masukan tersebut dengan senang hati dan mencobanya",
+      "C": "Mendengarkannya namun tidak akan melakukannya",
+      "D": "Membalas dengan memberikan kritikan yang lebih tajam padanya",
+      "E": "Mengatakan bahwa cara Anda adalah yang terbaik"
+    },
+    "scores": {
+      "A": 2,
+      "B": 5,
+      "C": 4,
+      "D": 1,
+      "E": 3
+    },
+    "explanation": "Skor 5: Menunjukkan sikap rendah hati dan keterbukaan untuk belajar hal baru (Coachable)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Sosial Budaya",
+    "question": "Anda pindah ke lingkungan perumahan baru yang warganya sangat rajin mengadakan kerja bakti. Sikap Anda...",
+    "options": {
+      "A": "Mengikutinya dengan senang hati agar bisa bersosialisasi",
+      "B": "Hanya membayar iuran saja tanpa ikut bekerja",
+      "C": "Pura-pura sakit agar tidak perlu ikut",
+      "D": "Mengusulkan agar kerja bakti ditiadakan saja",
+      "E": "Pindah lagi ke perumahan yang warganya individualis"
+    },
+    "scores": {
+      "A": 5,
+      "B": 3,
+      "C": 2,
+      "D": 1,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan kemampuan adaptasi sosial dan kepekaan terhadap norma masyarakat."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Sosial Budaya",
+    "question": "Rekan kerja Anda sering merayakan hari besar agamanya dengan membawa makanan khas ke kantor. Sikap Anda adalah...",
+    "options": {
+      "A": "Menolaknya karena alasan perbedaan keyakinan",
+      "B": "Menerimanya dengan tulus dan menghargai pemberian tersebut",
+      "C": "Menerima namun diam-diam membuangnya",
+      "D": "Bertanya detail apakah makanan itu halal atau tidak dengan nada curiga",
+      "E": "Minta dibelikan makanan lain yang Anda suka"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 2,
+      "D": 3,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan toleransi beragama dan penghargaan terhadap keberagaman budaya."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Sosial Budaya",
+    "question": "Jika ada rekan kerja yang sering menggunakan bahasa daerah yang tidak Anda mengerti di kantor, tindakan Anda...",
+    "options": {
+      "A": "Menegurnya dengan keras agar menggunakan bahasa Indonesia",
+      "B": "Memintanya secara sopan untuk menggunakan bahasa Indonesia agar semua mengerti",
+      "C": "Diam saja dan merasa terkucilkan",
+      "D": "Ikut menggunakan bahasa daerah asal Anda agar dia bingung juga",
+      "E": "Melaporkannya ke bagian kedisiplinan"
+    },
+    "scores": {
+      "A": 2,
+      "B": 5,
+      "C": 3,
+      "D": 4,
+      "E": 1
+    },
+    "explanation": "Skor 5: Memberikan solusi komunikatif yang menjunjung tinggi persatuan tanpa menyinggung perasaan."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Sosial Budaya",
+    "question": "Anda ditugaskan ke daerah terpencil yang fasilitasnya sangat terbatas. Sikap Anda...",
+    "options": {
+      "A": "Mengeluh setiap hari di media sosial",
+      "B": "Menikmati pengalaman baru tersebut dan berusaha berkontribusi bagi warga sekitar",
+      "C": "Berusaha mencari cara agar segera dipindahkan ke kota",
+      "D": "Bekerja ala kadarnya karena fasilitas tidak mendukung",
+      "E": "Menolak tugas tersebut mentah-mentah"
+    },
+    "scores": {
+      "A": 2,
+      "B": 5,
+      "C": 4,
+      "D": 3,
+      "E": 1
+    },
+    "explanation": "Skor 5: Menunjukkan jiwa pengabdian dan ketahanan mental sebagai abdi negara (Bela Negara)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Sosial Budaya",
+    "question": "Ketika melihat ada perselisihan antar rekan kerja yang disebabkan perbedaan suku, sikap Anda...",
+    "options": {
+      "A": "Membela rekan yang sukunya sama dengan Anda",
+      "B": "Menjadi penengah yang netral dan berusaha mendamaikan mereka",
+      "C": "Diam saja karena takut ikut terseret masalah",
+      "D": "Memprovokasi agar perselisihan semakin besar",
+      "E": "Melaporkan ke atasan agar keduanya langsung dipecat"
+    },
+    "scores": {
+      "A": 2,
+      "B": 5,
+      "C": 3,
+      "D": 1,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan peran sebagai perekat bangsa dan penjaga stabilitas sosial di lingkungan kerja."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Profesionalisme",
+    "question": "Anda mendapatkan tugas mendadak saat jam kerja hampir berakhir, sementara Anda sudah ada janji penting. Sikap Anda...",
+    "options": {
+      "A": "Mengerjakan tugas tersebut sampai selesai meskipun harus pulang terlambat",
+      "B": "Membawa tugas tersebut pulang dan mengerjakannya di rumah",
+      "C": "Menolaknya karena sudah jam pulang",
+      "D": "Meminta rekan kerja lain untuk mengerjakannya",
+      "E": "Mengerjakan seadanya agar bisa cepat pulang"
+    },
+    "scores": {
+      "A": 5,
+      "B": 4,
+      "C": 1,
+      "D": 3,
+      "E": 2
+    },
+    "explanation": "Skor 5: Menunjukkan dedikasi dan prioritas utama pada tanggung jawab pekerjaan."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Profesionalisme",
+    "question": "Jika terjadi kesalahan dalam laporan yang Anda buat, tindakan Anda adalah...",
+    "options": {
+      "A": "Menyalahkan rekan kerja yang memberikan data",
+      "B": "Mengakui kesalahan dan segera memperbaikinya",
+      "C": "Diam saja dan berharap tidak ada yang tahu",
+      "D": "Mengubah data laporan secara diam-diam",
+      "E": "Menyalahkan sistem komputer yang error"
+    },
+    "scores": {
+      "A": 2,
+      "B": 5,
+      "C": 3,
+      "D": 1,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan integritas, tanggung jawab, dan profesionalisme."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Profesionalisme",
+    "question": "Anda melihat rekan kerja menggunakan fasilitas kantor untuk kepentingan pribadi secara berlebihan. Sikap Anda...",
+    "options": {
+      "A": "Ikut-ikutan menggunakan juga",
+      "B": "Mengingatkannya dengan baik bahwa fasilitas kantor hanya untuk urusan dinas",
+      "C": "Melaporkannya langsung ke pimpinan dengan nada marah",
+      "D": "Mengabaikannya karena itu urusan dia",
+      "E": "Meminjam barang tersebut darinya"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 4,
+      "D": 3,
+      "E": 2
+    },
+    "explanation": "Skor 5: Menunjukkan kepedulian terhadap integritas organisasi dan aset negara."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Profesionalisme",
+    "question": "Prinsip utama Anda dalam bekerja sebagai ASN adalah...",
+    "options": {
+      "A": "Mendapatkan gaji dan tunjangan sebesar-besarnya",
+      "B": "Memberikan kontribusi terbaik bagi kemajuan instansi dan bangsa",
+      "C": "Bekerja sesantai mungkin asalkan tidak dipecat",
+      "D": "Mencari relasi sebanyak-banyaknya untuk bisnis sampingan",
+      "E": "Mengikuti semua kemauan atasan tanpa tapi"
+    },
+    "scores": {
+      "A": 3,
+      "B": 5,
+      "C": 2,
+      "D": 1,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan visi pengabdian yang luhur dan profesionalisme sejati."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Profesionalisme",
+    "question": "Bagaimana sikap Anda menghadapi perubahan sistem kerja dari manual ke digital?",
+    "options": {
+      "A": "Menolak karena merasa sistem lama sudah nyaman",
+      "B": "Mempelajari sistem baru tersebut dengan antusias demi efisiensi kerja",
+      "C": "Mempelajari seadanya saja",
+      "D": "Meminta rekan kerja untuk mengerjakan bagian Anda",
+      "E": "Mengeluh karena merasa dipersulit"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 4,
+      "D": 3,
+      "E": 2
+    },
+    "explanation": "Skor 5: Menunjukkan 'Growth Mindset' dan kemampuan adaptasi terhadap teknologi."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Kreativitas & Inovasi",
+    "question": "Jika Anda menemukan cara kerja yang lebih cepat dan akurat, tindakan Anda...",
+    "options": {
+      "A": "Menyimpannya sendiri agar terlihat paling hebat",
+      "B": "Membagikan cara tersebut kepada rekan kerja dan mengusulkannya ke pimpinan",
+      "C": "Hanya menggunakannya sesekali saja",
+      "D": "Meminta bayaran dari rekan yang ingin tahu cara tersebut",
+      "E": "Menunggu instruksi resmi baru menggunakannya"
+    },
+    "scores": {
+      "A": 3,
+      "B": 5,
+      "C": 4,
+      "D": 1,
+      "E": 2
+    },
+    "explanation": "Skor 5: Menunjukkan inovasi yang berorientasi pada kemajuan kolektif organisasi."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Kreativitas & Inovasi",
+    "question": "Kantor Anda kehabisan anggaran untuk pengadaan alat tulis. Inovasi yang Anda lakukan...",
+    "options": {
+      "A": "Berhenti bekerja sementara sampai ada anggaran",
+      "B": "Mengoptimalkan penggunaan media digital (paperless) untuk mengurangi kebutuhan alat tulis",
+      "C": "Membeli alat tulis menggunakan uang pribadi tanpa minta ganti",
+      "D": "Meminta-minta ke instansi sebelah",
+      "E": "Menyalahkan bagian keuangan"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 4,
+      "D": 2,
+      "E": 3
+    },
+    "explanation": "Skor 5: Menunjukkan kreativitas dalam memecahkan masalah (Problem Solving) secara berkelanjutan."
+  },
+  {
+    "level": "CPNS",
+    "topic": "Kreativitas & Inovasi",
+    "question": "Anda ditugaskan merancang acara ulang tahun instansi dengan anggaran terbatas. Tindakan Anda...",
+    "options": {
+      "A": "Membatalkan acara tersebut",
+      "B": "Membuat acara yang sederhana namun berkesan dengan memanfaatkan sumber daya internal",
+      "C": "Meminta sumbangan paksa kepada seluruh pegawai",
+      "D": "Berhutang ke pihak ketiga agar acara terlihat mewah",
+      "E": "Mengerjakan seadanya yang penting terlaksana"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 2,
+      "D": 3,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan kreativitas dan efisiensi dalam perencanaan."
+  },
+  {
+    "level": "CPNS",
+    "topic": "Kreativitas & Inovasi",
+    "question": "Rekan kerja Anda memiliki ide inovatif namun dia malu menyampaikannya. Sikap Anda...",
+    "options": {
+      "A": "Mencuri ide tersebut dan mengakuinya sebagai milik Anda",
+      "B": "Mendorongnya untuk berani menyampaikan ide tersebut dan menawarkan bantuan untuk menyusun proposalnya",
+      "C": "Menertawakan idenya karena dianggap terlalu aneh",
+      "D": "Mengabaikannya karena bukan ide Anda",
+      "E": "Memberitahu atasan bahwa ide itu buruk"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 2,
+      "D": 3,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan dukungan terhadap budaya inovasi dan kerjasama tim."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Kreativitas & Inovasi",
+    "question": "Bagaimana pandangan Anda terhadap kegagalan dalam melakukan sebuah inovasi?",
+    "options": {
+      "A": "Sesuatu yang sangat memalukan dan harus dihindari",
+      "B": "Kesempatan untuk belajar dan melakukan perbaikan pada percobaan berikutnya",
+      "C": "Bukti bahwa inovasi itu tidak perlu",
+      "D": "Alasan untuk berhenti mencoba hal baru",
+      "E": "Kesalahan tim yang harus dicari pelakunya"
+    },
+    "scores": {
+      "A": 2,
+      "B": 5,
+      "C": 1,
+      "D": 3,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan mentalitas pembelajar (Learner Spirit) yang diperlukan untuk kemajuan organisasi."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Pelayanan Publik",
+    "question": "Jika ada prosedur yang berbelit-belit di kantor Anda, sikap Anda adalah...",
+    "options": {
+      "A": "Diam saja mengikuti prosedur",
+      "B": "Memberikan masukan kepada atasan agar prosedur tersebut bisa disederhanakan (debirokrasi)",
+      "C": "Mempersingkat prosedur sendiri tanpa izin",
+      "D": "Mengeluh di depan pelanggan",
+      "E": "Menyuruh pelanggan protes ke pimpinan"
+    },
+    "scores": {
+      "A": 3,
+      "B": 5,
+      "C": 2,
+      "D": 1,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan kepedulian terhadap kualitas pelayanan melalui jalur yang benar."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Jejaring Kerja",
+    "question": "Seorang rekan kerja sering berbicara buruk tentang Anda di belakang. Sikap Anda...",
+    "options": {
+      "A": "Membalasnya dengan hal yang sama",
+      "B": "Mengajaknya bicara baik-baik dan menanyakan permasalahannya",
+      "C": "Melabraknya di depan umum",
+      "D": "Diam saja dan tetap bersikap profesional saat bekerja",
+      "E": "Melaporkannya ke atasan agar dia dihukum"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 2,
+      "D": 4,
+      "E": 3
+    },
+    "explanation": "Skor 5: Menunjukkan kematangan sikap dan upaya resolusi konflik yang dewasa."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Sosial Budaya",
+    "question": "Instansi Anda mewajibkan penggunaan seragam batik daerah setiap hari tertentu. Sikap Anda...",
+    "options": {
+      "A": "Malas memakainya karena tidak modis",
+      "B": "Memakainya dengan bangga sebagai bentuk pelestarian warisan budaya",
+      "C": "Memakainya hanya jika ada pemeriksaan",
+      "D": "Mengusulkan agar seragam diganti baju kaos saja",
+      "E": "Memakainya sambil terus mengeluh panas"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 3,
+      "D": 2,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan kebanggaan terhadap identitas budaya nasional."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Profesionalisme",
+    "question": "Anda ditawari gratifikasi oleh seseorang yang ingin urusannya dipercepat. Sikap Anda...",
+    "options": {
+      "A": "Menerimanya karena butuh uang tambahan",
+      "B": "Menolak dengan tegas dan menjelaskan bahwa hal tersebut melanggar aturan",
+      "C": "Menerima tapi tidak menjanjikan apapun",
+      "D": "Menitipkannya ke teman saja",
+      "E": "Pura-pura tidak dengar"
+    },
+    "scores": {
+      "A": 1,
+      "B": 5,
+      "C": 2,
+      "D": 3,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan integritas dan profesionalisme ASN yang mutlak."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TKP",
+    "topic": "Kreativitas & Inovasi",
+    "question": "Apa yang Anda lakukan jika diberikan kebebasan penuh oleh pimpinan untuk mengelola proyek?",
+    "options": {
+      "A": "Bingung dan tidak tahu harus mulai dari mana",
+      "B": "Membuat rencana kerja yang inovatif, terukur, dan melaporkannya secara berkala",
+      "C": "Bekerja sesuka hati tanpa rencana",
+      "D": "Menyerahkan semua keputusan kepada bawahan",
+      "E": "Mencari teman untuk mengerjakan semuanya"
+    },
+    "scores": {
+      "A": 2,
+      "B": 5,
+      "C": 1,
+      "D": 3,
+      "E": 4
+    },
+    "explanation": "Skor 5: Menunjukkan kemandirian, tanggung jawab, dan kemampuan manajemen proyek."
+  }
+]

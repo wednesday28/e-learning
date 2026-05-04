@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Eksponen dan Logaritma" },
+    "subtopic": "Sifat-Sifat Eksponen dan Penerapannya",
+    "lesson": {
+      "title": "Kekuatan Bilangan: Pengantar Eksponen Industri",
+      "content": "Selamat datang di dunia Matematika SMK! Matematika bukan sekadar angka, tapi alat untuk memecahkan masalah teknis yang rumit. Pelajaran pertama kita adalah tentang **Eksponen** (Pangkat). Eksponen digunakan untuk menyatakan perkalian berulang. Di dunia industri, eksponen sangat berguna untuk menghitung pertumbuhan populasi bakteri (bagi siswa Boga/Farmasi), peluruhan radioaktif, or perhitungan daya listrik yang sangat besar (bagi siswa Teknik).\n\nKamu akan belajar sifat-sifat eksponen seperti perkalian pangkat ($a^m \\times a^n = a^{m+n}$), pembagian pangkat, hingga pangkat nol and negatif. Memahami sifat ini akan mempermudahmu dalam menyederhanakan rumus-rumus teknik yang panjang. Bayangkan kamu sedang menghitung kapasitas penyimpanan data digital or intensitas cahaya; eksponen adalah bahasa yang membuat angka-angka raksasa menjadi mudah dikelola. Matematika adalah logika yang terukur.\n\nMari kita latih ketelitianmu dalam menghitung. Kesalahan kecil dalam pangkat bisa berakibat pada kesalahan fatal dalam estimasi material or kekuatan struktur bangunan. Jadikan eksponen sebagai teman setiamu dalam melakukan perhitungan cepat di lapangan. Dengan menguasai eksponen, kamu sedang membangun fondasi berpikir matematis yang kuat untuk menjadi tenaga ahli yang presisi and andal di bidangmu masing-masing."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Eksponen dan Logaritma" },
+    "subtopic": "Fungsi Eksponen dan Grafik Pertumbuhan",
+    "lesson": {
+      "title": "Pertumbuhan Eksponensial: Tren Bisnis dan Teknologi",
+      "content": "Pernahkah kamu melihat tren virus yang viral di internet or pertumbuhan investasi yang sangat cepat? Itulah **Pertumbuhan Eksponensial**. Fungsi eksponen $f(x) = a^x$ menggambarkan fenomena di mana nilai bertambah berkali-kali lipat dalam waktu singkat. Bagi siswa Bisnis and Manajemen, memahami grafik eksponen sangat penting untuk memprediksi keuntungan investasi or perkembangan pasar. Di bidang koding, eksponen digunakan untuk menganalisis kompleksitas algoritma.\n\nKita akan belajar cara menggambar grafik fungsi eksponen and memahami karakteristiknya. Jika nilai basis $a > 1$, maka grafik akan naik tajam (pertumbuhan). Jika $0 < a < 1$, maka grafik akan turun (peluruhan). Kemampuan membaca grafik ini akan membantumu dalam melakukan presentasi data di depan klien or atasan. Kamu belajar untuk melihat masa depan berdasarkan tren angka yang ada saat ini. Matematika memberikanmu kemampuan untuk memprediksi hasil secara ilmiah.\n\nMari kita amati contoh nyata: pertumbuhan bunga majemuk di bank or pembelahan sel dalam laboratorium. Dengan fungsi eksponen, kamu bisa merencanakan target pencapaianmu secara lebih akurat. Jadilah profesional yang mampu menggunakan data matematis untuk mengambil keputusan strategis. Dunia industri sangat menghargai mereka yang tidak hanya bisa bekerja secara teknis, tapi juga mampu melakukan analisis data yang tajam and akurat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Eksponen dan Logaritma" },
+    "subtopic": "Logaritma dan Perhitungan Skala",
+    "lesson": {
+      "title": "Logaritma: Menyederhanakan yang Kompleks",
+      "content": "**Logaritma** adalah kebalikan (invers) dari eksponen. Jika $a^b = c$, maka ${}^a\\log c = b$. Mengapa kita butuh logaritma? Karena logaritma mampu mengubah perkalian menjadi penjumlahan and pembagian menjadi pengurangan, sehingga perhitungan menjadi lebih sederhana. Di dunia teknik, logaritma digunakan untuk menghitung skala pH (kimia), skala Richter (gempa), hingga tingkat kebisingan suara dalam satuan Desibel (dB).\n\nKamu akan belajar sifat-sifat logaritma yang sangat membantu dalam menyelesaikan persamaan rumit. Misalnya, ${}^a\\log (b \\times c) = {}^a\\log b + {}^a\\log c$. Bagi siswa SMK Teknik Audio or Elektronika, logaritma adalah makanan sehari-hari. Tanpa logaritma, kita akan kesulitan menentukan kekuatan sinyal or intensitas suara yang aman bagi manusia. Logaritma adalah cara cerdas matematika untuk mengukur hal-hal yang perubahannya sangat luas namun perlu kita kontrol secara presisi.\n\nLatihlah logikamu dengan menyelesaikan berbagai soal logaritma. Kemampuan ini akan mengasah ketajaman otakmu dalam memecahkan masalah (problem solving). Jangan takut dengan simbol-simbolnya; anggaplah logaritma sebagai 'alat bantu' yang akan mempermudah pekerjaanmu nantinya. Dengan menguasai logaritma, kamu menunjukkan bahwa kamu memiliki level kecerdasan matematis yang siap bersaing di industri teknologi tingkat tinggi yang penuh dengan perhitungan kompleks."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Barisan dan Deret" },
+    "subtopic": "Barisan Aritmetika dalam Perencanaan Produksi",
+    "lesson": {
+      "title": "Barisan Aritmetika: Menghitung Target Berkala",
+      "content": "Dalam dunia industri, seringkali kita menemui pola yang tetap. Misalnya, penambahan produksi 10 unit setiap hari or kenaikan gaji berkala. Inilah yang disebut **Barisan Aritmetika**. Barisan aritmetika adalah barisan bilangan di mana selisih antara dua suku yang berurutan selalu tetap (disebut beda/b). Rumus umumnya adalah $U_n = a + (n-1)b$. Memahami barisan ini sangat penting untuk **Perencanaan Produksi** and **Manajemen Waktu**.\n\nBayangkan kamu adalah seorang supervisor pabrik yang harus menghitung berapa total produk yang dihasilkan pada hari ke-30 jika setiap hari produksi bertambah secara konstan. Dengan barisan aritmetika, kamu bisa menghitungnya dalam hitungan detik tanpa harus menjumlahkan satu per satu. Ini adalah bentuk efisiensi kerja. Matematika membantu kita bekerja secara sistematis and terukur. Kamu belajar untuk mengelola sumber daya secara lebih cerdas and dapat dipertanggungjawabkan datanya.\n\nMari kita praktikkan dengan kasus nyata di bengkel sekolahmu. Jika pada jam pertama kamu bisa menyelesaikan 2 komponen, and setiap jam berikutnya bertambah 3 komponen karena kamu semakin mahir, berapa komponen yang selesai di jam ke-8? Kemampuan ini akan membuatmu terlihat lebih profesional di depan atasan karena kamu bisa memberikan estimasi waktu and hasil yang akurat. Barisan aritmetika adalah dasar dari manajemen industri yang efektif!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Barisan dan Deret" },
+    "subtopic": "Deret Aritmetika dan Akumulasi Hasil",
+    "lesson": {
+      "title": "Deret Aritmetika: Menghitung Total Kapasitas",
+      "content": "Jika barisan aritmetika bicara tentang 'suku ke-n', maka **Deret Aritmetika** bicara tentang 'jumlah n suku pertama' ($S_n$). Di dunia kerja, kita sering diminta untuk menghitung total akumulasi. Misalnya, berapa total tabungan selama setahun jika setoran setiap bulan meningkat tetap, or berapa total baut yang dibutuhkan untuk 100 mesin jika setiap mesin membutuhkan jumlah yang berpola. Rumus $S_n = \\frac{n}{2}(a + U_n)$ adalah 'shorcut' untuk menghitung akumulasi tersebut.\n\nBagi siswa SMK Akuntansi or Pemasaran, deret aritmetika adalah alat penting untuk menghitung proyeksi pendapatan or pengeluaran jangka panjang. Kemampuan melakukan kalkulasi cepat ini akan sangat dihargai dalam rapat strategi bisnis. Kamu belajar untuk tidak hanya melihat hari ini, tapi melihat gambaran besar (big picture) dari sebuah proses yang berkelanjutan. Deret aritmetika mengajarkan kita tentang ketekunan and hasil akhir yang merupakan akumulasi dari usaha-usaha kecil yang konsisten.\n\nMari kita asah kemampuanmu dalam menggunakan rumus deret. Jangan hanya terpaku pada angka, tapi pahami maknanya dalam konteks pekerjaanmu. Jika kamu seorang teknisi, deret aritmetika membantumu dalam manajemen stok suku cadang. Dengan matematika, pekerjaan yang terlihat raksasa bisa kita urai menjadi perhitungan yang sederhana and pasti. Jadilah ahli matematika terapan yang mampu memberikan solusi nyata bagi efisiensi and kemajuan industri tempatmu berkarya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Barisan dan Deret" },
+    "subtopic": "Barisan Geometri dan Peluruhan Teknis",
+    "lesson": {
+      "title": "Barisan Geometri: Melipatgandakan Efisiensi",
+      "content": "Berbeda dengan aritmetika yang sifatnya 'menambah', **Barisan Geometri** sifatnya 'mengalikan'. Selisih antar suku disebut **Rasio** (r). Rumus umumnya $U_n = a \\cdot r^{n-1}$. Di industri teknologi, barisan geometri sering muncul dalam pembelahan sel (bioteknologi), penyebaran virus komputer, or perhitungan depresiasi (penurunan nilai) harga mesin setiap tahunnya. Jika rasionya di bawah 1, maka terjadi peluruhan; jika di atas 1, terjadi pertumbuhan pesat.\n\nMemahami barisan geometri sangat penting bagi siswa SMK Multimedia or IT dalam menghitung kompresi data or resolusi gambar yang berpola. Di bidang otomotif, barisan geometri bisa digunakan untuk menghitung perbandingan gigi transmisi yang berpola. Kamu belajar bahwa perubahan kecil pada rasio bisa berdampak sangat besar pada hasil akhir. Inilah yang disebut dengan efek pengganda (multiplier effect). Matematika geometri melatih ketajaman analisismu terhadap perubahan yang sifatnya non-linear.\n\nMari kita latih penggunaan rumus geometri dalam berbagai kasus teknik. Jangan menyerah jika angkanya menjadi sangat besar or sangat kecil; gunakan kalkulator or software pendukung secara bijak. Kemampuan menguasai barisan geometri menunjukkan bahwa kamu siap menghadapi tantangan industri modern yang serba cepat and dinamis. Jadilah tenaga kerja yang visioner, yang mampu menghitung percepatan and perlambatan dalam setiap proses produksi yang kamu tangani."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Barisan dan Deret" },
+    "subtopic": "Deret Geometri Tak Hingga dan Limitasi Mesin",
+    "lesson": {
+      "title": "Deret Tak Hingga: Menghitung Batas Maksimal",
+      "content": "Pernahkah kamu memperhatikan pantulan bola yang semakin lama semakin rendah hingga akhirnya berhenti? Itulah contoh **Deret Geometri Tak Hingga**. Meskipun kelihatannya tidak akan pernah selesai, matematika bisa menghitung total lintasannya menggunakan rumus $S_{\\infty} = \\frac{a}{1-r}$, asalkan rasionya antara -1 and 1. Konsep ini sangat penting dalam analisis peluruhan energi or efisiensi mesin yang menurun seiring waktu. Kita belajar tentang konsep **Batas (Limit)**.\n\nBagi siswa SMK Teknik Energi or Kimia, deret tak hingga membantu dalam memahami proses pemurnian zat or kehilangan energi pada sistem tertutup. Kamu belajar bahwa di alam semesta ini, ada batas-batas yang bisa kita hitung secara pasti meskipun kelihatannya tak terbatas. Deret tak hingga mengajarkan kita tentang kerendahan hati: bahwa setiap proses sehebat apapun akan menemui titik akhirnya. Matematika memberikan kita alat untuk mengukur titik akhir tersebut secara ilmiah.\n\nMari kita asah pemahamanmu tentang kekonvergenan (pemusatan) deret. Kemampuan berpikir abstrak ini akan meningkatkan daya nalar kritismu. Di dunia kerja, kamu akan sering berhadapan dengan masalah yang kelihatannya tidak ada ujungnya; dengan matematika, kamu belajar untuk mencari titik temu or penyelesaian yang paling efisien. Deret tak hingga adalah keindahan matematika yang mempertemukan keterbatasan manusia dengan ketakterhinggaan logika."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Vektor" },
+    "subtopic": "Pengantar Vektor dan Penjumlahan Gaya",
+    "lesson": {
+      "title": "Vektor: Arah dan Kekuatan dalam Teknik",
+      "content": "Banyak hal di dunia industri tidak cukup hanya dinyatakan dengan angka (Skalar), tapi butuh **Arah**. Itulah **Vektor**. Vektor memiliki besaran (panjang) and arah. Contoh paling nyata adalah Gaya (Newton), Kecepatan (m/s), and Perpindahan. Bagi siswa SMK Teknik Mesin or Bangunan, memahami vektor adalah harga mati. Saat kamu menarik beban dengan katrol or membangun jembatan, kamu harus menghitung resultan gaya agar struktur tidak roboh or mesin tidak macet.\n\nKita akan belajar cara menjumlahkan vektor menggunakan metode segitiga, jajaran genjang, or komponen (sumbu X and Y). Kamu akan menyadari bahwa dua gaya yang sama besar namun arahnya berbeda akan menghasilkan dampak yang jauh berbeda. Ini adalah dasar dari **Mekanika Teknik**. Kemampuan memvisualisasikan arah and kekuatan akan membuatmu menjadi teknisi yang lebih presisi. Kamu belajar untuk tidak hanya melihat apa yang tampak, tapi memahami gaya-gaya 'tersembunyi' yang bekerja pada sebuah sistem.\n\nLatihlah gambaran vektormu pada koordinat Kartesius. Gunakan penggaris and busur derajat jika perlu untuk memastikan akurasi arahnya. Di era digital, vektor digunakan dalam desain grafis (Vektor Graphics) yang gambarnya tidak pecah saat diperbesar karena berbasis koordinat matematika. Apapun jurusanmu, vektor akan membantumu memahami konsep 'Keseimbangan' (Ekuilibrium). Jadilah tenaga ahli yang mampu mengendalikan arah and kekuatan untuk mencapai hasil kerja yang maksimal and aman."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Vektor" },
+    "subtopic": "Perkalian Skalar Dua Vektor (Dot Product)",
+    "lesson": {
+      "title": "Dot Product: Menghitung Usaha and Efisiensi",
+      "content": "Pelajaran vektor selanjutnya adalah **Perkalian Skalar** or **Dot Product**. Hasil dari perkalian dua vektor ini adalah sebuah angka (skalar). Rumusnya: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| |\\vec{b}| \\cos \\theta$. Mengapa ini penting? Di bidang fisika teknik, Dot Product digunakan untuk menghitung **Usaha (Work)**. Usaha terjadi jika gaya yang kamu berikan searah dengan perpindahan benda. Jika kamu mendorong tembok (gaya besar tapi tidak pindah), usahamu nol. Matematika mengajarkan kita tentang efektivitas.\n\nBagi siswa SMK Teknik Listrik, Dot Product digunakan untuk menghitung daya aktif pada arus bolak-balik (AC) yang melibatkan faktor daya ($\\cos \\phi$). Kamu belajar bahwa untuk menghasilkan hasil maksimal, sudut antar gaya harus sekecil mungkin. Ini adalah prinsip efisiensi energi. Dengan matematika, kamu bisa menghitung berapa energi yang terbuang sia-sia (losses) and bagaimana cara meminimalkannya. Dot Product adalah alat untuk mengukur seberapa sinkron dua kekuatan bekerja bersama-sama.\n\nMari kita kerjakan berbagai latihan soal untuk mengasah pemahamanmu tentang sudut antar vektor. Gunakan tabel trigonometri or kalkulator untuk mencari nilai cosinus. Kemampuan ini akan sangat berguna saat kamu melakukan audit energi or pengecekan performa mesin di lapangan. Jadilah teknisi yang cerdas, yang mampu menghitung setiap satuan energi yang digunakan agar tidak ada yang terbuang sia-sia demi keuntungan perusahaan and kelestarian lingkungan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Trigonometri" },
+    "subtopic": "Perbandingan Trigonometri pada Segitiga Siku-Siku",
+    "lesson": {
+      "title": "Trigonometri: Seni Mengukur Sudut and Jarak",
+      "content": "Pernahkah kamu penasaran bagaimana cara orang menghitung tinggi gedung or lebar sungai tanpa harus menyeberang? Jawabannya adalah **Trigonometri**. Trigonometri adalah ilmu yang mempelajari hubungan antara sudut and sisi pada segitiga. Kita mengenal Sinus (Sin), Cosinus (Cos), and Tangen (Tan). Di dunia konstruksi, navigasi, hingga desain busana, trigonometri adalah alat ukur yang paling ampuh. Bagi siswa SMK, trigonometri adalah kunci untuk bekerja dengan presisi tinggi.\n\nKonsep 'Demi-Sa-Mi' (Depan, Samping, Miring) harus kamu hafal di luar kepala. Sin = Depan/Miring, Cos = Samping/Miring, Tan = Depan/Samping. Bayangkan kamu sedang memasang antena parabola or menentukan kemiringan atap agar air hujan mengalir lancar; tanpa trigonometri, kamu hanya bisa menebak-nebak. Tebakan tidak punya tempat di industri profesional. Matematika memberikan kepastian hasil melalui perhitungan sudut yang akurat. Trigonometri adalah 'mata' bagi para insinyur and desainer.\n\nMari kita hafal nilai sudut-sudut istimewa ($0^\\circ, 30^\\circ, 45^\\circ, 60^\\circ, 90^\\circ$). Gunakan jari tanganmu sebagai alat bantu hafal yang mudah. Latihlah dirimu untuk melihat segitiga siku-siku 'tersembunyi' pada setiap benda di sekitarmu. Kemampuan visualisasi spasial ini akan sangat membantumu dalam merancang blueprint or pola produk. Jadilah ahli yang mampu menaklukkan setiap sudut tantangan dengan kekuatan trigonometri yang presisi and terpercaya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Trigonometri" },
+    "subtopic": "Aturan Sinus and Cosinus dalam Navigasi",
+    "lesson": {
+      "title": "Aturan Sinus and Cosinus: Navigasi Tanpa Batas",
+      "content": "Tidak semua segitiga di lapangan berbentuk siku-siku. Lalu bagaimana cara menghitungnya? Kita gunakan **Aturan Sinus** and **Aturan Cosinus**. Aturan Sinus digunakan jika diketahui satu sisi and dua sudut (atau sebaliknya), sedangkan Aturan Cosinus digunakan jika diketahui dua sisi and satu sudut yang mengapitnya. Bagi siswa SMK Pelayaran or Teknik Geomatika (Survei), dua aturan ini adalah 'kompas digital' yang sangat penting untuk menentukan posisi and jarak di medan yang luas.\n\nMisalnya, saat sebuah kapal harus berbelok menghindari karang, nahkoda menggunakan aturan cosinus untuk menghitung jarak aman yang baru. Di bidang furnitur, aturan ini digunakan untuk memotong kayu pada sudut-sudut yang tidak biasa agar sambungannya rapi (precision joinery). Kamu belajar bahwa matematika selalu punya solusi untuk setiap bentuk masalah, sesulit apapun medannya. Aturan sinus and cosinus melatihmu untuk berpikir luas and fleksibel dalam memecahkan masalah geometri yang kompleks.\n\nMari kita latih kemampuan analisismu: kapan menggunakan aturan sinus and kapan menggunakan aturan cosinus? Ketajaman dalam memilih strategi perhitungan akan sangat berguna saat kamu bekerja di bawah tekanan waktu. Jangan takut dengan rumus yang terlihat panjang; itu hanyalah rangkaian logika yang akan membimbingmu pada jawaban yang benar. Jadilah navigator industri yang handal, yang mampu menentukan arah and jarak dengan kepastian matematika yang tak tergoyahkan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Trigonometri" },
+    "subtopic": "Grafik Fungsi Trigonometri and Gelombang AC",
+    "lesson": {
+      "title": "Gelombang Hidup: Grafik Sinus and Cosinus",
+      "content": "Pernahkah kamu melihat monitor detak jantung di rumah sakit or sinyal listrik di osiloskop? Bentuknya bergelombang naik-turun secara teratur. Itulah **Grafik Fungsi Trigonometri**. Fungsi $y = \\sin x$ and $y = \\cos x$ adalah dasar dari ilmu getaran, bunyi, and listrik arus bolak-balik (AC). Bagi siswa SMK Teknik Elektronika or Audio-Video, memahami grafik ini sangat krusial. Kamu belajar tentang **Amplitudo** (tinggi gelombang), **Periode** (waktu satu putaran), and **Frekuensi**.\n\nKita akan belajar cara menggambar grafik fungsi trigonometri and bagaimana perubahannya jika fungsinya dimodifikasi (misalnya $y = 2\\sin 3x$). Kamu akan menyadari bahwa matematika bisa memodelkan fenomena alam yang dinamis. Pemahaman tentang gelombang ini juga berguna bagi siswa Multimedia dalam mengedit audio or video (noise reduction). Matematika mengajarkan kita bahwa di balik kekacauan suara or sinyal, terdapat pola gelombang yang bisa kita kendalikan and kita manfaatkan demi kemajuan teknologi.\n\nLatihlah ketelitianmu dalam memplot titik-titik pada grafik. Perhatikan perbedaan fase antara sinus and cosinus. Kemampuan membaca grafik gelombang akan membuatmu menjadi teknisi yang mampu mendiagnosis kerusakan mesin or perangkat elektronik hanya dari pola sinyalnya. Jadilah 'Master Gelombang' yang mampu menguasai teknologi modern melalui pemahaman mendalam tentang fungsi trigonometri yang harmonis and penuh ritme ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Sistem Persamaan Linear" },
+    "subtopic": "SPLDV and Penentuan Harga Pokok Produksi",
+    "lesson": {
+      "title": "SPLDV: Mencari Titik Temu Ekonomi and Produksi",
+      "content": "**Sistem Persamaan Linear Dua Variabel (SPLDV)** adalah kumpulan dua persamaan linear yang memiliki dua variabel (biasanya x and y). Metode penyelesaiannya bisa menggunakan substitusi, eliminasi, or campuran. Di dunia SMK, SPLDV sangat berguna untuk menghitung harga pokok produksi jika kamu memiliki dua jenis bahan baku dengan harga berbeda, or untuk menentukan jumlah pekerja and waktu lembur agar target tercapai dengan biaya minimum.\n\nMisalnya, siswa SMK Tata Boga ingin membuat dua jenis kue dengan persediaan tepung and telur yang terbatas. Dengan SPLDV, kamu bisa menentukan secara pasti berapa porsi masing-masing kue yang bisa dibuat tanpa ada bahan yang terbuang. Ini adalah dasar dari **Optimasi**. Matematika melatihmu untuk menjadi manajer yang efisien. Kamu belajar untuk tidak menebak-nebak (guessing) dalam mengambil keputusan bisnis. Kepastian angka adalah kunci kepercayaan mitra bisnis terhadap profesionalismemu.\n\nMari kita praktikkan dengan kasus nyata di bengkel sekolahmu. Jika pada jam pertama kamu bisa menyelesaikan 2 komponen, and setiap jam berikutnya bertambah 3 komponen karena kamu semakin mahir, berapa komponen yang selesai di jam ke-8? Kemampuan ini akan membuatmu terlihat lebih profesional di depan atasan karena kamu bisa memberikan estimasi waktu and hasil yang akurat. SPLDV adalah dasar dari manajemen industri yang efektif!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Sistem Persamaan Linear" },
+    "subtopic": "SPLTV and Analisis Komposisi Bahan",
+    "lesson": {
+      "title": "SPLTV: Menangani Tiga Variabel Kompleks",
+      "content": "Dunia nyata seringkali lebih rumit dari dua variabel. Inilah saatnya kita menggunakan **Sistem Persamaan Linear Tiga Variabel (SPLTV)**. Konsepnya sama, namun membutuhkan ketelitian yang lebih tinggi dalam proses eliminasi. SPLTV sangat berguna dalam industri kimia or farmasi untuk menentukan komposisi campuran tiga zat agar menghasilkan larutan yang tepat, or dalam logistik untuk menghitung kapasitas tiga jenis kendaraan yang berbeda.\n\nBagi siswa SMK Teknik Kimia or Otomotif, SPLTV membantu dalam analisis gas buang or percampuran bahan bakar. Kamu belajar untuk menangani banyak variabel secara bersamaan (multi-tasking calculation). Matematika melatih kesabaran and ketelitianmu. Satu kesalahan tanda (+) or (-) di awal bisa merusak seluruh jawaban. Kedisiplinan dalam menghitung mencerminkan kedisiplinanmu dalam bekerja di laboratorium or bengkel yang berisiko tinggi. Teliti adalah ciri utama dari seorang profesional sejati.\n\nLatihlah metode eliminasi bertahap untuk menyederhanakan SPLTV menjadi SPLDV. Gunakan teknik penomoran persamaan agar tidak bingung. Kemampuan menyelesaikan SPLTV menunjukkan bahwa kamu memiliki kapasitas otak untuk menangani sistem yang kompleks and saling terkait. Jadilah tenaga ahli yang andal, yang mampu memberikan solusi presisi bagi perusahaan dalam mengelola berbagai komponen produksi yang rumit melalui kekuatan matematika tiga dimensi ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi Kuadrat" },
+    "subtopic": "Karakteristik Grafik Fungsi Kuadrat",
+    "lesson": {
+      "title": "Parabola: Memahami Loncatan and Laju",
+      "content": "**Fungsi Kuadrat** memiliki bentuk umum $f(x) = ax^2 + bx + c$. Grafiknya berbentuk **Parabola**. Pernahkah kamu melihat air mancur or lintasan bola basket yang melengkung? Itulah parabola. Di dunia teknik, fungsi kuadrat digunakan untuk menghitung lintasan peluru (balistik), desain jembatan gantung, hingga bentuk cermin pada lampu mobil (reflektor). Nilai $a$ menentukan apakah parabola terbuka ke atas (senyum) or ke bawah (sedih), yang menentukan titik puncak or titik balik.\n\nKamu akan belajar cara mencari titik potong sumbu X, sumbu Y, and **Titik Puncak** ($x_p, y_p$). Titik puncak ini sangat penting untuk mencari nilai Maksimum or Minimum. Misalnya, bagi siswa SMK Bisnis, fungsi kuadrat bisa digunakan untuk mencari pada tingkat produksi berapa biaya mencapai minimum or keuntungan mencapai maksimum. Matematika kuadrat memberikanmu alat untuk mencari 'Titik Optimimum'. Kamu belajar untuk mencapai hasil terbaik dengan usaha yang terukur secara matematis.\n\nLatihlah dirimu menggambar grafik parabola dengan rapi. Perhatikan simetrisnya. Pemahaman tentang bentuk lengkung ini juga berguna bagi siswa Teknik Mesin dalam memahami profil cam or roda gigi tertentu. Jadilah ahli yang mampu melihat keindahan pola melengkung di alam and teknologi melalui kacamata fungsi kuadrat. Dengan matematika, kamu bisa mengendalikan 'laju' and 'loncatan' setiap proses industri agar selalu berada pada jalur yang paling menguntungkan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi Kuadrat" },
+    "subtopic": "Penerapan Fungsi Kuadrat dalam Masalah Nyata",
+    "lesson": {
+      "title": "Optimasi Produksi: Penerapan Fungsi Kuadrat",
+      "content": "Mari kita terapkan teori fungsi kuadrat ke dalam masalah nyata industri. Bayangkan kamu memiliki selembar pelat logam and ingin membuat wadah dengan volume maksimal. Or kamu ingin menentukan harga jual produk agar total pendapatan mencapai titik tertinggi. Masalah-masalah **Optimasi** seperti ini bisa diselesaikan dengan mencari koordinat titik puncak parabola. Rumus $x_p = -b/(2a)$ and $y_p = D/(-4a)$ adalah kunci rahasiamu untuk sukses di dunia bisnis and teknik.\n\nKita akan berlatih memodelkan soal cerita menjadi fungsi kuadrat. Misalnya: 'Sebuah peluru ditembakkan dengan tinggi $h(t) = 40t - 5t^2$. Berapa tinggi maksimum yang dicapai?'. Kemampuan memecahkan soal seperti ini melatih nalar strategismu. Di perusahaan, kamu akan dihargai jika mampu memberikan rekomendasi berbasis hitungan matematis, bukan sekadar 'perasaan'. Kamu belajar untuk menjadi pemimpin yang mengambil keputusan berdasarkan data and fakta yang akurat. Optimasi adalah jiwa dari efisiensi industri modern.\n\nJangan takut dengan angka-angka besar or diskriminan ($D = b^2 - 4ac$). Diskriminan memberi tahu kita apakah solusi itu nyata or imajiner. Dalam pekerjaan, ini berarti apakah targetmu realistis or tidak untuk dicapai. Jadilah profesional yang realistis namun tetap ambisius dengan dukungan perhitungan matematika yang matang. Fungsi kuadrat adalah jembatan antara teori di buku dengan keuntungan nyata di dunia kerja. Mari kita taklukkan setiap tantangan optimasi!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Penyajian Data: Tabel, Diagram, and Histrogram",
+    "lesson": {
+      "title": "Visualisasi Data: Membaca Kondisi Industri",
+      "content": "Dunia industri modern dipenuhi dengan **Data**. Sebagai siswa SMK, kamu harus mampu mengolah data menjadi informasi yang mudah dipahami. Pelajaran **Statistika** dimulai dengan **Penyajian Data**. Kamu belajar cara membuat Tabel Distribusi Frekuensi, Diagram Batang, Diagram Garis, Diagram Lingkaran, hingga Histogram. Penyajian data yang baik akan memudahkan tim manajemen untuk melihat tren penjualan, kualitas produk, or tingkat kecelakaan kerja di perusahaan.\n\nHistogram sangat penting dalam **Quality Control** (Pengendalian Kualitas) untuk melihat apakah hasil produksi masih berada dalam batas toleransi or tidak. Bagi siswa SMK Multimedia or Bisnis, kemampuan membuat infografis data yang menarik adalah skill yang sangat mahal. Kamu belajar untuk 'bercerita dengan data' (Data Storytelling). Data yang mentah tidak berguna jika tidak disajikan dengan cara yang komunikatif. Statistika membantu kita menyederhanakan kenyataan yang kompleks menjadi visual yang bermakna.\n\nMari kita praktikkan membuat diagram dari data hasil praktikmu di sekolah. Gunakan software spreadsheet (Excel/Google Sheets) jika perlu untuk mempercepat proses. Ketelitian dalam memasukkan angka sangat menentukan kebenaran grafik. Jadilah tenaga ahli yang 'Melek Data'. Di era Industri 4.0, mereka yang mampu membaca data adalah mereka yang memegang kendali masa depan. Statistika adalah bahasa universal untuk membuktikan kebenaran and kemajuan sebuah organisasi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Ukuran Pemusatan Data: Mean, Median, Modus",
+    "lesson": {
+      "title": "Mencari Titik Tengah: Mean, Median, and Modus",
+      "content": "Setelah menyajikan data, kita perlu mencari nilai perwakilannya melalui **Ukuran Pemusatan Data**. Ada tiga nilai utama: **Mean** (Rata-rata), **Median** (Nilai tengah), and **Modus** (Nilai yang paling sering muncul). Di industri, Mean digunakan untuk menghitung rata-rata gaji karyawan or rata-rata umur pakai mesin. Modus digunakan untuk menentukan produk mana yang paling banyak diminati pasar (best seller). Median digunakan untuk melihat distribusi data agar tidak terpengaruh oleh nilai ekstrem (outlier).\n\nKamu akan belajar cara menghitung Mean, Median, and Modus baik untuk data tunggal maupun **Data Kelompok**. Perhitungan data kelompok lebih sering digunakan di perusahaan besar yang memiliki ribuan data produksi. Kemampuan ini melatih ketajaman analisismu. Misalnya, jika rata-rata (mean) kualitas produk turun, supervisor harus segera mencari penyebabnya di lini produksi. Statistika adalah alat deteksi dini (early warning system) bagi kesehatan sebuah bisnis or sistem teknik.\n\nLatihlah ketelitianmu dalam menjumlahkan and membagi data. Jangan sampai ada data yang tertinggal. Pemahaman tentang nilai pusat ini juga berguna bagimu dalam mengatur keuangan pribadi or membagi waktu belajar secara adil. Jadilah pribadi yang objektif, yang menilai sesuatu berdasarkan rata-rata performa, bukan sekadar kejadian sesekali. Statistika memberikanmu pandangan yang adil and akurat terhadap realitas di sekitarmu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Ukuran Penyebaran Data: Simpangan and Varians",
+    "lesson": {
+      "title": "Variasi and Standar: Menjaga Konsistensi Produk",
+      "content": "Dalam industri, konsistensi adalah segalanya. Kamu ingin setiap baut yang kamu buat ukurannya persis sama. Pelajaran **Ukuran Penyebaran Data** (Simpangan Rata-rata, Ragam/Varians, and Simpangan Baku) membantu kita mengukur sejauh mana data 'menyimpang' dari rata-ratanya. Semakin kecil nilai **Simpangan Baku (Standard Deviation)**, semakin konsisten and berkualitas hasil kerjamu. Sebaliknya, simpangan yang besar menunjukkan adanya masalah pada mesin or proses kerja.\n\nKonsep 'Six Sigma' dalam industri manufaktur dunia sangat bergantung pada perhitungan simpangan baku ini. Bagi siswa SMK Teknik or Kesehatan, memahami variasi data sangat penting untuk menjamin keamanan produk or keakuratan dosis obat. Kamu belajar bahwa kesempurnaan adalah tentang meminimalkan penyimpangan. Matematika memberikanmu alat untuk mengontrol kualitas secara ilmiah. Jangan puas hanya dengan hasil yang 'kira-kira sama'; kejarlah hasil yang memiliki standar deviasi sekecil mungkin.\n\nMari kita hitung varians and simpangan baku dari data hasil pengukuran praktikmu. Gunakan rumus dengan teliti: kuadratkan selisih data dengan mean, jumlahkan, lalu bagi dengan jumlah data. Proses ini melatih kesabaran and ketajaman logikamu. Tenaga kerja yang paham tentang standar deviasi akan sangat dihargai di bagian penjaminan mutu (Quality Assurance). Jadilah ahli yang mampu menjamin konsistensi and keunggulan produk Indonesia di pasar internasional."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Kaidah Pencacahan: Aturan Pengisian Tempat",
+    "lesson": {
+      "title": "Kombinasi Pilihan: Aturan Pengisian Tempat",
+      "content": "Dunia industri penuh dengan pilihan and kombinasi. Berapa banyak variasi warna motor yang bisa dibuat jika ada 3 pilihan model and 4 pilihan warna? Pelajaran **Kaidah Pencacahan** membantu kita menghitung jumlah kemungkinan tanpa harus mencatat satu per satu. Teknik pertama adalah **Aturan Pengisian Tempat (Slotting)**. Kita tinggal mengalikan jumlah pilihan pada setiap tahap. Aturan ini sangat berguna dalam merancang kode inventaris, password sistem keamanan, or menu paket di restoran.\n\nBagi siswa SMK Multimedia or IT, kaidah pencacahan adalah dasar dari logika pemrograman and database. Kamu belajar untuk berpikir sistematis tentang semua kemungkinan yang bisa terjadi. Di bidang logistik, aturan ini membantu menghitung kapasitas pengiriman dengan berbagai rute. Matematika melatihmu untuk menjadi perencana (planner) yang hebat. Kamu belajar untuk melihat seluruh opsi yang tersedia sebelum mengambil keputusan terbaik. Kepastian jumlah kemungkinan memberikanmu kontrol penuh atas sistem yang kamu bangun.\n\nLatihlah dirimu dengan soal-soal variasi menu, plat nomor kendaraan, or formasi tim kerja. Gunakan diagram pohon jika perlu untuk memvisualisasikan pilihannya. Kemampuan berpikir kombinatorial ini akan sangat membantumu dalam inovasi produk—bagaimana menciptakan variasi baru dari elemen-elemen yang sudah ada. Jadilah kreator yang cerdas, yang mampu menghitung and mengelola setiap kemungkinan demi kemajuan industri and kepuasan pelanggan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Permutasi and Urutan dalam Kerja",
+    "lesson": {
+      "title": "Permutasi: Pentingnya Urutan dalam Proses",
+      "content": "Dalam beberapa hal, **Urutan** sangatlah penting. Contohnya: urutan langkah perakitan mesin or urutan pemenang lomba. Jika urutan diperhatikan, kita menggunakan **Permutasi**. Rumusnya ${}_n P_r = n! / (n-r)!$. Permutasi sangat berguna dalam mengatur shift kerja karyawan agar tidak terjadi kekosongan, or dalam menentukan urutan pengiriman barang agar efisien. Kesalahan dalam urutan bisa berakibat pada kegagalan seluruh proses (bottle neck).\n\nBagi siswa SMK Perhotelan or Perbankan, permutasi membantu dalam mengatur antrean or layanan pelanggan. Kamu belajar bahwa urutan pelayanan memengaruhi kepuasan konsumen. Matematika melatihmu untuk disiplin pada prosedur. Kamu juga akan belajar tentang **Permutasi Siklis** (mengatur orang duduk melingkar) yang sering dipakai dalam penataan meja perjamuan resmi. Permutasi mengajarkan kita bahwa posisi and urutan memiliki makna and dampak yang berbeda pada hasil akhir.\n\nLatihlah penggunaan faktorial (!) dengan benar. Ingat, $0! = 1$. Jangan biarkan angka besar menakutimu; gunakan logika penyederhanaan pecahan faktorial. Kemampuan menguasai permutasi menunjukkan bahwa kamu adalah orang yang teratur and detail dalam merancang alur kerja. Jadilah profesional yang sistematis, yang mampu mengatur setiap urutan tugas dengan sempurna demi efisiensi and produktivitas kerja tim yang maksimal."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Kombinasi and Pembentukan Tim Kerja",
+    "lesson": {
+      "title": "Kombinasi: Memilih Tanpa Membeda-bedakan",
+      "content": "Jika dalam permutasi urutan penting, maka dalam **Kombinasi** urutan tidak diperhatikan. Contohnya: memilih 3 orang dari 10 untuk membentuk tim futsal, or mengambil 2 baut dari sekotak baut secara acak. Rumusnya ${}_n C_r = n! / (r!(n-r)!)$. Kombinasi sangat sering digunakan dalam **Quality Control** (Sampling) untuk mengambil sampel produk secara acak untuk diuji kualitasnya, or dalam pembentukan tim proyek di perusahaan.\n\nBagi siswa SMK Kesehatan or Farmasi, kombinasi digunakan untuk menghitung kemungkinan perpaduan zat kimia dalam penelitian obat. Kamu belajar untuk melihat hubungan antar elemen tanpa terikat pada urutan. Kombinasi melatih objektivitasmu. Matematika mengajarkan kita bahwa dari sekumpulan besar pilihan, ada banyak cara untuk membentuk kelompok-kelompok kecil yang efektif. Pemahaman ini sangat berguna dalam manajemen sumber daya manusia (HRM) and riset pasar.\n\nMari kita bandingkan kapan menggunakan permutasi and kapan menggunakan kombinasi. Ketajaman dalam membedakan kedua konsep ini adalah ciri dari pemikir matematis yang matang. Latihlah soal-soal pemilihan delegasi, pengambilan kartu, or pencampuran warna. Dengan menguasai kombinasi, kamu memiliki kemampuan untuk menganalisis berbagai kemungkinan pengelompokan yang paling optimal bagi kepentingan pekerjaanmu. Jadilah pengambil keputusan yang cerdas and adil melalui analisis kombinasi yang akurat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Peluang Kejadian and Analisis Risiko",
+    "lesson": {
+      "title": "Peluang: Mengukur Risiko and Kepastian",
+      "content": "Dunia industri penuh dengan ketidakpastian. Akankah mesin ini rusak hari ini? Berapa besar kemungkinan produk ini laku? Pelajaran **Peluang (Probability)** membantu kita mengukur ketidakpastian tersebut secara angka antara 0 (mustahil) hingga 1 (pasti). Rumusnya $P(A) = n(A) / n(S)$. Memahami peluang sangat krusial untuk **Analisis Risiko** and pengambilan keputusan di bawah tekanan. Perusahaan asuransi and investasi sangat bergantung pada teori peluang.\n\nBagi siswa SMK Teknik, peluang digunakan dalam konsep 'Reliability' (Keandalan Mesin) untuk menghitung kemungkinan mesin beroperasi tanpa gangguan dalam jangka waktu tertentu. Bagi siswa Bisnis, peluang membantu dalam riset pasar and prediksi penjualan. Kamu belajar untuk tidak berjudi dengan nasib, tapi menghitung risiko secara ilmiah. Matematika memberikanmu 'perisai' terhadap ketidakpastian dengan memberikan gambaran statistik tentang apa yang mungkin terjadi. Peluang adalah bahasa untuk mengelola masa depan.\n\nLatihlah dirimu menghitung peluang dari pelemparan dadu, koin, hingga kasus nyata seperti peluang cacat produksi. Jangan lupa tentang **Peluang Komplemen** (kejadian yang tidak terjadi). Kemampuan ini akan membuatmu menjadi pribadi yang waspada and selalu memiliki rencana cadangan (Plan B). Jadilah tenaga ahli yang mampu memprediksi risiko and memberikan solusi mitigasi yang tepat melalui kekuatan teori peluang yang logis and teruji."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Peluang Kejadian Majemuk (Saling Lepas and Bebas)",
+    "lesson": {
+      "title": "Kejadian Majemuk: Dinamika Peluang Industri",
+      "content": "Seringkali dua kejadian terjadi bersamaan or berurutan. Kita belajar tentang **Peluang Kejadian Majemuk**. Ada kejadian **Saling Lepas** (tidak bisa terjadi bersamaan, rumusnya dijumlah) and kejadian **Saling Bebas** (kejadian satu tidak memengaruhi yang lain, rumusnya dikali). Pemahaman ini sangat penting dalam sistem keamanan berlapis (redundancy system). Misalnya, jika satu kabel putus, berapa peluang kabel cadangan juga putus? Sistem yang aman harus memiliki peluang kegagalan total yang mendekati nol.\n\nBagi siswa SMK IT or Otomasi, konsep ini digunakan dalam merancang sistem yang tahan banting (fault-tolerant). Kamu belajar bahwa untuk meningkatkan keamanan, kita harus membuat kejadian-kejadian tersebut saling bebas and memiliki peluang kecil untuk gagal bersamaan. Matematika mengajarkan kita tentang strategi perlindungan. Selain itu, peluang majemuk juga digunakan dalam analisis pasar yang kompleks di mana banyak variabel saling berinteraksi. Matematika adalah alat navigasi di tengah badai data yang rumit.\n\nMari kita latih soal-soal peluang 'dan' (perkalian) and 'atau' (penjumlahan). Perhatikan kata kuncinya. Ketelitian dalam membedakan jenis kejadian akan menentukan keakuratan analisismu. Di dunia industri, kesalahan dalam menghitung peluang risiko bisa berakibat pada kerugian besar. Jadilah ahli yang mampu memberikan jaminan keamanan and efisiensi bagi perusahaan melalui perhitungan peluang majemuk yang tajam, detail, and komprehensif."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Matriks" },
+    "subtopic": "Pengantar Matriks and Operasi Penjumlahan",
+    "lesson": {
+      "title": "Matriks: Mengelola Data dalam Tabel Matematika",
+      "content": "Matematika industri seringkali melibatkan data yang banyak and tersusun rapi. Inilah gunanya **Matriks**. Matriks adalah susunan bilangan dalam bentuk baris and kolom. Matriks memudahkan kita dalam mengolah data inventaris stok barang di gudang or daftar harga di berbagai cabang toko secara sekaligus. Kita akan belajar tentang **Ordo** (ukuran matriks) and cara melakukan **Penjumlahan/Pengurangan Matriks**. Syaratnya: ordonya harus sama.\n\nBagi siswa SMK Akuntansi or Logistik, matriks adalah cara paling efisien untuk melakukan update data massal. Misalnya, jika semua harga barang naik 5%, kamu bisa merepresentasikannya dalam perkalian skalar matriks. Di bidang IT, matriks adalah dasar dari pengolahan citra digital (pixel) and pengembangan kecerdasan artifisial (AI). Kamu belajar untuk melihat data sebagai satu kesatuan sistem yang terorganisir. Matriks mengajarkan kita tentang keteraturan and struktur data yang efisien.\n\nMari kita buat matriks dari data stok barang di bengkel sekolahmu. Baris mewakili jenis barang, kolom mewakili jumlah di rak yang berbeda. Latihlah operasi penjumlahan matriks untuk menghitung total stok gabungan. Kemampuan ini akan sangat mempermudah pekerjaan administratifmu di masa depan. Jadilah profesional yang rapi and sistematis dalam mengelola data besar melalui kekuatan matriks yang terstruktur and mudah dimanipulasi secara logis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Matriks" },
+    "subtopic": "Perkalian Matriks and Transformasi Data",
+    "lesson": {
+      "title": "Perkalian Matriks: Menghitung Totalitas Sistem",
+      "content": "Operasi matriks yang paling menantang sekaligus paling berguna adalah **Perkalian Matriks**. Syaratnya: jumlah kolom matriks pertama harus sama dengan jumlah baris matriks kedua. Perkalian ini bukan sekadar mengalikan angka yang seletak, tapi proses 'baris kali kolom'. Di industri, perkalian matriks digunakan untuk menghitung total biaya pengiriman dari berbagai sumber ke berbagai tujuan secara serentak, or dalam transformasi koordinat pada desain CAD/CAM.\n\nBagi siswa SMK Teknik Mesin or Bangunan, perkalian matriks membantu dalam analisis struktur (Finite Element Method) yang melibatkan ribuan persamaan. Bagi siswa Multimedia, perkalian matriks adalah 'otak' di balik efek filter foto and rotasi objek 3D. Kamu belajar bahwa setiap elemen dalam sistem saling memengaruhi hasil akhir. Matematika matriks melatih ketelitian and kesabaranmu dalam melakukan langkah-langkah yang berulang (iterasi). Presisi dalam setiap perkalian elemen menentukan kebenaran hasil akhir sistem.\n\nLatihlah metode 'Baris kali Kolom' hingga menjadi refleks. Jangan terburu-buru. Gunakan coretan yang rapi untuk menghindari kesalahan letak. Kemampuan menguasai perkalian matriks menunjukkan bahwa kamu siap bekerja dengan teknologi tinggi and pengolahan data besar (Big Data). Jadilah tenaga ahli yang mampu melakukan transformasi and analisis sistem yang kompleks melalui kekuatan perkalian matriks yang dinamis and bertenaga ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Matriks" },
+    "subtopic": "Determinan and Invers Matriks 2x2",
+    "lesson": {
+      "title": "Determinan and Invers: Mencari Solusi Sistem",
+      "content": "Pelajaran matriks terakhir adalah **Determinan and Invers**. Determinan memberikan informasi apakah sebuah matriks memiliki kebalikan (Invers) or tidak. Invers matriks ($A^{-1}$) adalah 'pintu' untuk menyelesaikan sistem persamaan linear yang rumit dengan cara yang lebih elegan dibandingkan eliminasi biasa. Rumus invers matriks 2x2: $1/D \\cdot \\text{Adj}(A)$. Di dunia koding and kriptografi, invers matriks digunakan untuk proses enkripsi and dekripsi (pengamanan data).\n\nBagi siswa SMK IT or Perbankan, memahami invers matriks sangat penting untuk keamanan data and analisis sistem ekonomi yang stabil. Kamu belajar bahwa tidak semua masalah memiliki solusi unik; jika determinannya nol, sistem tersebut 'singular' or tidak bisa dibalik. Matematika mengajarkan kita untuk mengenali batasan and karakteristik dari sebuah sistem. Dengan invers matriks, kamu bisa 'memutar balik' sebuah proses untuk mencari penyebab awal dari sebuah hasil. Ini adalah dasar dari **Reverse Engineering**.\n\nMari kita hitung determinan $ad - bc$ and susun adjoin matriksnya. Perhatikan perubahan posisi and tanda (+) (-). Ketelitian adalah kunci utama. Kemampuan menyelesaikan soal invers matriks menunjukkan tingkat kecerdasan logikamu yang tinggi and kesiapanmu untuk bekerja di bidang yang membutuhkan pengamanan and analisis data tingkat lanjut. Jadilah ahli yang mampu memecahkan kode-kode rumit industri melalui kekuatan determinan and invers matriks yang pasti and teruji."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Bunga and Anuitas" },
+    "subtopic": "Bunga Tunggal and Bunga Majemuk",
+    "lesson": {
+      "title": "Matematika Keuangan: Mengelola Modal and Investasi",
+      "content": "Pelajaran ini sangat penting bagi masa depan finansialmu: **Bunga Tunggal and Bunga Majemuk**. Bunga Tunggal dihitung hanya dari modal awal, sedangkan Bunga Majemuk (Bunga Berbunga) dihitung dari modal yang terus bertambah setiap periodenya. Di industri, bunga majemuk adalah dasar dari perhitungan investasi, pinjaman bank, and pertumbuhan ekonomi. Memahami ini akan menghindarkanmu dari jeratan utang and membantumu merencanakan masa depan yang sejahtera.\n\nBagi siswa SMK Akuntansi and Bisnis, ini adalah 'ilmu wajib'. Kamu belajar cara menghitung nilai masa depan (Future Value) dari sebuah modal. Kamu akan menyadari betapa kuatnya waktu dalam meningkatkan nilai uang (Time Value of Money). Matematika mengajarkan kita untuk bersabar and disiplin dalam berinvestasi. Bagi wirausahawan muda SMK, kemampuan menghitung bunga akan membantumu dalam menentukan kelayakan sebuah bisnis (feasibility study). Jangan biarkan uangmu 'diam', buatlah ia bekerja untukmu melalui pemahaman matematika keuangan yang cerdas.\n\nMari kita bandingkan hasil bunga tunggal vs bunga majemuk dalam jangka waktu 5-10 tahun. Perbedaannya akan mengejutkanmu! Gunakan rumus $M_n = M_0(1+i)^n$ dengan teliti. Kemampuan ini bukan hanya untuk ujian, tapi untuk seumur hidupmu. Jadilah pribadi yang cerdas finansial, yang mampu mengelola modal and investasi secara bijaksana demi kemandirian ekonomi keluarga and bangsa. Matematika keuangan adalah kunci menuju kebebasan finansial di masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Bunga and Anuitas" },
+    "subtopic": "Anuitas and Cicilan Pinjaman",
+    "lesson": {
+      "title": "Anuitas: Strategi Cicilan yang Adil",
+      "content": "Pernahkah kamu bertanya bagaimana bank menghitung cicilan motor or rumah yang jumlahnya tetap setiap bulan? Itulah **Anuitas**. Anuitas adalah rangkaian pembayaran or penerimaan yang sama besar dalam jangka waktu tertentu. Anuitas terdiri dari **Angsuran Pokok** and **Bunga**. Seiring waktu, porsi angsuran pokok akan membesar sementara bunga akan mengecil. Memahami anuitas membuatmu menjadi konsumen yang cerdas and tidak mudah tertipu oleh skema pinjaman yang merugikan.\n\nKita akan belajar menggunakan rumus anuitas untuk menentukan besar cicilan bulanan. Pengetahuan ini sangat berguna bagi siswa SMK yang ingin membuka usaha sendiri and membutuhkan pinjaman modal dari bank. Kamu belajar tentang tanggung jawab keuangan and perencanaan jangka panjang. Matematika memberikan transparansi terhadap setiap rupiah yang kamu bayarkan. Jangan menandatangani kontrak pinjaman sebelum kamu menghitung sendiri besar anuitasnya. Jadilah pekerja or pengusaha yang melek finansial and memiliki kontrol penuh atas arus kas (cash flow) pribadimu.\n\nLatihlah perhitungan anuitas dengan berbagai tingkat suku bunga and jangka waktu. Gunakan tabel anuitas or fungsi finansial di spreadsheet untuk memverifikasi hitunganmu. Kemampuan ini menunjukkan bahwa kamu adalah orang yang bertanggung jawab and memiliki visi masa depan yang tertata. Dengan menguasai anuitas, kamu siap membangun kerajaan bisnismu sendiri dengan pondasi keuangan yang kokoh, adil, and berkelanjutan. Matematika adalah sahabat terbaik bagi suksesnya finansialmu!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Matematika",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Matematika sebagai Bahasa Teknologi and Industri",
+    "lesson": {
+      "title": "Matematika di Jantung Industri: Pesan Penutup",
+      "content": "Selamat! Kamu telah menyelesaikan seluruh perjalanan kurikulum Matematika kelas 10 SMK. Kita telah belajar mulai dari eksponen yang kuat, trigonometri yang presisi, statistika yang jujur, hingga matematika keuangan yang cerdas. Pelajaran terpenting yang harus kamu bawa adalah: **Matematika adalah bahasa teknologi and industri**. Tanpa matematika, tidak ada koding, tidak ada mesin yang akurat, tidak ada gedung yang kokoh, and tidak ada bisnis yang berkelanjutan.\n\nTeruslah asah kemampuan logikamu. Jangan melihat matematika sebagai kumpulan rumus yang menakutkan, tapi sebagai 'pisau bedah' untuk memecahkan setiap masalah di tempat kerja. Dunia industri membutuhkan orang-orang yang mampu berpikir kritis, analitis, and presisi—semua itu dibentuk melalui latihan matematika. Kamu adalah generasi emas SMK yang tidak hanya terampil tangannya, tapi juga cerdas otaknya. Matematika memberikanmu rasa percaya diri untuk menghadapi tantangan Industri 4.0 yang semakin kompleks.\n\nKami bangga dengan perjuanganmu menaklukkan setiap bab. Teruslah belajar and jangan berhenti bertanya 'Mengapa?'. Gunakan ilmu matematika yang kamu dapatkan untuk menciptakan inovasi yang bermanfaat bagi bangsa Indonesia. Sampai jumpa di kelas 11 dengan materi yang lebih menantang seperti Matriks Lanjut, Transformasi Geometri, and Kalkulus Dasar. Tetap semangat, tetap teliti, and jadilah juara di bidangmu dengan kekuatan matematika! Sukses untukmu, sang arsitek masa depan Indonesia yang tangguh! Merdeka!"
+    }
+  }
+]

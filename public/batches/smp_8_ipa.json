@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Sel dan Mikroskop" },
+    "subtopic": "Struktur Sel",
+    "lesson": { 
+      "title": "Mengenal Sel sebagai Unit Terkecil",
+      "content": "Sel adalah unit fungsional dan struktural terkecil dari makhluk hidup. Contoh: Sel gabus yang diamati Robert Hooke. Penjelasan: Meskipun sangat kecil, sel mampu melakukan semua proses kehidupan seperti bernapas dan berkembang biak."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Sel dan Mikroskop" },
+    "subtopic": "Struktur Sel",
+    "lesson": { 
+      "title": "Perbedaan Sel Hewan dan Tumbuhan",
+      "content": "Sel tumbuhan memiliki dinding sel dan kloroplas, sedangkan sel hewan tidak. Contoh: Bentuk sel tumbuhan yang kaku karena dinding sel. Penjelasan: Adanya kloroplas memungkinkan tumbuhan melakukan fotosintesis sendiri."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Sel dan Mikroskop" },
+    "subtopic": "Struktur Sel",
+    "lesson": { 
+      "title": "Organel Sel dan Fungsinya",
+      "content": "Inti sel (nukleus) sebagai pusat kendali, mitokondria sebagai penghasil energi. Contoh: Vakuola besar pada sel tumbuhan untuk menyimpan air. Penjelasan: Setiap organel bekerja sama agar sel tetap hidup dan berfungsi dengan baik."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Tubuh Manusia" },
+    "subtopic": "Sistem Pencernaan Lanjut",
+    "lesson": { 
+      "title": "Uji Bahan Makanan",
+      "content": "Menguji kandungan amilum dengan lugol, protein dengan biuret, dan glukosa dengan benedict. Contoh: Nasi yang ditetesi lugol berubah warna menjadi biru tua. Penjelasan: Uji kimia ini penting untuk mengetahui nilai gizi dari makanan yang kita konsumsi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Tubuh Manusia" },
+    "subtopic": "Sistem Pencernaan Lanjut",
+    "lesson": { 
+      "title": "Enzim Pencernaan Manusia",
+      "content": "Enzim mempercepat proses pemecahan zat makanan secara kimiawi. Contoh: Enzim ptialin di mulut mengubah amilum menjadi maltosa. Penjelasan: Tanpa enzim, proses pencernaan akan memakan waktu yang sangat lama."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Tubuh Manusia" },
+    "subtopic": "Sistem Pencernaan Lanjut",
+    "lesson": { 
+      "title": "Penyakit pada Sistem Pencernaan",
+      "content": "Gastritis (maag) karena asam lambung berlebih, konstipasi karena kurang serat. Contoh: Diare akibat infeksi bakteri pada usus besar. Penjelasan: Menjaga pola makan dan kebersihan makanan adalah kunci kesehatan pencernaan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Usaha dan Energi" },
+    "subtopic": "Konsep Usaha (W)",
+    "lesson": { 
+      "title": "Definisi Usaha dalam Fisika",
+      "content": "Usaha terjadi jika gaya menyebabkan benda berpindah tempat (W = F x s). Contoh: Mendorong mobil hingga bergerak sejauh 5 meter. Penjelasan: Jika kita mendorong tembok sekuat tenaga tapi tembok tidak bergerak, maka usaha kita nol."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Usaha dan Energi" },
+    "subtopic": "Konsep Usaha (W)",
+    "lesson": { 
+      "title": "Daya: Kecepatan Melakukan Usaha",
+      "content": "Daya adalah besarnya usaha yang dilakukan setiap satu satuan waktu (P = W/t). Contoh: Lampu 10 watt menggunakan energi 10 joule per detik. Penjelasan: Semakin cepat suatu usaha diselesaikan, maka daya yang dihasilkan semakin besar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Usaha dan Energi" },
+    "subtopic": "Konsep Usaha (W)",
+    "lesson": { 
+      "title": "Pesawat Sederhana: Jenis Pengungkit",
+      "content": "Pengelompokan tuas berdasarkan letak titik tumpu, beban, dan kuasa. Contoh: Gunting (tuas jenis 1), Pembuka botol (tuas jenis 2), Pinset (tuas jenis 3). Penjelasan: Setiap jenis pengungkit memberikan keuntungan mekanis yang berbeda."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Getaran dan Gelombang" },
+    "subtopic": "Sifat Bunyi",
+    "lesson": { 
+      "title": "Getaran dan Frekuensi",
+      "content": "Getaran adalah gerak bolak-balik melalui titik setimbang. Frekuensi adalah jumlah getaran per detik (Hertz). Contoh: Getaran pada senar gitar yang dipetik. Penjelasan: Tinggi rendahnya nada dipengaruhi oleh besarnya frekuensi getaran."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Getaran dan Gelombang" },
+    "subtopic": "Sifat Bunyi",
+    "lesson": { 
+      "title": "Gelombang Transversal dan Longitudinal",
+      "content": "Transversal memiliki bukit dan lembah, longitudinal memiliki rapatan dan renggangan. Contoh: Gelombang tali (transversal) dan gelombang bunyi (longitudinal). Penjelasan: Bunyi memerlukan medium udara, air, atau zat padat untuk merambat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Getaran dan Gelombang" },
+    "subtopic": "Sifat Bunyi",
+    "lesson": { 
+      "title": "Resonansi dan Pemantulan Bunyi",
+      "content": "Ikut bergetarnya suatu benda karena pengaruh getaran benda lain yang frekuensinya sama. Contoh: Gema dan gaung di dalam ruangan tertutup. Penjelasan: Pemantulan bunyi digunakan untuk mengukur kedalaman laut (Sonar)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Cahaya dan Optik" },
+    "subtopic": "Cermin dan Lensa",
+    "lesson": { 
+      "title": "Hukum Pemantulan Cahaya",
+      "content": "Sudut datang sama dengan sudut pantul pada permukaan yang rata. Contoh: Melihat bayangan di cermin datar. Penjelasan: Bayangan pada cermin datar bersifat maya, tegak, dan sama besar dengan aslinya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Cahaya dan Optik" },
+    "subtopic": "Cermin dan Lensa",
+    "lesson": { 
+      "title": "Sifat Bayangan Cermin Cekung",
+      "content": "Cermin cekung mengumpulkan cahaya (konvergen). Sifat bayangan tergantung letak benda. Contoh: Bagian dalam sendok yang mengkilap. Penjelasan: Cermin cekung digunakan sebagai reflektor pada lampu senter dan lampu mobil."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Cahaya dan Optik" },
+    "subtopic": "Cermin dan Lensa",
+    "lesson": { 
+      "title": "Pembiasan Cahaya dan Lensa Cembung",
+      "content": "Cahaya berbelok saat melewati dua medium yang kerapatannya berbeda. Contoh: Pensil yang terlihat patah di dalam gelas berisi air. Penjelasan: Lensa cembung digunakan pada kacamata baca (hipermetropi) dan lup."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Struktur Tumbuhan" },
+    "subtopic": "Jaringan Tumbuhan",
+    "lesson": { 
+      "title": "Jaringan Meristem dan Epidermis",
+      "content": "Meristem adalah jaringan muda yang aktif membelah, epidermis sebagai pelindung luar. Contoh: Pertumbuhan tinggi pada ujung batang tanaman. Penjelasan: Jaringan meristem memungkinkan tumbuhan terus tumbuh sepanjang hidupnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Struktur Tumbuhan" },
+    "subtopic": "Jaringan Tumbuhan",
+    "lesson": { 
+      "title": "Xilem dan Floem: Pembuluh Angkut",
+      "content": "Xilem mengangkut air dari akar ke daun, floem mengangkut hasil fotosintesis ke seluruh tubuh. Contoh: Getah pohon yang manis mengandung hasil fotosintesis. Penjelasan: Berkas pengangkut ini tersusun rapi pada tumbuhan dikotil."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Struktur Tumbuhan" },
+    "subtopic": "Jaringan Tumbuhan",
+    "lesson": { 
+      "title": "Struktur Daun: Stomata",
+      "content": "Stomata adalah celah pada daun untuk pertukaran gas karbondioksida dan oksigen. Contoh: Daun yang layu saat siang hari untuk mengurangi penguapan. Penjelasan: Membuka dan menutupnya stomata diatur oleh sel penjaga."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Unsur dan Senyawa" },
+    "subtopic": "Zat Aditif dan Adiktif",
+    "lesson": { 
+      "title": "Zat Aditif dalam Makanan",
+      "content": "Bahan yang ditambahkan ke makanan untuk memperbaiki rasa, warna, atau keawetan. Contoh: Pewarna alami dari kunyit dan pewarna buatan. Penjelasan: Penggunaan zat aditif berlebihan dapat mengganggu kesehatan jangka panjang."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Unsur dan Senyawa" },
+    "subtopic": "Zat Aditif dan Adiktif",
+    "lesson": { 
+      "title": "Zat Adiktif: Narkotika dan Psikotropika",
+      "content": "Zat yang menyebabkan ketergantungan (kecanduan) jika dikonsumsi. Contoh: Nikotin dalam rokok dan kafein dalam kopi. Penjelasan: Penyalahgunaan narkotika merusak sistem saraf pusat dan masa depan generasi muda."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Unsur dan Senyawa" },
+    "subtopic": "Zat Aditif dan Adiktif",
+    "lesson": { 
+      "title": "Bahaya Merokok dan Alkohol",
+      "content": "Rokok mengandung tar dan karbon monoksida yang merusak paru-paru dan jantung. Contoh: Kampanye anti rokok di kemasan produk. Penjelasan: Menghindari zat adiktif adalah bentuk cinta kita pada kesehatan tubuh sendiri."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Peredaran Darah" },
+    "subtopic": "Mekanisme Sirkulasi",
+    "lesson": { 
+      "title": "Peredaran Darah Besar dan Kecil",
+      "content": "Darah besar mengalir ke seluruh tubuh, darah kecil mengalir ke paru-paru untuk mengambil oksigen. Contoh: Urutan aliran darah dari bilik kiri ke aorta. Penjelasan: Sistem peredaran darah manusia adalah sistem peredaran darah tertutup."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Peredaran Darah" },
+    "subtopic": "Mekanisme Sirkulasi",
+    "lesson": { 
+      "title": "Golongan Darah dan Donor Darah",
+      "content": "Sistem ABO menentukan kecocokan darah saat proses transfusi darah. Contoh: Golongan darah O sebagai donor universal. Penjelasan: Kesalahan transfusi darah dapat menyebabkan penggumpalan darah yang berbahaya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Peredaran Darah" },
+    "subtopic": "Mekanisme Sirkulasi",
+    "lesson": { 
+      "title": "Kelainan Sistem Peredaran Darah",
+      "content": "Anemia (kurang darah), Hipertensi (darah tinggi), dan Leukimia (kanker darah). Contoh: Merasa pusing dan lemas saat anemia. Penjelasan: Gaya hidup sehat dan asupan zat besi membantu mencegah penyakit anemia."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Tekanan Zat" },
+    "subtopic": "Tekanan Hidrostatis",
+    "lesson": { 
+      "title": "Hukum Pascal pada Pompa Hidrolik",
+      "content": "Tekanan yang diberikan pada zat cair dalam ruang tertutup diteruskan ke segala arah dengan sama besar. Contoh: Dongkrak mobil yang bisa mengangkat beban berat dengan tenaga kecil. Penjelasan: P = F/A (Tekanan adalah gaya per satuan luas)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Tekanan Zat" },
+    "subtopic": "Tekanan Hidrostatis",
+    "lesson": { 
+      "title": "Hukum Archimedes: Mengapung",
+      "content": "Benda yang dicelupkan ke air akan menerima gaya angkat ke atas sebesar berat air yang dipindahkan. Contoh: Kapal laut yang terbuat dari besi bisa tetap mengapung. Penjelasan: Gaya angkat memungkinkan benda berat terasa lebih ringan di dalam air."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Tekanan Zat" },
+    "subtopic": "Tekanan Hidrostatis",
+    "lesson": { 
+      "title": "Tekanan Udara di Ketinggian",
+      "content": "Semakin tinggi suatu tempat dari permukaan laut, maka tekanan udaranya semakin rendah. Contoh: Telinga terasa berdengung saat berada di atas gunung. Penjelasan: Alat untuk mengukur tekanan udara luar disebut Barometer."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Indera Penglihatan" },
+    "subtopic": "Anatomi Mata",
+    "lesson": { 
+      "title": "Cara Mata Melihat Benda",
+      "content": "Cahaya masuk melalui pupil, dibiaskan lensa, dan ditangkap retina sebagai bayangan terbalik. Contoh: Pupil yang mengecil saat melihat cahaya yang sangat terang. Penjelasan: Saraf optik meneruskan informasi bayangan dari retina ke otak untuk diterjemahkan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Indera Penglihatan" },
+    "subtopic": "Anatomi Mata",
+    "lesson": { 
+      "title": "Cacat Mata Miopi dan Hipermetropi",
+      "content": "Miopi (rabun jauh) karena bayangan jatuh di depan retina, dibantu lensa cekung. Contoh: Kesulitan membaca tulisan di papan tulis dari jarak jauh. Penjelasan: Cacat mata terjadi karena perubahan kelengkungan bola mata atau daya akomodasi lensa."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "IPA",
+    "topic": { "name": "Indera Penglihatan" },
+    "subtopic": "Anatomi Mata",
+    "lesson": { 
+      "title": "Mengenal Alat Optik Mikroskop",
+      "content": "Alat untuk melihat benda mikroskopis menggunakan perpaduan dua lensa cembung. Contoh: Mengamati bakteri atau sel bawang merah. Penjelasan: Perbesaran total mikroskop adalah perkalian perbesaran lensa okuler dan lensa objektif."
+    }
+  }
+]

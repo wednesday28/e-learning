@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Hakikat Ilmu Sains" },
+    "subtopic": "Besaran dan Satuan",
+    "lesson": { 
+      "title": "Besaran Pokok dalam SI",
+      "content": "Besaran pokok adalah besaran yang satuannya telah ditetapkan terlebih dahulu. Contoh: Panjang (meter), Massa (kilogram), Waktu (sekon). Penjelasan: Sistem Internasional (SI) digunakan agar hasil pengukuran seragam di seluruh dunia."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Hakikat Ilmu Sains" },
+    "subtopic": "Besaran dan Satuan",
+    "lesson": { 
+      "title": "Besaran Turunan dan Satuannya",
+      "content": "Besaran yang diturunkan dari satu atau lebih besaran pokok. Contoh: Luas (meter persegi), Kecepatan (m/s), Volume (meter kubik). Penjelasan: Menghitung luas persegi panjang dilakukan dengan mengalikan besaran panjang dan lebar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Hakikat Ilmu Sains" },
+    "subtopic": "Besaran dan Satuan",
+    "lesson": { 
+      "title": "Alat Ukur dan Ketelitian",
+      "content": "Menggunakan jangka sorong dan mikrometer sekrup untuk mengukur benda yang sangat kecil/tipis. Contoh: Mengukur diameter kelereng dengan jangka sorong. Penjelasan: Setiap alat ukur memiliki tingkat ketelitian atau skala terkecil yang berbeda."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Klasifikasi Makhluk Hidup" },
+    "subtopic": "Kunci Determinasi",
+    "lesson": { 
+      "title": "Prinsip Klasifikasi Linnaeus",
+      "content": "Makhluk hidup dikelompokkan berdasarkan persamaan dan perbedaan ciri fisiknya dalam tingkatan takson. Contoh: Urutan takson mulai dari Kingdom hingga Spesies. Penjelasan: Carolus Linnaeus dijuluki sebagai Bapak Taksonomi karena sistem klasifikasinya yang sistematis."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Klasifikasi Makhluk Hidup" },
+    "subtopic": "Kunci Determinasi",
+    "lesson": { 
+      "title": "Menggunakan Kunci Dikotom",
+      "content": "Cara mengidentifikasi makhluk hidup dengan memilih satu dari dua pernyataan yang berlawanan. Contoh: 1a. Bertulang belakang; 1b. Tidak bertulang belakang. Penjelasan: Kunci dikotom memudahkan ilmuwan dalam menentukan nama ilmiah suatu organisme."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Klasifikasi Makhluk Hidup" },
+    "subtopic": "Kunci Determinasi",
+    "lesson": { 
+      "title": "Sistem Lima Kingdom",
+      "content": "Pengelompokan makhluk hidup menjadi Monera, Protista, Fungi, Plantae, dan Animalia. Contoh: Bakteri termasuk dalam Kingdom Monera. Penjelasan: Dasar pengelompokan ini adalah struktur sel (prokariotik/eukariotik) dan cara mendapatkan makanan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Zat dan Perubahannya" },
+    "subtopic": "Sifat Fisika dan Kimia",
+    "lesson": { 
+      "title": "Perbedaan Sifat Fisika dan Kimia",
+      "content": "Sifat fisika bisa diamati tanpa mengubah zat, sifat kimia berkaitan dengan pembentukan zat baru. Contoh: Titik didih air (fisika) dan besi berkarat (kimia). Penjelasan: Sifat kimia seringkali ditandai dengan perubahan warna, suhu, atau timbulnya gas."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Zat dan Perubahannya" },
+    "subtopic": "Sifat Fisika dan Kimia",
+    "lesson": { 
+      "title": "Kerapatan Zat (Massa Jenis)",
+      "content": "Massa jenis adalah perbandingan antara massa dan volume suatu zat (rho = m/v). Contoh: Mengapa kayu mengapung sedangkan batu tenggelam di air. Penjelasan: Benda dengan massa jenis lebih kecil dari air akan mengapung."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Zat dan Perubahannya" },
+    "subtopic": "Sifat Fisika dan Kimia",
+    "lesson": { 
+      "title": "Perubahan Kimia dalam Kehidupan",
+      "content": "Proses pembakaran, pembusukan, dan fotosintesis adalah contoh perubahan kimia yang tidak bisa kembali. Contoh: Kertas yang dibakar menjadi abu. Penjelasan: Dalam perubahan kimia, susunan molekul zat asal berubah menjadi zat yang benar-benar berbeda."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Suhu dan Kalor" },
+    "subtopic": "Termometer dan Skala Suhu",
+    "lesson": { 
+      "title": "Konversi Skala Celcius ke Reamur",
+      "content": "Menggunakan perbandingan angka tetap (Celcius 5, Reamur 4) untuk menghitung suhu di skala yang berbeda. Contoh: 40 derajat Celcius sama dengan 32 derajat Reamur. Penjelasan: Rumus perbandingannya adalah R = 4/5 * C."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Suhu dan Kalor" },
+    "subtopic": "Termometer dan Skala Suhu",
+    "lesson": { 
+      "title": "Skala Fahrenheit dan Kelvin",
+      "content": "Fahrenheit memiliki titik beku 32, sedangkan Kelvin adalah skala suhu mutlak tanpa derajat. Contoh: 0 Kelvin disebut nol mutlak di mana molekul berhenti bergerak. Penjelasan: Konversi Celcius ke Kelvin cukup dengan menambah angka 273."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Suhu dan Kalor" },
+    "subtopic": "Termometer dan Skala Suhu",
+    "lesson": { 
+      "title": "Pemuaian Panjang dan Luas",
+      "content": "Benda akan bertambah ukurannya jika suhunya naik karena partikelnya bergerak lebih cepat. Contoh: Sambungan rel kereta api yang diberi celah agar tidak melengkung. Penjelasan: Koefisien muai panjang setiap logam berbeda-beda."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Kalor dan Perpindahannya" },
+    "subtopic": "Mekanisme Perpindahan Panas",
+    "lesson": { 
+      "title": "Konduksi: Rambatan Tanpa Zat",
+      "content": "Perpindahan panas melalui benda padat tanpa disertai perpindahan partikel zatnya. Contoh: Ujung sendok logam terasa panas saat mengaduk teh panas. Penjelasan: Logam adalah konduktor yang baik, sedangkan kayu adalah isolator."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Kalor dan Perpindahannya" },
+    "subtopic": "Mekanisme Perpindahan Panas",
+    "lesson": { 
+      "title": "Konveksi: Aliran Massa Zat",
+      "content": "Perpindahan panas pada zat cair atau gas yang disertai perpindahan partikelnya. Contoh: Terjadinya angin darat dan angin laut di pantai. Penjelasan: Air yang panas akan naik ke atas karena massa jenisnya mengecil."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Kalor dan Perpindahannya" },
+    "subtopic": "Mekanisme Perpindahan Panas",
+    "lesson": { 
+      "title": "Radiasi: Pancaran Gelombang",
+      "content": "Perpindahan panas tanpa memerlukan zat perantara (medium). Contoh: Panas matahari yang sampai ke bumi melalui ruang hampa. Penjelasan: Benda berwarna hitam lebih cepat menyerap panas radiasi daripada benda berwarna putih."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Gerak dan Gaya" },
+    "subtopic": "Gerak Lurus Beraturan (GLB)",
+    "lesson": { 
+      "title": "Kecepatan dan Kelajuan",
+      "content": "Kecepatan adalah perpindahan dibagi waktu (vektor), kelajuan adalah jarak dibagi waktu (skalar). Contoh: Mobil melaju 60 km/jam ke arah Utara. Penjelasan: Dalam GLB, kecepatan benda selalu tetap setiap detiknya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Gerak dan Gaya" },
+    "subtopic": "Gerak Lurus Beraturan (GLB)",
+    "lesson": { 
+      "title": "Membaca Grafik v-t pada GLB",
+      "content": "Grafik hubungan kecepatan (v) terhadap waktu (t) berupa garis lurus mendatar. Contoh: Menghitung jarak tempuh dari luas di bawah kurva grafik. Penjelasan: Semakin besar kecepatannya, garis pada grafik akan semakin tinggi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Gerak dan Gaya" },
+    "subtopic": "Gerak Lurus Beraturan (GLB)",
+    "lesson": { 
+      "title": "Hukum I Newton: Inersia",
+      "content": "Benda akan mempertahankan keadaannya jika tidak ada gaya luar yang bekerja (F=0). Contoh: Tubuh terdorong ke depan saat bus direm mendadak. Penjelasan: Inersia atau kelembaman adalah kecenderungan benda untuk diam atau tetap bergerak."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Klasifikasi Zat" },
+    "subtopic": "Unsur, Senyawa, Campuran",
+    "lesson": { 
+      "title": "Mengenal Unsur dan Lambangnya",
+      "content": "Unsur adalah zat tunggal yang tidak bisa dibagi lagi secara kimia biasa. Contoh: Besi (Fe), Emas (Au), Oksigen (O). Penjelasan: Tabel periodik merangkum semua unsur yang ada di alam semesta."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Klasifikasi Zat" },
+    "subtopic": "Unsur, Senyawa, Campuran",
+    "lesson": { 
+      "title": "Senyawa: Gabungan Unsur",
+      "content": "Zat tunggal yang terbentuk dari gabungan dua atau lebih unsur melalui reaksi kimia. Contoh: Air (H2O), Garam Dapur (NaCl). Penjelasan: Sifat senyawa berbeda dengan sifat unsur-unsur penyusunnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Klasifikasi Zat" },
+    "subtopic": "Unsur, Senyawa, Campuran",
+    "lesson": { 
+      "title": "Campuran Homogen dan Heterogen",
+      "content": "Homogen memiliki komposisi merata (larutan), heterogen tidak merata dan bisa dibedakan. Contoh: Air sirup (homogen) dan air kopi (heterogen). Penjelasan: Campuran dapat dipisahkan secara fisika tanpa melalui reaksi kimia."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Ekologi dan Lingkungan" },
+    "subtopic": "Interaksi Makhluk Hidup",
+    "lesson": { 
+      "title": "Rantai Makanan dan Jaring-jaring",
+      "content": "Urutan makan dan dimakan yang memindahkan energi dari produsen ke konsumen. Contoh: Padi -> Belalang -> Katak -> Ular. Penjelasan: Hilangnya satu spesies dapat mengganggu kestabilan seluruh ekosistem."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Ekologi dan Lingkungan" },
+    "subtopic": "Interaksi Makhluk Hidup",
+    "lesson": { 
+      "title": "Piramida Makanan: Aliran Energi",
+      "content": "Menunjukkan jumlah massa atau energi yang berkurang pada setiap tingkatan trofik. Contoh: Jumlah tumbuhan harus lebih banyak dari jumlah herbivora. Penjelasan: Hanya sekitar 10% energi yang diteruskan ke tingkat trofik di atasnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Ekologi dan Lingkungan" },
+    "subtopic": "Interaksi Makhluk Hidup",
+    "lesson": { 
+      "title": "Dampak Pencemaran Air",
+      "content": "Masuknya zat berbahaya ke perairan yang menurunkan kualitas air dan merusak biota. Contoh: Limbah deterjen menyebabkan eceng gondok tumbuh subur (eutrofikasi). Penjelasan: Pencemaran air mengancam ketersediaan air bersih bagi manusia."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Bumi dan Tata Surya" },
+    "subtopic": "Lapisan Bumi",
+    "lesson": { 
+      "title": "Struktur Inti dan Kerak Bumi",
+      "content": "Bumi terdiri dari kerak (paling luar), mantel (tebal), dan inti (paling panas). Contoh: Kerak samudera lebih tipis dari kerak benua. Penjelasan: Pergerakan di dalam mantel bumi menyebabkan terjadinya gempa dan gunung berapi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Bumi dan Tata Surya" },
+    "subtopic": "Lapisan Bumi",
+    "lesson": { 
+      "title": "Lempeng Tektonik dan Gempa",
+      "content": "Permukaan bumi terdiri dari lempeng-lempeng besar yang terus bergeser. Contoh: Sesar San Andreas sebagai batas lempeng. Penjelasan: Pertemuan antar lempeng seringkali menjadi titik pusat gempa bumi (episentrum)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Bumi dan Tata Surya" },
+    "subtopic": "Lapisan Bumi",
+    "lesson": { 
+      "title": "Gunung Api di Indonesia",
+      "content": "Indonesia berada di jalur 'Ring of Fire' karena pertemuan tiga lempeng besar dunia. Contoh: Letusan Gunung Tambora yang mengubah iklim dunia. Penjelasan: Abu vulkanik sangat bermanfaat untuk kesuburan tanah pertanian jangka panjang."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Atmosfer" },
+    "subtopic": "Lapisan Udara",
+    "lesson": { 
+      "title": "Troposfer: Tempat Terjadinya Cuaca",
+      "content": "Lapisan terbawah atmosfer tempat manusia tinggal dan terjadinya hujan serta angin. Contoh: Awan terbentuk di ketinggian troposfer. Penjelasan: Semakin tinggi kita naik di troposfer, suhu udara akan semakin dingin."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Atmosfer" },
+    "subtopic": "Lapisan Udara",
+    "lesson": { 
+      "title": "Stratosfer dan Lapisan Ozon",
+      "content": "Lapisan yang melindungi bumi dari sinar ultraviolet matahari yang berbahaya. Contoh: Lubang ozon akibat penggunaan gas CFC. Penjelasan: Ozon menyerap sebagian besar energi radiasi matahari sebelum sampai ke permukaan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPA",
+    "topic": { "name": "Atmosfer" },
+    "subtopic": "Lapisan Udara",
+    "lesson": { 
+      "title": "Mesosfer dan Termosfer",
+      "content": "Mesosfer membakar meteor yang masuk, Termosfer memantulkan gelombang radio. Contoh: Cahaya Aurora yang indah terlihat di lapisan termosfer. Penjelasan: Atmosfer adalah baju pelindung bumi dari ancaman benda luar angkasa."
+    }
+  }
+]

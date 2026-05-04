@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Konektivitas Antar Ruang" },
+    "subtopic": "Ruang dan Lingkungan",
+    "lesson": { 
+      "title": "Pengertian Ruang dan Interaksi Antarruang",
+      "content": "Ruang adalah tempat di permukaan bumi yang digunakan makhluk hidup untuk tinggal. Interaksi antarruang terjadi karena perbedaan karakteristik wilayah. Contoh: Penduduk pegunungan membutuhkan ikan dari pantai, and penduduk pantai membutuhkan sayuran dari gunung. Penjelasan: Saling ketergantungan ini mendorong terjadinya perdagangan antar daerah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Konektivitas Antar Ruang" },
+    "subtopic": "Ruang dan Lingkungan",
+    "lesson": { 
+      "title": "Pemahaman Lokasi melalui Peta",
+      "content": "Peta adalah gambaran permukaan bumi pada bidang datar. Komponennya meliputi judul, skala, orientasi, simbol, garis koordinat, inset, legenda, and sumber peta. Contoh: Menggunakan skala untuk menghitung jarak tempuh antar kota. Penjelasan: Peta sangat penting untuk perencanaan pembangunan and navigasi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Konektivitas Antar Ruang" },
+    "subtopic": "Ruang dan Lingkungan",
+    "lesson": { 
+      "title": "Letak dan Luas Indonesia",
+      "content": "Secara astronomis Indonesia terletak di 6 LU - 11 LS and 95 BT - 141 BT. Secara geografis berada di posisi silang dunia. Contoh: Dampak letak astronomis menyebabkan Indonesia beriklim tropis. Penjelasan: Letak strategis memberikan potensi sumber daya alam yang melimpah namun rawan bencana."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Interaksi Sosial" },
+    "subtopic": "Hubungan Manusia",
+    "lesson": { 
+      "title": "Syarat Terjadinya Interaksi Sosial",
+      "content": "Interaksi sosial memerlukan kontak sosial (fisik/non-fisik) and komunikasi (penyampaian pesan). Contoh: Berjabat tangan and berbicara langsung atau melalui telepon. Penjelasan: Tanpa kedua syarat ini, hubungan antar manusia tidak dapat disebut sebagai interaksi sosial."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Interaksi Sosial" },
+    "subtopic": "Hubungan Manusia",
+    "lesson": { 
+      "title": "Bentuk Interaksi Asosiatif",
+      "content": "Interaksi yang mengarah pada persatuan atau kerjasama antar individu/kelompok. Contoh: Kerjasama (kooperasi), Akomodasi (penyelesaian konflik), and Asimilasi (peleburan budaya). Penjelasan: Bentuk asosiatif sangat penting untuk menjaga integrasi and harmoni dalam masyarakat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Interaksi Sosial" },
+    "subtopic": "Hubungan Manusia",
+    "lesson": { 
+      "title": "Bentuk Interaksi Disosiatif",
+      "content": "Interaksi yang mengarah pada perpecahan atau konflik antar pihak. Contoh: Persaingan (kompetisi), Kontravensi (perasaan tidak suka yang disembunyikan), and Pertentangan. Penjelasan: Meskipun negatif, disosiatif terkadang diperlukan untuk memicu prestasi dalam kompetisi yang sehat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Lembaga Sosial" },
+    "subtopic": "Struktur Masyarakat",
+    "lesson": { 
+      "title": "Fungsi Lembaga Keluarga",
+      "content": "Keluarga adalah unit sosial terkecil yang memiliki fungsi reproduksi, sosialisasi, afeksi, and ekonomi. Contoh: Orang tua mengajarkan sopan santun kepada anak-anaknya. Penjelasan: Keluarga menjadi fondasi utama dalam pembentukan karakter individu sebelum terjun ke masyarakat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Lembaga Sosial" },
+    "subtopic": "Struktur Masyarakat",
+    "lesson": { 
+      "title": "Lembaga Pendidikan dan Agama",
+      "content": "Lembaga pendidikan memberikan bekal pengetahuan, sedangkan lembaga agama mengatur hubungan manusia dengan Tuhan and sesama. Contoh: Sekolah formal (SD, SMP, SMA) and tempat ibadah. Penjelasan: Keduanya berperan dalam menjaga stabilitas nilai and norma di tengah masyarakat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Lembaga Sosial" },
+    "subtopic": "Struktur Masyarakat",
+    "lesson": { 
+      "title": "Peran Lembaga Ekonomi dan Politik",
+      "content": "Lembaga ekonomi mengatur kegiatan produksi, distribusi, and konsumsi. Lembaga politik mengatur kekuasaan and tata tertib bernegara. Contoh: Pasar sebagai lembaga ekonomi and partai politik sebagai lembaga politik. Penjelasan: Keberadaan lembaga ini memastikan kebutuhan hidup and keamanan warga negara terpenuhi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Aktivitas Manusia dan Ekonomi" },
+    "subtopic": "Kebutuhan Hidup",
+    "lesson": { 
+      "title": "Kelangkaan sebagai Masalah Ekonomi",
+      "content": "Kebutuhan manusia tidak terbatas, sedangkan alat pemuas kebutuhan (barang/jasa) jumlahnya terbatas. Contoh: Kelangkaan gas elpiji saat permintaan meningkat tinggi. Penjelasan: Kelangkaan memaksa manusia untuk melakukan pilihan (skala prioritas) dalam konsumsi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Aktivitas Manusia dan Ekonomi" },
+    "subtopic": "Kebutuhan Hidup",
+    "lesson": { 
+      "title": "Motif, Prinsip, dan Tindakan Ekonomi",
+      "content": "Tindakan ekonomi didasari oleh motif (alasan) and harus menerapkan prinsip ekonomi (pengorbanan tertentu untuk hasil maksimal). Contoh: Pedagang yang jujur ingin mendapatkan keuntungan jangka panjang (motif ekonomi). Penjelasan: Prinsip ekonomi membantu kita bertindak rasional and hemat dalam mengelola sumber daya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Aktivitas Manusia dan Ekonomi" },
+    "subtopic": "Kebutuhan Hidup",
+    "lesson": { 
+      "title": "Peran IPTEK dalam Kegiatan Ekonomi",
+      "content": "Kemajuan ilmu pengetahuan and teknologi mempercepat proses produksi and memperluas jaringan distribusi barang. Contoh: Jual beli online melalui marketplace yang memudahkan konsumen. Penjelasan: IPTEK meningkatkan produktivitas and efisiensi waktu dalam perputaran ekonomi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Masyarakat Masa Praaksara" },
+    "subtopic": "Sejarah Awal",
+    "lesson": { 
+      "title": "Masa Berburu dan Mengumpulkan Makanan",
+      "content": "Manusia purba hidup berpindah-pindah (nomaden) tergantung pada ketersediaan alam and tinggal di gua-gua. Contoh: Penggunaan kapak perimbas untuk memotong daging binatang buruan. Penjelasan: Kehidupan sangat sederhana and sangat bergantung pada kemurahan alam sekitar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Masyarakat Masa Praaksara" },
+    "subtopic": "Sejarah Awal",
+    "lesson": { 
+      "title": "Masa Bercocok Tanam dan Menetap",
+      "content": "Manusia mulai mengenal cara menanam tanaman and beternak hewan, sehingga mulai membangun perkampungan. Contoh: Penemuan alat berupa beliung persegi and kapak lonjong. Penjelasan: Masa ini menandai terjadinya revolusi kebudayaan dari mengumpulkan makanan menjadi memproduksi makanan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Masyarakat Masa Praaksara" },
+    "subtopic": "Sejarah Awal",
+    "lesson": { 
+      "title": "Zaman Logam dan Sistem Kepercayaan",
+      "content": "Manusia sudah mampu mengolah bijih logam (perunggu and besi) and mengenal kepercayaan animisme serta dinamisme. Contoh: Pembuatan nekara and moko untuk upacara ritual. Penjelasan: Kehidupan sosial menjadi lebih kompleks dengan adanya pembagian kerja (undagi)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Dinamika Penduduk Indonesia" },
+    "subtopic": "Demografi",
+    "lesson": { 
+      "title": "Kuantitas dan Kualitas Penduduk",
+      "content": "Jumlah penduduk Indonesia yang besar harus diimbangi dengan kualitas pendidikan and kesehatan yang baik. Contoh: Program wajib belajar 12 tahun untuk meningkatkan SDM. Penjelasan: Penduduk yang berkualitas akan menjadi modal utama pembangunan nasional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Dinamika Penduduk Indonesia" },
+    "subtopic": "Demografi",
+    "lesson": { 
+      "title": "Persebaran Penduduk yang Tidak Merata",
+      "content": "Sebagian besar penduduk Indonesia terkonsentrasi di Pulau Jawa, sementara pulau lain masih jarang penduduknya. Contoh: Program transmigrasi untuk meratakan jumlah penduduk. Penjelasan: Ketimpangan persebaran penduduk menghambat pemerataan pembangunan ekonomi di daerah terpencil."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Dinamika Penduduk Indonesia" },
+    "subtopic": "Demografi",
+    "lesson": { 
+      "title": "Keragaman Etnis dan Budaya Indonesia",
+      "content": "Indonesia terdiri dari ribuan suku bangsa yang masing-masing memiliki adat, bahasa, and seni yang unik. Contoh: Suku Minangkabau dengan sistem kekerabatan matrilinial. Penjelasan: Keragaman ini dilindungi oleh semboyan Bhinneka Tunggal Ika sebagai kekayaan nasional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Kondisi Alam Indonesia" },
+    "subtopic": "Geologi dan Bentang Alam",
+    "lesson": { 
+      "title": "Kondisi Geologi dan Cincin Api",
+      "content": "Indonesia terletak di pertemuan tiga lempeng tektonik besar yang menyebabkan banyaknya gunung berapi. Contoh: Dampak positif berupa tanah subur and kekayaan mineral logam. Penjelasan: Selain potensi SDA, kondisi geologi ini membuat Indonesia rawan terhadap gempa and tsunami."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Kondisi Alam Indonesia" },
+    "subtopic": "Geologi dan Bentang Alam",
+    "lesson": { 
+      "title": "Bentuk Muka Bumi dan Aktivitas Ekonomi",
+      "content": "Perbedaan bentang alam (pantai, dataran rendah, pegunungan) mempengaruhi jenis pekerjaan penduduk. Contoh: Dataran rendah digunakan untuk pemukiman and industri. Penjelasan: Geografi suatu wilayah menentukan cara manusia beradaptasi and bertahan hidup."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Kondisi Alam Indonesia" },
+    "subtopic": "Geologi dan Bentang Alam",
+    "lesson": { 
+      "title": "Pengaruh Perubahan Iklim di Indonesia",
+      "content": "Pemanasan global menyebabkan ketidakteraturan musim yang berdampak pada sektor pertanian and perikanan. Contoh: Banjir rob di pesisir utara Jawa akibat kenaikan permukaan air laut. Penjelasan: Mitigasi bencana and adaptasi lingkungan sangat diperlukan untuk mengurangi dampak buruk iklim."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Pasar dan Harga" },
+    "subtopic": "Ekonomi Mikro",
+    "lesson": { 
+      "title": "Permintaan dan Penawaran",
+      "content": "Harga barang ditentukan oleh keseimbangan antara jumlah yang diminta pembeli and jumlah yang ditawarkan penjual. Contoh: Harga cabai naik saat pasokan sedikit tapi permintaan tinggi menjelang hari raya. Penjelasan: Hukum pasar bekerja untuk menyeimbangkan kepentingan produsen and konsumen."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Pasar dan Harga" },
+    "subtopic": "Ekonomi Mikro",
+    "lesson": { 
+      "title": "Fungsi Pasar dalam Perekonomian",
+      "content": "Pasar berfungsi sebagai tempat distribusi, pembentukan harga, and sarana promosi produk. Contoh: Pasar loak, pasar sayur, hingga bursa efek. Penjelasan: Pasar yang sehat menjamin kelancaran aliran barang dari produsen ke tangan masyarakat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Pasar dan Harga" },
+    "subtopic": "Ekonomi Mikro",
+    "lesson": { 
+      "title": "Peran Kewirausahaan bagi Masyarakat",
+      "content": "Wirausahawan adalah orang yang kreatif dalam mengolah sumber daya menjadi peluang bisnis and lapangan kerja. Contoh: UMKM pengolah kerajinan bambu yang menembus pasar ekspor. Penjelasan: Jiwa kewirausahaan mendorong inovasi and kemandirian ekonomi nasional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Kerajaan Hindu-Buddha" },
+    "subtopic": "Sejarah Kerajaan",
+    "lesson": { 
+      "title": "Masuknya Pengaruh Hindu-Buddha",
+      "content": "Teori Brahmana, Ksatria, Waisya, and Arus Balik menjelaskan bagaimana budaya India masuk ke Nusantara. Contoh: Penemuan prasasti batu bertuliskan huruf Pallawa and bahasa Sansekerta. Penjelasan: Masuknya agama ini mengubah struktur sosial dari kesukuan menjadi sistem kerajaan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Kerajaan Hindu-Buddha" },
+    "subtopic": "Sejarah Kerajaan",
+    "lesson": { 
+      "title": "Kejayaan Kerajaan Sriwijaya dan Majapahit",
+      "content": "Sriwijaya sebagai pusat agama Buddha and maritim, Majapahit sebagai kerajaan agraris yang menyatukan Nusantara. Contoh: Kitab Negarakertagama yang mencatat wilayah kekuasaan Majapahit. Penjelasan: Warisan sejarah ini menjadi identitas kebangsaan Indonesia sebagai negara besar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Kerajaan Hindu-Buddha" },
+    "subtopic": "Sejarah Kerajaan",
+    "lesson": { 
+      "title": "Akulturasi Budaya Hindu-Buddha",
+      "content": "Perpaduan budaya asli Nusantara dengan unsur luar dalam bidang arsitektur, seni sastra, and sistem pemerintahan. Contoh: Bentuk candi yang mirip punden berundak (budaya asli). Penjelasan: Akulturasi menunjukkan bangsa Indonesia adalah bangsa yang terbuka namun tetap memiliki jati diri."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Masuknya Islam" },
+    "subtopic": "Penyebaran Agama",
+    "lesson": { 
+      "title": "Saluran Penyebaran Islam di Indonesia",
+      "content": "Islam disebarkan melalui perdagangan, perkawinan, pendidikan (pesantren), seni budaya, and tasawuf. Contoh: Peran Wali Songo dalam menyebarkan Islam di Pulau Jawa secara damai. Penjelasan: Cara penyebaran yang adaptif membuat Islam cepat diterima oleh berbagai lapisan masyarakat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Kerajaan-Kerajaan Islam Besar" },
+    "subtopic": "Penyebaran Agama",
+    "lesson": { 
+      "title": "Kerajaan-Kerajaan Islam Besar",
+      "content": "Kesultanan Samudera Pasai, Demak, Mataram Islam, Gowa-Tallo, hingga Ternate-Tidore. Contoh: Sultan Agung dari Mataram yang menyerang Belanda di Batavia. Penjelasan: Kerajaan Islam menjadi pusat perlawanan terhadap kolonialisme Barat di masa awal."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "IPS",
+    "topic": { "name": "Masuknya Islam" },
+    "subtopic": "Penyebaran Agama",
+    "lesson": { 
+      "title": "Warisan Budaya Islam di Nusantara",
+      "content": "Kaligrafi, arsitektur masjid beratap tumpang, tradisi sekaten, and perayaan hari besar keagamaan. Contoh: Masjid Menara Kudus yang memiliki ciri khas arsitektur Hindu. Penjelasan: Warisan ini tetap hidup and menjadi bagian dari tradisi masyarakat Indonesia modern."
+    }
+  }
+]

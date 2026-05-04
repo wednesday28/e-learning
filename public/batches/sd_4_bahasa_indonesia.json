@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Membuat Petunjuk Penggunaan",
+    "lesson": { 
+      "title": "Struktur Teks Prosedur",
+      "content": "Teks prosedur terdiri dari tujuan, alat dan bahan, serta langkah-langkah. Contoh: Cara Membuat Mie Instan. Penjelasan: Teks ini membantu pembaca untuk melakukan sesuatu dengan urutan yang benar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Membuat Petunjuk Penggunaan",
+    "lesson": { 
+      "title": "Menggunakan Kata Kerja Perintah",
+      "content": "Kata kerja perintah biasanya berakhiran -kan atau -lah. Contoh: Tuangkan, Aduklah, Masukkan. Penjelasan: Kata ini digunakan untuk memberi instruksi dalam langkah-langkah."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Membuat Petunjuk Penggunaan",
+    "lesson": { 
+      "title": "Menulis Prosedur Mencuci Tangan",
+      "content": "Basahi tangan, gunakan sabun, gosok sela jari, bilas, dan keringkan. Contoh: Langkah mencuci tangan yang benar. Penjelasan: Prosedur kesehatan sangat penting untuk dipahami."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Membuat Karya Kreatif",
+    "lesson": { 
+      "title": "Cara Membuat Pesawat Kertas",
+      "content": "Lipat kertas menjadi dua, lipat bagian atas, lalu bentuk sayapnya. Contoh: Tutorial origami sederhana. Penjelasan: Teks prosedur bisa digunakan untuk hobi dan kerajinan tangan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Membuat Karya Kreatif",
+    "lesson": { 
+      "title": "Tips Merawat Tanaman di Pot",
+      "content": "Siram setiap pagi, beri pupuk sebulan sekali, dan letakkan di tempat teduh. Contoh: Prosedur berkebun. Penjelasan: Instruksi yang jelas membuat tanaman tumbuh subur."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur" },
+    "subtopic": "Membuat Karya Kreatif",
+    "lesson": { 
+      "title": "Membuat Jadwal Harian Sendiri",
+      "content": "Tulis daftar tugas, tentukan jamnya, dan lakukan dengan disiplin. Contoh: Langkah mengatur waktu. Penjelasan: Prosedur membantu kita hidup lebih teratur."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Laporan Hasil Pengamatan",
+    "lesson": { 
+      "title": "Mengenal Laporan Hasil Observasi",
+      "content": "Laporan yang ditulis berdasarkan apa yang dilihat dan didengar secara nyata. Contoh: Laporan kunjungan ke kebun binatang. Penjelasan: Teks laporan harus objektif dan faktual."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Laporan Hasil Pengamatan",
+    "lesson": { 
+      "title": "Bagian-bagian Teks Laporan",
+      "content": "Terdiri dari definisi umum, deskripsi bagian, dan simpulan. Contoh: Laporan tentang pohon kelapa. Penjelasan: Struktur yang lengkap memudahkan pembaca memahami informasi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Laporan Hasil Pengamatan",
+    "lesson": { 
+      "title": "Menulis Laporan Pengamatan Tanaman",
+      "content": "Catat tinggi tanaman, jumlah daun, dan warnanya setiap minggu. Contoh: Tabel pengamatan pertumbuhan. Penjelasan: Data yang akurat adalah kunci laporan yang baik."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Wawancara Sederhana",
+    "lesson": { 
+      "title": "Menyusun Daftar Pertanyaan Wawancara",
+      "content": "Gunakan kata tanya Apa, Siapa, Kapan, Di mana, Mengapa, dan Bagaimana (5W1H). Contoh: Pertanyaan untuk pak guru. Penjelasan: Persiapan pertanyaan membuat wawancara lancar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Wawancara Sederhana",
+    "lesson": { 
+      "title": "Etika Berwawancara",
+      "content": "Ucapkan salam, minta izin, dan berterima kasih setelah selesai. Contoh: Cara menyapa narasumber. Penjelasan: Sopan santun sangat penting saat mencari informasi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan" },
+    "subtopic": "Wawancara Sederhana",
+    "lesson": { 
+      "title": "Mengubah Hasil Wawancara Jadi Laporan",
+      "content": "Tuliskan nama narasumber, waktu, dan hasil tanya jawab dalam paragraf. Contoh: Laporan hasil bicara dengan pedagang kantin. Penjelasan: Menyusun cerita dari jawaban narasumber."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Sinonim-Antonim" },
+    "subtopic": "Persamaan Kata (Sinonim)",
+    "lesson": { 
+      "title": "Mengenal Sinonim Kata Sifat",
+      "content": "Sinonim adalah kata yang memiliki arti sama atau mirip. Contoh: Pintar = Pandai, Bahagia = Senang. Penjelasan: Menggunakan sinonim membuat tulisan tidak membosankan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Sinonim-Antonim" },
+    "subtopic": "Persamaan Kata (Sinonim)",
+    "lesson": { 
+      "title": "Sinonim Kata Benda dan Kerja",
+      "content": "Contoh: Pakaian = Baju, Melihat = Menatap. Penjelasan: Semakin banyak kosakata, semakin mudah bercerita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Sinonim-Antonim" },
+    "subtopic": "Persamaan Kata (Sinonim)",
+    "lesson": { 
+      "title": "Latihan Menemukan Sinonim dalam Kalimat",
+      "content": "Gantilah kata 'lelah' dengan sinonimnya. Jawab: 'letih' atau 'capai'. Contoh: Variasi kalimat dengan sinonim. Penjelasan: Konteks kalimat menentukan pilihan kata yang pas."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Sinonim-Antonim" },
+    "subtopic": "Lawan Kata (Antonim)",
+    "lesson": { 
+      "title": "Mengenal Antonim Dasar",
+      "content": "Antonim adalah kata yang artinya berlawanan. Contoh: Atas >< Bawah, Masuk >< Keluar. Penjelasan: Memahami perbedaan makna kata."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Sinonim-Antonim" },
+    "subtopic": "Lawan Kata (Antonim)",
+    "lesson": { 
+      "title": "Antonim Kata Sifat yang Sering Digunakan",
+      "content": "Contoh: Panas >< Dingin, Mahal >< Murah, Tebal >< Tipis. Penjelasan: Digunakan untuk mendeskripsikan perbedaan dua hal."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Sinonim-Antonim" },
+    "subtopic": "Lawan Kata (Antonim)",
+    "lesson": { 
+      "title": "Permainan Tebak Antonim",
+      "content": "Lawan kata 'rajin' adalah? (Malas). Lawan kata 'gelap' adalah? (Terang). Contoh: Kuis kata berlawanan. Penjelasan: Belajar kata melalui lawan maknanya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Paragraf Deduktif" },
+    "subtopic": "Struktur Paragraf",
+    "lesson": { 
+      "title": "Pengertian Paragraf Deduktif",
+      "content": "Paragraf yang kalimat utamanya terletak di awal paragraf. Contoh: 'Kebersihan lingkungan sangat penting... (diikuti alasan)'. Penjelasan: Pola pikir dari umum ke khusus."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Paragraf Deduktif" },
+    "subtopic": "Struktur Paragraf",
+    "lesson": { 
+      "title": "Cara Menemukan Gagasan Utama",
+      "content": "Gagasan utama adalah pokok pikiran dalam satu paragraf. Contoh: Mencari inti dari sebuah teks berita. Penjelasan: Kalimat pertama biasanya memberikan gambaran besar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Paragraf Deduktif" },
+    "subtopic": "Struktur Paragraf",
+    "lesson": { 
+      "title": "Membedakan Gagasan Pokok dan Penjelas",
+      "content": "Gagasan pokok adalah inti, gagasan penjelas adalah detail atau contoh. Contoh: 'Buah mengandung vitamin... (pokok). Jeruk ada vitamin C... (penjelas)'. Penjelasan: Detail membantu memperkuat gagasan utama."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Paragraf Deduktif" },
+    "subtopic": "Latihan Menulis Paragraf",
+    "lesson": { 
+      "title": "Menyusun Paragraf Deduktif Sederhana",
+      "content": "Tentukan satu tema, buat kalimat utama, lalu tambah dua kalimat detail. Contoh: Tema 'Kantin Sehat'. Penjelasan: Berlatih fokus pada satu pikiran utama."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Paragraf Deduktif" },
+    "subtopic": "Latihan Menulis Paragraf",
+    "lesson": { 
+      "title": "Melengkapi Paragraf yang Terpotong",
+      "content": "Diberikan kalimat utama, siswa membuat lanjutannya. Contoh: 'Olahraga lari menyehatkan jantung...'. Penjelasan: Melatih kelogisan berpikir dalam menulis."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Paragraf Deduktif" },
+    "subtopic": "Latihan Menulis Paragraf",
+    "lesson": { 
+      "title": "Menilai Paragraf Milik Teman",
+      "content": "Apakah kalimat utamanya sudah jelas? Apakah penjelasnya nyambung? Contoh: Rubrik penilaian menulis paragraf. Penjelasan: Belajar menjadi editor kecil."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Surat" },
+    "subtopic": "Surat Pribadi",
+    "lesson": { 
+      "title": "Pengertian dan Tujuan Surat Pribadi",
+      "content": "Surat yang dikirim kepada teman atau saudara untuk menanyakan kabar. Contoh: Surat untuk sahabat pena. Penjelasan: Bahasa yang digunakan santai dan akrab."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Surat" },
+    "subtopic": "Surat Pribadi",
+    "lesson": { 
+      "title": "Bagian-bagian Surat Pribadi",
+      "content": "Tempat dan tanggal, salam pembuka, isi, salam penutup, dan tanda tangan. Contoh: Format surat untuk nenek. Penjelasan: Struktur ini membuat surat terlihat rapi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Surat" },
+    "subtopic": "Surat Pribadi",
+    "lesson": { 
+      "title": "Menulis Surat Izin Tidak Masuk Sekolah",
+      "content": "Surat resmi singkat dari orang tua kepada guru. Contoh: 'Sakit sehingga tidak bisa sekolah'. Penjelasan: Alasan harus jujur dan bahasa tetap sopan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Surat" },
+    "subtopic": "Media Komunikasi Digital",
+    "lesson": { 
+      "title": "Mengenal Pesan Singkat (SMS/Chat)",
+      "content": "Komunikasi cepat menggunakan HP. Contoh: 'Ma, aku sudah pulang sekolah'. Penjelasan: Meski singkat, tetap harus memperhatikan kesopanan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Surat" },
+    "subtopic": "Media Komunikasi Digital",
+    "lesson": { 
+      "title": "Etika Mengirim Pesan ke Guru",
+      "content": "Sebutkan nama dan kelas, serta gunakan bahasa formal. Contoh: 'Selamat siang Pak, saya Budi kelas 4...'. Penjelasan: Membedakan cara bicara dengan teman dan orang tua/guru."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 4,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Surat" },
+    "subtopic": "Media Komunikasi Digital",
+    "lesson": { 
+      "title": "Bahaya Hoaks dalam Pesan Digital",
+      "content": "Jangan mudah percaya berita yang tidak jelas asalnya. Contoh: Berita palsu tentang libur sekolah. Penjelasan: Kita harus menjadi pembaca yang cerdas."
+    }
+  }
+]

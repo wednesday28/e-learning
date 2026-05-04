@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri Dimensi Tiga" },
+    "subtopic": "Jarak Titik ke Titik dalam Bangun Ruang",
+    "lesson": {
+      "title": "Dimensi Ruang: Menghitung Jarak Titik ke Titik",
+      "content": "Selamat datang di Matematika kelas 12! Kita mulai dengan **Geometri Dimensi Tiga**. Dalam dunia industri, hampir semua objek berbentuk tiga dimensi (kubus, balok, limas, bola). Pelajaran pertama adalah menghitung jarak antara dua titik dalam ruang menggunakan Teorema Pythagoras yang diperluas.\n\nBagi siswa SMK Teknik Bangunan or Desain Interior, kemampuan membayangkan and menghitung jarak dalam ruang 3D sangat krusial. Kamu belajar menghitung panjang kabel diagonal or rangka atap dengan presisi. Matematika membantu kita memvisualisasikan objek sebelum dibangun secara fisik. Dengan menguasai geometri dimensi tiga, kamu sedang melatih kemampuan spasial yang sangat dibutuhkan untuk menjadi desainer teknis or arsitek yang handal."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri Dimensi Tiga" },
+    "subtopic": "Jarak Titik ke Garis dan Bidang",
+    "lesson": {
+      "title": "Efisiensi Struktur: Jarak Titik ke Garis and Bidang",
+      "content": "Pelajaran berlanjut ke perhitungan jarak terpendek (proyeksi tegak lurus) dari sebuah titik ke garis or bidang. Ini adalah konsep dasar dalam menentukan ketinggian objek or jarak aman antara komponen mesin. Rumus geometri dimensi tiga memungkinkan kita menghitung volume ruang yang kompleks dengan akurat.\n\nDi bengkel or lapangan, kesalahan perhitungan jarak beberapa milimeter saja bisa berakibat fatal pada pemasangan komponen. Matematika memastikan setiap elemen struktural terpasang with pas and aman. Belajarlah untuk berpikir dalam tiga dimensi agar kamu mampu menyelesaikan masalah konstruksi or manufaktur yang rumit with solusi matematis yang elegan and pasti."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Lanjut" },
+    "subtopic": "Penyajian Data Kelompok (Tabel Distribusi Frekuensi)",
+    "lesson": {
+      "title": "Data Raksasa: Mengelola Tabel Distribusi Frekuensi",
+      "content": "Industri besar menghasilkan ribuan data setiap hari. Tidak praktis jika data dihitung satu per satu. Kita belajar **Data Kelompok** and cara menyajikannya dalam **Tabel Distribusi Frekuensi**. Kamu belajar menentukan Range, Kelas, and Interval. Data yang rapi adalah kunci dari analisis yang akurat.\n\nBagi siswa SMK, statistika data kelompok sangat berguna untuk laporan kendali mutu (Quality Control) or analisis pasar. Kamu belajar meringkas informasi tanpa kehilangan maknanya. Matematika statistika memberikanmu alat untuk mengelola 'kekacauan' data menjadi informasi yang terstruktur. Jadilah tenaga ahli yang mampu menyajikan laporan berbasis data yang profesional and mudah dipahami oleh pengambil keputusan di perusahaan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Lanjut" },
+    "subtopic": "Ukuran Pemusatan Data Kelompok (Mean, Median, Modus)",
+    "lesson": {
+      "title": "Nilai Representatif: Mean, Median, and Modus Data Kelompok",
+      "content": "Menghitung rata-rata data kelompok berbeda with data tunggal. Kita gunakan rumus $\\bar{x} = \\frac{\\sum f_i \\cdot x_i}{\\sum f_i}$ di mana $x_i$ adalah nilai tengah. Kita juga belajar mencari **Median** (nilai tengah) and **Modus** (nilai paling sering) untuk data yang sudah dikelompokkan. Nilai-nilai ini menjadi standar evaluasi kinerja mesin or karyawan.\n\nMatematika mengajarkan kita untuk mencari 'titik pusat' dari sebuah fenomena. Jika modus kerusakan produk ada di rentang tertentu, maka tim teknis harus fokus memperbaikinya. Pemahaman statistika ini melatih kemampuan analisismu dalam memecahkan masalah industri secara sistematis. With angka yang akurat, saran perbaikanmu akan jauh lebih meyakinkan and berdampak positif bagi efisiensi perusahaan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Lanjut" },
+    "subtopic": "Ukuran Penyebaran Data Kelompok (Simpangan Baku)",
+    "lesson": {
+      "title": "Kontrol Variansi: Simpangan Baku Data Kelompok",
+      "content": "Dalam produksi massal, variansi yang besar adalah musuh. Kita belajar menghitung **Simpangan Baku (Standar Deviasi)** untuk data kelompok. Semakin kecil nilainya, semakin konsisten kualitas produk kita. Ini adalah dasar dari konsep **Six Sigma** yang digunakan perusahaan manufaktur kelas dunia untuk meminimalkan produk cacat.\n\nKamu belajar bahwa konsistensi adalah kunci kepercayaan pelanggan. Bagi siswa SMK, kemampuan menghitung variansi data membantu dalam mengevaluasi apakah sebuah mesin masih layak beroperasi or perlu dikalibrasi ulang. Matematika memberikan standar objektif untuk menilai kualitas. Jadilah profesional yang sangat peduli pada detail and konsistensi hasil kerja, karena di sanalah letak keunggulan kompetitifmu di dunia industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Limit Fungsi" },
+    "subtopic": "Konsep Dasar dan Sifat Limit Fungsi Aljabar",
+    "lesson": {
+      "title": "Ambang Batas: Memahami Konsep Limit",
+      "content": "Pernahkah kamu bertanya, seberapa dekat sebuah variabel bisa mendekati suatu nilai tanpa harus menyentuhnya? Itulah **Limit**. Limit adalah dasar dari semua Kalkulus. Kita belajar menghitung $\\lim_{x \\to a} f(x)$ menggunakan metode substitusi, faktorisasi, or perkalian sekawan. Limit mengajarkan kita tentang kecenderungan and pendekatan.\n\nDalam dunia teknik, limit digunakan untuk menghitung kekuatan maksimum material sebelum patah or kapasitas maksimal sebuah jaringan komunikasi. Matematika membantu kita mengetahui 'batas aman' operasional sebuah sistem. Memahami limit melatih logika berpikirmu untuk melihat apa yang terjadi di titik-titik kritis. Kemampuan ini sangat penting untuk mencegah kegagalan sistem with menghitung ambang batas toleransi yang diizinkan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Turunan Fungsi" },
+    "subtopic": "Rumus Dasar dan Sifat Turunan Fungsi Aljabar",
+    "lesson": {
+      "title": "Laju Perubahan: Pengenalan Turunan (Differensial)",
+      "content": "Turunan ($f'(x)$) adalah laju perubahan sesaat dari sebuah fungsi. Rumus dasarnya: jika $f(x) = ax^n$, maka $f'(x) = nax^{n-1}$. Turunan sangat penting untuk menghitung kecepatan, percepatan, and kemiringan (gradien). Di industri, turunan digunakan untuk mengukur seberapa cepat biaya produksi meningkat seiring bertambahnya jumlah barang.\n\nBagi siswa SMK, turunan adalah alat optimasi. Kamu bisa menghitung laju aliran fluida dalam pipa or laju penggunaan energi mesin. Matematika memberikanmu kemampuan untuk menganalisis dinamika sistem yang terus berubah. With menguasai turunan, kamu tidak hanya melihat kondisi 'sekarang', tapi kamu bisa memprediksi 'ke mana' arah perubahan tersebut akan berjalan. Jadilah teknisi yang mampu menganalisis tren perubahan with akurasi matematis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Turunan Fungsi" },
+    "subtopic": "Aplikasi Turunan: Nilai Maksimum dan Minimum",
+    "lesson": {
+      "title": "Optimasi Industri: Mencari Titik Maksimum and Minimum",
+      "content": "Inilah kegunaan utama turunan di dunia kerja: **Optimasi**. Kita belajar cara mencari nilai maksimum (keuntungan tertinggi) or nilai minimum (biaya terendah) with menggunakan syarat $f'(x) = 0$. Kamu bisa menghitung ukuran wadah yang paling hemat bahan tapi memiliki volume paling besar. Ini adalah cara matematika menyelamatkan uang and material perusahaan.\n\nTenaga ahli yang hebat adalah yang mampu memberikan hasil maksimal with sumber daya minimal. Pelajaran ini melatih kemampuan manajerial and teknismu sekaligus. Matematika membantu kita membuat keputusan yang paling efisien berdasarkan perhitungan fungsi yang matang. Mari kita belajar menjadi 'Optimization Expert' yang mampu meningkatkan profitabilitas perusahaan melalui perhitungan kalkulus yang presisi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Integral Fungsi" },
+    "subtopic": "Integral Tak Tentu Fungsi Aljabar",
+    "lesson": {
+      "title": "Kebalikan Turunan: Integral Tak Tentu",
+      "content": "Jika turunan adalah laju perubahan, maka **Integral** adalah akumulasi. Integral ($\\int$) adalah kebalikan dari turunan (Antiturunan). Kita belajar rumus dasar $\\int x^n dx = \\frac{1}{n+1} x^{n+1} + C$. Integral digunakan untuk mencari fungsi asal jika laju perubahannya diketahui. Ini sangat berguna dalam pengolahan sinyal digital and fisika teknik.\n\nBagi siswa SMK, integral membantu dalam menghitung total energi yang digunakan dalam satu hari or total material yang dibutuhkan untuk permukaan yang tidak rata. Matematika integral melatih kemampuanmu dalam melihat 'akumulasi' hasil kerja. With memahami integral, kamu memiliki paket lengkap kalkulus (limit, turunan, integral) yang merupakan bahasa universal dari sains and teknologi modern di seluruh dunia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Integral Fungsi" },
+    "subtopic": "Integral Tentu untuk Menghitung Luas Daerah",
+    "lesson": {
+      "title": "Menghitung Luas Kompleks: Aplikasi Integral Tentu",
+      "content": "Bagaimana cara menghitung luas area di bawah kurva yang melengkung? Geometri biasa tidak sanggup melakukannya, tapi **Integral Tentu** $\\int_a^b f(x) dx$ bisa. Ini digunakan dalam desain bodi otomotif, sayap pesawat, hingga arsitektur modern yang artistik. Kamu belajar menghitung luas with batasan yang pasti.\n\nBagi siswa SMK Teknik, kemampuan menghitung luas and volume benda yang tidak beraturan sangat penting untuk estimasi kebutuhan bahan (RAB) yang akurat. Matematika memberikan solusi bagi masalah-masalah yang terlihat 'mustahil' diselesaikan with cara manual. Jadilah tenaga ahli yang memiliki 'superpower' matematika untuk membangun dunia with bentuk-bentuk baru yang inovatif, efisien, and indah."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Matematika: Senjata Terakhir menuju Dunia Profesional",
+    "lesson": {
+      "title": "Refleksi Akhir: Menjadi Teknokrat Berbasis Data",
+      "content": "Selamat! Kamu telah menyelesaikan seluruh kurikulum Matematika di SMK. Kamu kini memiliki bekal logika ruang 3D, ketajaman analisis statistika, hingga kecanggihan kalkulus (turunan and integral). Pelajaran terpenting adalah: **Matematika adalah bahasa untuk memecahkan masalah nyata**. Jangan biarkan rumus-rumus ini hanya di kertas, bawalah ke meja kerjamu.\n\nTeruslah berlatih and gunakan teknologi (software kalkulator or desain) untuk membantu perhitunganmu. Tenaga ahli yang hebat adalah mereka yang mampu menjelaskan masalah teknis with angka and data yang kuat. Matematika telah membentuk pola pikirmu menjadi sistematis, logis, and akurat. Masa depan industri Indonesia yang maju ada di tanganmu. Teruslah berkarya with presisi and integritas tinggi. Merdeka! Sampai jumpa di dunia profesional yang penuh tantangan seru!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri Dimensi Tiga" },
+    "subtopic": "Besar Sudut dalam Bangun Ruang",
+    "lesson": {
+      "title": "Kemiringan Presisi: Sudut antara Garis dan Bidang",
+      "content": "Selain jarak, kita perlu menghitung sudut. Kita belajar cara menentukan besar sudut antara dua garis, garis with bidang, or antara dua bidang. Dalam konstruksi rangka baja or pemasangan panel surya, sudut kemiringan menentukan kekuatan and efisiensi sistem. Matematika memastikan setiap sambungan memiliki sudut yang tepat sesuai spesifikasi teknis, menjamin keamanan and fungsionalitas bangunan or mesin yang kamu rancang di masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Lanjut" },
+    "subtopic": "Interpretasi Data dalam Laporan Bisnis",
+    "lesson": {
+      "title": "Membaca Peluang Bisnis: Analisis Tren dari Data",
+      "content": "Data tanpa interpretasi hanyalah angka. Kita belajar cara menarik kesimpulan dari statistik: Apakah produksi stabil? Apakah tren penjualan meningkat? Kamu belajar cara mendeteksi pola musiman or anomali data. Kemampuan bercerita with data (Data Storytelling) sangat dihargai oleh investor and manajer. Matematika membantumu menjadi konsultan bisnis bagi dirimu sendiri or perusahaanmu, mengubah angka menjadi strategi pertumbuhan yang nyata and menguntungkan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Limit Fungsi" },
+    "subtopic": "Limit Fungsi di Ketakhinggaan",
+    "lesson": {
+      "title": "Analisis Jangka Panjang: Limit Menuju Tak Hingga",
+      "content": "Apa yang terjadi jika sebuah proses berjalan selamanya? Kita belajar $\\lim_{x \\to \\infty} f(x)$. Ini digunakan untuk memprediksi nilai 'jenuh' dari sebuah sistem, seperti suhu maksimum mesin or jumlah pelanggan maksimum dalam sebuah pasar. Matematika ketakhinggaan membantumu merancang sistem yang berkelanjutan (sustainable) and memahami kapasitas jangka panjang dari setiap sumber daya yang kamu kelola secara profesional di industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Turunan Fungsi" },
+    "subtopic": "Turunan Kedua dan Titik Belok Kurva",
+    "lesson": {
+      "title": "Analisis Percepatan: Turunan Kedua and Kelengkungan",
+      "content": "Turunan kedua ($f''(x)$) menunjukkan perubahan dari laju perubahan (akselerasi). Dalam desain grafis or manufaktur, turunan kedua menentukan kehalusan (smoothness) sebuah lengkungan. Kamu belajar menentukan di mana sebuah kurva berubah dari cekung ke cembung (titik belok). Pemahaman ini sangat penting bagi siswa SMK Multimedia and Teknik untuk menciptakan desain objek 3D yang tampak alami, aerodinamis, and memiliki nilai estetika serta ergonomi yang tinggi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Integral Fungsi" },
+    "subtopic": "Menghitung Volume Benda Putar",
+    "lesson": {
+      "title": "Volume Produksi: Aplikasi Integral untuk Benda Putar",
+      "content": "Banyak komponen mesin dibuat with mesin bubut (lathe) yang menghasilkan benda putar (seperti baut, poros, vas). Kita belajar cara menghitung volumenya menggunakan integral $V = \\pi \\int_a^b [f(x)]^2 dx$. Matematika memungkinkan kita menghitung berat and kebutuhan material untuk benda with bentuk melengkung yang rumit. Ini adalah skill esensial bagi teknisi pemesinan and desainer produk untuk menghitung biaya produksi with tingkat akurasi yang sangat tinggi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri Dimensi Tiga" },
+    "subtopic": "Penerapan Dimensi Tiga pada Struktur Atap",
+    "lesson": {
+      "title": "Rangka Kokoh: Matematika untuk Konstruksi Atap",
+      "content": "Kita belajar menghitung kebutuhan material untuk berbagai model atap (pelana, perisai, limas). Kamu belajar menghitung panjang gording, usuk, and luas penutup atap menggunakan prinsip geometri ruang. Matematika memastikan tidak ada material yang terbuang sia-sia (waste management). Bagi siswa SMK Teknik Bangunan, ini adalah kemampuan harian yang membuatmu menjadi mandor or kontraktor yang profesional, jujur, and efisien dalam mengelola anggaran proyek konstruksi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Lanjut" },
+    "subtopic": "Uji Hipotesis Sederhana",
+    "lesson": {
+      "title": "Uji Kebenaran: Pengenalan Hipotesis Statistika",
+      "content": "Apakah benar mesin baru lebih cepat dari mesin lama? Jangan hanya mengira-ngira, gunakan uji hipotesis. Kita belajar cara membandingkan dua kelompok data secara ilmiah untuk melihat apakah perbedaannya signifikan or hanya kebetulan. Matematika memberikan objektivitas dalam pengambilan keputusan teknis. Kamu belajar untuk tidak mudah tertipu oleh klaim iklan or asumsi sepihak. Jadilah tenaga ahli yang kritis and selalu menuntut bukti data yang kuat sebelum melakukan perubahan besar dalam sistem produksi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Limit Fungsi" },
+    "subtopic": "Limit Fungsi Trigonometri Dasar",
+    "lesson": {
+      "title": "Gelombang Harmoni: Limit Fungsi Trigonometri",
+      "content": "Dunia teknik penuh with getaran and gelombang (listrik, suara, mesin). Kita belajar limit fungsi sinus and kosinus sebagai dasar analisis getaran. Kamu belajar bahwa dalam skala kecil, gerakan melengkung bisa mendekati garis lurus. Matematika trigonometri adalah kunci untuk memahami teknologi nirkabel, sistem audio, and stabilitas struktur bangunan terhadap gempa. With menguasai limit trigonometri, kamu sedang membuka pintu menuju dunia teknik tingkat tinggi yang dinamis and penuh with harmoni matematis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Turunan Fungsi" },
+    "subtopic": "Aplikasi Turunan pada Gerak Benda",
+    "lesson": {
+      "title": "Fisika Matematis: Menghitung Kecepatan and Percepatan",
+      "content": "Jarak ($s$) diturunkan menjadi Kecepatan ($v$), and Kecepatan diturunkan menjadi Percepatan ($a$). Kita belajar memodelkan gerak mesin or kendaraan menggunakan fungsi matematika. Bagi siswa SMK Otomotif and Elektronika, ini sangat penting untuk memahami sistem pengereman otomatis, kontrol stabilitas, and efisiensi bahan bakar. Matematika menghubungkan angka di atas kertas with kenyataan fisik di lapangan. Jadilah teknisi yang paham 'mengapa' sebuah benda bergerak seperti itu melalui analisis fungsi turunan yang akurat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Integral Fungsi" },
+    "subtopic": "Integral Substitusi Sederhana",
+    "lesson": {
+      "title": "Teknik Integrasi: Metode Substitusi",
+      "content": "Tidak semua fungsi mudah diintegralkan secara langsung. Kita belajar teknik substitusi (misalkan $u$) untuk menyederhanakan fungsi yang kompleks. Ini melatih kemampuanmu dalam melihat struktur and pola yang tersembunyi. Dalam pemrosesan sinyal digital and algoritma komputer, teknik penyederhanaan seperti ini sangat penting untuk efisiensi komputasi. Matematika mengajarkanmu untuk tidak menyerah pada kerumitan, tapi mencari cara cerdas untuk mengubah masalah sulit menjadi rangkaian langkah yang sederhana and mudah diselesaikan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri Dimensi Tiga" },
+    "subtopic": "Visualisasi Ruang dengan Software 3D",
+    "lesson": {
+      "title": "Digital Geometry: Matematika di Balik CAD",
+      "content": "Zaman sekarang kita menggunakan komputer untuk desain 3D (CAD). Kita belajar bagaimana prinsip matematika dimensi tiga diterapkan dalam koordinat sumbu $x, y, z$ di software. Kamu belajar cara memasukkan data dimensi yang akurat agar hasil print 3D or produk manufakturmu sesuai with desain aslinya. Matematika adalah 'mesin' di balik semua keajaiban software desain modern. With memahami dasarnya, kamu tidak hanya sekadar 'pemakai' software, tapi 'tuan' yang mengendalikan teknologi with presisi matematis yang sempurna."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Lanjut" },
+    "subtopic": "Peluang Distribusi Normal",
+    "lesson": {
+      "title": "Kurva Lonceng: Mengenal Distribusi Normal",
+      "content": "Kebanyakan fenomena di alam and industri mengikuti pola Kurva Lonceng (Distribusi Normal). Kita belajar cara menghitung peluang menggunakan Skor-$Z$ and Tabel Normal. Ini digunakan untuk menentukan batas toleransi ukuran suku cadang or standar nilai kelulusan. Memahami distribusi normal membantumu memahami konsep 'kewajaran' dalam sebuah populasi data. Matematika memberikan standar deviasi yang logis untuk menentukan produk mana yang masuk kategori 'kualitas premium' and mana yang masuk kategori 'layak jual' or 'reject'."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Limit Fungsi" },
+    "subtopic": "Kontinuitas Fungsi Aljabar",
+    "lesson": {
+      "title": "Aliran Tanpa Putus: Memahami Kontinuitas",
+      "content": "Sebuah sistem harus berjalan mulus tanpa lompatan yang tiba-tiba. Kita belajar syarat fungsi kontinu di suatu titik. Dalam sistem kontrol otomatis or desain jalan raya, diskontinuitas (terputusnya fungsi) bisa menyebabkan kegagalan sistem or kecelakaan. Matematika mengajarkan kita untuk menjamin keberlangsungan proses. With memahami kontinuitas, kamu sedang menyiapkan diri untuk menjadi perancang sistem yang stabil, aman, and andal, yang mampu memastikan setiap transisi dalam operasional industri berjalan with halus tanpa gangguan teknis sedikitpun."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Turunan Fungsi" },
+    "subtopic": "Turunan Fungsi Komposisi (Aturan Rantai)",
+    "lesson": {
+      "title": "Efek Berantai: Menggunakan Aturan Rantai",
+      "content": "Bagaimana menghitung perubahan jika sebuah variabel bergantung pada variabel lain yang juga berubah? Kita belajar **Aturan Rantai** $(f(g(x)))' = f'(g(x)) \\cdot g'(x)$. Aplikasi nyatanya adalah pada sistem transmisi daya di mana putaran mesin memengaruhi putaran gir, yang kemudian memengaruhi kecepatan roda. Matematika membantu kita memetakan hubungan sebab-akibat yang kompleks ini secara akurat. With aturan rantai, kamu bisa menghitung dampak dari perubahan kecil di awal proses terhadap hasil akhir di ujung sistem produksi yang panjang."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Integral Fungsi" },
+    "subtopic": "Penerapan Integral pada Arus Listrik",
+    "lesson": {
+      "title": "Energi Akumulasi: Integral untuk Arus and Tegangan",
+      "content": "Bagi siswa SMK Kelistrikan, integral digunakan untuk menghitung muatan listrik total dari arus yang berubah-ubah terhadap waktu. Kamu belajar bahwa daya adalah laju perubahan energi, and energi adalah integral dari daya. Matematika memberikan dasar ilmiah bagi teknologi baterai, penghematan energi, and sistem tenaga surya. With memahami hubungan integral ini, kamu bisa merancang sistem kelistrikan yang efisien and menghitung konsumsi energi sebuah gedung or pabrik with akurasi yang tak terbantahkan oleh data apa pun."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Pesan Penutup: Matematika adalah Investasi Kariermu",
+    "lesson": {
+      "title": "Sukses with Angka: Matematika untuk Masa Depan",
+      "content": "Kurikulum Matematika kelas 12 telah selesai, and ini adalah akhir dari perjalanan matematikamu di SMK. Ingatlah, di era digital and AI saat ini, kemampuan berhitung and berpikir logis adalah aset yang tak ternilai harganya. Matematika adalah dasar dari semua inovasi teknologi yang kamu lihat sekarang. Teruslah bangga with kemampuan matematikamu. Jadilah lulusan SMK yang cerdas, berwawasan luas, and selalu mendasarkan keputusan pada data and logika yang benar. Selamat menempuh dunia kerja, semoga sukses menyertai setiap langkah kariermu! Merdeka!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika Lanjut" },
+    "subtopic": "Analisis Regresi Linear Sederhana",
+    "lesson": {
+      "title": "Prediksi Masa Depan: Mengenal Regresi Linear",
+      "content": "Bagaimana memprediksi penjualan bulan depan berdasarkan data bulan lalu? Kita belajar **Regresi Linear** untuk mencari hubungan antara dua variabel. Kamu belajar menggambar 'garis terbaik' yang mewakili tren data. Matematika prediksi membantu perusahaan merencanakan stok barang and strategi pemasaran with lebih tepat. With menguasai regresi, kamu bukan lagi sekadar pekerja yang menunggu instruksi, tapi seorang analis yang mampu memberikan rekomendasi strategis bagi kemajuan perusahaan di masa depan yang penuh ketidakpastian."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Turunan Fungsi" },
+    "subtopic": "Garis Singgung Kurva",
+    "lesson": {
+      "title": "Kemiringan Jalan: Gradien and Garis Singgung",
+      "content": "Turunan pertama di suatu titik adalah gradien garis singgung kurva di titik tersebut. Dalam desain jalan raya or jalur kereta api, kemiringan (grade) harus dihitung with sangat hati-hati demi keamanan and kenyamanan. Matematika memastikan setiap tikungan and tanjakan dirancang with profil yang landai and stabil. Kamu belajar cara menentukan persamaan garis singgung yang akan membantumu dalam merancang komponen mekanik or elemen arsitektur yang memerlukan transisi gerakan yang halus and presisi tinggi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Matematika",
+    "topic": { "name": "Integral Fungsi" },
+    "subtopic": "Integral Parsial Sederhana",
+    "lesson": {
+      "title": "Teknik Integrasi Lanjut: Integral Parsial",
+      "content": "Kita belajar teknik integral parsial $\\int u dv = uv - \\int v du$ untuk menyelesaikan perkalian dua fungsi yang berbeda jenis (misalnya aljabar with trigonometri). Ini melatih ketekunan and ketelitianmu dalam melakukan prosedur yang bertahap. Teknik ini sering digunakan dalam analisis rangkaian listrik AC yang kompleks and mekanika fluida lanjut. Matematika mengajarkanmu bahwa masalah yang paling rumit sekalipun bisa diselesaikan jika kita tahu teknik yang tepat and memiliki kesabaran untuk menguraikannya satu per satu secara logis and sistematis."
+    }
+  }
+]

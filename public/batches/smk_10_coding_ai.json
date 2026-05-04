@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Berpikir Komputasional" },
+    "subtopic": "Fondasi Berpikir Komputasional di Industri",
+    "lesson": {
+      "title": "Problem Solving: Otak di Balik Otomasi",
+      "content": "Selamat datang di dunia masa depan! Sebagai siswa SMK kelas 10, kamu adalah generasi pertama yang mempelajari mata pelajaran **Koding & AI** secara mendalam. Pelajaran pertama kita bukan tentang mengetik kode, melainkan tentang cara berpikir. **Berpikir Komputasional (Computational Thinking)** adalah metode pemecahan masalah yang meniru cara kerja komputer: logis, terstruktur, dan efisien. Di dunia industri, kemampuan ini sangat krusial. Bayangkan kamu harus memperbaiki jalur produksi yang macet; tanpa cara berpikir yang benar, kamu hanya akan menebak-nebak tanpa hasil. Berpikir komputasional memberikanmu 'kerangka kerja' untuk memecahkan masalah serumit apapun.\n\nAda empat fondasi utama dalam Berpikir Komputasional. Pertama adalah **Dekomposisi**, yaitu memecah masalah besar menjadi bagian-bagian kecil yang lebih mudah dikelola. Contohnya, jika kamu ingin merakit drone, kamu membaginya menjadi sistem motor, sistem sensor, sistem kendali, dan kerangka. Kedua adalah **Pengenalan Pola**, mencari kesamaan di antara masalah-masalah yang pernah dihadapi sebelumnya. Jika kamu tahu cara memperbaiki motor listrik A, pola tersebut bisa kamu gunakan untuk motor listrik B. Ketiga adalah **Abstraksi**, fokus pada informasi yang penting saja dan mengabaikan detail yang tidak relevan. Dan keempat adalah **Algoritma**, menyusun langkah-langkah solusi secara berurutan.\n\nDi SMK, berpikir komputasional adalah jembatan antara teori dan praktik. Kemampuan ini akan membantumu belajar bahasa pemrograman lebih cepat dan memahami sistem AI yang kompleks nantinya. Ingat, komputer itu pintar karena instruksi manusia yang logis. Jadilah pribadi yang mampu berpikir jernih dan sistematis. Dunia industri masa depan tidak hanya butuh orang yang bisa mengoperasikan alat, tapi butuh 'Problem Solver' yang mampu mendesain solusi cerdas melalui logika yang kuat. Mari kita asah otakmu untuk menjadi arsitek masa depan digital Indonesia!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Berpikir Komputasional" },
+    "subtopic": "Dekomposisi dan Pengenalan Pola",
+    "lesson": {
+      "title": "Membedah Sistem: Dari Mesin hingga Algoritma",
+      "content": "Mari kita perdalam dua fondasi awal Computational Thinking: **Dekomposisi** dan **Pengenalan Pola**. Di industri, dekomposisi adalah makanan sehari-hari. Sebuah mobil modern terdiri dari puluhan ribu components. Tanpa dekomposisi, mustahil bagi insinyur untuk mendesain atau memperbaiki mobil tersebut. Proses dekomposisi melatihmu untuk melihat sebuah sistem sebagai kumpulan modul-modul yang saling berinteraksi. Saat kamu belajar koding nanti, kamu akan membagi programmu menjadi fungsi-fungsi kecil (modul) agar mudah didebug dan dikembangkan. Ingat prinsipnya: 'Bagi dan Taklukkan' (Divide and Conquer).\n\nSetelah masalah dipecah, kita masuk ke **Pengenalan Pola**. Pola membantu kita bekerja lebih cepat. Dalam dunia pemrograman, kita sering menemukan masalah yang berulang. Misalnya, proses 'login pengguna' memiliki pola yang sama di hampir semua aplikasi: input data -> verifikasi database -> akses diberikan. Di industri manufaktur, pengenalan pola digunakan untuk memprediksi kapan sebuah mesin akan rusak (predictive maintenance). AI belajar dari pola-pola kegagalan di masa lalu untuk memberikan peringatan dini. Jika kamu mahir mengenali pola, kamu tidak perlu mulai dari nol setiap kali menghadapi masalah baru.\n\nLatihlah dirimu dengan mengamati benda-benda di sekitarmu. Cobalah breakdown cara kerja sebuah lift (dekomposisi) dan cari tahu pola apa yang terjadi saat lift tersebut dipanggil dari lantai yang berbeda. Kemampuan melihat struktur dan pola di balik kekacauan adalah ciri teknisi kelas dunia. Di era AI, data adalah kumpulan pola yang sangat besar. Dengan menguasai konsep ini, kamu sebenarnya sedang mempersiapkan diri untuk memahami bagaimana Machine Learning 'berpikir'. Teruslah bertanya: 'Bagaimana bagian-bagian ini bekerja sama?' dan 'Apakah pola ini pernah saya lihat sebelumnya?'. Logika yang tajam adalah modal utamamu di era digital ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Berpikir Komputasional" },
+    "subtopic": "Abstraksi dan Generalisasi",
+    "lesson": {
+      "title": "Fokus pada Inti: Menyederhanakan Kompleksitas",
+      "content": "Pernahkah kamu melihat peta MRT atau busway? Peta tersebut tidak menampilkan bentuk asli gedung-gedung di permukaan tanah, ia hanya menampilkan garis-garis jalur dan nama stasiun. Itulah contoh sempurna dari **Abstraksi**. Abstraksi adalah proses menyaring detail yang tidak penting dan fokus pada informasi utama yang dibutuhkan untuk memecahkan masalah. Di dunia koding, abstraksi sangat vital. Saat kamu menggunakan fungsi `print()` di Python, kamu tidak perlu tahu bagaimana sinyal listrik dikirim ke layar; kamu hanya perlu tahu bahwa fungsi tersebut menampilkan teks. Abstraksi menyembunyikan kerumitan di balik 'antarmuka' yang sederhana.\n\nDalam industri SMK, abstraksi digunakan saat membaca diagram skematik. Seorang teknisi listrik fokus pada aliran arus dan komponen elektronik (abstraksi) tanpa perlu memikirkan warna kabel atau bentuk fisik box panel saat sedang menganalisis jalur. Kemampuan melakukan abstraksi membuatmu bisa bekerja dengan sistem yang sangat besar tanpa merasa kewalahan (overwhelmed). Selain itu, ada konsep **Generalisasi**, yaitu membuat solusi yang bisa digunakan untuk berbagai masalah sejenis. Misalnya, membuat program pengatur suhu yang bisa dipakai di rumah pintar maupun di pabrik pengolahan makanan.\n\nTanpa abstraksi, otak kita akan 'hang' karena terlalu banyak informasi yang masuk. AI bekerja dengan melakukan abstraksi tingkat tinggi terhadap data gambar, suara, dan teks. Sebagai siswa SMK, belajarlah untuk memilah mana informasi yang 'penting' dan mana yang 'gangguan' (noise). Saat kamu menghadapi error pada koding, lakukan abstraksi: bagian mana yang menjadi penyebab utama masalah ini? Fokuslah di sana. Keahlian ini akan menjadikanmu teknisi yang efisien dan manajer proyek yang cerdas. Mari kita belajar untuk melihat esensi dari setiap masalah agar solusi yang kita ciptakan tepat sasaran and elegan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Berpikir Komputasional" },
+    "subtopic": "Algoritma dan Flowchart",
+    "lesson": {
+      "title": "Instruksi Presisi: Alur Logika Tanpa Celah",
+      "content": "Setelah kita membedah masalah (dekomposisi), mencari pola, dan menyederhanakannya (abstraksi), langkah terakhir adalah menyusun **Algoritma**. Algoritma adalah urutan langkah-langkah logis untuk menyelesaikan sebuah tugas. Di dunia komputer, algoritma harus sangat presisi karena komputer tidak bisa 'mengira-ngira' seperti manusia. Jika langkahnya salah, hasilnya pun salah (Garbage In, Garbage Out). Untuk memvisualisasikan algoritma, kita menggunakan **Flowchart** (Diagram Alir). Flowchart menggunakan simbol-simbol standar seperti terminal (awal/akhir), proses (kotak), keputusan (belah ketupat), dan input/output (jajar genjang).\n\nBayangkan kamu sedang membuat algoritma untuk 'Lampu Jalan Otomatis'. Langkahnya: 1. Baca data sensor cahaya. 2. Apakah cahaya < 100 lux? 3. Jika ya, nyalakan lampu. 4. Jika tidak, matikan lampu. 5. Ulangi ke langkah 1. Alur sederhana ini adalah dasar dari Smart City. Di industri, algoritma yang baik harus efisien (hemat waktu dan memori). Sebagai siswa SMK, kamu harus membudayakan membuat draf algoritma/flowchart di kertas sebelum mulai mengetik koding. Hal ini akan mencegahmu tersesat di tengah jalan saat programmu mulai rumit.\n\nAlgoritma adalah bahasa universal di dunia teknologi. Google Search, Rekomendasi YouTube, hingga Autopilot pesawat semuanya dijalankan oleh algoritma yang sangat kompleks namun tetap berdasar pada logika sederhana 'Jika-Maka' (If-Then). Latihlah logikamu dengan membuat algoritma untuk tugas-tugas harianmu, misalnya 'Prosedur Mengelas yang Aman' atau 'Alur Diagnosa Kerusakan Komputer'. Kemampuan menyusun langkah yang sistematis akan membuat kerjamu lebih rapi, terukur, dan profesional. Ingat, koding yang hebat bermula dari algoritma yang matang. Mari kita bangun alur berpikirmu yang kuat mulai dari sekarang!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Berpikir Komputasional" },
+    "subtopic": "Logika Proposisi dan Gerbang Logika",
+    "lesson": {
+      "title": "Biner dan Kebenaran: Dasar Bahasa Komputer",
+      "content": "Komputer hanya mengenal dua kondisi: 0 dan 1, atau Benar (True) dan Salah (False). Ini adalah dasar dari **Logika Proposisi**. Proposisi adalah pernyataan yang hanya memiliki satu nilai kebenaran. Di industri, logika ini diwujudkan dalam bentuk **Gerbang Logika (Logic Gates)** pada sirkuit elektronik dan PLC (Programmable Logic Controller). Tiga gerbang dasar yang wajib kamu kuasai adalah **AND**, **OR**, dan **NOT**. Gerbang AND hanya akan menghasilkan output 1 jika semua inputnya 1. Gerbang OR akan menghasilkan output 1 jika salah satu inputnya 1. Sedangkan NOT adalah pembalik (0 jadi 1, 1 jadi 0).\n\nContoh aplikasi nyata di industri: Sebuah mesin press hanya boleh bekerja (Output=1) jika Tombol Pengaman 1 ditekan (Input A=1) DAN Tombol Pengaman 2 ditekan (Input B=1). Ini adalah penerapan Gerbang AND untuk keselamatan kerja. Tanpa pemahaman logika ini, kamu akan sulit memahami cara kerja sensor dan aktuator di sistem otomatisasi. AI pun sebenarnya adalah tumpukan miliaran gerbang logika yang sangat kompleks yang bekerja bersama-sama untuk membuat keputusan. Memahami logika biner berarti kamu sedang memahami 'bahasa asli' dari mesin dan perangkat lunak.\n\nLatihan logika ini akan mengasah ketajaman analisismu. Kamu belajar untuk tidak ambigu dan berpikir hitam-putih dalam hal teknis. Di SMK, kamu akan sering bertemu dengan tabel kebenaran (truth table) untuk menganalisis berbagai kondisi input-output. Gunakanlah logika ini untuk membangun sistem yang aman dan handal. Ingat, kesalahan logika kecil pada sistem kendali industri bisa berakibat fatal. Jadilah teknisi yang teliti dengan dasar logika yang tak tergoyahkan. Mari kita masuk lebih dalam ke jantung teknologi melalui pemahaman logika digital yang presisi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Berpikir Komputasional" },
+    "subtopic": "Simulasi Masalah Industri",
+    "lesson": {
+      "title": "Studi Kasus: Optimalisasi Jalur Produksi",
+      "content": "Pelajaran terakhir di bab Berpikir Komputasional adalah menerapkan semua fondasi yang telah kita pelajari ke dalam sebuah simulasi masalah nyata. Mari kita ambil kasus: 'Optimalisasi Pengemasan di Pabrik Minuman'. Masalahnya adalah botol yang masuk ke mesin pengemas seringkali memiliki tutup yang tidak rapat atau label yang miring, yang menyebabkan mesin macet. Gunakan Computational Thinking untuk menyelesaikannya. **Dekomposisi**: Pecah proses menjadi deteksi botol, pengecekan tutup, pengecekan label, dan pemisahan botol rusak.\n\n**Pengenalan Pola**: Identifikasi ciri visual botol yang rusak (misalnya: tinggi tutup botol yang tidak rata). **Abstraksi**: Abaikan warna minuman di dalam botol karena yang penting adalah posisi tutup dan label. **Algoritma**: 1. Sensor kamera mengambil gambar botol. 2. AI membandingkan dengan pola 'Tutup Rapat'. 3. JIKA (Pola tidak cocok) MAKA (Aktifkan lengan robot untuk membuang botol). 4. JIKA (Pola cocok) MAKA (Lanjutkan ke pengemasan). Inilah cara insinyur AI bekerja. Mereka tidak hanya menulis kode, tapi mendesain sistem solusi.\n\nMelalui studi kasus ini, kamu bisa melihat bahwa koding adalah alat, sedangkan Computational Thinking adalah otaknya. Di SMK, kamu akan banyak menghadapi tantangan serupa di bengkel atau laboratorium. Jangan terburu-buru mengerjakan; berpikirlah dulu menggunakan fondasi yang sudah kita pelajari. Dengan Computational Thinking, kamu akan menjadi tenaga ahli yang efisien dan inovatif. Kamu siap untuk menghadapi materi berikutnya tentang Sistem Komputer dan Pemrograman Python. Teruslah asah kemampuan berpikirmu, karena di masa depan, orang yang paling dihargai adalah mereka yang mampu memecahkan masalah kompleks dengan cara yang paling sederhana dan logis. Selamat, kamu telah menyelesaikan fondasi pertama menuju ahli AI!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Teknologi Informasi dan Komunikasi (TIK)" },
+    "subtopic": "Literasi Digital dan Pencarian Informasi",
+    "lesson": {
+      "title": "Search Engine: Menemukan Jarum di Tumpukan Jerami",
+      "content": "Di era informasi, kemampuan menemukan data yang akurat secara cepat adalah keterampilan bertahan hidup. Search Engine (mesin pencari) seperti Google bukan hanya kotak untuk mengetik pertanyaan, tapi alat riset yang canggih. Sebagai siswa SMK, kamu harus menguasai **Advanced Search Operators**. Misalnya, gunakan tanda kutip (\" \") untuk mencari frasa persis, tanda minus (-) untuk mengecualikan kata, atau `filetype:pdf` untuk mencari dokumen teknis dalam format PDF. Kemampuan ini akan sangat membantumu saat mencari manual book mesin atau referensi koding yang spesifik.\n\nSelain itu, kamu harus mampu melakukan **Evaluasi Sumber Informasi**. Di internet, siapa saja bisa menulis apa saja. Gunakan prinsip CRAAP (Currency, Relevance, Authority, Accuracy, Purpose). Apakah informasi tersebut masih baru? Apakah penulisnya adalah ahli di bidangnya? Jangan sampai kamu menggunakan skema rangkaian listrik yang salah hanya karena kamu mengambilnya dari blog yang tidak terpercaya. Literasi digital juga mencakup etika berbagi informasi. Jangan menjadi penyebar hoaks teknis yang bisa menyesatkan orang lain. Verifikasi selalu informasi yang kamu temukan melalui sumber resmi (seperti dokumentasi resmi Microsoft, AWS, atau Cisco).\n\nSearch engine juga digunakan untuk mempromisikan bisnis melalui **SEO (Search Engine Optimization)**. Memahami cara kerja mesin pencari akan membantumu jika suatu saat kamu membangun usaha sendiri. Kamu belajar bagaimana membuat kontenmu mudah ditemukan oleh calon pelanggan. Literasi digital adalah 'pintu gerbang' menuju pengetahuan global. Dengan kemampuan riset yang baik, kamu bisa belajar apa saja secara mandiri (autodidak). Mari kita jadikan internet sebagai laboratorium ilmumu yang paling luas. Ingat, di dunia koding, 50% pekerjaan adalah menulis kode, dan 50% lainnya adalah mencari tahu 'bagaimana cara melakukannya' melalui dokumentasi dan forum komunitas."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Teknologi Informasi dan Komunikasi (TIK)" },
+    "subtopic": "Aplikasi Perkantoran dan Cloud Computing",
+    "lesson": {
+      "title": "Kolaborasi Real-Time di Era Industri 4.0",
+      "content": "Dunia industri modern tidak lagi menggunakan kertas untuk berkomunikasi. Semuanya berpindah ke **Cloud Computing** (Komputasi Awan). Teknologi cloud memungkinkanmu menyimpan data di server internet dan mengaksesnya dari mana saja, serta berkolaborasi secara real-time dengan rekan timmu. Aplikasi perkantoran seperti Google Workspace (Docs, Sheets, Slides) atau Microsoft 365 adalah standar di dunia kerja. Kamu tidak perlu lagi mengirim file melalui flashdisk; cukup bagikan link dan kamu bisa bekerja bersama di dokumen yang sama pada saat yang bersamaan.\n\nBagi siswa SMK, penguasaan aplikasi spreadsheet (Google Sheets/Excel) adalah mutlak. Spreadsheet bukan hanya untuk membuat tabel, tapi untuk melakukan analisis data, perhitungan biaya (RAB), hingga membuat grafik laporan produksi. Kamu bisa menggunakan rumus-rumus logis (IF, SUM, VLOOKUP) untuk otomatisasi pengolahan data. Kemampuan ini akan membuatmu terlihat sangat profesional di mata perusahaan. Bayangkan kamu bisa mempresentasikan hasil praktik bengkelmu dengan grafik yang indah dan data yang akurat—perusahaan akan sangat menghargai ketelitianmu.\n\nSelain itu, cloud computing menyediakan layanan seperti SaaS (Software as a Service), PaaS (Platform as a Service), dan IaaS (Infrastructure as a Service). AI banyak dijalankan di atas infrastruktur cloud karena membutuhkan daya komputasi yang besar. Dengan memahami cloud, kamu sedang menyiapkan diri untuk bekerja di perusahaan multinasional yang cabangnya tersebar di seluruh dunia. Mari kita manfaatkan teknologi kolaborasi ini untuk meningkatkan produktivitasmu. Belajarlah untuk mengelola file secara rapi di cloud storage (seperti Google Drive) agar kerjamu terorganisir dan aman dari risiko kehilangan data akibat kerusakan perangkat keras."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Sistem Komputer" },
+    "subtopic": "Perangkat Keras (Hardware)",
+    "lesson": {
+      "title": "Memahami Anatomi Mesin Pintar",
+      "content": "Komputer adalah kumpulan perangkat fisik yang bekerja bersama untuk mengolah data. Perangkat keras (Hardware) dibagi menjadi empat bagian utama: Input, Process, Storage, dan Output. Bagian paling penting adalah **CPU (Central Processing Unit)**, yang sering disebut sebagai otak komputer. CPU melakukan semua perhitungan matematika dan logika. Di era AI, kita juga mengenal **GPU (Graphics Processing Unit)** yang memiliki ribuan core kecil untuk memproses data paralel secara cepat—inilah yang membuat AI bisa 'belajar' dengan sangat cepat.\n\nSelain CPU, ada **RAM (Random Access Memory)** sebagai tempat penyimpanan data sementara yang sedang diproses. Semakin besar RAM, semakin banyak aplikasi yang bisa berjalan lancar secara bersamaan. Untuk penyimpanan jangka panjang, kita menggunakan **SSD (Solid State Drive)** yang jauh lebih cepat daripada harddisk (HDD) lama. Sebagai siswa SMK, kamu harus paham spesifikasi hardware agar bisa memilih perangkat yang sesuai dengan kebutuhan pekerjaanmu, misalnya PC untuk desain grafis akan berbeda spesifikasinya dengan PC untuk server jaringan.\n\nDalam dunia IoT (Internet of Things), hardware menjadi semakin kecil. Kita menggunakan **Microcontroller** seperti Arduino atau ESP32 yang memiliki sensor (input) dan aktuator (output) untuk mengendalikan mesin. Memahami hardware melatihmu untuk menjadi teknisi yang mampu melakukan diagnosa jika terjadi kerusakan fisik. Kamu belajar tentang tegangan listrik, panas komponen, dan kecepatan bus data. Hardware adalah tubuh, dan koding adalah jiwanya. Untuk membangun AI yang hebat, kita butuh 'tubuh' hardware yang kuat and efisien. Mari kita pelajari setiap komponennya dengan teliti agar kamu bisa merakit masa depanmu sendiri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Sistem Komputer" },
+    "subtopic": "Perangkat Lunak (Software) dan Sistem Operasi",
+    "lesson": {
+      "title": "Sistem Operasi: Jembatan Manusia dan Mesin",
+      "content": "Hardware yang hebat tidak akan bisa bekerja tanpa **Software** (Perangkat Lunak). Perangkat lunak yang paling dasar adalah **Sistem Operasi (OS)** seperti Windows, Linux, atau Android. OS berfungsi sebagai manajer sumber daya hardware dan penyedia antarmuka (interface) bagi pengguna. Di dunia server dan AI, Linux adalah 'raja'-nya karena bersifat open-source, ringan, dan sangat aman. Sebagai calon tenaga ahli koding, kamu wajib mengenal perintah-perintah dasar (CLI - Command Line Interface) di terminal Linux.\n\nSoftware dibagi menjadi dua: **Software Sistem** (seperti OS dan Driver) dan **Software Aplikasi** (seperti Browser, Office, atau editor koding). Driver adalah software khusus yang memberitahu OS bagaimana cara berkomunikasi dengan hardware tertentu, misalnya driver printer atau driver kartu grafis. Tanpa driver yang tepat, hardware tercanggih sekalipun tidak akan terdeteksi. Memahami cara kerja software membantumu saat melakukan instalasi sistem atau memperbarui perangkat lunak untuk meningkatkan keamanan dan performa mesin.\n\nDi era AI, software tidak lagi hanya berisi baris-baris perintah statis, tapi berisi 'model' yang bisa belajar dari data. Software AI bisa mengenali wajah, menerjemahkan bahasa, hingga mengemudikan mobil. Namun, dasar pemahamannya tetap sama: alokasi memori, manajemen file, dan eksekusi instruksi. Mari kita pelajari bagaimana software mengontrol hardware di balik layar. Dengan memahami sistem operasi, kamu akan memiliki kontrol penuh atas komputer yang kamu gunakan. Kamu tidak hanya menjadi pengguna (user), tapi menjadi 'master' yang mampu mengoptimalkan sistem untuk kinerja yang luar biasa."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Sistem Komputer" },
+    "subtopic": "Siklus Pemrosesan Data (Siklus von Neumann)",
+    "lesson": {
+      "title": "Alur Kerja Komputer: Input ke Output",
+      "content": "Bagaimana sebuah ketikan keyboard bisa berubah menjadi huruf di layar? Semuanya mengikuti **Siklus Pemrosesan Data**. Siklus ini terdiri dari empat tahap: **Fetch** (mengambil instruksi dari memori), **Decode** (menerjemahkan instruksi), **Execute** (menjalankan instruksi), dan **Store** (menyimpan hasil kembali ke memori). Konsep ini dikenal sebagai Arsitektur von Neumann. Memahami siklus ini penting agar kamu tahu mengapa komputer bisa melambat (bottleneck) dan bagian mana yang perlu diperbaiki.\n\nInput bisa datang dari manusia (keyboard, mouse) atau dari mesin (sensor suhu, kamera AI). Data input ini dikonversi menjadi sinyal digital (0 dan 1). CPU kemudian mengolahnya berdasarkan program yang tersimpan. Setelah diolah, hasilnya dikirim ke perangkat output (monitor, printer, atau lengan robot). Di industri, siklus ini terjadi ribuan kali dalam satu detik untuk memastikan presisi produksi. Kecepatan siklus ini ditentukan oleh kecepatan clock CPU (dalam GHz). Semakin tinggi GHz, semakin cepat CPU bisa melakukan satu siklus Fetch-Execute.\n\nDalam sistem AI, siklus ini melibatkan miliaran parameter matematika. AI mengambil data input yang sangat besar, mengolahnya melalui lapisan-lapisan syaraf digital (neural networks), dan mengeluarkan prediksi sebagai output. Sebagai siswa SMK, kamu harus membudayakan berpikir logis berdasarkan alur data: Apa inputnya? Bagaimana prosesnya? Dan apa output yang diinginkan? Pola pikir ini akan membantumu saat mendesain sistem otomatisasi atau mencari kesalahan (troubleshooting) pada sistem yang rusak. Mari kita hargai kecepatan luar biasa di dalam CPU yang memungkinkan kemajuan teknologi hari ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Sistem Komputer" },
+    "subtopic": "Troubleshooting Perangkat Keras dan Lunak",
+    "lesson": {
+      "title": "Diagnosa dan Perbaikan: Menjadi Dokter Mesin Digital",
+      "content": "Pelajaran terakhir di bab Sistem Komputer adalah kemampuan **Troubleshooting** (Pelacakan Masalah). Seorang ahli koding & AI yang hebat juga harus tahu cara memperbaiki perangkatnya sendiri saat bermasalah. Langkah pertama troubleshooting adalah **Identifikasi Gejala**. Apakah komputer mati total (masalah power), hang (masalah RAM/OS), atau muncul layar biru/BSOD (masalah driver/hardware)? Gunakan pendekatan logis 'Eliminasi Kemungkinan' untuk mempersempit penyebab masalah.\n\nUntuk masalah hardware, periksalah koneksi kabel, pastikan tidak ada debu yang menyumbat kipas (overheat), dan gunakan tools seperti 'Device Manager' untuk mengecek status komponen. Untuk masalah software, cobalah melakukan restart, cek task manager untuk melihat aplikasi yang memakan banyak memori, atau gunakan 'Safe Mode' untuk memperbaiki sistem operasi yang korup. Selalu buatlah cadangan (backup) data penting sebelum melakukan perbaikan besar. Dokumentasikan setiap langkah perbaikanmu agar jika masalah yang sama muncul lagi, kamu tahu cara mengatasinya dengan cepat.\n\nKemampuan troubleshooting melatih kesabaran dan ketelitianmu. Di industri, teknisi yang jago troubleshooting sangat dihargai karena bisa meminimalkan waktu henti (downtime) mesin yang mahal. AI juga mulai digunakan untuk membantu troubleshooting melalui sistem pakar (expert systems) yang bisa memberikan saran perbaikan berdasarkan gejala yang dilaporkan. Jadilah 'Dokter Digital' yang handal. Dengan memahami hubungan antara hardware dan software secara mendalam, kamu akan memiliki kepercayaan diri tinggi untuk mengeksplorasi teknologi baru tanpa takut merusaknya. Mari kita tutup bab ini dengan semangat untuk selalu merawat dan mengoptimalkan aset digital kita!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Jaringan Komputer dan Internet" },
+    "subtopic": "Dasar Jaringan dan Topologi",
+    "lesson": {
+      "title": "Menghubungkan Dunia: Jaringan di Pabrik Pintar",
+      "content": "Jaringan komputer adalah sekumpulan komputer dan perangkat lain yang terhubung agar bisa saling berbagi data dan sumber daya. Di dunia industri (Smart Factory), jaringan adalah saraf pusat yang menghubungkan mesin produksi, sensor, dan server pusat. Kamu harus mengenal **Topologi Jaringan**, yaitu cara perangkat-perangkat tersebut disusun secara fisik maupun logis. Topologi yang paling umum adalah **Star** (Bintang), di mana semua perangkat terhubung ke satu switch pusat. Kelebihannya: jika satu kabel rusak, perangkat lain tetap bisa bekerja. Ada juga topologi **Mesh**, di mana setiap perangkat saling terhubung, memberikan keamanan data yang sangat tinggi (redundancy).\n\nPerangkat jaringan utama meliputi **Router** (menghubungkan jaringan yang berbeda, misalnya kantor ke internet), **Switch** (menghubungkan perangkat dalam satu jaringan lokal/LAN), dan **Access Point** (menyediakan koneksi wireless/Wi-Fi). Sebagai siswa SMK, kamu harus bisa merancang topologi sederhana yang efisien untuk sebuah laboratorium komputer atau bengkel kecil. Pemilihan topologi yang tepat akan sangat menentukan kecepatan transfer data dan kemudahan perawatan jaringan di masa depan.\n\nDi era Industri 4.0, kita juga mengenal **Industrial Network Protocols** yang lebih tangguh terhadap gangguan elektromagnetik di pabrik. Jaringan bukan hanya soal kabel, tapi soal bagaimana data mengalir dengan aman dan tanpa hambatan (latensi rendah). Pemahaman tentang jaringan adalah dasar untuk mempelajari IoT (Internet of Things) dan cloud computing nantinya. Mari kita pelajari bagaimana cara membangun koneksi yang solid dan handal. Jaringan yang kuat adalah fondasi bagi sistem AI yang terdistribusi secara luas di seluruh dunia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Jaringan Komputer dan Internet" },
+    "subtopic": "IP Address dan Subnetting",
+    "lesson": {
+      "title": "Alamat Digital: Menemukan Perangkat dalam Jaringan",
+      "content": "Agar dua komputer bisa saling berkomunikasi, masing-masing harus memiliki 'nama' unik yang disebut **IP Address** (Internet Protocol Address). Bayangkan IP Address seperti alamat rumahmu. Versi yang paling banyak digunakan saat ini adalah IPv4, yang terdiri dari empat angka yang dipisahkan titik (contoh: 192.168.1.10). Ada juga IPv6 yang jauh lebih panjang untuk menampung miliaran perangkat IoT di masa depan. IP Address dibagi menjadi dua: **IP Publik** (terlihat oleh internet global) dan **IP Privat** (hanya digunakan di dalam jaringan lokal seperti di sekolah atau rumah).\n\nSelain IP, ada konsep **Subnetting**, yaitu membagi satu jaringan besar menjadi beberapa jaringan kecil (subnet) yang lebih teratur. Di industri, kita memisahkan subnet untuk 'Mesin Produksi' dengan subnet 'Admin Kantor' demi alasan keamanan dan efisiensi lalu lintas data. Kamu belajar menggunakan **Subnet Mask** untuk menentukan batas jaringan tersebut. Kemampuan mengelola alamat IP adalah keahlian dasar seorang administrator jaringan. Jika IP-nya bentrok (conflict), maka perangkat tidak akan bisa terhubung ke jaringan.\n\nDalam sistem AI yang terdistribusi, setiap 'node' (komputer pengolah data) harus memiliki alamat yang jelas agar beban kerja bisa dibagi dengan rata. Memahami IP Address juga membantumu saat melakukan setting CCTV online, server game, atau perangkat smart home. Mari kita pelajari cara melakukan konfigurasi IP secara manual (Static IP) dan otomatis (DHCP). Dengan menguasai pengalamatan digital, kamu memegang kunci untuk mengendalikan aliran data di seluruh dunia. Ingat, di internet, alamat yang benar adalah langkah pertama menuju komunikasi yang sukses."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Jaringan Komputer dan Internet" },
+    "subtopic": "Protokol Komunikasi (HTTP, MQTT, TCP/IP)",
+    "lesson": {
+      "title": "Bahasa Komunikasi Antar Mesin",
+      "content": "Jaringan bukan hanya soal kabel dan alamat, tapi soal 'bahasa' yang digunakan untuk bicara, yang disebut **Protokol**. Protokol yang paling sering kamu temui adalah **HTTP/HTTPS** untuk mengakses website. Namun, di dunia industri dan IoT, kita menggunakan protokol yang lebih ringan seperti **MQTT** (Message Queuing Telemetry Transport). MQTT didesain untuk perangkat dengan daya baterai kecil dan jaringan yang tidak stabil, sehingga sangat cocok untuk sensor-sensor di perkebunan atau tambang yang jauh dari pemukiman.\n\nDasar dari semua itu adalah model **TCP/IP** yang terdiri dari empat lapisan: Application, Transport, Internet, dan Network Access. Lapisan Transport (TCP) bertugas memastikan data sampai dengan utuh (tanpa ada yang hilang). Jika ada data yang rusak, TCP akan meminta kirim ulang. Sedangkan lapisan Internet (IP) bertugas mencari rute tercepat untuk mencapai tujuan. Memahami protokol membantumu saat melakukan koding aplikasi yang harus mengirim data ke server atau menerima perintah dari smartphone.\n\nBayangkan sebuah sensor suhu mengirim data ke cloud menggunakan MQTT, lalu sebuah AI di cloud menganalisisnya dan mengirim perintah balik melalui HTTP ke smartphone pemilik pabrik. Inilah ekosistem digital yang saling bicara. Sebagai siswa SMK, kamu harus paham kapan menggunakan protokol tertentu berdasarkan kebutuhan proyekmu. Pengetahuan tentang protokol akan menjadikannmu seorang 'Arsitek Sistem' yang mampu merancang komunikasi data yang efisien dan handal di era serba terhubung ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Jaringan Komputer dan Internet" },
+    "subtopic": "Keamanan Jaringan Dasar",
+    "lesson": {
+      "title": "Benteng Digital: Melindungi Data dari Serangan",
+      "content": "Semakin banyak perangkat yang terhubung ke internet, semakin besar pula risiko serangan siber (cyber attack). **Keamanan Jaringan** adalah prioritas utama di industri. Kamu harus mengenal **Firewall**, yaitu perangkat (bisa hardware atau software) yang berfungsi sebagai penjaga gerbang yang menyaring lalu lintas data masuk dan keluar. Firewall memblokir akses dari pihak yang tidak dikenal atau mencurigakan. Selain itu, ada **Enkripsi** (seperti HTTPS), yang mengubah data menjadi kode rahasia agar tidak bisa dibaca oleh hacker saat data tersebut melintas di kabel atau Wi-Fi.\n\nSebagai langkah awal, kamu harus membudayakan penggunaan password yang kuat (kombinasi huruf, angka, simbol) dan mengaktifkan 2FA (Two-Factor Authentication). Jangan pernah menggunakan Wi-Fi publik untuk transaksi penting atau mengakses data rahasia perusahaan tanpa menggunakan **VPN** (Virtual Private Network). VPN membuat 'terowongan' aman di tengah internet publik agar data tetap rahasia. Di industri, serangan terhadap jaringan bisa berakibat pada berhentinya produksi atau bocoran rahasia desain produk.\n\nAI juga digunakan dalam keamanan jaringan untuk mendeteksi anomali (kelainan) lalu lintas data secara otomatis. Jika ada aktivitas login yang tidak biasa dari luar negeri pada jam 2 pagi, AI akan segera memberikan peringatan. Keamanan jaringan bukan hanya tugas orang IT, tapi tanggung jawab setiap orang yang menggunakan komputer. Jadilah pengguna yang cerdas dan waspada. Dengan memahami dasar keamanan, kamu sedang melindungi bukan hanya datamu sendiri, tapi juga integritas sistem industri di tempatmu bekerja nanti. Benteng digital yang kuat dimulai dari kesadaran penggunanya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Jaringan Komputer dan Internet" },
+    "subtopic": "Pengantar Internet of Things (IoT)",
+    "lesson": {
+      "title": "Saat Benda Mati Mulai Bicara",
+      "content": "Internet of Things (IoT) adalah konsep di mana benda-benda fisik di sekitar kita terhubung ke internet dan bisa saling bertukar data. Contoh sederhana adalah lampu rumah yang bisa dimatikan lewat HP atau mesin pabrik yang melapor sendiri jika butuh oli. IoT terdiri dari tiga komponen utama: **Perangkat** (dengan sensor/aktuator), **Konektivitas** (Wi-Fi, Bluetooth, 4G/5G), dan **Platform Cloud** (tempat data diolah). IoT adalah 'mata dan telinga' bagi AI di dunia nyata.\n\nSebagai siswa SMK, kamu akan belajar cara membuat sistem IoT sederhana menggunakan microcontroller seperti ESP32. Kamu bisa membuat 'Smart Agriculture' yang menyiram tanaman secara otomatis saat tanah kering. Data dari ribuan sensor IoT inilah yang menjadi 'Big Data' untuk diolah oleh kecerdasan buatan. Tanpa IoT, AI tidak memiliki data real-time untuk membuat keputusan yang akurat di industri. IoT mengubah cara kita bekerja, dari manual menjadi serba otomatis dan terpantau dari jarak jauh.\n\nNamun, IoT juga memiliki tantangan besar dalam hal keamanan dan standarisasi. Bayangkan jika smart lock pintu rumahmu diretas oleh orang asing. Oleh karena itu, saat belajar IoT, kita juga harus belajar cara mengamankan komunikasinya. IoT bukan hanya teknologi masa depan, tapi teknologi masa kini yang sudah banyak diterapkan di kota-kota besar (Smart City). Mari kita eksplorasi peluang tanpa batas dengan menghubungkan perangkat-perangkat di sekitarmu. Jadilah inovator yang mampu memberikan 'nyawa' digital pada benda-benda di sekitarmu demi kemudahan hidup manusia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Jaringan Komputer dan Internet" },
+    "subtopic": "Analisis Koneksi dan Speedtest",
+    "lesson": {
+      "title": "Mendiagnosa Kecepatan dan Kualitas Sinyal",
+      "content": "Pelajaran terakhir di bab Jaringan adalah kemampuan mengukur dan menganalisis kualitas koneksi internet. Kamu harus mengenal istilah **Bandwidth** (kapasitas maksimal jalur data) dan **Throughput** (kecepatan nyata yang didapat). Selain itu, ada **Latency/Ping**, yaitu waktu yang dibutuhkan data untuk perjalanan bolak-balik dari komputermu ke server. Di dunia game online atau kontrol robot jarak jauh, latency yang rendah (di bawah 50ms) jauh lebih penting daripada bandwidth yang besar. Latency yang tinggi akan menyebabkan 'lag' atau keterlambatan respon mesin.\n\nKamu bisa menggunakan perintah `ping` di terminal untuk mengecek apakah sebuah server aktif, dan `tracert` (traceroute) untuk melihat rute mana saja yang melewati datamu sebelum sampai ke tujuan. Jika ada 'Request Timed Out', berarti ada masalah di salah satu titik rute tersebut. Gunakan aplikasi speedtest untuk memastikan kamu mendapatkan kecepatan yang sesuai dengan yang dijanjikan oleh penyedia layanan (ISP). Memahami kualitas sinyal (RSSI) pada koneksi Wi-Fi juga membantu dalam meletakkan posisi router yang optimal di bengkel atau kantor.\n\nKemampuan analisis koneksi melatihmu untuk menjadi teknisi jaringan yang handal. Kamu tidak hanya tahu cara memasang kabel, tapi tahu cara mengoptimalkannya. Di era AI yang berbasis cloud, kualitas jaringan adalah penentu utama kepuasan pengguna. Jika jaringan lambat, AI secanggih apapun akan terasa tidak berguna. Mari kita tutup bab ini dengan praktek mengukur performa jaringan di sekolahmu. Jadilah pribadi yang selalu mengedepankan efisiensi dan kualitas dalam setiap sistem komunikasi yang kamu bangun. Selamat, kamu kini telah memahami bagaimana dunia ini terhubung secara digital!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Pengenalan Bahasa Python",
+    "lesson": {
+      "title": "Python: Bahasa Masa Depan Industri",
+      "content": "Selamat datang di inti dari mata pelajaran ini: **Pemrograman Python**. Mengapa Python? Karena Python adalah bahasa yang paling populer di dunia untuk pengembangan AI, Analisis Data, dan Otomatisasi Industri. Python memiliki sintaksis (aturan penulisan) yang sangat mirip dengan bahasa Inggris, sehingga mudah dipelajari oleh pemula namun sangat kuat untuk para ahli. Di SMK, Python akan menjadi 'alat serbaguna' untuk membuat berbagai aplikasi, mulai dari pengolah data sederhana hingga kendali robot cerdas.\n\nLangkah pertama adalah menyiapkan lingkungan kerja. Kita akan menggunakan **VS Code** (Visual Studio Code) sebagai editor koding dan **Python Interpreter** untuk menjalankan kodenya. Kamu juga bisa menggunakan **Jupyter Notebook** untuk keperluan analisis data dan eksperimen AI secara interaktif. Python bersifat 'Interpreted', artinya kode dijalankan baris demi baris. Python juga memiliki komunitas yang sangat besar, sehingga jika kamu menemukan kesulitan, ribuan solusi sudah tersedia di internet (seperti Stack Overflow).\n\nKoding bukan tentang menghafal rumus, tapi tentang memahami logika dan konsistensi. Python mengajarkanmu cara menulis instruksi yang rapi dan terstruktur. Sebagai siswa SMK, kemampuan koding Python akan membuka peluang karier yang sangat luas di berbagai sektor, tidak hanya IT. Kamu bisa menjadi Data Analyst di perusahaan manufaktur atau pengembang sistem IoT di industri pertanian. Mari kita mulai perjalanan kodingmu dengan penuh antusias. Dunia digital adalah kanvasmu, dan Python adalah kuasnya. Mari kita lukis masa depan yang cerdas bersama-sama!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Variabel dan Tipe Data",
+    "lesson": {
+      "title": "Menyimpan Data: Kotak Ajaib dalam Memori",
+      "content": "Dalam pemrograman, kita membutuhkan tempat untuk menyimpan informasi. Tempat tersebut disebut **Variabel**. Bayangkan variabel sebagai sebuah kotak yang memiliki label (nama) dan berisi data tertentu. Aturan penamaan variabel di Python: harus dimulai dengan huruf atau underscore, tidak boleh mengandung spasi, dan bersifat case-sensitive (nama `Suhu` berbeda dengan `suhu`). Contoh: `suhu_mesin = 75.5`. Di sini, `suhu_mesin` adalah nama variabel, dan `75.5` adalah nilainya.\n\nSetiap data memiliki **Tipe Data** yang berbeda. Empat tipe data dasar yang wajib kamu tahu adalah: 1. **Integer** (Bilangan bulat, contoh: `stok = 100`). 2. **Float** (Bilangan desimal, contoh: `tegangan = 220.5`). 3. **String** (Teks, contoh: `status = \"Normal\"`). 4. **Boolean** (Kebenaran, contoh: `is_active = True`). Memahami tipe data penting agar kamu tidak salah dalam melakukan operasi matematika atau logika. Kamu tidak bisa menjumlahkan 'Teks' dengan 'Angka' secara langsung tanpa konversi.\n\nDi dunia industri, variabel digunakan untuk menampung data dari sensor. Misalnya, variabel `tekanan_uap` akan terus diperbarui nilainya setiap detik oleh sensor. Kodingmu akan membaca nilai variabel tersebut untuk menentukan tindakan selanjutnya. Latihlah dirimu membuat variabel yang namanya deskriptif (jelas) agar kodingmu mudah dibaca oleh orang lain. Nama variabel yang baik adalah bagian dari dokumentasi program yang profesional. Mari kita mulai mengelola data dengan rapi menggunakan variabel-variabel yang cerdas."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Operator Matematika dan Logika",
+    "lesson": {
+      "title": "Melakukan Kalkulasi Otomatis",
+      "content": "Program komputer ada untuk melakukan perhitungan yang membosankan bagi manusia secara cepat dan akurat. Python memiliki **Operator Matematika** standar: `+` (tambah), `-` (kurang), `*` (kali), `/` (bagi), `**` (pangkat), dan `%` (modulo/sisa bagi). Operator modulo sangat berguna untuk menentukan bilangan ganjil atau genap, atau untuk membuat jadwal mesin yang berulang. Selain itu, ada **Operator Perbandingan**: `==` (sama dengan), `!=` (tidak sama dengan), `>` (lebih besar), `<` (lebih kecil), dsb. Hasil dari perbandingan ini selalu berupa tipe data Boolean (True/False).\n\nAda juga **Operator Logika** yang menggabungkan beberapa kondisi: `and` (dan), `or` (atau), dan `not` (tidak). Contoh logika industri: `if suhu > 100 and tekanan > 50: alarm = True`. Alarm hanya akan berbunyi jika kedua kondisi bahaya terpenuhi. Memahami prioritas operator (mana yang dihitung duluan) juga sangat penting agar hasil kalkulasimu tidak salah. Gunakan tanda kurung `()` untuk memastikan urutan perhitungan yang kamu inginkan, persis seperti dalam pelajaran matematika.\n\nDalam AI, operator matematika digunakan untuk menghitung probabilitas (kemungkinan). Misalnya, AI menghitung seberapa besar peluang sebuah gambar adalah 'Wajah Manusia' berdasarkan pola pikselnya. Sebagai siswa SMK, kamu akan sering menggunakan operator ini untuk mengolah data sensor atau menghitung parameter mesin produksi. Kodingmu adalah otak yang melakukan kalkulasi instan untuk menjaga stabilitas sistem. Mari kita asah kemampuan berhitung kodingmu agar solusi yang kamu ciptakan selalu presisi dan handal. Matematika adalah bahasa alam, dan operator adalah alat untuk menerjemahkannya ke dalam kode."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Struktur Kondisional (If-Else)",
+    "lesson": {
+      "title": "Membuat Keputusan Cerdas",
+      "content": "Inti dari kecerdasan (baik manusia maupun buatan) adalah kemampuan mengambil keputusan berdasarkan kondisi tertentu. Dalam Python, kita menggunakan struktur **If-Elif-Else**. Struktur ini memungkinkan programmu memilih jalur eksekusi yang berbeda. JIKA (If) sebuah kondisi terpenuhi, maka jalankan perintah A. JIKA TIDAK (Elif) kondisi lain terpenuhi, jalankan perintah B. JIKA SEMUA SALAH (Else), jalankan perintah terakhir sebagai standar keamanan.\n\nContoh aplikasi di SMK: `if nilai_ujian >= 75: status = \"Lulus\" else: status = \"Remedial\"`. Perhatikan penggunaan **Indentasi** (menjorok ke dalam) di Python. Indentasi bukan hanya agar rapi, tapi merupakan aturan wajib untuk menentukan blok kode mana yang masuk ke dalam kondisi tersebut. Salah indentasi akan menyebabkan program error (IndentationError). Struktur kondisional yang bertingkat (nested if) memungkinkanmu menangani skenario yang sangat kompleks di dunia industri.\n\nDi dunia AI, kondisional digunakan untuk menentukan tindakan robot. 'Jika ada rintangan di depan, maka berbelok ke kiri'. Semakin banyak kondisi yang bisa ditangani oleh programmu, semakin 'pintar' sistem tersebut terlihat. Namun, programmer yang handal selalu berusaha menyederhanakan logika kondisinya agar program tetap cepat dan mudah dipelihara. Mari kita latih kemampuan pengambilan keputusan kodingmu. Buatlah program yang bisa berpikir untukmu dan memberikan respon yang tepat pada setiap situasi. Logika kondisional adalah fondasi dari perilaku cerdas sebuah mesin."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Perulangan (Loops - For & While)",
+    "lesson": {
+      "title": "Otomatisasi Tugas Berulang",
+      "content": "Salah satu kekuatan utama komputer adalah ia tidak pernah lelah melakukan hal yang sama berulang kali dengan kecepatan yang tetap. Dalam pemrograman, kita menggunakan **Loops** (Perulangan). Ada dua jenis perulangan utama di Python: **For Loop** dan **While Loop**. `For Loop` digunakan jika kita tahu persis berapa kali kita ingin mengulang (misalnya: periksa 10 sensor). Sedangkan `While Loop` digunakan jika kita ingin mengulang selama sebuah kondisi masih benar (misalnya: jalankan mesin selama tombol darurat tidak ditekan).\n\nContoh `For Loop`: `for i in range(5): print(\"Produksi barang ke-\", i)`. Ini akan mencetak angka 0 sampai 4. Contoh `While Loop`: `while suhu < 100: panaskan_mesin()`. Berhati-hatilah dengan 'Infinite Loop' (perulangan tak terbatas) yang bisa membuat komputermu hang karena program terus berjalan tanpa henti. Pastikan ada kondisi yang akan mengubah nilai variabel agar perulangan bisa berhenti pada saat yang tepat.\n\nDi industri, perulangan digunakan untuk memantau sensor secara terus-menerus (monitoring). AI menggunakan perulangan saat proses 'Training' (belajar), di mana ia melihat jutaan data berulang kali hingga ia benar-benar paham polanya. Sebagai siswa SMK, penguasaan perulangan akan menghemat waktumu secara luar biasa. Pekerjaan yang butuh waktu berjam-jam jika dilakukan manual bisa selesai dalam hitungan detik dengan perulangan yang tepat. Mari kita buat mesin bekerja untuk kita, bukan sebaliknya. Gunakan kekuatan perulangan untuk meningkatkan produktivitas dan akurasi hasil kerjamu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Algoritma dan Pemrograman" },
+    "subtopic": "Fungsi dan Modularitas",
+    "lesson": {
+      "title": "Membangun Program yang Rapi dan Efisien",
+      "content": "Pelajaran terakhir di bab Pemrograman Dasar adalah **Fungsi**. Fungsi adalah blok kode yang dirancang untuk melakukan tugas tertentu dan bisa digunakan berulang kali hanya dengan memanggil namanya. Bayangkan fungsi seperti sebuah 'alat' di kotak perkakasmu. Jika kamu sering melakukan perhitungan luas lingkaran, kamu tidak perlu menulis rumusnya berkali-kali; cukup buat fungsi `hitung_luas_lingkaran()`. Di Python, fungsi didefinisikan dengan kata kunci `def`.\n\nFungsi bisa menerima **Parameter** (input) dan mengembalikan **Return Value** (output). Contoh: `def sapa(nama): return \"Halo \" + nama`. Konsep ini disebut **Modularitas**, yaitu membagi program besar menjadi bagian-bagian kecil (modul) yang mandiri. Program yang modular sangat mudah diperbaiki dan dikembangkan. Jika ada kesalahan di bagian perhitungan, kamu cukup mengecek fungsi perhitungannya saja tanpa harus membongkar seluruh kode program. Ini adalah standar profesional dalam industri software.\n\nDalam pengembangan AI, kita banyak menggunakan fungsi-fungsi yang sudah disediakan oleh perpustakaan (library) seperti `numpy` atau `pandas`. Kamu tidak perlu membuat algoritma AI dari nol; cukup panggil fungsi yang sudah ada dan berikan datamu. Namun, kamu harus paham logika di balik fungsi tersebut agar bisa menggunakannya dengan benar. Mari kita budayakan menulis kode yang bersih, modular, dan efisien melalui penggunaan fungsi. Dengan fungsi, kodingmu akan terlihat seperti sebuah karya arsitektur yang indah dan terorganisir. Selamat, kamu kini telah menguasai dasar-dasar pemrograman untuk menjadi seorang kreator teknologi!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Pengumpulan dan Visualisasi Data",
+    "lesson": {
+      "title": "Bercerita dengan Data",
+      "content": "Data adalah 'bahan bakar' bagi Kecerdasan Buatan. Tanpa data, AI tidak bisa belajar. Langkah pertama dalam analisis data adalah **Pengumpulan Data** (Data Collection). Data bisa berasal dari sensor industri, log website, atau survei pelanggan. Di SMK, kamu akan belajar cara mengambil data secara otomatis menggunakan koding. Setelah data terkumpul, kita perlu melakukan **Visualisasi Data** untuk memahami maknanya. Manusia jauh lebih cepat memahami gambar daripada ribuan baris angka.\n\nKita menggunakan perpustakaan (library) Python seperti **Matplotlib** atau **Seaborn** untuk membuat grafik. Ada berbagai jenis grafik: **Line Chart** (untuk melihat tren waktu, misalnya kenaikan suhu mesin), **Bar Chart** (untuk membandingkan kategori, misalnya hasil produksi antar shift), dan **Scatter Plot** (untuk melihat hubungan antar dua variabel). Grafik yang baik adalah grafik yang jujur, mudah dibaca, dan memberikan wawasan (insight) yang berguna bagi pengambilan keputusan. Bayangkan kamu bisa menunjukkan kepada atasanmu bahwa efisiensi mesin meningkat 20% melalui grafik yang profesional.\n\nVisualisasi data bukan hanya soal estetika, tapi soal komunikasi. AI seringkali dianggap sebagai 'Black Box' (kotak hitam) yang sulit dipahami. Dengan visualisasi, kita bisa 'membuka' kotak tersebut dan melihat bagaimana AI membuat keputusan. Sebagai calon ahli AI, kamu harus mampu menjelaskan temuan datamu kepada orang lain yang mungkin tidak paham koding. Mari kita belajar mengubah angka-angka mati menjadi cerita yang hidup dan penuh makna. Data yang diolah dengan benar adalah senjata yang sangat ampuh di dunia bisnis dan industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Analisis Data" },
+    "subtopic": "Pengantar Machine Learning",
+    "lesson": {
+      "title": "Mengajar Mesin untuk Belajar",
+      "content": "Puncak dari mata pelajaran ini adalah **Machine Learning (ML)**, yaitu cabang dari AI yang memberikan kemampuan pada komputer untuk belajar dari pengalaman (data) tanpa harus diprogram secara eksplisit untuk setiap tugas. Ada tiga jenis utama ML: 1. **Supervised Learning** (Belajar dengan Guru), di mana kita memberikan data beserta jawabannya. Contoh: memberikan jutaan foto apel yang sudah diberi label 'Apel'. 2. **Unsupervised Learning** (Belajar Mandiri), di mana mesin mencari pola sendiri tanpa label. Contoh: mengelompokkan pelanggan berdasarkan kemiripan hobi. 3. **Reinforcement Learning** (Belajar dari Hadiah), di mana mesin belajar melalui trial-and-error.\n\nDi tingkat kelas 10, kita akan fokus pada konsep **Klasifikasi** dan **Regresi**. Klasifikasi digunakan untuk menentukan kategori (misalnya: 'Barang ini layak jual' atau 'Barang ini cacat'). Regresi digunakan untuk memprediksi angka (misalnya: 'Berapa konsumsi listrik pabrik besok?'). Machine Learning menggunakan algoritma matematika yang kompleks, namun di Python, kita bisa menggunakan library seperti `Scikit-Learn` untuk menjalankannya dengan mudah. Yang paling penting adalah kualitas datamu: 'Garbage In, Garbage Out'.\n\nMachine Learning sudah ada di sekitarmu: filter spam di email, rekomendasi lagu di Spotify, hingga fitur 'Portrait' di kamera HP-mu. Di industri SMK, ML digunakan untuk optimasi proses kimia, prediksi kerusakan alat berat, hingga manajemen stok otomatis. Memahami cara kerja ML akan membuatmu menyadari bahwa AI bukan sihir, melainkan matematika tingkat lanjut yang dijalankan oleh komputer. Mari kita mulai berpikir seperti seorang 'Data Scientist' yang mampu melatih mesin untuk menjadi asisten yang cerdas dan handal. Masa depan adalah tentang kolaborasi antara manusia dan mesin yang terus belajar."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Dampak Sosial Informatika" },
+    "subtopic": "Etika dan Privasi Data",
+    "lesson": {
+      "title": "Tanggung Jawab di Balik Layar",
+      "content": "Teknologi AI membawa kemudahan, namun juga membawa tantangan etika yang besar. Salah satu isu utama adalah **Privasi Data**. Setiap kali kita menggunakan aplikasi, data kita dikumpulkan. Siapa yang memiliki data tersebut? Bagaimana data itu digunakan? Sebagai pengembang teknologi, kamu memiliki tanggung jawab moral untuk melindungi privasi pengguna. Jangan mengumpulkan data melebihi apa yang benar-benar dibutuhkan, dan pastikan data tersebut disimpan dengan aman menggunakan enkripsi yang kuat.\n\nSelain privasi, ada isu **Bias AI**. Jika kita melatih AI dengan data yang tidak seimbang (bias), maka AI tersebut akan memberikan keputusan yang tidak adil. Misalnya, AI perekrutan karyawan yang cenderung menolak pelamar dari kelompok tertentu karena data masa lalu yang diskriminatif. Kita harus memastikan AI yang kita buat bersifat inklusif dan adil bagi semua orang. Selain itu, ada kekhawatiran tentang **Otomatisasi dan Lapangan Kerja**. Banyak pekerjaan manual yang kini digantikan oleh robot. Namun, sejarah membuktikan bahwa setiap teknologi baru akan menciptakan jenis pekerjaan baru yang lebih bernilai tinggi.\n\nEtika digital juga mencakup **Keamanan Siber** (Cybersecurity). Menjadi ahli koding bukan berarti kamu boleh meretas sistem orang lain. Gunakan keahlianmu untuk membangun, bukan untuk merusak. 'White Hat Hacker' adalah sebutan bagi para ahli keamanan yang menggunakan ilmunya untuk melindungi dunia dari kejahatan siber. Mari kita tanamkan nilai-nilai integritas dan kemanusiaan dalam setiap baris kode yang kita tulis. Teknologi tanpa etika adalah bahaya, namun teknologi dengan etika adalah berkah bagi peradaban. Jadilah profesional IT yang bermartabat and dipercaya oleh masyarakat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Dampak Sosial Informatika" },
+    "subtopic": "Hukum Informatika dan Kekayaan Intelektual",
+    "lesson": {
+      "title": "Aturan Main di Dunia Digital",
+      "content": "Dunia digital memiliki hukum yang mengaturnya. Di Indonesia, kita memiliki **UU ITE** (Undang-Undang Informasi dan Transaksi Elektronik) yang mengatur tentang perbuatan yang dilarang di internet, seperti menyebarkan fitnah, hoaks, atau melakukan peretasan ilegal. Kamu harus paham batasan hukum agar tidak terjerat masalah di masa depan. Selain itu, ada konsep **Kekayaan Intelektual (HAKI)** yang melindungi hasil karyamu, termasuk kode program, desain grafis, dan merek dagang. Jangan asal menyalin kode orang lain tanpa izin atau tanpa mencantumkan sumbernya.\n\nDalam dunia koding, kita mengenal berbagai jenis **Lisensi Software**. Ada Lisensi **Proprietary** (berbayar dan tertutup seperti Windows), dan ada Lisensi **Open Source** (gratis dan boleh dimodifikasi seperti Linux). Lisensi open source pun memiliki aturan, misalnya lisensi MIT yang sangat bebas atau lisensi GPL yang mewajibkan karyamu juga menjadi open source. Memilih lisensi yang tepat penting jika kamu ingin membangun startup atau berkontribusi pada komunitas global. Menghargai hak cipta orang lain adalah tanda profesionalitasmu sebagai seorang ahli teknologi.\n\nSelain hukum nasional, ada juga etika global dalam penggunaan AI (AI Ethics Guidelines). Banyak negara sedang berdiskusi untuk membuat aturan agar AI tidak digunakan untuk senjata otonom yang berbahaya. Sebagai siswa SMK, kamu adalah bagian dari komunitas global ini. Belajarlah untuk menjadi warga digital (Digital Citizen) yang taat hukum dan menghargai orisinalitas. Dengan memahami hukum informatika, kamu bisa bekerja dengan tenang dan terlindungi secara legal. Mari kita bangun ekosistem digital Indonesia yang sehat, kreatif, dan kompetitif melalui ketaatan pada aturan dan etika yang berlaku."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Praktik Lintas Bidang" },
+    "subtopic": "Perancangan Proyek Akhir",
+    "lesson": {
+      "title": "Smart School: Solusi Digital untuk Lingkunganmu",
+      "content": "Saatnya menyatukan semua potongan puzzle yang telah kita pelajari! Di bab terakhir ini, kamu ditantang untuk merancang sebuah proyek solusi digital menggunakan konsep Koding & AI. Tema yang kita ambil adalah **Smart School**. Pikirkanlah satu masalah di sekolahmu yang bisa diselesaikan dengan teknologi. Contoh: 'Sistem Absensi Wajah Otomatis', 'Monitoring Kelembapan Taman Sekolah dengan IoT', atau 'Chatbot Tanya-Jawab Peraturan Sekolah'. Gunakan metode **Design Thinking**: Empathize (pahami masalah), Define (tentukan fokus), Ideate (cari ide), Prototype (buat model), dan Test (uji coba).\n\nDalam proyek ini, kamu harus membagi peran dalam tim (ada yang fokus di hardware/IoT, ada yang di koding Python, dan ada yang di desain UI). Buatlah **Proposal Proyek** yang berisi latar belakang, alat dan bahan, alur logika (flowchart), dan estimasi waktu pengerjaan. Jangan takut untuk bermimpi besar, tapi mulailah dari hal yang paling sederhana yang bisa berfungsi (Minimum Viable Product). Proyek ini akan menjadi portofolio pertamamu yang sangat berharga saat melamar kerja atau melanjutkan kuliah nantinya.\n\nPraktik lintas bidang melatih kemampuan kerja tim, komunikasi, dan manajemen proyekmu. Di dunia nyata, tidak ada proyek besar yang dikerjakan sendirian. Kamu belajar untuk mendengarkan pendapat orang lain dan mencari solusi bersama. Manfaatkan semua materi yang sudah dipelajari: dari Computational Thinking untuk membedah masalah, hingga Python untuk mengeksekusi solusinya. Mari kita tunjukkan bahwa siswa SMK bukan hanya bisa mengoperasikan teknologi, tapi juga mampu menciptakan teknologi yang bermanfaat bagi lingkungan sekitarnya. Selamat berinovasi and jadilah bintang di sekolahmu!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 10,
+    "subject": "Koding & AI",
+    "topic": { "name": "Praktik Lintas Bidang" },
+    "subtopic": "Presentasi dan Evaluasi Proyek",
+    "lesson": {
+      "title": "Panggung Inovator Muda",
+      "content": "Pelajaran penutup di kelas 10 adalah **Presentasi dan Evaluasi**. Sebuah produk hebat tidak akan dikenal jika tidak dipresentasikan dengan baik. Kamu harus mampu menjelaskan proyekmu di depan kelas (atau calon investor) dengan bahasa yang meyakinkan. Jelaskan: Masalah apa yang kamu selesaikan? Bagaimana teknologinya bekerja? Dan apa manfaat nyata yang dirasakan pengguna? Gunakan alat bantu presentasi yang menarik (seperti slide atau demo langsung) dan siapkan diri untuk menjawab pertanyaan-pertanyaan kritis dari audiens.\n\nSetelah presentasi, lakukanlah **Evaluasi Diri** (Self-Reflection). Apa yang berhasil? Apa yang gagal? Apa yang bisa ditingkatkan di masa depan? Jangan takut dengan kegagalan teknis saat demo; para CEO teknologi besar pun pernah mengalaminya. Yang penting adalah bagaimana kamu belajar dari kesalahan tersebut. Evaluasi adalah cara kita untuk terus tumbuh (growth mindset). Di dunia industri, proses ini disebut 'Post-Mortem Analysis' atau 'Sprint Retrospective' dalam metodologi Agile. Kamu belajar untuk selalu menjadi lebih baik dari hari kemarin.\n\nSelamat! Kamu telah menyelesaikan perjalanan panjang di kelas 10 Koding & AI. Kamu telah berubah dari seorang pengguna pasif menjadi seorang kreator teknologi yang kritis dan berwawasan luas. Ilmu yang kamu dapatkan adalah fondasi yang sangat kuat untuk materi yang lebih menantang di kelas 11 dan 12 nanti (seperti Web Dev, Data Science, dan Deep Learning). Teruslah bereksperimen, jangan pernah berhenti belajar, dan tetaplah rendah hati dengan ilmu yang kamu miliki. Masa depan digital Indonesia ada di tanganmu. Mari kita tutup tahun ini dengan rasa bangga dan semangat untuk terus berkarya bagi nusa dan bangsa. Sampai jumpa di kelas berikutnya, sang arsitek AI masa depan!"
+    }
+  }
+]

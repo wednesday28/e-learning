@@ -1,0 +1,2177 @@
+[
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Analogi: KAKAK : ADIK = .... : ....",
+    "options": {
+      "A": "Ayah : Ibu",
+      "B": "Guru : Murid",
+      "C": "Senior : Junior",
+      "D": "Atasan : Bawahan",
+      "E": "Besar : Kecil"
+    },
+    "answer": "C",
+    "explanation": "Hubungan urutan atau tingkatan dalam keluarga/lingkungan. Kakak lebih dulu/tinggi dari Adik, sebagaimana Senior lebih dulu/tinggi dari Junior."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: RESIDU = ....",
+    "options": {
+      "A": "Hasil",
+      "B": "Sisa",
+      "C": "Ampas",
+      "D": "Endapan",
+      "E": "Semua benar"
+    },
+    "answer": "E",
+    "explanation": "Residu berarti sisa, ampas, atau endapan dari suatu proses kimia atau fisik."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: KONVEKS >< ....",
+    "options": {
+      "A": "Datar",
+      "B": "Cembung",
+      "C": "Cekung",
+      "D": "Lonjong",
+      "E": "Miring"
+    },
+    "answer": "C",
+    "explanation": "Konveks berarti cembung. Lawan katanya adalah konkav atau cekung."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Analogi: KOMPUTER : LISTRIK = MANUSIA : ....",
+    "options": {
+      "A": "Oksigen",
+      "B": "Makanan",
+      "C": "Air",
+      "D": "Darah",
+      "E": "Otak"
+    },
+    "answer": "B",
+    "explanation": "Komputer membutuhkan listrik sebagai sumber tenaga. Manusia membutuhkan makanan sebagai sumber tenaga (kalori)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Silogisme: Semua mamalia bernapas dengan paru-paru. Ikan paus adalah mamalia. Kesimpulannya adalah...",
+    "options": {
+      "A": "Ikan paus bernapas dengan insang",
+      "B": "Ikan paus bernapas dengan paru-paru",
+      "C": "Sebagian mamalia bernapas dengan insang",
+      "D": "Semua yang bernapas dengan paru-paru adalah ikan paus",
+      "E": "Ikan paus bukan mamalia"
+    },
+    "answer": "B",
+    "explanation": "Pernyataan umum (Semua mamalia bernapas dengan paru-paru) + Pernyataan khusus (Ikan paus adalah mamalia) = Ikan paus bernapas dengan paru-paru."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah hasil dari 1/2 + 0,25 + 75% ?",
+    "options": {
+      "A": "1,0",
+      "B": "1,25",
+      "C": "1,5",
+      "D": "1,75",
+      "E": "2,0"
+    },
+    "answer": "C",
+    "explanation": "0,5 + 0,25 + 0,75 = 1,5."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Tentukan angka berikutnya: 3, 6, 12, 24, 48, ....",
+    "options": {
+      "A": "60",
+      "B": "72",
+      "C": "84",
+      "D": "96",
+      "E": "100"
+    },
+    "answer": "D",
+    "explanation": "Pola: Dikali 2 (3x2=6, 6x2=12, dst). 48x2 = 96."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x = 20% dari 500 dan y = akar dari 10.000, maka...",
+    "options": {
+      "A": "x > y",
+      "B": "x < y",
+      "C": "x = y",
+      "D": "x = 2y",
+      "E": "y = 2x"
+    },
+    "answer": "C",
+    "explanation": "x = 0,20 x 500 = 100. y = akar 10.000 = 100. Jadi x = y."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Seorang pedagang membeli 1 lusin baju seharga Rp 600.000. Jika ia ingin untung 20%, berapa harga jual per baju?",
+    "options": {
+      "A": "Rp 50.000",
+      "B": "Rp 60.000",
+      "C": "Rp 65.000",
+      "D": "Rp 70.000",
+      "E": "Rp 75.000"
+    },
+    "answer": "B",
+    "explanation": "Harga beli per baju = 600.000 / 12 = 50.000. Untung 20% = 0,20 x 50.000 = 10.000. Harga jual = 50.000 + 10.000 = 60.000."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah hasil dari 15^2 - 14^2 ?",
+    "options": {
+      "A": "1",
+      "B": "15",
+      "C": "29",
+      "D": "31",
+      "E": "45"
+    },
+    "answer": "C",
+    "explanation": "Rumus: a^2 - b^2 = (a+b)(a-b). (15+14)(15-14) = 29 x 1 = 29."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Figural",
+    "question": "Analogi Gambar: Jika Persegi bertambah satu garis diagonal, maka Lingkaran akan...",
+    "options": {
+      "A": "Tetap lingkaran",
+      "B": "Menjadi setengah lingkaran",
+      "C": "Terbagi oleh satu garis diameter",
+      "D": "Menjadi oval",
+      "E": "Menjadi titik"
+    },
+    "answer": "C",
+    "explanation": "Pola: Penambahan garis pemotong di tengah. Diagonal pada persegi setara dengan diameter pada lingkaran."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Figural",
+    "question": "Pola Gambar: Gambar 1 (Panah ke atas), Gambar 2 (Panah ke kanan), Gambar 3 (Panah ke bawah). Gambar 4 adalah...",
+    "options": {
+      "A": "Panah ke atas",
+      "B": "Panah ke kiri",
+      "C": "Panah miring",
+      "D": "Dua panah",
+      "E": "Titik"
+    },
+    "answer": "B",
+    "explanation": "Pola: Rotasi 90 derajat searah jarum jam (Clockwise)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Figural",
+    "question": "Serial Gambar: Sebuah pola selang-seling antara Hitam, Putih, Hitam, Putih. Jika setelah Putih adalah Hitam Besar, maka urutan berikutnya adalah...",
+    "options": {
+      "A": "Hitam Kecil",
+      "B": "Putih Besar",
+      "C": "Putih Kecil",
+      "D": "Abu-abu",
+      "E": "Kotak"
+    },
+    "answer": "B",
+    "explanation": "Pola: Perubahan warna (H-P) dan ukuran. Jika Hitam menjadi Besar, maka Putih berikutnya juga akan menjadi Besar."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Figural",
+    "question": "Klasifikasi: Manakah yang berbeda? (A) Kubus, (B) Balok, (C) Tabung, (D) Bola, (E) Lingkaran.",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D",
+      "E": "E"
+    },
+    "answer": "E",
+    "explanation": "A-D adalah bangun ruang (3D), sedangkan E (Lingkaran) adalah bangun datar (2D)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Figural",
+    "question": "Analogi Gambar: Titik di tengah kotak : Titik di pojok kotak = Garis di tengah lingkaran : ....",
+    "options": {
+      "A": "Garis singgung lingkaran",
+      "B": "Titik di pusat lingkaran",
+      "C": "Lingkaran di dalam garis",
+      "D": "Dua garis sejajar",
+      "E": "Kotak di dalam lingkaran"
+    },
+    "answer": "A",
+    "explanation": "Pola: Perpindahan elemen dari pusat ke tepi/pinggir."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Semua mahasiswa harus rajin belajar. Andi adalah mahasiswa. Kesimpulan yang sah adalah...",
+    "options": {
+      "A": "Andi malas belajar",
+      "B": "Andi harus rajin belajar",
+      "C": "Sebagian mahasiswa tidak rajin",
+      "D": "Andi mungkin rajin belajar",
+      "E": "Hanya Andi yang rajin belajar"
+    },
+    "answer": "B",
+    "explanation": "Silogisme kategorik sederhana."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika p > q dan q > r, maka pernyataan yang pasti benar adalah...",
+    "options": {
+      "A": "p = r",
+      "B": "p < r",
+      "C": "p > r",
+      "D": "p + q = r",
+      "E": "r > p"
+    },
+    "answer": "C",
+    "explanation": "Sifat transitif dalam pertidaksamaan."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa guru adalah penulis. Semua penulis adalah orang yang gemar membaca. Kesimpulan yang tepat adalah...",
+    "options": {
+      "A": "Semua guru gemar membaca",
+      "B": "Sebagian guru gemar membaca",
+      "C": "Beberapa penulis bukan guru",
+      "D": "Semua yang gemar membaca adalah guru",
+      "E": "Tidak ada guru yang gemar membaca"
+    },
+    "answer": "B",
+    "explanation": "Irisan antara guru yang penulis dan kegemaran membaca."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika x adalah bilangan asli antara 1 dan 5, dan y adalah bilangan genap antara 1 dan 5, maka nilai x + y yang mungkin adalah...",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "6",
+      "D": "9",
+      "E": "10"
+    },
+    "answer": "C",
+    "explanation": "x = {2,3,4}. y = {2,4}. Nilai x+y bisa 4, 5, 6, 7, 8. Opsi yang tersedia adalah 6."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Pernyataan 'Jika hari hujan, maka ibu membawa payung' ekuivalen dengan...",
+    "options": {
+      "A": "Jika ibu membawa payung, maka hari hujan",
+      "B": "Jika hari tidak hujan, maka ibu tidak membawa payung",
+      "C": "Jika ibu tidak membawa payung, maka hari tidak hujan",
+      "D": "Hari hujan dan ibu membawa payung",
+      "E": "Ibu membawa payung atau hari tidak hujan"
+    },
+    "answer": "C",
+    "explanation": "Kontraposisi: (P -> Q) ekuivalen dengan (~Q -> ~P)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari 120 + 30 x 4 - 50 adalah...",
+    "options": {
+      "A": "190",
+      "B": "210",
+      "C": "240",
+      "D": "550",
+      "E": "600"
+    },
+    "answer": "A",
+    "explanation": "Dahulukan perkalian: 120 + (30x4) - 50 = 120 + 120 - 50 = 190."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah nilai 20% dari 15% dari 1000?",
+    "options": {
+      "A": "15",
+      "B": "30",
+      "C": "45",
+      "D": "60",
+      "E": "75"
+    },
+    "answer": "B",
+    "explanation": "15% dari 1000 = 150. 20% dari 150 = 30."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Jika 12 buku harganya Rp 36.000, berapa harga 5 buku?",
+    "options": {
+      "A": "Rp 12.000",
+      "B": "Rp 15.000",
+      "C": "Rp 18.000",
+      "D": "Rp 20.000",
+      "E": "Rp 25.000"
+    },
+    "answer": "B",
+    "explanation": "Harga 1 buku = 36.000 / 12 = 3.000. Harga 5 buku = 3.000 x 5 = 15.000."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah akar pangkat tiga dari 1.000?",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "30",
+      "D": "100",
+      "E": "1000"
+    },
+    "answer": "A",
+    "explanation": "10 x 10 x 10 = 1.000."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Sebuah angka jika dikali 3 lalu ditambah 10 hasilnya 40. Angka tersebut adalah...",
+    "options": {
+      "A": "8",
+      "B": "10",
+      "C": "12",
+      "D": "15",
+      "E": "20"
+    },
+    "answer": "B",
+    "explanation": "3x + 10 = 40. 3x = 30. x = 10."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Analogi: KOMPOR : MASAK = .... : ....",
+    "options": {
+      "A": "Pisau : Potong",
+      "B": "Buku : Tulis",
+      "C": "Sepatu : Jalan",
+      "D": "Lampu : Terang",
+      "E": "Kipas : Angin"
+    },
+    "answer": "A",
+    "explanation": "Hubungan Alat : Fungsi. Kompor untuk memasak, pisau untuk memotong."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x = 0,333... dan y = 1/3, maka...",
+    "options": {
+      "A": "x > y",
+      "B": "x < y",
+      "C": "x = y",
+      "D": "x = 3y",
+      "E": "Hubungan tidak jelas"
+    },
+    "answer": "C",
+    "explanation": "Bilangan desimal berulang 0,333... nilainya sama dengan pecahan 1/3."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa burung tidak bisa terbang. Penguin adalah burung. Kesimpulan yang tepat adalah...",
+    "options": {
+      "A": "Penguin bisa terbang",
+      "B": "Penguin tidak bisa terbang",
+      "C": "Ada penguin yang bisa terbang",
+      "D": "Mungkin penguin tidak bisa terbang",
+      "E": "Semua burung adalah penguin"
+    },
+    "answer": "D",
+    "explanation": "Karena 'Beberapa' (tidak semua), kita tidak bisa memastikan secara logis murni dari premis apakah penguin termasuk yang tidak bisa terbang (meskipun faktanya benar, logikanya hanya 'mungkin' jika tidak ada premis tambahan)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 1/4 dari 20% dari 500?",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    },
+    "answer": "D",
+    "explanation": "20% dari 500 = 100. 1/4 dari 100 = 25."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: NISBI >< ....",
+    "options": {
+      "A": "Maya",
+      "B": "Mutlak",
+      "C": "Semu",
+      "D": "Abstrak",
+      "E": "Relatif"
+    },
+    "answer": "B",
+    "explanation": "Nisbi berarti relatif. Lawan katanya adalah mutlak (absolut)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika 3x + 5 = 20, berapa nilai 6x + 10?",
+    "options": {
+      "A": "25",
+      "B": "30",
+      "C": "35",
+      "D": "40",
+      "E": "45"
+    },
+    "answer": "D",
+    "explanation": "6x + 10 adalah dua kali lipat dari 3x + 5. Jadi 20 x 2 = 40."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Semua hewan butuh air. Kambing adalah hewan. Kesimpulan: ....",
+    "options": {
+      "A": "Kambing butuh air",
+      "B": "Air butuh kambing",
+      "C": "Sebagian kambing butuh air",
+      "D": "Kambing adalah air",
+      "E": "Hewan adalah kambing"
+    },
+    "answer": "A",
+    "explanation": "Logika deduktif dasar (Modus Ponens)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: AKURAT = ....",
+    "options": {
+      "A": "Cepat",
+      "B": "Tepat",
+      "C": "Benar",
+      "D": "Bagus",
+      "E": "Indah"
+    },
+    "answer": "B",
+    "explanation": "Akurat berarti teliti, seksama, atau tepat."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah 1,5 x 2,5 ?",
+    "options": {
+      "A": "3,0",
+      "B": "3,25",
+      "C": "3,5",
+      "D": "3,75",
+      "E": "4,0"
+    },
+    "answer": "D",
+    "explanation": "1,5 x 2,5 = 3,75."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Angka berikutnya: 1, 4, 9, 16, 25, ....",
+    "options": {
+      "A": "30",
+      "B": "35",
+      "C": "36",
+      "D": "40",
+      "E": "49"
+    },
+    "answer": "C",
+    "explanation": "Pola: Bilangan kuadrat (1^2, 2^2, 3^2, dst). 6^2 = 36."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Analogi: AIR : HAUS = .... : ....",
+    "options": {
+      "A": "Api : Panas",
+      "B": "Makan : Lapar",
+      "C": "Tidur : Ngantuk",
+      "D": "Lampu : Gelap",
+      "E": "Semua benar"
+    },
+    "answer": "E",
+    "explanation": "Hubungan Solusi : Masalah. Air menghilangkan haus, makan menghilangkan lapar, dst."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika A lebih besar dari B dan C lebih kecil dari B, maka...",
+    "options": {
+      "A": "A < C",
+      "B": "A = C",
+      "C": "A > C",
+      "D": "B < C",
+      "E": "B = A"
+    },
+    "answer": "C",
+    "explanation": "A > B dan B > C, maka A > C."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari 500 - 150 + 250 adalah...",
+    "options": {
+      "A": "500",
+      "B": "600",
+      "C": "700",
+      "D": "800",
+      "E": "900"
+    },
+    "answer": "B",
+    "explanation": "350 + 250 = 600."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah 2/5 dari 200?",
+    "options": {
+      "A": "40",
+      "B": "60",
+      "C": "80",
+      "D": "100",
+      "E": "120"
+    },
+    "answer": "C",
+    "explanation": "2/5 x 200 = 2 x 40 = 80."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: PROTAGONIS >< ....",
+    "options": {
+      "A": "Antagonis",
+      "B": "Tritagonis",
+      "C": "Pemeran utama",
+      "D": "Penjahat",
+      "E": "Figuran"
+    },
+    "answer": "A",
+    "explanation": "Protagonis adalah tokoh utama (baik), lawannya adalah Antagonis (penantang/jahat)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika 4y = 32, berapa nilai y/2?",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "6",
+      "D": "8",
+      "E": "10"
+    },
+    "answer": "B",
+    "explanation": "y = 32 / 4 = 8. y / 2 = 4."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa guru adalah PNS. Semua PNS mendapat gaji. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa guru mendapat gaji",
+      "B": "Semua guru mendapat gaji",
+      "C": "Semua yang mendapat gaji adalah guru",
+      "D": "Hanya guru yang mendapat gaji",
+      "E": "Guru bukan PNS"
+    },
+    "answer": "A",
+    "explanation": "Irisan antara guru dan PNS yang mendapat gaji."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari (10 + 10) x (10 - 5) adalah...",
+    "options": {
+      "A": "50",
+      "B": "100",
+      "C": "150",
+      "D": "200",
+      "E": "250"
+    },
+    "answer": "B",
+    "explanation": "20 x 5 = 100."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: OTENTIK = ....",
+    "options": {
+      "A": "Palsu",
+      "B": "Asli",
+      "C": "Baru",
+      "D": "Lama",
+      "E": "Indah"
+    },
+    "answer": "B",
+    "explanation": "Otentik berarti asli atau sah."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah nilai 5% dari 20% dari 10.000?",
+    "options": {
+      "A": "50",
+      "B": "100",
+      "C": "150",
+      "D": "200",
+      "E": "250"
+    },
+    "answer": "B",
+    "explanation": "20% dari 10.000 = 2000. 5% dari 2000 = 100."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika hari ini Sabtu, maka besok Minggu. Hari ini bukan Sabtu. Kesimpulan: ....",
+    "options": {
+      "A": "Besok bukan Minggu",
+      "B": "Besok tetap Minggu",
+      "C": "Hari ini Jumat",
+      "D": "Tidak dapat ditarik kesimpulan",
+      "E": "Besok hari kerja"
+    },
+    "answer": "D",
+    "explanation": "Penolakan anteseden (P -> Q, ~P) tidak bisa menyimpulkan ~Q secara logis (falasi logika)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 1000 / 25 / 4?",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "40",
+      "D": "100",
+      "E": "250"
+    },
+    "answer": "A",
+    "explanation": "1000 / 25 = 40. 40 / 4 = 10."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Analogi: SIANG : MATAHARI = MALAM : ....",
+    "options": {
+      "A": "Bintang",
+      "B": "Bulan",
+      "C": "Gelap",
+      "D": "Tidur",
+      "E": "Lampu"
+    },
+    "answer": "B",
+    "explanation": "Hubungan Waktu : Benda Langit utama. Siang ada matahari, malam ada bulan."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x = 10 dan y = 5, berapa nilai (x+y)^2 ?",
+    "options": {
+      "A": "125",
+      "B": "150",
+      "C": "200",
+      "D": "225",
+      "E": "250"
+    },
+    "answer": "D",
+    "explanation": "(10+5)^2 = 15^2 = 225."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Semua kucing mengeong. Meong adalah kucing. Kesimpulan: ....",
+    "options": {
+      "A": "Meong mengeong",
+      "B": "Semua yang mengeong adalah kucing",
+      "C": "Meong tidak mengeong",
+      "D": "Kucing adalah meong",
+      "E": "Tidak ada kesimpulan"
+    },
+    "answer": "A",
+    "explanation": "Modus Ponens sederhana."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 2^5 ?",
+    "options": {
+      "A": "10",
+      "B": "16",
+      "C": "32",
+      "D": "64",
+      "E": "128"
+    },
+    "answer": "C",
+    "explanation": "2x2x2x2x2 = 32."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: KONTRAK = ....",
+    "options": {
+      "A": "Perjanjian",
+      "B": "Pembelian",
+      "C": "Penjualan",
+      "D": "Kerjasama",
+      "E": "Perselisihan"
+    },
+    "answer": "A",
+    "explanation": "Kontrak berarti perjanjian tertulis antara dua pihak."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah nilai 1/8 dalam desimal?",
+    "options": {
+      "A": "0,125",
+      "B": "0,25",
+      "C": "0,375",
+      "D": "0,5",
+      "E": "0,625"
+    },
+    "answer": "A",
+    "explanation": "1 / 8 = 0,125."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa buku adalah komik. Komik sangat seru. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa buku sangat seru",
+      "B": "Semua buku sangat seru",
+      "C": "Tidak ada buku yang seru",
+      "D": "Komik adalah buku",
+      "E": "Buku bukan komik"
+    },
+    "answer": "A",
+    "explanation": "Beberapa buku (yang merupakan komik) adalah sangat seru."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 0,5 x 0,5 ?",
+    "options": {
+      "A": "0,1",
+      "B": "0,2",
+      "C": "0,25",
+      "D": "0,5",
+      "E": "1,0"
+    },
+    "answer": "C",
+    "explanation": "0,5 x 0,5 = 0,25."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: DINAMIS >< ....",
+    "options": {
+      "A": "Statatis",
+      "B": "Statis",
+      "C": "Aktif",
+      "D": "Pasif",
+      "E": "Bergerak"
+    },
+    "answer": "B",
+    "explanation": "Dinamis berarti penuh gerak. Lawan katanya adalah statis (diam/tetap)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x/3 = 9, berapa nilai 2x?",
+    "options": {
+      "A": "18",
+      "B": "27",
+      "C": "36",
+      "D": "45",
+      "E": "54"
+    },
+    "answer": "E",
+    "explanation": "x = 9 x 3 = 27. 2x = 54."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Semua burung bertelur. Ayam bertelur. Kesimpulan: ....",
+    "options": {
+      "A": "Ayam adalah burung",
+      "B": "Sebagian ayam adalah burung",
+      "C": "Tidak semua yang bertelur adalah burung",
+      "D": "Ayam mungkin burung",
+      "E": "Tidak dapat ditarik kesimpulan tentang hubungan ayam dan burung"
+    },
+    "answer": "E",
+    "explanation": "Premis 1 (Burung -> Telur). Premis 2 (Ayam -> Telur). Kita tidak bisa menyimpulkan Ayam = Burung (Afirmasi konsekuen adalah falasi)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari 150 + 150 / 3 adalah...",
+    "options": {
+      "A": "100",
+      "B": "150",
+      "C": "200",
+      "D": "250",
+      "E": "300"
+    },
+    "answer": "C",
+    "explanation": "Dahulukan pembagian: 150 + (150/3) = 150 + 50 = 200."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: VIRTUAL = ....",
+    "options": {
+      "A": "Nyata",
+      "B": "Semu",
+      "C": "Bagus",
+      "D": "Indah",
+      "E": "Besar"
+    },
+    "answer": "B",
+    "explanation": "Virtual berarti dalam bentuk digital atau maya (semu)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah hasil dari akar 144?",
+    "options": {
+      "A": "10",
+      "B": "11",
+      "C": "12",
+      "D": "13",
+      "E": "14"
+    },
+    "answer": "C",
+    "explanation": "12 x 12 = 144."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika x > y dan y > 10, maka...",
+    "options": {
+      "A": "x < 10",
+      "B": "x = 10",
+      "C": "x > 10",
+      "D": "x + y = 10",
+      "E": "Tidak dapat ditentukan"
+    },
+    "answer": "C",
+    "explanation": "Sifat transitif: x > y > 10, maka x > 10."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah 25% dari 800?",
+    "options": {
+      "A": "100",
+      "B": "200",
+      "C": "300",
+      "D": "400",
+      "E": "500"
+    },
+    "answer": "B",
+    "explanation": "1/4 x 800 = 200."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Analogi: KERING : AIR = GELAP : ....",
+    "options": {
+      "A": "Lampu",
+      "B": "Terang",
+      "C": "Malam",
+      "D": "Cahaya",
+      "E": "Bulan"
+    },
+    "answer": "D",
+    "explanation": "Hubungan Kondisi : Ketiadaan. Kering karena tidak ada air, gelap karena tidak ada cahaya."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Hasil dari 3/4 + 1/4 adalah...",
+    "options": {
+      "A": "1/2",
+      "B": "1",
+      "C": "1 1/4",
+      "D": "2",
+      "E": "4"
+    },
+    "answer": "B",
+    "explanation": "4/4 = 1."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa orang adalah pelari. Semua pelari butuh sepatu. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa orang butuh sepatu",
+      "B": "Semua orang butuh sepatu",
+      "C": "Hanya pelari yang butuh sepatu",
+      "D": "Orang bukan pelari",
+      "E": "Tidak ada kesimpulan"
+    },
+    "answer": "A",
+    "explanation": "Irisan antara orang yang pelari dan kebutuhan sepatu."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 10 x 0,1 ?",
+    "options": {
+      "A": "0,1",
+      "B": "1",
+      "C": "10",
+      "D": "100",
+      "E": "0"
+    },
+    "answer": "B",
+    "explanation": "10 x 1/10 = 1."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: MANDIRI = ....",
+    "options": {
+      "A": "Sendiri",
+      "B": "Bebas",
+      "C": "Otonom",
+      "D": "Kaya",
+      "E": "Pintar"
+    },
+    "answer": "C",
+    "explanation": "Mandiri berarti mampu berdiri sendiri atau otonom."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x + y = 10 dan x - y = 2, berapa nilai x?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7",
+      "E": "8"
+    },
+    "answer": "C",
+    "explanation": "Eliminasi: (x+y) + (x-y) = 10 + 2 -> 2x = 12 -> x = 6."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika semua A adalah B, dan semua B adalah C, maka...",
+    "options": {
+      "A": "Semua A adalah C",
+      "B": "Sebagian A adalah C",
+      "C": "Semua C adalah A",
+      "D": "Beberapa C adalah B",
+      "E": "Tidak ada A yang C"
+    },
+    "answer": "A",
+    "explanation": "Silogisme transitif standar."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari (5 + 5) x 10 / 2 adalah...",
+    "options": {
+      "A": "25",
+      "B": "50",
+      "C": "75",
+      "D": "100",
+      "E": "125"
+    },
+    "answer": "B",
+    "explanation": "10 x 10 / 2 = 100 / 2 = 50."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: PASIF >< ....",
+    "options": {
+      "A": "Diam",
+      "B": "Aktif",
+      "C": "Malas",
+      "D": "Rajin",
+      "E": "Pintar"
+    },
+    "answer": "B",
+    "explanation": "Lawan kata pasif adalah aktif."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah 75% dari 400?",
+    "options": {
+      "A": "100",
+      "B": "200",
+      "C": "300",
+      "D": "400",
+      "E": "500"
+    },
+    "answer": "C",
+    "explanation": "3/4 x 400 = 3 x 100 = 300."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa mawar berduri. Semua yang berduri tajam. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa mawar tajam",
+      "B": "Semua mawar tajam",
+      "C": "Tidak ada mawar yang tajam",
+      "D": "Mawar adalah duri",
+      "E": "Duri adalah mawar"
+    },
+    "answer": "A",
+    "explanation": "Irisan mawar yang berduri dan sifat tajam."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 100 - (20 + 30) ?",
+    "options": {
+      "A": "30",
+      "B": "40",
+      "C": "50",
+      "D": "60",
+      "E": "70"
+    },
+    "answer": "C",
+    "explanation": "100 - 50 = 50."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: TARGET = ....",
+    "options": {
+      "A": "Sasaran",
+      "B": "Hasil",
+      "C": "Proses",
+      "D": "Mulai",
+      "E": "Akhir"
+    },
+    "answer": "A",
+    "explanation": "Target berarti sasaran atau tujuan yang hendak dicapai."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x = 5, berapa nilai x^3 ?",
+    "options": {
+      "A": "25",
+      "B": "75",
+      "C": "100",
+      "D": "125",
+      "E": "150"
+    },
+    "answer": "D",
+    "explanation": "5 x 5 x 5 = 125."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika saya lapar, maka saya makan. Saya tidak makan. Kesimpulan: ....",
+    "options": {
+      "A": "Saya tidak lapar",
+      "B": "Saya lapar",
+      "C": "Saya sedang minum",
+      "D": "Mungkin saya lapar",
+      "E": "Makanan habis"
+    },
+    "answer": "A",
+    "explanation": "Modus Tollens (P -> Q, ~Q, maka ~P)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 0,1 + 0,2 + 0,3 ?",
+    "options": {
+      "A": "0,4",
+      "B": "0,5",
+      "C": "0,6",
+      "D": "0,7",
+      "E": "0,8"
+    },
+    "answer": "C",
+    "explanation": "0,6."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: JAUH >< ....",
+    "options": {
+      "A": "Dekat",
+      "B": "Lama",
+      "C": "Cepat",
+      "D": "Besar",
+      "E": "Kecil"
+    },
+    "answer": "A",
+    "explanation": "Lawan kata jauh adalah dekat."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah nilai 40% dari 50?",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    },
+    "answer": "C",
+    "explanation": "0,4 x 50 = 20."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa atlet adalah mahasiswa. Semua atlet rajin berlatih. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa mahasiswa rajin berlatih",
+      "B": "Semua mahasiswa rajin berlatih",
+      "C": "Atlet bukan mahasiswa",
+      "D": "Hanya mahasiswa yang rajin berlatih",
+      "E": "Tidak ada kesimpulan"
+    },
+    "answer": "A",
+    "explanation": "Irisan antara mahasiswa yang atlet dan sifat rajin berlatih."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari 1000 - 999 adalah...",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "10",
+      "D": "11",
+      "E": "111"
+    },
+    "answer": "B",
+    "explanation": "1."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: STRATEGI = ....",
+    "options": {
+      "A": "Rencana",
+      "B": "Hasil",
+      "C": "Proses",
+      "D": "Mulai",
+      "E": "Akhir"
+    },
+    "answer": "A",
+    "explanation": "Strategi berarti rencana yang cermat mengenai kegiatan untuk mencapai sasaran khusus."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x - 5 = 10, berapa nilai x + 5?",
+    "options": {
+      "A": "15",
+      "B": "20",
+      "C": "25",
+      "D": "30",
+      "E": "35"
+    },
+    "answer": "B",
+    "explanation": "x = 15. x + 5 = 20."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika p adalah q, dan q adalah r, maka...",
+    "options": {
+      "A": "p adalah r",
+      "B": "p bukan r",
+      "C": "r adalah p",
+      "D": "q bukan r",
+      "E": "p dan q berbeda"
+    },
+    "answer": "A",
+    "explanation": "Logika identitas transitif."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 25 x 4 / 2 ?",
+    "options": {
+      "A": "25",
+      "B": "50",
+      "C": "75",
+      "D": "100",
+      "E": "125"
+    },
+    "answer": "B",
+    "explanation": "100 / 2 = 50."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: TINGGI >< ....",
+    "options": {
+      "A": "Pendek",
+      "B": "Kecil",
+      "C": "Besar",
+      "D": "Lebar",
+      "E": "Panjang"
+    },
+    "answer": "A",
+    "explanation": "Lawan kata tinggi adalah pendek."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah 10% dari 1000?",
+    "options": {
+      "A": "10",
+      "B": "100",
+      "C": "1000",
+      "D": "1",
+      "E": "10000"
+    },
+    "answer": "B",
+    "explanation": "100."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa kucing adalah Persia. Semua Persia berbulu panjang. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa kucing berbulu panjang",
+      "B": "Semua kucing berbulu panjang",
+      "C": "Tidak ada kucing yang berbulu panjang",
+      "D": "Persia adalah kucing",
+      "E": "Kucing bukan Persia"
+    },
+    "answer": "A",
+    "explanation": "Irisan antara kucing yang Persia dan sifat bulu panjang."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari 50 + 50 - 50 x 0 adalah...",
+    "options": {
+      "A": "0",
+      "B": "50",
+      "C": "100",
+      "D": "150",
+      "E": "200"
+    },
+    "answer": "C",
+    "explanation": "50 + 50 - 0 = 100."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: ANALISIS = ....",
+    "options": {
+      "A": "Penguraian",
+      "B": "Penyatuan",
+      "C": "Hasil",
+      "D": "Mulai",
+      "E": "Akhir"
+    },
+    "answer": "A",
+    "explanation": "Analisis berarti penguraian suatu pokok atas berbagai bagiannya."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika 2x = 50, berapa nilai x/5 ?",
+    "options": {
+      "A": "5",
+      "B": "10",
+      "C": "15",
+      "D": "20",
+      "E": "25"
+    },
+    "answer": "A",
+    "explanation": "x = 25. x / 5 = 5."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika hari ini cerah, maka jemuran kering. Hari ini cerah. Kesimpulan: ....",
+    "options": {
+      "A": "Jemuran kering",
+      "B": "Jemuran basah",
+      "C": "Mungkin jemuran kering",
+      "D": "Hari tidak cerah",
+      "E": "Ibu senang"
+    },
+    "answer": "A",
+    "explanation": "Modus Ponens."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 100 / 2 / 2 / 2 ?",
+    "options": {
+      "A": "12,5",
+      "B": "25",
+      "C": "50",
+      "D": "10",
+      "E": "5"
+    },
+    "answer": "A",
+    "explanation": "100 / 2 = 50. 50 / 2 = 25. 25 / 2 = 12,5."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: BERHASIL >< ....",
+    "options": {
+      "A": "Gagal",
+      "B": "Menang",
+      "C": "Sukses",
+      "D": "Untung",
+      "E": "Selesai"
+    },
+    "answer": "A",
+    "explanation": "Lawan kata berhasil adalah gagal."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah 200% dari 50?",
+    "options": {
+      "A": "50",
+      "B": "100",
+      "C": "150",
+      "D": "200",
+      "E": "250"
+    },
+    "answer": "B",
+    "explanation": "2 x 50 = 100."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa bunga harum. Semua yang harum disukai orang. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa bunga disukai orang",
+      "B": "Semua bunga disukai orang",
+      "C": "Bunga tidak harum",
+      "D": "Orang suka bunga",
+      "E": "Tidak ada kesimpulan"
+    },
+    "answer": "A",
+    "explanation": "Irisan bunga yang harum dan sifat disukai orang."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari 1/2 + 1/4 + 1/8 adalah...",
+    "options": {
+      "A": "5/8",
+      "B": "6/8",
+      "C": "7/8",
+      "D": "1",
+      "E": "1/8"
+    },
+    "answer": "C",
+    "explanation": "4/8 + 2/8 + 1/8 = 7/8."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: REVOLUSI = ....",
+    "options": {
+      "A": "Perubahan cepat",
+      "B": "Perubahan lambat",
+      "C": "Perang",
+      "D": "Damai",
+      "E": "Mulai"
+    },
+    "answer": "A",
+    "explanation": "Revolusi berarti perubahan ketatanegaraan atau sosial secara cepat."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x = 2 dan y = 3, berapa nilai 2x + 3y?",
+    "options": {
+      "A": "10",
+      "B": "11",
+      "C": "12",
+      "D": "13",
+      "E": "14"
+    },
+    "answer": "D",
+    "explanation": "2(2) + 3(3) = 4 + 9 = 13."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika p > 5 dan q < 5, maka...",
+    "options": {
+      "A": "p > q",
+      "B": "p < q",
+      "C": "p = q",
+      "D": "p + q = 10",
+      "E": "Tidak dapat ditentukan"
+    },
+    "answer": "A",
+    "explanation": "p > 5 > q, maka p > q."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 100 x 0,01 ?",
+    "options": {
+      "A": "0,01",
+      "B": "0,1",
+      "C": "1",
+      "D": "10",
+      "E": "100"
+    },
+    "answer": "C",
+    "explanation": "1."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: BERANI >< ....",
+    "options": {
+      "A": "Takut",
+      "B": "Pemberani",
+      "C": "Kuat",
+      "D": "Lemah",
+      "E": "Pintar"
+    },
+    "answer": "A",
+    "explanation": "Lawan kata berani adalah takut (penakut)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah nilai 50% dari 50% dari 400?",
+    "options": {
+      "A": "50",
+      "B": "100",
+      "C": "150",
+      "D": "200",
+      "E": "250"
+    },
+    "answer": "B",
+    "explanation": "50% dari 400 = 200. 50% dari 200 = 100."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa siswa lulus ujian. Semua yang lulus ujian senang. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa siswa senang",
+      "B": "Semua siswa senang",
+      "C": "Siswa tidak senang",
+      "D": "Ujian sangat sulit",
+      "E": "Tidak ada kesimpulan"
+    },
+    "answer": "A",
+    "explanation": "Irisan antara siswa yang lulus dan sifat senang."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari (100 / 10) x (10 / 10) adalah...",
+    "options": {
+      "A": "1",
+      "B": "10",
+      "C": "100",
+      "D": "1000",
+      "E": "0"
+    },
+    "answer": "B",
+    "explanation": "10 x 1 = 10."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: DINAMIKA = ....",
+    "options": {
+      "A": "Perubahan",
+      "B": "Diam",
+      "C": "Statis",
+      "D": "Hasil",
+      "E": "Akhir"
+    },
+    "answer": "A",
+    "explanation": "Dinamika berarti gerak atau kekuatan yang menyebabkan perubahan."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika 5x = 100, berapa nilai x^2 ?",
+    "options": {
+      "A": "100",
+      "B": "200",
+      "C": "300",
+      "D": "400",
+      "E": "500"
+    },
+    "answer": "D",
+    "explanation": "x = 20. x^2 = 400."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika saya rajin, maka saya sukses. Saya sukses. Kesimpulan: ....",
+    "options": {
+      "A": "Saya rajin",
+      "B": "Saya tidak rajin",
+      "C": "Mungkin saya rajin",
+      "D": "Saya beruntung",
+      "E": "Tidak dapat ditarik kesimpulan"
+    },
+    "answer": "E",
+    "explanation": "Afirmasi konsekuen adalah falasi (P -> Q, Q, tidak bisa menyimpulkan P secara pasti)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 1/5 + 2/5 + 3/5 ?",
+    "options": {
+      "A": "1",
+      "B": "1 1/5",
+      "C": "1 2/5",
+      "D": "2",
+      "E": "6/5"
+    },
+    "answer": "B",
+    "explanation": "6/5 = 1 1/5."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: MODERN >< ....",
+    "options": {
+      "A": "Canggih",
+      "B": "Baru",
+      "C": "Lama",
+      "D": "Kuno",
+      "E": "Bagus"
+    },
+    "answer": "D",
+    "explanation": "Lawan kata modern adalah kuno (tradisional)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah 1% dari 100.000?",
+    "options": {
+      "A": "10",
+      "B": "100",
+      "C": "1000",
+      "D": "10000",
+      "E": "1"
+    },
+    "answer": "C",
+    "explanation": "1000."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Semua dokter adalah manusia. Semua manusia butuh oksigen. Kesimpulan: ....",
+    "options": {
+      "A": "Semua dokter butuh oksigen",
+      "B": "Sebagian dokter butuh oksigen",
+      "C": "Dokter bukan manusia",
+      "D": "Oksigen butuh dokter",
+      "E": "Tidak ada kesimpulan"
+    },
+    "answer": "A",
+    "explanation": "Silogisme kategorik transitif."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari 10 x 10 - 10 / 10 adalah...",
+    "options": {
+      "A": "9",
+      "B": "90",
+      "C": "99",
+      "D": "100",
+      "E": "101"
+    },
+    "answer": "C",
+    "explanation": "100 - 1 = 99."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: KOMITMEN = ....",
+    "options": {
+      "A": "Janji",
+      "B": "Hasil",
+      "C": "Proses",
+      "D": "Mulai",
+      "E": "Akhir"
+    },
+    "answer": "A",
+    "explanation": "Komitmen berarti perjanjian (keterikatan) untuk melakukan sesuatu."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x^2 = 100 dan x > 0, berapa nilai x + 5?",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    },
+    "answer": "B",
+    "explanation": "x = 10. x + 5 = 15."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika saya minum, maka haus hilang. Saya minum. Kesimpulan: ....",
+    "options": {
+      "A": "Haus hilang",
+      "B": "Masih haus",
+      "C": "Mungkin haus hilang",
+      "D": "Saya makan",
+      "E": "Air habis"
+    },
+    "answer": "A",
+    "explanation": "Modus Ponens."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 0,9 - 0,4 - 0,2 ?",
+    "options": {
+      "A": "0,1",
+      "B": "0,2",
+      "C": "0,3",
+      "D": "0,4",
+      "E": "0,5"
+    },
+    "answer": "C",
+    "explanation": "0,3."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: AKTIF >< ....",
+    "options": {
+      "A": "Pasif",
+      "B": "Diam",
+      "C": "Malas",
+      "D": "Rajin",
+      "E": "Pintar"
+    },
+    "answer": "A",
+    "explanation": "Lawan kata aktif adalah pasif."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah nilai dari akar 400?",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "30",
+      "D": "40",
+      "E": "50"
+    },
+    "answer": "B",
+    "explanation": "20 x 20 = 400."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa kucing berbulu putih. Semua yang berbulu putih cantik. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa kucing cantik",
+      "B": "Semua kucing cantik",
+      "C": "Kucing tidak cantik",
+      "D": "Putih adalah kucing",
+      "E": "Tidak ada kesimpulan"
+    },
+    "answer": "A",
+    "explanation": "Irisan antara kucing yang putih dan sifat cantik."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari 1/2 x 1/2 x 1/2 adalah...",
+    "options": {
+      "A": "1/4",
+      "B": "1/6",
+      "C": "1/8",
+      "D": "1/10",
+      "E": "1"
+    },
+    "answer": "C",
+    "explanation": "1/8."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: ESTIMASI = ....",
+    "options": {
+      "A": "Perkiraan",
+      "B": "Hasil",
+      "C": "Proses",
+      "D": "Mulai",
+      "E": "Akhir"
+    },
+    "answer": "A",
+    "explanation": "Estimasi berarti perkiraan, penilaian, atau pendapat."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x = 100, berapa nilai akar x + 10?",
+    "options": {
+      "A": "10",
+      "B": "20",
+      "C": "30",
+      "D": "40",
+      "E": "50"
+    },
+    "answer": "B",
+    "explanation": "Akar 100 = 10. 10 + 10 = 20."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika saya bangun pagi, maka saya tidak terlambat. Saya terlambat. Kesimpulan: ....",
+    "options": {
+      "A": "Saya tidak bangun pagi",
+      "B": "Saya bangun pagi",
+      "C": "Saya tidur lagi",
+      "D": "Mungkin saya bangun pagi",
+      "E": "Jam alarm mati"
+    },
+    "answer": "A",
+    "explanation": "Modus Tollens."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 0,25 x 4 ?",
+    "options": {
+      "A": "0,5",
+      "B": "1",
+      "C": "1,5",
+      "D": "2",
+      "E": "2,5"
+    },
+    "answer": "B",
+    "explanation": "1."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: JINAK >< ....",
+    "options": {
+      "A": "Liar",
+      "B": "Buas",
+      "C": "Galak",
+      "D": "Berani",
+      "E": "Takut"
+    },
+    "answer": "A",
+    "explanation": "Lawan kata jinak adalah liar (untuk hewan)."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah nilai 30% dari 300?",
+    "options": {
+      "A": "30",
+      "B": "60",
+      "C": "90",
+      "D": "120",
+      "E": "150"
+    },
+    "answer": "C",
+    "explanation": "0,3 x 300 = 90."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa sayuran hijau. Semua yang hijau sehat. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa sayuran sehat",
+      "B": "Semua sayuran sehat",
+      "C": "Sayuran tidak sehat",
+      "D": "Hijau adalah sayuran",
+      "E": "Tidak ada kesimpulan"
+    },
+    "answer": "A",
+    "explanation": "Irisan sayuran yang hijau dan sifat sehat."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari 10 + 20 + 30 + 40 adalah...",
+    "options": {
+      "A": "70",
+      "B": "80",
+      "C": "90",
+      "D": "100",
+      "E": "110"
+    },
+    "answer": "D",
+    "explanation": "100."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: PERSPEKTIF = ....",
+    "options": {
+      "A": "Sudut pandang",
+      "B": "Hasil",
+      "C": "Proses",
+      "D": "Mulai",
+      "E": "Akhir"
+    },
+    "answer": "A",
+    "explanation": "Perspektif berarti sudut pandang atau cara pandang."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x/2 = 50, berapa nilai x - 50?",
+    "options": {
+      "A": "0",
+      "B": "25",
+      "C": "50",
+      "D": "75",
+      "E": "100"
+    },
+    "answer": "C",
+    "explanation": "x = 100. x - 50 = 50."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika p = q, dan q = 10, maka...",
+    "options": {
+      "A": "p = 10",
+      "B": "p > 10",
+      "C": "p < 10",
+      "D": "p + q = 10",
+      "E": "Tidak dapat ditentukan"
+    },
+    "answer": "A",
+    "explanation": "Logika identitas."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 1/2 / 2 ?",
+    "options": {
+      "A": "1/4",
+      "B": "1",
+      "C": "2",
+      "D": "4",
+      "E": "1/2"
+    },
+    "answer": "A",
+    "explanation": "1/4."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: TAJAM >< ....",
+    "options": {
+      "A": "Tumpul",
+      "B": "Halus",
+      "C": "Kasar",
+      "D": "Besar",
+      "E": "Kecil"
+    },
+    "answer": "A",
+    "explanation": "Lawan kata tajam adalah tumpul."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah 5% dari 1000?",
+    "options": {
+      "A": "5",
+      "B": "50",
+      "C": "500",
+      "D": "0,5",
+      "E": "5000"
+    },
+    "answer": "B",
+    "explanation": "50."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Beberapa mobil cepat. Semua yang cepat mahal. Kesimpulan: ....",
+    "options": {
+      "A": "Beberapa mobil mahal",
+      "B": "Semua mobil mahal",
+      "C": "Mobil tidak mahal",
+      "D": "Cepat adalah mobil",
+      "E": "Tidak ada kesimpulan"
+    },
+    "answer": "A",
+    "explanation": "Irisan mobil yang cepat dan sifat mahal."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Hasil dari (10 + 20) x 3 adalah...",
+    "options": {
+      "A": "30",
+      "B": "60",
+      "C": "90",
+      "D": "120",
+      "E": "150"
+    },
+    "answer": "C",
+    "explanation": "30 x 3 = 90."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Sinonim: KRUSIAL = ....",
+    "options": {
+      "A": "Penting",
+      "B": "Mudah",
+      "C": "Sulit",
+      "D": "Biasa",
+      "E": "Lama"
+    },
+    "answer": "A",
+    "explanation": "Krusial berarti sangat penting atau menentukan."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Jika x = 2, berapa nilai 5x + 5?",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "20",
+      "D": "25",
+      "E": "30"
+    },
+    "answer": "B",
+    "explanation": "10 + 5 = 15."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Logika Matematika",
+    "question": "Jika saya rajin, maka nilai saya bagus. Nilai saya tidak bagus. Kesimpulan: ....",
+    "options": {
+      "A": "Saya tidak rajin",
+      "B": "Saya rajin",
+      "C": "Saya sedang sedih",
+      "D": "Mungkin saya rajin",
+      "E": "Ujian dibatalkan"
+    },
+    "answer": "A",
+    "explanation": "Modus Tollens."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kecepatan & Ketepatan",
+    "question": "Berapakah hasil dari 0,1 x 0,1 ?",
+    "options": {
+      "A": "0,1",
+      "B": "0,01",
+      "C": "1",
+      "D": "10",
+      "E": "0,001"
+    },
+    "answer": "B",
+    "explanation": "0,01."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Verbal",
+    "question": "Antonim: TERANG >< ....",
+    "options": {
+      "A": "Gelap",
+      "B": "Cahaya",
+      "C": "Malam",
+      "D": "Lampu",
+      "E": "Bulan"
+    },
+    "answer": "A",
+    "explanation": "Lawan kata terang adalah gelap."
+  },
+  {
+    "level": "CPNS",
+    "subject": "TIU",
+    "topic": "Kemampuan Numerik",
+    "question": "Berapakah nilai dari akar 625?",
+    "options": {
+      "A": "15",
+      "B": "25",
+      "C": "35",
+      "D": "45",
+      "E": "55"
+    },
+    "answer": "B",
+    "explanation": "25."
+  }
+]

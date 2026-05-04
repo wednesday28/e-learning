@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Artificial Intelligence" },
+    "subtopic": "Etika dan Pemanfaatan AI dalam Dunia Kerja",
+    "lesson": {
+      "title": "Bekerja with AI: Peluang and Etika Masa Depan",
+      "content": "Selamat datang di Informatika kelas 12! Kamu sedang memasuki era Kecerdasan Buatan (AI). Kita belajar cara menggunakan AI (seperti Chatbot or AI Generator) untuk meningkatkan produktivitas kerjamu. Namun, kita juga belajar etikanya: tidak boleh plagiat, harus cek fakta (fact-check), and menjaga kerahasiaan data perusahaan.\n\nBagi siswa SMK, AI adalah asisten cerdasmu. Kamu bisa menggunakan AI untuk mencari solusi teknis or membuat draf laporan with cepat. Tapi ingat, AI tidak bisa menggantikan 'Hati' and 'Integritas' manusia. Pelajaran ini melatihmu untuk menjadi pengguna AI yang bijak and bertanggung jawab, sehingga kamu bisa tetap relevan and unggul di tengah banjirnya teknologi otomatisasi yang sangat cepat saat ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Data Science Dasar" },
+    "subtopic": "Analisis Data untuk Pengambilan Keputusan Bisnis",
+    "lesson": {
+      "title": "Data-Driven: Mengubah Angka Menjadi Keputusan Cerdas",
+      "content": "Data adalah minyak baru (Data is the new oil). Kita belajar cara mengolah data mentah menjadi informasi yang berguna menggunakan spreadsheet lanjut or alat visualisasi data. Kamu belajar cara membaca grafik tren pasar or tren kerusakan mesin untuk mengambil keputusan yang akurat and berbasis bukti.\n\nLulusan SMK yang melek data akan sangat dihargai di industri. Kamu belajar cara menyajikan data yang meyakinkan kepada atasan. Informatika melatih logika analisismu agar setiap tindakan teknismu didasari oleh data yang kuat, bukan sekadar insting or tebakan. Mari kita asah kemampuanmu dalam membaca 'bahasa data' agar kamu mampu memberikan solusi yang paling efisien bagi perusahaan di masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Otomatisasi and Low-Code" },
+    "subtopic": "Membangun Sistem Otomasi Sederhana",
+    "lesson": {
+      "title": "Smart Work: Otomatisasi Pekerjaan Rutin",
+      "content": "Jangan buang waktumu untuk tugas membosankan yang berulang. Kita belajar cara menggunakan platform 'Low-Code' or 'No-Code' untuk membuat aplikasi sederhana or alur kerja otomatis (automation). Misalnya, cara otomatis mengirim email laporan setiap sore or otomatis mencatat data sensor mesin ke database.\n\nBagi siswa SMK, otomatisasi adalah kunci efisiensi. Kamu belajar cara menjadi 'Problem Solver' yang kreatif with teknologi. Informatika memberikanmu alat untuk membuat sistem kerjamu sendiri yang lebih pintar and lebih cepat. Dengan menguasai otomatisasi, kamu memiliki lebih banyak waktu untuk fokus pada hal-hal kreatif and strategis yang tidak bisa dilakukan oleh mesin, meningkatkan nilai tawarmu secara luar biasa."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Keamanan Siber Profesional" },
+    "subtopic": "Perlindungan Data Perusahaan and Privasi Digital",
+    "lesson": {
+      "title": "Digital Guard: Menjaga Keamanan Data di Tempat Kerja",
+      "content": "Kejahatan siber (Cyber Crime) mengancam semua perusahaan. Kita belajar cara mengamankan akun profesional, mengenali serangan 'Phishing' yang canggih, and pentingnya enkripsi data. Kamu belajar bahwa keamanan informasi adalah tanggung jawab setiap karyawan, bukan hanya tim IT saja.\n\nSatu kesalahan klik bisa berakibat fatal bagi perusahaan. Kamu belajar cara membuat kebijakan 'Password' yang kuat and cara menggunakan VPN with aman. Informatika melatih kewaspadaanmu di dunia digital. Jadilah 'Benteng Digital' bagi perusahaan tempatmu bekerja with selalu mengutamakan privasi and keamanan data sebagai standar utama profesionalismemu dalam berinteraksi with sistem informasi global yang terbuka."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Cloud Computing for Business" },
+    "subtopic": "Kolaborasi Kerja di Ekosistem Cloud",
+    "lesson": {
+      "title": "Cloud Collaboration: Bekerja Tanpa Batas Ruang and Waktu",
+      "content": "Zaman sekarang, kita bekerja di 'Awan'. Kita belajar cara menggunakan layanan Cloud (Google Workspace, Office 365, or Cloud Storage) untuk kolaborasi tim secara real-time. Kamu belajar cara mengelola izin akses (sharing permissions) and cara bekerja bersama pada satu dokumen yang sama from lokasi yang berbeda.\n\nKemampuan kolaborasi digital sangat penting di dunia kerja modern yang serba cepat. Kamu belajar cara sinkronisasi data antar perangkat agar pekerjaanmu selalu terupdate. Informatika mengajarkanmu untuk menjadi pemain tim yang efisien di ruang digital. Mari kita bangun kebiasaan kerja yang rapi, terorganisir, and selalu terkoneksi with tim melalui keunggulan teknologi Cloud yang mempermudah segala aspek operasional bisnis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Inovasi Digital" },
+    "subtopic": "Tren Teknologi Masa Depan (IoT, Blockchain, Metaverse)",
+    "lesson": {
+      "title": "The Next Big Thing: Mengenal Tren Teknologi Masa Depan",
+      "content": "Dunia teknologi terus berubah. Kita belajar secara sekilas tentang Internet of Things (IoT) di industri, potensi Blockchain untuk logistik, hingga konsep Metaverse for pelatihan kerja. Kamu belajar cara tetap 'Up-to-Date' with berita teknologi agar tidak ketinggalan zaman.\n\nBagi siswa SMK, memahami arah teknologi masa depan membantumu merencanakan karier jangka panjang. Jangan hanya puas with teknologi yang ada sekarang. Informatika melatihmu untuk selalu haus akan ilmu baru. Jadilah alumni SMK yang visioner, yang selalu siap mengadopsi teknologi terbaru untuk membawa kemajuan bagi industri and bangsamu. Masa depan adalah milik mereka yang berani belajar and beradaptasi with perubahan!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Literasi Media Digital" },
+    "subtopic": "Verifikasi Informasi and Melawan Disinformasi",
+    "lesson": {
+      "title": "Smart Consumer: Menjadi Pengguna Informasi yang Kritis",
+      "content": "Hoaks and disinformasi bisa merusak reputasi and bisnis. Kita belajar teknik 'Fact-Checking' (cek fakta) yang mendalam menggunakan berbagai sumber resmi and alat verifikasi digital. Kamu belajar cara mendeteksi foto or video hasil manipulasi AI (Deepfake) yang terlihat sangat nyata.\n\nBerpikir kritis adalah skill terpenting di era informasi. Kamu belajar untuk tidak mudah terprovokasi oleh berita yang bombastis. Informatika melatihmu untuk menjadi pribadi yang bijak dalam menyebarkan informasi. Jadilah sumber informasi yang kredibel and dapat dipercaya di lingkungan kerjamu. Kebenaran and kejujuran informasi adalah fondasi dari masyarakat digital yang sehat, aman, and bermartabat demi keutuhan bangsa."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Etika and Hukum Digital" },
+    "subtopic": "Memahami UU ITE and Hak Cipta Digital",
+    "lesson": {
+      "title": "Digital Law: Mengenal Aturan Main di Dunia Siber",
+      "content": "Kebebasan di internet ada batasnya. Kita belajar poin-poin penting dalam UU ITE (Informasi and Transaksi Elektronik) and cara menghargai Hak Cipta Digital (Copyright). Kamu belajar dampak hukum dari pencemaran nama baik, penyebaran data pribadi orang lain, and penggunaan software bajakan.\n\nSebagai profesional, kamu harus bekerja dalam koridor hukum. Kamu belajar cara menggunakan lisensi 'Open Source' with benar. Informatika melatihmu untuk memiliki integritas digital yang tinggi. Jangan sampai karier cemerlangmu hancur karena kecerobohan di media sosial or pelanggaran hukum siber. Mari kita bangun budaya digital yang santun, patuh hukum, and penuh penghargaan terhadap karya intelektual orang lain."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Kewirausahaan Digital" },
+    "subtopic": "Membangun Personal Branding di Platform Profesional",
+    "lesson": {
+      "title": "Digital Resume: Membangun Brand Profesional di LinkedIn",
+      "content": "Portofoliomu harus terlihat oleh dunia. Kita belajar cara mengoptimalkan profil LinkedIn, menyusun 'Digital Portfolio' yang menarik, and cara berjejaring (networking) with profesional di bidangmu secara online. Kamu belajar cara berkomunikasi secara formal via email and media sosial profesional.\n\nDigital branding akan membukakan banyak pintu kesempatan kerja and bisnis. Kamu belajar menonjolkan keahlian SMK-mu with cara yang modern. Informatika membantumu 'menjual' kemampuanmu ke pasar global. Jangan hanya menjadi penonton di internet; jadilah pemain yang aktif membangun reputasi and karya. Dunia menanti kontribusimu; tunjukkan bahwa lulusan SMK Indonesia adalah tenaga ahli yang kompeten and melek teknologi!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Menjadi Warga Digital yang Kompeten and Berkarakter",
+    "lesson": {
+      "title": "Refleksi Akhir: Siap Menaklukkan Dunia Digital",
+      "content": "Selamat! Kamu telah menyelesaikan seluruh kurikulum Informatika di SMK. Kamu kini memiliki bekal AI, Data, Otomasi, Keamanan Siber, hingga Etika Digital. Pelajaran terpenting adalah: **Teknologi adalah alat, tapi karaktermu adalah penentunya**. Gunakan ilmumu untuk hal-hal yang membangun and bermanfaat.\n\nTeruslah belajar (Long-life learning) karena teknologi akan terus berkembang. Jangan takut with perubahan, tapi jadilah bagian dari perubahan itu sendiri. Indonesia butuh generasi digital yang cerdas, kreatif, and memiliki integritas tinggi. Mari kita tutup masa sekolah ini with janji untuk selalu menggunakan teknologi demi kemajuan peradaban and kesejahteraan bangsa. Sampai jumpa di puncak karier yang gemilang! Merdeka!\n\nJadilah cahaya yang menerangi dunia digital with karya and akhlak muliamu!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Artificial Intelligence" },
+    "subtopic": "Prompt Engineering Dasar untuk Produktivitas",
+    "lesson": {
+      "title": "AI Whisperer: Seni Memberikan Instruksi pada AI",
+      "content": "Kualitas jawaban AI tergantung pada seberapa bagus pertanyaanmu. Kita belajar teknik **Prompt Engineering**: memberikan konteks yang jelas, menentukan peran AI, and memberikan batasan output yang diinginkan. Kamu belajar cara berdialog with AI untuk membantumu melakukan riset teknis, memperbaiki kode program, or menerjemahkan dokumen manual asing with akurasi tinggi. Menguasai cara berkomunikasi with AI adalah skill baru yang akan membuatmu 10 kali lebih produktif dari pekerja biasa. Jadilah pengguna AI yang cerdas, yang tahu cara memaksimalkan potensi teknologi untuk efisiensi kerjamu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Data Science Dasar" },
+    "subtopic": "Visualisasi Data with Chart and Dashboard",
+    "lesson": {
+      "title": "Visual Insights: Membuat Dashboard Laporan yang Menarik",
+      "content": "Data yang rumit harus bisa dijelaskan with sederhana. Kita belajar prinsip visualisasi: kapan menggunakan Bar Chart, Pie Chart, or Line Graph. Kamu belajar cara membuat Dashboard interaktif sederhana agar data performa mesin or penjualan bisa dipantau with sekali lihat. Visualisasi yang baik membantu pimpinan mengambil keputusan with cepat and tepat. Kamu belajar bahwa keindahan visual harus berpadu with kebenaran data. Informatika melatihmu menjadi komunikator data yang andal, yang mampu menyajikan fakta teknis dalam tampilan yang profesional, modern, and mudah dipahami oleh siapa saja."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Otomatisasi" },
+    "subtopic": "Mengenal RPA (Robotic Process Automation)",
+    "lesson": {
+      "title": "Virtual Assistants: Mengenal Robot untuk Tugas Kantor",
+      "content": "Robot tidak selalu berbentuk fisik. Kita belajar tentang **RPA**—software yang meniru tindakan manusia di depan komputer untuk mengerjakan tugas administratif. Kamu belajar bagaimana proses input data yang membosankan bisa dilakukan oleh robot software with tanpa kesalahan and bekerja 24 jam nonstop. Pengetahuan ini membuka wawasanmu tentang masa depan perkantoran digital. Sebagai tenaga ahli, kamu bertugas merancang and memantau robot-robot ini agar bekerja sesuai prosedur. Informatika mengajarkanmu untuk mengendalikan teknologi, bukan dikendalikan oleh tugas-tugas rutin yang menghambat kreativitasmu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Keamanan Siber" },
+    "subtopic": "Incident Response: Apa yang Dilakukan saat Kena Hack?",
+    "lesson": {
+      "title": "Emergency Protocol: Langkah Awal saat Terjadi Serangan Siber",
+      "content": "Jangan panik saat sistem terkena serangan. Kita belajar protokol darurat (Incident Response): isolasi perangkat, lapor ke tim keamanan, and jangan matikan komputer sembarangan agar bukti digital tidak hilang. Kamu belajar cara memulihkan data from cadangan (Backup) yang aman. Pengetahuan ini sangat kritis untuk menjaga kelangsungan bisnis (Business Continuity). Informatika melatih ketenanganmu dalam menghadapi krisis digital. Jadilah karyawan yang tanggap and tahu cara bertindak tepat untuk meminimalkan kerugian perusahaan saat terjadi insiden keamanan yang tidak diinginkan di era internet ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Cloud Computing" },
+    "subtopic": "Keamanan and Privasi di Penyimpanan Cloud",
+    "lesson": {
+      "title": "Secure Cloud: Melindungi Data di Awan",
+      "content": "Menyimpan data di Cloud sangat praktis, tapi ada risikonya. Kita belajar cara mengaktifkan Otentikasi Dua Faktor (2FA), cara mengecek siapa saja yang punya akses ke file kita, and bahaya menggunakan Wi-Fi publik for mengakses data rahasia perusahaan. Kamu belajar konsep 'Shared Responsibility'—bahwa provider menjaga server, tapi kamulah yang menjaga aksesmu. Informatika melatihmu untuk selalu waspada. Dengan memahami cara kerja keamanan Cloud, kamu bisa menikmati semua kemudahannya without rasa takut akan kebocoran data pribadi maupun data penting milik perusahaan tempatmu mengabdi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Inovasi Digital" },
+    "subtopic": "Pemanfaatan IoT untuk Monitoring Industri",
+    "lesson": {
+      "title": "Industrial IoT: Menghubungkan Mesin ke Internet",
+      "content": "Internet of Things (IoT) memungkinkan mesin 'berbicara' pada kita. Kita belajar bagaimana sensor suhu or tekanan mengirim data ke smartphone secara real-time. Kamu belajar konsep 'Preventive Maintenance'—memperbaiki mesin sebelum rusak berdasarkan data dari sensor. Bagi siswa SMK Teknik, ini adalah ilmu masa depan yang wajib dikuasai. Kamu belajar cara membangun jembatan antara dunia fisik (mesin) with dunia digital (data). Informatika memberikanmu kemampuan untuk menciptakan sistem industri yang cerdas, efisien, and mampu memberikan peringatan dini sebelum terjadi kegagalan teknis yang merugikan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Literasi Media" },
+    "subtopic": "Etika Berkomunikasi di Forum Profesional and Media Sosial",
+    "lesson": {
+      "title": "Netiquette: Sopan Santun di Ruang Digital Profesional",
+      "content": "Cara bicaramu di grup WhatsApp kantor or LinkedIn mencerminkan profesionalismemu. Kita belajar 'Netiquette' (Etika Internet): cara menyampaikan pendapat yang kritis tapi tetap sopan, cara membalas email with struktur yang benar, and pentingnya menjaga 'Personal Brand' agar tetap positif. Kamu belajar bahwa jejak digital sulit dihapus, jadi berpikirlah sebelum memposting. Informatika melatih kematangan emosionalmu di dunia digital. Jadilah pribadi yang menyejukkan and menginspirasi di internet. Komunikasi digital yang santun and cerdas akan membantumu membangun jaringan profesional yang luas and terpercaya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Hukum Digital" },
+    "subtopic": "Pentingnya Perlindungan Data Pribadi (PDP)",
+    "lesson": {
+      "title": "Privacy First: Hak and Kewajiban atas Data Pribadi",
+      "content": "Indonesia sudah memiliki UU Perlindungan Data Pribadi (PDP). Kita belajar apa saja yang termasuk data pribadi and mengapa kita harus menjaganya. Kamu belajar hak-hakmu sebagai pemilik data and kewajibanmu saat mengelola data pelanggan or rekan kerja. Melanggar privasi orang lain bisa berakibat hukum serius and merusak reputasi perusahaan. Informatika melatih tanggung jawab moralmu. Di dunia yang serba terkoneksi, menghargai privasi orang lain adalah bentuk tertinggi dari rasa hormat and profesionalisme modern. Mari kita ciptakan lingkungan digital yang aman with saling menjaga privasi satu sama lain."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Digital Entrepreneurship" },
+    "subtopic": "Strategi Pemasaran Digital with Biaya Rendah",
+    "lesson": {
+      "title": "Lean Marketing: Memasarkan Karya with Kreativitas",
+      "content": "Kamu punya produk bagus tapi tidak punya modal iklan? Kita belajar strategi 'Organic Marketing' using SEO, konten kreatif di media sosial, and kekuatan komunitas. Kamu belajar cara mengukur efektivitas pemasaranmu using alat analitik gratis. Informatika membantu usahamu 'terlihat' without harus membakar banyak uang. Kreativitas and konsistensi adalah kunci. Kamu belajar untuk terus bereksperimen with berbagai format konten for menemukan apa yang paling disukai calon pelangganmu. Jadilah wirausahawan digital yang cerdik, yang mampu mengubah keterbatasan menjadi peluang besar through penguasaan alat-alat digital marketing yang cerdas."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Analisis Sistem" },
+    "subtopic": "Memahami Alur Kerja (Workflow) Digital",
+    "lesson": {
+      "title": "System Thinking: Memetakan Proses Kerja Digital",
+      "content": "Sebelum menggunakan software, kamu harus paham alur kerjanya. Kita belajar cara membuat Flowchart or diagram proses bisnis. Kamu belajar mengidentifikasi di mana terjadi hambatan (bottleneck) and bagaimana teknologi bisa memperbaikinya. 'System Thinking' membantumu melihat gambaran besar dari sebuah pekerjaan. Informatika bukan hanya soal mengetik, tapi soal merancang sistem yang efisien. Dengan memahami alur kerja, kamu bisa memberikan saran perbaikan yang logis and sistematis di perusahaan nantinya. Jadilah ahli yang mampu menyederhanakan hal-hal yang rumit menjadi proses kerja yang lancar and terukur with bantuan teknologi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Artificial Intelligence" },
+    "subtopic": "Mengenal Bias dalam AI and Cara Mengatasinya",
+    "lesson": {
+      "title": "Fair AI: Menjadi Pengguna AI yang Kritis and Objektif",
+      "content": "AI bisa salah and bisa tidak adil (bias) karena data yang dipelajarinya. Kita belajar cara mengenali jawaban AI yang mungkin diskriminatif or tidak akurat. Kamu belajar untuk selalu memverifikasi hasil AI with sumber lain. Jangan menelan mentah-mentah apa yang dikatakan mesin. Informatika melatih ketajaman logikamu. Kamu adalah tuan dari teknologi; gunakan AI sebagai pembantu, bukan pengambil keputusan mutlak. Dengan sikap kritis, kamu memastikan bahwa penggunaan teknologi di industri tetap menjunjung tinggi kebenaran, keadilan, and nilai-nilai kemanusiaan yang luhur demi kemajuan bangsa yang beradab."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Data Science" },
+    "subtopic": "Dasar SQL for Query Data Sederhana",
+    "lesson": {
+      "title": "Talk to Database: Belajar Bahasa SQL Sederhana",
+      "content": "Data besar disimpan dalam database. Kita belajar cara mengambil data using perintah SQL (Structured Query Language) sederhana seperti SELECT, FROM, and WHERE. Kemampuan ini membuatmu bisa mencari informasi secara mandiri without harus menunggu tim IT. Kamu belajar cara memfilter data untuk mendapatkan laporan yang spesifik. Di industri modern, kemampuan 'berbicara' with database adalah nilai tambah yang luar biasa bagi semua profesi. Informatika memberikanmu kunci for mengakses gudang informasi digital secara profesional, akurat, and cepat sesuai with kebutuhan tugas-tugas teknismu sehari-hari di perusahaan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Cloud Computing" },
+    "subtopic": "Deployment Aplikasi and Website Sederhana",
+    "lesson": {
+      "title": "Go Live: Menampilkan Karyamu di Internet",
+      "content": "Punya portofolio or website usaha? Kita belajar cara menampilkannya (deploy) ke internet using layanan gratis or berbayar yang murah. Kamu belajar konsep Domain, Hosting, and SSL (gembok keamanan). Mengetahui cara 'Go Live' memberikan rasa bangga and pencapaian nyata. Karyamu kini bisa diakses oleh siapa saja di seluruh dunia. Informatika memberikanmu panggung global. Jangan biarkan karyamu hanya tersimpan di folder komputer; tunjukkan pada dunia bahwa kamu adalah tenaga ahli yang siap bersaing and memberikan kontribusi nyata di era ekonomi digital yang tanpa batas ruang and waktu ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Sustainability" },
+    "subtopic": "Green IT: Teknologi yang Ramah Lingkungan",
+    "lesson": {
+      "title": "Sustainable Tech: Mengurangi Jejak Karbon Digital",
+      "content": "Internet and pusat data (Data Center) membutuhkan energi yang sangat besar. Kita belajar tentang 'Green IT'—cara menggunakan teknologi with lebih hemat energi, membuang sampah elektronik (e-waste) with benar, and memilih layanan Cloud yang ramah lingkungan. Kamu belajar bahwa efisiensi kode program or penyimpanan data juga berdampak pada bumi. Informatika melatih tanggung jawab ekologismu. Sebagai profesional masa depan, kamu harus peduli pada kelestarian alam. Mari kita bangun industri digital yang hijau, yang mampu memberikan kemajuan tanpa merusak masa depan bumi yang kita cintai for generasi mendatang."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Personal Productivity" },
+    "subtopic": "Manajemen Tugas with Metode Kanban",
+    "lesson": {
+      "title": "Visual Progress: Mengelola Proyek with Papan Kanban",
+      "content": "Banyak tugas bisa membuat bingung. Kita belajar metode **Kanban** (To Do, Doing, Done) using aplikasi seperti Trello or Notion. Kamu belajar membagi proyek besar menjadi langkah-langkah kecil yang terukur. Visualisasi progres kerja membuatmu lebih termotivasi and terhindar from stres akibat beban kerja yang menumpuk. Informatika membantumu mengatur hidup with lebih sistematis. Kemampuan manajemen tugas ini akan sangat membantumu saat nanti harus memimpin tim or mengelola banyak proyek sekaligus di dunia kerja. Jadilah profesional yang terorganisir, produktif, and selalu tepat waktu dalam setiap pengiriman hasil karya!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Collaboration" },
+    "subtopic": "Version Control Dasar with Git for Non-Programmer",
+    "lesson": {
+      "title": "Backup History: Mengelola Versi Dokumen with Benar",
+      "content": "Pernahkah kamu punya file with nama 'Laporan_Final_Revisi_Banget_Fix.docx'? Itu cara lama. Kita belajar konsep 'Version Control'—cara melacak perubahan dokumen without membuat banyak file copy. Kamu belajar cara bekerja kolaboratif where semua orang tahu siapa yang mengubah apa and kapan. Informatika mengajarkan ketertiban administrasi digital. Dengan sistem yang benar, kamu tidak akan pernah takut kehilangan data lama or bingung mencari versi dokumen yang paling update. Disiplin data ini adalah ciri khas tenaga ahli yang modern, efisien, and memiliki standar kerja internasional yang tinggi di industri manapun."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Hukum Digital" },
+    "subtopic": "Etika Penggunaan Gambar and Asset Digital Orang Lain",
+    "lesson": {
+      "title": "Fair Use: Menggunakan Aset Digital without Melanggar Hak",
+      "content": "Tidak semua yang ada di Google boleh kamu ambil for brosur usahamu. Kita belajar tentang lisensi 'Creative Commons', cara mencari gambar gratis yang legal (Stock Photos), and cara memberikan kredit (atribusi) kepada pencipta aslinya. Kamu belajar bahwa menghargai karya orang lain akan membuat karyamu juga dihargai. Informatika melatih etika profesionalismemu. Jangan sampai bisnismu terkena masalah hukum hanya karena masalah gambar or musik latar. Gunakan aset digital with jujur and bermartabat, menunjukkan bahwa kamu adalah profesional yang paham aturan main and menjunjung tinggi keadilan di ruang siber."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Artificial Intelligence" },
+    "subtopic": "Masa Depan Pekerjaan (Future of Work) with AI",
+    "lesson": {
+      "title": "Human + AI: Kolaborasi Masa Depan di Berbagai Bidang",
+      "content": "Bagaimana AI mengubah profesi perawat, montir, or koki? Kita melihat contoh-contoh nyata kolaborasi manusia with AI di berbagai bidang kejuruan. Kamu belajar bahwa AI bukan pengganti manusia, tapi 'alat penguat' (augmentasi). Pekerjaan yang paling aman from ancaman AI adalah yang membutuhkan empati, kreativitas tinggi, and keterampilan tangan yang presisi—semua yang kamu pelajari di SMK. Informatika memberikanmu rasa percaya diri. Dengan menguasai teknologi, kamu tidak perlu takut with masa depan. Jadilah pionir yang memimpin penggabungan antara keahlian tradisional SMK with kecanggihan AI for Indonesia maju!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Keamanan Siber" },
+    "subtopic": "Digital Footprint and Karir Masa Depan",
+    "lesson": {
+      "title": "Digital Legacy: Jejak Digital and Masa Depan Karirmu",
+      "content": "HRD zaman sekarang mengecek media sosialmu sebelum merekrut. Kita belajar cara membersihkan jejak digital yang negatif and membangun jejak digital yang positif (pamer karya, bukan pamer keluh kesah). Kamu belajar bahwa apa yang kamu posting hari ini adalah investasi for karirmu 10 tahun lagi. Informatika melatihmu untuk memiliki visi jangka panjang. Jadilah pribadi yang inspiratif and profesional di internet. Biarkan jejak digitalmu menjadi bukti nyata bahwa kamu adalah lulusan SMK yang kompeten, santun, and memiliki karakter yang kuat for memimpin di masa depan yang penuh with transparansi digital ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Informatika",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Menyusun Rencana Pembelajaran Digital Mandiri",
+    "lesson": {
+      "title": "Never Stop Learning: Menjadi Pelajar Sepanjang Hayat",
+      "content": "Informatika adalah bidang yang paling cepat berubah. Di pelajaran terakhir ini, kamu belajar cara mencari kursus online gratis, cara membaca dokumentasi teknis, and cara bergabung with komunitas belajar digital. Sekolah boleh berakhir, tapi belajar tidak boleh berhenti. Informatika memberimu 'belajar cara belajar' (learning how to learn). Kamu kini memiliki peta for terus berkembang secara mandiri. Jangan pernah merasa sudah tahu segalanya. Tetaplah rendah hati, tetaplah haus ilmu, and tetaplah berinovasi. Dunia digital adalah taman bermainmu yang luas. Selamat mengeksplorasi and sukses for masa depanmu yang luar biasa! Merdeka!"
+    }
+  }
+]

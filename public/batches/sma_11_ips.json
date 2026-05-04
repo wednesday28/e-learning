@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Kolonialisme di Indonesia" },
+    "subtopic": "Perlawanan Bangsa",
+    "lesson": { 
+      "title": "Proses Masuk dan Berkembangnya Penjajahan Bangsa Eropa",
+      "content": "Analisis motivasi kedatangan Portugis, Spanyol, Belanda, and Inggris ke Nusantara. Persaingan antar bangsa Barat dalam memperebutkan hegemoni rempah-rempah. Contoh: Keberhasilan VOC dalam memonopoli perdagangan di Maluku and Jawa. Penjelasan: Kolonialisme mengubah struktur politik, ekonomi, and sosial masyarakat Nusantara secara drastis."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Kolonialisme di Indonesia" },
+    "subtopic": "Perlawanan Bangsa",
+    "lesson": { 
+      "title": "Dampak Politik, Ekonomi, dan Sosial Budaya Kolonialisme",
+      "content": "Penerapan sistem birokrasi Barat, sistem tanam paksa, and stratifikasi sosial masyarakat kolonial. Contoh: Munculnya golongan elit baru hasil pendidikan Barat (golongan terpelajar). Penjelasan: Kebijakan kolonial yang menindas memicu kesadaran akan pentingnya kemerdekaan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Kolonialisme di Indonesia" },
+    "subtopic": "Perlawanan Bangsa",
+    "lesson": { 
+      "title": "Perlawanan Rakyat Daerah terhadap Penjajah",
+      "content": "Strategi perlawanan fisik yang dipimpin oleh raja atau tokoh agama di berbagai wilayah Indonesia. Contoh: Perang Padri di Sumatera Barat and Perang Diponegoro di Jawa. Penjelasan: Meskipun gigih, perlawanan ini sering gagal karena sifatnya yang masih kedaerahan and kurang koordinasi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Posisi Strategis Indonesia" },
+    "subtopic": "Poros Maritim",
+    "lesson": { 
+      "title": "Indonesia sebagai Poros Maritim Dunia",
+      "content": "Letak geografis di jalur perdagangan global and potensi kekayaan laut yang luar biasa besar. Contoh: Pengelolaan Alur Laut Kepulauan Indonesia (ALKI) for pelayaran internasional. Penjelasan: Pembangunan infrastruktur pelabuhan and keamanan laut adalah kunci mewujudkan kejayaan maritim."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Posisi Strategis Indonesia" },
+    "subtopic": "Poros Maritim",
+    "lesson": { 
+      "title": "Karakteristik Wilayah Daratan dan Perairan Indonesia",
+      "content": "Bentuk negara kepulauan dengan garis pantai terpanjang kedua di dunia and berbagai zona laut (Teritorial, ZEE). Contoh: Potensi perikanan tangkap yang melimpah di perairan Natuna. Penjelasan: Pemahaman batas wilayah sangat penting untuk menjaga kedaulatan negara dari klaim asing."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Posisi Strategis Indonesia" },
+    "subtopic": "Poros Maritim",
+    "lesson": { 
+      "title": "Pemanfaatan Sumber Daya Kelautan secara Berkelanjutan",
+      "content": "Upaya menjaga ekosistem laut (terumbu karang, mangrove) sambil mengambil manfaat ekonomi. Contoh: Pengembangan ekowisata bahari di Raja Ampat and Wakatobi. Penjelasan: Ekonomi biru (blue economy) harus mengutamakan kelestarian lingkungan demi masa depan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Kelompok Sosial" },
+    "subtopic": "Dinamika Kelompok",
+    "lesson": { 
+      "title": "Pembentukan Kelompok Sosial dalam Masyarakat",
+      "content": "Syarat and ciri kelompok sosial: adanya kesadaran, hubungan timbal balik, and faktor pengikat (kepentingan/darah). Contoh: Pembentukan kelompok hobi, organisasi profesi, hingga kelompok etnis. Penjelasan: Kelompok sosial menjadi tempat individu memenuhi kebutuhan sosial and mendapatkan dukungan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Kelompok Sosial" },
+    "subtopic": "Dinamika Kelompok",
+    "lesson": { 
+      "title": "Klasifikasi Kelompok Sosial (Ingroup/Outgroup)",
+      "content": "Pembagian kelompok berdasarkan identitas and rasa solidaritas antar anggota serta sikap terhadap orang luar. Contoh: Sikap fanatisme suporter klub bola tertentu (ingroup) terhadap lawan (outgroup). Penjelasan: Klasifikasi ini menjelaskan pola interaksi and potensi gesekan antar kelompok di masyarakat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Kelompok Sosial" },
+    "subtopic": "Dinamika Kelompok",
+    "lesson": { 
+      "title": "Dinamika Kelompok Sosial dan Kepemimpinan",
+      "content": "Proses perubahan and perkembangan kelompok akibat pengaruh kepemimpinan, konflik, and penyesuaian nilai. Contoh: Perubahan gaya kepemimpinan dalam organisasi mahasiswa yang mempengaruhi kinerja tim. Penjelasan: Dinamika yang sehat akan memperkuat kohesi and produktivitas kelompok."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Pendapatan Nasional" },
+    "subtopic": "Makroekonomi",
+    "lesson": { 
+      "title": "Konsep Pendapatan Nasional (GDP, GNP, NNP)",
+      "content": "Indikator untuk mengukur kemajuan ekonomi suatu negara melalui nilai seluruh barang and jasa yang dihasilkan. Contoh: Perhitungan Produk Domestik Bruto (PDB) Indonesia yang terus meningkat. Penjelasan: Pendapatan nasional mencerminkan produktivitas and daya beli masyarakat secara keseluruhan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Pendapatan Nasional" },
+    "subtopic": "Makroekonomi",
+    "lesson": { 
+      "title": "Metode Perhitungan Pendapatan Nasional",
+      "content": "Pendekatan produksi (nilai tambah), pendapatan (upah, sewa, bunga, laba), and pengeluaran (konsumsi, investasi, pemerintah, ekspor-impor). Contoh: Menghitung total pengeluaran belanja negara and masyarakat dalam satu tahun. Penjelasan: Data hasil perhitungan digunakan pemerintah untuk merumuskan kebijakan ekonomi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Pendapatan Nasional" },
+    "subtopic": "Makroekonomi",
+    "lesson": { 
+      "title": "Pendapatan Per Kapita dan Kesenjangan Ekonomi",
+      "content": "Rata-rata pendapatan penduduk yang dihitung dari pendapatan nasional dibagi jumlah penduduk. Contoh: Perbedaan tingkat pendapatan masyarakat di kota besar and pedesaan terpencil. Penjelasan: Pendapatan per kapita yang tinggi tidak menjamin kesejahteraan jika distribusi pendapatan tidak merata."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Pergerakan Nasional" },
+    "subtopic": "Politik Modern",
+    "lesson": { 
+      "title": "Ideologi-Ideologi Besar Dunia di Indonesia",
+      "content": "Masuknya paham Nasionalisme, Liberalisme, Sosialisme, and Komunisme yang mempengaruhi perjuangan kemerdekaan. Contoh: Pengaruh paham Nasionalisme dalam pembentukan organisasi PNI oleh Soekarno. Penjelasan: Ideologi menjadi landasan visi and strategi organisasi pergerakan dalam melawan penjajah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Pergerakan Nasional" },
+    "subtopic": "Politik Modern",
+    "lesson": { 
+      "title": "Organisasi Pergerakan Nasional yang Radikal dan Kooperatif",
+      "content": "Perbedaan strategi perjuangan: ada yang menolak bekerjasama dengan Belanda (radikal) and ada yang menggunakan jalur parlementer (kooperatif). Contoh: Perjuangan keras PKI and Perhimpunan Indonesia vs perjuangan lewat Volksraad oleh Parindra. Penjelasan: Keberagaman strategi memperkaya dinamika perjuangan menuju Indonesia merdeka."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Pergerakan Nasional" },
+    "subtopic": "Politik Modern",
+    "lesson": { 
+      "title": "Sumpah Pemuda 1928: Kristalisasi Persatuan",
+      "content": "Peran organisasi pemuda kedaerahan dalam melebur menjadi satu identitas kebangsaan Indonesia. Contoh: Jong Java, Jong Sumatranen Bond, and Jong Ambon dalam Kongres Pemuda II. Penjelasan: Sumpah Pemuda adalah deklarasi politik paling berani untuk menantang dominasi kolonial secara kolektif."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Biosfer dan Sebaran Flora Fauna" },
+    "subtopic": "Ekologi",
+    "lesson": { 
+      "title": "Faktor-faktor yang Mempengaruhi Sebaran Makhluk Hidup",
+      "content": "Klimatik (iklim), edafik (tanah), fisiografis (relief), and biotik (manusia/hewan). Contoh: Perbedaan jenis hutan di wilayah curah hujan tinggi and wilayah yang kering (sabana). Penjelasan: Kondisi lingkungan menentukan habitat and adaptasi organisme di muka bumi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Biosfer dan Sebaran Flora Fauna" },
+    "subtopic": "Ekologi",
+    "lesson": { 
+      "title": "Persebaran Flora dan Fauna di Dunia (Bioma)",
+      "content": "Klasifikasi bioma seperti gurun, padang rumput, hutan hujan tropis, hutan gugur, taiga, and tundra. Contoh: Keunikan fauna di benua Australia yang didominasi oleh hewan berkantung (marsupial). Penjelasan: Pembagian bioma membantu kita memahami biodiversitas and upaya perlindungan alam global."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Biosfer dan Sebaran Flora Fauna" },
+    "subtopic": "Ekologi",
+    "lesson": { 
+      "title": "Konservasi Flora dan Fauna di Indonesia",
+      "content": "Peran Taman Nasional, Suaka Margasatwa, and Cagar Alam dalam melindungi spesies endemik dari kepunahan. Contoh: Pelestarian Badak Bercula Satu di Ujung Kulon. Penjelasan: Konservasi diperlukan untuk menjaga keseimbangan ekosistem and warisan alam bagi generasi mendatang."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Konflik dan Kekerasan" },
+    "subtopic": "Sosiologi Politik",
+    "lesson": { 
+      "title": "Akar Penyebab Konflik Sosial di Masyarakat",
+      "content": "Perbedaan kebudayaan, kepentingan ekonomi, perbedaan ras, serta perubahan sosial yang ekstrem. Contoh: Konflik antar suku di beberapa wilayah akibat kesalahpahaman budaya. Penjelasan: Memahami akar masalah adalah langkah pertama dalam upaya rekonsiliasi and perdamaian."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Konflik dan Kekerasan" },
+    "subtopic": "Sosiologi Politik",
+    "lesson": { 
+      "title": "Bentuk-bentuk Kekerasan (Fisik, Psikis, Struktural)",
+      "content": "Kekerasan tidak selalu berupa serangan fisik, tetapi bisa juga berupa tekanan mental atau ketidakadilan sistemik. Contoh: Kekerasan struktural berupa kemiskinan yang dipelihara oleh kebijakan yang salah. Penjelasan: Segala bentuk kekerasan harus dicegah untuk menciptakan masyarakat yang aman and adil."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Konflik dan Kekerasan" },
+    "subtopic": "Sosiologi Politik",
+    "lesson": { 
+      "title": "Resolusi Konflik dan Integrasi Sosial",
+      "content": "Cara penyelesaian konflik melalui mediasi, arbitrase, konsiliasi, and kompromi. Contoh: Peran pihak ketiga sebagai mediator dalam sengketa antar warga desa. Penjelasan: Keberhasilan resolusi konflik akan mempercepat proses integrasi sosial kembali."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Ketenagakerjaan" },
+    "subtopic": "Ekonomi SDM",
+    "lesson": { 
+      "title": "Angkatan Kerja, Tenaga Kerja, dan Kesempatan Kerja",
+      "content": "Pengertian penduduk usia produktif and ketersediaan lapangan kerja di berbagai sektor ekonomi. Contoh: Meningkatnya jumlah angkatan kerja baru setiap tahun setelah kelulusan sekolah. Penjelasan: Ketidakseimbangan antara jumlah pekerja and lapangan kerja menyebabkan masalah pengangguran."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Ketenagakerjaan" },
+    "subtopic": "Ekonomi SDM",
+    "lesson": { 
+      "title": "Masalah Pengangguran dan Solusinya",
+      "content": "Jenis pengangguran: friksional, struktural, musiman, and konjungtural. Upaya pemerintah mengatasinya. Contoh: Program pelatihan vokasi and kartu prakerja untuk meningkatkan keahlian penganggur. Penjelasan: Pengangguran yang tinggi berdampak buruk pada daya beli and stabilitas sosial."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Ketenagakerjaan" },
+    "subtopic": "Ekonomi SDM",
+    "lesson": { 
+      "title": "Sistem Upah dan Hak-hak Pekerja",
+      "content": "Penentuan Upah Minimum Regional (UMR) and perlindungan tenaga kerja melalui jaminan sosial (BPJS Ketenagakerjaan). Contoh: Negosiasi upah antara serikat pekerja dengan perusahaan. Penjelasan: Sistem upah yang adil menjamin kesejahteraan buruh and kelangsungan industri."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Pendudukan Jepang" },
+    "subtopic": "Sejarah Kemerdekaan",
+    "lesson": { 
+      "title": "Kehidupan Sosial-Ekonomi Masa Jepang",
+      "content": "Eksploitasi sumber daya and tenaga kerja untuk kepentingan perang Asia Timur Raya. Penyerahan wajib hasil panen. Contoh: Penderitaan kaum Romusha yang dipaksa bekerja hingga ke luar negeri. Penjelasan: Meskipun singkat, masa Jepang memberikan dampak penderitaan and disiplin militer bagi rakyat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Pendudukan Jepang" },
+    "subtopic": "Sejarah Kemerdekaan",
+    "lesson": { 
+      "title": "Perkembangan Militer dan Organisasi Semi-Militer",
+      "content": "Pembentukan Seinendan, Keibodan, Fujinkai, and PETA oleh Jepang untuk membantu pertahanan. Contoh: Latihan perang pemuda Indonesia yang nantinya menjadi inti tentara nasional. Penjelasan: Bekal militer ini secara tidak langsung mempersiapkan bangsa Indonesia untuk mempertahankan kemerdekaan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Pendudukan Jepang" },
+    "subtopic": "Sejarah Kemerdekaan",
+    "lesson": { 
+      "title": "Peran BPUPKI dan PPKI dalam Persiapan Kemerdekaan",
+      "content": "Proses perumusan Dasar Negara (Pancasila) and UUD 1945 oleh para tokoh bangsa. Contoh: Pidato Soekarno pada 1 Juni 1945 tentang lahirnya Pancasila. Penjelasan: Lembaga-lembaga ini adalah wadah diplomasi legal untuk meraih kemerdekaan dari tangan Jepang."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Indeks Harga dan Inflasi" },
+    "subtopic": "Stabilitas Ekonomi",
+    "lesson": { 
+      "title": "Indeks Harga dan Cara Perhitungannya",
+      "content": "Mengukur rata-rata perubahan harga sekelompok barang and jasa dari waktu ke waktu. Contoh: Indeks Harga Konsumen (IHK) sebagai acuan daya beli masyarakat. Penjelasan: Indeks harga membantu pemerintah and pebisnis untuk memprediksi tren pasar."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Indeks Harga dan Inflasi" },
+    "subtopic": "Stabilitas Ekonomi",
+    "lesson": { 
+      "title": "Penyebab, Jenis, dan Dampak Inflasi",
+      "content": "Kenaikan harga barang secara umum and terus menerus akibat permintaan tinggi atau biaya produksi naik. Contoh: Kenaikan harga BBM yang memicu kenaikan harga kebutuhan pokok lainnya. Penjelasan: Inflasi yang terlalu tinggi menurunkan nilai uang and menyengsarakan masyarakat berpenghasilan rendah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Indeks Harga dan Inflasi" },
+    "subtopic": "Stabilitas Ekonomi",
+    "lesson": { 
+      "title": "Kebijakan Moneter dan Fiskal Mengatasi Inflasi",
+      "content": "Pengaturan jumlah uang beredar oleh Bank Sentral (moneter) and pengaturan pajak/belanja oleh pemerintah (fiskal). Contoh: Kenaikan suku bunga bank untuk menarik uang beredar dari masyarakat. Penjelasan: Koordinasi kedua kebijakan ini sangat vital untuk menjaga stabilitas makroekonomi."
+    }
+  }
+]

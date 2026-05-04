@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Hasil Observasi" },
+    "subtopic": "Menganalisis Laporan Ilmiah",
+    "lesson": { 
+      "title": "Karakteristik Teks LHO SMA",
+      "content": "Teks Laporan Hasil Observasi (LHO) di tingkat SMA lebih menekankan pada analisis mendalam dan penggunaan bahasa ilmiah yang baku. LHO harus bersifat objektif, faktual, dan sistematik. Contoh: Laporan observasi mengenai ekosistem mangrove di pesisir pantai. Penjelasan: Fokus utama adalah memberikan informasi valid yang dapat dipertanggungjawabkan secara keilmuan kepada pembaca."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Hasil Observasi" },
+    "subtopic": "Menganalisis Laporan Ilmiah",
+    "lesson": { 
+      "title": "Struktur Deskripsi Bagian dan Manfaat",
+      "content": "Deskripsi bagian merinci ciri fisik dan perilaku objek, sementara deskripsi manfaat menjelaskan fungsi objek tersebut dalam ekosistem atau kehidupan manusia. Contoh: Rincian bagian-bagian bunga bangkai (Rafflesia arnoldii). Penjelasan: Struktur ini memastikan informasi disampaikan secara menyeluruh dari berbagai sudut pandang."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Hasil Observasi" },
+    "subtopic": "Menganalisis Laporan Ilmiah",
+    "lesson": { 
+      "title": "Kaidah Kebahasaan: Verba Relasional",
+      "content": "Menggunakan verba yang menunjukkan hubungan identitas atau klasifikasi, seperti 'adalah', 'merupakan', 'termasuk'. Contoh: 'Harimau merupakan hewan karnivora'. Penjelasan: Verba relasional membantu mendefinisikan objek pengamatan dengan tepat dan formal."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Hasil Observasi" },
+    "subtopic": "Menulis Laporan Observasi",
+    "lesson": { 
+      "title": "Teknik Observasi Lapangan",
+      "content": "Melakukan pengamatan langsung dengan instrumen catatan atau rekaman untuk menjamin keaslian data. Contoh: Observasi perilaku satwa di kebun binatang. Penjelasan: Data primer yang diperoleh langsung dari lapangan memiliki nilai kebenaran yang lebih tinggi daripada sekadar kutipan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Hasil Observasi" },
+    "subtopic": "Menulis Laporan Observasi",
+    "lesson": { 
+      "title": "Menyusun Paragraf Klasifikasi",
+      "content": "Mengelompokkan objek berdasarkan kriteria tertentu dalam satu paragraf yang padu. Contoh: Klasifikasi jenis-jenis limbah industri. Penjelasan: Klasifikasi yang logis mempermudah pembaca dalam memahami kategori-kategori objek yang kompleks."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Hasil Observasi" },
+    "subtopic": "Menulis Laporan Observasi",
+    "lesson": { 
+      "title": "Penyuntingan Ejaan dan Tanda Baca",
+      "content": "Memeriksa ketepatan penulisan istilah asing, huruf kapital, dan tanda baca sesuai PUEBI. Contoh: Mengoreksi penulisan nama latin hewan dalam laporan. Penjelasan: Kerapian dan ketepatan tata bahasa mencerminkan kualitas profesionalisme sebuah laporan ilmiah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Anekdot" },
+    "subtopic": "Kritik Sosial dalam Balutan Humor",
+    "lesson": { 
+      "title": "Definisi dan Fungsi Anekdot",
+      "content": "Teks anekdot adalah cerita singkat yang menarik karena lucu dan mengesankan, biasanya mengenai orang penting berdasarkan kejadian nyata untuk menyampaikan kritik. Contoh: Anekdot tentang layanan birokrasi yang lambat. Penjelasan: Humor dalam anekdot hanyalah 'pembungkus' untuk menyampaikan pesan moral atau kritik sosial yang tajam."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Anekdot" },
+    "subtopic": "Kritik Sosial dalam Balutan Humor",
+    "lesson": { 
+      "title": "Struktur Anekdot: Abstraksi dan Orientasi",
+      "content": "Abstraksi memberikan gambaran awal, sementara orientasi menjelaskan latar belakang peristiwa atau awal kejadian cerita. Contoh: Pembukaan anekdot tentang seorang pejabat di pasar. Penjelasan: Bagian awal ini berfungsi memancing rasa ingin tahu pembaca terhadap kelanjutan humor tersebut."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Anekdot" },
+    "subtopic": "Kritik Sosial dalam Balutan Humor",
+    "lesson": { 
+      "title": "Krisis, Reaksi, dan Koda",
+      "content": "Krisis adalah bagian munculnya masalah unik, reaksi adalah cara penyelesaian yang lucu, dan koda adalah perubahan pada tokoh atau pesan penutup. Contoh: Dialog puncak dalam anekdot 'Dosen yang Menjadi Pejabat'. Penjelasan: Krisis adalah inti dari humor dan kritik yang ingin disampaikan penulis."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Anekdot" },
+    "subtopic": "Menulis Anekdot Kreatif",
+    "lesson": { 
+      "title": "Mengubah Cerita Lucu Menjadi Anekdot",
+      "content": "Menambahkan unsur kritik dan tokoh yang relevan agar cerita humor memiliki bobot sosial. Contoh: Mengubah lelucon sekolah menjadi kritik terhadap metode belajar. Penjelasan: Anekdot yang baik mampu membuat pembaca tertawa sekaligus merenungi pesan yang ada di dalamnya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Anekdot" },
+    "subtopic": "Menulis Anekdot Kreatif",
+    "lesson": { 
+      "title": "Penggunaan Kalimat Retoris dan Sindiran",
+      "content": "Menggunakan pertanyaan yang tidak memerlukan jawaban (retoris) dan majas sindiran (ironi/sinisme). Contoh: 'Apakah kita harus menunggu kiamat baru sampah ini dibersihkan?'. Penjelasan: Gaya bahasa ini memperkuat efek satir atau sindiran dalam sebuah anekdot."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Anekdot" },
+    "subtopic": "Menulis Anekdot Kreatif",
+    "lesson": { 
+      "title": "Menganalisis Makna Tersirat Anekdot",
+      "content": "Mencari tahu siapa yang disindir dan masalah sosial apa yang sebenarnya dibahas di balik kelucuan cerita. Contoh: Analisis anekdot politik di media massa. Penjelasan: Kemampuan menganalisis makna tersirat melatih kepekaan kita terhadap isu-isu di sekitar."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Hikayat" },
+    "subtopic": "Nilai Budaya dan Istanasentris",
+    "lesson": { 
+      "title": "Karakteristik Hikayat Klasik",
+      "content": "Hikayat bersifat istanasentris (berlatar kerajaan), anonim (penulis tidak diketahui), dan mengandung kemustahilan. Contoh: Hikayat Bayan Budiman. Penjelasan: Hikayat merupakan bagian dari sastra Melayu klasik yang kaya akan nilai-nilai moral dan keajaiban."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Hikayat" },
+    "subtopic": "Nilai Budaya dan Istanasentris",
+    "lesson": { 
+      "title": "Menganalisis Nilai-nilai dalam Hikayat",
+      "content": "Menemukan nilai agama, sosial, budaya, moral, dan edukasi yang masih relevan dengan masa kini. Contoh: Nilai kesetiaan dalam Hikayat Hang Tuah. Penjelasan: Meski berlatar masa lalu, pelajaran hidup dalam hikayat sering kali bersifat universal."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Hikayat" },
+    "subtopic": "Nilai Budaya dan Istanasentris",
+    "lesson": { 
+      "title": "Penggunaan Kata Arkais",
+      "content": "Menggunakan kosakata kuno yang sudah jarang digunakan, seperti 'alkisah', 'syahdan', 'hatta'. Contoh: Memahami makna kalimat pembuka dalam hikayat raja-raja. Penjelasan: Kata arkais memberikan nuansa sejarah dan kemegahan bahasa pada teks hikayat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Hikayat" },
+    "subtopic": "Adaptasi Hikayat",
+    "lesson": { 
+      "title": "Mengubah Hikayat Menjadi Cerpen",
+      "content": "Mengadaptasi alur dan nilai hikayat ke dalam latar modern dan bahasa yang lebih populer. Contoh: Mengubah kisah pahlawan kerajaan menjadi pahlawan di kota besar. Penjelasan: Adaptasi membantu generasi muda lebih mudah mengapresiasi warisan sastra klasik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Hikayat" },
+    "subtopic": "Adaptasi Hikayat",
+    "lesson": { 
+      "title": "Membandingkan Alur Hikayat dan Cerpen",
+      "content": "Menganalisis perbedaan penggunaan sudut pandang dan perkembangan konflik antar dua bentuk sastra. Contoh: Perbandingan Hikayat Si Miskin dengan cerpen bertema kemiskinan. Penjelasan: Analisis perbandingan memperdalam pemahaman tentang evolusi teknik bercerita."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Hikayat" },
+    "subtopic": "Adaptasi Hikayat",
+    "lesson": { 
+      "title": "Menulis Resensi Hikayat Modern",
+      "content": "Memberikan penilaian terhadap buku kumpulan hikayat yang telah disesuaikan bahasanya. Contoh: Resensi buku 'Hikayat Kalilah dan Dimnah'. Penjelasan: Resensi membantu orang lain memutuskan apakah sebuah karya layak dibaca atau dipelajari."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Negosiasi" },
+    "subtopic": "Mencapai Kesepakatan",
+    "lesson": { 
+      "title": "Pengertian dan Tujuan Negosiasi",
+      "content": "Negosiasi adalah bentuk interaksi sosial yang berfungsi untuk mencari penyelesaian bersama di antara pihak-pihak yang memiliki perbedaan kepentingan. Contoh: Negosiasi antara pedagang dan pembeli di pasar. Penjelasan: Tujuan utama negosiasi adalah mencapai kesepakatan yang menguntungkan kedua belah pihak (win-win solution)."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Negosiasi" },
+    "subtopic": "Mencapai Kesepakatan",
+    "lesson": { 
+      "title": "Struktur: Orientasi, Pengajuan, Penawaran",
+      "content": "Orientasi berupa sapaan, pengajuan adalah penyampaian keinginan, dan penawaran adalah inti tawar-menawar. Contoh: Tahapan negosiasi peminjaman gedung sekolah. Penjelasan: Setiap tahap harus dilalui dengan bahasa yang persuasif agar proses berjalan lancar."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Negosiasi" },
+    "subtopic": "Mencapai Kesepakatan",
+    "lesson": { 
+      "title": "Persetujuan dan Penutup",
+      "content": "Bagian di mana kedua pihak menyepakati keputusan akhir dan mengakhiri interaksi. Contoh: Penandatanganan kesepakatan kerja sama OSIS. Penjelasan: Persetujuan harus jelas dan mengikat secara moral atau hukum bagi semua pihak."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Negosiasi" },
+    "subtopic": "Strategi Negosiasi",
+    "lesson": { 
+      "title": "Taktik Mengajukan Penawaran yang Logis",
+      "content": "Memberikan alasan yang masuk akal mengapa permintaan kita harus dipenuhi. Contoh: Alasan permintaan diskon karena pembelian dalam jumlah banyak. Penjelasan: Penawaran yang disertai alasan kuat lebih mudah diterima daripada sekadar paksaan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Negosiasi" },
+    "subtopic": "Strategi Negosiasi",
+    "lesson": { 
+      "title": "Etika dan Sopan Santun Bernegosiasi",
+      "content": "Menggunakan bahasa yang santun, tidak menyudutkan lawan bicara, dan bersikap tenang. Contoh: Menangani komplain pelanggan dengan kepala dingin. Penjelasan: Hubungan baik antara pihak yang bernegosiasi sangat berpengaruh terhadap hasil akhir."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Negosiasi" },
+    "subtopic": "Strategi Negosiasi",
+    "lesson": { 
+      "title": "Menyusun Teks Negosiasi dalam Bentuk Dialog",
+      "content": "Latihan menulis percakapan tawar-menawar dengan memperhatikan kaidah kebahasaan. Contoh: Dialog negosiasi antara anak dan orang tua tentang pilihan sekolah. Penjelasan: Menulis dialog mengasah kemampuan berpikir cepat dalam merespons argumen orang lain."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Biografi" },
+    "subtopic": "Keteladanan Tokoh",
+    "lesson": { 
+      "title": "Pengertian Biografi dan Autobiografi",
+      "content": "Biografi adalah riwayat hidup seseorang yang ditulis oleh orang lain, sedangkan autobiografi ditulis oleh diri sendiri. Contoh: Biografi B.J. Habibie. Penjelasan: Teks biografi bertujuan memberikan inspirasi melalui kisah perjuangan dan kesuksesan tokoh."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Biografi" },
+    "subtopic": "Keteladanan Tokoh",
+    "lesson": { 
+      "title": "Struktur: Orientasi dan Peristiwa Penting",
+      "content": "Orientasi berisi biodata singkat, peristiwa penting berisi urutan masalah dan pencapaian tokoh. Contoh: Masa kecil tokoh yang penuh tantangan. Penjelasan: Bagian peristiwa penting adalah inti dari keteladanan yang ingin ditonjolkan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Biografi" },
+    "subtopic": "Keteladanan Tokoh",
+    "lesson": { 
+      "title": "Reorientasi: Pandangan Penulis",
+      "content": "Bagian penutup yang berisi simpulan atau pandangan penulis terhadap sosok tokoh tersebut. Contoh: Harapan agar pembaca meniru semangat pantang menyerah tokoh. Penjelasan: Reorientasi merangkum makna hidup tokoh bagi pembaca masa kini."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Biografi" },
+    "subtopic": "Menulis Kisah Inspiratif",
+    "lesson": { 
+      "title": "Menemukan Hal yang Patut Diteladani",
+      "content": "Menganalisis sifat positif tokoh seperti kerja keras, kejujuran, atau kepedulian sosial. Contoh: Menganalisis keteladanan Ki Hajar Dewantara. Penjelasan: Fokus pada karakter membantu pembaca mengambil pelajaran berharga dari riwayat hidup seseorang."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Biografi" },
+    "subtopic": "Menulis Kisah Inspiratif",
+    "lesson": { 
+      "title": "Penggunaan Pronomina (Kata Ganti Orang)",
+      "content": "Menggunakan kata ganti 'ia', 'beliau', atau nama tokoh secara variatif agar teks tidak membosankan. Contoh: Penggunaan 'beliau' untuk menghormati tokoh yang sudah tiada. Penjelasan: Pronomina yang tepat menjaga alur cerita tetap fokus pada sosok yang dibahas."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Biografi" },
+    "subtopic": "Menulis Kisah Inspiratif",
+    "lesson": { 
+      "title": "Latihan Menulis Biografi Singkat Teman",
+      "content": "Melakukan wawancara dengan teman sebangku dan menyusun riwayat hidupnya menjadi teks biografi yang inspiratif. Contoh: Kisah teman yang rajin membantu orang tua. Penjelasan: Menulis biografi orang sekitar melatih empati dan kemampuan bercerita secara objektif."
+    }
+  }
+]

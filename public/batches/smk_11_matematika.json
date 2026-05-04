@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi" },
+    "subtopic": "Komposisi Fungsi",
+    "lesson": {
+      "title": "Rantai Proses: Memahami Komposisi Fungsi",
+      "content": "Selamat datang di Matematika kelas 11! Kita mulai dengan **Komposisi Fungsi**. Bayangkan sebuah pabrik di mana bahan mentah diproses oleh mesin A menjadi barang setengah jadi, lalu diproses lagi oleh mesin B menjadi barang jadi. Ini adalah aplikasi nyata dari $(g \\circ f)(x) = g(f(x))$. Fungsi $f$ adalah mesin pertama, and hasilnya dimasukkan ke fungsi $g$ sebagai mesin kedua.\n\nBagi siswa SMK, memahami komposisi fungsi membantu dalam pemodelan sistem produksi yang bertahap. Kamu belajar bagaimana variabel di satu tahap memengaruhi hasil akhir di tahap berikutnya. Matematika membantu kita memprediksi hasil akhir dengan tepat tanpa harus mencoba-coba secara manual. Dengan menguasai konsep ini, kamu sedang melatih logika berpikir sistematis yang sangat dibutuhkan dalam mengelola alur kerja industri yang kompleks and efisien."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi" },
+    "subtopic": "Fungsi Invers",
+    "lesson": {
+      "title": "Mundur Teratur: Fungsi Invers dan Rekayasa Balik",
+      "content": "Jika kamu tahu hasil akhirnya, bisakah kamu menemukan input awalnya? Itulah kegunaan **Fungsi Invers** $f^{-1}(x)$. Invers adalah fungsi kebalikan. Dalam dunia teknik, ini sering disebut sebagai **Reverse Engineering** (Rekayasa Balik). Misalnya, jika kamu tahu total biaya produksi, kamu bisa menghitung berapa jumlah bahan baku yang digunakan menggunakan fungsi invers.\n\nMemahami invers melatih kemampuan pemecahan masalahmu (troubleshooting). Kamu belajar untuk berpikir dari hilir ke hulu. Matematika mengajarkan bahwa setiap proses yang logis harus bisa dilacak kembali ke asalnya. Kemampuan ini sangat penting bagi siswa SMK IT untuk debugging program or bagi siswa Akuntansi untuk melakukan rekonsiliasi data. Mari kita belajar membalikkan logika untuk menemukan kebenaran data dari hasil yang kita terima."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri" },
+    "subtopic": "Lingkaran dan Persamaannya",
+    "lesson": {
+      "title": "Roda Industri: Persamaan Lingkaran",
+      "content": "Lingkaran adalah bentuk yang sangat dominan di industri: roda gigi, piston, pipa, hingga lensa kamera. Kita belajar persamaan lingkaran dengan pusat $(0,0)$ and $(a,b)$ serta jari-jari $r$: $x^2 + y^2 = r^2$. Memahami koordinat lingkaran sangat penting untuk pemrograman mesin CNC or desain grafis berbasis vektor.\n\nKamu belajar menghitung posisi titik-titik pada busur lingkaran dengan presisi. Bagi siswa SMK Teknik Pemesinan, kesalahan perhitungan jari-jari berarti kegagalan fungsi komponen mesin. Matematika memastikan setiap putaran roda industri berjalan dengan sinkron and akurat. Lingkaran mengajarkan kita tentang keseimbangan and efisiensi gerak yang menjadi nyawa dari teknologi mekanik modern di seluruh dunia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri" },
+    "subtopic": "Garis Singgung Lingkaran",
+    "lesson": {
+      "title": "Presisi Sentuhan: Garis Singgung Lingkaran",
+      "content": "Garis singgung adalah garis yang menyentuh lingkaran tepat di satu titik. Aplikasi nyatanya ada pada sistem transmisi sabuk (belt) pada mesin or desain jalan raya yang melengkung. Kita belajar menghitung gradien and persamaan garis singgung menggunakan konsep turunan sederhana or rumus baku. Garis singgung adalah simbol dari ketepatan and keamanan desain.\n\nBagi siswa SMK Teknik Bangunan or Otomotif, memahami titik singgung sangat vital untuk distribusi beban and gaya gesek. Matematika membantu kita merancang sistem yang minim getaran and maksimal dalam penyaluran tenaga. Dengan menguasai geometri lingkaran, kamu sedang menyiapkan diri untuk menjadi perancang teknis yang handal, yang mampu menciptakan inovasi dengan tingkat presisi milimeter sekalipun."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Ukuran Pemusatan Data (Mean, Median, Modus)",
+    "lesson": {
+      "title": "Membaca Rata-Rata: Statistika untuk Kendali Mutu",
+      "content": "Statistika adalah alat bantu pengambilan keputusan di industri. Kita belajar **Mean** (Rata-rata), **Median** (Nilai tengah), and **Modus** (Nilai tersering). Dalam produksi massal, kita menggunakan mean untuk mengecek apakah berat produk rata-rata sudah sesuai standar. Modus membantu kita mengetahui produk mana yang paling banyak diminati pasar.\n\nBagi siswa SMK, statistika membantu dalam **Quality Control**. Kamu belajar bahwa data tidak pernah bohong. Jika rata-rata kerusakan produk meningkat, berarti ada yang salah dalam proses produksi. Matematika memberikanmu 'mata' untuk melihat gambaran besar dari ribuan data produksi yang rumit. Jadilah tenaga ahli yang berbasis data (Data-Driven), yang mampu memberikan saran perbaikan berdasarkan angka yang akurat and terpercaya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Ukuran Penyebaran Data (Simpangan Baku dan Varians)",
+    "lesson": {
+      "title": "Konsistensi Produk: Memahami Varians dan Simpangan Baku",
+      "content": "Dua mesin bisa menghasilkan rata-rata yang sama, tapi tingkat konsistensinya berbeda. Inilah gunanya **Simpangan Baku (Standard Deviation)** and **Varians**. Semakin kecil simpangan baku, semakin konsisten (presisi) hasil kerja mesin tersebut. Industri otomotif and farmasi menuntut simpangan baku yang mendekati nol agar semua produk memiliki kualitas yang identik.\n\nKamu belajar menghitung seberapa jauh data menyebar dari rata-ratanya. Pelajaran ini melatih ketelitianmu dalam menganalisis risiko. Bagi siswa SMK, konsistensi adalah kunci kepercayaan pelanggan. Matematika mengajarkan kita bahwa 'bagus saja tidak cukup', kita harus 'bagus secara konsisten'. Dengan memahami penyebaran data, kamu bisa mengidentifikasi anomali and melakukan langkah pencegahan sebelum produk gagal sampai ke tangan konsumen."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Kaidah Pencacahan (Faktorial, Permutasi, Kombinasi)",
+    "lesson": {
+      "title": "Kemungkinan Tak Terbatas: Permutasi dan Kombinasi",
+      "content": "Berapa banyak cara menyusun kode keamanan? Berapa banyak kombinasi menu yang bisa dibuat? Kita belajar **Faktorial ($n!$)**, **Permutasi ($P$)**, and **Kombinasi ($C$)**. Permutasi memperhatikan urutan, sedangkan kombinasi tidak. Ini adalah dasar dari algoritma komputer, sistem keamanan digital, hingga manajemen logistik gudang.\n\nBagi siswa SMK Multimedia or IT, ini adalah fondasi logika pemrograman and kriptografi. Bagi siswa Tata Boga, ini membantu dalam kreasi menu inovatif. Matematika melatih otakmu untuk melihat berbagai alternatif solusi secara sistematis. Dengan memahami kaidah pencacahan, kamu bisa menghitung semua kemungkinan yang ada and memilih strategi yang paling efisien untuk mencapai tujuanmu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Peluang Kejadian Majemuk",
+    "lesson": {
+      "title": "Prediksi Risiko: Peluang dalam Pengambilan Keputusan",
+      "content": "Hidup penuh dengan ketidakpastian, tapi matematika bisa menghitungnya. Kita belajar **Peluang Kejadian** ($P(A) = \\frac{n(A)}{n(S)}$) serta kejadian majemuk (Saling Lepas, Saling Bebas). Dalam bisnis, ini digunakan untuk **Risk Assessment** (Penilaian Risiko). Berapa peluang mesin rusak dalam sebulan? Berapa peluang investasi kita untung?\n\nMemahami peluang menjauhkanmu dari sifat spekulatif (judi) and membawamu pada keputusan yang logis. Bagi siswa SMK, peluang membantu dalam perencanaan stok barang or penjadwalan perawatan mesin (Preventive Maintenance). Matematika mengajarkan kita untuk bersiap menghadapi berbagai kemungkinan dengan data yang rasional. Jadilah profesional yang selalu memiliki 'Rencana B' berdasarkan perhitungan peluang yang matang!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Logika Matematika" },
+    "subtopic": "Pernyataan, Negasi, dan Konjungsi/Disjungsi",
+    "lesson": {
+      "title": "Logika Berpikir: Dasar Pemrograman dan Debugging",
+      "content": "Matematika bukan hanya soal angka, tapi soal kebenaran. Kita belajar **Logika Matematika**: Pernyataan ($p$), Negasi ($\\sim p$), Konjungsi ($p \\wedge q$), and Disjungsi ($p \\vee q$). Logika ini adalah 'otak' dari semua perangkat digital and software yang kita gunakan. Jika kondisi A benar DAN kondisi B benar, maka mesin berjalan.\n\nBagi siswa SMK, logika matematika sangat penting untuk mencari kesalahan sistem (troubleshooting). Kamu belajar untuk berpikir runut and tidak berasumsi. Matematika mengajarkan bahwa kebenaran harus bisa dibuktikan secara logis. Dengan menguasai tabel kebenaran, kamu sedang membangun kemampuan analisis yang tajam, yang akan membuatmu sangat handal dalam mendesain sistem or memecahkan masalah teknis yang rumit di dunia kerja."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Logika Matematika" },
+    "subtopic": "Implikasi dan Biimplikasi serta Penarikan Kesimpulan",
+    "lesson": {
+      "title": "Sebab Akibat: Implikasi dan Logika Penarikan Kesimpulan",
+      "content": "Pelajaran ini membahas **Implikasi** (Jika $p$ maka $q$) and **Biimplikasi** ($p$ jika and hanya jika $q$). Kita juga belajar metode penarikan kesimpulan: **Modus Ponens**, **Modus Tollens**, and **Silogisme**. Ini adalah alat berpikir kritis paling dasar untuk membedakan fakta dengan opini or kesimpulan yang salah.\n\nDalam industri, logika implikasi digunakan dalam sistem kontrol otomatis (Sistem Kontrol PLC). Jika sensor mendeteksi panas, maka alarm berbunyi. Memahami struktur logika ini akan memudahkanmu dalam mempelajari teknologi otomasi and pemrograman tingkat lanjut. Jadilah pribadi yang mampu mengambil kesimpulan secara cerdas, objektif, and didukung oleh premis-premis yang benar. Logika yang kuat adalah tanda intelektualitas seorang tenaga ahli sejati."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Matriks" },
+    "subtopic": "Operasi Matriks (Penjumlahan dan Perkalian)",
+    "lesson": {
+      "title": "Data Terstruktur: Operasi Matriks untuk Logistik",
+      "content": "Matriks adalah susunan bilangan dalam baris and kolom. Kita belajar operasi penjumlahan, pengurangan, and perkalian matriks. Dalam dunia industri, matriks digunakan untuk mengelola data stok barang di gudang, pengolahan citra digital, hingga penghitungan biaya produksi multidimensi. Matriks membantu kita mengolah banyak data sekaligus secara rapi.\n\nBagi siswa SMK, matriks adalah dasar dari penggunaan aplikasi spreadsheet (Excel) tingkat lanjut and database. Kamu belajar bahwa data yang terorganisir akan jauh lebih mudah diolah and dianalisis. Matematika matriks melatih ketelitianmu dalam memetakan variabel-variabel yang saling berhubungan. Dengan menguasai matriks, kamu sedang mempersiapkan diri untuk menguasai manajemen data industri yang menjadi jantung dari efisiensi perusahaan modern."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Matriks" },
+    "subtopic": "Determinan dan Invers Matriks",
+    "lesson": {
+      "title": "Kunci Data: Determinan dan Invers Matriks 2x2",
+      "content": "Pelajaran ini membahas **Determinan** and **Invers Matriks**. Invers matriks digunakan untuk memecahkan sistem persamaan linear yang rumit dengan cara yang sangat cepat and efisien. Di bidang keamanan data (Kriptografi), invers matriks digunakan untuk menyandikan (Enkripsi) and membuka sandi (Dekripsi) pesan rahasia.\n\nKamu belajar bahwa setiap sistem memiliki 'kunci' uniknya sendiri. Matematika memberikanmu alat untuk membuka kunci-kunci permasalahan tersebut. Bagi siswa SMK, pemahaman matriks akan sangat berguna saat kamu bekerja dengan software teknik seperti AutoCAD, SolidWorks, or software akuntansi. Jangan biarkan angka-angka besar menakutimu; dengan matriks, semua menjadi terstruktur and mudah untuk diselesaikan secara profesional."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Matematika sebagai Bahasa Teknologi",
+    "lesson": {
+      "title": "Refleksi Akhir: Matematika di Jantung Inovasi",
+      "content": "Selamat! Kamu telah menyelesaikan Matematika kelas 11. Kita telah belajar mulai dari fungsi yang memodelkan proses, geometri lingkaran untuk desain, statistika untuk mutu, peluang untuk risiko, hingga logika and matriks untuk teknologi digital. Pelajaran terpenting adalah: **Matematika bukan musuh, tapi alat bantu terhebatmu**.\n\nJangan hanya menghapal rumus, tapi pahami logikanya. Gunakan matematika untuk membuat pekerjaanmu lebih presisi, efisien, and terencana. Tenaga ahli yang hebat adalah mereka yang mampu mengawinkan keahlian tangan dengan ketajaman analisis matematis. Teruslah berlatih, karena matematika adalah bahasa alam semesta and bahasa teknologi masa depan. Sampai jumpa di kelas 12 dengan tantangan kalkulus yang lebih seru! Teruslah melangkah dengan pasti! Merdeka!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi" },
+    "subtopic": "Fungsi Linier dan Kuadrat dalam Ekonomi",
+    "lesson": {
+      "title": "Grafik Keuntungan: Aplikasi Fungsi dalam Bisnis",
+      "content": "Fungsi linier and kuadrat sering digunakan untuk memodelkan biaya produksi and pendapatan. Titik puncak fungsi kuadrat bisa menunjukkan laba maksimal or biaya minimal. Kita belajar menggambar grafik and menentukan titik potong. Bagi calon wirausahawan SMK, kemampuan memodelkan bisnis dalam grafik fungsi akan membantumu melihat tren and mengambil langkah strategis untuk memajukan usahamu dengan perhitungan yang akurat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri" },
+    "subtopic": "Luas Juring dan Panjang Busur Lingkaran",
+    "lesson": {
+      "title": "Potongan Presisi: Menghitung Juring dan Busur",
+      "content": "Dalam pembuatan komponen mesin berbentuk cakram or desain taman, kita sering perlu menghitung luas juring or panjang busur. Rumusnya: $L_{juring} = \\frac{\\alpha}{360} \\times \\pi r^2$. Kita belajar hubungan antara sudut pusat dengan luas area. Pelajaran ini melatih ketelitianmu dalam membagi material secara adil and efisien, meminimalkan limbah (waste) dalam setiap proses produksi industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Penyajian Data (Histogram dan Ogive)",
+    "lesson": {
+      "title": "Visualisasi Data: Membuat Grafik Industri",
+      "content": "Data yang banyak akan lebih mudah dipahami jika divisualisasikan. Kita belajar membuat **Histogram**, **Poligon Frekuensi**, and **Ogive**. Grafik ini membantu manajer melihat tren produksi or tingkat kegagalan mesin secara cepat. Kemampuan menyajikan data secara visual adalah skill komunikasi yang sangat penting bagi tenaga ahli untuk meyakinkan atasan or klien mengenai efektivitas sebuah proyek."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Frekuensi Harapan",
+    "lesson": {
+      "title": "Target Realistis: Menghitung Frekuensi Harapan",
+      "content": "Jika kita melakukan percobaan berkali-kali, berapa kali kita mengharapkan kejadian tertentu muncul? Rumusnya: $F_h(A) = n \\times P(A)$. Dalam industri, ini digunakan untuk memprediksi jumlah produk cacat dalam satu batch besar. Dengan menghitung frekuensi harapan, kita bisa menyiapkan suku cadang or langkah antisipasi yang tepat, sehingga proses bisnis tidak terganggu oleh kejadian yang sebenarnya sudah bisa diprediksi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Logika Matematika" },
+    "subtopic": "Penarikan Kesimpulan Silogisme",
+    "lesson": {
+      "title": "Rantai Kebenaran: Logika Silogisme",
+      "content": "Silogisme adalah penarikan kesimpulan dari dua premis: Jika $p \\rightarrow q$ and $q \\rightarrow r$, maka kesimpulannya $p \\rightarrow r$. Ini melatih kemampuanmu dalam melihat hubungan jangka panjang. Di dunia kerja, silogisme membantumu memahami dampak dari sebuah keputusan awal terhadap hasil akhir yang jauh di depan. Logika yang lurus akan melindungimu dari kesalahan pengambilan keputusan yang berakibat fatal bagi perusahaan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Matriks" },
+    "subtopic": "Aplikasi Matriks pada Transformasi Geometri",
+    "lesson": {
+      "title": "Pergeseran Objek: Matriks untuk Desain Grafis",
+      "content": "Bagaimana komputer memindahkan, memutar, or memperbesar gambar? Jawabannya adalah Matriks Transformasi. Kita belajar matriks Translasi, Refleksi, Rotasi, and Dilatasi. Bagi siswa SMK Multimedia or Desain, ini adalah 'sihir' di balik software desain grafis and animasi. Matematika transformasi memungkinkan kita memanipulasi objek digital dengan presisi matematis yang sempurna, menciptakan visual yang tampak nyata and dinamis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi" },
+    "subtopic": "Fungsi Eksponen dan Logaritma Dasar",
+    "lesson": {
+      "title": "Pertumbuhan Eksponensial: Bunga Majemuk dan Bakteri",
+      "content": "Beberapa hal di dunia tumbuh sangat cepat (eksponensial), seperti bunga tabungan bank or pertumbuhan bakteri di makanan. Kita belajar bentuk umum $f(x) = a^x$ and hubungannya dengan logaritma. Bagi siswa SMK Akuntansi or Tata Boga, memahami pertumbuhan eksponensial membantu dalam perencanaan keuangan jangka panjang or pemahaman tentang keamanan pangan (food safety). Matematika membantu kita mengelola pertumbuhan agar tetap terkendali and menguntungkan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri" },
+    "subtopic": "Hubungan Dua Lingkaran",
+    "lesson": {
+      "title": "Sistem Gir: Hubungan Dua Lingkaran",
+      "content": "Dua lingkaran bisa saling lepas, bersinggungan, or berpotongan. Kita belajar menghitung jarak antar pusat lingkaran and panjang garis singgung persekutuan luar and dalam. Aplikasi nyatanya adalah pada perancangan sistem rantai sepeda or transmisi roda gigi pada mesin pabrik. Matematika menjamin setiap komponen berinteraksi tanpa slip and mentransfer tenaga secara maksimal, menciptakan efisiensi mekanik yang tinggi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Ukuran Letak Data (Quartil dan Persentil)",
+    "lesson": {
+      "title": "Posisi Data: Memahami Quartil dan Persentil",
+      "content": "Selain rata-rata, kita perlu tahu di mana posisi sebuah data berada. Quartil membagi data menjadi 4 bagian, and Persentil membagi menjadi 100. Dalam industri, ini digunakan untuk menentukan 'Grade' kualitas produk or peringkat karyawan. Kamu belajar apakah hasil kerjamu masuk dalam 10% terbaik (Persentil 90). Matematika memberikan standar penilaian yang objektif and adil bagi semua orang dalam sebuah sistem kompetisi profesional."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Kejadian Saling Bebas dan Bersyarat",
+    "lesson": {
+      "title": "Efek Domino: Peluang Kejadian Bersyarat",
+      "content": "Apakah kejadian A memengaruhi peluang kejadian B? Itulah Peluang Bersyarat $P(B|A)$. Misalnya, jika mesin A rusak, berapa peluang mesin B juga ikut berhenti? Memahami hubungan antar kejadian sangat penting dalam sistem otomasi industri and manajemen risiko. Matematika membantu kita memetakan 'efek domino' dalam sebuah kegagalan sistem, sehingga kita bisa memasang pengaman yang tepat di titik-titik kritis."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Logika Matematika" },
+    "subtopic": "Ekuivalensi Pernyataan",
+    "lesson": {
+      "title": "Penyederhanaan Logika: Hukum Ekuivalensi",
+      "content": "Terkadang sebuah aturan yang rumit bisa disederhanakan tanpa mengubah maknanya. Kita belajar hukum-hukum ekuivalensi seperti Hukum De Morgan. Dalam pemrograman, ini digunakan untuk menyederhanakan kode program agar berjalan lebih cepat and hemat memori. Matematika mengajarkan kita untuk mencari cara yang paling sederhana (elegan) dalam menyampaikan kebenaran or instruksi teknis yang kompleks."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Matriks" },
+    "subtopic": "Penyelesaian SPLDV dengan Matriks",
+    "lesson": {
+      "title": "Solusi Cepat: Menyelesaikan Persamaan dengan Matriks",
+      "content": "Mencari nilai $x$ and $y$ dari dua persamaan bisa dilakukan dengan cepat menggunakan aturan Cramer or Invers Matriks. Pelajaran ini sangat berguna untuk menghitung kebutuhan bahan baku yang berbeda untuk produk yang berbeda secara simultan. Matematika matriks memberikan cara yang sistematis untuk menyelesaikan masalah multidimensi yang sulit jika dikerjakan dengan cara substitusi biasa, menghemat waktu and tenaga kerjamu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Fungsi" },
+    "subtopic": "Daerah Asal dan Daerah Hasil Fungsi",
+    "lesson": {
+      "title": "Batasan Sistem: Domain dan Range Fungsi",
+      "content": "Setiap mesin memiliki batas kemampuan (input) and hasil (output). Kita belajar menentukan Domain (daerah asal) and Range (daerah hasil). Memahami batasan fungsi mencegah kita memberikan 'input' yang salah yang bisa merusak sistem. Matematika mengajarkan kita untuk selalu sadar akan batasan operasional dari setiap alat or sistem yang kita kelola, demi keamanan and umur panjang peralatan industri yang mahal."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Geometri" },
+    "subtopic": "Kedudukan Garis terhadap Lingkaran",
+    "lesson": {
+      "title": "Interaksi Garis dan Lingkaran: Cek Diskriminan",
+      "content": "Sebuah garis bisa memotong, menyinggung, or tidak menyentuh lingkaran. Kita belajar menggunakan nilai Diskriminan ($D$) untuk mengecek kedudukan tersebut tanpa harus menggambarnya. Ini adalah teknik audit cepat dalam perancangan teknis. Matematika memberikan cara verifikasi digital yang akurat untuk memastikan desainmu sudah sesuai dengan spesifikasi yang diinginkan sebelum masuk ke tahap produksi fisik yang berbiaya tinggi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Analisis Korelasi Sederhana",
+    "lesson": {
+      "title": "Hubungan Variabel: Mengenal Korelasi Data",
+      "content": "Apakah peningkatan suhu ruangan berhubungan dengan jumlah kerusakan mesin? Kita belajar tentang Korelasi (positif, negatif, or nol). Memahami korelasi membantu kita menemukan penyebab masalah (kausalitas) di lapangan. Matematika statistika melatihmu menjadi detektif data yang mampu menemukan pola tersembunyi di balik ribuan angka, membantu perusahaan melakukan efisiensi and peningkatan kualitas secara berkelanjutan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Peluang" },
+    "subtopic": "Peluang dalam Kendali Mutu (Sampling)",
+    "lesson": {
+      "title": "Uji Sampel: Peluang dan Pengambilan Keputusan Batch",
+      "content": "Kita tidak mungkin mengecek semua produk satu per satu. Kita belajar teknik pengambilan sampel (Sampling) and menghitung peluang seluruh batch diterima berdasarkan hasil sampel tersebut. Ini adalah dasar dari **AQL (Acceptable Quality Level)** di industri manufaktur global. Matematika memberikan jaminan kualitas dengan biaya yang efisien, memastikan kepuasan pelanggan tanpa mengganggu kecepatan lini produksi perusahaan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Matematika",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Masa Depan Berbasis Matematika",
+    "lesson": {
+      "title": "Pesan Penutup: Menjadi Profesional yang Logis",
+      "content": "Kurikulum kelas 11 telah usai. Kamu kini memiliki 'pisau analisis' yang tajam berupa logika, statistika, and geometri. Teruslah gunakan kemampuan ini untuk menjadi pemecah masalah (Problem Solver) yang hebat di dunia industri. Ingat, di era AI, kemampuan berpikir logis and matematis adalah yang membedakanmu dengan mesin. Teruslah belajar, teruslah berhitung, and jadilah pemimpin masa depan yang berwawasan luas and akurat dalam setiap tindakan. Sukses untukmu! Merdeka!"
+    }
+  }
+]

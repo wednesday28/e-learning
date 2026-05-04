@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur Kompleks" },
+    "subtopic": "Penyusunan Prosedur Rumit",
+    "lesson": { 
+      "title": "Ciri Teks Prosedur Kompleks",
+      "content": "Berbeda dengan prosedur sederhana, prosedur kompleks memiliki banyak langkah dan sub-langkah yang saling berkaitan untuk menyelesaikan pekerjaan yang lebih sulit. Contoh: Prosedur pembuatan Paspor atau SIM. Penjelasan: Ketelitian dalam mengikuti setiap tahap sangat krusial karena kesalahan di satu tahap bisa membatalkan seluruh proses."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur Kompleks" },
+    "subtopic": "Penyusunan Prosedur Rumit",
+    "lesson": { 
+      "title": "Struktur: Pernyataan Umum dan Tahapan",
+      "content": "Pernyataan umum berisi tujuan, sedangkan tahapan berisi langkah-langkah yang disusun secara logis dan kronologis. Contoh: Pendahuluan teks prosedur 'Cara Mendirikan UMKM'. Penjelasan: Pernyataan umum memberikan motivasi dan gambaran manfaat hasil akhir bagi pembaca."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur Kompleks" },
+    "subtopic": "Penyusunan Prosedur Rumit",
+    "lesson": { 
+      "title": "Penggunaan Konjungsi Temporal",
+      "content": "Menggunakan kata hubung waktu seperti 'selanjutnya', 'setelah itu', 'kemudian', 'lalu' untuk memperjelas urutan. Contoh: Alur pendaftaran kuliah di luar negeri. Penjelasan: Konjungsi temporal menjaga alur instruksi tetap teratur dan tidak membingungkan pembaca."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur Kompleks" },
+    "subtopic": "Kebahasaan dan Penyuntingan",
+    "lesson": { 
+      "title": "Kalimat Imperatif dan Persuasif",
+      "content": "Memadukan kalimat perintah yang tegas dengan ajakan agar pembaca tertarik mengikuti prosedur tersebut. Contoh: 'Pastikan dokumen lengkap agar proses lebih cepat'. Penjelasan: Bahasa persuasif dalam prosedur membuat instruksi terasa lebih membantu daripada sekadar perintah kaku."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur Kompleks" },
+    "subtopic": "Kebahasaan dan Penyuntingan",
+    "lesson": { 
+      "title": "Verba Material dan Tingkah Laku",
+      "content": "Verba material mengacu pada tindakan fisik, verba tingkah laku mengacu pada sikap saat melakukan tindakan. Contoh: 'Potonglah (material) dan tunggulah (tingkah laku)'. Penjelasan: Pemilihan verba yang tepat memberikan instruksi yang lebih detail dan komprehensif."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Prosedur Kompleks" },
+    "subtopic": "Kebahasaan dan Penyuntingan",
+    "lesson": { 
+      "title": "Menyunting Prosedur yang Tidak Logis",
+      "content": "Menemukan kesalahan urutan atau instruksi yang bermakna ganda dalam naskah prosedur. Contoh: Memperbaiki alur instalasi perangkat lunak. Penjelasan: Prosedur yang sudah disunting dengan baik akan meminimalisir risiko kegagalan pengguna saat mempraktikkannya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi Kompleks" },
+    "subtopic": "Analisis Fenomena Global",
+    "lesson": { 
+      "title": "Struktur Identifikasi Fenomena Luas",
+      "content": "Menjelaskan latar belakang peristiwa alam atau sosial dalam skala besar atau global. Contoh: Fenomena 'Pemanasan Global' atau 'Inflasi Ekonomi'. Penjelasan: Eksplanasi tingkat SMA menuntut pemahaman mendalam tentang keterkaitan berbagai faktor penyebab fenomena tersebut."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi Kompleks" },
+    "subtopic": "Analisis Fenomena Global",
+    "lesson": { 
+      "title": "Rangkaian Kejadian Sebab-Akibat Berantai",
+      "content": "Menjelaskan bagaimana satu kejadian memicu kejadian lain secara berurutan hingga menimbulkan dampak besar. Contoh: Proses terjadinya krisis moneter. Penjelasan: Hubungan kausalitas berantai membantu kita melihat pola sebab-akibat yang tidak sederhana."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi Kompleks" },
+    "subtopic": "Analisis Fenomena Global",
+    "lesson": { 
+      "title": "Interpretasi dan Simpulan Penulis",
+      "content": "Memberikan tanggapan atau penilaian terhadap dampak fenomena yang telah dijelaskan. Contoh: Harapan dan langkah preventif menghadapi banjir bandang. Penjelasan: Interpretasi menunjukkan kemampuan penulis dalam mengambil pelajaran dari fenomena yang terjadi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi Kompleks" },
+    "subtopic": "Kebahasaan Eksplanasi Ilmiah",
+    "lesson": { 
+      "title": "Penggunaan Istilah Teknis Bidang Tertentu",
+      "content": "Menggunakan kosakata khusus sesuai dengan topik yang dibahas (ekonomi, sains, sosiologi). Contoh: Istilah 'Mitigasi', 'Urbanisasi', 'Fotosintesis'. Penjelasan: Istilah teknis yang tepat meningkatkan bobot keilmiahan sebuah teks eksplanasi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi Kompleks" },
+    "subtopic": "Kebahasaan Eksplanasi Ilmiah",
+    "lesson": { 
+      "title": "Kalimat Pasif dalam Teks Eksplanasi",
+      "content": "Menggunakan kalimat pasif untuk memfokuskan perhatian pada peristiwa atau objek, bukan pada pelaku. Contoh: 'Hutan gundul diakibatkan oleh penebangan liar'. Penjelasan: Kalimat pasif memberikan kesan objektif dan ilmiah dalam penjelasan fenomena."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi Kompleks" },
+    "subtopic": "Kebahasaan Eksplanasi Ilmiah",
+    "lesson": { 
+      "title": "Menyusun Teks Eksplanasi Berbasis Data",
+      "content": "Mengintegrasikan data statistik atau grafik ke dalam paragraf eksplanasi. Contoh: Menjelaskan kenaikan suhu bumi berdasarkan data satelit. Penjelasan: Data nyata memperkuat argumen dan membuat penjelasan menjadi sangat meyakinkan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Ceramah" },
+    "subtopic": "Retorika dan Pesan Moral",
+    "lesson": { 
+      "title": "Pengertian Ceramah, Pidato, dan Khotbah",
+      "content": "Memahami perbedaan fokus antara ceramah (ilmu/pengetahuan), pidato (umum/politik), dan khotbah (keagamaan). Contoh: Ceramah tentang 'Bahaya Narkoba bagi Remaja'. Penjelasan: Ceramah bertujuan memberikan wawasan kepada audiens mengenai isu tertentu dengan cara yang menarik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Ceramah" },
+    "subtopic": "Retorika dan Pesan Moral",
+    "lesson": { 
+      "title": "Struktur Teks Ceramah: Pendahuluan",
+      "content": "Berisi salam pembuka, sapaan hormat, dan pengenalan isu yang akan dibahas. Contoh: Pembukaan ceramah di depan teman sekolah. Penjelasan: Pendahuluan yang hangat dan relevan sangat penting untuk menarik perhatian audiens sejak awal."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Ceramah" },
+    "subtopic": "Retorika dan Pesan Moral",
+    "lesson": { 
+      "title": "Isi Ceramah: Argumen dan Fakta Pendukung",
+      "content": "Pemaparan inti masalah disertai dengan alasan yang logis dan data yang kredibel. Contoh: Data dampak negatif gadget pada konsentrasi belajar. Penjelasan: Isi ceramah harus berbobot agar audiens merasa mendapatkan manfaat nyata setelah mendengarkan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Ceramah" },
+    "subtopic": "Teknik Berbicara di Depan Umum",
+    "lesson": { 
+      "title": "Intonasi, Artikulasi, dan Gestur",
+      "content": "Teknik mengatur nada bicara, kejelasan pengucapan kata, dan gerakan tubuh yang mendukung pesan. Contoh: Latihan menekankan kata kunci dalam ceramah. Penjelasan: Bahasa tubuh yang percaya diri meningkatkan efektivitas penyampaian pesan hingga 70%."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Ceramah" },
+    "subtopic": "Teknik Berbicara di Depan Umum",
+    "lesson": { 
+      "title": "Menghadapi Audiens dengan Percaya Diri",
+      "content": "Tips mengatasi rasa gugup dan teknik kontak mata yang baik. Contoh: Cara merespons pertanyaan audiens dengan tenang. Penjelasan: Kepercayaan diri dibangun melalui persiapan materi yang matang dan latihan yang konsisten."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Ceramah" },
+    "subtopic": "Teknik Berbicara di Depan Umum",
+    "lesson": { 
+      "title": "Menyusun Teks Ceramah Singkat",
+      "content": "Latihan menulis draf ceramah dengan tema bebas namun tetap memperhatikan struktur dan etika. Contoh: Ceramah tentang 'Literasi Digital'. Penjelasan: Menulis teks ceramah melatih kemampuan menyusun gagasan secara sistematis dan komunikatif."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Resensi" },
+    "subtopic": "Apresiasi Karya Sastra dan Seni",
+    "lesson": { 
+      "title": "Pengertian dan Tujuan Resensi",
+      "content": "Resensi adalah tulisan yang berisi ulasan atau penilaian terhadap sebuah karya (buku, film, musik). Contoh: Resensi novel 'Bumi Manusia'. Penjelasan: Resensi bertujuan memberikan gambaran kepada calon pembaca/penonton mengenai kualitas karya tersebut."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Resensi" },
+    "subtopic": "Apresiasi Karya Sastra dan Seni",
+    "lesson": { 
+      "title": "Struktur: Identitas Karya dan Sinopsis",
+      "content": "Mencantumkan judul, penulis, penerbit, tahun, dan ringkasan singkat isi cerita. Contoh: Identitas film 'Laskar Pelangi'. Penjelasan: Identitas karya sangat penting sebagai referensi bagi pembaca yang ingin memiliki atau menikmati karya tersebut."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Resensi" },
+    "subtopic": "Apresiasi Karya Sastra dan Seni",
+    "lesson": { 
+      "title": "Analisis Kelebihan dan Kekurangan",
+      "content": "Memberikan penilaian objektif mengenai kekuatan dan kelemahan karya dari berbagai aspek (tema, alur, bahasa). Contoh: Mengritik alur yang terlalu lambat namun memuji bahasa yang puitis. Penjelasan: Penilaian yang jujur dan berimbang sangat membantu pengembangan kreativitas pembuat karya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Resensi" },
+    "subtopic": "Menulis Ulasan Kritis",
+    "lesson": { 
+      "title": "Menentukan Sasaran Pembaca Resensi",
+      "content": "Menyesuaikan gaya bahasa resensi dengan audiens yang dituju (remaja, akademisi, atau umum). Contoh: Resensi buku pelajaran untuk guru. Penjelasan: Pemilihan gaya bahasa yang tepat memastikan pesan resensi sampai kepada pihak yang membutuhkannya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Resensi" },
+    "subtopic": "Menulis Ulasan Kritis",
+    "lesson": { 
+      "title": "Simpulan dan Rekomendasi Resensi",
+      "content": "Memberikan pernyataan akhir apakah karya tersebut layak untuk dinikmati atau tidak. Contoh: 'Buku ini wajib dibaca bagi pecinta sejarah'. Penjelasan: Rekomendasi adalah inti dari sebuah resensi yang menjadi panduan bagi masyarakat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Resensi" },
+    "subtopic": "Menulis Ulasan Kritis",
+    "lesson": { 
+      "title": "Resensi Film Pendek YouTube",
+      "content": "Latihan membuat ulasan untuk konten kreatif digital yang sedang populer di kalangan anak muda. Contoh: Resensi film pendek bertema persahabatan. Penjelasan: Keterampilan meresensi dapat diterapkan pada berbagai jenis media di era modern."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Karya Ilmiah" },
+    "subtopic": "Metodologi dan Penulisan",
+    "lesson": { 
+      "title": "Jenis-jenis Karya Ilmiah: Makalah dan Artikel",
+      "content": "Memahami perbedaan antara makalah untuk tugas sekolah dan artikel ilmiah untuk jurnal atau media. Contoh: Makalah tentang 'Dampak Sampah di Kantin'. Penjelasan: Karya ilmiah menuntut kejujuran intelektual dan kepatuhan pada aturan penulisan yang baku."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Karya Ilmiah" },
+    "subtopic": "Metodologi dan Penulisan",
+    "lesson": { 
+      "title": "Struktur: Pendahuluan dan Rumusan Masalah",
+      "content": "Menjelaskan alasan memilih topik dan menyusun pertanyaan penelitian yang ingin dijawab. Contoh: Rumusan masalah 'Mengapa minat baca siswa rendah?'. Penjelasan: Pendahuluan yang kuat memberikan arah yang jelas bagi seluruh isi karya ilmiah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Karya Ilmiah" },
+    "subtopic": "Metodologi dan Penulisan",
+    "lesson": { 
+      "title": "Landasan Teori dan Kerangka Berpikir",
+      "content": "Mengutip pendapat para ahli untuk mendukung topik yang sedang diteliti. Contoh: Menggunakan teori belajar untuk membahas prestasi siswa. Penjelasan: Landasan teori memberikan fondasi ilmiah agar karya tulis tidak hanya berdasarkan opini pribadi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Karya Ilmiah" },
+    "subtopic": "Teknik Penulisan Ilmiah",
+    "lesson": { 
+      "title": "Metode Penelitian Sederhana",
+      "content": "Menentukan cara pengumpulan data, misalnya melalui angket, wawancara, atau studi pustaka. Contoh: Mengumpulkan data via kuesioner online. Penjelasan: Pemilihan metode yang tepat sangat menentukan keakuratan hasil penelitian yang diperoleh."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Karya Ilmiah" },
+    "subtopic": "Teknik Penulisan Ilmiah",
+    "lesson": { 
+      "title": "Penulisan Daftar Pustaka Standar APA",
+      "content": "Mempelajari cara menulis sumber referensi dari buku, internet, atau jurnal secara benar. Contoh: Format penulisan daftar pustaka dari website resmi. Penjelasan: Daftar pustaka adalah bentuk tanggung jawab moral dalam menghargai hak kekayaan intelektual orang lain."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Karya Ilmiah" },
+    "subtopic": "Teknik Penulisan Ilmiah",
+    "lesson": { 
+      "title": "Menyunting Abstrak Karya Ilmiah",
+      "content": "Membuat ringkasan sangat singkat yang mencakup tujuan, metode, and hasil penelitian. Contoh: Abstrak untuk penelitian lingkungan sekolah. Penjelasan: Abstrak yang baik membantu pembaca memahami inti penelitian hanya dalam sekali baca."
+    }
+  }
+]

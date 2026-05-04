@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Cerita Pendek" },
+    "subtopic": "Membaca Cerita Fabel",
+    "lesson": { 
+      "title": "Kancil dan Buaya",
+      "content": "Kancil yang cerdik ingin menyeberang sungai. Banyak buaya di sungai itu. Kancil minta buaya berbaris untuk dihitung. Kancil pun menyeberang di atas punggung buaya. Contoh: Siapa yang cerdik? (Kancil). Penjelasan: Cerita fabel adalah cerita tentang hewan yang bisa bicara."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Cerita Pendek" },
+    "subtopic": "Membaca Cerita Fabel",
+    "lesson": { 
+      "title": "Semut dan Belalang",
+      "content": "Semut rajin bekerja mengumpulkan makanan. Belalang hanya bermain musik. Saat musim hujan, Belalang kelaparan. Contoh: Apa yang dilakukan semut? Penjelasan: Kita harus rajin bekerja seperti semut."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Cerita Pendek" },
+    "subtopic": "Membaca Cerita Fabel",
+    "lesson": { 
+      "title": "Kura-kura dan Kelinci",
+      "content": "Kelinci lari cepat tapi sombong. Kura-kura jalan lambat tapi tekun. Kura-kura menang lomba lari. Contoh: Kenapa kura-kura menang? Penjelasan: Kesabaran dan ketekunan akan membuahkan hasil."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Cerita Pendek" },
+    "subtopic": "Tokoh dan Watak",
+    "lesson": { 
+      "title": "Mengenal Sifat Tokoh Baik",
+      "content": "Tokoh baik disebut protagonis. Sifatnya suka menolong dan jujur. Contoh: Bawang Putih yang sabar. Penjelasan: Kita harus mencontoh sifat yang baik."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Cerita Pendek" },
+    "subtopic": "Tokoh dan Watak",
+    "lesson": { 
+      "title": "Mengenal Sifat Tokoh Jahat",
+      "content": "Tokoh jahat disebut antagonis. Sifatnya suka iri dan marah. Contoh: Serigala yang lapar. Penjelasan: Watak tokoh membuat cerita menjadi seru."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Cerita Pendek" },
+    "subtopic": "Tokoh dan Watak",
+    "lesson": { 
+      "title": "Menemukan Pesan Moral",
+      "content": "Pesan moral adalah nasihat dalam cerita. Contoh: Jangan berbohong seperti Pinokio. Penjelasan: Setiap cerita punya pelajaran yang bisa kita ambil."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Tanya" },
+    "subtopic": "Kata Tanya Dasar",
+    "lesson": { 
+      "title": "Kata Tanya Di mana",
+      "content": "Di mana digunakan untuk menanyakan tempat. Contoh: Di mana rumahmu? Penjelasan: Jawabannya harus menyebutkan lokasi atau tempat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Tanya" },
+    "subtopic": "Kata Tanya Dasar",
+    "lesson": { 
+      "title": "Kata Tanya Kapan",
+      "content": "Kapan digunakan untuk menanyakan waktu. Contoh: Kapan kita pulang? Penjelasan: Jawabannya bisa jam, hari, atau tanggal."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Tanya" },
+    "subtopic": "Kata Tanya Dasar",
+    "lesson": { 
+      "title": "Kata Tanya Mengapa",
+      "content": "Mengapa digunakan untuk menanyakan alasan. Contoh: Mengapa kamu menangis? Penjelasan: Jawabannya biasanya dimulai dengan kata 'karena'."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Tanya" },
+    "subtopic": "Menyusun Kalimat Tanya",
+    "lesson": { 
+      "title": "Menggunakan Tanda Tanya",
+      "content": "Setiap kalimat tanya harus diakhiri tanda tanya (?). Contoh: Apa warna kesukaanmu? Penjelasan: Tanpa tanda tanya, orang bingung itu pertanyaan atau bukan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Tanya" },
+    "subtopic": "Menyusun Kalimat Tanya",
+    "lesson": { 
+      "title": "Menjawab Pertanyaan dengan Lengkap",
+      "content": "Jawablah dengan sopan dan jelas. Contoh: Ke mana kamu pergi? Jawab: Saya pergi ke taman. Penjelasan: Jawaban lengkap lebih mudah dimengerti."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kalimat Tanya" },
+    "subtopic": "Menyusun Kalimat Tanya",
+    "lesson": { 
+      "title": "Wawancara Sederhana dengan Teman",
+      "content": "Coba tanya temanmu tentang hobinya. Contoh: Apa hobimu, Andi? Penjelasan: Bertanya membantu kita mengenal orang lain."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Sifat" },
+    "subtopic": "Mengenal Sifat Benda",
+    "lesson": { 
+      "title": "Besar dan Kecil",
+      "content": "Kata sifat menjelaskan keadaan benda. Contoh: Gajah itu besar, semut itu kecil. Penjelasan: Kita membandingkan ukuran benda."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Sifat" },
+    "subtopic": "Mengenal Sifat Benda",
+    "lesson": { 
+      "title": "Warna dan Bentuk",
+      "content": "Contoh: Balon itu merah dan bulat. Penjelasan: Warna dan bentuk juga termasuk kata sifat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Sifat" },
+    "subtopic": "Mengenal Sifat Benda",
+    "lesson": { 
+      "title": "Tekstur Halus dan Kasar",
+      "content": "Contoh: Kulit apel halus, batang pohon kasar. Penjelasan: Gunakan tanganmu untuk merasakannya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Sifat" },
+    "subtopic": "Sifat dan Perasaan Manusia",
+    "lesson": { 
+      "title": "Senang dan Sedih",
+      "content": "Perasaan juga kata sifat. Contoh: Saya senang mendapat hadiah. Penjelasan: Wajah kita menunjukkan perasaan kita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Sifat" },
+    "subtopic": "Sifat dan Perasaan Manusia",
+    "lesson": { 
+      "title": "Rajin dan Malas",
+      "content": "Contoh: Siswa rajin belajar, anak malas tidur saja. Penjelasan: Jadilah anak yang rajin supaya pintar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Kata Sifat" },
+    "subtopic": "Sifat dan Perasaan Manusia",
+    "lesson": { 
+      "title": "Berani dan Takut",
+      "content": "Contoh: Saya berani tampil di depan kelas. Penjelasan: Lawan rasa takutmu dengan percaya diri."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Paragraf" },
+    "subtopic": "Menulis Kalimat Berurutan",
+    "lesson": { 
+      "title": "Kegiatanku di Pagi Hari",
+      "content": "Susun kalimat dari bangun tidur sampai sekolah. Contoh: Saya bangun, lalu mandi, lalu sarapan. Penjelasan: Urutan waktu sangat penting."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Paragraf" },
+    "subtopic": "Menulis Kalimat Berurutan",
+    "lesson": { 
+      "title": "Cara Membuat Susu Cokelat",
+      "content": "Tuang susu, tambah air, lalu aduk. Contoh: Langkah-langkah yang jelas. Penjelasan: Menulis urutan membantu orang lain paham."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Paragraf" },
+    "subtopic": "Menulis Kalimat Berurutan",
+    "lesson": { 
+      "title": "Bercerita Tentang Liburan",
+      "content": "Ke mana kamu pergi? Apa yang kamu lihat? Contoh: Saya pergi ke pantai. Penjelasan: Tuliskan pengalamanmu dengan jujur."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Paragraf" },
+    "subtopic": "Paragraf Sederhana",
+    "lesson": { 
+      "title": "Mengenal Kalimat Utama",
+      "content": "Kalimat utama adalah inti cerita. Contoh: Hari ini cuaca sangat cerah. Penjelasan: Letakkan kalimat utama di awal paragraf."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Paragraf" },
+    "subtopic": "Paragraf Sederhana",
+    "lesson": { 
+      "title": "Menambah Kalimat Penjelas",
+      "content": "Kalimat penjelas mendukung kalimat utama. Contoh: Matahari bersinar terang, langit biru tanpa awan. Penjelasan: Paragraf jadi lebih panjang dan bagus."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Paragraf" },
+    "subtopic": "Paragraf Sederhana",
+    "lesson": { 
+      "title": "Menulis Paragraf Tentang Hewan Piaraan",
+      "content": "Contoh: Saya punya kucing. Bulunya putih. Dia suka lompat. Penjelasan: Gabungkan beberapa kalimat menjadi satu paragraf."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Nyaring" },
+    "subtopic": "Lafal dan Intonasi",
+    "lesson": { 
+      "title": "Membaca dengan Suara Jelas",
+      "content": "Buka mulutmu saat membaca. Contoh: Membaca teks di depan kelas. Penjelasan: Supaya teman-teman bisa mendengar suaramu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Nyaring" },
+    "subtopic": "Lafal dan Intonasi",
+    "lesson": { 
+      "title": "Mengenal Tanda Koma",
+      "content": "Berhenti sebentar saat melihat koma (,). Contoh: Ibu beli apel, mangga, dan jeruk. Penjelasan: Tanda koma membantu kita bernapas saat membaca."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Nyaring" },
+    "subtopic": "Lafal dan Intonasi",
+    "lesson": { 
+      "title": "Membaca dengan Ekspresi",
+      "content": "Gunakan nada suara yang pas dengan perasaan. Contoh: Membaca dialog orang marah atau senang. Penjelasan: Ekspresi membuat bacaan lebih hidup."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Nyaring" },
+    "subtopic": "Membaca Teks Pendek",
+    "lesson": { 
+      "title": "Membaca Pengumuman Sekolah",
+      "content": "Contoh: Besok ada lomba lari. Pakai sepatu olahraga. Penjelasan: Baca dengan nada memberitahu informasi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Nyaring" },
+    "subtopic": "Membaca Teks Pendek",
+    "lesson": { 
+      "title": "Membaca Puisi Anak Sederhana",
+      "content": "Contoh: Bunga mawar, merah warnanya. Penjelasan: Membaca puisi harus pelan dan penuh perasaan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Membaca Nyaring" },
+    "subtopic": "Membaca Teks Pendek",
+    "lesson": { 
+      "title": "Latihan Percakapan Dua Orang",
+      "content": "Coba baca bersama teman sebangku. Contoh: Dialog antara guru dan murid. Penjelasan: Berlatih bicara bergantian itu seru!"
+    }
+  }
+]

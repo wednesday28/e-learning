@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Kerja Ilmiah" },
+    "subtopic": "Metode Ilmiah",
+    "lesson": { 
+      "title": "Langkah-langkah Metode Ilmiah",
+      "content": "Proses sistematis mulai dari observasi, merumuskan masalah, hipotesis, eksperimen, hingga kesimpulan. Contoh: Meneliti pengaruh cahaya terhadap pertumbuhan tanaman. Penjelasan: Metode ilmiah memastikan hasil penelitian dapat dipertanggungjawabkan kebenarannya secara objektif."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Kerja Ilmiah" },
+    "subtopic": "Metode Ilmiah",
+    "lesson": { 
+      "title": "Keselamatan Kerja di Laboratorium",
+      "content": "Mengenal simbol bahaya bahan kimia dan prosedur penggunaan alat pelindung diri (APD). Contoh: Memakai jas lab dan kacamata pelindung saat mereaksikan asam kuat. Penjelasan: Laboratorium adalah tempat penelitian yang memiliki risiko tinggi jika tidak mengikuti prosedur keamanan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Kerja Ilmiah" },
+    "subtopic": "Metode Ilmiah",
+    "lesson": { 
+      "title": "Variabel dalam Penelitian",
+      "content": "Variabel bebas (yang diubah), terikat (yang diamati), dan kontrol (yang dibuat tetap). Contoh: Konsentrasi pupuk sebagai variabel bebas dalam penelitian tanaman. Penjelasan: Penentuan variabel yang tepat sangat penting untuk membuktikan hubungan sebab-akibat dalam eksperimen."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Virus dan Peranannya" },
+    "subtopic": "Struktur Virus",
+    "lesson": { 
+      "title": "Karakteristik Virus: Makhluk Peralihan",
+      "content": "Virus hanya bisa hidup di sel inang yang hidup dan memiliki materi genetik DNA atau RNA. Contoh: Virus Corona yang memiliki struktur protein spike. Penjelasan: Virus disebut makhluk peralihan karena bisa dikristalkan (benda mati) tapi bisa bereplikasi (makhluk hidup)."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Virus dan Peranannya" },
+    "subtopic": "Struktur Virus",
+    "lesson": { 
+      "title": "Siklus Litik dan Lisogenik",
+      "content": "Cara virus bereproduksi dengan menghancurkan sel inang (litik) atau menyatu dengan DNA inang (lisogenik). Contoh: Replikasi Bakteriofage pada bakteri E. coli. Penjelasan: Pemahaman siklus replikasi virus membantu ilmuwan menciptakan vaksin dan obat antivirus."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Virus dan Peranannya" },
+    "subtopic": "Struktur Virus",
+    "lesson": { 
+      "title": "Peranan Virus yang Menguntungkan",
+      "content": "Pemanfaatan virus dalam pembuatan vaksin, terapi gen, dan sebagai vektor bioteknologi. Contoh: Penggunaan virus yang dilemahkan untuk merangsang sistem imun. Penjelasan: Tidak semua virus merugikan, beberapa justru membantu manusia melawan penyakit berbahaya lainnya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Kimia Hijau" },
+    "subtopic": "Prinsip Kimia Hijau",
+    "lesson": { 
+      "title": "12 Prinsip Kimia Hijau",
+      "content": "Filosofi desain produk dan proses kimia untuk meminimalkan penggunaan zat berbahaya bagi lingkungan. Contoh: Penggunaan katalis untuk mempercepat reaksi tanpa banyak sisa limbah. Penjelasan: Kimia hijau bertujuan menciptakan industri yang berkelanjutan dan aman bagi bumi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Kimia Hijau" },
+    "subtopic": "Prinsip Kimia Hijau",
+    "lesson": { 
+      "title": "Pencegahan Limbah di Sumbernya",
+      "content": "Prinsip pertama kimia hijau: lebih baik mencegah limbah daripada mengolahnya setelah terbentuk. Contoh: Merancang proses produksi plastik yang bisa terurai alami (biodegradable). Penjelasan: Efisiensi atom dalam reaksi kimia sangat diperhatikan untuk mengurangi zat sisa yang tidak berguna."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Kimia Hijau" },
+    "subtopic": "Prinsip Kimia Hijau",
+    "lesson": { 
+      "title": "Pelarut Aman dan Efisiensi Energi",
+      "content": "Menggunakan pelarut yang tidak beracun seperti air atau pelarut organik yang mudah didaur ulang. Contoh: Ekstraksi bahan alam menggunakan air daripada alkohol keras. Penjelasan: Mengurangi konsumsi energi dalam proses kimia membantu menurunkan emisi gas rumah kaca."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Hukum Dasar Kimia" },
+    "subtopic": "Stokiometri Dasar",
+    "lesson": { 
+      "title": "Hukum Kekekalan Massa (Lavoisier)",
+      "content": "Massa zat sebelum reaksi sama dengan massa zat sesudah reaksi dalam ruang tertutup. Contoh: Membakar kertas dalam wadah tertutup tidak akan mengubah total massanya. Penjelasan: Massa tidak dapat diciptakan atau dimusnahkan dalam reaksi kimia biasa."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Hukum Dasar Kimia" },
+    "subtopic": "Stokiometri Dasar",
+    "lesson": { 
+      "title": "Hukum Perbandingan Tetap (Proust)",
+      "content": "Perbandingan massa unsur-unsur pembentuk suatu senyawa selalu tetap. Contoh: Air (H2O) selalu memiliki perbandingan massa Hidrogen dan Oksigen 1:8. Penjelasan: Identitas suatu senyawa ditentukan oleh perbandingan massa unsur penyusunnya yang unik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Hukum Dasar Kimia" },
+    "subtopic": "Stokiometri Dasar",
+    "lesson": { 
+      "title": "Hukum Dalton: Perbandingan Berganda",
+      "content": "Jika dua unsur membentuk lebih dari satu senyawa, massa unsur yang bergabung dengan massa tetap unsur lain berbanding bulat. Contoh: Perbandingan oksigen pada senyawa CO dan CO2. Penjelasan: Hukum ini menjadi dasar bagi teori atom yang menyatakan atom bergabung dalam perbandingan tertentu."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Energi Terbarukan" },
+    "subtopic": "Krisis Energi Dunia",
+    "lesson": { 
+      "title": "Energi Fosil vs Energi Terbarukan",
+      "content": "Minyak bumi dan batubara bersifat terbatas, sedangkan energi matahari dan angin tidak terbatas. Contoh: Perbandingan dampak polusi antara PLTU batubara dan PLTS. Penjelasan: Transisi ke energi terbarukan mendesak dilakukan untuk mencegah perubahan iklim yang ekstrem."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Energi Terbarukan" },
+    "subtopic": "Krisis Energi Dunia",
+    "lesson": { 
+      "title": "Pembangkit Listrik Tenaga Bayu (Angin)",
+      "content": "Memanfaatkan kecepatan angin untuk memutar kincir raksasa dan generator listrik. Contoh: Ladang angin di daerah pesisir yang luas. Penjelasan: Energi angin sangat bersih tetapi lokasinya harus memiliki kecepatan angin yang stabil dan tinggi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Energi Terbarukan" },
+    "subtopic": "Krisis Energi Dunia",
+    "lesson": { 
+      "title": "Energi Biomassa dari Limbah Pertanian",
+      "content": "Mengolah sisa tanaman atau kotoran hewan menjadi bahan bakar cair atau gas. Contoh: Pembuatan biodiesel dari biji jarak atau minyak sawit bekas. Penjelasan: Biomassa memanfaatkan siklus karbon yang ada sehingga lebih ramah lingkungan daripada bahan bakar fosil."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Struktur Atom Lanjut" },
+    "subtopic": "Konfigurasi Elektron",
+    "lesson": { 
+      "title": "Model Atom Mekanika Kuantum",
+      "content": "Elektron tidak berada di orbit pasti tetapi di daerah peluang bernama orbital. Contoh: Bentuk orbital s yang bulat dan orbital p yang seperti angka delapan. Penjelasan: Prinsip ketidakpastian Heisenberg menyatakan posisi elektron tidak bisa ditentukan secara pasti."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Struktur Atom Lanjut" },
+    "subtopic": "Konfigurasi Elektron",
+    "lesson": { 
+      "title": "Aturan Aufbau dan Larangan Pauli",
+      "content": "Pengisian elektron dimulai dari subkulit berenergi rendah ke tinggi, dan setiap orbital maksimal berisi 2 elektron. Contoh: Konfigurasi elektron atom Karbon (1s2 2s2 2p2). Penjelasan: Konfigurasi elektron menentukan letak unsur dalam tabel periodik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Struktur Atom Lanjut" },
+    "subtopic": "Konfigurasi Elektron",
+    "lesson": { 
+      "title": "Elektron Valensi dan Golongan",
+      "content": "Elektron yang berada di kulit terluar atom yang menentukan sifat kimia suatu unsur. Contoh: Golongan alkali memiliki 1 elektron valensi yang sangat reaktif. Penjelasan: Unsur dengan jumlah elektron valensi yang sama berada dalam satu golongan yang sama."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Pencemaran Lingkungan" },
+    "subtopic": "Dampak Perubahan Iklim",
+    "lesson": { 
+      "title": "Pemanasan Global dan Efek Rumah Kaca",
+      "content": "Akumulasi gas CO2 dan Metana di atmosfer yang memerangkap panas matahari. Contoh: Mencairnya lapisan es permanen di kutub bumi. Penjelasan: Suhu rata-rata bumi yang naik dapat menyebabkan kenaikan permukaan laut yang signifikan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Pencemaran Lingkungan" },
+    "subtopic": "Dampak Perubahan Iklim",
+    "lesson": { 
+      "title": "Pencemaran Udara dan Hujan Asam",
+      "content": "Emisi gas SO2 dan NOx dari pabrik yang bereaksi dengan air hujan menjadi asam. Contoh: Korosi pada patung logam dan kerusakan hutan akibat hujan asam. Penjelasan: Hujan asam merusak ekosistem air tawar dan kesuburan tanah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Pencemaran Lingkungan" },
+    "subtopic": "Dampak Perubahan Iklim",
+    "lesson": { 
+      "title": "Solusi Adaptasi dan Mitigasi",
+      "content": "Upaya mengurangi penyebab polusi (mitigasi) dan menyesuaikan diri dengan dampak yang ada (adaptasi). Contoh: Membangun tanggul laut untuk menahan kenaikan air laut. Penjelasan: Kerjasama global sangat diperlukan untuk menekan kenaikan suhu bumi di bawah 1,5 derajat Celcius."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Keanekaragaman Hayati" },
+    "subtopic": "Biodiversitas Indonesia",
+    "lesson": { 
+      "title": "Tingkat Gen, Spesies, dan Ekosistem",
+      "content": "Variasi makhluk hidup mulai dari perbedaan warna bunga (gen) hingga perbedaan tipe hutan (ekosistem). Contoh: Berbagai jenis mangga merupakan keanekaragaman tingkat gen. Penjelasan: Indonesia dijuluki negara megabiodiversitas karena kekayaan spesiesnya yang luar biasa."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Keanekaragaman Hayati" },
+    "subtopic": "Biodiversitas Indonesia",
+    "lesson": { 
+      "title": "Flora dan Fauna Endemik Indonesia",
+      "content": "Makhluk hidup yang hanya ditemukan di wilayah tertentu di Indonesia dan tidak ada di tempat lain. Contoh: Komodo di NTT dan Bunga Bangkai di Sumatera. Penjelasan: Keberadaan spesies endemik menunjukkan uniknya sejarah geologi kepulauan Indonesia."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Keanekaragaman Hayati" },
+    "subtopic": "Biodiversitas Indonesia",
+    "lesson": { 
+      "title": "Ancaman dan Upaya Pelestarian",
+      "content": "Perburuan liar, kebakaran hutan, dan fragmentasi habitat mengancam kepunahan spesies. Contoh: Penangkaran badak bercula satu di Ujung Kulon. Penjelasan: Pelestarian In-situ (di habitat asli) dan Ex-situ (di luar habitat) adalah kunci menjaga warisan alam."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Ekosistem Lanjut" },
+    "subtopic": "Siklus Biogeokimia",
+    "lesson": { 
+      "title": "Siklus Karbon dan Oksigen",
+      "content": "Proses perpindahan atom karbon antara makhluk hidup, atmosfer, dan tanah melalui fotosintesis dan respirasi. Contoh: Penyerapan CO2 oleh samudera dan hutan. Penjelasan: Gangguan pada siklus karbon akibat pembakaran bahan bakar fosil menyebabkan pemanasan global."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Ekosistem Lanjut" },
+    "subtopic": "Siklus Biogeokimia",
+    "lesson": { 
+      "title": "Siklus Nitrogen di Alam",
+      "content": "Pengikatan nitrogen udara oleh bakteri menjadi bentuk yang bisa diserap tumbuhan (nitrat). Contoh: Bakteri nitrifikasi dalam tanah yang membantu kesuburan. Penjelasan: Nitrogen sangat penting untuk pembentukan protein pada semua makhluk hidup."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Ekosistem Lanjut" },
+    "subtopic": "Siklus Biogeokimia",
+    "lesson": { 
+      "title": "Siklus Fosfor dan Dampaknya",
+      "content": "Perpindahan fosfor dari batuan ke dalam tanah dan tubuh makhluk hidup tanpa melalui fase gas. Contoh: Penumpukan fosfor di dasar danau akibat limbah deterjen. Penjelasan: Fosfor adalah komponen utama penyusun DNA dan membran sel."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Gerak Lurus SMA" },
+    "subtopic": "GLBB dan Analisis Grafik",
+    "lesson": { 
+      "title": "GLBB: Gerak dengan Percepatan Tetap",
+      "content": "Gerak benda yang kecepatannya berubah secara beraturan setiap detiknya. Contoh: Mobil yang sedang melakukan pengereman atau tancap gas. Penjelasan: Rumus utamanya melibatkan variabel percepatan (a) yang konstan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Gerak Lurus SMA" },
+    "subtopic": "GLBB dan Analisis Grafik",
+    "lesson": { 
+      "title": "Gerak Jatuh Bebas (GJB)",
+      "content": "Contoh khusus GLBB di mana benda jatuh hanya dipengaruhi oleh gravitasi bumi tanpa kecepatan awal. Contoh: Buah kelapa yang jatuh lurus ke tanah. Penjelasan: Semua benda jatuh bebas memiliki percepatan yang sama (sekitar 9,8 m/s2) tanpa memandang massanya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPA",
+    "topic": { "name": "Gerak Lurus SMA" },
+    "subtopic": "GLBB dan Analisis Grafik",
+    "lesson": { 
+      "title": "Analisis Grafik v-t pada GLBB",
+      "content": "Grafik kecepatan terhadap waktu berupa garis miring (gradiennya adalah percepatan). Contoh: Garam miring ke atas artinya dipercepat, miring ke bawah diperlambat. Penjelasan: Luas di bawah grafik v-t merepresentasikan jarak total yang ditempuh benda."
+    }
+  }
+]

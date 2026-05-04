@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Biologi Sel" },
+    "subtopic": "Transportasi Membran",
+    "lesson": { 
+      "title": "Difusi dan Osmosis",
+      "content": "Perpindahan zat dari konsentrasi tinggi ke rendah (difusi) dan perpindahan pelarut melalui membran semipermeabel (osmosis). Contoh: Penyerapan air oleh akar tanaman. Penjelasan: Transport pasif tidak memerlukan energi tambahan dari sel."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Biologi Sel" },
+    "subtopic": "Transportasi Membran",
+    "lesson": { 
+      "title": "Transport Aktif: Pompa Ion",
+      "content": "Perpindahan zat melawan gradien konsentrasi yang memerlukan energi berupa ATP. Contoh: Pompa Natrium-Kalium pada sel saraf manusia. Penjelasan: Transport aktif penting untuk menjaga keseimbangan elektrolit di dalam dan luar sel."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Biologi Sel" },
+    "subtopic": "Transportasi Membran",
+    "lesson": { 
+      "title": "Endositosis dan Eksositosis",
+      "content": "Proses sel memasukkan (endo) atau mengeluarkan (ekso) molekul besar menggunakan vesikel. Contoh: Sel darah putih menelan bakteri patogen. Penjelasan: Mekanisme ini memungkinkan sel berinteraksi dengan lingkungan secara selektif."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Fisika Mekanika" },
+    "subtopic": "Dinamika Rotasi",
+    "lesson": { 
+      "title": "Momen Gaya (Torsi)",
+      "content": "Besaran yang menyebabkan benda berotasi pada porosnya (tau = F x d). Contoh: Membuka pintu dengan mendorong bagian yang jauh dari engsel. Penjelasan: Semakin jauh jarak gaya dari pusat rotasi, semakin besar torsi yang dihasilkan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Fisika Mekanika" },
+    "subtopic": "Dinamika Rotasi",
+    "lesson": { 
+      "title": "Momen Inersia Benda Tegar",
+      "content": "Ukuran kelembaman benda untuk mempertahankan kondisi rotasinya. Contoh: Penari es yang merapatkan tangan agar berputar lebih cepat. Penjelasan: Momen inersia dipengaruhi oleh massa dan distribusi massa terhadap sumbu putar."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Fisika Mekanika" },
+    "subtopic": "Dinamika Rotasi",
+    "lesson": { 
+      "title": "Hukum Kekekalan Momentum Sudut",
+      "content": "Momentum sudut suatu sistem tetap jika tidak ada torsi luar yang bekerja. Contoh: Perputaran planet-planet di orbitnya. Penjelasan: Hubungan antara momen inersia dan kecepatan sudut berbanding terbalik dalam hukum ini."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Termokimia" },
+    "subtopic": "Entalpi Reaksi",
+    "lesson": { 
+      "title": "Sistem dan Lingkungan",
+      "content": "Sistem adalah bagian yang sedang diamati, lingkungan adalah segala sesuatu di luar sistem. Contoh: Reaksi kimia di dalam gelas beker (sistem) dan udara sekitarnya (lingkungan). Penjelasan: Pertukaran energi antara sistem dan lingkungan diukur melalui perubahan entalpi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Termokimia" },
+    "subtopic": "Entalpi Reaksi",
+    "lesson": { 
+      "title": "Reaksi Eksoterm dan Endoterm",
+      "content": "Eksoterm melepas panas ke lingkungan, endoterm menyerap panas dari lingkungan. Contoh: Pembakaran kayu (eksoterm) and es mencair (endoterm). Penjelasan: Pada reaksi eksoterm, suhu lingkungan akan naik, sedangkan endoterm suhu lingkungan turun."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Termokimia" },
+    "subtopic": "Entalpi Reaksi",
+    "lesson": { 
+      "title": "Hukum Hess: Perubahan Entalpi",
+      "content": "Perubahan entalpi suatu reaksi hanya tergantung pada keadaan awal dan akhir, bukan jalannya reaksi. Contoh: Menghitung delta H melalui siklus energi. Penjelasan: Hukum Hess memudahkan perhitungan energi reaksi yang sulit diukur langsung di laboratorium."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Laju Reaksi" },
+    "subtopic": "Faktor Laju Reaksi",
+    "lesson": { 
+      "title": "Pengaruh Konsentrasi dan Suhu",
+      "content": "Semakin tinggi konsentrasi atau suhu, semakin cepat partikel bertumbukan dan bereaksi. Contoh: Gula lebih cepat larut dalam air panas daripada air dingin. Penjelasan: Kenaikan suhu meningkatkan energi kinetik partikel sehingga tumbukan efektif lebih sering terjadi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Laju Reaksi" },
+    "subtopic": "Faktor Laju Reaksi",
+    "lesson": { 
+      "title": "Peran Katalis dalam Reaksi",
+      "content": "Katalis mempercepat reaksi dengan menurunkan energi aktivasi tanpa ikut terkonsumsi secara permanen. Contoh: Enzim dalam tubuh manusia sebagai biokatalis. Penjelasan: Katalis menyediakan jalur reaksi alternatif yang lebih hemat energi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Laju Reaksi" },
+    "subtopic": "Faktor Laju Reaksi",
+    "lesson": { 
+      "title": "Luas Permukaan Bidang Sentuh",
+      "content": "Semakin halus ukuran partikel zat padat, semakin cepat laju reaksinya karena bidang sentuh bertambah. Contoh: Kayu bakar yang dibelah kecil lebih cepat terbakar daripada gelondongan besar. Penjelasan: Tumbukan antar partikel hanya bisa terjadi pada permukaan zat yang bersentuhan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Kesetimbangan Kimia" },
+    "subtopic": "Pergeseran Kesetimbangan",
+    "lesson": { 
+      "title": "Konsep Reaksi Reversibel",
+      "content": "Reaksi yang dapat berjalan ke arah produk maupun kembali ke arah reaktan secara bersamaan. Contoh: Pembentukan gas amonia dalam industri. Penjelasan: Kesetimbangan dinamis tercapai saat laju reaksi ke kanan sama dengan laju ke kiri."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Kesetimbangan Kimia" },
+    "subtopic": "Pergeseran Kesetimbangan",
+    "lesson": { 
+      "title": "Asas Le Chatelier",
+      "content": "Jika sistem kesetimbangan diberi gangguan, sistem akan bergeser untuk meminimalkan gangguan tersebut. Contoh: Menambah konsentrasi reaktan akan menggeser arah reaksi ke produk. Penjelasan: Perubahan suhu, tekanan, dan volume sangat memengaruhi arah kesetimbangan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Kesetimbangan Kimia" },
+    "subtopic": "Pergeseran Kesetimbangan",
+    "lesson": { 
+      "title": "Tetapan Kesetimbangan (Kc dan Kp)",
+      "content": "Angka yang menunjukkan perbandingan konsentrasi produk dan reaktan saat setimbang pada suhu tertentu. Contoh: Menghitung Kc dari data molaritas gas. Penjelasan: Nilai K hanya dipengaruhi oleh perubahan suhu, bukan oleh konsentrasi atau tekanan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Fisiologi Tubuh" },
+    "subtopic": "Sistem Ekskresi",
+    "lesson": { 
+      "title": "Struktur Ginjal dan Nefron",
+      "content": "Ginjal menyaring darah untuk mengeluarkan zat sisa metabolisme dalam bentuk urine. Contoh: Proses filtrasi di glomerulus. Penjelasan: Nefron adalah unit fungsional ginjal yang bertugas mengatur kadar air dan garam dalam darah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Fisiologi Tubuh" },
+    "subtopic": "Sistem Ekskresi",
+    "lesson": { 
+      "title": "Tahapan Pembentukan Urine",
+      "content": "Terdiri dari Filtrasi (penyaringan), Reabsorpsi (penyerapan kembali), dan Augmentasi (penambahan zat sisa). Contoh: Penyerapan glukosa kembali ke darah di tubulus proksimal. Penjelasan: Urine normal tidak mengandung protein atau glukosa."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Fisiologi Tubuh" },
+    "subtopic": "Sistem Ekskresi",
+    "lesson": { 
+      "title": "Hati, Paru-paru, dan Kulit",
+      "content": "Organ ekskresi lain yang mengeluarkan empedu (hati), CO2 (paru-paru), dan keringat (kulit). Contoh: Keringat membantu menjaga suhu tubuh tetap stabil. Penjelasan: Kerusakan pada organ ekskresi dapat menyebabkan keracunan zat sisa di dalam tubuh."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Koordinasi" },
+    "subtopic": "Saraf dan Hormon",
+    "lesson": { 
+      "title": "Struktur Neuron (Sel Saraf)",
+      "content": "Terdiri dari dendrit, badan sel, dan akson yang menghantarkan impuls listrik. Contoh: Gerak refleks saat tangan terkena benda panas. Penjelasan: Sinapsis adalah celah antar sel saraf tempat zat neurotransmitter bekerja."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Koordinasi" },
+    "subtopic": "Saraf dan Hormon",
+    "lesson": { 
+      "title": "Sistem Hormon (Endokrin)",
+      "content": "Kelenjar buntu yang menghasilkan hormon dan diedarkan melalui darah ke organ target. Contoh: Hormon Insulin mengatur kadar gula darah. Penjelasan: Kerja sistem hormon lebih lambat daripada sistem saraf tetapi dampaknya lebih luas."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Sistem Koordinasi" },
+    "subtopic": "Saraf dan Hormon",
+    "lesson": { 
+      "title": "Alat Indera: Mata dan Telinga",
+      "content": "Mata sebagai fotoreseptor (cahaya) dan telinga sebagai fonoreseptor (bunyi) serta organ keseimbangan. Contoh: Telinga dalam (koklea) mengubah getaran menjadi sinyal saraf. Penjelasan: Koordinasi antar indera dan saraf memungkinkan kita merespon lingkungan dengan tepat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Gelombang Mekanik" },
+    "subtopic": "Sifat Gelombang",
+    "lesson": { 
+      "title": "Pemantulan dan Pembiasan Gelombang",
+      "content": "Gelombang berbalik saat mengenai penghalang atau berbelok saat masuk ke medium berbeda. Contoh: Gelombang laut yang melengkung saat mendekati pantai. Penjelasan: Hukum Snellius berlaku juga untuk pembiasan gelombang air dan bunyi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Gelombang Mekanik" },
+    "subtopic": "Sifat Gelombang",
+    "lesson": { 
+      "title": "Interferensi dan Difraksi",
+      "content": "Perpaduan dua gelombang (interferensi) dan pelenturan gelombang saat melewati celah sempit (difraksi). Contoh: Pola pelangi pada lapisan minyak di atas air. Penjelasan: Interferensi konstruktif memperkuat gelombang, destruktif memperlemah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Gelombang Mekanik" },
+    "subtopic": "Sifat Gelombang",
+    "lesson": { 
+      "title": "Efek Doppler pada Bunyi",
+      "content": "Perubahan frekuensi bunyi yang terdengar akibat gerak relatif sumber bunyi atau pendengar. Contoh: Suara sirine ambulan terdengar lebih tinggi saat mendekat. Penjelasan: Panjang gelombang yang sampai ke telinga berubah karena pergerakan sumber bunyi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Asam Basa" },
+    "subtopic": "Indikator dan pH",
+    "lesson": { 
+      "title": "Teori Asam Basa Arrhenius",
+      "content": "Asam menghasilkan ion H+ dalam air, basa menghasilkan ion OH- dalam air. Contoh: HCl sebagai asam kuat dan NaOH sebagai basa kuat. Penjelasan: Sifat korosif asam dan sifat licin (kaustik) basa berasal dari pelepasan ion-ion tersebut."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Asam Basa" },
+    "subtopic": "Indikator dan pH",
+    "lesson": { 
+      "title": "Pengukuran Derajat Keasaman (pH)",
+      "content": "Skala logaritma konsentrasi ion H+ mulai dari 0 hingga 14. Contoh: pH air murni adalah 7 (netral). Penjelasan: Larutan dengan pH di bawah 7 bersifat asam, di atas 7 bersifat basa."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Asam Basa" },
+    "subtopic": "Indikator dan pH",
+    "lesson": { 
+      "title": "Larutan Penyangga (Buffer)",
+      "content": "Larutan yang dapat mempertahankan nilai pH meskipun ditambah sedikit asam atau basa. Contoh: Darah manusia memiliki sistem buffer untuk menjaga pH tetap 7,4. Penjelasan: Buffer terdiri dari campuran asam lemah dan garamnya atau basa lemah dan garamnya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Hidrolisis Garam" },
+    "subtopic": "Sifat Larutan Garam",
+    "lesson": { 
+      "title": "Garam dari Asam Kuat dan Basa Kuat",
+      "content": "Garam yang terbentuk tidak mengalami hidrolisis dan bersifat netral (pH = 7). Contoh: NaCl (Garam dapur). Penjelasan: Ion dari asam kuat dan basa kuat tidak bereaksi dengan molekul air."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Hidrolisis Garam" },
+    "subtopic": "Sifat Larutan Garam",
+    "lesson": { 
+      "title": "Garam yang Bersifat Asam atau Basa",
+      "content": "Terjadi jika salah satu penyusun garam berasal dari zat lemah yang bereaksi dengan air. Contoh: NH4Cl bersifat asam (pH < 7). Penjelasan: Hidrolisis parsial terjadi pada garam yang salah satu komponennya lemah."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "IPA",
+    "topic": { "name": "Hidrolisis Garam" },
+    "subtopic": "Sifat Larutan Garam",
+    "lesson": { 
+      "title": "Penerapan Hidrolisis dalam Pertanian",
+      "content": "Pemberian pupuk seperti amonium sulfat yang bisa memengaruhi pH tanah. Contoh: Mengatur keasaman tanah agar sesuai dengan jenis tanaman. Penjelasan: Pengetahuan hidrolisis membantu petani menentukan jenis pupuk yang tepat bagi lahan mereka."
+    }
+  }
+]

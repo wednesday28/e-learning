@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Hak dan Kewajiban Warga Negara" },
+    "subtopic": "Makna Hak dan Kewajiban Warga Negara",
+    "lesson": {
+      "title": "Tanggung Jawab Dewasa: Memahami Hak and Kewajiban Warga Negara",
+      "content": "Selamat datang di kelas 12! Kamu sedang berada di ambang kedewasaan. Sebagai warga negara, kamu memiliki hak and kewajiban yang dijamin oleh konstitusi. Hak adalah apa yang harus kamu terima, sedangkan kewajiban adalah apa yang harus kamu lakukan. Keduanya harus berjalan seimbang. Tanpa kewajiban, hak akan menjadi keserakahan; tanpa hak, kewajiban akan menjadi penindasan.\n\nBagi lulusan SMK, memahami hak and kewajiban sangat penting saat memasuki dunia kerja. Kamu berhak atas penghidupan yang layak and perlindungan hukum, namun kamu berkewajiban membayar pajak, membela negara, and mematuhi hukum. Pancasila mengajarkan kita untuk tidak hanya menuntut hak, tapi juga bangga menjalankan kewajiban sebagai kontribusi nyata bagi kemajuan bangsa. Mari kita siapkan diri menjadi warga negara yang dewasa, bertanggung jawab, and berkarakter Pancasila!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Pelanggaran Hak dan Pengingkaran Kewajiban" },
+    "subtopic": "Kasus Pelanggaran Hak Warga Negara",
+    "lesson": {
+      "title": "Membela Keadilan: Mengatasi Pelanggaran Hak",
+      "content": "Sayangnya, masih banyak terjadi pelanggaran hak warga negara, seperti kemiskinan, putus sekolah, or ketidakadilan hukum. Kita belajar penyebab terjadinya pelanggaran hak, baik faktor internal (egoisme) maupun eksternal (penyalahgunaan kekuasaan). Kita belajar bahwa membiarkan pelanggaran terjadi adalah bentuk pengkhianatan terhadap nilai Sila ke-2 and Sila ke-5.\n\nBagi calon profesional SMK, kamu harus peka terhadap ketidakadilan di sekitarmu. Misalnya, jika ada rekan kerja yang diperlakukan tidak adil or haknya dipotong secara ilegal, kamu harus tahu prosedur hukum untuk membela kebenaran. Pancasila menuntut kita untuk menjadi 'Agent of Change' yang membawa keadilan. Dengan memahami kasus-kasus ini, kamu melatih empati and keberanianmu untuk selalu berpijak pada kebenaran and keadilan bagi seluruh rakyat Indonesia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Pelanggaran Hak dan Pengingkaran Kewajiban" },
+    "subtopic": "Pengingkaran Kewajiban Warga Negara",
+    "lesson": {
+      "title": "Integritas Pajak: Mengatasi Pengingkaran Kewajiban",
+      "content": "Kewajiban bukan beban, tapi investasi untuk masa depan bangsa. Pengingkaran kewajiban seperti tidak membayar pajak, merusak fasilitas umum, or mangkir dari bela negara akan menghambat pembangunan. Kita belajar bahwa setiap rupiah pajak yang kita bayar adalah bahan bakar untuk pembangunan sekolah, jalan, and rumah sakit yang kamu nikmati.\n\nSebagai lulusan SMK yang akan segera memiliki penghasilan, jadilah wajib pajak yang jujur (Tax Compliance). Ini adalah bentuk cinta tanah air yang paling nyata di masa damai. Pancasila mengajarkan kita untuk berkorban demi kepentingan umum. Dengan disiplin menjalankan kewajiban, kamu sedang membangun fondasi ekonomi negara yang kuat and mandiri. Integritasmu sebagai warga negara adalah cermin dari kualitas pendidikan and karakter yang kamu dapatkan selama di SMK."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Kemajuan IPTEK terhadap NKRI" },
+    "subtopic": "Pengaruh Positif Kemajuan IPTEK bagi Bangsa",
+    "lesson": {
+      "title": "Inovasi untuk Negeri: Pengaruh Positif IPTEK",
+      "content": "Kemajuan Ilmu Pengetahuan and Teknologi (IPTEK) membawa banyak manfaat: kemudahan komunikasi, efisiensi produksi industri, hingga kemajuan medis. Di era Industri 4.0, teknologi digital adalah kunci kemajuan ekonomi. Kita belajar bagaimana IPTEK bisa mempererat persatuan melalui platform digital and meningkatkan kecerdasan bangsa melalui akses informasi yang luas.\n\nBagi siswa SMK, IPTEK adalah makanan sehari-hari. Kamu adalah 'ujung tombak' teknologi bangsa. Gunakan keahlianmu untuk menciptakan aplikasi or mesin yang membantu rakyat kecil. Pancasila memberikan jiwa pada teknologi agar tidak hanya mengejar materi, tapi juga membawa kemanusiaan and keadilan. Mari kita jadikan IPTEK sebagai alat untuk mengangkat martabat bangsa Indonesia di mata dunia melalui karya-karya inovatif and solutif yang kamu hasilkan!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Kemajuan IPTEK terhadap NKRI" },
+    "subtopic": "Pengaruh Negatif dan Tantangan Kemajuan IPTEK",
+    "lesson": {
+      "title": "Filter Budaya: Mewaspadai Dampak Negatif Teknologi",
+      "content": "Teknologi bagaikan pisau bermata dua. Selain manfaat, ada dampak negatif seperti konsumerisme, hilangnya privasi, adu domba digital, hingga ancaman cyber crime. Kita belajar pentingnya memiliki **Filter Pancasila** agar tidak hanyut dalam arus teknologi yang merusak moral and persatuan bangsa. Kita harus tetap kritis terhadap setiap tren yang datang dari luar.\n\nKamu belajar tentang pentingnya 'Kedaulatan Digital'. Jangan biarkan data pribadi and data bangsa dicuri oleh pihak asing. Bagi siswa SMK IT and Administrasi, kamu adalah penjaga benteng informasi negara. Pancasila mengajarkan kita untuk tetap memegang teguh jati diri bangsa di tengah banjir informasi global. Gunakan teknologi secara bijak, beretika, and selalu utamakan kepentingan nasional di atas segala tren sesaat yang tidak membangun."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Kemajuan IPTEK terhadap NKRI" },
+    "subtopic": "Sikap Tanggung Jawab dalam Pengembangan IPTEK",
+    "lesson": {
+      "title": "Etika Teknologi: Mengembangkan IPTEK Berjiwa Pancasila",
+      "content": "Mengembangkan teknologi bukan hanya soal 'bisa', tapi soal 'boleh' or 'etis'. Kita belajar sikap tanggung jawab (Responsibility) dalam berinovasi. Teknologi harus ramah lingkungan, tidak melanggar hak asasi, and berpihak pada rakyat banyak. Ini adalah penerapan Sila ke-2: Kemanusiaan yang Adil and Beradab dalam bidang sains and teknik.\n\nJangan membuat teknologi yang digunakan untuk menipu or merugikan orang lain. Sebagai calon insinyur or teknisi, integritasmu dipertaruhkan. Pancasila membimbing kita agar setiap penemuan teknologi membawa keberkahan bagi alam and manusia. Mari kita bangun ekosistem IPTEK yang bermartabat di Indonesia, di mana setiap kode program and setiap rakitan mesin didasari oleh niat luhur untuk memajukan peradaban bangsa yang berakhlak mulia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Dinamika Persatuan dan Kesatuan" },
+    "subtopic": "Persatuan dan Kesatuan Bangsa dari Masa ke Masa",
+    "lesson": {
+      "title": "Sejarah Persatuan: Belajar dari Dinamika Bangsa",
+      "content": "Persatuan kita telah diuji oleh berbagai peristiwa: pemberontakan, krisis ekonomi, hingga konflik politik. Kita belajar bahwa setiap kali persatuan retak, bangsa ini menderita. Sebaliknya, saat kita bersatu, kita mampu meraih kemerdekaan and kemajuan. Pelajaran ini membahas dinamika persatuan dari era revolusi, orde lama, orde baru, hingga era reformasi.\n\nBagi generasi SMK, sejarah mengajarkan bahwa perbedaan adalah kekayaan, bukan perpecahan. Kamu harus menjadi lem perekat bangsa di lingkungan kerjamu nanti. Jangan biarkan perbedaan latar belakang menghambat kerja tim and produktivitas. Pancasila adalah rumah bersama kita. Dengan menjaga persatuan di sekolah and tempat kerja, kamu sedang menjaga warisan para pahlawan yang telah bersusah payah membangun NKRI untuk kita nikmati sekarang and selamanya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Dinamika Persatuan dan Kesatuan" },
+    "subtopic": "Faktor Pendorong dan Penghambat Persatuan Bangsa",
+    "lesson": {
+      "title": "Pilar Kebangsaan: Memperkuat Pengikat Persatuan",
+      "content": "Faktor pendorong persatuan adalah Pancasila, UUD 1945, Bhinneka Tunggal Ika, and NKRI. Faktor penghambatnya adalah ego sektoral, intoleransi, and kesenjangan ekonomi. Kita belajar cara memperkuat pilar-pilar kebangsaan dalam kehidupan sehari-hari. Persatuan bukan hal yang otomatis, tapi harus terus dirawat dengan sikap toleransi, gotong royong, and rasa senasib sepenanggungan.\n\nDi dunia kerja, kamu akan menghadapi persaingan yang ketat. Namun, persaingan harus tetap sehat and dalam bingkai persaudaraan sebangsa. Pancasila mengajarkan kita untuk saling mendukung (kolaborasi), bukan saling menjatuhkan. Dengan memperkuat persatuan di tingkat akar rumput, kamu sedang ikut serta menjamin stabilitas nasional yang sangat dibutuhkan untuk pertumbuhan ekonomi and kemajuan industri Indonesia di masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Ideologi Pancasila" },
+    "subtopic": "Pancasila dalam Konteks Global",
+    "lesson": {
+      "title": "Ideologi Dunia: Keunggulan Pancasila di Mata Global",
+      "content": "Di dunia ada berbagai ideologi: Liberalisme, Sosialisme, Komunisme. Pancasila berdiri di tengah sebagai **Ideologi Terbuka** yang mengambil sisi positif dari kebebasan and kebersamaan, namun tetap berlandaskan pada ketuhanan and moralitas luhur. Kita belajar bagaimana nilai-nilai Pancasila diakui oleh dunia sebagai solusi bagi konflik global and perubahan iklim.\n\nBagi siswa SMK, kamu adalah duta ideologi bangsa. Tunjukkan bahwa kamu adalah tenaga kerja yang profesional (Liberal-Modern) namun tetap peduli sosial (Sosialis-Pancasilais) and taat beragama (Religius). Pancasila adalah 'Jalan Tengah' yang membuat Indonesia stabil and dihormati. Dengan bangga membawa nilai Pancasila ke dunia kerja internasional, kamu menunjukkan bahwa Indonesia memiliki jati diri yang kuat, unggul, and bermartabat di tengah peradaban dunia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Menjadi Alumni SMK yang Pancasilais and Berprestasi",
+    "lesson": {
+      "title": "Refleksi Akhir: Janji Setia untuk Negeri",
+      "content": "Selamat! Kamu telah menyelesaikan seluruh pelajaran Pancasila di SMK. Kamu kini siap melangkah sebagai warga negara yang dewasa. Pelajaran terpenting adalah: **Pancasila bukan hanya untuk dihapal, tapi untuk dikerjakan**. Jadilah pahlawan di bidangmu masing-masing; pahlawan ekonomi, pahlawan teknologi, pahlawan seni, or pahlawan kemanusiaan.\n\nTeruslah jaga integritas, kejujuran, and semangat persatuanmu. Jangan pernah lelah mencintai Indonesia. Dunia menanti karya-karyamu. Ingatlah, suksesmu adalah sukses Indonesia, and jatuhnya kamu adalah kerugian bagi bangsa. Mari kita tutup masa sekolah ini dengan janji setia untuk selalu menjaga Pancasila and NKRI di mana pun kita berkarya. Merdeka! Sampai jumpa di puncak kesuksesan yang penuh harmoni and keberkahan untuk Indonesia tercinta!\n\nJadilah cahaya yang menerangi kegelapan, jadilah solusi bagi setiap masalah bangsa. Indonesia bangga memilikimu!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Hak dan Kewajiban" },
+    "subtopic": "Partisipasi Politik Warga Negara Muda",
+    "lesson": {
+      "title": "Suara Pemula: Peran Strategis Pemilih Muda",
+      "content": "Sebagai lulusan SMK yang baru memiliki hak pilih, suaramu sangat menentukan arah bangsa 5 tahun ke depan. Kita belajar cara menjadi pemilih yang cerdas: riset rekam jejak calon, memahami visi misi, and menolak politik uang. Pancasila mengajarkan kita untuk memilih pemimpin yang amanah and adil. Partisipasi politikmu adalah bentuk tanggung jawab moral untuk memastikan negara dikelola oleh orang-orang terbaik demi kesejahteraan seluruh rakyat Indonesia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Hukum" },
+    "subtopic": "Perlindungan Hukum bagi Tenaga Kerja SMK",
+    "lesson": {
+      "title": "Melek Hukum Kerja: Perlindungan bagi Lulusan SMK",
+      "content": "Setelah lulus, kamu akan menandatangani kontrak kerja. Kita belajar tentang UU Cipta Kerja and hak-hakmu terkait upah, jam kerja, cuti, and pesangon. Memahami hukum perlindungan tenaga kerja menghindarkanmu dari eksploitasi. Pancasila menjamin keadilan sosial, and hukum adalah alatnya. Jadilah pekerja yang cerdas and berani menuntut hak secara legal jika terjadi ketidakadilan di tempat kerja. Pengetahuan hukum adalah perisaimu di dunia industri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Ancaman NKRI" },
+    "subtopic": "Ancaman Keamanan Energi dan Pangan",
+    "lesson": {
+      "title": "Kedaulatan Bangsa: Ketahanan Energi dan Pangan",
+      "content": "Bangsa yang kuat adalah bangsa yang mandiri secara energi and pangan. Kita belajar ancaman ketergantungan pada impor and pentingnya inovasi lokal. Bagi siswa SMK Teknik and Pertanian, kamu adalah kunci kedaulatan ini. Menciptakan energi terbarukan or teknik pertanian modern adalah bentuk nyata bela negara. Pancasila memotivasi kita untuk tidak bergantung pada bangsa lain and berdikari (berdiri di atas kaki sendiri) untuk mencukupi kebutuhan rakyat kita sendiri."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Persatuan" },
+    "subtopic": "Menanggulangi Konflik Horizontal di Masyarakat",
+    "lesson": {
+      "title": "Resolusi Konflik: Menjadi Jembatan Perdamaian",
+      "content": "Konflik antar kelompok bisa pecah karena kesalahpahaman or provokasi. Kita belajar teknik resolusi konflik: mediasi, dialog, and empati. Sebagai pemuda Pancasila, kamu harus menjadi penengah, bukan kompor yang memanaskan situasi. Di tempat kerja yang multikultural, kemampuan meredam konflik adalah skill kepemimpinan yang sangat berharga. Persatuan nasional dimulai dari kemampuan kita untuk tetap berkepala dingin and mencari titik temu di tengah perbedaan pendapat yang tajam."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "IPTEK" },
+    "subtopic": "Kedaulatan Data dan Big Data Nasional",
+    "lesson": {
+      "title": "Data Sovereignty: Menjaga Kedaulatan di Era Big Data",
+      "content": "Data adalah kekuasaan baru. Kita belajar bahaya jika data kependudukan or ekonomi kita dikuasai oleh perusahaan asing. Pentingnya membangun infrastruktur server nasional and software lokal. Bagi siswa SMK IT, ini adalah panggilan tugasmu. Menjaga keamanan data negara adalah bentuk pertahanan nasional modern. Pancasila menuntut kita untuk waspada terhadap 'penjajahan digital' and terus berupaya membangun kemandirian teknologi demi keamanan and martabat seluruh rakyat Indonesia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Kewirausahaan" },
+    "subtopic": "Ekonomi Pancasila dan Pemberdayaan UMKM",
+    "lesson": {
+      "title": "Ekonomi Rakyat: Memajukan UMKM dengan Keahlian SMK",
+      "content": "Ekonomi Pancasila mengutamakan kemakmuran bersama melalui koperasi and UMKM. Kita belajar bagaimana lulusan SMK bisa membantu digitalisasi UMKM daerah. Membantu usaha kecil di sekitarmu adalah bentuk pengamalan Sila ke-5. Suksesmu harus membawa dampak ekonomi bagi orang banyak. Dengan memberdayakan ekonomi rakyat, kamu sedang memperkuat sendi-sendi ekonomi nasional agar tahan terhadap krisis ekonomi global, menciptakan keadilan yang nyata dari desa hingga kota."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Budaya" },
+    "subtopic": "Diplomasi Budaya lewat Produk Kreatif",
+    "lesson": {
+      "title": "Brand Indonesia: Membawa Produk Lokal ke Dunia",
+      "content": "Mencintai produk dalam negeri bukan berarti menutup diri, tapi bangga menggunakan and mempromosikannya. Kita belajar strategi branding produk SMK agar bisa bersaing di pasar ekspor. Setiap produk lokal yang sukses di luar negeri adalah 'diplomat' yang mengharumkan nama bangsa. Pancasila mengajarkan kita untuk percaya pada kemampuan diri sendiri. Mari kita jadikan 'Made in Indonesia' sebagai simbol kualitas and integritas tinggi yang dihormati and dicari oleh masyarakat internasional."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Hukum" },
+    "subtopic": "Bahaya Korupsi dan Gratifikasi di Tempat Kerja",
+    "lesson": {
+      "title": "Integritas Harga Mati: Menolak Korupsi Sejak Dini",
+      "content": "Korupsi dimulai dari hal kecil seperti gratifikasi or manipulasi laporan. Kita belajar cara menolak ajakan korupsi dengan tegas namun profesional. Korupsi merampas hak rakyat and merusak citra profesi. Pancasila menuntut kejujuran mutlak. Sebagai calon tenaga ahli, integritasmu adalah aset terbesar. Bangsa ini butuh orang pintar yang jujur, bukan orang pintar yang mencuri. Jadilah generasi pemutus rantai korupsi demi masa depan Indonesia yang bersih, adil, bermartabat, and makmur sejahtera."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "IPTEK" },
+    "subtopic": "Pemanfaatan AI untuk Pembangunan Nasional",
+    "lesson": {
+      "title": "AI for Nation: Kecerdasan Buatan untuk Solusi Bangsa",
+      "content": "AI bisa digunakan untuk memetakan kemiskinan, memprediksi panen, or optimasi distribusi energi. Kita belajar potensi AI untuk mempercepat pencapaian target pembangunan nasional. Namun, penggunaan AI harus berlandaskan etika Pancasila agar tidak menimbulkan diskriminasi or pengangguran massal. Kamu belajar untuk menjadi inovator yang bijak, yang menggunakan teknologi tercanggih untuk memuliakan manusia, bukan untuk merendahkannya. Teknologi adalah pelayan rakyat, and Pancasila adalah kompasnya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Nasionalisme" },
+    "subtopic": "Cinta Tanah Air di Era Borderless World",
+    "lesson": {
+      "title": "Nasionalisme Produktif: Mencintai Bangsa dengan Karya",
+      "content": "Di dunia yang tanpa batas (borderless), nasionalisme bukan soal benci asing, tapi soal seberapa besar kontribusimu bagi bangsa sendiri. Kita belajar bahwa menjadi internasionalis yang baik dimulai dari menjadi nasionalis yang hebat. Jangan minder dengan bangsa lain; keahlianmu adalah bukti bahwa Indonesia mampu sejajar dengan negara maju. Pancasila memberikan kita rasa percaya diri. Teruslah berkarya, berinovasi, and bawalah nama Indonesia di setiap kesuksesan pribadimu sebagai bentuk cinta tanah air yang paling nyata."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Persatuan" },
+    "subtopic": "Menjaga Kerukunan Umat Beragama di Tempat Kerja",
+    "lesson": {
+      "title": "Moderasi Kerja: Harmoni Beragama dalam Profesionalisme",
+      "content": "Tempat kerja adalah tempat berkumpulnya berbagai keyakinan. Kita belajar cara menghormati waktu ibadah rekan kerja, menghindari perdebatan agama yang tidak produktif, and fokus pada kerja sama profesional. Sila ke-1 mengajarkan toleransi yang aktif. Kerukunan umat beragama di tempat kerja akan menciptakan atmosfer yang nyaman and produktif. Jadilah pribadi yang menyejukkan, yang kehadirannya membawa kedamaian bagi semua orang tanpa memandang perbedaan keyakinan, demi keutuhan and persatuan bangsa kita."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Hukum" },
+    "subtopic": "Memahami UU ITE dan Etika Digital",
+    "lesson": {
+      "title": "Jarimu Harimaumu: Etika and Hukum di Ruang Digital",
+      "content": "Postingan media sosialmu bisa berimplikasi hukum. Kita belajar batasan kebebasan berpendapat menurut UU ITE: tidak menghina, tidak menyebar hoaks, and tidak memprovokasi kebencian. Sebagai warga digital yang pancasilais, gunakan jempolmu untuk hal-hal inspiratif and edukatif. Ruang digital harus menjadi sarana memperkuat persatuan, bukan tempat mencaci maki. Kesopanan digitalmu mencerminkan kematangan karaktermu sebagai lulusan SMK yang berbudaya and melek hukum di era informasi yang sangat terbuka ini."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Kedaulatan" },
+    "subtopic": "Mengenal Wilayah NKRI dan Batas Teritorial",
+    "lesson": {
+      "title": "Tanah Airku: Menjaga Setiap Jengkal Wilayah NKRI",
+      "content": "Indonesia adalah negara kepulauan terbesar. Kita belajar tentang batas wilayah laut (ZEE), darat, and udara. Memahami luasnya wilayah bangsa akan menumbuhkan rasa memiliki (Sense of Belonging) yang kuat. Bagi siswa SMK Pelayaran and Penerbangan, menjaga kedaulatan di batas wilayah adalah tugas suci. Kita belajar untuk tidak gentar mempertahankan kedaulatan bangsa dari klaim pihak asing. Pancasila menyatukan ribuan pulau menjadi satu kesatuan yang tak terpisahkan: Negara Kesatuan Republik Indonesia."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Sosial" },
+    "subtopic": "Peran Pemuda dalam Mengatasi Masalah Sosial di Daerah",
+    "lesson": {
+      "title": "Social Innovation: Pemuda SMK sebagai Solusi Lokal",
+      "content": "Jangan tunggu pemerintah untuk bergerak. Kita belajar cara mengidentifikasi masalah sosial di sekitarmu (seperti sampah or pengangguran) and mencari solusi kreatif menggunakan keahlianmu. Pemuda Pancasila adalah pemuda yang proaktif. Proyek sosialmu di daerah adalah bentuk nyata pengabdian pada masyarakat. Dengan menjadi solusi bagi masalah terkecil di lingkunganmu, kamu sedang melatih jiwa kepemimpinanmu and ikut serta mempercepat pemerataan kesejahteraan rakyat secara mandiri and inovatif."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "IPTEK" },
+    "subtopic": "Cyber War dan Keamanan Infrastruktur Vital",
+    "lesson": {
+      "title": "Cyber Defense: Melindungi Jantung Digital Bangsa",
+      "content": "Serangan siber bisa melumpuhkan listrik, air, or telekomunikasi negara. Kita belajar tentang 'Critical Infrastructure Protection'. Sebagai teknisi IT or Kelistrikan SMK, kamu adalah penjaga infrastruktur vital ini. Ketahanan nasional bukan lagi soal benteng fisik, tapi soal ketangguhan sistem digital kita. Pancasila memanggilmu untuk terus belajar and menguasai teknologi keamanan tercanggih demi melindungi keselamatan seluruh rakyat dari ancaman perang siber global yang semakin nyata and berbahaya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Hukum" },
+    "subtopic": "Mengenal Peradilan Tata Usaha Negara (PTUN)",
+    "lesson": {
+      "title": "Gugat Pemerintah: Mencari Keadilan di PTUN",
+      "content": "Jika pemerintah mengeluarkan keputusan yang merugikanmu secara tidak adil, kamu bisa menggugatnya ke PTUN. Kita belajar bahwa di negara hukum, kekuasaan ada batasnya. Pemahaman ini penting agar kamu tidak merasa lemah di hadapan birokrasi. Pancasila menjamin setiap warga negara mendapatkan perlakuan yang adil dari negara. Mengetahui prosedur hukum administrasi negara akan membuatmu menjadi warga negara yang kritis and berdaya dalam memperjuangkan hak-hakmu secara konstitusional and bermartabat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Budaya" },
+    "subtopic": "Pelestarian Budaya di Tengah Arus Budaya Pop Global",
+    "lesson": {
+      "title": "Modern tapi Berakar: Menjaga Identitas di Tengah Tren K-Pop/Western",
+      "content": "Menyukai budaya luar itu wajar, tapi jangan sampai kehilangan jati diri. Kita belajar cara mengapresiasi budaya dunia sambil tetap bangga mempraktikkan budaya sendiri. Gunakan teknologi untuk mempromosikan budaya lokal agar tetap relevan bagi generasi muda. Pancasila adalah filter yang memisahkan mana tren yang bisa diambil and mana yang harus dibuang. Jadilah pemuda yang keren (Modern) namun tetap memiliki 'Akar' yang kuat pada nilai-nilai luhur budaya bangsa sendiri, menciptakan harmoni budaya yang indah."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Ekonomi" },
+    "subtopic": "Koperasi sebagai Soko Guru Ekonomi Pancasila",
+    "lesson": {
+      "title": "Koperasi Modern: Kekuatan Ekonomi Berbasis Kekeluargaan",
+      "content": "Koperasi bukan jadul; koperasi adalah masa depan ekonomi kolaboratif. Kita belajar model koperasi digital and start-up koperasi yang sukses. Koperasi mengedepankan kesejahteraan anggota, bukan hanya keuntungan pemilik modal. Ini adalah pengamalan Sila ke-5 yang paling murni. Sebagai lulusan SMK, kamu bisa membangun or bergabung dengan koperasi untuk memperkuat posisi tawarmu and meningkatkan kesejahteraan ekonomi bersama secara adil, transparan, and penuh semangat kekeluargaan yang modern."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Persatuan" },
+    "subtopic": "Membangun Jaringan Alumni SMK untuk Kemajuan Bangsa",
+    "lesson": {
+      "title": "SMK Bersatu: Kekuatan Jaringan Alumni Nasional",
+      "content": "Setelah lulus, kamu akan masuk ke dalam keluarga besar alumni SMK se-Indonesia. Kita belajar pentingnya membangun jaringan (Networking) untuk saling membantu dalam info lowongan kerja, modal usaha, or proyek inovasi. Jaringan yang kuat akan mempercepat kemajuan ekonomi nasional. Pancasila mengajarkan persatuan yang produktif. Mari kita bangun silaturahmi yang kokoh antar alumni SMK untuk membuktikan bahwa kita adalah penggerak utama kemajuan industri and kesejahteraan rakyat Indonesia yang tak terpisahkan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 12,
+    "subject": "Pendidikan Pancasila",
+    "topic": { "name": "Refleksi Akhir" },
+    "subtopic": "Menyusun Visi Hidup Pancasilais",
+    "lesson": {
+      "title": "Pesan Penutup: Menjadi Terang bagi Indonesia",
+      "content": "Pelajaran Pancasila telah usai, namun perjuanganmu baru saja dimulai. Di luar sana, kamu akan menghadapi dunia yang nyata and penuh tantangan. Jadilah orang yang paling jujur, paling rajin, and paling peduli di lingkunganmu. Pancasila adalah bintang pemandu dalam kegelapan. Jangan pernah biarkan api nasionalismemu padam. Teruslah berkarya, teruslah mencintai rakyat kecil, and jadilah kebanggaan bagi sekolah, keluarga, and bangsamu. Indonesia Emas 2045 ada di pundakmu. Selamat berjuang, sang patriot muda! Merdeka!"
+    }
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat Negatif" },
+    "subtopic": "Mengenal Bilangan Bulat Negatif",
+    "lesson": { "title": "Pengertian Bilangan Bulat Negatif dalam Kehidupan Sehari-hari" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat Negatif" },
+    "subtopic": "Mengenal Bilangan Bulat Negatif",
+    "lesson": { "title": "Garis Bilangan dan Posisi Bilangan Negatif" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat Negatif" },
+    "subtopic": "Mengenal Bilangan Bulat Negatif",
+    "lesson": { "title": "Membandingkan dan Mengurutkan Bilangan Bulat" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat Negatif" },
+    "subtopic": "Operasi Dasar Bilangan Bulat",
+    "lesson": { "title": "Penjumlahan dan Pengurangan Bilangan Bulat Negatif" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat Negatif" },
+    "subtopic": "Operasi Dasar Bilangan Bulat",
+    "lesson": { "title": "Perkalian Bilangan Bulat (Positif & Negatif)" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Bulat Negatif" },
+    "subtopic": "Operasi Dasar Bilangan Bulat",
+    "lesson": { "title": "Pembagian Bilangan Bulat (Positif & Negatif)" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran Bilangan Bulat" },
+    "subtopic": "Aturan Hitung Campuran",
+    "lesson": { "title": "Urutan Operasi Hitung (Kurung, Kali, Bagi, Tambah, Kurang)" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran Bilangan Bulat" },
+    "subtopic": "Aturan Hitung Campuran",
+    "lesson": { "title": "Menghitung Campuran dengan Bilangan Bulat" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran Bilangan Bulat" },
+    "subtopic": "Aturan Hitung Campuran",
+    "lesson": { "title": "Sifat Distributif pada Bilangan Bulat" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran Bilangan Bulat" },
+    "subtopic": "Penerapan Bilangan Bulat",
+    "lesson": { "title": "Menyelesaikan Masalah Suhu" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran Bilangan Bulat" },
+    "subtopic": "Penerapan Bilangan Bulat",
+    "lesson": { "title": "Menyelesaikan Masalah Kedalaman Laut" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran Bilangan Bulat" },
+    "subtopic": "Penerapan Bilangan Bulat",
+    "lesson": { "title": "Soal Cerita Kompleks Bilangan Bulat" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Lingkaran" },
+    "subtopic": "Unsur-unsur Lingkaran",
+    "lesson": { "title": "Titik Pusat, Jari-jari, dan Diameter" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Lingkaran" },
+    "subtopic": "Unsur-unsur Lingkaran",
+    "lesson": { "title": "Busur, Tali Busur, dan Tembereng" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Lingkaran" },
+    "subtopic": "Unsur-unsur Lingkaran",
+    "lesson": { "title": "Juring dan Apotema" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Lingkaran" },
+    "subtopic": "Keliling dan Luas Lingkaran",
+    "lesson": { "title": "Mengenal Nilai Pi (22/7 atau 3,14)" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Lingkaran" },
+    "subtopic": "Keliling dan Luas Lingkaran",
+    "lesson": { "title": "Menghitung Keliling Lingkaran" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Lingkaran" },
+    "subtopic": "Keliling dan Luas Lingkaran",
+    "lesson": { "title": "Menghitung Luas Lingkaran" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang" },
+    "subtopic": "Karakteristik Prisma dan Tabung",
+    "lesson": { "title": "Mengenal Prisma Tegak Segitiga" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang" },
+    "subtopic": "Karakteristik Prisma dan Tabung",
+    "lesson": { "title": "Mengenal Tabung dan Jaring-jaringnya" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang" },
+    "subtopic": "Karakteristik Prisma dan Tabung",
+    "lesson": { "title": "Mengenal Limas, Kerucut, dan Bola" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang" },
+    "subtopic": "Luas Permukaan dan Volume",
+    "lesson": { "title": "Menghitung Volume Prisma Segitiga" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang" },
+    "subtopic": "Luas Permukaan dan Volume",
+    "lesson": { "title": "Menghitung Volume Tabung" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Ruang" },
+    "subtopic": "Luas Permukaan dan Volume",
+    "lesson": { "title": "Luas Permukaan Prisma dan Tabung Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Pengolahan Data",
+    "lesson": { "title": "Cara Mengumpulkan Data" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Pengolahan Data",
+    "lesson": { "title": "Mengurutkan Data untuk Analisis" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Pengolahan Data",
+    "lesson": { "title": "Membaca Berbagai Bentuk Diagram" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Mean, Median, Modus",
+    "lesson": { "title": "Menghitung Nilai Rata-rata (Mean)" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Mean, Median, Modus",
+    "lesson": { "title": "Mencari Nilai Tengah (Median)" }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "Matematika",
+    "topic": { "name": "Statistika" },
+    "subtopic": "Mean, Median, Modus",
+    "lesson": { "title": "Menentukan Nilai yang Sering Muncul (Modus)" }
+  }
+]

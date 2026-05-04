@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Perkembangbiakan" },
+    "subtopic": "Perkembangbiakan Generatif Tumbuhan",
+    "lesson": { 
+      "title": "Proses Penyerbukan dan Pembuahan",
+      "content": "Penyerbukan adalah jatuhnya serbuk sari ke kepala putik. Pembuahan menghasilkan biji yang akan menjadi individu baru. Contoh: Lebah membantu penyerbukan saat mengisap nektar. Penjelasan: Alat kelamin jantan pada bunga adalah benang sari, dan alat kelamin betina adalah putik."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Perkembangbiakan" },
+    "subtopic": "Perkembangbiakan Vegetatif Tumbuhan",
+    "lesson": { 
+      "title": "Vegetatif Alami: Umbi, Tunas, dan Geragih",
+      "content": "Tumbuhan bisa berkembang biak tanpa biji melalui bagian tubuhnya sendiri. Contoh: Kentang (umbi batang), Pisang (tunas), Stroberi (geragih). Penjelasan: Perkembangbiakan vegetatif menghasilkan keturunan yang sifatnya sama persis dengan induknya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Perkembangbiakan" },
+    "subtopic": "Perkembangbiakan Vegetatif Tumbuhan",
+    "lesson": { 
+      "title": "Vegetatif Buatan: Cangkok dan Setek",
+      "content": "Manusia membantu tumbuhan berkembang biak agar mendapatkan hasil yang cepat dan bagus. Contoh: Mencangkok pohon mangga agar cepat berbuah. Penjelasan: Setek dilakukan dengan menanam potongan bagian tubuh tumbuhan seperti batang atau daun."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Pubertas" },
+    "subtopic": "Mengenal Masa Puber",
+    "lesson": { 
+      "title": "Ciri Fisik Pubertas Laki-laki",
+      "content": "Ditandai dengan tumbuh jakun, suara menjadi berat, dan mimpi basah. Contoh: Bahu menjadi lebih lebar dan bidang. Penjelasan: Pubertas adalah masa peralihan dari anak-anak menjadi dewasa secara biologis."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Pubertas" },
+    "subtopic": "Mengenal Masa Puber",
+    "lesson": { 
+      "title": "Ciri Fisik Pubertas Perempuan",
+      "content": "Ditandai dengan menstruasi, payudara mulai tumbuh, dan pinggul melebar. Contoh: Suara menjadi lebih melengking dan kulit lebih halus. Penjelasan: Menstruasi adalah siklus bulanan yang normal bagi setiap perempuan sehat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Pubertas" },
+    "subtopic": "Kesehatan Reproduksi",
+    "lesson": { 
+      "title": "Menjaga Kebersihan Diri saat Puber",
+      "content": "Rutin mandi, mengganti pakaian dalam, dan menjaga kebersihan organ intim. Contoh: Memakai pakaian berbahan katun yang menyerap keringat. Penjelasan: Perubahan hormon saat puber membuat tubuh menghasilkan lebih banyak keringat dan minyak."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Adaptasi Makhluk Hidup" },
+    "subtopic": "Adaptasi Hewan",
+    "lesson": { 
+      "title": "Mimikri dan Autotomi",
+      "content": "Cara hewan melindungi diri dengan mengubah warna kulit (mimikri) atau memutuskan ekor (autotomi). Contoh: Bunglon (mimikri) dan Cicak (autotomi). Penjelasan: Adaptasi perilaku membantu hewan lolos dari kejaran pemangsa."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Adaptasi Makhluk Hidup" },
+    "subtopic": "Adaptasi Hewan",
+    "lesson": { 
+      "title": "Kamuflase dan Mimikri",
+      "content": "Kamuflase adalah penyamaran warna tubuh dengan lingkungan agar tidak terlihat. Contoh: Belalang sembah yang berwarna hijau seperti daun. Penjelasan: Kamuflase sangat efektif bagi predator untuk mengintai mangsa atau bagi mangsa untuk bersembunyi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Adaptasi Makhluk Hidup" },
+    "subtopic": "Adaptasi Tumbuhan",
+    "lesson": { 
+      "title": "Adaptasi Tumbuhan di Gurun (Xerofit)",
+      "content": "Tumbuhan gurun memiliki daun seperti duri dan batang tebal untuk menyimpan air. Contoh: Kaktus dan kurma. Penjelasan: Akar kaktus sangat panjang ke dalam tanah untuk mencari sumber mata air tersembunyi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Listrik" },
+    "subtopic": "Rangkaian Seri dan Paralel",
+    "lesson": { 
+      "title": "Mengenal Rangkaian Seri",
+      "content": "Lampu disusun berurutan dalam satu jalur kabel. Jika satu lampu mati, semua ikut mati. Contoh: Lampu hias pohon natal tradisional. Penjelasan: Rangkaian seri lebih hemat kabel tetapi memiliki hambatan yang lebih besar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Listrik" },
+    "subtopic": "Rangkaian Seri dan Paralel",
+    "lesson": { 
+      "title": "Mengenal Rangkaian Paralel",
+      "content": "Lampu disusun bercabang. Jika satu jalur mati, jalur lain tetap menyala. Contoh: Rangkaian lampu di dalam rumah kita. Penjelasan: Rangkaian paralel memastikan distribusi listrik tetap stabil ke setiap perangkat elektronik."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Listrik" },
+    "subtopic": "Rangkaian Seri dan Paralel",
+    "lesson": { 
+      "title": "Komponen Listrik: Sakelar dan Baterai",
+      "content": "Sakelar berfungsi menyambung dan memutus arus, baterai sebagai sumber energi listrik. Contoh: Cara kerja senter tangan. Penjelasan: Arus listrik mengalir dari kutub positif ke kutub negatif melalui penghantar (kabel)."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Tata Surya" },
+    "subtopic": "Bumi, Bulan, dan Matahari",
+    "lesson": { 
+      "title": "Gerhana Matahari",
+      "content": "Terjadi saat bulan berada di antara matahari dan bumi dalam satu garis lurus. Contoh: Suasana gelap sesaat di siang hari saat gerhana total. Penjelasan: Cahaya matahari terhalang oleh bayang-bayang bulan yang sampai ke permukaan bumi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Tata Surya" },
+    "subtopic": "Bumi, Bulan, dan Matahari",
+    "lesson": { 
+      "title": "Gerhana Bulan",
+      "content": "Terjadi saat bumi berada di antara matahari dan bulan sehingga bulan masuk ke bayangan bumi. Contoh: Bulan terlihat berwarna merah gelap saat gerhana total. Penjelasan: Cahaya matahari terbiaskan oleh atmosfer bumi sebelum sampai ke bulan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Tata Surya" },
+    "subtopic": "Bumi, Bulan, dan Matahari",
+    "lesson": { 
+      "title": "Pasang Surut Air Laut",
+      "content": "Naik turunnya permukaan air laut yang disebabkan oleh gaya tarik (gravitasi) bulan dan matahari. Contoh: Pantai menjadi lebih luas saat air sedang surut. Penjelasan: Pasang surut sangat penting bagi kehidupan nelayan dan ekosistem pesisir."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Energi Alternatif" },
+    "subtopic": "Energi Terbarukan Modern",
+    "lesson": { 
+      "title": "Energi Panas Bumi (Geotermal)",
+      "content": "Memanfaatkan uap panas dari dalam perut bumi untuk menggerakkan turbin listrik. Contoh: Pembangkit listrik di daerah pegunungan berapi. Penjelasan: Energi panas bumi adalah energi yang sangat ramah lingkungan dan stabil."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Energi Alternatif" },
+    "subtopic": "Energi Terbarukan Modern",
+    "lesson": { 
+      "title": "Energi Gelombang Laut",
+      "content": "Mengubah gerakan naik turun gelombang laut menjadi energi listrik. Contoh: Alat berbentuk tabung yang terapung di samudera. Penjelasan: Lautan Indonesia yang luas memiliki potensi energi gelombang yang sangat besar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Energi Alternatif" },
+    "subtopic": "Energi Terbarukan Modern",
+    "lesson": { 
+      "title": "Kendaraan Listrik: Masa Depan Transportasi",
+      "content": "Kendaraan yang tidak lagi menggunakan bensin, sehingga tidak menghasilkan asap polusi. Contoh: Motor dan mobil listrik yang suaranya halus. Penjelasan: Penggunaan kendaraan listrik membantu mengurangi pemanasan global."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Keseimbangan Lingkungan" },
+    "subtopic": "Global Warming",
+    "lesson": { 
+      "title": "Efek Rumah Kaca",
+      "content": "Terperangkapnya panas matahari di atmosfer bumi akibat gas polusi yang berlebihan. Contoh: Udara di perkotaan terasa semakin panas setiap tahun. Penjelasan: Efek rumah kaca yang berlebihan menyebabkan mencairnya es di kutub utara dan selatan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Keseimbangan Lingkungan" },
+    "subtopic": "Global Warming",
+    "lesson": { 
+      "title": "Dampak Perubahan Iklim",
+      "content": "Munculnya cuaca ekstrem, badai besar, dan naiknya permukaan air laut yang menenggelamkan pulau kecil. Contoh: Banjir rob di pesisir utara Jawa. Penjelasan: Perubahan iklim mengganggu jadwal tanam petani dan menyebabkan gagal panen."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Keseimbangan Lingkungan" },
+    "subtopic": "Global Warming",
+    "lesson": { 
+      "title": "Langkah Nyata Mencegah Pemanasan Global",
+      "content": "Melakukan penanaman pohon, menghemat listrik, dan meminimalkan sampah plastik. Contoh: Membawa botol minum sendiri ke sekolah. Penjelasan: Setiap langkah kecil yang kita lakukan secara bersama-sama akan berdampak besar bagi bumi."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Materi dan Sifatnya" },
+    "subtopic": "Pemisahan Campuran",
+    "lesson": { 
+      "title": "Teknik Penyaringan (Filtrasi)",
+      "content": "Memisahkan benda padat dari cairan menggunakan alat penyaring. Contoh: Menyaring bubuk teh dari air teh. Penjelasan: Ukuran lubang penyaring menentukan seberapa bersih hasil filtrasi tersebut."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Materi dan Sifatnya" },
+    "subtopic": "Pemisahan Campuran",
+    "lesson": { 
+      "title": "Teknik Penguapan (Evaporasi)",
+      "content": "Memisahkan zat padat yang larut dalam cairan dengan cara memanaskannya. Contoh: Mendapatkan garam dari penguapan air laut. Penjelasan: Zat cair akan berubah menjadi uap, sementara zat padat akan tertinggal sebagai kristal."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Materi dan Sifatnya" },
+    "subtopic": "Pemisahan Campuran",
+    "lesson": { 
+      "title": "Teknik Magnetisasi",
+      "content": "Memisahkan benda logam dari campuran benda non-logam menggunakan magnet. Contoh: Memisahkan serbuk besi dari tumpukan pasir. Penjelasan: Sifat magnetis pada logam memungkinkan pemisahan dilakukan dengan sangat cepat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "IPA Terapan" },
+    "subtopic": "Teknologi Sederhana",
+    "lesson": { 
+      "title": "Pembuatan Kompos Alami",
+      "content": "Mengolah sampah daun dan sisa sayuran menjadi pupuk organik yang menyuburkan tanah. Contoh: Membuat lubang biopori di halaman sekolah. Penjelasan: Kompos mengurangi tumpukan sampah di tempat pembuangan akhir (TPA)."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "IPA Terapan" },
+    "subtopic": "Teknologi Sederhana",
+    "lesson": { 
+      "title": "Penjernihan Air Sederhana",
+      "content": "Menggunakan lapisan pasir, kerikil, dan ijuk untuk membersihkan air yang keruh. Contoh: Alat peraga filter air dari botol bekas. Penjelasan: Air yang jernih belum tentu bebas kuman, sehingga tetap harus dimasak sebelum diminum."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "IPA Terapan" },
+    "subtopic": "Teknologi Sederhana",
+    "lesson": { 
+      "title": "Membuat Telepon Kaleng (Gelombang Bunyi)",
+      "content": "Membuktikan bahwa bunyi merambat melalui benda padat (benang) untuk sampai ke telinga. Contoh: Berbisik melalui telepon kaleng yang benangnya tegang. Penjelasan: Benang yang kendur tidak bisa menghantarkan getaran bunyi dengan baik."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Alam Semesta" },
+    "subtopic": "Galaksi dan Planet Luar",
+    "lesson": { 
+      "title": "Planet Jovian: Raksasa Gas",
+      "content": "Mengenal planet Jupiter, Saturnus, Uranus, dan Neptunus yang berukuran sangat besar. Contoh: Cincin megah yang dimiliki oleh planet Saturnus. Penjelasan: Planet-planet ini tidak memiliki permukaan padat karena sebagian besar terdiri dari gas."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Alam Semesta" },
+    "subtopic": "Galaksi dan Planet Luar",
+    "lesson": { 
+      "title": "Komet dan Asteroid",
+      "content": "Komet adalah bola salju ruang angkasa, sedangkan asteroid adalah batuan besar di luar angkasa. Contoh: Komet Halley yang muncul setiap 76 tahun sekali. Penjelasan: Sabuk asteroid terletak di antara orbit planet Mars dan Jupiter."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 6,
+    "subject": "IPA",
+    "topic": { "name": "Alam Semesta" },
+    "subtopic": "Galaksi dan Planet Luar",
+    "lesson": { 
+      "title": "Misi Penjelajahan Ruang Angkasa",
+      "content": "Mengenal roket, satelit buatan, dan robot yang dikirim ke planet Mars untuk penelitian. Contoh: Satelit Palapa milik Indonesia untuk komunikasi. Penjelasan: Penjelajahan ruang angkasa memperluas pengetahuan manusia tentang asal-usul alam semesta."
+    }
+  }
+]

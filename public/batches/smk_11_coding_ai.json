@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Web Development" },
+    "subtopic": "Arsitektur Web untuk Industri",
+    "lesson": {
+      "title": "Membangun Jendela Visual Industri 4.0",
+      "content": "Selamat datang di kelas 11! Tahun ini kita akan beralih dari koding logika dasar ke pembuatan aplikasi yang bisa dilihat dan digunakan oleh orang banyak. Materi pertama kita adalah **Web Development**. Di dunia industri, web bukan hanya untuk toko online atau blog, tapi untuk membuat **Industrial Dashboards**. Dashboard adalah pusat kendali visual yang menampilkan data real-time dari mesin pabrik, stok gudang, atau performa karyawan. Tanpa dashboard yang baik, manajer pabrik akan kesulitan membuat keputusan cepat. Web menjadi pilihan utama karena bisa diakses dari perangkat apa saja (HP, Tablet, PC) tanpa perlu instalasi rumit.\n\nArsitektur web terdiri dari dua bagian utama: **Front-end** (apa yang dilihat pengguna) dan **Back-end** (logika dan pengolahan data di server). Untuk membuat front-end, kita wajib menguasai 'Tiga Pilar Web': **HTML** untuk struktur, **CSS** untuk tampilan (estetika), dan **JavaScript** untuk interaksi. Di industri, kita sangat mementingkan **Responsive Design**, yaitu kemampuan web untuk menyesuaikan tampilannya di berbagai ukuran layar. Kamu tidak ingin dashboard monitor pabrikmu terlihat berantakan saat dibuka di HP teknisi di lapangan, bukan?\n\nSebagai siswa SMK, penguasaan web development akan membuatmu mampu membangun sistem monitoring mandiri. Kamu bisa menghubungkan sensor IoT yang kita pelajari di kelas 10 ke sebuah halaman web yang interaktif. Belajarlah untuk berpikir tentang 'User Experience' (UX)—bagaimana caranya agar teknisi bisa memahami status mesin hanya dengan sekali lirik pada dashboard buatanmu. Mari kita mulai petualanganmu membangun 'wajah' digital bagi industri masa depan. Koding adalah kekuatanmu, dan web adalah panggungmu!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Web Development" },
+    "subtopic": "HTML5 dan Struktur Data Visual",
+    "lesson": {
+      "title": "HTML5: Kerangka Dasar Dashboard Pintar",
+      "content": "HTML (HyperText Markup Language) adalah tulang punggung dari setiap halaman web. Ia bukan bahasa pemrograman, melainkan bahasa 'markup' yang menggunakan tag untuk mendefinisikan elemen-elemen di layar. Di versi terbaru, **HTML5**, kita memiliki tag semantik seperti `<header>`, `<nav>`, `<section>`, dan `<footer>` yang membantu mesin (dan AI) memahami struktur halaman kita. Bagi industri, struktur yang jelas sangat penting untuk aksesibilitas dan kemudahan integrasi data.\n\nDalam membangun dashboard, kita banyak menggunakan tag untuk menampilkan informasi: `<table>` untuk daftar stok, `<div>` sebagai wadah (container) untuk grafik, dan `<canvas>` atau `<img>` untuk menampilkan visualisasi sensor. Kamu juga akan belajar tentang **Form Input** (`<input>`, `<select>`, `<button>`) yang memungkinkan pengguna mengirimkan perintah balik ke mesin, misalnya tombol 'Stop Darurat' digital. Kejelasan dalam penulisan HTML akan memudahkanmu saat nanti memberikan gaya dengan CSS atau logika dengan JavaScript.\n\nIngatlah bahwa koding yang bersih dimulai dari struktur yang benar. Gunakanlah atribut `id` and `class` secara konsisten agar elemen-elemen dashboard-mu mudah dikendalikan. Di era AI, HTML juga menjadi sumber data bagi 'Web Scraper' atau asisten digital. Dengan membuat HTML yang terstructured baik, kamu sedang mempermudah sistem lain untuk berkomunikasi dengan aplikasi buatanmu. Mari kita susun kerangka dashboard pertamamu dengan teliti. Sebuah bangunan yang megah membutuhkan fondasi yang kuat, dan web yang canggih membutuhkan HTML yang rapi."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Web Development" },
+    "subtopic": "CSS3 dan Desain Antarmuka Industri",
+    "lesson": {
+      "title": "CSS3: Memberikan Estetika dan Kejelasan Visual",
+      "content": "Jika HTML adalah kerangka, maka **CSS** (Cascading Style Sheets) adalah baju dan riasannya. Di dunia industri, CSS bukan hanya soal warna-warni yang indah, tapi soal **Kejelasan Informasi**. Dashboard yang baik harus menggunakan warna secara strategis: merah untuk peringatan bahaya (alert), hijau untuk status normal, dan kuning untuk peringatan maintenance. Penggunaan kontras yang tepat sangat penting agar informasi tetap terbaca di lingkungan pabrik yang mungkin cahayanya sangat terang atau redup.\n\nKita akan mempelajari konsep **Box Model** (margin, border, padding) untuk mengatur jarak antar elemen dashboard agar tidak terlihat sesak. Selain itu, kamu akan belajar **Flexbox** dan **CSS Grid**, teknologi terbaru untuk mengatur tata letak (layout) dashboard yang kompleks secara otomatis. Dengan Flexbox, kamu bisa membuat deretan angka sensor yang tersusun rapi secara horizontal maupun vertikal. Kita juga akan menggunakan **Media Queries** untuk memastikan dashboard tetap terlihat profesional saat diakses dari layar monitor besar di ruang kendali maupun dari smartphone teknisi.\n\nEstetika industri cenderung minimalis and fungsional. Hindari hiasan yang tidak perlu yang justru bisa mendistraksi operator mesin. Fokuslah pada kegunaan (usability). Di era modern, kita juga bisa menggunakan animasi halus dengan CSS untuk memberikan feedback saat tombol ditekan atau saat data sensor berubah. Mari kita asah insting desainmu. Teknisi yang cerdas adalah mereka yang mampu menyajikan data rumit menjadi tampilan yang sederhana, elegan, dan mudah dipahami oleh siapapun."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Web Development" },
+    "subtopic": "JavaScript Dasar untuk Interaktivitas",
+    "lesson": {
+      "title": "JavaScript: Memberikan Nyawa pada Dashboard",
+      "content": "Halaman web yang hanya berisi HTML dan CSS bersifat statis—ia tidak bisa berubah sendiri tanpa direfresh. Untuk membuat dashboard yang interaktif dan bisa mengupdate data sensor secara otomatis tiap detik, kita membutuhkan **JavaScript (JS)**. JavaScript adalah bahasa pemrograman yang berjalan di browser pengguna. Ia bisa mengubah konten HTML, memanipulasi gaya CSS, dan yang paling penting: berkomunikasi dengan server untuk mengambil data terbaru tanpa memuat ulang seluruh halaman (konsep AJAX/Fetch API).\n\nKamu akan belajar tentang **Event Listeners**, yaitu cara JavaScript 'mendengarkan' aksi pengguna, seperti klik tombol, ketikan keyboard, atau perubahan nilai pada input. Contoh: saat operator menekan tombol 'Update Data', JavaScript akan mengambil data terbaru dari database dan menampilkannya di layar secara instan. JavaScript juga memungkinkanmu membuat logika sederhana di sisi client, misalnya menghitung total produksi harian secara otomatis langsung di browser pengguna sebelum dikirim ke server.\n\nJavaScript adalah bahasa yang sangat fleksibel dan menjadi dasar bagi banyak teknologi AI di web (seperti TensorFlow.js). Dengan menguasai JS, kamu memegang kendali penuh atas interaksi pengguna. Belajarlah untuk menulis kode yang efisien agar dashboard-mu tidak terasa lambat (lag). Di dunia industri, kecepatan respon aplikasi adalah segalanya. Mari kita berikan 'nyawa' pada elemen-elemen visual yang sudah kamu buat. Jadikan dashboard-mu terasa hidup, responsif, dan mampu memberikan informasi secara real-time demi efisiensi kerja yang maksimal."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Web Development" },
+    "subtopic": "Integrasi Data Real-Time dengan Fetch API",
+    "lesson": {
+      "title": "Fetch API: Menghubungkan Dashboard ke Dunia Nyata",
+      "content": "Bagaimana data dari sensor IoT di lapangan bisa sampai ke layar dashboard-mu? Jawabannya adalah melalui **API** (Application Programming Interface). Di sisi client (browser), kita menggunakan **Fetch API** untuk 'menjemput' data dari server. Server biasanya mengirimkan data dalam format **JSON** (JavaScript Object Notation), yang sangat ringan dan mudah dibaca oleh program. Proses ini terjadi di latar belakang (asynchronous), sehingga pengguna tidak akan merasa terganggu saat data sedang diperbarui.\n\nLangkah-langkahnya: 1. JavaScript mengirim permintaan (request) ke alamat URL API server. 2. Server memproses dan mengirimkan data (response) berupa JSON. 3. JavaScript menerima data tersebut, mengolahnya, dan memasukkannya ke dalam elemen HTML yang sesuai (misalnya mengubah teks angka suhu). Kemampuan ini memungkinkanmu membangun sistem monitoring yang sangat dinamis. Kamu bisa melihat suhu mesin di Surabaya langsung dari kantormu di Jakarta melalui dashboard web-mu.\n\nMemahami Fetch API juga merupakan dasar untuk bekerja dengan layanan cloud AI. Misalnya, kamu bisa mengirimkan gambar dari kamera dashboard-mu ke server AI untuk dideteksi apakah ada kerusakan barang (defect detection), lalu menerima hasilnya kembali untuk ditampilkan di layar. Integrasi data adalah 'ruh' dari sistem informasi industri modern. Mari kita pelajari cara melakukan request data secara aman dan efisien. Dengan Fetch API, aplikasi web-mu tidak lagi terisolasi, melainkan terhubung dengan ekosistem data global yang luas."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Web Development" },
+    "subtopic": "Framework CSS (Bootstrap/Tailwind) Dasar",
+    "lesson": {
+      "title": "Mempercepat Pembangunan dengan Framework",
+      "content": "Pelajaran terakhir di bab Web Development adalah pengenalan **Framework CSS**. Menulis CSS dari nol untuk dashboard yang besar bisa memakan waktu sangat lama. Framework seperti **Bootstrap** atau **Tailwind CSS** menyediakan kumpulan gaya dan komponen siap pakai yang sudah teruji keindahannya dan responsivitasnya. Dengan framework, kamu bisa membuat layout grid, tombol yang bagus, dan navbar yang canggih hanya dengan menambahkan nama 'class' tertentu pada elemen HTML-mu.\n\nBootstrap menggunakan sistem berbasis komponen (kamu tinggal menyalin struktur yang sudah ada), sedangkan Tailwind menggunakan pendekatan utility-first (kamu menyusun gaya lewat class-class kecil). Di industri, penggunaan framework membantu tim developer bekerja lebih konsisten dan cepat. Namun, kamu tetap harus paham dasar CSS agar bisa melakukan kustomisasi jika ada desain yang spesifik. Framework adalah alat bantu, bukan pengganti pemahaman dasarmu.\n\nProyek akhir bab ini adalah membuat **Prototype Dashboard Monitoring Industri** yang responsif. Tampilkanlah beberapa kartu (cards) yang berisi angka sensor, tabel riwayat aktivitas, dan grafik sederhana. Gunakan framework untuk mempercantik tampilannya. Kemampuan membangun antarmuka web yang profesional adalah modal besar bagi kariermu. Perusahaan mencari teknisi yang tidak hanya paham mesin, tapi juga mampu menyajikan informasi mesin tersebut ke dalam sistem digital yang modern dan user-friendly. Selamat berkarya dan tunjukkan kreativitasmu dalam mendesain jendela visual masa depan!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Basis Data" },
+    "subtopic": "Konsep Relasional dan SQL",
+    "lesson": {
+      "title": "Gudang Data: Jantung Informasi Perusahaan",
+      "content": "Data sensor yang kita tampilkan di web dashboard perlu disimpan secara permanen agar bisa dianalisis di kemudian hari. Tempat penyimpanan data yang terstruktur ini disebut **Basis Data** (Database). Jenis yang paling populer di industri adalah **Relational Database** (RDBMS) seperti MySQL, MariaDB, atau PostgreSQL. Data di dalam database relasional disimpan dalam bentuk **Tabel** yang terdiri dari baris (record) dan kolom (field), mirip dengan spreadsheet namun jauh lebih kuat dan aman.\n\nUntuk berinteraksi dengan database, kita menggunakan bahasa khusus bernama **SQL** (Structured Query Language). Kamu akan belajar perintah dasar SQL: `SELECT` untuk mengambil data, `INSERT` untuk memasukkan data baru, `UPDATE` untuk mengubah data, dan `DELETE` untuk menghapus data. Kemampuan SQL sangat krusial; misalnya, kamu ingin menampilkan data suhu mesin HANYA untuk tanggal tertentu dan yang suhunya di atas 80 derajat. Dengan SQL, permintaan tersebut bisa dilakukan hanya dengan satu baris perintah.\n\nDatabase relasional memastikan integritas data melalui konsep **Primary Key** (identitas unik setiap data) dan **Foreign Key** (penghubung antar tabel). Sebagai siswa SMK, kamu harus memahami bagaimana cara mendesain database yang efisien agar pencarian data tidak memakan waktu lama (lemot). Database adalah memori jangka panjang bagi sistem AI dan otomasi. Mari kita pelajari cara mengelola gudang data digital ini dengan rapi dan profesional. Data yang terorganisir adalah awal dari kecerdasan yang luar biasa."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Basis Data" },
+    "subtopic": "Desain Skema dan Normalisasi",
+    "lesson": {
+      "title": "Arsitektur Data: Merancang Tabel yang Efisien",
+      "content": "Sebelum membuat database, kita harus merancang 'peta'-nya terlebih dahulu, yang disebut **Skema Database**. Skema mendefinisikan tabel apa saja yang ada, apa saja kolomnya, dan bagaimana hubungan antar tabel tersebut. Proses merancang tabel agar tidak ada data yang ganda (redundant) disebut **Normalisasi**. Redundansi data harus dihindari karena bisa menyebabkan ketidakkonsistenan; misalnya, jika alamat supplier berubah, kamu tidak ingin mengubahnya di sepuluh tempat yang berbeda.\n\nDalam industri, kita sering menggunakan **ERD** (Entity Relationship Diagram) untuk memvisualisasikan skema. Misalnya, tabel `Mesin` berhubungan dengan tabel `Laporan_Kerusakan`. Hubungannya bisa satu-ke-satu (1:1), satu-ke-banyak (1:N), atau banyak-ke-banyak (N:M). Memahami hubungan ini akan memudahkanmu saat melakukan kueri (query) yang kompleks untuk menggabungkan data dari beberapa tabel (JOIN).\n\nSkema yang baik akan membuat sistemmu awet dan mudah dikembangkan. Bayangkan jika pabrikmu bertambah besar dan jumlah mesinnya menjadi ribuan; skema yang dirancang dengan benar tetap akan mampu menangani beban tersebut. Di SMK, kamu akan belajar cara menerjemahkan proses bisnis nyata (seperti proses peminjaman alat di gudang) menjadi struktur tabel database yang logis. Mari kita belajar menjadi 'Arsitek Data' yang handal. Desain yang matang di awal akan menghindarkanmu dari banyak masalah teknis di masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Basis Data" },
+    "subtopic": "Operasi CRUD dan Agregasi",
+    "lesson": {
+      "title": "CRUD: Empat Operasi Dasar Pengolah Data",
+      "content": "Hampir semua aplikasi di dunia ini (Facebook, WhatsApp, Shopee) bekerja berdasarkan prinsip **CRUD**: Create, Read, Update, and Delete. Dalam industri, CRUD adalah operasi harian. **Create**: sensor mengirim data suhu baru ke database. **Read**: manajer membuka dashboard untuk melihat status mesin. **Update**: teknisi menandai mesin yang sudah selesai diperbaiki. **Delete**: menghapus data log lama yang sudah tidak diperlukan untuk menghemat memori.\n\nSelain CRUD, kamu akan belajar fungsi **Agregasi** seperti `COUNT` (menghitung jumlah), `SUM` (menjumlahkan), `AVG` (mencari rata-rata), `MAX` (nilai tertinggi), dan `MIN` (nilai terendah). Contoh penggunaan: 'Berapa rata-rata suhu mesin B selama sebulan terakhir?' atau 'Berapa total produk yang dihasilkan hari ini?'. Fungsi-fungsi ini sangat penting untuk membuat laporan performa produksi (KPI) secara otomatis.\n\nPenguasaan CRUD dan Agregasi akan membuatmu mampu membangun aplikasi manajemen industri yang fungsional. Kamu belajar cara menyaring data (Filtering) dan mengurutkan data (Sorting) agar informasi yang disajikan benar-benar relevan. Data adalah fakta mentah, dan melalui operasi SQL yang tepat, kamu mengubah fakta mentah tersebut menjadi informasi yang berharga bagi perusahaan. Mari kita asah kemampuan kueri-mu agar kamu bisa mendapatkan informasi apapun dari dalam tumpukan jutaan data dengan cepat dan akurat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Basis Data" },
+    "subtopic": "Pengantar NoSQL dan Big Data",
+    "lesson": {
+      "title": "NoSQL: Solusi Data Fleksibel untuk IoT",
+      "content": "Terkadang, data dari sensor IoT datang sangat cepat dan bentuknya tidak selalu rapi (unstructured). Untuk menangani ini, kita mengenal **NoSQL Database** (Not Only SQL). Berbeda dengan database relasional yang kaku dengan tabelnya, NoSQL seperti **MongoDB** atau **Firebase** menyimpan data dalam bentuk dokumen (mirip JSON). Keunggulannya adalah fleksibilitas; kamu bisa menambahkan kolom baru untuk satu data tanpa harus mengubah struktur seluruh database. Ini sangat cocok untuk proyek IoT yang sering berubah-ubah sensornya.\n\nNoSQL juga dirancang untuk menangani **Big Data**—data dalam jumlah yang sangat masif yang tidak mampu lagi ditangani oleh satu komputer biasa. Big Data memiliki karakteristik 3V: Volume (jumlah besar), Velocity (kecepatan tinggi), dan Variety (jenis beragam). Di industri masa depan, jutaan sensor akan menghasilkan Big Data yang perlu diolah oleh AI untuk mendeteksi anomali di seluruh pabrik secara instan.\n\nSebagai siswa SMK, kamu tidak harus ahli di semua jenis database, tapi kamu harus tahu kapan menggunakan SQL dan kapan menggunakan NoSQL. SQL cocok untuk data keuangan atau stok yang butuh ketelitian tinggi, sedangkan NoSQL cocok untuk log sensor atau data media sosial yang butuh kecepatan dan fleksibilitas. Mari kita perluas wawasanmu tentang ekosistem data. Dengan memahami NoSQL, kamu siap menghadapi tantangan data masa depan yang semakin kompleks dan tak terduga."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Basis Data" },
+    "subtopic": "Koneksi Web App ke Database (Node.js/PHP basics)",
+    "lesson": {
+      "title": "Menghubungkan Visual dan Penyimpanan",
+      "content": "Sekarang kita memiliki dashboard (Front-end) and database (Storage). Bagaimana cara menghubungkannya? Kita membutuhkan program yang berjalan di server, yang disebut **Back-end**. Kita bisa menggunakan bahasa seperti JavaScript (dengan Node.js) atau PHP. Program back-end ini bertindak sebagai 'pelayan': ia menerima pesanan dari dashboard, mengambilkan data dari database, lalu mengirimkannya kembali ke dashboard. Proses ini harus dilakukan secara aman agar orang luar tidak bisa mencuri data perusahaan.\n\nKamu akan belajar tentang **Connection String**, yaitu alamat dan kunci rahasia untuk membuka pintu database. Selain itu, kamu akan belajar membuat **API Endpoint** sederhana. Misalnya, jika dashboard memanggil alamat `/api/suhu`, back-end akan menjalankan perintah SQL `SELECT * FROM suhu` dan mengirimkan hasilnya dalam format JSON. Pemahaman tentang aliran data dari browser -> server -> database adalah keahlian 'Full Stack' yang sangat dicari di dunia kerja.\n\nKeamanan adalah hal utama saat menghubungkan web ke database. Kamu akan belajar tentang **SQL Injection**, yaitu teknik peretasan di mana orang jahat mencoba memasukkan perintah SQL berbahaya melalui form input. Kita harus belajar cara 'membersihkan' input pengguna sebelum dikirim ke database. Membangun koneksi yang aman dan cepat adalah ciri developer profesional. Mari kita hubungkan dashboard buatanmu dengan database nyata agar datanya tidak hilang saat halaman di-refresh. Inilah langkah besar menuju aplikasi industri yang sesungguhnya!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Basis Data" },
+    "subtopic": "Backup dan Keamanan Data Industri",
+    "lesson": {
+      "title": "Menjaga Aset Digital Perusahaan",
+      "content": "Pelajaran terakhir di bab Basis Data adalah tentang **Keamanan dan Backup**. Di dunia industri, data adalah aset yang harganya bisa miliaran rupiah. Jika data produksi hilang karena server rusak atau serangan virus (Ransomware), perusahaan bisa bangkrut. Oleh karena itu, kita harus melakukan **Backup** secara rutin dan otomatis. Backup adalah menyalin data ke tempat lain (misalnya ke cloud atau harddisk eksternal) agar data bisa dikembalikan (Restore) jika terjadi bencana.\n\nSelain backup, kita harus mengatur **Hak Akses** (User Privileges). Tidak semua orang boleh menghapus data. Operator hanya boleh melihat data (Read-only), teknisi boleh mengupdate data, dan hanya admin yang boleh menghapus data. Di MySQL, kita menggunakan perintah `GRANT` untuk memberikan hak akses tersebut. Kita juga harus belajar cara melakukan enkripsi pada data yang sensitif agar jika database bocor, data tersebut tidak bisa dibaca oleh orang jahat.\n\nMenjaga keamanan data adalah bentuk tanggung jawab profesional. Sebagai siswa SMK, biasakanlah untuk tidak menggunakan password standar (seperti 'admin' atau '12345') pada database-mu. Pelajari cara mengamankan server database dari akses luar yang tidak sah (Remote Access Security). Mari kita tutup bab ini dengan komitmen untuk menjadi penjaga data yang handal. Dengan database yang aman dan ter-backup dengan baik, sistem AI yang kamu bangun akan memiliki fondasi yang terpercaya dan tahan banting terhadap segala risiko."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Advanced Python" },
+    "subtopic": "Library NumPy untuk Komputasi Numerik",
+    "lesson": {
+      "title": "NumPy: Mesin Hitung Cepat di Balik AI",
+      "content": "Di kelas 10, kita sudah belajar dasar Python. Sekarang, kita akan menggunakan Python untuk tugas yang lebih berat: **Data Science**. Library pertama yang wajib dikuasai adalah **NumPy** (Numerical Python). NumPy memungkinkan kita mengolah kumpulan angka (Array) dalam jumlah jutaan secara instan. Mengapa tidak pakai List biasa? Karena NumPy jauh lebih cepat dan hemat memori karena kodenya ditulis dengan bahasa C di balik layar.\n\nDi industri, NumPy digunakan untuk memproses sinyal sensor, gambar digital (yang sebenarnya adalah kumpulan angka piksel), hingga perhitungan matriks untuk algoritma AI. Kamu akan belajar membuat array, melakukan operasi matematika pada seluruh elemen array sekaligus (Vectorization), dan melakukan 'Slicing' untuk mengambil bagian tertentu dari data. NumPy adalah dasar dari hampir semua library AI lainnya.\n\nBayangkan kamu memiliki data suhu dari 1000 sensor selama 24 jam. Dengan NumPy, kamu bisa mencari rata-rata suhu semua sensor tersebut hanya dengan satu baris kode `np.mean(data)`. Efisiensi seperti inilah yang dibutuhkan di dunia kerja. Mari kita tingkatkan kemampuan kodingmu ke level profesional. Dengan NumPy, kamu tidak lagi hanya sekadar membuat program, tapi sedang membangun mesin pengolah data yang sangat bertenaga."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Advanced Python" },
+    "subtopic": "Library Pandas untuk Analisis Tabel",
+    "lesson": {
+      "title": "Pandas: Mengolah Tabel Data dengan Mudah",
+      "content": "Jika NumPy fokus pada angka, maka **Pandas** fokus pada data tabel, mirip seperti Excel tapi dalam bentuk kode. Library ini menyediakan struktur data bernama **DataFrame**. Dengan Pandas, kamu bisa membuka file CSV, Excel, atau database, lalu mengolahnya dengan sangat fleksibel. Kamu bisa membuang baris yang kosong, menggabungkan dua tabel, hingga melakukan pengelompokan data (Grouping) berdasarkan kategori tertentu.\n\nContoh aplikasi industri: kamu memiliki file Excel berisi 'Laporan Penjualan'. Dengan Pandas, kamu bisa menjawab pertanyaan: 'Berapa total penjualan per kategori produk?' hanya dalam hitungan detik. Pandas juga memudahkan kita dalam melakukan **Data Cleaning**, yaitu proses membersihkan data yang kotor atau salah sebelum dimasukkan ke dalam model AI. Data yang bersih adalah kunci dari AI yang akurat.\n\nSebagai siswa SMK, menguasai Pandas akan membuatmu terlihat sangat ahli dalam pengolahan data. Kamu tidak perlu lagi melakukan copy-paste manual di Excel yang melelahkan. Biarkan Python yang bekerja untukmu. Mari kita pelajari cara menjinakkan data yang berantakan menjadi informasi yang siap saji. Dengan Pandas, kamu memegang kendali penuh atas informasi besar di genggamanmu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Advanced Python" },
+    "subtopic": "Data Cleaning dan Preprocessing",
+    "lesson": {
+      "title": "Seni Membersihkan Data yang Kotor",
+      "content": "Di dunia nyata, data jarang sekali datang dalam keadaan sempurna. Seringkali ada data yang hilang (Missing Values), data yang salah ketik, atau data yang sangat jauh berbeda dari yang lain (Outliers). Proses memperbaiki ini disebut **Data Cleaning**. Jika kamu melatih AI dengan data yang salah, maka hasil prediksi AI tersebut juga akan salah (Garbage In, Garbage Out). Kita menggunakan Pandas untuk mendeteksi dan memperbaiki masalah-masalah ini.\n\nBeberapa teknik yang akan kita pelajari: mengisi data kosong dengan nilai rata-rata (Imputation), menghapus baris yang rusak, dan mengubah format data (misalnya mengubah teks '100 Kg' menjadi angka 100 agar bisa dihitung). Kita juga melakukan **Feature Scaling**, yaitu menyamakan skala angka agar AI tidak bingung saat membandingkan angka yang kecil (seperti suhu 0-1) dengan angka yang besar (seperti harga jutaan).\n\nData cleaning adalah tahap yang memakan waktu paling banyak dalam proyek AI (sekitar 80% waktu kerja). Namun, ini adalah tahap yang paling menentukan kesuksesan. Seorang ahli AI yang hebat adalah mereka yang sabar dan teliti dalam menyiapkan datanya. Mari kita asah ketelitianmu dalam melihat anomali data. Data yang bersih bukan hanya indah dilihat, tapi merupakan fondasi yang kokoh bagi kecerdasan mesin yang handal."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Advanced Python" },
+    "subtopic": "Statistik Dasar untuk Industri",
+    "lesson": {
+      "title": "Memahami Bahasa Angka: Statistik Praktis",
+      "content": "Agar bisa menganalisis data industri dengan benar, kita butuh ilmu **Statistik**. Tenang, kita tidak akan menghafal rumus rumit, tapi belajar konsepnya menggunakan Python. Kamu harus paham tentang **Mean** (Rata-rata), **Median** (Nilai tengah), dan **Mode** (Nilai tersering). Di industri, kita juga sangat memperhatikan **Standard Deviation**, yaitu ukuran seberapa jauh data menyimpang dari rata-rata. Jika standar deviasi suhu mesin terlalu tinggi, berarti mesin tersebut tidak stabil dan butuh perbaikan.\n\nKita juga akan belajar tentang **Korelasi**, yaitu hubungan antara dua hal. Misalnya: 'Apakah kenaikan suhu ruangan berpengaruh pada kerusakan mesin?'. Dengan statistik, kita bisa membuktikan hubungan tersebut secara ilmiah, bukan sekadar tebakan. Python menyediakan fungsi statistik yang sangat lengkap di library `scipy` dan `pandas`. Pemahaman statistik membantumu dalam membuat laporan yang objektif dan terpercaya.\n\nStatistik adalah mata bagi seorang analis. Kamu belajar untuk tidak tertipu oleh angka dan mampu melihat pola yang tersembunyi di baliknya. Di era AI, statistik digunakan untuk mengukur seberapa yakin AI terhadap prediksinya (Confidence Level). Mari kita jadikan angka-angka tersebut bicara. Dengan statistik, kamu bisa memberikan rekomendasi yang cerdas kepada perusahaan berdasarkan bukti data yang kuat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Advanced Python" },
+    "subtopic": "Visualisasi Data dengan Matplotlib & Seaborn",
+    "lesson": {
+      "title": "Infografis Industri: Mengubah Angka Menjadi Gambar",
+      "content": "Data yang sudah diolah dan dihitung tidak akan berguna jika tidak bisa dipahami oleh orang lain. Itulah gunanya **Visualisasi Data**. Kita akan menggunakan library **Matplotlib** dan **Seaborn** untuk membuat grafik yang profesional. Kamu akan belajar membuat **Histogram** untuk melihat sebaran data, **Heatmap** untuk melihat korelasi antar variabel, dan **Box Plot** untuk mendeteksi outlier secara visual.\n\nDi industri, visualisasi digunakan untuk membuat laporan bulanan atau dashboard pemantauan jangka panjang. Grafik yang baik harus memiliki judul yang jelas, label sumbu yang tepat, dan pemilihan warna yang tidak membingungkan. Visualisasi juga membantu kita dalam tahap **Exploratory Data Analysis (EDA)**, yaitu proses mengenal data sebelum kita membuat model AI. Terkadang, satu buah grafik bisa menjelaskan lebih banyak daripada seribu baris tabel.\n\nSiswa SMK yang mampu menyajikan data dalam bentuk visualisasi yang indah dan informatif akan sangat dihargai. Ini adalah kemampuan komunikasi tingkat tinggi di dunia teknologi. Mari kita belajar menjadi 'Storyteller' dengan data. Ubahlah tumpukan angka sensor yang membosankan menjadi karya visual yang memberikan wawasan baru bagi perusahaan. Kreativitasmu dalam menyajikan data adalah kunci untuk meyakinkan orang lain tentang ide-idemu."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Advanced Python" },
+    "subtopic": "Studi Kasus: Analisis Performa Jalur Produksi",
+    "lesson": {
+      "title": "Proyek Kecil: Menjadi Analis Data Pabrik",
+      "content": "Pelajaran terakhir di bab Advanced Python adalah menggabungkan semua library yang telah kita pelajari (NumPy, Pandas, Matplotlib) ke dalam satu proyek nyata. Kasusnya: 'Menganalisis Efisiensi Jalur Produksi di Pabrik Sepatu'. Kamu diberikan data mentah berupa file CSV yang berisi ribuan baris log mesin: waktu mulai, waktu selesai, jumlah barang, dan status mesin (rusak/normal).\n\nTugasmu: 1. Baca data dengan Pandas. 2. Bersihkan data dari nilai yang kosong. 3. Hitung rata-rata waktu produksi per pasang sepatu menggunakan NumPy. 4. Kelompokkan data berdasarkan shift kerja untuk melihat shift mana yang paling produktif. 5. Tampilkan hasilnya dalam bentuk grafik batang (Bar Chart) yang menarik. Proyek ini mensimulasikan pekerjaan nyata seorang Junior Data Analyst di industri.\n\nMelalui proyek ini, kamu akan merasakan bagaimana rasanya mengolah data dari awal hingga menjadi laporan siap pakai. Jangan takut jika menemukan error di tengah jalan; koding adalah proses belajar dari kesalahan. Selesaikan proyek ini dengan teliti, dan simpan hasilnya sebagai portofolio-mu. Kamu kini bukan lagi sekadar belajar koding, tapi sudah mampu memberikan solusi berbasis data. Selamat atas pencapaianmu di bab Advanced Python ini! Kamu siap untuk melangkah ke dunia Kecerdasan Buatan yang sesungguhnya."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Kecerdasan Buatan (AI)" },
+    "subtopic": "Apa itu Machine Learning?",
+    "lesson": {
+      "title": "Membedah Otak Buatan: Konsep Machine Learning",
+      "content": "Kita sampai pada bab yang paling menantang: **Machine Learning (ML)**. ML adalah jantung dari AI modern. Jika pemrograman biasa bekerja dengan aturan 'Jika A maka B', ML bekerja dengan cara memberikan data kepada mesin dan membiarkan mesin tersebut menemukan aturannya sendiri. Di industri, ini mengubah segalanya. Dulu, kita harus memprogram robot secara manual untuk mengenali barang cacat. Sekarang, kita cukup memberikan ribuan foto barang bagus dan cacat, dan mesin akan belajar sendiri mengenalinya.\n\nProses ML terdiri dari: 1. **Data Collection** (Mengumpulkan data). 2. **Data Preprocessing** (Membersihkan data). 3. **Model Training** (Melatih mesin). 4. **Model Evaluation** (Menguji akurasi mesin). Dan 5. **Deployment** (Memasang mesin di aplikasi nyata). Kita menggunakan library **Scikit-Learn** di Python untuk melakukan semua proses ini dengan standar industri. Kamu akan belajar bahwa AI bukanlah sihir, melainkan gabungan koding dan statistik yang sangat kuat.\n\nSiswa SMK harus paham bahwa AI adalah alat bantu manusia, bukan pengganti. AI sangat hebat dalam melakukan tugas yang berulang dan cepat, namun manusia tetap dibutuhkan untuk memberikan konteks dan etika. Mari kita pelajari bagaimana cara 'mengajar' mesin dengan benar. Dengan menguasai konsep ML, kamu sedang memegang kunci teknologi paling transformatif di abad ini. Bersiaplah untuk menjadi instruktur bagi mesin-mesin pintar masa depan!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Kecerdasan Buatan (AI)" },
+    "subtopic": "Regresi Linear: Memprediksi Masa Depan",
+    "lesson": {
+      "title": "Memprediksi Angka: Dasar Regresi Linear",
+      "content": "Algoritma pertama yang akan kita pelajari adalah **Regresi Linear**. Ini adalah algoritma yang digunakan untuk memprediksi angka kontinu (angka yang bisa berubah-ubah). Contoh di industri: memprediksi berapa konsumsi listrik pabrik berdasarkan jumlah mesin yang berjalan, atau memprediksi waktu kerusakan mesin berdasarkan suhu kerjanya. Secara matematika, regresi linear mencari garis lurus yang paling mendekati semua titik data yang kita miliki.\n\nKita akan belajar menggunakan library `Scikit-Learn` untuk membuat model regresi. Kamu hanya perlu memberikan data `X` (input, misalnya jumlah mesin) and data `y` (output, misalnya tagihan listrik). Model akan mempelajari hubungan antara keduanya. Setelah terlatih, kamu bisa bertanya pada model: 'Jika besok ada 50 mesin berjalan, berapa perkiraan tagihan listriknya?'. Model akan memberikan jawaban berdasarkan pola yang sudah dipelajarinya.\n\nKemampuan memprediksi sangat berharga bagi perusahaan karena membantu dalam perencanaan anggaran dan pemeliharaan (maintenance). Kamu belajar cara mengukur seberapa akurat prediksimu menggunakan metrik seperti **Mean Squared Error (MSE)**. Ingat, tidak ada prediksi yang 100% tepat, namun prediksi yang didasarkan pada data jauh lebih baik daripada sekadar tebakan. Mari kita mulai melatih model prediksimu yang pertama. Dengan regresi, kamu memberikan kemampuan pada komputer untuk 'melihat' tren masa depan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Kecerdasan Buatan (AI)" },
+    "subtopic": "Klasifikasi dengan K-Nearest Neighbors (KNN)",
+    "lesson": {
+      "title": "Mengelompokkan Barang: Algoritma Tetangga Terdekat",
+      "content": "Jika regresi memprediksi angka, maka **Klasifikasi** digunakan untuk memprediksi kategori. Salah satu algoritma klasifikasi paling sederhana dan populer adalah **K-Nearest Neighbors (KNN)**. Cara kerjanya sangat intuitif: sebuah data baru akan dikelompokkan berdasarkan 'tetangga' terdekatnya. Jika sebagian besar tetangganya adalah kategori A, maka data baru tersebut juga dianggap kategori A. Di industri, KNN bisa digunakan untuk mendeteksi apakah sebuah suku cadang masuk kategori 'Baru', 'Layak Pakai', atau 'Rusak' berdasarkan ukuran dan beratnya.\n\nNilai 'K' dalam KNN menentukan berapa banyak tetangga yang akan dilihat. Jika K=3, kita melihat 3 tetangga terdekat. Pemilihan nilai K yang tepat sangat menentukan akurasi model. Kita menggunakan library `Scikit-Learn` untuk menjalankan algoritma ini. Kamu akan belajar bagaimana cara mesin menghitung 'jarak' antar data menggunakan rumus matematika (Euclidean Distance). Konsep ini adalah dasar dari banyak sistem rekomendasi dan pengenalan pola.\n\nKlasifikasi adalah tugas yang sangat umum di dunia kerja. Bayangkan kamu bisa membuat sistem otomatis yang memilah buah-buahan di pabrik pengemasan berdasarkan warna dan ukurannya secara instan. Ini akan sangat menghemat tenaga manusia dan meningkatkan kecepatan produksi. Mari kita pelajari cara mengajar mesin untuk membedakan satu hal dengan hal lainnya dengan tepat. KNN adalah langkah awalmu memahami bagaimana mesin bisa memiliki 'insting' pengelompokan yang cerdas."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Kecerdasan Buatan (AI)" },
+    "subtopic": "Evaluasi Model: Akurasi, Presisi, dan Recall",
+    "lesson": {
+      "title": "Seberapa Pintar AI-mu? Metrik Evaluasi",
+      "content": "Setelah melatih model AI, kita tidak boleh langsung percaya begitu saja. Kita harus mengujinya menggunakan data yang belum pernah dilihat oleh mesin sebelumnya (Test Data). Proses ini disebut **Model Evaluation**. Ada beberapa metrik utama: **Akurasi** (seberapa sering AI benar secara keseluruhan), **Presisi** (seberapa tepat AI saat menebak kategori tertentu), dan **Recall** (seberapa banyak data kategori tertentu yang berhasil ditemukan oleh AI).\n\nContoh penting di industri: Dalam mendeteksi kerusakan mesin, 'Recall' sangat penting. Kita lebih baik salah menduga mesin rusak padahal normal (False Positive), daripada salah menduga mesin normal padahal sebenarnya rusak (False Negative) yang bisa menyebabkan kecelakaan. Kamu akan belajar membaca **Confusion Matrix**, sebuah tabel yang menampilkan hasil tebakan AI vs kenyataan. Memahami metrik ini akan membuatmu bisa menjelaskan performa AI-mu kepada atasan dengan bahasa teknis yang benar.\n\nJangan hanya mengejar akurasi tinggi. Terkadang, akurasi tinggi bisa menipu jika jumlah data antar kategori tidak seimbang. Sebagai calon profesional AI, kamu harus kritis terhadap hasil kodingmu sendiri. Ujilah modelmu berkali-kali dengan berbagai skenario. Model yang hebat adalah model yang stabil dan bisa diandalkan dalam kondisi nyata di lapangan. Mari kita belajar cara mengukur kecerdasan mesin secara objektif dan jujur."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Kecerdasan Buatan (AI)" },
+    "subtopic": "AI Ethics dan Bias dalam Algoritma",
+    "lesson": {
+      "title": "Etika AI: Menghindari Prasangka Digital",
+      "content": "Pelajaran yang sangat penting di bab AI adalah tentang **Etika dan Bias**. AI belajar dari data masa lalu. Jika data tersebut mengandung prasangka manusia, maka AI juga akan menjadi 'bias' (tidak adil). Misalnya, jika data masa lalu menunjukkan hanya pria yang menjadi teknisi senior, AI mungkin akan secara otomatis memberikan skor rendah pada pelamar kerja wanita. Ini adalah masalah serius yang harus kita cegah sebagai developer.\n\nKita harus memastikan data yang kita gunakan beragam dan mewakili semua kelompok (Fairness). Selain itu, kita harus memikirkan dampak AI terhadap pekerjaan manusia. AI harus digunakan untuk **Augmentation** (meningkatkan kemampuan manusia), bukan sekadar **Replacement** (menggantikan manusia secara total). Kita juga harus bertanggung jawab terhadap keamanan data pengguna yang kita gunakan untuk melatih AI. Jangan pernah menyalahgunakan data pribadi untuk keuntungan sepihak.\n\nDi SMK, kamu belajar untuk membangun teknologi yang bermanfaat bagi kemanusiaan. Jadilah inovator yang memiliki hati nurani. Selalulah bertanya: 'Apakah AI yang saya buat ini merugikan orang lain?'. Teknologi yang hebat adalah teknologi yang adil, transparan, dan bisa dipertanggungjawabkan. Mari kita bangun masa depan AI Indonesia yang beretika dan bermartabat. Etika adalah kemudi yang memastikan teknologi kita tetap berada di jalur yang benar untuk kebaikan bersama."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Kecerdasan Buatan (AI)" },
+    "subtopic": "Studi Kasus: AI untuk Maintenance Prediktif",
+    "lesson": {
+      "title": "Proyek Kecil: Menjaga Mesin Tetap Sehat",
+      "content": "Pelajaran terakhir di bab AI adalah proyek simulasi: **Predictive Maintenance**. Masalahnya: Mesin di pabrik tekstil sering mati tiba-tiba, menyebabkan kerugian besar. Kamu diminta membuat AI sederhana yang bisa memberikan peringatan SEBELUM mesin tersebut rusak. Kamu memiliki data sensor: suhu mesin, tingkat getaran, dan jam operasional.\n\nLangkah-langkah proyekmu: 1. Gunakan Pandas untuk memproses data sensor. 2. Gunakan KNN atau Regresi Logistik (yang akan kita pelajari) untuk mengklasifikasikan status mesin: 'Sehat' atau 'Butuh Perbaikan'. 3. Evaluasi modelmu: pastikan Recall-nya tinggi agar tidak ada mesin rusak yang terlewat. 4. Simulasikan jika ada data sensor baru masuk, apakah AI-mu bisa memberikan peringatan yang tepat?\n\nProyek ini adalah contoh nyata bagaimana AI memberikan nilai ekonomi yang tinggi bagi perusahaan. Dengan maintenance prediktif, perusahaan bisa menghemat biaya perbaikan dan mencegah kecelakaan kerja. Selesaikan proyek ini dengan bangga. Kamu telah membuktikan bahwa siswa SMK kelas 11 sudah mampu menangani konsep teknologi tercanggih di dunia. Selamat! Kamu kini telah resmi menjadi seorang 'AI Practitioner' junior. Teruslah bereksperimen dan jadilah ahli yang dicari oleh industri masa depan!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Mobile Development" },
+    "subtopic": "Pengenalan Pengembangan Aplikasi Mobile",
+    "lesson": {
+      "title": "Aplikasi di Genggaman: Solusi Mobile Industri",
+      "content": "Di era mobilitas tinggi, teknisi dan manajer industri tidak selalu berada di depan PC. Mereka membutuhkan solusi di genggaman tangan mereka. Inilah peran **Mobile Development**. Pengembangan aplikasi mobile berbeda dengan web; kita harus memikirkan batasan daya baterai, ukuran layar yang kecil, dan koneksi internet yang mungkin tidak stabil di area gudang atau pabrik. Ada dua platform utama: **Android** (yang mendominasi industri) dan **iOS**.\n\nKita akan belajar menggunakan alat yang memudahkan pemula seperti **MIT App Inventor** atau pengenalan dasar **Flutter**. Konsep utamanya adalah **Event-Driven Programming**: saat tombol ditekan, jalankan fungsi tertentu. Aplikasi mobile industri sering digunakan untuk scan Barcode/QR Code barang, mengambil foto kerusakan mesin, atau memberikan notifikasi darurat (Push Notifications) secara instan ke HP teknisi.\n\nSebagai siswa SMK, kemampuan membuat aplikasi mobile sederhana akan memberimu nilai tambah yang luar biasa. Kamu bisa membuat aplikasi yang memudahkan timmu di lapangan untuk melaporkan pekerjaan mereka secara digital. Belajarlah untuk membuat desain yang 'Thumb-Friendly' (mudah ditekan jempol) dan teks yang jelas dibaca saat berjalan. Mari kita bawa solusi cerdasmu dari layar monitor ke dalam saku setiap pekerja industri. Dunia kini bergerak dalam genggaman, dan kamu adalah pembuat jalannya!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Mobile Development" },
+    "subtopic": "Desain UI/UX Mobile Dasar",
+    "lesson": {
+      "title": "Desain yang Memudahkan Pekerja Lapangan",
+      "content": "UI (User Interface) adalah tampilan aplikasi, sedangkan UX (User Experience) adalah perasaan pengguna saat memakainya. Di industri, UX yang baik berarti aplikasi tersebut **Mudah, Cepat, dan Minim Kesalahan**. Bayangkan seorang teknisi yang sedang memakai sarung tangan; ia butuh tombol yang besar dan navigasi yang tidak berbelit-belit. Kita menggunakan prinsip **Material Design** (dari Google) untuk membuat tampilan yang konsisten dan profesional.\n\nKamu akan belajar tentang **Layouting** di mobile: menggunakan `VerticalArrangement`, `HorizontalArrangement`, dan `TableArrangement`. Kita juga belajar tentang psikologi warna: jangan gunakan warna yang terlalu menyilaukan mata. Gunakan ikon yang universal (misalnya ikon gir untuk pengaturan) agar pengguna langsung paham tanpa harus membaca teks yang panjang. Aplikasi yang bagus adalah aplikasi yang tidak butuh buku manual untuk dipahami.\n\nLatihlah kemampuan desainmu dengan membuat 'Sketsa' (Wireframe) di kertas sebelum masuk ke aplikasi pembuat koding. Pikirkan alur pengguna: dari buka aplikasi -> login -> pilih mesin -> lapor kerusakan. Semakin pendek alurnya, semakin baik UX-nya. Mari kita ciptakan antarmuka yang ramah pengguna. Desain yang hebat adalah desain yang 'tidak terlihat' karena pengguna bisa menggunakannya dengan sangat alami dan lancar."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Mobile Development" },
+    "subtopic": "Koneksi Mobile App ke Web API",
+    "lesson": {
+      "title": "Sinkronisasi Data: Mobile dan Cloud",
+      "content": "Aplikasi mobile industri tidak bekerja sendirian; ia harus terhubung ke database pusat di cloud. Kita menggunakan kembali konsep **API** dan format **JSON** yang sudah kita pelajari di bab Web. Aplikasi mobile akan mengirimkan data (misalnya laporan stok) ke server, dan server akan menyimpannya ke database. Sebaliknya, aplikasi mobile juga bisa mengambil data terbaru (misalnya daftar tugas hari ini) dari server.\n\nKita menggunakan komponen `Web` atau `HTTP Client` di aplikasi mobile untuk melakukan permintaan GET dan POST. Penting untuk menangani kondisi 'Offline'; apa yang terjadi jika teknisi berada di area tanpa sinyal? Aplikasi yang cerdas harus bisa menyimpan data sementara di memori HP (Local Storage) dan mengirimkannya secara otomatis saat sinyal kembali (Auto-Sync). Ini adalah tantangan nyata di dunia industri.\n\nMemahami konektivitas antar perangkat adalah ciri ahli sistem terintegrasi. Kamu belajar bahwa mobile, web, dan database adalah satu kesatuan ekosistem digital. Dengan koneksi API, aplikasi mobile-mu bisa menjadi 'Remote Control' untuk mesin-mesin raksasa di pabrik. Mari kita hubungkan aplikasi mobile-mu dengan server yang sudah kamu buat di bab sebelumnya. Jadikan aplikasimu bagian dari jaringan global yang saling berbagi informasi secara instan."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Mobile Development" },
+    "subtopic": "Fitur Sensor dan Kamera di Mobile",
+    "lesson": {
+      "title": "Memanfaatkan Sensor HP untuk Industri",
+      "content": "Smartphone modern adalah kumpulan sensor canggih: ada Akselerometer (gerak), Giroskop (rotasi), GPS (lokasi), dan Kamera. Di industri, kita bisa memanfaatkan ini semua. Misalnya, menggunakan GPS untuk memastikan teknisi benar-benar berada di lokasi perbaikan, atau menggunakan kamera untuk **Barcode Scanning** agar pendataan barang gudang menjadi 10x lebih cepat daripada mencatat manual.\n\nKamu akan belajar cara mengaktifkan kamera lewat koding mobile-mu dan memproses hasilnya. Kita juga bisa menggabungkan ini dengan AI; misalnya, foto yang diambil lewat aplikasi mobile dikirim ke server AI untuk dideteksi jenis kerusakannya secara otomatis. Fitur ini disebut **Edge Computing** jika prosesnya dilakukan langsung di HP, atau **Cloud Vision** jika prosesnya dikirim ke internet. Pemanfaatan sensor yang kreatif akan melahirkan solusi-solusi baru yang inovatif.\n\nSebagai siswa SMK, eksplorasilah sensor-sensor yang ada di HP-mu. Bisakah kamu membuat aplikasi pengukur getaran mesin hanya dengan menaruh HP di atas mesin tersebut? Ide-ide kreatif seperti inilah yang akan membuatmu unggul. HP bukan lagi sekadar alat komunikasi, tapi menjadi alat ukur teknis yang sangat bertenaga. Mari kita maksimalkan potensi hardware di genggamanmu untuk membantu pekerjaan manusia menjadi lebih mudah dan akurat."
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Praktik Lintas Bidang" },
+    "subtopic": "Sistem Terintegrasi (Full Stack Project)",
+    "lesson": {
+      "title": "Membangun Ekosistem Digital Terpadu",
+      "content": "Inilah saatnya pembuktian! Di akhir kelas 11, kamu ditantang untuk membuat sebuah **Sistem Terintegrasi (Full Stack)**. Proyek ini menggabungkan semua yang telah kita pelajari selama setahun: 1. **Database** untuk menyimpan data. 2. **Web Dashboard** untuk pemantauan pusat. 3. **AI/ML** untuk memberikan analisis prediktif. Dan 4. **Mobile App** untuk akses lapangan.\n\nContoh proyek: 'Sistem Manajemen Gudang Cerdas'. Mobile app digunakan petugas gudang untuk scan barang masuk/keluar. Data dikirim ke Database. Web dashboard menampilkan grafik stok secara real-time. Dan AI memprediksi kapan stok akan habis berdasarkan pola penjualan bulan lalu. Proyek sebesar ini harus dikerjakan secara tim dengan pembagian tugas yang jelas. Ini adalah simulasi paling nyata dari cara kerja perusahaan teknologi modern.\n\nKeberhasilan proyek ini bukan hanya dari koding yang jalan, tapi dari bagaimana sistem-sistem tersebut saling bicara (interoperability). Kamu belajar tentang dokumentasi API agar rekan timmu tahu cara terhubung ke server yang kamu buat. Mari kita tunjukkan bahwa siswa SMK mampu membangun solusi level perusahaan. Proyek ini akan menjadi mahakarya-mu di kelas 11 dan menjadi tiket emas untuk memulai karier profesionalmu di dunia koding & AI!"
+    }
+  },
+  {
+    "level": "SMK",
+    "grade": 11,
+    "subject": "Koding & AI",
+    "topic": { "name": "Praktik Lintas Bidang" },
+    "subtopic": "Karier dan Masa Depan di Bidang AI",
+    "lesson": {
+      "title": "Menatap Masa Depan: Menjadi Ahli yang Dicari",
+      "content": "Selamat! Kamu telah menyelesaikan perjalanan kelas 11 yang sangat padat dan berilmu. Kini saatnya memikirkan masa depan. Dunia Koding & AI menawarkan banyak jalur karier: **Web Developer**, **Mobile Developer**, **Data Scientist**, **AI Engineer**, hingga **IoT Architect**. Permintaan akan tenaga ahli di bidang ini terus meningkat di seluruh dunia, termasuk di Indonesia. Perusahaan-perusahaan besar (Unicorn) hingga pabrik-pabrik manufaktur raksasa sangat membutuhkan talenta sepertimu.\n\nNamun, kuncinya bukan hanya koding, tapi **Continuous Learning** (belajar terus-menerus). Teknologi berubah setiap bulan. Kamu harus rajin membaca dokumentasi baru, mengikuti forum komunitas, dan berani mencoba tool baru. Selain itu, asahlah 'Soft Skills'-mu: kerja sama tim, komunikasi, dan kemampuan bahasa Inggris teknis. Ingat, koding adalah bahasa universal. Dengan menguasainya, kamu bisa bekerja dari mana saja untuk perusahaan mana saja di dunia (Remote Work).\n\nJangan pernah merasa cukup dengan apa yang dipelajari di sekolah. Kelas 12 nanti akan lebih fokus pada penerapan tingkat lanjut dan persiapan memasuki dunia kerja/industri (Link and Match). Tetaplah semangat, jaga rasa ingin tahumu, dan teruslah berkarya. Kamu adalah pionir AI dari SMK untuk Indonesia. Mari kita tutup tahun ini dengan perayaan atas segala kerja kerasmu. Sampai jumpa di kelas 12, sang arsitek solusi digital masa depan! Dunia menanti karyamu!"
+    }
+  }
+]

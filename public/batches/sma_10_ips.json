@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Ilmu Sejarah" },
+    "subtopic": "Metodologi",
+    "lesson": { 
+      "title": "Pengertian dan Ruang Lingkup Sejarah",
+      "content": "Sejarah adalah peristiwa masa lalu yang memiliki makna bagi kehidupan manusia di masa kini and mendatang. Meliputi konsep pohon (syajaratun) yang melambangkan pertumbuhan and kesinambungan. Contoh: Sejarah Proklamasi Kemerdekaan Indonesia sebagai titik balik bangsa. Penjelasan: Mempelajari sejarah membantu kita memahami identitas diri and menghindari kesalahan yang sama di masa depan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Ilmu Sejarah" },
+    "subtopic": "Metodologi",
+    "lesson": { 
+      "title": "Konsep Diakronis dan Sinkronis",
+      "content": "Diakronis menekankan urutan waktu (kronologis), sedangkan sinkronis menekankan struktur peristiwa pada waktu tertentu. Contoh: Membahas perkembangan kerajaan Majapahit dari awal hingga runtuh (diakronis). Penjelasan: Kedua konsep ini digunakan untuk menganalisis peristiwa sejarah secara mendalam and sistematis."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Ilmu Sejarah" },
+    "subtopic": "Metodologi",
+    "lesson": { 
+      "title": "Sumber Sejarah dan Verifikasi",
+      "content": "Sumber sejarah terdiri dari sumber primer (saksi langsung) and sekunder (tulisan sejarawan). Verifikasi atau kritik sumber dilakukan untuk menguji keaslian data. Contoh: Prasasti atau naskah asli Proklamasi sebagai sumber primer. Penjelasan: Objektivitas penulisan sejarah sangat bergantung pada validitas sumber yang ditemukan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Pengantar Geografi" },
+    "subtopic": "Konsep Dasar",
+    "lesson": { 
+      "title": "Objek Studi dan Aspek Geografi",
+      "content": "Geografi mempelajari fenomena geosfer (atmosfer, litosfer, hidrosfer, biosfer, and antroposfer) serta interaksi manusia dengan lingkungan. Contoh: Studi tentang pola pemukiman penduduk di sepanjang aliran sungai. Penjelasan: Geografi membantu kita memahami keterkaitan antar wilayah and perencanaan tata ruang."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Pengantar Geografi" },
+    "subtopic": "Konsep Dasar",
+    "lesson": { 
+      "title": "10 Konsep Esensial Geografi",
+      "content": "Meliputi lokasi, jarak, keterjangkauan, pola, morfologi, aglomerasi, nilai kegunaan, interaksi, diferensiasi area, and keterkaitan ruang. Contoh: Konsep aglomerasi menjelaskan mengapa industri cenderung berkumpul di satu kawasan. Penjelasan: Konsep-konsep ini adalah pisau analisis untuk membedah masalah keruangan di permukaan bumi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Pengantar Geografi" },
+    "subtopic": "Konsep Dasar",
+    "lesson": { 
+      "title": "Pendekatan Keruangan, Kelingkungan, dan Kompleks Wilayah",
+      "content": "Tiga cara pandang geografi dalam menganalisis suatu masalah. Contoh: Menganalisis banjir Jakarta dengan melihat curah hujan and penggunaan lahan di hulu sungai (kelingkungan). Penjelasan: Pendekatan yang komprehensif diperlukan untuk mencari solusi masalah lingkungan yang rumit."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Fungsi Sosiologi" },
+    "subtopic": "Interaksi Sosial",
+    "lesson": { 
+      "title": "Sosiologi sebagai Ilmu Sosial",
+      "content": "Sosiologi mempelajari masyarakat, perilaku sosial, and hubungan antarindividu dalam kelompok. Sosiologi bersifat empiris, teoritis, kumulatif, and non-etis. Contoh: Penelitian tentang dampak penggunaan media sosial terhadap pola komunikasi remaja. Penjelasan: Sosiologi memberikan wawasan objektif tentang dinamika kehidupan masyarakat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Fungsi Sosiologi" },
+    "subtopic": "Interaksi Sosial",
+    "lesson": { 
+      "title": "Nilai dan Norma dalam Masyarakat",
+      "content": "Nilai adalah sesuatu yang dianggap baik/buruk, sedangkan norma adalah aturan untuk mewujudkan nilai tersebut. Contoh: Nilai kesopanan diwujudkan dalam norma cara menyapa orang yang lebih tua. Penjelasan: Nilai and norma berfungsi sebagai pengendali sosial agar tercipta ketertiban dalam masyarakat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Fungsi Sosiologi" },
+    "subtopic": "Interaksi Sosial",
+    "lesson": { 
+      "title": "Identitas Diri dan Sosialisasi",
+      "content": "Proses pembentukan identitas melalui interaksi dengan keluarga, teman sebaya, sekolah, and media massa. Contoh: Pengaruh pola asuh orang tua terhadap kepercayaan diri seorang anak. Penjelasan: Sosialisasi yang sempurna membantu individu menjalankan perannya di masyarakat dengan baik."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Pengantar Ekonomi" },
+    "subtopic": "Kebutuhan dan Kelangkaan",
+    "lesson": { 
+      "title": "Masalah Inti Ekonomi: Kelangkaan",
+      "content": "Kelangkaan terjadi karena kebutuhan manusia yang tidak terbatas berhadapan dengan sumber daya yang terbatas. Contoh: Kelangkaan lahan di pusat kota menyebabkan harga tanah melambung tinggi. Penjelasan: Ilmu ekonomi mengajarkan cara mengalokasikan sumber daya secara efisien and adil."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Pengantar Ekonomi" },
+    "subtopic": "Kebutuhan dan Kelangkaan",
+    "lesson": { 
+      "title": "Biaya Peluang (Opportunity Cost)",
+      "content": "Nilai dari pilihan terbaik yang harus dikorbankan ketika memilih satu alternatif tindakan. Contoh: Jika memilih kuliah, maka peluang untuk bekerja and mendapatkan gaji langsung harus dikorbankan. Penjelasan: Memahami biaya peluang membantu pengambilan keputusan ekonomi yang rasional."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Pengantar Ekonomi" },
+    "subtopic": "Kebutuhan dan Kelangkaan",
+    "lesson": { 
+      "title": "Prinsip dan Motif Ekonomi",
+      "content": "Prinsip ekonomi adalah dasar bertindak dengan pengorbanan sekecil mungkin untuk hasil tertentu. Motif ekonomi adalah alasan yang mendorong tindakan tersebut. Contoh: Membandingkan harga barang sebelum membeli untuk mendapatkan kualitas terbaik dengan harga termurah. Penjelasan: Bertindak ekonomis berarti mengutamakan efisiensi and efektivitas."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Praaksara Indonesia" },
+    "subtopic": "Arkeologi",
+    "lesson": { 
+      "title": "Asal-usul Nenek Moyang Bangsa Indonesia",
+      "content": "Teori Yunan, Teori Nusantara, Out of Taiwan, and Out of Africa menjelaskan migrasi manusia ke kepulauan ini. Contoh: Kesamaan rumpun bahasa Austronesia yang tersebar dari Madagaskar hingga Pasifik. Penjelasan: Keragaman suku di Indonesia saat ini adalah hasil dari proses migrasi and adaptasi ribuan tahun."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Praaksara Indonesia" },
+    "subtopic": "Arkeologi",
+    "lesson": { 
+      "title": "Hasil Kebudayaan Zaman Megalitikum",
+      "content": "Peninggalan berupa bangunan batu besar yang berkaitan dengan pemujaan roh nenek moyang. Contoh: Menhir, Dolmen, Sarkofagus, and Punden Berundak. Penjelasan: Bangunan ini menunjukkan masyarakat praaksara sudah memiliki struktur sosial and sistem religi yang kuat."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Praaksara Indonesia" },
+    "subtopic": "Arkeologi",
+    "lesson": { 
+      "title": "Pola Hidup dan Teknologi Masyarakat Purba",
+      "content": "Transisi dari budaya berburu-meramu (food gathering) menjadi bercocok tanam (food producing) and menetap. Contoh: Penemuan alat serpih (flakes) and kapak genggam di situs Sangiran. Penjelasan: Inovasi alat membantu manusia purba menguasai alam and meningkatkan populasi."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Litosfer dan Pedosfer" },
+    "subtopic": "Geologi",
+    "lesson": { 
+      "title": "Struktur Lapisan Bumi dan Tektonisme",
+      "content": "Bumi terdiri dari kerak, mantel, and inti. Pergerakan lempeng tektonik (konvergen, divergen, transform) membentuk relief bumi. Contoh: Pembentukan Pegunungan Himalaya akibat tabrakan lempeng India and Eurasia. Penjelasan: Memahami tektonisme penting untuk mitigasi bencana gempa bumi and tsunami."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Litosfer dan Pedosfer" },
+    "subtopic": "Geologi",
+    "lesson": { 
+      "title": "Vulkanisme dan Pengaruhnya bagi Kehidupan",
+      "content": "Proses keluarnya magma ke permukaan bumi yang menghasilkan gunung api and berbagai jenis batuan. Contoh: Kesuburan tanah di Jawa akibat abu vulkanik dari letusan gunung api. Penjelasan: Selain bahaya erupsi, vulkanisme memberikan sumber daya energi panas bumi and material tambang."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Litosfer dan Pedosfer" },
+    "subtopic": "Geologi",
+    "lesson": { 
+      "title": "Proses Pembentukan Tanah dan Konservasi",
+      "content": "Tanah terbentuk dari pelapukan batuan oleh faktor iklim, organisme, and waktu. Contoh: Erosi tanah akibat penggundulan hutan di lereng pegunungan. Penjelasan: Kerusakan tanah mengancam produksi pangan, sehingga teknik terasering and reboisasi sangat diperlukan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Masalah Sosial" },
+    "subtopic": "Patologi Sosial",
+    "lesson": { 
+      "title": "Definisi dan Kriteria Masalah Sosial",
+      "content": "Kondisi yang tidak diinginkan oleh masyarakat and memerlukan upaya bersama untuk menyelesaikannya. Contoh: Kemiskinan, pengangguran, and kriminalitas sebagai masalah sosial sistemik. Penjelasan: Masalah sosial seringkali berakar pada ketimpangan akses terhadap sumber daya ekonomi and pendidikan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Masalah Sosial" },
+    "subtopic": "Patologi Sosial",
+    "lesson": { 
+      "title": "Penyimpangan Sosial dan Pengendaliannya",
+      "content": "Perilaku yang tidak sesuai dengan nilai and norma yang berlaku di masyarakat. Contoh: Tindakan perundungan (bullying) di sekolah sebagai bentuk penyimpangan. Penjelasan: Pengendalian sosial dilakukan melalui teguran, hukuman, atau edukasi agar pelaku kembali pada norma yang benar."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sosiologi",
+    "topic": { "name": "Masalah Sosial" },
+    "subtopic": "Patologi Sosial",
+    "lesson": { 
+      "title": "Ketimpangan Sosial dalam Masyarakat",
+      "content": "Perbedaan mencolok dalam akses ekonomi, kekuasaan, and status sosial antar kelompok masyarakat. Contoh: Kesenjangan fasilitas pendidikan antara wilayah perkotaan and pedesaan terpencil. Penjelasan: Ketimpangan yang tinggi dapat memicu konflik and mengganggu stabilitas nasional."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Lembaga Keuangan" },
+    "subtopic": "Perbankan",
+    "lesson": { 
+      "title": "Peran Bank Indonesia sebagai Bank Sentral",
+      "content": "Bertanggung jawab menjaga kestabilan nilai rupiah, mengatur sistem pembayaran, and mengawasi kebijakan moneter. Contoh: Intervensi BI untuk menstabilkan kurs rupiah terhadap dollar AS. Penjelasan: Bank Sentral adalah jantung dari sistem keuangan and ekonomi suatu negara."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Lembaga Keuangan" },
+    "subtopic": "Perbankan",
+    "lesson": { 
+      "title": "Bank Umum dan Fungsi Intermediasi",
+      "content": "Menghimpun dana dari masyarakat (simpanan) and menyalurkannya kembali dalam bentuk kredit atau pinjaman. Contoh: Pemberian kredit usaha rakyat (KUR) untuk memajukan pedagang kecil. Penjelasan: Bank umum memudahkan aliran modal dari pihak yang kelebihan dana ke pihak yang membutuhkan dana usaha."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Ekonomi",
+    "topic": { "name": "Lembaga Keuangan" },
+    "subtopic": "Perbankan",
+    "lesson": { 
+      "title": "Otoritas Jasa Keuangan (OJK) dan Perlindungan Konsumen",
+      "content": "Lembaga independen yang mengawasi seluruh aktivitas di sektor jasa keuangan (bank, pasar modal, asuransi). Contoh: Edukasi OJK tentang bahaya pinjaman online ilegal yang merugikan masyarakat. Penjelasan: Pengawasan OJK menjamin keamanan and kepercayaan masyarakat terhadap sistem keuangan."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Zaman Kerajaan" },
+    "subtopic": "Sejarah Klasik",
+    "lesson": { 
+      "title": "Sistem Pemerintahan Kerajaan Kutai dan Tarumanegara",
+      "content": "Awal berdirinya kerajaan bercorak Hindu di Indonesia yang dibuktikan dengan penemuan prasasti Yupa and Ciaruteun. Contoh: Raja Mulawarman yang memberikan 20.000 ekor sapi kepada para Brahmana. Penjelasan: Masa ini menandai masuknya budaya tulis and sistem birokrasi kerajaan di Nusantara."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Zaman Kerajaan" },
+    "subtopic": "Sejarah Klasik",
+    "lesson": { 
+      "title": "Kerajaan Mataram Kuno dan Keagungan Borobudur",
+      "content": "Perpaduan dinasti Sanjaya (Hindu) and Syailendra (Buddha) yang menghasilkan mahakarya arsitektur candi. Contoh: Candi Borobudur sebagai simbol kosmologi agama Buddha Mahayana. Penjelasan: Toleransi and kerjasama antar iman sudah terjalin kuat sejak masa kerajaan kuno."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Sejarah",
+    "topic": { "name": "Zaman Kerajaan" },
+    "subtopic": "Sejarah Klasik",
+    "lesson": { 
+      "title": "Keruntuhan Majapahit dan Transisi ke Masa Islam",
+      "content": "Perang saudara (Paregreg) and menguatnya pengaruh pedagang Muslim di pesisir menyebabkan kemunduran Majapahit. Contoh: Berdirinya Kesultanan Demak sebagai kerajaan Islam pertama di Jawa. Penjelasan: Perubahan ideologi and pola perdagangan mengubah konstelasi politik di Nusantara."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Atmosfer dan Hidrosfer" },
+    "subtopic": "Iklim dan Air",
+    "lesson": { 
+      "title": "Lapisan Atmosfer dan Gejala Cuaca",
+      "content": "Troposfer, stratosfer, mesosfer, termosfer, and eksosfer memiliki fungsi pelindung bumi. Contoh: Fenomena pelangi and awan yang terjadi di lapisan troposfer. Penjelasan: Atmosfer menjaga suhu bumi tetap hangat and melindungi kita dari radiasi matahari yang berbahaya."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Atmosfer dan Hidrosfer" },
+    "subtopic": "Iklim dan Air",
+    "lesson": { 
+      "title": "Siklus Hidrologi dan Ketersediaan Air Bersih",
+      "content": "Proses perputaran air mulai dari evaporasi, kondensasi, presipitasi, hingga infiltrasi. Contoh: Pentingnya daerah resapan air di pegunungan untuk mencegah banjir di hilir. Penjelasan: Pengelolaan siklus air yang baik menjamin keberlanjutan pasokan air untuk konsumsi and pertanian."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "IPS - Geografi",
+    "topic": { "name": "Atmosfer dan Hidrosfer" },
+    "subtopic": "Iklim dan Air",
+    "lesson": { 
+      "title": "Klasifikasi Iklim dan Dampaknya bagi Tanaman",
+      "content": "Pembagian iklim berdasarkan letak lintang (iklim matahari) and ketinggian tempat (iklim Junghuhn). Contoh: Budidaya teh yang hanya cocok di daerah beriklim sejuk dengan ketinggian tertentu. Penjelasan: Iklim menentukan potensi pertanian and pola hidup manusia di suatu wilayah."
+    }
+  }
+]

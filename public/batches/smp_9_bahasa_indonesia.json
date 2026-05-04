@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Percobaan" },
+    "subtopic": "Struktur dan Kebahasaan",
+    "lesson": { 
+      "title": "Tujuan dan Fungsi Laporan Percobaan",
+      "content": "Laporan percobaan bertujuan menginformasikan hasil eksperimen secara sistematis dan ilmiah. Contoh: Laporan percobaan 'Membuat Sabun dari Minyak Jelantah'. Penjelasan: Teks ini penting untuk mendokumentasikan temuan baru dan berbagi ilmu pengetahuan dengan orang lain."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Percobaan" },
+    "subtopic": "Struktur dan Kebahasaan",
+    "lesson": { 
+      "title": "Struktur Laporan: Alat, Bahan, dan Langkah",
+      "content": "Bagian ini merinci apa yang dibutuhkan dan bagaimana prosesnya secara urut. Contoh: Daftar alat dan bahan untuk uji vitamin C. Penjelasan: Rincian yang akurat memungkinkan orang lain untuk mengulang percobaan tersebut dengan hasil yang sama."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Percobaan" },
+    "subtopic": "Struktur dan Kebahasaan",
+    "lesson": { 
+      "title": "Hasil dan Simpulan Ilmiah",
+      "content": "Menjelaskan apa yang terjadi selama percobaan dan apa makna dari hasil tersebut. Contoh: Hasil pengamatan pertumbuhan tanaman di tempat gelap. Penjelasan: Simpulan harus menjawab tujuan awal percobaan berdasarkan data yang diperoleh."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Percobaan" },
+    "subtopic": "Menulis Laporan Mandiri",
+    "lesson": { 
+      "title": "Penggunaan Sinonim dan Kata Bilangan",
+      "content": "Menggunakan variasi kata dan angka yang tepat untuk menjelaskan jumlah. Contoh: 'Tuangkan dua tetes larutan iodine'. Penjelasan: Bahasa laporan percobaan harus lugas, teknis, dan menghindari makna ganda (ambigu)."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Percobaan" },
+    "subtopic": "Menulis Laporan Mandiri",
+    "lesson": { 
+      "title": "Membuat Tabel dan Grafik Data",
+      "content": "Menyajikan data hasil percobaan dalam bentuk visual agar lebih mudah dipahami. Contoh: Grafik suhu air saat dipanaskan. Penjelasan: Visualisasi data membantu pembaca melihat tren atau perubahan secara cepat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Laporan Percobaan" },
+    "subtopic": "Menulis Laporan Mandiri",
+    "lesson": { 
+      "title": "Menyunting Laporan dari Sisi Logika",
+      "content": "Memastikan alur percobaan masuk akal dan data yang disajikan konsisten. Contoh: Memperbaiki laporan yang urutan langkahnya tertukar. Penjelasan: Logika yang runtut adalah syarat mutlak bagi sebuah karya ilmiah."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Pidato Persuasif" },
+    "subtopic": "Pesan dan Argumen",
+    "lesson": { 
+      "title": "Tujuan Pidato Persuasif",
+      "content": "Mengajak atau membujuk audiens agar yakin dan mau mengambil tindakan tertentu. Contoh: Pidato tentang 'Pentingnya Menjaga Kebersihan Laut'. Penjelasan: Keberhasilan pidato ini diukur dari seberapa banyak orang yang tergerak setelah mendengar."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Pidato Persuasif" },
+    "subtopic": "Pesan dan Argumen",
+    "lesson": { 
+      "title": "Cara Mempersuasi: Etika, Emosi, Logika",
+      "content": "Menggunakan pendekatan karakter (etika), perasaan (emosi), dan akal sehat (logika). Contoh: Mengajak donasi dengan menunjukkan foto penderitaan (emosi). Penjelasan: Kombinasi ketiga pendekatan ini membuat pesan sulit untuk ditolak."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Pidato Persuasif" },
+    "subtopic": "Pesan dan Argumen",
+    "lesson": { 
+      "title": "Struktur Teks Pidato: Pernyataan Posisi",
+      "content": "Bagian awal yang menyatakan sudut pandang penulis terhadap suatu masalah secara tegas. Contoh: 'Saya percaya bahwa plastik sekali pakai harus dilarang'. Penjelasan: Posisi yang jelas di awal membantu audiens mengikuti alur argumen selanjutnya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Pidato Persuasif" },
+    "subtopic": "Menulis dan Berpidato",
+    "lesson": { 
+      "title": "Menyusun Rangkaian Argumen yang Kuat",
+      "content": "Menyajikan fakta pendukung yang logis untuk memperkuat posisi yang telah diambil. Contoh: Memberikan data kerusakan karang akibat sampah. Penjelasan: Argumen yang kuat adalah fondasi utama dari pidato yang meyakinkan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Pidato Persuasif" },
+    "subtopic": "Menulis dan Berpidato",
+    "lesson": { 
+      "title": "Kalimat Ajakan dan Harapan",
+      "content": "Menggunakan kata-kata yang memotivasi audiens di bagian penutup. Contoh: 'Mari kita mulai dari diri sendiri hari ini!'. Penjelasan: Penutup harus memberikan kesan yang kuat dan panggilan untuk bertindak."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Pidato Persuasif" },
+    "subtopic": "Menulis dan Berpidato",
+    "lesson": { 
+      "title": "Latihan Orasi dengan Mimik yang Pas",
+      "content": "Menyesuaikan ekspresi wajah dengan isi pidato (serius, sedih, atau semangat). Contoh: Berlatih pidato hari kemerdekaan. Penjelasan: Penampilan fisik yang meyakinkan membantu membangun kepercayaan audiens."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Pendek" },
+    "subtopic": "Struktur dan Konflik",
+    "lesson": { 
+      "title": "Orientasi dan Rangkaian Peristiwa",
+      "content": "Mengenalkan tokoh, latar, dan mulai menggerakkan alur cerita. Contoh: Perkenalan tokoh utama yang hidup di desa terpencil. Penjelasan: Bagian ini sangat penting untuk membangun keterikatan pembaca dengan dunia cerita."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Pendek" },
+    "subtopic": "Struktur dan Konflik",
+    "lesson": { 
+      "title": "Komplikasi: Munculnya Konflik",
+      "content": "Puncak masalah yang dihadapi tokoh utama dalam cerita. Contoh: Tokoh terjebak dalam dilema antara kejujuran dan persahabatan. Penjelasan: Konflik adalah jantung dari sebuah cerpen yang membuatnya menarik untuk dibaca sampai habis."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Pendek" },
+    "subtopic": "Struktur dan Konflik",
+    "lesson": { 
+      "title": "Resolusi dan Koda (Pesan)",
+      "content": "Bagian penyelesaian masalah dan pelajaran yang bisa diambil dari cerita. Contoh: Tokoh akhirnya memilih jujur dan merasa lega. Penjelasan: Resolusi memberikan kepuasan bagi pembaca atas nasib para tokoh."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Pendek" },
+    "subtopic": "Ciri Kebahasaan Cerpen",
+    "lesson": { 
+      "title": "Penggunaan Kalimat Deskriptif Latar",
+      "content": "Menggambarkan suasana tempat dan waktu secara detail untuk membangun imajinasi. Contoh: 'Senja itu, langit berwarna jingga seperti terbakar'. Penjelasan: Deskripsi latar yang kuat membuat pembaca merasa berada di dalam cerita."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Pendek" },
+    "subtopic": "Ciri Kebahasaan Cerpen",
+    "lesson": { 
+      "title": "Dialog Tokoh yang Karakteristik",
+      "content": "Cara tokoh berbicara harus mencerminkan sifat, latar belakang, dan emosinya. Contoh: Dialog antara orang tua yang bijak dan anak muda yang pemberontak. Penjelasan: Dialog menghidupkan interaksi antar tokoh dan memperjelas watak mereka."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Cerita Pendek" },
+    "subtopic": "Ciri Kebahasaan Cerpen",
+    "lesson": { 
+      "title": "Menulis Cerpen Berdasarkan Pengalaman",
+      "content": "Mengubah peristiwa nyata menjadi fiksi dengan bumbu imajinasi agar lebih dramatis. Contoh: Cerita tentang pengalaman pertama naik gunung. Penjelasan: Pengalaman pribadi adalah sumber ide yang tidak pernah habis untuk menulis cerpen."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Tanggapan" },
+    "subtopic": "Kritik dan Pujian",
+    "lesson": { 
+      "title": "Tujuan Teks Tanggapan",
+      "content": "Memberikan penilaian berupa pujian atau kritik yang membangun terhadap suatu karya atau fenomena. Contoh: Tanggapan terhadap lukisan karya teman. Penjelasan: Menulis tanggapan melatih kita untuk bersikap objektif dan menghargai karya orang lain."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Tanggapan" },
+    "subtopic": "Kritik dan Pujian",
+    "lesson": { 
+      "title": "Struktur: Konteks dan Deskripsi",
+      "content": "Menyebutkan apa yang ditanggapi, siapa penciptanya, dan rincian bagian karya tersebut. Contoh: Menanggapi sebuah buku novel populer. Penjelasan: Tanpa konteks yang jelas, pembaca tidak akan tahu apa yang sedang kita nilai."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Tanggapan" },
+    "subtopic": "Kritik dan Pujian",
+    "lesson": { 
+      "title": "Penilaian: Memberi Alasan yang Santun",
+      "content": "Sampaikan pujian atau kritik dengan bahasa yang tidak menyinggung perasaan. Contoh: 'Alurnya menarik, namun penutupnya terasa terlalu cepat'. Penjelasan: Kritik yang santun lebih mudah diterima dan bermanfaat bagi si pembuat karya."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Tanggapan" },
+    "subtopic": "Menyusun Tanggapan Kritis",
+    "lesson": { 
+      "title": "Menganalisis Karya dari Berbagai Sisi",
+      "content": "Melihat kelebihan dan kekurangan secara seimbang sebelum mengambil simpulan. Contoh: Analisis pementasan drama sekolah. Penjelasan: Penilaian yang menyeluruh menunjukkan kematangan cara berpikir kita."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Tanggapan" },
+    "subtopic": "Menyusun Tanggapan Kritis",
+    "lesson": { 
+      "title": "Penggunaan Kata Rujukan dalam Tanggapan",
+      "content": "Menggunakan kata seperti 'hal ini', 'karya tersebut' untuk menghindari pengulangan kata yang sama. Contoh: 'Lukisan itu indah. Karya tersebut memiliki warna berani'. Penjelasan: Kata rujukan membuat tulisan terasa lebih mengalir dan rapi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Tanggapan" },
+    "subtopic": "Menyusun Tanggapan Kritis",
+    "lesson": { 
+      "title": "Menanggapi Berita di Media Sosial",
+      "content": "Memberikan opini yang bijak terhadap isu yang sedang viral dengan data yang benar. Contoh: Komentar santun terhadap kebijakan sekolah. Penjelasan: Keterampilan menanggapi sangat penting untuk menjaga etika di dunia digital."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Diskusi" },
+    "subtopic": "Dua Sudut Pandang",
+    "lesson": { 
+      "title": "Pengertian dan Tujuan Teks Diskusi",
+      "content": "Teks yang menyajikan pendapat pro (setuju) dan kontra (tidak setuju) tentang suatu masalah untuk mencapai kesepakatan. Contoh: Diskusi tentang 'Pembatasan Penggunaan HP di Sekolah'. Penjelasan: Diskusi membantu kita melihat masalah dari berbagai perspektif."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Diskusi" },
+    "subtopic": "Dua Sudut Pandang",
+    "lesson": { 
+      "title": "Struktur: Isu dan Argumen Pendukung",
+      "content": "Memaparkan masalah dan alasan mengapa kelompok tertentu mendukung masalah tersebut. Contoh: Alasan mengapa game online bagus untuk kreativitas. Penjelasan: Setiap argumen harus didukung oleh bukti yang nyata agar tidak sekadar omong kosong."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Diskusi" },
+    "subtopic": "Dua Sudut Pandang",
+    "lesson": { 
+      "title": "Struktur: Argumen Penentang dan Simpulan",
+      "content": "Memaparkan alasan kelompok yang tidak setuju dan mencari jalan tengah di akhir. Contoh: Alasan mengapa game online buruk bagi kesehatan. Penjelasan: Simpulan diskusi biasanya berupa rekomendasi yang bisa diterima kedua belah pihak."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Diskusi" },
+    "subtopic": "Bahasa Diskusi",
+    "lesson": { 
+      "title": "Menggunakan Konjungsi Perlawanan",
+      "content": "Menggunakan kata hubung 'namun', 'tetapi', 'sebaliknya' untuk menunjukkan perbedaan pendapat. Contoh: 'Ali setuju, namun Budi berpendapat lain'. Penjelasan: Konjungsi perlawanan sangat penting untuk memperjelas adanya dua sisi yang berbeda."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Diskusi" },
+    "subtopic": "Bahasa Diskusi",
+    "lesson": { 
+      "title": "Kata Modalitas dalam Diskusi",
+      "content": "Menggunakan kata 'mungkin', 'seharusnya', 'tentu' untuk menunjukkan tingkat kepastian pendapat. Contoh: 'Siswa seharusnya diberi kebebasan memilih'. Penjelasan: Pilihan kata modalitas menentukan ketegasan sikap penulis dalam diskusi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Diskusi" },
+    "subtopic": "Bahasa Diskusi",
+    "lesson": { 
+      "title": "Latihan Debat Terarah Berbasis Teks",
+      "content": "Menyusun naskah bicara untuk tim pro dan kontra berdasarkan data yang ada. Contoh: Naskah diskusi tentang 'Ujian Nasional'. Penjelasan: Persiapan naskah yang matang membuat argumen lisan menjadi lebih tajam dan tertata."
+    }
+  }
+]

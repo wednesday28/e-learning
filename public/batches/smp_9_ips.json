@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Interaksi Antarbenua" },
+    "subtopic": "Geografi Dunia",
+    "lesson": { 
+      "title": "Kondisi Geografis Benua Asia dan Benua Lainnya",
+      "content": "Asia adalah benua terluas di dunia dengan keragaman iklim and bentang alam yang sangat ekstrem. Mengenal posisi and batas wilayah benua Amerika, Eropa, Afrika, and Australia. Contoh: Puncak tertinggi dunia Mount Everest di Asia and sungai terpanjang Nil di Afrika. Penjelasan: Letak geografis mempengaruhi persebaran sumber daya alam and pola pemukiman penduduk dunia."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Interaksi Antarbenua" },
+    "subtopic": "Geografi Dunia",
+    "lesson": { 
+      "title": "Dinamika Penduduk Benua-Benua di Dunia",
+      "content": "Perbedaan laju pertumbuhan penduduk, komposisi usia, and persebaran etnis di setiap benua. Contoh: Benua Eropa memiliki tren penduduk usia tua yang tinggi, sedangkan Afrika memiliki pertumbuhan penduduk sangat cepat. Penjelasan: Dinamika demografi ini berdampak pada kebutuhan lapangan kerja and ketahanan pangan global."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Interaksi Antarbenua" },
+    "subtopic": "Geografi Dunia",
+    "lesson": { 
+      "title": "Pengaruh Perubahan Ruang terhadap Interaksi Antarruang",
+      "content": "Perubahan fungsi lahan and kemajuan transportasi antarbenua memicu migrasi penduduk, perdagangan internasional, and pertukaran budaya. Contoh: Urbanisasi besar-besaran di kota-kota besar Asia seperti Tokyo and Jakarta. Penjelasan: Interaksi ini menjadikan dunia semakin terhubung tanpa sekat wilayah yang kaku."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Globalisasi dan Perubahan Sosial" },
+    "subtopic": "Sosiologi Modern",
+    "lesson": { 
+      "title": "Bentuk-bentuk Perubahan Sosial Budaya",
+      "content": "Perubahan sosial dapat bersifat lambat (evolusi) atau cepat (revolusi), serta direncanakan atau tidak direncanakan. Contoh: Revolusi Industri di Inggris yang mengubah sistem produksi dunia. Penjelasan: Perubahan sosial selalu terjadi seiring dengan perkembangan akal budi manusia and kebutuhan zaman."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Globalisasi dan Perubahan Sosial" },
+    "subtopic": "Sosiologi Modern",
+    "lesson": { 
+      "title": "Globalisasi di Berbagai Bidang Kehidupan",
+      "content": "Proses mendunia yang didorong oleh kemajuan teknologi informasi, komunikasi, and transportasi di bidang ekonomi, politik, and budaya. Contoh: Menonton siaran langsung acara musik dari Korea Selatan (K-Pop) di Indonesia. Penjelasan: Globalisasi menciptakan ketergantungan antar negara yang sangat kuat dalam segala aspek."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Globalisasi dan Perubahan Sosial" },
+    "subtopic": "Sosiologi Modern",
+    "lesson": { 
+      "title": "Dampak Globalisasi dan Upaya Menghadapinya",
+      "content": "Dampak positif berupa kemudahan akses informasi, namun dampak negatifnya bisa berupa lunturya nilai lokal (westernisasi). Contoh: Meningkatnya konsumerisme akibat iklan produk luar negeri yang masif. Penjelasan: Kita harus memiliki filter budaya yang kuat agar dapat mengambil manfaat globalisasi tanpa kehilangan jati diri."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Ekonomi Internasional" },
+    "subtopic": "Kesejahteraan",
+    "lesson": { 
+      "title": "Perdagangan Internasional dan Faktor Pendorongnya",
+      "content": "Kegiatan tukar menukar barang atau jasa antar negara yang didasari oleh perbedaan sumber daya alam and teknologi. Contoh: Indonesia mengekspor minyak sawit and mengimpor suku cadang mesin dari Jerman. Penjelasan: Perdagangan internasional meningkatkan pendapatan negara and memenuhi kebutuhan masyarakat yang tidak tersedia di dalam negeri."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Ekonomi Internasional" },
+    "subtopic": "Kesejahteraan",
+    "lesson": { 
+      "title": "Ekonomi Kreatif sebagai Keunggulan Bangsa",
+      "content": "Pemanfaatan ide, kreativitas, and bakat individu untuk menciptakan nilai ekonomi melalui seni, desain, aplikasi, and kuliner. Contoh: Suksesnya industri game lokal and fashion muslim Indonesia di pasar global. Penjelasan: Ekonomi kreatif menjadi tumpuan masa depan karena mengandalkan sumber daya manusia yang tidak akan habis."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Ekonomi Internasional" },
+    "subtopic": "Kesejahteraan",
+    "lesson": { 
+      "title": "Peran Pasar Bebas (AFTA, NAFTA, WTO)",
+      "content": "Organisasi kerjasama ekonomi yang bertujuan untuk meminimalkan hambatan perdagangan antar negara anggota. Contoh: Penghapusan bea masuk untuk produk-produk buatan sesama negara ASEAN. Penjelasan: Pasar bebas memicu kompetisi yang sehat namun mengharuskan produk lokal memiliki standar kualitas internasional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Indonesia Pasca Kemerdekaan" },
+    "subtopic": "Sejarah Politik",
+    "lesson": { 
+      "title": "Masa Demokrasi Parlementer (1950-1959)",
+      "content": "Periode di mana kekuasaan pemerintahan dipegang oleh kabinet yang bertanggung jawab kepada parlemen. Contoh: Jatuh bangunnya kabinet dalam waktu singkat yang menyebabkan ketidakstabilan politik. Penjelasan: Banyaknya partai politik yang saling berebut pengaruh menghambat pelaksanaan program pembangunan nasional."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Indonesia Pasca Kemerdekaan" },
+    "subtopic": "Sejarah Politik",
+    "lesson": { 
+      "title": "Masa Demokrasi Terpimpin (1959-1965)",
+      "content": "Sistem demokrasi di mana seluruh keputusan berpusat pada pemimpin negara (Soekarno) berdasarkan Dekrit Presiden 5 Juli 1959. Contoh: Konfrontasi Indonesia dengan Malaysia and keluarnya Indonesia dari PBB. Penjelasan: Masa ini ditandai dengan semangat nasionalisme yang tinggi namun mengalami krisis ekonomi yang berat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Indonesia Pasca Kemerdekaan" },
+    "subtopic": "Sejarah Politik",
+    "lesson": { 
+      "title": "Lahirnya Orde Baru dan Stabilitas Ekonomi",
+      "content": "Peralihan kekuasaan kepada Soeharto yang mengutamakan pembangunan ekonomi melalui program Repelita and Swasembada Pangan. Contoh: Keberhasilan Indonesia menjadi negara pengeskpor beras pada tahun 1984. Penjelasan: Orde Baru menciptakan stabilitas politik yang lama namun membatasi kebebasan berpendapat."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Era Reformasi" },
+    "subtopic": "Sejarah Modern",
+    "lesson": { 
+      "title": "Penyebab Jatuhnya Orde Baru",
+      "content": "Krisis moneter 1997, maraknya korupsi, kolusi, and nepotisme (KKN), serta tuntutan mahasiswa untuk perubahan sistem. Contoh: Demonstrasi besar-besaran di gedung DPR/MPR pada Mei 1998. Penjelasan: Ketidakpuasan rakyat terhadap pemerintah memuncak and memaksa Presiden Soeharto mengundurkan diri."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Era Reformasi" },
+    "subtopic": "Sejarah Modern",
+    "lesson": { 
+      "title": "Agenda Utama Reformasi di Indonesia",
+      "content": "Penegakan hukum, pemberantasan KKN, otonomi daerah, and amandemen UUD 1945 untuk membatasi masa jabatan presiden. Contoh: Pembentukan Komisi Pemberantasan Korupsi (KPK) sebagai lembaga independen. Penjelasan: Reformasi bertujuan menata ulang sistem bernegara agar lebih demokratis and transparan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Era Reformasi" },
+    "subtopic": "Sejarah Modern",
+    "lesson": { 
+      "title": "Perkembangan Demokrasi di Era Digital",
+      "content": "Masyarakat kini lebih mudah mengawasi kinerja pemerintah melalui media sosial and keterbukaan informasi publik. Contoh: Penyelenggaraan Pemilu secara langsung and damai sejak tahun 2004. Penjelasan: Partisipasi aktif warga negara sangat penting untuk menjaga jalannya demokrasi yang sehat di masa depan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Kependudukan Dunia" },
+    "subtopic": "Isu Global",
+    "lesson": { 
+      "title": "Masalah Kependudukan di Negara Berkembang",
+      "content": "Tingginya angka kelahiran yang tidak sebanding dengan ketersediaan sarana pendidikan and lapangan kerja. Contoh: Masalah pemukiman kumuh (slum) di kota-kota besar India and Brasil. Penjelasan: Pengendalian penduduk sangat diperlukan agar kualitas hidup masyarakat dapat ditingkatkan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Kependudukan Dunia" },
+    "subtopic": "Isu Global",
+    "lesson": { 
+      "title": "Dampak Urbanisasi bagi Kota dan Desa",
+      "content": "Perpindahan penduduk dari desa ke kota yang menyebabkan kepadatan di kota and berkurangnya tenaga kerja di desa. Contoh: Kemacetan and polusi udara yang parah di kota pusat industri. Penjelasan: Pembangunan desa yang mandiri ekonomi dapat menahan laju urbanisasi yang berlebihan."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Kependudukan Dunia" },
+    "subtopic": "Isu Global",
+    "lesson": { 
+      "title": "Tenaga Kerja Indonesia (TKI) dan Kontribusinya",
+      "content": "Warga negara Indonesia yang bekerja di luar negeri sebagai pahlawan devisa namun memerlukan perlindungan hukum yang kuat. Contoh: Kiriman uang (remitansi) TKI yang membantu perekonomian keluarga di desa. Penjelasan: Peningkatan keahlian (skill) sangat penting agar TKI memiliki daya saing yang tinggi di pasar global."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Budaya Global" },
+    "subtopic": "Akulturasi Modern",
+    "lesson": { 
+      "title": "Pengaruh Budaya Populer Dunia (Pop Culture)",
+      "content": "Tren gaya hidup, musik, and film global yang diadopsi secara masif oleh generasi muda di seluruh dunia. Contoh: Demam kuliner Jepang (Sushi) and Amerika (Burger) yang menjamur di Indonesia. Penjelasan: Budaya populer menjadi sarana diplomasi (soft power) bagi negara-negara maju."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Budaya Global" },
+    "subtopic": "Akulturasi Modern",
+    "lesson": { 
+      "title": "Pentingnya Literasi Digital bagi Pelajar",
+      "content": "Kemampuan untuk memahami, menyaring, and menggunakan informasi dari internet secara bijak and bertanggung jawab. Contoh: Tidak mudah percaya pada berita bohong (hoax) and menjaga data pribadi. Penjelasan: Literasi digital melindungi kita dari pengaruh negatif arus informasi dunia yang tidak terkontrol."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Budaya Global" },
+    "subtopic": "Akulturasi Modern",
+    "lesson": { 
+      "title": "Promosi Budaya Lokal di Kancah Internasional",
+      "content": "Menggunakan platform digital untuk memperkenalkan kekayaan seni and tradisi Indonesia kepada dunia luar. Contoh: Penggunaan kain batik oleh tokoh-tokoh dunia dalam acara resmi. Penjelasan: Bangga akan budaya sendiri adalah langkah awal agar bangsa lain juga menghargai identitas kita."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Lingkungan dan Pembangunan" },
+    "subtopic": "Pembangunan Berkelanjutan",
+    "lesson": { 
+      "title": "Konsep Pembangunan Berkelanjutan",
+      "content": "Pembangunan yang memenuhi kebutuhan masa kini tanpa mengorbankan hak generasi mendatang untuk hidup layak. Contoh: Pemanfaatan energi matahari (PLTS) sebagai pengganti batubara. Penjelasan: Kelestarian alam harus dijaga seiring dengan kemajuan ekonomi agar bumi tetap layak huni."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Lingkungan dan Pembangunan" },
+    "subtopic": "Pembangunan Berkelanjutan",
+    "lesson": { 
+      "title": "Kerjasama Internasional Menangani Perubahan Iklim",
+      "content": "Kesepakatan negara-negara dunia (seperti Perjanjian Paris) untuk menurunkan emisi gas karbon demi menahan kenaikan suhu bumi. Contoh: Penanaman kembali hutan mangrove di pesisir pantai. Penjelasan: Masalah lingkungan adalah masalah bersama yang memerlukan aksi nyata dari seluruh bangsa."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Lingkungan dan Pembangunan" },
+    "subtopic": "Pembangunan Berkelanjutan",
+    "lesson": { 
+      "title": "Gaya Hidup Ramah Lingkungan (Eco-Friendly)",
+      "content": "Tindakan sederhana setiap hari seperti membawa kantong belanja sendiri and mengurangi penggunaan plastik sekali pakai. Contoh: Memisahkan sampah organik and anorganik di rumah. Penjelasan: Perubahan perilaku individu sangat berdampak besar bagi kesehatan ekosistem lingkungan global."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Ketahanan Ekonomi Nasional" },
+    "subtopic": "Kemandirian",
+    "lesson": { 
+      "title": "Peran UMKM dalam Menopang Ekonomi Nasional",
+      "content": "Usaha Mikro, Kecil, and Menengah menjadi tulang punggung ekonomi karena tahan banting saat krisis and menyerap banyak pekerja. Contoh: Kedai kopi lokal yang menggunakan biji kopi petani asli daerah. Penjelasan: Memajukan UMKM berarti memperkuat ekonomi rakyat dari akar rumput."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Ketahanan Ekonomi Nasional" },
+    "subtopic": "Kemandirian",
+    "lesson": { 
+      "title": "Investasi dan Modal dalam Pembangunan",
+      "content": "Pemerintah memerlukan investasi asing and dalam negeri untuk membangun infrastruktur seperti jalan tol, pelabuhan, and bandara. Contoh: Pembangunan Kereta Cepat Jakarta-Bandung sebagai proyek strategis nasional. Penjelasan: Infrastruktur yang baik akan menurunkan biaya pengiriman barang and meningkatkan pertumbuhan ekonomi."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Ketahanan Ekonomi Nasional" },
+    "subtopic": "Kemandirian",
+    "lesson": { 
+      "title": "Koperasi sebagai Soko Guru Perekonomian",
+      "content": "Badan usaha yang berlandaskan asas kekeluargaan untuk menyejahterakan para anggotanya. Contoh: Koperasi Unit Desa (KUD) yang membantu petani mendapatkan modal and pasar. Penjelasan: Prinsip gotong royong dalam koperasi sangat sesuai dengan jiwa and identitas bangsa Indonesia."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Konflik Dunia Modern" },
+    "subtopic": "Perdamaian Global",
+    "lesson": { 
+      "title": "Sengketa Wilayah dan Hukum Laut Internasional",
+      "content": "Pentingnya UNCLOS 1982 dalam mengatur batas laut suatu negara untuk mencegah konflik antar negara tetangga. Contoh: Sengketa di Laut Natuna Utara terkait hak berdaulat Indonesia. Penjelasan: Diplomasi and hukum internasional adalah jalan utama dalam menyelesaikan sengketa wilayah secara damai."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Konflik Dunia Modern" },
+    "subtopic": "Perdamaian Global",
+    "lesson": { 
+      "title": "Isu Terorisme dan Radikalisme Global",
+      "content": "Paham ekstrem yang mengancam keamanan and persatuan masyarakat melalui tindakan kekerasan. Contoh: Upaya pemerintah melakukan deradikalisasi and penguatan nilai Pancasila. Penjelasan: Toleransi and moderasi beragama adalah penangkal paling efektif terhadap paham radikal."
+    }
+  },
+  {
+    "level": "SMP",
+    "grade": 9,
+    "subject": "IPS",
+    "topic": { "name": "Konflik Dunia Modern" },
+    "subtopic": "Perdamaian Global",
+    "lesson": { 
+      "title": "Peran Indonesia dalam Menjaga Perdamaian Dunia",
+      "content": "Pengiriman Kontingen Garuda and peran aktif dalam forum diplomasi untuk membantu negara yang berkonflik. Contoh: Bantuan kemanusiaan Indonesia untuk rakyat Palestina. Penjelasan: Melaksanakan ketertiban dunia adalah amanat konstitusi yang terus dijalankan Indonesia."
+    }
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Fenomena Alam",
+    "lesson": { 
+      "title": "Proses Terjadinya Hujan",
+      "content": "Teks eksplanasi menjelaskan 'mengapa' dan 'bagaimana' suatu fenomena terjadi. Hujan diawali dengan penguapan air laut (evaporasi), pembentukan awan (kondensasi), hingga butiran air jatuh ke bumi (presipitasi). Contoh: Urutan kejadian hujan. Penjelasan: Gunakan kata sambung urutan waktu seperti 'pertama', 'kemudian', dan 'akhirnya' untuk memperjelas proses."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Fenomena Alam",
+    "lesson": { 
+      "title": "Sebab Terjadinya Pelangi",
+      "content": "Pelangi terjadi karena pembiasan cahaya matahari oleh tetesan air hujan. Cahaya putih matahari terurai menjadi spektrum warna (me-ji-ku-hi-bi-ni-u). Contoh: Deskripsi proses pembiasan cahaya. Penjelasan: Eksplanasi fenomena alam harus berdasarkan fakta ilmiah yang akurat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Fenomena Alam",
+    "lesson": { 
+      "title": "Terjadinya Siang dan Malam",
+      "content": "Siang dan malam terjadi akibat rotasi bumi pada porosnya. Bagian bumi yang menghadap matahari mengalami siang, dan yang membelakangi mengalami malam. Contoh: Ilustrasi rotasi bumi. Penjelasan: Teks ini membantu kita memahami siklus harian secara logis."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Fenomena Sosial",
+    "lesson": { 
+      "title": "Penyebab Sampah di Sungai",
+      "content": "Sampah menumpuk karena kebiasaan buruk membuang sampah sembarangan dan kurangnya fasilitas pembuangan. Hal ini menyebabkan aliran air tersumbat dan banjir. Contoh: Hubungan sebab-akibat sampah dan banjir. Penjelasan: Eksplanasi sosial mengupas masalah yang ada di sekitar masyarakat kita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Fenomena Sosial",
+    "lesson": { 
+      "title": "Proses Pembuatan Kertas",
+      "content": "Kertas dibuat dari serat kayu yang diolah menjadi bubur kertas (pulp), lalu dikeringkan and dipress menjadi lembaran. Contoh: Tahapan produksi kertas di pabrik. Penjelasan: Memahami asal-usul benda membantu kita lebih menghargai sumber daya alam."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Eksplanasi" },
+    "subtopic": "Fenomena Sosial",
+    "lesson": { 
+      "title": "Meringkas Teks Eksplanasi",
+      "content": "Carilah gagasan utama dari setiap paragraf proses untuk membuat ringkasan yang padat. Contoh: Ringkasan teks 'Siklus Air'. Penjelasan: Ringkasan yang baik harus tetap memuat urutan kejadian yang benar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Persuasi" },
+    "subtopic": "Iklan dan Ajakan",
+    "lesson": { 
+      "title": "Ciri-ciri Teks Persuasi",
+      "content": "Teks persuasi bertujuan membujuk atau meyakinkan pembaca agar melakukan sesuatu. Menggunakan kata ajakan seperti 'ayo' dan 'mari'. Contoh: Kalimat ajakan dalam iklan. Penjelasan: Kekuatan persuasi terletak pada alasan yang meyakinkan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Persuasi" },
+    "subtopic": "Iklan dan Ajakan",
+    "lesson": { 
+      "title": "Menulis Iklan Layanan Masyarakat",
+      "content": "Buatlah ajakan untuk menghemat air atau energi. Gunakan kalimat singkat yang mudah diingat. Contoh: 'Hemat energi, selamatkan bumi!'. Penjelasan: Iklan harus menarik perhatian dalam waktu singkat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Persuasi" },
+    "subtopic": "Iklan dan Ajakan",
+    "lesson": { 
+      "title": "Membedakan Fakta dan Opini dalam Persuasi",
+      "content": "Fakta adalah kenyataan objektif, opini adalah pendapat pribadi. Contoh: 'Susu ini sehat (fakta). Susu ini sangat enak (opini)'. Penjelasan: Persuasi yang kuat menggabungkan fakta menarik dengan opini positif."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Persuasi" },
+    "subtopic": "Argumentasi Pendukung",
+    "lesson": { 
+      "title": "Memberikan Alasan yang Logis",
+      "content": "Sampaikan alasan mengapa pembaca harus setuju dengan ajakanmu. Contoh: 'Mari menabung karena masa depan butuh biaya'. Penjelasan: Alasan yang masuk akal akan lebih mudah diterima pembaca."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Persuasi" },
+    "subtopic": "Argumentasi Pendukung",
+    "lesson": { 
+      "title": "Struktur Teks Persuasi",
+      "content": "Terdiri dari pengenalan isu, rangkaian argumen, pernyataan ajakan, dan penegasan kembali. Contoh: Teks ajakan menanam pohon. Penjelasan: Struktur ini memastikan pesan tersampaikan secara sistematis."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Teks Persuasi" },
+    "subtopic": "Argumentasi Pendukung",
+    "lesson": { 
+      "title": "Latihan Menulis Teks Persuasi Pendek",
+      "content": "Pilihlah satu tema lingkungan dan buatlah satu paragraf ajakan. Contoh: Paragraf ajakan membuang sampah. Penjelasan: Gunakan bahasa yang santun namun tegas dalam mengajak."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Majas" },
+    "subtopic": "Majas Personifikasi",
+    "lesson": { 
+      "title": "Pengertian Majas Personifikasi",
+      "content": "Majas yang mengumpamakan benda mati seolah-olah hidup seperti manusia. Contoh: 'Angin menari-nari di sela daun'. Penjelasan: Majas membuat tulisan terasa lebih hidup dan puitis."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Majas" },
+    "subtopic": "Majas Personifikasi",
+    "lesson": { 
+      "title": "Menemukan Personifikasi dalam Puisi",
+      "content": "Carilah kata kerja manusia yang digunakan untuk benda mati. Contoh: 'Ombak berkejaran menuju pantai'. Penjelasan: Memahami makna kiasan dalam karya sastra."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Majas" },
+    "subtopic": "Majas Personifikasi",
+    "lesson": { 
+      "title": "Membuat Kalimat dengan Majas Personifikasi",
+      "content": "Coba tulis kalimat tentang matahari menggunakan majas ini. Contoh: 'Matahari mengintip dari balik awan'. Penjelasan: Latihan imajinasi dalam menyusun kata-kata."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Majas" },
+    "subtopic": "Majas Metafora dan Hiperbola",
+    "lesson": { 
+      "title": "Majas Metafora: Perbandingan Langsung",
+      "content": "Membandingkan dua hal tanpa kata penghubung. Contoh: 'Budi adalah kutu buku'. Penjelasan: 'Kutu buku' artinya orang yang sangat gemar membaca."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Majas" },
+    "subtopic": "Majas Metafora dan Hiperbola",
+    "lesson": { 
+      "title": "Majas Hiperbola: Melebih-lebihkan",
+      "content": "Majas yang melebih-lebihkan sesuatu agar terdengar hebat. Contoh: 'Suaranya menggelegar membelah angkasa'. Penjelasan: Digunakan untuk memberi penekanan emosi yang kuat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Majas" },
+    "subtopic": "Majas Metafora dan Hiperbola",
+    "lesson": { 
+      "title": "Membedakan Metafora dan Hiperbola",
+      "content": "Metafora adalah kiasan sifat, hiperbola adalah kiasan jumlah/kekuatan. Contoh: Soal latihan identifikasi majas. Penjelasan: Ketelitian dalam memahami gaya bahasa."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Pidato Singkat" },
+    "subtopic": "Persiapan Pidato",
+    "lesson": { 
+      "title": "Bagian-bagian Teks Pidato",
+      "content": "Terdiri dari pembukaan (salam/sapaan), isi (inti pesan), and penutup (kesimpulan/harapan). Contoh: Kerangka pidato hari guru. Penjelasan: Struktur yang jelas membuat pidato mudah diikuti pendengar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Pidato Singkat" },
+    "subtopic": "Persiapan Pidato",
+    "lesson": { 
+      "title": "Menentukan Tema dan Tujuan Pidato",
+      "content": "Pilihlah satu tema yang kamu kuasai, misalnya kebersihan kelas. Contoh: Tema perpisahan sekolah. Penjelasan: Tujuan pidato bisa untuk memberi info atau mengajak teman."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Pidato Singkat" },
+    "subtopic": "Persiapan Pidato",
+    "lesson": { 
+      "title": "Menulis Pembukaan Pidato yang Menarik",
+      "content": "Mulailah dengan salam hormat dan ucapan syukur. Contoh: 'Yang terhormat Ibu Guru dan teman-teman...'. Penjelasan: Pembukaan yang baik akan menarik perhatian pendengar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Pidato Singkat" },
+    "subtopic": "Teknik Berpidato",
+    "lesson": { 
+      "title": "Lafal, Intonasi, dan Ekspresi",
+      "content": "Berpidato harus jelas suaranya, nada yang pas, dan wajah yang sesuai tema. Contoh: Video contoh pidato anak. Penjelasan: Kepercayaan diri adalah kunci kesuksesan berpidato."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Pidato Singkat" },
+    "subtopic": "Teknik Berpidato",
+    "lesson": { 
+      "title": "Posisi Tubuh dan Pandangan Mata",
+      "content": "Berdiri tegak dan lihatlah audiens (pendengar). Jangan hanya menunduk membaca teks. Contoh: Tips bahasa tubuh saat pidato. Penjelasan: Kontak mata membuat pendengar merasa dihargai."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Pidato Singkat" },
+    "subtopic": "Teknik Berpidato",
+    "lesson": { 
+      "title": "Latihan Berpidato di Depan Cermin",
+      "content": "Berlatih sendiri untuk melihat ekspresi dan memperbaiki kesalahan bicara. Contoh: Latihan mandiri di rumah. Penjelasan: Persiapan matang akan mengurangi rasa gugup."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Esai" },
+    "subtopic": "Struktur Esai Sederhana",
+    "lesson": { 
+      "title": "Pengertian Esai Pendek",
+      "content": "Esai adalah tulisan yang berisi pendapat atau pikiran penulis tentang suatu masalah. Contoh: Esai tentang manfaat membaca. Penjelasan: Esai berbeda dengan cerita karena lebih fokus pada gagasan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Esai" },
+    "subtopic": "Struktur Esai Sederhana",
+    "lesson": { 
+      "title": "Membuat Pendahuluan yang Jelas",
+      "content": "Sampaikan masalah apa yang akan kamu bahas di bagian awal. Contoh: Masalah sampah di sekolah. Penjelasan: Pendahuluan memberi gambaran isi tulisanmu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Esai" },
+    "subtopic": "Struktur Esai Sederhana",
+    "lesson": { 
+      "title": "Menyusun Argumen dalam Batang Tubuh",
+      "content": "Berikan fakta atau alasan untuk mendukung pendapatmu. Contoh: 'Membaca buku bisa menambah ilmu karena...'. Penjelasan: Argumen yang kuat membuat tulisanmu dipercaya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Esai" },
+    "subtopic": "Penyuntingan Esai",
+    "lesson": { 
+      "title": "Ejaan dan Tanda Baca dalam Esai",
+      "content": "Periksa penulisan huruf kapital, titik, and koma agar tulisan rapi. Contoh: Koreksi kesalahan ejaan. Penjelasan: Tulisan yang benar sesuai aturan akan lebih enak dibaca."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Esai" },
+    "subtopic": "Penyuntingan Esai",
+    "lesson": { 
+      "title": "Kepaduan Antar Paragraf",
+      "content": "Gunakan kata penghubung agar paragraf satu dan lainnya nyambung. Contoh: Kata 'selain itu', 'oleh karena itu'. Penjelasan: Aliran tulisan yang lancar memudahkan pembaca memahami ide."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Bahasa Indonesia",
+    "topic": { "name": "Menulis Esai" },
+    "subtopic": "Penyuntingan Esai",
+    "lesson": { 
+      "title": "Menulis Kesimpulan yang Berkesan",
+      "content": "Tutup esai dengan kalimat yang merangkum pendapatmu. Contoh: 'Jadi, marilah kita mulai gemar membaca'. Penjelasan: Penutup yang baik meninggalkan kesan mendalam bagi pembaca."
+    }
+  }
+]

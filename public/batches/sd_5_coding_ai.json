@@ -1,0 +1,332 @@
+[
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Koding & Logika" },
+    "subtopic": "Apa itu Koding?",
+    "lesson": { 
+      "title": "Bahasa Mesin vs Bahasa Manusia",
+      "content": "Selamat datang di dunia koding! Bayangkan kamu sedang berbicara dengan seorang teman. Kamu menggunakan bahasa seperti Bahasa Indonesia atau Inggris agar ia mengerti maksudmu. Nah, komputer juga punya bahasanya sendiri. Komputer adalah mesin yang sangat patuh, tapi ia tidak sepintar manusia dalam menangkap perasaan atau petunjuk yang samar. Ia hanya mengerti instruksi yang sangat spesifik dan logis. Koding adalah cara kita 'berbicara' kepada komputer untuk memberitahunya apa yang harus dilakukan. Bahasa manusia penuh dengan kiasan dan emosi, sedangkan bahasa komputer (kode) terdiri dari perintah yang pasti. Di level paling dasar, komputer hanya mengenal angka 0 dan 1 (biner). Namun, karena sangat sulit bagi manusia untuk menulis 0 dan 1 sepanjang hari, diciptakanlah bahasa koding yang lebih mirip bahasa manusia agar kita bisa memberikan perintah dengan lebih mudah. Contohnya, jika kita ingin komputer menampilkan tulisan 'Halo', kita tidak perlu menulis ribuan angka biner, cukup gunakan perintah koding yang sesuai. Dengan memahami perbedaan ini, kamu akan mulai belajar cara berpikir yang terstruktur. Kamu tidak bisa berkata 'Tolong buatkan jus yang enak' kepada komputer tanpa merinci langkah-langkahnya: ambil gelas, ambil buah, masukkan ke blender, nyalakan blender, dan seterusnya. Inilah inti dari koding: memecah keinginan besar menjadi instruksi kecil yang bisa dimengerti oleh mesin. Koding bukan hanya tentang mengetik di depan layar, tapi tentang bagaimana kita menerjemahkan ide-ide kreatif di kepala kita menjadi bahasa yang bisa dieksekusi oleh teknologi di sekitar kita."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Koding & Logika" },
+    "subtopic": "Apa itu Koding?",
+    "lesson": { 
+      "title": "Mengapa Belajar Koding?",
+      "content": "Mungkin kamu bertanya-tanya, 'Kenapa aku harus belajar koding jika aku tidak ingin jadi programmer?'. Jawabannya sederhana: koding adalah kemampuan baru untuk abad ke-21. Belajar koding bukan hanya tentang membuat aplikasi atau game, tapi tentang melatih otakmu untuk memecahkan masalah. Saat kamu koding, kamu belajar berpikir logis dan sistematis. Kamu akan terbiasa melihat masalah besar dan membaginya menjadi bagian-bagian kecil yang lebih mudah dikelola. Selain itu, hampir semua alat yang kita gunakan saat ini menggunakan koding. HP, televisi, mobil, bahkan kulkas modern pun dioperasikan oleh kode. Dengan mengerti koding, kamu tidak hanya menjadi pengguna teknologi, tapi menjadi pencipta teknologi. Kamu bisa membuat solusi untuk masalah di sekitarmu. Misalnya, kamu ingin membuat alat pengingat waktu minum air putih, atau membuat website untuk memamerkan hobimu. Koding memberikanmu kekuatan untuk mewujudkan imajinasi menjadi kenyataan digital. Di masa depan, banyak pekerjaan baru yang muncul yang membutuhkan pemahaman teknologi. Tapi yang paling penting, koding itu menyenangkan! Kamu bisa bereksperimen, mencoba hal baru, dan tidak perlu takut salah karena setiap kesalahan (bug) adalah kesempatan untuk belajar hal baru. Belajar koding berarti kamu sedang belajar bahasa masa depan yang akan membantumu di bidang apa pun yang kamu pilih nanti, baik itu menjadi dokter, artis, guru, atau ilmuwan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Koding & Logika" },
+    "subtopic": "Apa itu Koding?",
+    "lesson": { 
+      "title": "Koding dalam Kehidupan Sehari-hari",
+      "content": "Tanpa kita sadari, koding ada di mana-mana di sekitar kita. Ketika kamu menekan tombol di remote TV dan channel berubah, itu adalah hasil dari koding. Ketika lampu lalu lintas berubah dari merah ke hijau secara otomatis, ada kode yang mengatur waktunya. Bahkan di dapur, oven microwave menggunakan kode untuk memutar piringan dan mengatur panas sesuai waktu yang kamu masukkan. Koding adalah instruksi yang tersembunyi di balik perangkat elektronik. Mari kita lihat contoh lain: ATM. Saat orang tuamu memasukkan kartu dan mengetik PIN, ada kode yang memeriksa apakah PIN itu benar, lalu mengecek apakah uang di saldo cukup, baru kemudian mengeluarkan uang tunai. Semua proses itu terjadi dalam hitungan detik karena kode yang ditulis dengan sangat teliti. Di dunia medis, alat rontgen dan monitor detak jantung juga bekerja berdasarkan koding untuk membantu dokter menyelamatkan nyawa. Bahkan di luar angkasa, robot-robot penjelajah di Planet Mars dikendalikan melalui koding yang dikirimkan dari Bumi. Dengan memahami bahwa koding menyentuh setiap aspek kehidupan, kita sadar betapa pentingnya peran koding dalam kemajuan peradaban. Koding membantu kita melakukan pekerjaan berbahaya melalui robot, membantu kita berkomunikasi jarak jauh melalui internet, dan menghibur kita melalui film animasi dan video game. Mengetahui cara kerja ini membuat kita lebih bijak dalam menggunakan teknologi dan terinspirasi untuk membuat sesuatu yang bermanfaat bagi orang banyak melalui baris-baris kode sederhana."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Koding & Logika" },
+    "subtopic": "Logika Komputer",
+    "lesson": { 
+      "title": "Pernyataan Benar atau Salah (Boolean)",
+      "content": "Dalam dunia koding, ada konsep yang sangat penting yang disebut Logika Boolean. Nama ini diambil dari seorang matematikawan bernama George Boole. Logika ini sangat sederhana: segala sesuatu hanya punya dua kemungkinan, yaitu Benar (True) atau Salah (False). Komputer menggunakan prinsip ini untuk membuat keputusan. Bayangkan komputer sebagai sebuah saklar lampu; saklar itu hanya bisa berada dalam posisi menyala (Benar) atau mati (Salah). Tidak ada posisi di tengah-tengah. Contohnya dalam kehidupan sehari-hari: 'Apakah hari ini hujan?'. Jawabannya hanya bisa 'Ya' (Benar) atau 'Tidak' (Salah). Jika jawabannya Benar, maka instruksi berikutnya adalah 'Bawa Payung'. Jika jawabannya Salah, maka instruksi berikutnya adalah 'Jangan bawa payung'. Dalam koding, kita sering menggunakan perbandingan untuk menghasilkan nilai Boolean ini. Misalnya, 'Apakah 5 lebih besar dari 3?'. Jawabannya adalah Benar. 'Apakah 2 sama dengan 10?'. Jawabannya adalah Salah. Logika ini adalah dasar dari semua kecerdasan buatan dan program komputer. Saat kamu login ke sebuah aplikasi, komputer bertanya: 'Apakah kata sandi yang dimasukkan sama dengan kata sandi di memori?'. Jika Benar, kamu boleh masuk. Jika Salah, akses ditolak. Mempelajari Boolean membantu kita berpikir sangat jernih. Kita belajar untuk tidak ragu-ragu dan memberikan instruksi yang pasti. Tanpa logika Benar dan Salah, komputer akan bingung dan tidak tahu harus berbuat apa. Dengan menguasai konsep ini, kamu sudah satu langkah lebih dekat untuk bisa merancang alur berpikir sebuah program yang cerdas dan bebas dari kesalahan logika."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Koding & Logika" },
+    "subtopic": "Logika Komputer",
+    "lesson": { 
+      "title": "Urutan Instruksi (Sequence)",
+      "content": "Komputer melakukan segala sesuatu langkah demi langkah, persis seperti urutan resep masakan. Konsep ini disebut sebagai Urutan atau Sequence. Urutan sangatlah penting karena jika langkah-langkahnya tertukar, hasilnya bisa kacau. Bayangkan jika kamu ingin memakai sepatu, tapi kamu memakai sepatu dulu baru memakai kaus kaki. Pasti tidak bisa, kan? Kamu harus memakai kaus kaki terlebih dahulu (Langkah 1), baru kemudian memakai sepatu (Langkah 2). Begitu juga dengan komputer. Jika kamu sedang membuat game di mana karakter harus melompat lalu mengambil koin, urutannya harus tepat. Jika kodenya memerintahkan karakter mengambil koin dulu sebelum sampai di posisi koin, maka karakter tidak akan mendapatkan apa-apa. Dalam koding, komputer membaca baris perintah dari atas ke bawah. Instruksi di baris pertama dijalankan, setelah selesai baru lanjut ke baris kedua, dan seterusnya. Sebagai pemula di bidang koding, tugas utamamu adalah menjadi sutradara yang baik yang menyusun skenario langkah demi langkah. Cobalah berlatih dengan kegiatan sehari-hari, misalnya urutan menyikat gigi: ambil sikat, beri pasta gigi, gosok gigi, kumur-kumur, cuci sikat. Jika kumur-kumur dilakukan sebelum gosok gigi, tentu tidak efektif. Dengan melatih kemampuan menyusun urutan, kamu sedang melatih ketelitianmu. Program yang bagus adalah program yang urutan instruksinya sangat logis sehingga tujuan akhir bisa tercapai dengan cepat dan efisien tanpa ada langkah yang terbuang sia-sia."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengantar Koding & Logika" },
+    "subtopic": "Logika Komputer",
+    "lesson": { 
+      "title": "Logika Jika-Maka (If-Then) Sederhana",
+      "content": "Komputer bisa 'berpikir' dan mengambil keputusan berkat logika Jika-Maka (If-Then). Ini adalah cara kita memberikan kecerdasan pada program. Struktur dasarnya adalah: JIKA sesuatu terjadi (Benar), MAKA lakukan tindakan tertentu. Contoh paling nyata adalah saat kamu bermain video game. JIKA karaktermu menyentuh musuh, MAKA nyawa berkurang. JIKA karaktermu menyentuh koin, MAKA skor bertambah. Logika ini membuat program menjadi interaktif dan responsif terhadap lingkungan. Tanpa If-Then, program hanya akan berjalan lurus saja tanpa mempedulikan input dari pengguna. Kita juga sering menggunakan ini dalam kehidupan nyata. JIKA kamu merasa lapar, MAKA kamu makan. JIKA kamu mengantuk, MAKA kamu tidur. Dalam dunia digital, If-Then memungkinkan kita membuat sistem yang canggih. Misalnya, AC otomatis di ruangan: JIKA suhu ruangan di atas 25 derajat, MAKA nyalakan mesin pendingin. JIKA suhu sudah sejuk di bawah 22 derajat, MAKA matikan mesin pendingin. Dengan menggunakan logika ini, kita bisa menghemat energi dan membuat hidup lebih nyaman. Saat kamu mulai koding nanti, kamu akan banyak menggunakan blok kode If-Then. Kamu harus belajar menebak segala kemungkinan yang akan terjadi agar programmu bisa menangani situasi apa pun. Belajar logika If-Then mengasah daya analisismu untuk memikirkan sebab dan akibat dari sebuah kejadian, yang merupakan inti dari ilmu pengetahuan dan rekayasa teknologi modern."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Alur Pemrograman Sederhana" },
+    "subtopic": "Algoritma Dasar",
+    "lesson": { 
+      "title": "Membuat Algoritma Membuat Teh",
+      "content": "Kata 'Algoritma' mungkin terdengar rumit, tapi sebenarnya itu hanya istilah koding untuk 'rencana langkah-langkah'. Mari kita berlatih membuat algoritma untuk kegiatan sehari-hari yang paling sederhana: membuat segelas teh manis. Seorang manusia mungkin hanya butuh instruksi 'Tolong buatkan teh', tapi komputer butuh detail. Algoritma membuat teh yang baik untuk komputer akan terlihat seperti ini: 1. Ambil gelas kosong. 2. Masukkan satu kantong teh celup ke dalam gelas. 3. Rebus air sampai mendidih. 4. Tuangkan air panas ke dalam gelas sampai hampir penuh. 5. Tunggu 2 menit sampai air berubah warna. 6. Ambil kantong teh dan buang. 7. Masukkan 2 sendok gula pasir. 8. Aduk sampai gula larut. 9. Teh siap disajikan. Perhatikan betapa setiap langkah harus spesifik. Jika kita lupa langkah nomor 8 (aduk), maka tehnya tidak akan manis di bagian atas. Jika kita lupa langkah nomor 3 (rebus air), tehnya tidak akan larut. Algoritma adalah jembatan antara pikiran kita dengan tindakan komputer. Di dalam koding, algoritma yang baik haruslah efisien. Jika ada langkah yang bisa disingkat tanpa merubah hasil, itu lebih bagus. Misalnya, menyiapkan air panas sambil mengambil gelas bisa menghemat waktu. Dengan belajar menulis algoritma untuk hal-hal sederhana seperti membuat teh atau mengikat tali sepatu, kamu sedang melatih kemampuanmu untuk merancang sistem yang kuat. Programmer hebat adalah mereka yang mampu merancang algoritma yang sangat cerdas sebelum mereka mulai mengetik kode sama sekali."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Alur Pemrograman Sederhana" },
+    "subtopic": "Algoritma Dasar",
+    "lesson": { 
+      "title": "Algoritma Rute Sekolah",
+      "content": "Mari kita tingkatkan pemahaman algoritma kita dengan tantangan yang lebih dinamis: mencari rute ke sekolah. Ini adalah contoh algoritma navigasi, seperti yang digunakan Google Maps. Bayangkan kamu adalah sebuah robot yang harus berjalan dari rumah ke sekolah. Kamu butuh instruksi yang jelas: kapan harus lurus, kapan harus belok kanan, dan apa yang harus dilakukan jika ada lampu merah. Algoritmanya mungkin seperti ini: 1. Keluar rumah. 2. Berjalan lurus sejauh 100 meter sampai pertigaan. 3. JIKA lampu lalu lintas merah, tunggu sampai hijau. 4. Belok kanan. 5. Jalan lurus melewati minimarket. 6. JIKA ada kucing menyeberang, berhenti sebentar. 7. Belok kiri di depan masjid. 8. Berhenti di gerbang sekolah. Dalam algoritma ini, kita tidak hanya menggunakan urutan (Sequence), tapi juga logika pengambilan keputusan (If-Then). Ini membuat algoritma kita lebih 'pintar' karena bisa menangani situasi yang tidak terduga di jalan. Komputer sangat menyukai rute yang paling cepat dan aman. Ketika kamu memesan ojek online, aplikasi tersebut menjalankan algoritma ribuan kali dalam sedetik untuk menemukan driver terdekat dan rute terbaik agar kamu tidak terlambat. Belajar membuat algoritma rute melatihmu untuk peka terhadap lingkungan dan memahami konsep koordinat serta arah mata angin. Kemampuan ini sangat penting jika nanti kamu ingin membuat program robotika atau game petualangan di mana karaktermu harus menjelajahi peta yang luas tanpa tersesat."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Alur Pemrograman Sederhana" },
+    "subtopic": "Algoritma Dasar",
+    "lesson": { 
+      "title": "Memperbaiki Algoritma yang Salah (Debugging)",
+      "content": "Tidak ada program yang langsung sempurna saat pertama kali dibuat. Pasti ada kesalahan, dan dalam dunia koding, kesalahan itu disebut 'Bug' (kutu). Mengapa disebut bug? Ceritanya dulu ada serangga sungguhan yang masuk ke dalam mesin komputer raksasa dan menyebabkan kerusakan. Kini, bug berarti kesalahan logika dalam kode kita. Proses mencari dan memperbaiki kesalahan ini disebut 'Debugging'. Bayangkan kamu punya algoritma membuat kue: 1. Masukkan tepung. 2. Masukkan telur. 3. Panggang di oven. 4. Aduk sampai rata. Apakah kamu melihat kesalahannya? Ya, kamu seharusnya mengaduk dulu (Langkah 4) baru memanggang (Langkah 3). Jika dijalankan, kuemu pasti gagal. Inilah bug logika. Saat kamu koding dan programmu tidak berjalan sesuai keinginan, jangan sedih! Itu artinya kamu punya kesempatan untuk menjadi detektif koding. Kamu harus memeriksa instruksimu satu per satu dari atas ke bawah untuk melihat di mana letak kesalahannya. Mungkin ada langkah yang tertukar, instruksi yang kurang detail, atau logika If-Then yang salah arah. Debugging melatih kesabaran dan ketelitianmu. Programmer profesional menghabiskan lebih banyak waktu untuk debugging daripada menulis kode baru. Jadi, setiap kali kamu menemukan kesalahan dan berhasil memperbaikinya, kamu sebenarnya sedang naik level menjadi lebih pintar. Jangan takut pada bug, anggaplah mereka sebagai teka-teki seru yang menunggu untuk kamu pecahkan agar programmu menjadi sempurna."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Alur Pemrograman Sederhana" },
+    "subtopic": "Flowchart & Pseudocode",
+    "lesson": { 
+      "title": "Mengenal Simbol Flowchart",
+      "content": "Kadang-kadang, kata-kata saja tidak cukup untuk menjelaskan sebuah algoritma yang rumit. Oleh karena itu, kita menggunakan gambar yang disebut Flowchart (Diagram Alir). Flowchart menggunakan bentuk-bentuk tertentu untuk mewakili jenis instruksi yang berbeda. Ada beberapa simbol dasar yang wajib kamu ketahui. Pertama adalah bentuk Oval (Terminator) yang digunakan untuk menandai 'Mulai' dan 'Selesai'. Kedua adalah bentuk Persegi Panjang (Proses) yang mewakili sebuah tindakan atau langkah kerja, seperti 'Masukkan Gula' atau 'Jalan Lurus'. Ketiga adalah bentuk Belah Ketupat (Keputusan/Decision) yang digunakan untuk logika If-Then. Dari sini biasanya akan ada dua jalur keluar: jalur 'Ya' dan jalur 'Tidak'. Terakhir adalah tanda Panah yang menunjukkan arah aliran instruksi, biasanya dari atas ke bawah atau kiri ke kanan. Mengapa kita perlu menggambar flowchart? Karena gambar lebih mudah dipahami oleh mata manusia daripada teks yang panjang. Dengan flowchart, kita bisa melihat seluruh alur program dalam satu kali pandang. Ini membantu kita menemukan bagian yang membingungkan atau jalur yang tidak ada ujungnya (dead end). Sebelum kamu mulai membuat program yang besar, sangat disarankan untuk mencoret-coret flowchart sederhana di kertas. Ini seperti arsitek yang membuat maket atau gambar bangunan sebelum tukang mulai membangun gedung. Flowchart membuat pikiran kita teratur dan memastikan semua kemungkinan sudah terpikirkan dengan matang sebelum masuk ke tahap penulisan kode di komputer."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Alur Pemrograman Sederhana" },
+    "subtopic": "Flowchart & Pseudocode",
+    "lesson": { 
+      "title": "Menggambar Alur Kerja Sederhana",
+      "content": "Setelah mengenal simbol-simbolnya, sekarang saatnya kita mencoba menggambar alur kerja sungguhan. Mari kita buat flowchart untuk 'Mengecek apakah hari ini ada PR'. 1. Mulai (Oval). 2. Cek buku agenda (Persegi Panjang). 3. Apakah ada PR? (Belah Ketupat). 4. Jika 'Ya', kerjakan PR (Persegi Panjang), lalu lanjut ke Selesai. 5. Jika 'Tidak', langsung boleh main game (Persegi Panjang), lalu lanjut ke Selesai. 6. Selesai (Oval). Dengan menggambar ini, alur hidupmu jadi lebih teratur, kan? Kamu juga bisa membuat flowchart untuk alur masuk ke rumah: 'Buka pintu' -> 'Apakah ada orang di rumah?' -> Jika Ya sapa mereka, jika Tidak nyalakan lampu. Berlatihlah menggambar flowchart untuk hal-hal yang sering kamu lakukan. Kamu akan menyadari bahwa hampir semua tindakan kita bisa diflowchart-kan. Dalam koding profesional, flowchart digunakan oleh tim besar agar semua orang punya pemahaman yang sama tentang cara kerja program tersebut. Jika satu orang menggambar flowchart dan orang lain menulis kodenya, mereka tidak akan bingung karena gambar tersebut sudah menjadi bahasa universal. Menggambar alur kerja juga membantu kita mendeteksi pengulangan yang tidak perlu. Misalnya, jika ada langkah yang sama dilakukan berkali-kali, kita bisa menggunakan simbol 'Loop' atau pengulangan untuk membuatnya lebih singkat. Flowchart adalah alat visual yang sangat hebat untuk meningkatkan kreativitas sekaligus logika berpikirmu secara bersamaan."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Alur Pemrograman Sederhana" },
+    "subtopic": "Flowchart & Pseudocode",
+    "lesson": { 
+      "title": "Dari Alur ke Instruksi",
+      "content": "Tahap terakhir dalam perencanaan sebelum benar-benar koding adalah menerjemahkan Flowchart menjadi instruksi tertulis yang rapi, yang sering disebut 'Pseudocode'. Pseudocode adalah bahasa campuran antara bahasa manusia dengan struktur bahasa pemrograman. Ia tidak punya aturan ketat seperti kode asli, tapi susunannya sangat teratur. Misalnya, flowchart PR tadi jika diubah ke pseudocode menjadi: MULAI; BUKA buku_agenda; JIKA PR ada MAKA kerjakan_PR; JIKA TIDAK MAKA main_game; SELESAI. Perhatikan penggunaan huruf kapital untuk perintah penting seperti MULAI, JIKA, MAKA, dan SELESAI. Ini membantu mata kita membedakan mana yang merupakan logika kontrol dan mana yang merupakan isi instruksinya. Belajar membuat pseudocode membuatmu terbiasa dengan gaya bahasa komputer tanpa harus pusing dengan tanda baca atau penulisan kata yang sulit. Ini adalah cara terbaik untuk melatih logika murni. Jika pseudocode-mu sudah benar, maka saat kamu memindahkannya ke bahasa pemrograman apa pun (seperti Scratch atau Python), programmu dijamin akan berjalan lancar. Jadi, urutan yang benar bagi seorang jagoan koding adalah: 1. Pikirkan ide, 2. Buat Algoritma, 3. Gambar Flowchart, 4. Tulis Pseudocode, 5. Tulis Kode Asli. Memang terlihat panjang, tapi cara ini jauh lebih cepat daripada langsung koding lalu bingung saat terjadi kesalahan. Dengan mengikuti alur ini, kamu belajar menjadi seorang insinyur perangkat lunak yang profesional dan handal dalam membangun teknologi yang berkualitas."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengenalan Scratch" },
+    "subtopic": "Mengenal Antarmuka Scratch",
+    "lesson": { 
+      "title": "Cara Membuka Scratch",
+      "content": "Scratch adalah bahasa pemrograman visual yang paling populer di dunia untuk anak-anak sekolah dasar. Scratch dibuat oleh universitas hebat bernama MIT untuk membantumu belajar koding tanpa perlu mengetik teks yang sulit. Kamu cukup menyusun blok-blok kode seperti menyusun kepingan LEGO. Ada dua cara untuk menggunakan Scratch. Pertama adalah secara online melalui website 'scratch.mit.edu'. Kamu hanya perlu browser internet dan bisa langsung mulai membuat karya. Keuntungannya adalah kamu bisa menyimpan karyamu di 'awan' (cloud) dan membagikannya kepada teman-teman di seluruh dunia untuk mereka mainkan. Cara kedua adalah secara offline dengan mendownload aplikasi 'Scratch Desktop' ke komputer atau laptopmu. Ini sangat berguna jika kamu tidak punya koneksi internet yang stabil. Untuk memulai, kamu tinggal mengklik tombol 'Create' di website atau membuka aplikasinya. Saat pertama kali terbuka, kamu akan melihat seekor kucing oranye yang lucu di layar. Kucing ini adalah ikon Scratch yang siap menunggu instruksimu. Jangan takut untuk mengeksplorasi setiap sudut layar. Di bagian atas, kamu bisa mengubah bahasa ke Bahasa Indonesia agar lebih mudah dimengerti. Memulai Scratch adalah langkah awalmu menjadi seorang kreator digital. Jutaan anak di seluruh dunia sudah membuat animasi keren dan game seru menggunakan alat ini. Sekarang giliranmu untuk bergabung dalam komunitas besar pencipta masa depan melalui Scratch!"
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengenalan Scratch" },
+    "subtopic": "Mengenal Antarmuka Scratch",
+    "lesson": { 
+      "title": "Bagian-bagian Blok Kode",
+      "content": "Di sisi paling kiri layar Scratch, kamu akan melihat banyak bulatan berwarna-warni. Itulah 'Palet Blok'. Setiap warna mewakili kategori perintah yang berbeda agar kamu mudah mencarinya. Warna Biru adalah 'Motion' (Gerakan) untuk membuat objek berpindah tempat atau berputar. Warna Ungu adalah 'Looks' (Tampilan) untuk mengubah ukuran, warna, atau membuat objek berbicara lewat balon teks. Warna Magenta adalah 'Sound' (Suara) untuk menambahkan efek bunyi atau musik. Warna Kuning adalah 'Events' (Kejadian) yang sangat penting karena berisi blok 'ketika bendera hijau diklik' untuk memulai program. Warna Oranye Muda adalah 'Control' (Kontrol) tempat beradanya logika pengulangan (Loop) dan keputusan (If-Then). Warna Biru Muda adalah 'Sensing' (Sensor) untuk membuat objek bereaksi terhadap sentuhan mouse atau warna lain. Ada juga kategori lain seperti operator matematika dan variabel. Cara menggunakannya sangat mudah: klik blok yang kamu inginkan, tahan, lalu geser ke area tengah layar. Blok-blok ini punya bentuk yang unik seperti puzzle; mereka hanya akan menempel jika logis. Misalnya, blok kejadian selalu berada di paling atas karena bagian atasnya bulat tanpa lubang kaitan. Dengan memahami kategori warna ini, kamu bisa menemukan perintah yang kamu butuhkan dengan secepat kilat. Ini seperti memiliki kotak perkakas yang sangat rapi di mana setiap alat punya laci warnanya sendiri, sehingga kamu bisa fokus pada kreativitasmu dalam merangkai cerita digital."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengenalan Scratch" },
+    "subtopic": "Mengenal Antarmuka Scratch",
+    "lesson": { 
+      "title": "Area Kerja (Stage & Workspace)",
+      "content": "Layar Scratch dibagi menjadi tiga bagian utama yang harus kamu kuasai fungsinya. Bagian tengah yang luas adalah 'Workspace' (Area Kerja). Di sinilah kamu menyusun dan menumpuk blok-blok kode. Bayangkan ini sebagai meja rakitanmu. Bagian kanan atas adalah 'Stage' (Panggung). Di sinilah hasil kodingmu ditampilkan. Apapun yang kamu perintahkan di area kerja, si kucing atau objek lain akan melakukannya di atas panggung ini. Di atas panggung ada ikon 'Bendera Hijau' untuk menjalankan program dan 'Tombol Merah' untuk menghentikannya. Terakhir, di bawah panggung ada area 'Sprite List'. Di sini kamu bisa melihat semua karakter atau benda yang ada di projekmu. Kamu bisa menamai mereka, mengatur posisinya dengan angka X dan Y, atau mengubah ukurannya secara instan. Workspace adalah tempat 'otak' program berada, sedangkan Stage adalah 'wajah' dari program tersebut. Sangat penting untuk selalu memperhatikan Panggung saat kamu sedang menyusun kode untuk melihat apakah hasilnya sudah sesuai dengan keinginanmu. Jika kucingmu berjalan terlalu jauh sampai keluar panggung, kamu harus kembali ke Workspace untuk memperbaiki angka langkahnya. Memahami pembagian area ini akan membuatmu bekerja lebih efisien. Kamu belajar untuk memisahkan antara proses berpikir (kode) dan proses penyajian (hasil visual). Inilah cara kerja profesional: merancang di balik layar untuk memberikan pertunjukan yang memukau bagi penonton atau pemain game karyamu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengenalan Scratch" },
+    "subtopic": "Sprite & Backdrop",
+    "lesson": { 
+      "title": "Memilih dan Mengganti Sprite",
+      "content": "Dalam Scratch, setiap karakter atau benda yang bisa bergerak atau diberikan instruksi disebut 'Sprite'. Secara default, kamu akan punya satu sprite kucing. Tapi, kamu bisa menambahkan banyak sprite lain! Caranya, arahkan mouse ke ikon wajah kucing di pojok kanan bawah, lalu pilih 'Choose a Sprite' (Pilih Sprite). Kamu akan masuk ke perpustakaan Scratch yang berisi ratusan gambar keren: mulai dari manusia, hewan, makanan, alat musik, hingga huruf-huruf lucu. Kamu bisa memasukkan naga, pemain bola, atau bahkan sepotong pizza ke dalam panggungmu. Jika kamu merasa kreatif, kamu juga bisa menggambar spritemu sendiri menggunakan fitur 'Paint' atau mengunggah foto dari komputermu sendiri. Ingat, setiap sprite punya area kodenya masing-masing. Jadi, jika kamu ingin naga menyemburkan api dan ksatria berlari, kamu harus mengklik sprite naga dulu untuk memberi kode api, baru klik sprite ksatria untuk memberi kode lari. Belajar mengelola banyak sprite adalah awal dari membuat animasi yang kompleks. Kamu bisa mengatur agar satu sprite muncul saat sprite lain menghilang, atau membuat mereka seolah-olah sedang berbicara satu sama lain. Koleksi sprite yang beragam memberimu kebebasan untuk menceritakan kisah apa saja: mulai dari petualangan di hutan rimba hingga pertandingan basket di luar angkasa. Jadilah kreatif dan pilih karakter yang paling mewakili imajinasimu!"
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengenalan Scratch" },
+    "subtopic": "Sprite & Backdrop",
+    "lesson": { 
+      "title": "Kostum Sprite",
+      "content": "Sprite tidak hanya diam dalam satu bentuk saja. Setiap sprite bisa punya banyak 'Costumes' (Kostum). Kostum adalah gambar-gambar yang berbeda dari sprite yang sama. Misalnya, sprite kucing punya dua kostum: satu dengan kaki menekuk dan satu dengan kaki melurus. Jika kita mengganti kostum ini dengan cepat secara bergantian, si kucing akan terlihat seperti sedang berjalan atau berlari beneran! Inilah rahasia di balik semua animasi film yang kamu tonton. Kamu bisa melihat kostum ini dengan mengklik tab 'Costumes' di pojok kiri atas (di sebelah tab Code). Di sana, kamu bisa mengubah warna baju sprite, menambah topi, atau menghapus bagian yang tidak kamu suka menggunakan editor gambar sederhana. Dalam koding, kita menggunakan blok 'Next Costume' (Kostum Berikutnya) di kategori Looks untuk membuat efek gerakan yang halus. Misalnya, kamu bisa membuat sprite orang yang sedang menari dengan memberikan banyak kostum gerakan tari dan memerintahkannya berganti kostum setiap 0,1 detik. Mempelajari konsep kostum mengajarkanmu tentang dasar-dasar animasi tradisional. Kamu belajar bahwa gerakan yang indah sebenarnya adalah kumpulan gambar diam yang disusun dengan cerdik. Semakin banyak kostum yang dimiliki sebuah sprite, semakin hidup dan ekspresif gerakan yang bisa ia lakukan di atas panggung Scratch-mu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Pengenalan Scratch" },
+    "subtopic": "Sprite & Backdrop",
+    "lesson": { 
+      "title": "Memilih Latar Belakang (Backdrop)",
+      "content": "Sebuah pertunjukan atau game tidak akan lengkap tanpa latar tempat yang menarik. Di Scratch, latar belakang panggung disebut 'Backdrop'. Sama seperti sprite, Scratch menyediakan perpustakaan backdrop yang sangat indah. Kamu bisa memilih pemandangan bawah laut, kastil tua, lapangan olahraga, hingga pemandangan planet lain. Caranya, klik ikon gambar di pojok paling kanan bawah layar (sebelah ikon sprite). Mengganti backdrop bisa merubah suasana karyamu secara instan. Misalnya, jika kamu menggunakan backdrop luar angkasa, cerita petualanganmu akan terasa lebih seru. Kamu juga bisa membuat program yang bisa berganti-ganti latar belakang. Bayangkan sebuah cerita di mana karaktermu berjalan keluar dari 'Kamar Tidur' (Backdrop 1) menuju 'Sekolah' (Backdrop 2). Kamu bisa mengontrol pergantian ini menggunakan kode 'Switch Backdrop to...' (Ganti Latar ke...). Latar belakang juga bisa diberikan kode lho, meskipun ia tidak bisa bergerak seperti sprite. Kamu bisa memberi musik latar yang berbeda untuk setiap backdrop. Misalnya, saat di hutan suaranya kicauan burung, tapi saat masuk ke gua suaranya menjadi misterius. Memilih backdrop yang tepat menunjukkan kemampuanmu dalam merancang pengalaman pengguna (User Experience) yang baik. Dengan latar yang mendukung, orang yang melihat karyamu akan merasa seolah-olah ikut masuk ke dalam dunia digital yang kamu ciptakan dengan sepenuh hati."
+    }
+  },
+  {
+    "level": "SMA",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Program Visual Sederhana" },
+    "subtopic": "Membuat Animasi",
+    "lesson": { 
+      "title": "Membuat Objek Bergerak",
+      "content": "Langkah pertama membuat program adalah membuat objekmu hidup dengan bergerak. Di Scratch, kita menggunakan blok biru 'Move ... Steps' (Gerak ... Langkah). Tapi tunggu, jika kamu hanya memasang blok itu, spritemu hanya akan bergerak sekali lalu berhenti. Agar ia bergerak terus, kita harus menempelkan blok 'Events' di atasnya, yaitu 'When Green Flag Clicked' (Ketika Bendera Hijau Diklik). Cobalah bereksperimen dengan angka di dalam kotak putih. Jika kamu tulis 10, gerakannya pelan. Jika 50, gerakannya sangat cepat seperti melompat. Kamu juga bisa menggunakan blok 'Go to X: ... Y: ...' untuk memindahkan sprite ke posisi tertentu secara instan. Bayangkan panggung Scratch adalah sebuah peta koordinat. Tengah-tengah adalah X:0 dan Y:0. X mengatur kanan-kiri, Y mengatur atas-bawah. Jika ingin sprite ke kanan, tambah nilai X. Jika ingin ke atas, tambah nilai Y. Selain bergerak lurus, kamu juga bisa membuat sprite berputar menggunakan blok 'Turn ... Degrees' (Putar ... Derajat). Misalnya, buatlah sebuah sprite bintang yang berputar terus-menerus di langit. Belajar menggerakkan objek adalah dasar dari semua interaksi digital. Kamu sedang belajar cara mengontrol ruang dan waktu di dalam komputer. Dengan kombinasi gerakan yang tepat, kamu bisa membuat simulasi tata surya, mobil yang melaju di jalan raya, atau burung yang terbang bebas. Ingatlah untuk selalu mencoba dan melihat hasilnya di Panggung, karena itulah cara terbaik untuk memahami bagaimana angka-angka berubah menjadi gerakan yang nyata dan menarik."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Program Visual Sederhana" },
+    "subtopic": "Membuat Animasi",
+    "lesson": { 
+      "title": "Menambahkan Suara",
+      "content": "Animasi yang bisu akan terasa kurang hidup. Itulah sebabnya kita butuh kategori blok magenta 'Sound'. Scratch punya bank suara yang sangat banyak: mulai dari suara kucing 'Meow', suara tepuk tangan, dentuman drum, hingga suara efek laser. Kamu bisa memicu suara saat sebuah kejadian terjadi. Misalnya, saat sprite bola memantul ke dinding, mainkan suara 'Boing'. Ada dua jenis blok suara utama: 'Start Sound' (Mulai Suara) yang langsung memainkan suara lalu lanjut ke kode berikutnya, dan 'Play Sound Until Done' (Mainkan Suara Sampai Selesai) yang akan menunggu suara habis baru menjalankan baris kode di bawahnya. Kamu juga bisa merekam suaramu sendiri menggunakan mic di laptop! Bayangkan karaktermu bisa berbicara dengan suaramu, pasti sangat keren. Selain efek suara pendek, kamu juga bisa mengatur nada musik dan volume. Kamu bisa membuat program yang volumenya mengecil saat karakter menjauh, atau musiknya menjadi lebih cepat saat waktu permainan hampir habis. Menambahkan suara bukan sekadar hiasan, tapi memberikan umpan balik (feedback) kepada pengguna. Suara memberi tahu pemain bahwa mereka berhasil melakukan sesuatu atau sedang dalam bahaya. Dengan memadukan gerakan visual dan suara yang pas, karyamu akan terasa jauh lebih profesional dan imersif seperti film atau game sungguhan yang ada di pasar."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Program Visual Sederhana" },
+    "subtopic": "Membuat Animasi",
+    "lesson": { 
+      "title": "Animasi Berulang (Forever Loop)",
+      "content": "Programmer sangat tidak suka melakukan hal yang sama berulang-ulang secara manual. Oleh karena itu, kita punya blok 'Forever' (Selamanya) di kategori Control. Ini adalah salah satu kekuatan terbesar koding: kemampuan melakukan tugas repetitif tanpa henti dan tanpa lelah. Jika kamu ingin sprite kucing berjalan mondar-mandir selamanya, kamu cukup memasukkan blok 'Move' ke dalam mulut blok 'Forever'. Jangan lupa tambahkan blok 'If on Edge, Bounce' (Jika di Pinggir, Pantul) agar si kucing tidak menghilang menembus layar. Loop atau pengulangan membuat kodemu menjadi sangat ringkas. Bayangkan jika kamu ingin sprite berputar 360 kali. Tanpa loop, kamu harus menumpuk 360 blok putar. Dengan loop, kamu cukup pakai satu blok putar di dalam loop. Ada juga jenis loop 'Repeat ... Times' jika kamu hanya ingin mengulang beberapa kali saja, misalnya melompat 3 kali. Memahami loop akan merubah cara pandangmu terhadap efisiensi. Kamu belajar bahwa dengan sedikit kode, kamu bisa menciptakan gerakan yang sangat kompleks dan tahan lama. Di dunia nyata, loop digunakan untuk memantau keamanan 24 jam, menjalankan jam digital, hingga mengatur detak jantung pada robot medis. Menguasai pengulangan berarti kamu sudah bisa menghemat energi otakmu dan membiarkan komputer melakukan pekerjaan berat yang membosankan untukmu, sehingga kamu bisa fokus memikirkan fitur-fitur baru yang lebih canggih."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Program Visual Sederhana" },
+    "subtopic": "Membuat Game Sederhana",
+    "lesson": { 
+      "title": "Interaksi dengan Keyboard",
+      "content": "Agar animasimu menjadi sebuah 'Game', pengguna harus bisa mengendalikan karakter tersebut. Di Scratch, cara paling mudah adalah menggunakan tombol keyboard. Di kategori Events, ada blok bernama 'When ... Key Pressed' (Ketika Tombol ... Ditekan). Kamu bisa memilih tombol apa saja: panah atas, bawah, kiri, kanan, atau spasi. Misalnya, kita buat karakter berjalan ke kanan: 'When Right Arrow Key Pressed' -> 'Change X by 10'. Dan ke kiri: 'When Left Arrow Key Pressed' -> 'Change X by -10'. Sekarang kamu sudah punya kontrol dasar! Karaktermu bisa bergerak sesuai kemauan pemain. Interaksi ini adalah jembatan antara dunia nyata dan dunia digital. Kamu sedang memberikan 'Input' kepada komputer, dan komputer memberikan 'Output' berupa gerakan di layar. Selain panah, tombol spasi sering digunakan untuk membuat karakter melompat atau menembak. Kamu juga bisa menggunakan interaksi mouse, misalnya sprite akan selalu mengikuti arah kursor mousemu. Belajar tentang interaksi mengajarkanmu tentang desain kontrol yang nyaman. Sebuah game yang bagus adalah game yang kontrolnya mudah dipelajari tapi menantang untuk dikuasai. Cobalah untuk membuat sistem kontrol yang responsif; jangan sampai ada jeda antara saat tombol ditekan dan saat karakter bergerak. Dengan menguasai kontrol keyboard, kamu siap untuk membangun petualangan interaktifmu sendiri di mana pemain memegang kendali penuh atas nasib karakter di dalam duniamu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Program Visual Sederhana" },
+    "subtopic": "Membuat Game Sederhana",
+    "lesson": { 
+      "title": "Deteksi Tabrakan (Sensing)",
+      "content": "Sebuah game butuh aturan main. Karakter harus tahu kapan ia menyentuh dinding, menyentuh koin, atau menyentuh musuh. Inilah fungsi kategori blok biru muda 'Sensing'. Kita biasanya menggabungkan blok Sensing dengan blok Control 'If-Then'. Logikanya: 'JIKA menyentuh Sprite2, MAKA lakukan sesuatu'. Ini disebut 'Collision Detection' (Deteksi Tabrakan). Contohnya dalam game tangkap bola: JIKA sprite mangkuk menyentuh sprite apel, MAKA apel harus menghilang dan bunyi 'Chomp' dimainkan. Atau dalam game labirin: JIKA karakter menyentuh garis hitam dinding, MAKA karakter harus kembali ke posisi awal. Sensing membuat duniamu terasa nyata karena objek-objek di dalamnya seolah-olah punya indra peraba. Mereka bisa merasakan keberadaan satu sama lain. Kamu juga bisa menggunakan sensor warna, misalnya jika karakter menyentuh warna merah (lava), maka game over. Kemampuan deteksi ini sangat krusial dalam koding cerdas. Di dunia nyata, teknologi ini digunakan pada mobil otonom (tanpa sopir) yang memiliki sensor untuk mendeteksi mobil lain di depannya agar tidak terjadi kecelakaan. Dengan memahami Sensing, kamu tidak hanya membuat game, tapi belajar tentang sistem keamanan dan interaksi lingkungan yang sangat canggih. Cobalah buat aturan-aturan seru dalam gamemu menggunakan kombinasi If-Then dan Sensing untuk menciptakan tantangan yang membuat pemain ketagihan memainkannya!"
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Program Visual Sederhana" },
+    "subtopic": "Membuat Game Sederhana",
+    "lesson": { 
+      "title": "Menghitung Skor Sederhana",
+      "content": "Apa yang membuat game terasa kompetitif? Jawabannya adalah Skor! Untuk membuat skor, kita butuh konsep yang sangat penting dalam koding bernama 'Variable' (Variabel). Bayangkan variabel sebagai sebuah kotak yang bisa kita beri label nama dan bisa menyimpan sebuah nilai angka di dalamnya. Di kategori Variables, klik 'Make a Variable' dan beri nama 'Skor'. Di layar panggung akan muncul tampilan skor 0. Sekarang, kita beri logika: JIKA karakter mendapatkan hadiah, MAKA 'Change Skor by 1'. Kotak variabel tadi akan berubah isinya dari 0 menjadi 1, lalu 2, dan seterusnya. Variabel sangat berguna karena ia bisa mengingat informasi. Selain skor, variabel bisa digunakan untuk menyimpan sisa nyawa, waktu yang tersisa, atau nama pemain. Penting juga untuk diingat: setiap kali game dimulai ulang (bendera hijau diklik), kita harus memerintahkan 'Set Skor to 0' agar pemain mulai dari awal lagi. Tanpa ini, skor pemain sebelumnya akan terbawa terus. Belajar variabel adalah pintu gerbang menuju pemrograman tingkat lanjut. Kamu belajar bagaimana data disimpan dan diolah oleh komputer. Dengan sistem skor yang baik, pemain akan merasa dihargai atas usahanya dan ingin terus bermain untuk mendapatkan nilai tertinggi. Sekarang, karyamu bukan lagi sekadar animasi, tapi sudah menjadi sebuah aplikasi game utuh yang memiliki tujuan, kontrol, aturan, dan hasil akhir yang membanggakan!"
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Literasi Digital" },
+    "subtopic": "Keamanan Internet",
+    "lesson": { 
+      "title": "Menjaga Rahasia Kata Sandi",
+      "content": "Sebagai penjelajah dunia digital yang cerdas, hal pertama yang harus kamu lindungi adalah 'Kunci Rumah Digital'-mu, yaitu Kata Sandi (Password). Kata sandi adalah deretan karakter yang membuktikan bahwa kamu adalah pemilik sah sebuah akun, baik itu di game online, email, atau media sosial. Jangan pernah memberitahukan kata sandimu kepada siapapun, bahkan teman dekatmu sendiri. Mengapa? Karena jika orang lain tahu, mereka bisa masuk ke akunmu, berpura-pura menjadi kamu, atau menghapus karya-karya koding yang sudah kamu buat dengan susah payah. Kata sandi yang kuat harus seperti perisai yang kokoh: jangan gunakan hal yang mudah ditebak seperti tanggal lahir atau nama hewan piaraan. Gunakanlah kombinasi huruf besar, huruf kecil, angka, dan simbol (seperti @ atau #). Jangan gunakan kata sandi yang sama untuk semua akun; jika satu kunci hilang, pintu yang lain tetap aman. Jika kamu sulit mengingat banyak kata sandi, mintalah bantuan orang tuamu untuk mencatatnya di tempat yang sangat aman. Ingat, di internet, tidak semua orang punya niat baik. Menjaga kata sandi adalah bentuk tanggung jawabmu terhadap privasi dan keamanan dirimu sendiri. Dengan memiliki kebiasaan keamanan yang baik sejak dini, kamu akan terhindar dari masalah 'hacking' atau pencurian identitas yang bisa merugikanmu di masa depan. Jadilah penjaga pintu digital yang waspada dan cerdas!"
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Literasi Digital" },
+    "subtopic": "Keamanan Internet",
+    "lesson": { 
+      "title": "Mengenal Konten Berbahaya",
+      "content": "Internet adalah seperti perpustakaan raksasa yang sangat luas, tapi tidak semua bukunya bagus untuk dibaca. Ada bagian yang berisi informasi salah (Hoax), konten yang menakut-nakuti, atau link palsu yang bisa merusak komputermu (Virus). Kamu harus belajar menjadi detektif informasi. Jika kamu melihat iklan yang menjanjikan hadiah gratis yang tidak masuk akal, seperti 'Selamat kamu menang iPhone gratis, klik di sini!', itu hampir pasti adalah penipuan (Phishing). Jangan pernah mengklik link dari orang yang tidak kamu kenal atau dari website yang terlihat mencurigakan. Konten berbahaya juga bisa berupa video atau gambar yang membuatmu merasa tidak nyaman, sedih, atau takut. Jika kamu menemukannya, segera tutup layarnya. Jangan merasa penasaran untuk terus melihatnya. Selain itu, waspadalah terhadap orang asing yang mengajakmu mengobrol di ruang chat game dan menanyakan informasi pribadi seperti alamat rumah atau nama sekolahmu. Selalu ingat aturan emas internet: jangan percaya begitu saja pada apa yang kamu lihat online tanpa mengecek kebenarannya. Mempelajari cara membedakan konten baik dan buruk akan membuatmu tetap aman dan nyaman saat belajar koding atau mencari informasi di internet. Pengetahuan adalah senjatamu yang paling ampuh untuk melawan bahaya di dunia maya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Literasi Digital" },
+    "subtopic": "Keamanan Internet",
+    "lesson": { 
+      "title": "Cara Melapor Masalah Online",
+      "content": "Terkadang, meskipun kita sudah berhati-hati, masalah tetap bisa terjadi. Mungkin kamu melihat temanmu diejek di internet (Cyberbullying), atau kamu tidak sengaja mengklik link yang aneh. Apa yang harus kamu lakukan? Jangan panik dan jangan menyembunyikannya sendirian. Langkah pertama yang paling penting adalah 'Bicara kepada Orang Dewasa Terpercaya', seperti orang tua atau gurumu. Mereka punya lebih banyak pengalaman untuk membantumu menyelesaikan masalah tersebut. Selain itu, hampir semua platform online (seperti Scratch, YouTube, atau game) punya tombol 'Report' (Laporkan) atau 'Block' (Blokir). Gunakan fitur ini jika ada orang yang berperilaku kasar atau mengirim konten yang tidak pantas. Melapor bukan berarti kamu cengeng, melainkan kamu sedang membantu membuat internet menjadi tempat yang lebih bersih dan aman bagi semua orang. Jangan membalas kemarahan dengan kemarahan; jika ada yang mengejekmu, lebih baik blokir mereka dan laporkan. Dengan mengetahui cara bertindak saat ada masalah, kamu akan merasa lebih percaya diri saat bereksplorasi secara digital. Kamu tidak perlu takut lagi karena kamu tahu bahwa ada bantuan yang selalu tersedia dan ada alat untuk melindungi dirimu sendiri. Keberanian untuk melapor adalah tanda bahwa kamu adalah warga digital yang berintegritas dan peduli pada keselamatan lingkungan sekitarmu."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Literasi Digital" },
+    "subtopic": "Etika Berinternet (Netiquette)",
+    "lesson": { 
+      "title": "Berkomunikasi dengan Sopan",
+      "content": "Internet adalah tempat bertemunya jutaan orang dari berbagai latar belakang. Karena kita tidak bertatap muka langsung, terkadang kita lupa bahwa di balik layar komputer sana ada manusia sungguhan yang punya perasaan. Etika berkomunikasi di internet sering disebut 'Netiquette'. Aturan dasarnya sangat mudah: tuliskanlah hal-hal yang juga berani kamu katakan langsung di depan orangnya. Gunakan bahasa yang sopan dan hindari penggunaan huruf besar semua (KAPITAL) karena di dunia internet itu dianggap seperti sedang berteriak. Jangan mengirim pesan yang sama berkali-kali (Spam) karena itu sangat mengganggu orang lain. Sebelum menekan tombol 'Kirim', bacalah kembali pesanmu: apakah kata-katanya bisa menyinggung perasaan orang lain? Apakah pesan ini bermanfaat? Jika kamu ingin memberikan kritik pada karya koding temanmu di Scratch, berikanlah kritik yang membangun. Misalnya, 'Animasimu bagus, mungkin akan lebih keren kalau ditambah suara', daripada berkata 'Jelek sekali!'. Berkomunikasi dengan sopan akan membuatmu punya banyak teman dan dihargai oleh komunitas global. Ingat, kata-katamu mencerminkan siapa dirimu. Dengan menjadi anak yang ramah di dunia maya, kamu sedang membangun reputasi positif yang akan membantumu sukses dalam berkolaborasi membuat projek-projek teknologi besar nantinya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Literasi Digital" },
+    "subtopic": "Etika Berinternet (Netiquette)",
+    "lesson": { 
+      "title": "Menghargai Karya Orang Lain",
+      "content": "Di dunia koding, kita sering berbagi hasil karya agar orang lain bisa belajar. Di Scratch, ada fitur 'Remix' di mana kamu bisa mengambil projek orang lain dan memodifikasinya menjadi lebih keren. Ini adalah hal yang bagus, tapi ada etikanya. Kamu harus memberikan 'Kredit' atau penghargaan kepada pembuat aslinya. Jangan pernah mengaku-ngaku bahwa karya orang lain adalah buatanmu sendiri secara murni. Tuliskan di bagian 'Notes and Credits' siapa yang memberikan inspirasi atau bagian kode mana yang kamu ambil dari orang lain. Menghargai hak cipta adalah ciri seorang koding jagoan yang jujur. Selain itu, jika kamu melihat karya orang lain yang menurutmu kurang bagus, jangan mengejeknya. Ingatlah bahwa setiap orang sedang belajar. Alih-alih mengejek, cobalah bantu mereka dengan memberikan tips atau saran yang berguna. Begitu juga saat kamu mengunggah gambar atau musik ke dalam projekmu, pastikan gambar tersebut boleh digunakan secara bebas (Royalty Free) atau mintalah izin jika perlu. Dengan menghargai karya orang lain, kamu juga akan dihargai saat membagikan karyamu sendiri. Lingkungan yang saling menghargai akan memicu lahirnya banyak inovasi hebat karena semua orang merasa nyaman untuk berbagi ide dan belajar bersama tanpa rasa takut dicuri karyanya."
+    }
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "Koding dan Kecerdasan Artifisial (AI)",
+    "topic": { "name": "Literasi Digital" },
+    "subtopic": "Etika Berinternet (Netiquette)",
+    "lesson": { 
+      "title": "Jejak Digital Kita",
+      "content": "Segala sesuatu yang kamu lakukan di internet meninggalkan bekas yang disebut 'Jejak Digital' (Digital Footprint). Setiap komentar yang kamu tulis, foto yang kamu unggah, atau website yang kamu kunjungi akan tersimpan dan sangat sulit untuk dihapus sepenuhnya. Jejak digital ini seperti bayangan yang mengikuti kemanapun kamu pergi di dunia maya. Mengapa ini penting? Karena di masa depan, orang bisa melihat kembali jejak digitalmu untuk menilai karaktermu. Bayangkan jika saat ini kamu menulis komentar kasar, sepuluh tahun lagi saat kamu ingin melamar pekerjaan atau masuk universitas, komentar itu mungkin masih bisa ditemukan. Oleh karena itu, berhati-hatilah sebelum membagikan sesuatu. Tanyakan pada dirimu: 'Apakah aku ingin nenekku atau guruku melihat postingan ini?'. Postinglah hal-hal yang membanggakan, seperti projek kodingmu yang berhasil, hobi yang positif, atau kata-kata penyemangat untuk teman. Jejak digital yang baik akan menjadi portofolio yang luar biasa bagi karirmu nanti. Kamu ingin dikenal sebagai pembuat game yang kreatif dan sopan, bukan? Jadi, mulailah membangun jejak digital yang bersih dan inspiratif sejak hari ini. Ingat, internet tidak pernah lupa, jadi pastikan apa yang ia ingat tentangmu adalah hal-hal yang indah dan luar biasa."
+    }
+  }
+]
