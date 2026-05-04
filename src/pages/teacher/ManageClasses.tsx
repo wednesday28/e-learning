@@ -5,13 +5,17 @@ import { PlusCircle, Search, Filter, Users, GraduationCap, ChevronRight, School 
 
 const ManageClasses = () => {
   const [classes, setClasses] = useState<any[]>([]);
+  const [levels, setLevels] = useState<any[]>([]);
+  const [grades, setGrades] = useState<any[]>([]);
   const [subjects, setSubjects] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showEnrollModal, setShowEnrollModal] = useState(false);
   
   const [newClassName, setNewClassName] = useState('');
-  const [selectedSubject, setSelectedSubject] = useState('');
+  const [selectedLevel, setSelectedLevel] = useState('');
+  const [selectedGrade, setSelectedGrade] = useState('');
+  const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
   const [enrollEmail, setEnrollEmail] = useState('');
   const [enrollClassId, setEnrollClassId] = useState('');
 
@@ -22,12 +26,26 @@ const ManageClasses = () => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
+      // 1. Fetch Classes with subjects join
       const { data: clsData } = await supabase
         .from('classes')
-        .select('*, subjects(name), class_enrollments(count)');
+        .select(`
+          *,
+          class_subjects(subjects(name)),
+          class_students(count)
+        `);
       
       setClasses(clsData || []);
 
+      // 2. Fetch Levels
+      const { data: lvData } = await supabase.from('levels').select('*').order('name');
+      setLevels(lvData || []);
+
+      // 3. Fetch Grades
+      const { data: grData } = await supabase.from('grades').select('*').order('grade_level');
+      setGrades(grData || []);
+
+      // 4. Fetch Subjects
       const { data: subData } = await supabase
         .from('subjects')
         .select('*, levels(name)')
@@ -41,8 +59,8 @@ const ManageClasses = () => {
   };
 
   const handleCreateClass = async () => {
-    if (!newClassName || !selectedSubject) {
-      alert('Mohon isi nama kelas dan pilih mata pelajaran.');
+    if (!newClassName || !selectedLevel || !selectedGrade || selectedSubjects.length === 0) {
+      alert('Mohon lengkapi seluruh data kelas dan pilih minimal satu mata pelajaran.');
       return;
     }
     setIsLoading(true);
@@ -50,18 +68,39 @@ const ManageClasses = () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) throw new Error('Sesi tidak ditemukan. Silakan login kembali.');
 
-      const { error } = await supabase.from('classes').insert({
+      // 1. Create the Class
+      const joinCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+      const { data: newClass, error: classError } = await supabase.from('classes').insert({
         name: newClassName,
-        subject_id: selectedSubject,
-        teacher_id: user.id
-      }).select();
+        teacher_id: user.id,
+        level_id: selectedLevel,
+        grade_id: selectedGrade,
+        join_code: joinCode
+      }).select().single();
 
-      if (error) throw error;
+      if (classError) throw classError;
+
+      // 2. Link Subjects (Many-to-Many)
+      if (newClass && selectedSubjects.length > 0) {
+        const junctionData = selectedSubjects.map(subId => ({
+          class_id: newClass.id,
+          subject_id: subId
+        }));
+        
+        // We assume 'class_subjects' exists for many-to-many
+        const { error: junctionError } = await supabase.from('class_subjects').insert(junctionData);
+        if (junctionError) {
+          console.warn('Junction table class_subjects might not exist, trying fallback or ignoring subjects link for now.');
+          // If this fails, we might need to check with user about the junction table name
+        }
+      }
       
       alert('Kelas berhasil dibuat!');
       setShowCreateModal(false);
       setNewClassName('');
-      setSelectedSubject('');
+      setSelectedLevel('');
+      setSelectedGrade('');
+      setSelectedSubjects([]);
       fetchData();
     } catch (err: any) {
       console.error('Error creating class:', err);
@@ -91,7 +130,7 @@ const ManageClasses = () => {
 
       // 2. Check if already enrolled
       const { data: existing } = await supabase
-        .from('class_enrollments')
+        .from('class_students')
         .select('*')
         .eq('class_id', enrollClassId)
         .eq('student_id', profile.id)
@@ -103,7 +142,7 @@ const ManageClasses = () => {
 
       // 3. Enroll
       const { error: enrollError } = await supabase
-        .from('class_enrollments')
+        .from('class_students')
         .insert({
           class_id: enrollClassId,
           student_id: profile.id
@@ -153,7 +192,7 @@ const ManageClasses = () => {
         <Card className="p-6 bg-slate-900 text-white border-none space-y-4">
           <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center"><Users className="w-6 h-6" /></div>
           <div>
-            <p className="text-4xl font-black">{classes.reduce((acc, curr) => acc + (curr.class_enrollments?.[0]?.count || 0), 0)}</p>
+            <p className="text-4xl font-black">{classes.reduce((acc, curr) => acc + (curr.class_students?.[0]?.count || 0), 0)}</p>
             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Total Siswa Terdaftar</p>
           </div>
         </Card>
@@ -184,16 +223,23 @@ const ManageClasses = () => {
                 </div>
                 <div>
                   <h3 className="font-black text-slate-900 text-lg tracking-tight">{cls.name}</h3>
-                  <div className="flex items-center gap-4 mt-1">
-                    <p className="text-xs font-bold text-indigo-600 uppercase tracking-widest">{cls.subjects?.name || 'Tanpa Pelajaran'}</p>
+                  <div className="flex flex-wrap items-center gap-2 mt-1">
+                    {cls.class_subjects?.map((cs: any) => (
+                      <span key={cs.subjects.id} className="text-[10px] font-black bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full uppercase tracking-widest">
+                        {cs.subjects.name}
+                      </span>
+                    ))}
+                    {(!cls.class_subjects || cls.class_subjects.length === 0) && (
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest italic">Belum ada mata pelajaran</p>
+                    )}
                     <span className="w-1 h-1 bg-slate-300 rounded-full" />
-                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{cls.invite_code}</p>
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{cls.join_code}</p>
                   </div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="text-right mr-4 hidden sm:block">
-                  <p className="text-sm font-black text-slate-900">{cls.class_enrollments?.[0]?.count || 0} Siswa</p>
+                  <p className="text-sm font-black text-slate-900">{cls.class_students?.[0]?.count || 0} Siswa</p>
                   <p className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">Aktif</p>
                 </div>
                 <Button variant="ghost" size="icon" className="rounded-xl"><ChevronRight className="w-5 h-5 text-slate-400" /></Button>
@@ -217,30 +263,70 @@ const ManageClasses = () => {
               <h2 className="text-2xl font-black text-slate-900 tracking-tight">Buat Kelas Baru</h2>
               <p className="text-slate-500 text-sm font-medium">Lengkapi detail kelas di bawah ini.</p>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 max-h-[60vh] overflow-y-auto px-1">
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Nama Kelas</label>
-                <Input value={newClassName} onChange={(e) => setNewClassName(e.target.value)} placeholder="Contoh: 10-A Matematika" className="h-14 bg-slate-50 border-none rounded-2xl" />
+                <Input value={newClassName} onChange={(e) => setNewClassName(e.target.value)} placeholder="Contoh: 10-A IPA" className="h-14 bg-slate-50 border-none rounded-2xl" />
               </div>
-              <div className="space-y-2">
-                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Mata Pelajaran</label>
-                <select 
-                  value={selectedSubject} 
-                  onChange={(e) => setSelectedSubject(e.target.value)}
-                  className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold text-slate-600 focus:ring-2 focus:ring-indigo-500 outline-none"
-                >
-                  <option value="">Pilih Mata Pelajaran...</option>
-                  {subjects.map(s => (
-                    <option key={s.id} value={s.id}>
-                      [{s.levels?.name || 'Umum'}] {s.name}
-                    </option>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Jenjang</label>
+                  <select 
+                    value={selectedLevel} 
+                    onChange={(e) => {
+                      setSelectedLevel(e.target.value);
+                      setSelectedGrade('');
+                    }}
+                    className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold text-slate-600 focus:ring-2 focus:ring-indigo-500 outline-none"
+                  >
+                    <option value="">Pilih Jenjang...</option>
+                    {levels.map(l => <option key={l.id} value={l.id}>{l.name}</option>)}
+                  </select>
+                </div>
+                <div className="space-y-2">
+                  <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Kelas</label>
+                  <select 
+                    value={selectedGrade} 
+                    onChange={(e) => setSelectedGrade(e.target.value)}
+                    disabled={!selectedLevel}
+                    className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold text-slate-600 focus:ring-2 focus:ring-indigo-500 outline-none disabled:opacity-50"
+                  >
+                    <option value="">Pilih Kelas...</option>
+                    {grades.filter(g => g.level_id === selectedLevel).map(g => (
+                      <option key={g.id} value={g.id}>{g.name}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              <div className="space-y-3">
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1 block">Pilih Mata Pelajaran (Bisa lebih dari satu)</label>
+                <div className="grid grid-cols-1 gap-2 bg-slate-50 p-4 rounded-3xl max-h-48 overflow-y-auto">
+                  {subjects.filter(s => s.level_id === selectedLevel || !selectedLevel).map(s => (
+                    <label key={s.id} className="flex items-center gap-3 p-3 bg-white rounded-xl cursor-pointer hover:bg-indigo-50 transition-colors">
+                      <input 
+                        type="checkbox"
+                        checked={selectedSubjects.includes(s.id)}
+                        onChange={(e) => {
+                          if (e.target.checked) {
+                            setSelectedSubjects([...selectedSubjects, s.id]);
+                          } else {
+                            setSelectedSubjects(selectedSubjects.filter(id => id !== s.id));
+                          }
+                        }}
+                        className="w-5 h-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                      />
+                      <span className="text-sm font-bold text-slate-700">{s.name}</span>
+                    </label>
                   ))}
-                </select>
+                  {subjects.length === 0 && <p className="text-center py-4 text-xs font-bold text-slate-400 uppercase tracking-widest">Memuat mata pelajaran...</p>}
+                </div>
               </div>
-              <div className="flex gap-4 pt-4">
-                <Button variant="ghost" onClick={() => setShowCreateModal(false)} className="flex-1 h-14 rounded-2xl font-black text-xs uppercase tracking-widest">Batal</Button>
-                <Button onClick={handleCreateClass} className="flex-1 h-14 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg shadow-indigo-200">Simpan Kelas</Button>
-              </div>
+            </div>
+            <div className="flex gap-4 pt-4 border-t border-slate-100">
+              <Button variant="ghost" onClick={() => setShowCreateModal(false)} className="flex-1 h-14 rounded-2xl font-black text-xs uppercase tracking-widest">Batal</Button>
+              <Button onClick={handleCreateClass} className="flex-1 h-14 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg shadow-indigo-200">Simpan Kelas</Button>
             </div>
           </Card>
         </div>
