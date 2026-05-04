@@ -28,7 +28,10 @@ const ManageClasses = () => {
       
       setClasses(clsData || []);
 
-      const { data: subData } = await supabase.from('subjects').select('*');
+      const { data: subData } = await supabase
+        .from('subjects')
+        .select('*, levels(name)')
+        .order('name');
       setSubjects(subData || []);
     } catch (err) {
       console.error('Error fetching teacher data:', err);
@@ -50,8 +53,7 @@ const ManageClasses = () => {
       const { error } = await supabase.from('classes').insert({
         name: newClassName,
         subject_id: selectedSubject,
-        teacher_id: user.id,
-        invite_code: Math.random().toString(36).substring(2, 8).toUpperCase()
+        teacher_id: user.id
       }).select();
 
       if (error) throw error;
@@ -228,7 +230,11 @@ const ManageClasses = () => {
                   className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold text-slate-600 focus:ring-2 focus:ring-indigo-500 outline-none"
                 >
                   <option value="">Pilih Mata Pelajaran...</option>
-                  {subjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
+                  {subjects.map(s => (
+                    <option key={s.id} value={s.id}>
+                      [{s.levels?.name || 'Umum'}] {s.name}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div className="flex gap-4 pt-4">
