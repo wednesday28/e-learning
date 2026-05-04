@@ -9,6 +9,7 @@ import { Spinner } from './components/ui'
 const Login = lazy(() => import('./pages/auth/Login'))
 const Register = lazy(() => import('./pages/auth/Register'))
 const RoleSelection = lazy(() => import('./pages/auth/RoleSelection'))
+const AuthCallback = lazy(() => import('./pages/auth/AuthCallback'))
 
 // Student
 const StudentDashboard = lazy(() => import('./pages/student/Dashboard'))
@@ -73,6 +74,7 @@ const App = () => {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/auth/callback" element={<AuthCallback />} />
           <Route path="/role-selection" element={<ProtectedRoute><RoleSelection /></ProtectedRoute>} />
 
           {/* Student */}

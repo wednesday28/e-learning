@@ -17,9 +17,21 @@ const Login = () => {
     setError('');
     
     try {
-      const { error } = await supabase.auth.signInWithPassword({ email, password });
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
       if (error) throw error;
-      navigate('/dashboard');
+
+      // Get profile role to redirect correctly
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('role')
+        .eq('id', data.user.id)
+        .single();
+
+      const role = profile?.role;
+      if (role === 'teacher') navigate('/teacher');
+      else if (role === 'super_admin' || role === 'admin') navigate('/super-admin');
+      else if (!role) navigate('/role-selection');
+      else navigate('/dashboard');
     } catch (err: any) {
       setError(err.message || 'Login gagal. Periksa email dan password Anda.');
     } finally {
@@ -31,7 +43,7 @@ const Login = () => {
     try {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
-        options: { redirectTo: window.location.origin + '/dashboard' }
+        options: { redirectTo: window.location.origin + '/auth/callback' }
       });
       if (error) throw error;
     } catch (err: any) {
