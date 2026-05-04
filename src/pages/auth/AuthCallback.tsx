@@ -25,11 +25,16 @@ const AuthCallback = () => {
       // Cek apakah profil sudah ada dan punya role
       const { data: profile } = await supabase
         .from('profiles')
-        .select('role')
+        .select('role, created_at')
         .eq('id', session.user.id)
         .single();
 
-      if (!profile || !profile.role) {
+      // Jika user baru login via Google (umur profil < 1 menit) dan tidak ada metadata role bawaan
+      const isNewOAuthUser = profile && 
+        (new Date().getTime() - new Date(profile.created_at).getTime() < 60000) && 
+        !session.user.user_metadata?.role;
+
+      if (!profile || !profile.role || isNewOAuthUser) {
         // Pengguna baru atau belum punya role → pilih peran
         navigate('/role-selection');
       } else {

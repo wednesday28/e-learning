@@ -26,14 +26,14 @@ const ManageClasses = () => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      // 1. Fetch Classes with subjects join
+      // 1. Fetch Classes without class_subjects join since table doesn't exist
       const { data: clsData } = await supabase
         .from('classes')
         .select(`
           *,
-          class_subjects(subjects(name)),
           class_students(count)
         `);
+
       
       setClasses(clsData || []);
 
@@ -225,16 +225,7 @@ const ManageClasses = () => {
                 <div>
                   <h3 className="font-black text-slate-900 text-lg tracking-tight">{cls.name}</h3>
                   <div className="flex flex-wrap items-center gap-2 mt-1">
-                    {cls.class_subjects?.map((cs: any) => (
-                      <span key={cs.subjects.id} className="text-[10px] font-black bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full uppercase tracking-widest">
-                        {cs.subjects.name}
-                      </span>
-                    ))}
-                    {(!cls.class_subjects || cls.class_subjects.length === 0) && (
-                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest italic">Belum ada mata pelajaran</p>
-                    )}
-                    <span className="w-1 h-1 bg-slate-300 rounded-full" />
-                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{cls.join_code}</p>
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">{cls.join_code}</span>
                   </div>
                 </div>
               </div>
