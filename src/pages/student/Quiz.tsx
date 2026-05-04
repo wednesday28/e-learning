@@ -2,14 +2,23 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
 import { Card, Button, Progress, Spinner } from '../../components/ui';
 import { ChevronLeft, Timer, Award, BookOpen, ChevronRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { useAuthStore } from '../../store/useAuthStore';
+
+
+const RESTRICTED_LEVELS = ['CPNS', 'POLRI', 'Kedinasan', 'UTBK-SNBT'];
+
 
 const Quiz = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const { profile } = useAuthStore();
   const [step, setStep] = useState<'selection' | 'quiz' | 'result'>('selection');
   const [levels, setLevels] = useState<any[]>([]);
   const [subjects, setSubjects] = useState<any[]>([]);
   const [selectedLevel, setSelectedLevel] = useState<string | null>(null);
+
   
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,13 +28,29 @@ const Quiz = () => {
 
   useEffect(() => {
     fetchInitialData();
-  }, []);
+    
+    // Check for subjectId in URL to auto-start quiz
+    const params = new URLSearchParams(location.search);
+    const subjectId = params.get('subjectId');
+    if (subjectId) {
+      startQuiz(subjectId);
+    }
+  }, [location.search]);
+
 
   const fetchInitialData = async () => {
     const { data } = await supabase.from('levels').select('*');
-    setLevels(data || []);
+    let filteredLevels = data || [];
+    
+    // If student, filter out restricted levels from public view
+    if (profile?.role === 'student') {
+      filteredLevels = filteredLevels.filter(l => !RESTRICTED_LEVELS.includes(l.name));
+    }
+    
+    setLevels(filteredLevels);
     setIsLoading(false);
   };
+
 
   const fetchSubjects = async (lId: string) => {
     setIsLoading(true);

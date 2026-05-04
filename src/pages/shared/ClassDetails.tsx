@@ -16,8 +16,10 @@ import {
   Download,
   X,
   FileIcon,
-  ChevronRight
+  ChevronRight,
+  Award
 } from 'lucide-react';
+
 
 const ClassDetails = () => {
   const { id } = useParams();
@@ -41,9 +43,15 @@ const ClassDetails = () => {
   const [newMaterial, setNewMaterial] = useState({ title: '', content_type: 'pdf' });
   const [newMessage, setNewMessage] = useState('');
   const [showCreateModal, setShowCreateModal] = useState(false);
-  const [contentType, setContentType] = useState<'announcement' | 'assignment' | 'material'>('announcement');
+  const [contentType, setContentType] = useState<'announcement' | 'assignment' | 'material' | 'quiz'>('announcement');
+  const [classQuizzes, setClassQuizzes] = useState<any[]>([]);
+  const [availableSubjects, setAvailableSubjects] = useState<any[]>([]);
+  const [selectedSubjectId, setSelectedSubjectId] = useState('');
 
 
+
+
+  const isTeacher = profile?.role === 'teacher' || profile?.role === 'admin' || profile?.role === 'super_admin';
 
   useEffect(() => {
     if (id) {
@@ -53,8 +61,11 @@ const ClassDetails = () => {
       fetchMaterials();
       fetchMessages();
       fetchStudents();
+      fetchClassQuizzes();
+      if (isTeacher) fetchAvailableSubjects();
     }
-  }, [id]);
+  }, [id, profile]);
+
 
   const fetchClassData = async () => {
     const { data } = await supabase
@@ -109,6 +120,24 @@ const ClassDetails = () => {
       .eq('class_id', id);
     setStudents(data || []);
   };
+
+  const fetchClassQuizzes = async () => {
+    const { data } = await supabase
+      .from('class_quizzes')
+      .select('*, subjects(name)')
+      .eq('class_id', id);
+    setClassQuizzes(data || []);
+  };
+
+  const fetchAvailableSubjects = async () => {
+    if (!classData?.level_id) return;
+    const { data } = await supabase
+      .from('subjects')
+      .select('*')
+      .eq('level_id', classData.level_id);
+    setAvailableSubjects(data || []);
+  };
+
 
   const handlePostAnnouncement = async () => {
     if (!newAnnouncement.title || !newAnnouncement.content) return;
@@ -175,20 +204,40 @@ const ClassDetails = () => {
     }
   };
 
+  const handleAssignQuiz = async () => {
+    if (!selectedSubjectId) return;
+    const { error } = await supabase.from('class_quizzes').insert({
+      class_id: id,
+      subject_id: selectedSubjectId,
+      teacher_id: profile?.id
+    });
+    if (!error) {
+      setSelectedSubjectId('');
+      setShowCreateModal(false);
+      fetchClassQuizzes();
+    } else {
+      alert('Gagal memberikan kuis: ' + error.message);
+    }
+  };
+
+
 
   if (isLoading) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
   if (!classData) return <div className="p-20 text-center">Kelas tidak ditemukan.</div>;
 
-  const isTeacher = profile?.role === 'teacher' || profile?.role === 'admin' || profile?.role === 'super_admin';
+  if (!classData) return <div className="p-20 text-center">Kelas tidak ditemukan.</div>;
 
   const tabs = [
+
     { id: 'overview', label: 'Ringkasan', icon: ClipboardList },
     { id: 'announcements', label: 'Pengumuman', icon: Megaphone },
     { id: 'assignments', label: 'Tugas', icon: FileText },
     { id: 'materials', label: 'Materi', icon: Download },
     { id: 'forum', label: 'Diskusi', icon: MessagesSquare },
+    { id: 'quizzes', label: 'Kuis Kelas', icon: Award },
     { id: 'students', label: 'Siswa', icon: Users },
   ];
+
 
   return (
     <div className="max-w-6xl mx-auto space-y-8 pb-20">
@@ -393,7 +442,40 @@ const ClassDetails = () => {
           </div>
         )}
 
+        {activeTab === 'quizzes' && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {classQuizzes.map(q => (
+              <Card key={q.id} className="p-8 space-y-6 hover:border-amber-500 transition-all group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-full -mr-16 -mt-16 group-hover:bg-amber-100 transition-colors" />
+                <div className="flex justify-between items-start relative z-10">
+                   <div className="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600">
+                     <Award className="w-6 h-6" />
+                   </div>
+                   <span className="text-[10px] font-black text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-100">Kuis Kelas</span>
+                </div>
+                <div className="relative z-10">
+                  <h4 className="text-xl font-black text-slate-900 mb-1">{q.subjects?.name}</h4>
+                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Diberikan pada {new Date(q.assigned_at).toLocaleDateString()}</p>
+                </div>
+                <Button 
+                  onClick={() => navigate(`/quiz?subjectId=${q.subject_id}`)}
+                  className="w-full h-12 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white font-black shadow-lg relative z-10"
+                >
+                  Mulai Kerjakan Kuis
+                </Button>
+              </Card>
+            ))}
+            {classQuizzes.length === 0 && (
+              <div className="md:col-span-2 text-center py-20 bg-slate-50 rounded-[40px] border-2 border-dashed border-slate-200">
+                <Award className="w-16 h-16 text-slate-200 mx-auto mb-4" />
+                <p className="text-slate-400 font-black">Belum ada kuis yang diberikan guru.</p>
+              </div>
+            )}
+          </div>
+        )}
+
         {activeTab === 'students' && (
+
           <Card className="p-8">
             <h3 className="text-xl font-black text-slate-900 mb-8 flex items-center gap-3">
               <Users className="w-6 h-6 text-indigo-600" /> Anggota Kelas ({students.length})
@@ -427,7 +509,7 @@ const ClassDetails = () => {
             </div>
             
             <div className="flex gap-2 mb-8 bg-slate-50 p-1.5 rounded-2xl">
-               {(['announcement', 'assignment', 'material'] as const).map(type => (
+               {(['announcement', 'assignment', 'material', 'quiz'] as const).map(type => (
                  <button
                    key={type}
                    onClick={() => setContentType(type)}
@@ -435,10 +517,11 @@ const ClassDetails = () => {
                      contentType === type ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'
                    }`}
                  >
-                   {type === 'announcement' ? 'Pengumuman' : type === 'assignment' ? 'Tugas' : 'Materi'}
+                   {type === 'announcement' ? 'Info' : type === 'assignment' ? 'Tugas' : type === 'material' ? 'Materi' : 'Kuis'}
                  </button>
                ))}
             </div>
+
 
             <div className="space-y-6">
               {contentType === 'announcement' && (
@@ -510,7 +593,30 @@ const ClassDetails = () => {
                   </Button>
                 </>
               )}
+
+              {contentType === 'quiz' && (
+                <>
+                  <div className="space-y-2">
+                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pilih Mata Pelajaran Kuis</label>
+                    <select 
+                      value={selectedSubjectId} 
+                      onChange={(e) => setSelectedSubjectId(e.target.value)}
+                      className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                    >
+                      <option value="">Pilih Subjek...</option>
+                      {availableSubjects.map(s => (
+                        <option key={s.id} value={s.id}>{s.name}</option>
+                      ))}
+                    </select>
+                    <p className="text-[10px] text-slate-400 font-medium px-2 italic">Hanya menampilkan mata pelajaran sesuai jenjang kelas ini.</p>
+                  </div>
+                  <Button onClick={handleAssignQuiz} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
+                    Berikan Kuis ke Kelas
+                  </Button>
+                </>
+              )}
             </div>
+
           </div>
         </div>
       )}
