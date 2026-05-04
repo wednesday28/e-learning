@@ -97,9 +97,14 @@ export const Header = ({ onMenuClick }: { onMenuClick: () => void }) => {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    await supabase.auth.signOut();
-    logout();
-    navigate('/login');
+    try {
+      await supabase.auth.signOut();
+    } catch (err) {
+      console.error('Supabase signout error:', err);
+    } finally {
+      logout();
+      navigate('/login', { replace: true });
+    }
   };
 
   return (
