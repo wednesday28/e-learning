@@ -75,7 +75,8 @@ const ManageClasses = () => {
         teacher_id: user.id,
         level_id: selectedLevel,
         grade_id: selectedGrade,
-        join_code: joinCode
+        join_code: joinCode,
+        is_active: true
       }).select().single();
 
       if (classError) throw classError;
