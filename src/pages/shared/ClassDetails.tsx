@@ -37,8 +37,12 @@ const ClassDetails = () => {
 
   // Input States
   const [newAnnouncement, setNewAnnouncement] = useState({ title: '', content: '' });
+  const [newAssignment, setNewAssignment] = useState({ title: '', instructions: '', due_date: '' });
+  const [newMaterial, setNewMaterial] = useState({ title: '', content_type: 'pdf' });
   const [newMessage, setNewMessage] = useState('');
   const [showCreateModal, setShowCreateModal] = useState(false);
+  const [contentType, setContentType] = useState<'announcement' | 'assignment' | 'material'>('announcement');
+
 
 
   useEffect(() => {
@@ -123,18 +127,54 @@ const ClassDetails = () => {
   };
 
   const handleSendMessage = async () => {
-    if (!newMessage.trim()) return;
+    if (!newMessage.trim() || !profile?.id) return;
     const { error } = await supabase.from('class_messages').insert({
       class_id: id,
-      user_id: profile?.id,
+      user_id: profile.id,
       content: newMessage
     });
 
     if (!error) {
       setNewMessage('');
       fetchMessages();
+    } else {
+      alert('Gagal mengirim pesan: ' + error.message);
     }
   };
+
+  const handlePostAssignment = async () => {
+    if (!newAssignment.title || !newAssignment.instructions) return;
+    const { error } = await supabase.from('class_assignments').insert({
+      class_id: id,
+      title: newAssignment.title,
+      instructions: newAssignment.instructions,
+      due_date: newAssignment.due_date || null
+    });
+    if (!error) {
+      setNewAssignment({ title: '', instructions: '', due_date: '' });
+      setShowCreateModal(false);
+      fetchAssignments();
+    } else {
+      alert('Gagal posting tugas: ' + error.message);
+    }
+  };
+
+  const handlePostMaterial = async () => {
+    if (!newMaterial.title) return;
+    const { error } = await supabase.from('class_materials').insert({
+      class_id: id,
+      title: newMaterial.title,
+      content_type: newMaterial.content_type
+    });
+    if (!error) {
+      setNewMaterial({ title: '', content_type: 'pdf' });
+      setShowCreateModal(false);
+      fetchMaterials();
+    } else {
+      alert('Gagal posting materi: ' + error.message);
+    }
+  };
+
 
   if (isLoading) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
   if (!classData) return <div className="p-20 text-center">Kelas tidak ditemukan.</div>;
@@ -386,23 +426,90 @@ const ClassDetails = () => {
               </Button>
             </div>
             
+            <div className="flex gap-2 mb-8 bg-slate-50 p-1.5 rounded-2xl">
+               {(['announcement', 'assignment', 'material'] as const).map(type => (
+                 <button
+                   key={type}
+                   onClick={() => setContentType(type)}
+                   className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-xl transition-all ${
+                     contentType === type ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'
+                   }`}
+                 >
+                   {type === 'announcement' ? 'Pengumuman' : type === 'assignment' ? 'Tugas' : 'Materi'}
+                 </button>
+               ))}
+            </div>
+
             <div className="space-y-6">
-              <div className="space-y-2">
-                <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Judul</label>
-                <Input value={newAnnouncement.title} onChange={(e) => setNewAnnouncement({...newAnnouncement, title: e.target.value})} placeholder="Contoh: Info Ujian Tengah Semester" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Konten</label>
-                <textarea 
-                  value={newAnnouncement.content} 
-                  onChange={(e) => setNewAnnouncement({...newAnnouncement, content: e.target.value})}
-                  className="w-full min-h-[120px] bg-slate-50 border-transparent rounded-2xl p-4 font-medium text-slate-900 focus:ring-indigo-500 focus:bg-white"
-                  placeholder="Ketik pengumuman di sini..."
-                />
-              </div>
-              <Button onClick={handlePostAnnouncement} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
-                Posting Pengumuman
-              </Button>
+              {contentType === 'announcement' && (
+                <>
+                  <div className="space-y-2">
+                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Judul</label>
+                    <Input value={newAnnouncement.title} onChange={(e) => setNewAnnouncement({...newAnnouncement, title: e.target.value})} placeholder="Contoh: Info Ujian Tengah Semester" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Konten</label>
+                    <textarea 
+                      value={newAnnouncement.content} 
+                      onChange={(e) => setNewAnnouncement({...newAnnouncement, content: e.target.value})}
+                      className="w-full min-h-[120px] bg-slate-50 border-transparent rounded-2xl p-4 font-medium text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                      placeholder="Ketik pengumuman di sini..."
+                    />
+                  </div>
+                  <Button onClick={handlePostAnnouncement} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
+                    Posting Pengumuman
+                  </Button>
+                </>
+              )}
+
+              {contentType === 'assignment' && (
+                <>
+                  <div className="space-y-2">
+                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Judul Tugas</label>
+                    <Input value={newAssignment.title} onChange={(e) => setNewAssignment({...newAssignment, title: e.target.value})} placeholder="Contoh: Latihan Aljabar Dasar" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Instruksi</label>
+                    <textarea 
+                      value={newAssignment.instructions} 
+                      onChange={(e) => setNewAssignment({...newAssignment, instructions: e.target.value})}
+                      className="w-full min-h-[120px] bg-slate-50 border-transparent rounded-2xl p-4 font-medium text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                      placeholder="Ketik instruksi tugas di sini..."
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Batas Waktu (Opsional)</label>
+                    <Input type="date" value={newAssignment.due_date} onChange={(e) => setNewAssignment({...newAssignment, due_date: e.target.value})} className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
+                  </div>
+                  <Button onClick={handlePostAssignment} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
+                    Posting Tugas
+                  </Button>
+                </>
+              )}
+
+              {contentType === 'material' && (
+                <>
+                  <div className="space-y-2">
+                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Judul Materi</label>
+                    <Input value={newMaterial.title} onChange={(e) => setNewMaterial({...newMaterial, title: e.target.value})} placeholder="Contoh: Modul Rumus Cepat Matematika" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Tipe Materi</label>
+                    <select 
+                      value={newMaterial.content_type} 
+                      onChange={(e) => setNewMaterial({...newMaterial, content_type: e.target.value})}
+                      className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                    >
+                      <option value="pdf">PDF / Dokumen</option>
+                      <option value="video">Link Video</option>
+                      <option value="link">Link Eksternal</option>
+                    </select>
+                  </div>
+                  <Button onClick={handlePostMaterial} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
+                    Posting Materi
+                  </Button>
+                </>
+              )}
             </div>
           </div>
         </div>

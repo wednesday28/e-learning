@@ -13,7 +13,12 @@ export interface Profile {
   grade_id?: string
   total_xp?: number
   avatar_url?: string
+  phone?: string
+  school_name?: string
+  address?: string
+  bio?: string
 }
+
 
 interface AuthState {
   user: User | null

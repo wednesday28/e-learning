@@ -2,13 +2,19 @@ import { useState } from 'react';
 import { useAuthStore } from '../../store/useAuthStore';
 import { supabase } from '../../lib/supabase';
 import { Card, Button, Input } from '../../components/ui';
-import { User, Mail, Shield, Edit2, Save, X } from 'lucide-react';
+import { User, Mail, Shield, Edit2, Save, X, Phone, School, MapPin, AlignLeft } from 'lucide-react';
+
 
 const ProfilePage = () => {
   const { profile, setProfile } = useAuthStore();
   const [isEditing, setIsEditing] = useState(false);
   const [fullName, setFullName] = useState(profile?.full_name || '');
+  const [phone, setPhone] = useState(profile?.phone || '');
+  const [schoolName, setSchoolName] = useState(profile?.school_name || '');
+  const [address, setAddress] = useState(profile?.address || '');
+  const [bio, setBio] = useState(profile?.bio || '');
   const [isLoading, setIsLoading] = useState(false);
+
 
   const handleUpdateProfile = async () => {
     if (!profile) return;
@@ -16,10 +22,17 @@ const ProfilePage = () => {
     try {
       const { data, error } = await supabase
         .from('profiles')
-        .update({ full_name: fullName })
+        .update({ 
+          full_name: fullName,
+          phone: phone,
+          school_name: schoolName,
+          address: address,
+          bio: bio
+        })
         .eq('id', profile.id)
         .select()
         .single();
+
 
       if (error) throw error;
       setProfile(data);
@@ -122,6 +135,65 @@ const ProfilePage = () => {
                 {profile?.role}
               </div>
             </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1 flex items-center gap-2">
+                  <Phone className="w-3 h-3" /> Nomor WhatsApp
+                </label>
+                {isEditing ? (
+                  <Input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="0812..." className="h-14 bg-slate-50 border-none rounded-2xl" />
+                ) : (
+                  <div className="h-14 bg-slate-50 rounded-2xl px-4 flex items-center font-bold text-slate-700">
+                    {profile?.phone || '-'}
+                  </div>
+                )}
+              </div>
+              <div className="space-y-2">
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1 flex items-center gap-2">
+                  <School className="w-3 h-3" /> Sekolah / Instansi
+                </label>
+                {isEditing ? (
+                  <Input value={schoolName} onChange={(e) => setSchoolName(e.target.value)} placeholder="Nama Sekolah" className="h-14 bg-slate-50 border-none rounded-2xl" />
+                ) : (
+                  <div className="h-14 bg-slate-50 rounded-2xl px-4 flex items-center font-bold text-slate-700">
+                    {profile?.school_name || '-'}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1 flex items-center gap-2">
+                <MapPin className="w-3 h-3" /> Alamat
+              </label>
+              {isEditing ? (
+                <Input value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Alamat Lengkap" className="h-14 bg-slate-50 border-none rounded-2xl" />
+              ) : (
+                <div className="h-14 bg-slate-50 rounded-2xl px-4 flex items-center font-bold text-slate-700">
+                  {profile?.address || '-'}
+                </div>
+              )}
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1 flex items-center gap-2">
+                <AlignLeft className="w-3 h-3" /> Bio Singkat
+              </label>
+              {isEditing ? (
+                <textarea 
+                  value={bio} 
+                  onChange={(e) => setBio(e.target.value)} 
+                  className="w-full min-h-[100px] bg-slate-50 border-none rounded-2xl p-4 font-bold text-slate-700 focus:ring-2 focus:ring-indigo-500"
+                  placeholder="Ceritakan sedikit tentang dirimu..."
+                />
+              ) : (
+                <div className="min-h-[100px] bg-slate-50 rounded-2xl p-4 font-bold text-slate-700">
+                  {profile?.bio || 'Belum ada bio.'}
+                </div>
+              )}
+            </div>
+
           </div>
         </Card>
       </div>
