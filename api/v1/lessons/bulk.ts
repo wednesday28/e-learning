@@ -2,8 +2,9 @@ import type { VercelRequest, VercelResponse } from '@vercel/node'
 import { createClient } from '@supabase/supabase-js'
 
 const supabaseUrl = process.env.VITE_SUPABASE_URL || ''
-const supabaseAnonKey = process.env.VITE_SUPABASE_ANON_KEY || ''
-const supabase = createClient(supabaseUrl, supabaseAnonKey)
+// Use service role to bypass RLS for bulk ingestion
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY || ''
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 export default async function handler(
   req: VercelRequest,
@@ -32,6 +33,17 @@ export default async function handler(
     for (const item of items) {
       const { level, grade, subject, topic, subtopic, lesson } = item
       
+      // Skip items without required fields or lesson data
+      if (!level || !subject) {
+        results.push({ success: false, item: 'unknown', error: 'Missing required fields: level or subject' })
+        continue
+      }
+      if (!lesson || typeof lesson !== 'object' || !lesson.title) {
+        // This item might be a question/exam item, skip silently
+        results.push({ success: false, item: topic?.name || subtopic || 'unknown', error: 'Skipped: no lesson data (may be a question item)' })
+        continue
+      }
+
       // 1. Get Level ID
       let levelId = cache.levels[level]
       if (!levelId) {
@@ -146,11 +158,14 @@ export default async function handler(
         .single()
       
       if (lessonErr) {
-        // If it's a duplicate title in the same module, we might want to skip or update
-        // But for bulk ingestion, we usually assume fresh data or unique titles.
-        results.push({ success: false, item: lesson.title, error: lessonErr.message })
+        if (lessonErr.code === '23505') {
+          // Duplicate - skip gracefully
+          results.push({ success: true, id: null, title: lesson.title, note: 'Already exists, skipped' })
+        } else {
+          results.push({ success: false, item: lesson.title, error: lessonErr.message })
+        }
       } else {
-        results.push({ success: true, id: newLesson.id, title: lesson.title })
+        results.push({ success: true, id: newLesson?.id, title: lesson.title })
       }
     }
 

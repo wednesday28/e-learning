@@ -74,6 +74,22 @@ const UserControl = () => {
     }
   };
 
+  const handleDeleteUser = async (userId: string, userName: string) => {
+    if (!window.confirm(`Hapus pengguna "${userName}" secara permanen? Tindakan ini tidak dapat dibatalkan.`)) return;
+    try {
+      const { error } = await supabase
+        .from('profiles')
+        .update({ deleted_at: new Date().toISOString() })
+        .eq('id', userId);
+
+      if (error) throw error;
+      setUsers(prev => prev.filter(u => u.id !== userId));
+      alert('Pengguna berhasil dihapus.');
+    } catch (err: any) {
+      alert('Gagal menghapus pengguna: ' + err.message);
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
@@ -185,7 +201,7 @@ const UserControl = () => {
                         >
                           {u.status === 'active' ? 'Suspend' : 'Aktifkan'}
                         </Button>
-                        <Button variant="ghost" size="icon" className="h-11 w-11 rounded-xl text-slate-300 hover:text-rose-500 hover:bg-rose-50 transition-all">
+                        <Button variant="ghost" size="icon" onClick={() => handleDeleteUser(u.id, u.full_name || 'Pengguna')} className="h-11 w-11 rounded-xl text-slate-300 hover:text-rose-500 hover:bg-rose-50 transition-all">
                           <Trash2 className="w-5 h-5" />
                         </Button>
                       </>
