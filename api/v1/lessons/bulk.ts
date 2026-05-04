@@ -44,21 +44,24 @@ export default async function handler(
         }
       }
 
-      // 2. Get Grade ID
-      const gradeKey = `${levelId}_${grade}`
-      let gradeId = cache.grades[gradeKey]
-      if (!gradeId) {
-        const { data } = await supabase
-          .from('grades')
-          .select('id')
-          .eq('level_id', levelId)
-          .eq('grade_level', grade)
-          .single()
-        if (data) {
-          gradeId = data.id
-          cache.grades[gradeKey] = gradeId
-        } else {
-          throw new Error(`Grade not found: ${grade} for level ${level}`)
+      // 2. Get Grade ID (Optional)
+      let gradeId = null
+      if (grade) {
+        const gradeKey = `${levelId}_${grade}`
+        gradeId = cache.grades[gradeKey]
+        if (!gradeId) {
+          const { data } = await supabase
+            .from('grades')
+            .select('id')
+            .eq('level_id', levelId)
+            .eq('grade_level', grade)
+            .single()
+          if (data) {
+            gradeId = data.id
+            cache.grades[gradeKey] = gradeId
+          } else {
+            throw new Error(`Grade not found: ${grade} for level ${level}`)
+          }
         }
       }
 
@@ -96,7 +99,7 @@ export default async function handler(
       // 4. Get/Create Module ID
       // Mapping: topic.name -> module.title
       const moduleTitle = topic?.name || subtopic || 'General'
-      const moduleKey = `${subjectId}_${gradeId}_${moduleTitle}`
+      const moduleKey = `${subjectId}_${gradeId || 'null'}_${moduleTitle}`
       let moduleId = cache.modules[moduleKey]
       if (!moduleId) {
         const { data: existingModule } = await supabase
@@ -117,7 +120,7 @@ export default async function handler(
               subject_id: subjectId,
               grade_id: gradeId,
               title: moduleTitle,
-              description: `Materi untuk ${subject} kelas ${grade} - ${moduleTitle}`
+              description: `Materi untuk ${subject} ${grade ? `kelas ${grade}` : '(Umum)'} - ${moduleTitle}`
             })
             .select('id')
             .single()
