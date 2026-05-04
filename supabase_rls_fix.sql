@@ -1,97 +1,77 @@
 -- ============================================================
--- FIX: RLS Policies for Teacher Class Creation
--- Run this in Supabase Dashboard > SQL Editor
+-- FIX: RLS untuk tabel classes (tanpa infinite recursion)
+-- SOLUSI: Gunakan SECURITY DEFINER function agar pengecekan
+-- role tidak menyebabkan rekursi tak terbatas
 -- ============================================================
 
--- 1. Enable RLS on classes table (if not already enabled)
-ALTER TABLE classes ENABLE ROW LEVEL SECURITY;
+-- 1. Buat fungsi helper yang aman (SECURITY DEFINER = bypass RLS saat check)
+CREATE OR REPLACE FUNCTION get_my_role()
+RETURNS TEXT AS $$
+  SELECT role FROM profiles WHERE id = auth.uid();
+$$ LANGUAGE SQL SECURITY DEFINER STABLE;
 
--- 2. Drop existing policies to start fresh (safe to run even if they don't exist)
+-- 2. Hapus semua policy lama di tabel classes
 DROP POLICY IF EXISTS "Teachers can insert their own classes" ON classes;
 DROP POLICY IF EXISTS "Teachers can view their own classes" ON classes;
 DROP POLICY IF EXISTS "Teachers can update their own classes" ON classes;
 DROP POLICY IF EXISTS "Anyone can view active classes" ON classes;
-
--- 3. Allow teachers to CREATE classes (INSERT)
--- Condition: teacher_id must match the currently logged-in user's ID
-CREATE POLICY "Teachers can insert their own classes"
-ON classes
-FOR INSERT
-TO authenticated
-WITH CHECK (
-  teacher_id = auth.uid()
-  AND EXISTS (
-    SELECT 1 FROM profiles
-    WHERE id = auth.uid()
-    AND role = 'teacher'
-  )
-);
-
--- 4. Allow teachers to VIEW their own classes
-CREATE POLICY "Teachers can view their own classes"
-ON classes
-FOR SELECT
-TO authenticated
-USING (
-  teacher_id = auth.uid()
-  OR EXISTS (
-    SELECT 1 FROM profiles
-    WHERE id = auth.uid()
-    AND role IN ('super_admin', 'admin')
-  )
-);
-
--- 5. Allow teachers to UPDATE their own classes
-CREATE POLICY "Teachers can update their own classes"
-ON classes
-FOR UPDATE
-TO authenticated
-USING (teacher_id = auth.uid())
-WITH CHECK (teacher_id = auth.uid());
-
--- 6. Allow super_admin to do everything
 DROP POLICY IF EXISTS "Super admin full access on classes" ON classes;
-CREATE POLICY "Super admin full access on classes"
-ON classes
-FOR ALL
-TO authenticated
+
+-- 3. Aktifkan RLS
+ALTER TABLE classes ENABLE ROW LEVEL SECURITY;
+
+-- 4. Policy SELECT: guru lihat kelas sendiri, admin lihat semua
+CREATE POLICY "classes_select_policy"
+ON classes FOR SELECT TO authenticated
 USING (
-  EXISTS (
-    SELECT 1 FROM profiles
-    WHERE id = auth.uid()
-    AND role = 'super_admin'
-  )
-)
-WITH CHECK (
-  EXISTS (
-    SELECT 1 FROM profiles
-    WHERE id = auth.uid()
-    AND role = 'super_admin'
-  )
+  teacher_id = auth.uid()
+  OR get_my_role() IN ('super_admin', 'admin')
 );
 
--- ============================================================
--- FIX: RLS Policies for class_students table
--- ============================================================
+-- 5. Policy INSERT: guru bisa buat kelas dengan teacher_id = diri sendiri
+CREATE POLICY "classes_insert_policy"
+ON classes FOR INSERT TO authenticated
+WITH CHECK (
+  teacher_id = auth.uid()
+  AND get_my_role() = 'teacher'
+);
 
+-- 6. Policy UPDATE: guru bisa update kelas milik sendiri
+CREATE POLICY "classes_update_policy"
+ON classes FOR UPDATE TO authenticated
+USING (
+  teacher_id = auth.uid()
+  OR get_my_role() IN ('super_admin', 'admin')
+);
+
+-- 7. Policy DELETE: hanya admin
+CREATE POLICY "classes_delete_policy"
+ON classes FOR DELETE TO authenticated
+USING (get_my_role() IN ('super_admin', 'admin'));
+
+-- ============================================================
+-- FIX: RLS untuk class_students
+-- ============================================================
 ALTER TABLE class_students ENABLE ROW LEVEL SECURITY;
 
 DROP POLICY IF EXISTS "Teachers can manage class_students" ON class_students;
-CREATE POLICY "Teachers can manage class_students"
-ON class_students
-FOR ALL
-TO authenticated
+DROP POLICY IF EXISTS "class_students_policy" ON class_students;
+
+CREATE POLICY "class_students_policy"
+ON class_students FOR ALL TO authenticated
 USING (
-  EXISTS (
+  get_my_role() IN ('super_admin', 'admin')
+  OR EXISTS (
     SELECT 1 FROM classes
     WHERE classes.id = class_id
-    AND classes.teacher_id = auth.uid()
+      AND classes.teacher_id = auth.uid()
   )
 );
 
 -- ============================================================
--- VERIFY: Check current policies
+-- VERIFIKASI
 -- ============================================================
-SELECT schemaname, tablename, policyname, cmd, qual
+SELECT tablename, policyname, cmd
 FROM pg_policies
-WHERE tablename IN ('classes', 'class_students');
+WHERE tablename IN ('classes', 'class_students')
+ORDER BY tablename, policyname;

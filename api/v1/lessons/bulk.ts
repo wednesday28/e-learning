@@ -20,7 +20,7 @@ export default async function handler(
   }
 
   try {
-    const results = []
+    const results: any[] = []
     
     // Cache for IDs to reduce queries
     const cache = {
@@ -31,141 +31,196 @@ export default async function handler(
     }
 
     for (const item of items) {
-      const { level, grade, subject, topic, subtopic, lesson } = item
+      const { level, grade, subject, topic, subtopic, lesson, question, options, answer, explanation } = item
       
-      // Skip items without required fields or lesson data
+      // Skip items without required fields
       if (!level || !subject) {
         results.push({ success: false, item: 'unknown', error: 'Missing required fields: level or subject' })
         continue
       }
-      if (!lesson || typeof lesson !== 'object' || !lesson.title) {
-        // This item might be a question/exam item, skip silently
-        results.push({ success: false, item: topic?.name || subtopic || 'unknown', error: 'Skipped: no lesson data (may be a question item)' })
+
+      // Detect item type
+      const isQuestion = !!question
+      const hasLesson = lesson && typeof lesson === 'object' && lesson.title
+      // Also support flat lesson format (title/content directly on item)
+      const flatTitle = item.title || item.judul
+      const flatContent = item.content || item.konten || item.materi || item.isi
+
+      if (!isQuestion && !hasLesson && !flatTitle) {
+        results.push({ success: false, item: topic || subtopic || 'unknown', error: 'Skipped: unrecognized item format' })
         continue
       }
 
-      // 1. Get Level ID
-      let levelId = cache.levels[level]
-      if (!levelId) {
-        const { data } = await supabase.from('levels').select('id').eq('name', level).single()
-        if (data) {
-          levelId = data.id
-          cache.levels[level] = levelId
-        } else {
-          throw new Error(`Level not found: ${level}`)
+      try {
+        // 1. Get Level ID
+        let levelId = cache.levels[level]
+        if (!levelId) {
+          const { data } = await supabase.from('levels').select('id').eq('name', level).single()
+          if (data) {
+            levelId = data.id
+            cache.levels[level] = levelId
+          } else {
+            throw new Error(`Level not found: ${level}`)
+          }
         }
-      }
 
-      // 2. Get Grade ID (Optional)
-      let gradeId = null
-      if (grade) {
-        const gradeKey = `${levelId}_${grade}`
-        gradeId = cache.grades[gradeKey]
-        if (!gradeId) {
+        // 2. Get Grade ID (Optional)
+        let gradeId: string | null = null
+        if (grade) {
+          const gradeKey = `${levelId}_${grade}`
+          gradeId = cache.grades[gradeKey] || null
+          if (!gradeId) {
+            const { data } = await supabase
+              .from('grades')
+              .select('id')
+              .eq('level_id', levelId)
+              .eq('grade_level', grade)
+              .single()
+            if (data) {
+              gradeId = data.id
+              cache.grades[gradeKey] = gradeId
+            } else {
+              throw new Error(`Grade not found: ${grade} for level ${level}`)
+            }
+          }
+        }
+
+        // 3. Get Subject ID
+        const subjectKey = `${levelId}_${subject}`
+        let subjectId = cache.subjects[subjectKey]
+        if (!subjectId) {
           const { data } = await supabase
-            .from('grades')
+            .from('subjects')
             .select('id')
             .eq('level_id', levelId)
-            .eq('grade_level', grade)
+            .eq('name', subject)
             .single()
           if (data) {
-            gradeId = data.id
-            cache.grades[gradeKey] = gradeId
-          } else {
-            throw new Error(`Grade not found: ${grade} for level ${level}`)
-          }
-        }
-      }
-
-      // 3. Get Subject ID
-      const subjectKey = `${levelId}_${subject}`
-      let subjectId = cache.subjects[subjectKey]
-      if (!subjectId) {
-        const { data } = await supabase
-          .from('subjects')
-          .select('id')
-          .eq('level_id', levelId)
-          .eq('name', subject)
-          .single()
-        if (data) {
-          subjectId = data.id
-          cache.subjects[subjectKey] = subjectId
-        } else {
-          // Create subject if it doesn't exist?
-          // For now, let's just create it to be safe if the user provided it
-          const { data: newSubject, error: subErr } = await supabase
-            .from('subjects')
-            .insert({ level_id: levelId, name: subject })
-            .select('id')
-            .single()
-          
-          if (newSubject) {
-            subjectId = newSubject.id
+            subjectId = data.id
             cache.subjects[subjectKey] = subjectId
           } else {
-            throw new Error(`Failed to resolve subject: ${subject}. Error: ${subErr?.message}`)
+            const { data: newSubject, error: subErr } = await supabase
+              .from('subjects')
+              .insert({ level_id: levelId, name: subject })
+              .select('id')
+              .single()
+            if (newSubject) {
+              subjectId = newSubject.id
+              cache.subjects[subjectKey] = subjectId
+            } else {
+              throw new Error(`Failed to resolve subject: ${subject}. Error: ${subErr?.message}`)
+            }
           }
         }
-      }
 
-      // 4. Get/Create Module ID
-      // Mapping: topic.name -> module.title
-      const moduleTitle = topic?.name || subtopic || 'General'
-      const moduleKey = `${subjectId}_${gradeId || 'null'}_${moduleTitle}`
-      let moduleId = cache.modules[moduleKey]
-      if (!moduleId) {
-        const { data: existingModule } = await supabase
-          .from('modules')
-          .select('id')
-          .eq('subject_id', subjectId)
-          .eq('grade_id', gradeId)
-          .eq('title', moduleTitle)
-          .single()
-        
-        if (existingModule) {
-          moduleId = existingModule.id
-          cache.modules[moduleKey] = moduleId
-        } else {
-          const { data: newModule, error: modErr } = await supabase
-            .from('modules')
+        if (isQuestion) {
+          // === QUESTION / SOAL FORMAT ===
+          const { data: existingQ } = await supabase
+            .from('questions')
+            .select('id')
+            .eq('subject_id', subjectId)
+            .eq('question_text', question)
+            .single()
+
+          if (existingQ) {
+            results.push({ success: true, id: existingQ.id, title: question.substring(0, 60), note: 'Already exists' })
+            continue
+          }
+
+          const { data: newQ, error: qErr } = await supabase
+            .from('questions')
             .insert({
               subject_id: subjectId,
               grade_id: gradeId,
-              title: moduleTitle,
-              description: `Materi untuk ${subject} ${grade ? `kelas ${grade}` : '(Umum)'} - ${moduleTitle}`
+              question_text: question,
+              explanation: explanation || null,
+              difficulty_level: 'medium',
+              type: 'multiple_choice'
             })
             .select('id')
             .single()
+
+          if (qErr) {
+            if (qErr.code === '23505') {
+              results.push({ success: true, id: null, title: question.substring(0, 60), note: 'Duplicate skipped' })
+            } else {
+              results.push({ success: false, item: question.substring(0, 60), error: qErr.message })
+            }
+            continue
+          }
+
+          // Insert choices
+          if (newQ && options && typeof options === 'object') {
+            const choices = Object.entries(options).map(([key, text]) => ({
+              question_id: newQ.id,
+              text: text as string,
+              is_correct: key === answer
+            }))
+            await supabase.from('choices').insert(choices)
+          }
+
+          results.push({ success: true, id: newQ?.id, title: question.substring(0, 60) })
+
+        } else {
+          // === LESSON / MATERI FORMAT ===
+          const lessonTitle = hasLesson ? lesson.title : flatTitle
+          const lessonContent = hasLesson ? (lesson.content || `Ringkasan materi untuk ${lessonTitle}.`) : (flatContent || `Ringkasan materi untuk ${lessonTitle}.`)
+          const moduleTitle = (typeof topic === 'object' ? topic?.name : topic) || subtopic || 'General'
+          const moduleKey = `${subjectId}_${gradeId || 'null'}_${moduleTitle}`
           
-          if (newModule) {
-            moduleId = newModule.id
-            cache.modules[moduleKey] = moduleId
+          let moduleId = cache.modules[moduleKey]
+          if (!moduleId) {
+            const { data: existingModule } = await supabase
+              .from('modules')
+              .select('id')
+              .eq('subject_id', subjectId)
+              .eq('grade_id', gradeId)
+              .eq('title', moduleTitle)
+              .single()
+            
+            if (existingModule) {
+              moduleId = existingModule.id
+              cache.modules[moduleKey] = moduleId
+            } else {
+              const { data: newModule, error: modErr } = await supabase
+                .from('modules')
+                .insert({
+                  subject_id: subjectId,
+                  grade_id: gradeId,
+                  title: moduleTitle,
+                  description: `Materi untuk ${subject} ${grade ? `kelas ${grade}` : '(Umum)'} - ${moduleTitle}`
+                })
+                .select('id')
+                .single()
+              
+              if (newModule) {
+                moduleId = newModule.id
+                cache.modules[moduleKey] = moduleId
+              } else {
+                throw new Error(`Failed to create module: ${moduleTitle}. Error: ${modErr?.message}`)
+              }
+            }
+          }
+
+          const { data: newLesson, error: lessonErr } = await supabase
+            .from('lessons')
+            .insert({ module_id: moduleId, title: lessonTitle, content: lessonContent })
+            .select('id')
+            .single()
+          
+          if (lessonErr) {
+            if (lessonErr.code === '23505') {
+              results.push({ success: true, id: null, title: lessonTitle, note: 'Already exists, skipped' })
+            } else {
+              results.push({ success: false, item: lessonTitle, error: lessonErr.message })
+            }
           } else {
-            throw new Error(`Failed to create module: ${moduleTitle}. Error: ${modErr?.message}`)
+            results.push({ success: true, id: newLesson?.id, title: lessonTitle })
           }
         }
-      }
 
-      // 5. Insert Lesson
-      const { data: newLesson, error: lessonErr } = await supabase
-        .from('lessons')
-        .insert({
-          module_id: moduleId,
-          title: lesson.title,
-          content: lesson.content || `Ringkasan materi untuk ${lesson.title}.`
-        })
-        .select('id')
-        .single()
-      
-      if (lessonErr) {
-        if (lessonErr.code === '23505') {
-          // Duplicate - skip gracefully
-          results.push({ success: true, id: null, title: lesson.title, note: 'Already exists, skipped' })
-        } else {
-          results.push({ success: false, item: lesson.title, error: lessonErr.message })
-        }
-      } else {
-        results.push({ success: true, id: newLesson?.id, title: lesson.title })
+      } catch (itemError: any) {
+        results.push({ success: false, item: question?.substring(0, 40) || lesson?.title || flatTitle || 'unknown', error: itemError.message })
       }
     }
 
