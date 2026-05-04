@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
 import { Card, Button, Spinner, Input } from '../../components/ui';
-import { PlusCircle, Search, Filter, Users, GraduationCap, ChevronRight, School } from 'lucide-react';
+import { PlusCircle, Search, Filter, Users, GraduationCap, ChevronRight, School, X } from 'lucide-react';
 
 const ManageClasses = () => {
   const [classes, setClasses] = useState<any[]>([]);
@@ -11,6 +11,11 @@ const ManageClasses = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showEnrollModal, setShowEnrollModal] = useState(false);
+  const [showStudentsModal, setShowStudentsModal] = useState(false);
+  const [selectedClassForStudents, setSelectedClassForStudents] = useState<any>(null);
+  const [studentsInClass, setStudentsInClass] = useState<any[]>([]);
+  const [isModalLoading, setIsModalLoading] = useState(false);
+
   
   const [newClassName, setNewClassName] = useState('');
   const [selectedLevel, setSelectedLevel] = useState('');
@@ -57,6 +62,36 @@ const ManageClasses = () => {
       setIsLoading(false);
     }
   };
+
+  const fetchStudentsInClass = async (cls: any) => {
+    setSelectedClassForStudents(cls);
+    setShowStudentsModal(true);
+    setIsModalLoading(true);
+    try {
+      const { data, error } = await supabase
+        .from('class_students')
+        .select(`
+          id,
+          joined_at,
+          profiles (
+            id,
+            full_name,
+            email,
+            avatar_url,
+            total_xp
+          )
+        `)
+        .eq('class_id', cls.id);
+      
+      if (error) throw error;
+      setStudentsInClass(data || []);
+    } catch (err) {
+      console.error('Error fetching students:', err);
+    } finally {
+      setIsModalLoading(false);
+    }
+  };
+
 
   const handleCreateClass = async () => {
     if (!newClassName || !selectedLevel || !selectedGrade || selectedSubjects.length === 0) {
@@ -234,9 +269,17 @@ const ManageClasses = () => {
                   <p className="text-sm font-black text-slate-900">{cls.class_students?.[0]?.count || 0} Siswa</p>
                   <p className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">Aktif</p>
                 </div>
-                <Button variant="ghost" size="icon" className="rounded-xl"><ChevronRight className="w-5 h-5 text-slate-400" /></Button>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="rounded-xl hover:bg-indigo-50 hover:text-indigo-600 transition-colors"
+                  onClick={() => fetchStudentsInClass(cls)}
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </Button>
               </div>
             </div>
+
           )) : (
             <div className="text-center py-20 bg-slate-50 rounded-[40px] border-2 border-dashed border-slate-200">
                <School className="w-16 h-16 text-slate-200 mx-auto mb-4" />
@@ -354,6 +397,71 @@ const ManageClasses = () => {
               </div>
             </div>
           </Card>
+        </div>
+      )}
+
+      {/* View Students Modal */}
+      {showStudentsModal && selectedClassForStudents && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm">
+          <div className="bg-white rounded-[32px] w-full max-w-2xl max-h-[80vh] overflow-hidden shadow-2xl relative flex flex-col animate-in fade-in zoom-in duration-200">
+            <div className="p-8 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
+              <div>
+                <h2 className="text-2xl font-black text-slate-900 tracking-tight">Daftar Siswa</h2>
+                <p className="text-sm font-medium text-slate-500">{selectedClassForStudents.name} • {selectedClassForStudents.join_code}</p>
+              </div>
+              <Button variant="ghost" size="icon" onClick={() => setShowStudentsModal(false)} className="rounded-full">
+                <X className="w-6 h-6" />
+              </Button>
+            </div>
+            
+            <div className="flex-1 overflow-y-auto p-8">
+              {isModalLoading ? (
+                <div className="flex flex-col items-center justify-center py-20 space-y-4">
+                  <Spinner />
+                  <p className="text-sm font-bold text-slate-400 uppercase tracking-widest animate-pulse">Memuat data siswa...</p>
+                </div>
+              ) : studentsInClass.length > 0 ? (
+                <div className="space-y-4">
+                  {studentsInClass.map((item) => (
+                    <div key={item.id} className="flex items-center justify-between p-4 bg-slate-50 rounded-2xl border border-transparent hover:border-slate-200 transition-all">
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-white rounded-xl border border-slate-100 flex items-center justify-center overflow-hidden">
+                          {item.profiles.avatar_url ? (
+                            <img src={item.profiles.avatar_url} alt="" className="w-full h-full object-cover" />
+                          ) : (
+                            <div className="w-full h-full flex items-center justify-center bg-indigo-50 text-indigo-600 font-black">
+                              {item.profiles.full_name?.substring(0, 1).toUpperCase()}
+                            </div>
+                          )}
+                        </div>
+                        <div>
+                          <p className="font-black text-slate-900 tracking-tight">{item.profiles.full_name}</p>
+                          <p className="text-xs font-medium text-slate-500">{item.profiles.email}</p>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-sm font-black text-indigo-600">{item.profiles.total_xp} XP</p>
+                        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                          {new Date(item.joined_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-20 bg-slate-50 rounded-[32px] border-2 border-dashed border-slate-200">
+                  <Users className="w-12 h-12 text-slate-200 mx-auto mb-4" />
+                  <p className="text-slate-400 font-black">Belum ada siswa yang bergabung.</p>
+                </div>
+              )}
+            </div>
+            
+            <div className="p-8 border-t border-slate-100 bg-slate-50/50">
+              <Button onClick={() => setShowStudentsModal(false)} className="w-full h-12 rounded-2xl shadow-lg shadow-indigo-100">
+                Tutup
+              </Button>
+            </div>
+          </div>
         </div>
       )}
     </div>

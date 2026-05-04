@@ -18,6 +18,8 @@ const Learning = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [hasAccess, setHasAccess] = useState(true);
   const [levelName, setLevelName] = useState('');
+  const [relatedLessons, setRelatedLessons] = useState<any[]>([]);
+
 
   const lessonId = searchParams.get('id');
   const levelId = searchParams.get('level');
@@ -89,6 +91,16 @@ const Learning = () => {
       const currentLevel = data.modules.subjects.levels.name;
       setLevelName(currentLevel);
       setLesson(data);
+
+      // Fetch related lessons in the same module
+      const { data: related } = await supabase
+        .from('lessons')
+        .select('id, title')
+        .eq('module_id', data.module_id)
+        .neq('id', id)
+        .limit(5);
+      setRelatedLessons(related || []);
+
 
       if (TEACHER_REQUIRED_LEVELS.includes(currentLevel)) {
         const { data: cls } = await supabase.from('classes').select('id').limit(1);
@@ -185,6 +197,15 @@ const Learning = () => {
   }
 
   // Lesson Player Mode
+  if (!lesson) {
+    return (
+      <div className="max-w-2xl mx-auto py-20 text-center">
+        <h2 className="text-2xl font-black text-slate-900 mb-4">Materi Tidak Ditemukan</h2>
+        <Button onClick={() => navigate(-1)}>Kembali</Button>
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-5xl mx-auto space-y-8 pb-20">
       <div className="flex items-center justify-between">
@@ -210,9 +231,10 @@ const Learning = () => {
             <h3 className="text-xl font-black mb-6 text-slate-900 flex items-center gap-2">
               <BookOpen className="w-6 h-6 text-indigo-600" /> Ringkasan Materi
             </h3>
-            <div className="prose prose-slate max-w-none text-slate-600 font-medium leading-relaxed text-lg">
-              {lesson.content}
-            </div>
+            <div 
+              className="prose prose-slate max-w-none text-slate-600 font-medium leading-relaxed text-lg"
+              dangerouslySetInnerHTML={{ __html: lesson.content }}
+            />
           </Card>
         </div>
         
@@ -220,12 +242,14 @@ const Learning = () => {
           <Card className="bg-indigo-600 text-white p-8 rounded-[32px] border-none shadow-xl shadow-indigo-200">
             <h4 className="font-black text-sm uppercase tracking-widest text-indigo-200 mb-6">Materi Lainnya</h4>
             <div className="space-y-4">
-              {[1, 2, 3].map(i => (
-                <div key={i} className="flex items-center gap-4 group cursor-pointer">
-                  <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-white font-bold group-hover:bg-white group-hover:text-indigo-600 transition-all">{i}</div>
-                  <p className="text-sm font-bold opacity-80 group-hover:opacity-100 transition-opacity">Pelajaran Terkait {i}</p>
+              {relatedLessons.length > 0 ? relatedLessons.map((l, idx) => (
+                <div key={l.id} className="flex items-center gap-4 group cursor-pointer" onClick={() => navigate(`/learning?id=${l.id}`)}>
+                  <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-white font-bold group-hover:bg-white group-hover:text-indigo-600 transition-all">{idx + 1}</div>
+                  <p className="text-sm font-bold opacity-80 group-hover:opacity-100 transition-opacity line-clamp-2">{l.title}</p>
                 </div>
-              ))}
+              )) : (
+                <p className="text-sm font-medium text-indigo-200 italic">Tidak ada materi lain di modul ini.</p>
+              )}
             </div>
           </Card>
         </div>

@@ -215,7 +215,7 @@ const StudentDashboard = () => {
               <h2 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-3">
                 <Play className="w-8 h-8 text-emerald-500" /> Lanjutkan Belajar
               </h2>
-              <Button variant="ghost" size="sm" className="text-indigo-600 font-black tracking-widest uppercase text-xs">
+              <Button variant="ghost" size="sm" className="text-indigo-600 font-black tracking-widest uppercase text-xs" onClick={() => navigate('/learning')}>
                 Lihat Semua <ChevronRight className="w-4 h-4" />
               </Button>
             </div>
