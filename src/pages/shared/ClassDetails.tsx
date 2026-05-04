@@ -46,7 +46,11 @@ const ClassDetails = () => {
   const [contentType, setContentType] = useState<'announcement' | 'assignment' | 'material' | 'quiz'>('announcement');
   const [classQuizzes, setClassQuizzes] = useState<any[]>([]);
   const [availableSubjects, setAvailableSubjects] = useState<any[]>([]);
+  const [teacherPackages, setTeacherPackages] = useState<any[]>([]);
   const [selectedSubjectId, setSelectedSubjectId] = useState('');
+  const [selectedPackageId, setSelectedPackageId] = useState('');
+  const [assignType, setAssignType] = useState<'subject' | 'package'>('subject');
+
 
 
 
@@ -62,9 +66,13 @@ const ClassDetails = () => {
       fetchMessages();
       fetchStudents();
       fetchClassQuizzes();
-      if (isTeacher) fetchAvailableSubjects();
+      if (isTeacher) {
+        fetchAvailableSubjects();
+        fetchTeacherPackages();
+      }
     }
   }, [id, profile]);
+
 
 
   const fetchClassData = async () => {
@@ -138,6 +146,15 @@ const ClassDetails = () => {
     setAvailableSubjects(data || []);
   };
 
+  const fetchTeacherPackages = async () => {
+    const { data } = await supabase
+      .from('quiz_packages')
+      .select('*')
+      .eq('teacher_id', profile?.id);
+    setTeacherPackages(data || []);
+  };
+
+
 
   const handlePostAnnouncement = async () => {
     if (!newAnnouncement.title || !newAnnouncement.content) return;
@@ -205,20 +222,25 @@ const ClassDetails = () => {
   };
 
   const handleAssignQuiz = async () => {
-    if (!selectedSubjectId) return;
+    if (assignType === 'subject' && !selectedSubjectId) return;
+    if (assignType === 'package' && !selectedPackageId) return;
+
     const { error } = await supabase.from('class_quizzes').insert({
       class_id: id,
-      subject_id: selectedSubjectId,
+      subject_id: assignType === 'subject' ? selectedSubjectId : null,
+      package_id: assignType === 'package' ? selectedPackageId : null,
       teacher_id: profile?.id
     });
     if (!error) {
       setSelectedSubjectId('');
+      setSelectedPackageId('');
       setShowCreateModal(false);
       fetchClassQuizzes();
     } else {
       alert('Gagal memberikan kuis: ' + error.message);
     }
   };
+
 
 
 
@@ -454,15 +476,16 @@ const ClassDetails = () => {
                    <span className="text-[10px] font-black text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-100">Kuis Kelas</span>
                 </div>
                 <div className="relative z-10">
-                  <h4 className="text-xl font-black text-slate-900 mb-1">{q.subjects?.name}</h4>
-                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Diberikan pada {new Date(q.assigned_at).toLocaleDateString()}</p>
+                  <h4 className="text-xl font-black text-slate-900 mb-1">{q.quiz_packages?.title || q.subjects?.name}</h4>
+                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{q.package_id ? 'Paket Tes' : 'Mata Pelajaran'} • Diberikan {new Date(q.assigned_at).toLocaleDateString()}</p>
                 </div>
                 <Button 
-                  onClick={() => navigate(`/quiz?subjectId=${q.subject_id}`)}
+                  onClick={() => navigate(`/quiz?${q.package_id ? `packageId=${q.package_id}` : `subjectId=${q.subject_id}`}`)}
                   className="w-full h-12 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white font-black shadow-lg relative z-10"
                 >
                   Mulai Kerjakan Kuis
                 </Button>
+
               </Card>
             ))}
             {classQuizzes.length === 0 && (
@@ -596,25 +619,55 @@ const ClassDetails = () => {
 
               {contentType === 'quiz' && (
                 <>
-                  <div className="space-y-2">
-                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pilih Mata Pelajaran Kuis</label>
-                    <select 
-                      value={selectedSubjectId} 
-                      onChange={(e) => setSelectedSubjectId(e.target.value)}
-                      className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
-                    >
-                      <option value="">Pilih Subjek...</option>
-                      {availableSubjects.map(s => (
-                        <option key={s.id} value={s.id}>{s.name}</option>
-                      ))}
-                    </select>
-                    <p className="text-[10px] text-slate-400 font-medium px-2 italic">Hanya menampilkan mata pelajaran sesuai jenjang kelas ini.</p>
+                  <div className="space-y-4">
+                    <div className="flex gap-2 p-1 bg-slate-100 rounded-xl">
+                       <button 
+                        onClick={() => setAssignType('subject')}
+                        className={`flex-1 py-2 text-[9px] font-black uppercase tracking-widest rounded-lg transition-all ${assignType === 'subject' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}
+                       >Mata Pelajaran</button>
+                       <button 
+                        onClick={() => setAssignType('package')}
+                        className={`flex-1 py-2 text-[9px] font-black uppercase tracking-widest rounded-lg transition-all ${assignType === 'package' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}
+                       >Paket Tes Saya</button>
+                    </div>
+
+                    {assignType === 'subject' ? (
+                      <div className="space-y-2">
+                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pilih Mata Pelajaran</label>
+                        <select 
+                          value={selectedSubjectId} 
+                          onChange={(e) => setSelectedSubjectId(e.target.value)}
+                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                        >
+                          <option value="">Pilih Subjek...</option>
+                          {availableSubjects.map(s => (
+                            <option key={s.id} value={s.id}>{s.name}</option>
+                          ))}
+                        </select>
+                      </div>
+                    ) : (
+                      <div className="space-y-2">
+                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pilih Paket Tes</label>
+                        <select 
+                          value={selectedPackageId} 
+                          onChange={(e) => setSelectedPackageId(e.target.value)}
+                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                        >
+                          <option value="">Pilih Paket...</option>
+                          {teacherPackages.map(p => (
+                            <option key={p.id} value={p.id}>{p.title}</option>
+                          ))}
+                        </select>
+                      </div>
+                    )}
+                    <p className="text-[10px] text-slate-400 font-medium px-2 italic text-center">Berikan tugas evaluasi kustom atau reguler ke kelas ini.</p>
                   </div>
                   <Button onClick={handleAssignQuiz} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
                     Berikan Kuis ke Kelas
                   </Button>
                 </>
               )}
+
             </div>
 
           </div>
