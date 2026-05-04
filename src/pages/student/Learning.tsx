@@ -4,7 +4,8 @@ import { supabase } from '../../lib/supabase';
 import { Card, Button, Spinner } from '../../components/ui';
 import { PlayCircle, ChevronLeft, Lock, BookOpen, ChevronRight, LayoutGrid } from 'lucide-react';
 
-const TEACHER_REQUIRED_LEVELS = ['CPNS', 'POLRI', 'Kedinasan', 'UTBK-SNBT'];
+const PUBLIC_LEVELS = ['SD', 'SMP', 'SMA', 'SMK'];
+
 
 const Learning = () => {
   const [searchParams] = useSearchParams();
@@ -51,22 +52,87 @@ const Learning = () => {
     setIsLoading(true);
     const { data } = await supabase.from('subjects').select('*').eq('level_id', lId);
     setSubjects(data || []);
+    
+    // Access Control for Subjects
+    const { data: levelData } = await supabase.from('levels').select('name').eq('id', lId).single();
+    if (levelData && !PUBLIC_LEVELS.includes(levelData.name)) {
+      const { data: user } = await supabase.auth.getUser();
+      if (user?.user) {
+        const { data: enrollment } = await supabase
+          .from('class_students')
+          .select('id, classes!inner(level_id)')
+          .eq('student_id', user.user.id)
+          .eq('classes.level_id', lId)
+          .maybeSingle();
+        
+        if (!enrollment) {
+          setLevelName(levelData.name);
+          setHasAccess(false);
+        }
+      }
+    }
     setIsLoading(false);
   };
 
+
   const fetchModulesBySubject = async (sId: string) => {
     setIsLoading(true);
-    const { data } = await supabase.from('modules').select('*').eq('subject_id', sId);
+    const { data } = await supabase
+      .from('modules')
+      .select('*, subjects!inner(level_id, levels!inner(name))')
+      .eq('subject_id', sId);
+
+    
+    if (data && data.length > 0) {
+      const levelInfo = data[0].subjects.levels;
+      if (!PUBLIC_LEVELS.includes(levelInfo.name)) {
+        const { data: user } = await supabase.auth.getUser();
+        const { data: enrollment } = await supabase
+          .from('class_students')
+          .select('id, classes!inner(level_id)')
+          .eq('student_id', user.user?.id)
+          .eq('classes.level_id', data[0].subjects.level_id)
+          .maybeSingle();
+        
+        if (!enrollment) {
+          setLevelName(levelInfo.name);
+          setHasAccess(false);
+        }
+      }
+    }
     setModules(data || []);
     setIsLoading(false);
   };
 
+
   const fetchLessonsByModule = async (mId: string) => {
     setIsLoading(true);
-    const { data } = await supabase.from('lessons').select('*').eq('module_id', mId);
+    const { data } = await supabase
+      .from('lessons')
+      .select('*, modules!inner(subjects!inner(level_id, levels!inner(name)))')
+      .eq('module_id', mId);
+
+    if (data && data.length > 0) {
+      const levelInfo = data[0].modules.subjects.levels;
+      if (!PUBLIC_LEVELS.includes(levelInfo.name)) {
+        const { data: user } = await supabase.auth.getUser();
+        const { data: enrollment } = await supabase
+          .from('class_students')
+          .select('id, classes!inner(level_id)')
+          .eq('student_id', user.user?.id)
+          .eq('classes.level_id', data[0].modules.subjects.level_id)
+          .maybeSingle();
+        
+        if (!enrollment) {
+          setLevelName(levelInfo.name);
+          setHasAccess(false);
+        }
+      }
+    }
     setLessons(data || []);
     setIsLoading(false);
   };
+
 
   const fetchLesson = async (id: string) => {
     setIsLoading(true);
@@ -102,10 +168,19 @@ const Learning = () => {
       setRelatedLessons(related || []);
 
 
-      if (TEACHER_REQUIRED_LEVELS.includes(currentLevel)) {
-        const { data: cls } = await supabase.from('classes').select('id').limit(1);
-        if (!cls || cls.length === 0) setHasAccess(false); 
+      // Access Control Check
+      const { data: user } = await supabase.auth.getUser();
+      if (user?.user && !PUBLIC_LEVELS.includes(currentLevel)) {
+        const { data: enrollment } = await supabase
+          .from('class_students')
+          .select('id, classes!inner(level_id)')
+          .eq('student_id', user.user.id)
+          .eq('classes.level_id', data.modules.subjects.level_id)
+          .maybeSingle();
+        
+        if (!enrollment) setHasAccess(false);
       }
+
     } catch (err: any) {
       console.error('Error fetching lesson:', err.message);
     } finally {
