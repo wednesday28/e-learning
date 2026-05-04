@@ -8,6 +8,7 @@ import { Spinner } from './components/ui'
 // Lazy load pages
 const Login = lazy(() => import('./pages/auth/Login'))
 const Register = lazy(() => import('./pages/auth/Register'))
+const RoleSelection = lazy(() => import('./pages/auth/RoleSelection'))
 
 // Student
 const StudentDashboard = lazy(() => import('./pages/student/Dashboard'))
@@ -37,9 +38,22 @@ const ProtectedRoute = ({ children, allowedRoles }: { children: React.ReactNode;
   const { user, profile, isLoading } = useAuthStore()
   if (isLoading) return <div className="h-screen w-full flex items-center justify-center"><Spinner /></div>
   if (!user) return <Navigate to="/login" />
+  
+  // If user is logged in but has no role assigned yet, force role selection
+  if (user && !profile?.role && window.location.pathname !== '/role-selection') {
+    return <Navigate to="/role-selection" />
+  }
+
   if (allowedRoles && profile && !allowedRoles.includes(profile.role)) {
     return <Navigate to="/dashboard" />
   }
+
+  // If teacher is logged in but status is pending, show waiting state or limited dashboard
+  if (profile?.role === 'teacher' && profile.status === 'pending' && window.location.pathname !== '/teacher/pending') {
+    // We can either redirect to a special page or just handle it in the Dashboard
+    // For simplicity, let's keep it in the dashboard but with a limited UI (handled in TeacherDashboard)
+  }
+
   return <>{children}</>
 }
 
@@ -52,6 +66,7 @@ const App = () => {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/role-selection" element={<ProtectedRoute><RoleSelection /></ProtectedRoute>} />
 
           {/* Student */}
           <Route path="/" element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>

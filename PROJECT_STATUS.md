@@ -27,9 +27,10 @@ Membangun platform E-Learning Full-Stack menggunakan React, Vite, Tailwind CSS v
 ## 📑 Eksekusi & Pencapaian Utama
 
 ### 1. Inisialisasi & Lingkungan
-- [x] Reset total codebase lama & Inisialisasi Vite + React + TypeScript.
-- [x] Konfigurasi Tailwind CSS v4 (@tailwindcss/vite).
-- [x] Inisialisasi Git repository & Commit awal.
+- [x] Reset total codebase lama & Inisialisasi Vite- [x] Migrasi ke proyek Supabase baru (`kloprxqqbsouimqjfbtm`).
+- [x] Implementasi Backend API `/api/v1/lessons/bulk`.
+- [/] Ingesti data massal menggunakan `scripts/direct-ingest.js`.
+- [ ] Verifikasi konsistensi relasi data.
 
 ### 2. Database Schema (Supabase/PostgreSQL)
 - [x] Membuat schema lengkap: `profiles`, `levels`, `grades`, `subjects`, `topics`, `subtopics`, `lessons`, `questions`, dll.

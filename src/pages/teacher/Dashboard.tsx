@@ -1,74 +1,92 @@
-
 import { Card, Button } from '../../components/ui';
-import { Users, BookMarked, PlusCircle, TrendingUp, Search } from 'lucide-react';
+import { useAuthStore } from '../../store/useAuthStore';
+import { ShieldAlert, Clock, CheckCircle, Users, BookOpen, Activity } from 'lucide-react';
 
 const TeacherDashboard = () => {
-  const stats = [
-    { label: 'Total Siswa', value: '156', icon: Users, color: 'text-blue-600', bg: 'bg-blue-50' },
-    { label: 'Kelas Aktif', value: '8', icon: BookMarked, color: 'text-indigo-600', bg: 'bg-indigo-50' },
-    { label: 'Rata-rata Nilai', value: '84.5', icon: TrendingUp, color: 'text-emerald-600', bg: 'bg-emerald-50' },
-  ];
+  const { profile } = useAuthStore();
+  const isPending = profile?.status === 'pending';
 
+  if (isPending) {
+    return (
+      <div className="max-w-4xl mx-auto py-12">
+        <Card className="p-12 text-center space-y-8 border-none shadow-2xl shadow-amber-100 bg-white relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-2 bg-amber-400" />
+          <div className="w-24 h-24 bg-amber-50 text-amber-500 rounded-[32px] flex items-center justify-center mx-auto shadow-inner">
+            <Clock className="w-12 h-12 animate-pulse" />
+          </div>
+          <div className="space-y-3">
+            <h1 className="text-3xl font-black text-slate-900 tracking-tight">Akun Menunggu Verifikasi</h1>
+            <p className="text-slate-500 font-medium max-w-md mx-auto">
+              Halo <span className="text-indigo-600 font-bold">{profile?.full_name}</span>, akun pengajar Anda sedang ditinjau oleh tim Super Admin.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <ShieldAlert className="w-5 h-5 text-amber-500 mb-2" />
+              <p className="text-xs font-bold text-slate-900 mb-1">Keamanan Data</p>
+              <p className="text-[10px] text-slate-500 leading-tight">Kami memverifikasi setiap pengajar untuk menjaga kualitas konten.</p>
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <CheckCircle className="w-5 h-5 text-emerald-500 mb-2" />
+              <p className="text-xs font-bold text-slate-900 mb-1">Status: Pending</p>
+              <p className="text-[10px] text-slate-500 leading-tight">Proses ini biasanya memakan waktu kurang dari 24 jam kerja.</p>
+            </div>
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+              <Activity className="w-5 h-5 text-indigo-500 mb-2" />
+              <p className="text-xs font-bold text-slate-900 mb-1">Langkah Selanjutnya</p>
+              <p className="text-[10px] text-slate-500 leading-tight">Anda akan mendapatkan akses penuh setelah verifikasi selesai.</p>
+            </div>
+          </div>
+
+          <div className="pt-4">
+            <Button variant="outline" onClick={() => window.location.reload()} className="h-12 px-8">
+              Cek Status Verifikasi
+            </Button>
+          </div>
+        </Card>
+      </div>
+    );
+  }
+
+  // Real Dashboard for Verified Teachers
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 max-w-6xl mx-auto">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-black text-slate-900 tracking-tight">Teacher Console</h1>
-          <p className="text-slate-500 font-medium">Kelola kelas dan pantau perkembangan siswa Anda.</p>
+          <h1 className="text-3xl font-black text-slate-900 tracking-tight">Dashboard Pengajar</h1>
+          <p className="text-slate-500 font-medium italic">Selamat datang kembali, mari bimbing siswa kita hari ini.</p>
         </div>
-        <div className="flex gap-3">
-          <Button variant="outline">Import Data</Button>
-          <Button><PlusCircle className="w-4 h-4" /> Buat Kelas</Button>
-        </div>
+        <Button className="h-12 shadow-lg shadow-indigo-200">
+          Buat Kelas Baru
+        </Button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {stats.map((stat, idx) => (
-          <Card key={idx} className="flex items-center gap-4">
-            <div className={`w-14 h-14 ${stat.bg} ${stat.color} rounded-2xl flex items-center justify-center`}>
-              <stat.icon className="w-7 h-7" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{stat.label}</p>
-              <p className="text-2xl font-black text-slate-900">{stat.value}</p>
-            </div>
-          </Card>
-        ))}
-      </div>
-
-      <Card>
-        <div className="flex items-center justify-between mb-6">
-          <h3 className="font-black text-lg">Daftar Kelas</h3>
-          <div className="relative">
-            <Search className="absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
-            <input type="text" placeholder="Cari kelas..." className="pl-9 pr-4 py-2 bg-slate-50 border border-slate-100 rounded-lg text-sm outline-none focus:ring-2 focus:ring-primary" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <Card className="p-6 bg-white border-none shadow-xl shadow-slate-200/50 flex items-center gap-4">
+          <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center">
+            <Users className="w-6 h-6" />
           </div>
-        </div>
+          <div>
+            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Total Siswa</p>
+            <p className="text-2xl font-black text-slate-900">128</p>
+          </div>
+        </Card>
+        <Card className="p-6 bg-white border-none shadow-xl shadow-slate-200/50 flex items-center gap-4">
+          <div className="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center">
+            <BookOpen className="w-6 h-6" />
+          </div>
+          <div>
+            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Total Kelas</p>
+            <p className="text-2xl font-black text-slate-900">12</p>
+          </div>
+        </Card>
+        {/* More stats... */}
+      </div>
 
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-sm">
-            <thead className="bg-slate-50 text-slate-500 font-bold uppercase tracking-widest text-[10px]">
-              <tr>
-                <th className="px-4 py-3">Nama Kelas</th>
-                <th className="px-4 py-3">Mata Pelajaran</th>
-                <th className="px-4 py-3">Siswa</th>
-                <th className="px-4 py-3 text-right">Aksi</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-50">
-              {[1, 2, 3, 4].map((item) => (
-                <tr key={item} className="hover:bg-slate-50 transition-colors">
-                  <td className="px-4 py-4 font-bold text-slate-900">Kelas 10-A IPA</td>
-                  <td className="px-4 py-4 text-slate-600">Matematika Dasar</td>
-                  <td className="px-4 py-4">32 Siswa</td>
-                  <td className="px-4 py-4 text-right">
-                    <Button variant="ghost" size="sm" className="text-indigo-600 font-bold">Kelola</Button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+      {/* Placeholder for real charts/lists */}
+      <Card className="h-64 flex items-center justify-center border-dashed border-2 border-slate-200 bg-transparent">
+        <p className="text-slate-400 font-bold italic">Visualisasi Analitik Kelas sedang dikembangkan...</p>
       </Card>
     </div>
   );
