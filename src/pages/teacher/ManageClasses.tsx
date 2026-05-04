@@ -8,9 +8,12 @@ const ManageClasses = () => {
   const [subjects, setSubjects] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showCreateModal, setShowCreateModal] = useState(false);
+  const [showEnrollModal, setShowEnrollModal] = useState(false);
   
   const [newClassName, setNewClassName] = useState('');
   const [selectedSubject, setSelectedSubject] = useState('');
+  const [enrollEmail, setEnrollEmail] = useState('');
+  const [enrollClassId, setEnrollClassId] = useState('');
 
   useEffect(() => {
     fetchData();
@@ -35,22 +38,84 @@ const ManageClasses = () => {
   };
 
   const handleCreateClass = async () => {
-    if (!newClassName || !selectedSubject) return;
+    if (!newClassName || !selectedSubject) {
+      alert('Mohon isi nama kelas dan pilih mata pelajaran.');
+      return;
+    }
     setIsLoading(true);
     try {
       const { data: { user } } = await supabase.auth.getUser();
-      const { error } = await supabase.from('classes').insert({
+      if (!user) throw new Error('Sesi tidak ditemukan. Silakan login kembali.');
+
+      const { data, error } = await supabase.from('classes').insert({
         name: newClassName,
         subject_id: selectedSubject,
-        teacher_id: user?.id,
+        teacher_id: user.id,
         invite_code: Math.random().toString(36).substring(2, 8).toUpperCase()
-      });
+      }).select();
 
       if (error) throw error;
+      
+      alert('Kelas berhasil dibuat!');
       setShowCreateModal(false);
+      setNewClassName('');
+      setSelectedSubject('');
       fetchData();
-    } catch (err) {
+    } catch (err: any) {
       console.error('Error creating class:', err);
+      alert('Gagal membuat kelas: ' + (err.message || 'Error tidak dikenal'));
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleEnrollStudent = async () => {
+    if (!enrollEmail || !enrollClassId) {
+      alert('Mohon isi email siswa dan pilih kelas.');
+      return;
+    }
+    setIsLoading(true);
+    try {
+      // 1. Find user by email
+      const { data: profile, error: profileError } = await supabase
+        .from('profiles')
+        .select('id')
+        .eq('email', enrollEmail)
+        .single();
+
+      if (profileError || !profile) {
+        throw new Error('Siswa dengan email tersebut tidak ditemukan. Pastikan siswa sudah mendaftar akun.');
+      }
+
+      // 2. Check if already enrolled
+      const { data: existing } = await supabase
+        .from('class_enrollments')
+        .select('*')
+        .eq('class_id', enrollClassId)
+        .eq('student_id', profile.id)
+        .single();
+
+      if (existing) {
+        throw new Error('Siswa sudah terdaftar di kelas ini.');
+      }
+
+      // 3. Enroll
+      const { error: enrollError } = await supabase
+        .from('class_enrollments')
+        .insert({
+          class_id: enrollClassId,
+          student_id: profile.id
+        });
+
+      if (enrollError) throw enrollError;
+
+      alert('Siswa berhasil didaftarkan!');
+      setShowEnrollModal(false);
+      setEnrollEmail('');
+      setEnrollClassId('');
+      fetchData();
+    } catch (err: any) {
+      alert(err.message || 'Gagal mendaftarkan siswa.');
     } finally {
       setIsLoading(false);
     }
@@ -65,9 +130,14 @@ const ManageClasses = () => {
           <h1 className="text-4xl font-black text-slate-900 tracking-tight">Manajemen Kelas</h1>
           <p className="text-slate-500 font-medium italic mt-2">Bangun komunitas belajarmu dan pantau progres siswa.</p>
         </div>
-        <Button onClick={() => setShowCreateModal(true)} className="h-14 px-8 rounded-2xl shadow-xl shadow-indigo-200">
-          <PlusCircle className="w-5 h-5 mr-2" /> Buat Kelas Baru
-        </Button>
+        <div className="flex gap-4">
+          <Button variant="outline" onClick={() => setShowEnrollModal(true)} className="h-14 px-8 rounded-2xl border-indigo-100 text-indigo-600 hover:bg-indigo-50">
+            <Users className="w-5 h-5 mr-2" /> Daftarkan Siswa
+          </Button>
+          <Button onClick={() => setShowCreateModal(true)} className="h-14 px-8 rounded-2xl shadow-xl shadow-indigo-200">
+            <PlusCircle className="w-5 h-5 mr-2" /> Buat Kelas Baru
+          </Button>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -164,6 +234,39 @@ const ManageClasses = () => {
               <div className="flex gap-4 pt-4">
                 <Button variant="ghost" onClick={() => setShowCreateModal(false)} className="flex-1 h-14 rounded-2xl font-black text-xs uppercase tracking-widest">Batal</Button>
                 <Button onClick={handleCreateClass} className="flex-1 h-14 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg shadow-indigo-200">Simpan Kelas</Button>
+              </div>
+            </div>
+          </Card>
+        </div>
+      )}
+
+      {/* Enroll Student Modal */}
+      {showEnrollModal && (
+        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-6">
+          <Card className="w-full max-w-md p-10 space-y-8 animate-in zoom-in slide-in-from-bottom-10 duration-300">
+            <div className="text-center">
+              <h2 className="text-2xl font-black text-slate-900 tracking-tight">Daftarkan Siswa</h2>
+              <p className="text-slate-500 text-sm font-medium">Masukkan email siswa untuk menambahkannya ke kelas.</p>
+            </div>
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Email Siswa</label>
+                <Input value={enrollEmail} onChange={(e) => setEnrollEmail(e.target.value)} type="email" placeholder="siswa@email.com" className="h-14 bg-slate-50 border-none rounded-2xl" />
+              </div>
+              <div className="space-y-2">
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Pilih Kelas</label>
+                <select 
+                  value={enrollClassId} 
+                  onChange={(e) => setEnrollClassId(e.target.value)}
+                  className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold text-slate-600 focus:ring-2 focus:ring-indigo-500 outline-none"
+                >
+                  <option value="">Pilih Kelas...</option>
+                  {classes.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
+                </select>
+              </div>
+              <div className="flex gap-4 pt-4">
+                <Button variant="ghost" onClick={() => setShowEnrollModal(false)} className="flex-1 h-14 rounded-2xl font-black text-xs uppercase tracking-widest">Batal</Button>
+                <Button onClick={handleEnrollStudent} className="flex-1 h-14 rounded-2xl font-black text-xs uppercase tracking-widest shadow-lg shadow-indigo-200">Daftarkan</Button>
               </div>
             </div>
           </Card>

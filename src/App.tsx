@@ -33,6 +33,7 @@ const UserControl = lazy(() => import('./pages/super-admin/UserControl'))
 const SystemSettings = lazy(() => import('./pages/super-admin/SystemSettings'))
 const AuditLogs = lazy(() => import('./pages/super-admin/AuditLogs'))
 const UploadCurriculum = lazy(() => import('./pages/super-admin/UploadCurriculum'))
+const Profile = lazy(() => import('./pages/shared/Profile'))
 
 const ProtectedRoute = ({ children, allowedRoles }: { children: React.ReactNode; allowedRoles?: string[] }) => {
   const { user, profile, isLoading } = useAuthStore()
@@ -105,6 +106,10 @@ const App = () => {
             <Route path="settings" element={<SystemSettings />} />
             <Route path="audit" element={<AuditLogs />} />
             <Route path="upload" element={<UploadCurriculum />} />
+          </Route>
+
+          <Route path="/profile" element={<ProtectedRoute><DashboardLayout /></ProtectedRoute>}>
+            <Route index element={<Profile />} />
           </Route>
 
           <Route path="*" element={<Navigate to="/dashboard" />} />

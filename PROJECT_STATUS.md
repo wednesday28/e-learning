@@ -20,11 +20,19 @@
 - [x] **Dashboard Siswa**: Menampilkan jenjang pendidikan secara dinamis.
 - [x] **Learning Path**: Browser materi fungsional (Jenjang -> Pelajaran -> Modul -> Pelajaran).
 - [x] **Quiz Engine**: Sistem kuis dinamis dengan kalkulasi skor dan XP.
-- [x] **Teacher Module**: Fitur pembuatan kelas oleh guru.
+- [x] **Teacher Module**: Fitur pembuatan kelas oleh guru (Fixed & Functional).
+- [x] **Teacher Analytics**: Visualisasi data riil menggunakan Recharts (Aktivitas & Performa).
+- [x] **Quiz Management**: Aktivasi fitur pembuatan kuis baru bagi pengajar.
+- [x] **Student Enrollment**: Fitur pendaftaran siswa ke kelas via email.
 
-### 4. Deployment & DevOps
+### 4. User Experience & Shared Features
+- [x] **Profile Page**: Halaman profil pengguna untuk edit nama dan pantau statistik.
+- [x] **Navigation Update**: Akses cepat ke profil melalui avatar di header.
+
+### 5. Deployment & DevOps
 - [x] **Vercel Production**: Berhasil deploy ke `e-learning-march.vercel.app`.
 - [x] **Build Optimization**: Perbaikan seluruh error TypeScript.
+- [x] **Git Sync**: Seluruh perubahan terbaru telah di-push ke repository.
 
 ---
 

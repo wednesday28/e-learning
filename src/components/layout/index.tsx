@@ -131,7 +131,10 @@ export const Header = ({ onMenuClick }: { onMenuClick: () => void }) => {
             <p className="text-sm font-bold text-slate-900 leading-tight">{profile?.full_name}</p>
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{profile?.role}</p>
           </div>
-          <div className="h-10 w-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold border-2 border-white shadow-sm overflow-hidden">
+          <div 
+            onClick={() => navigate('/profile')}
+            className="h-10 w-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 font-bold border-2 border-white shadow-sm overflow-hidden cursor-pointer hover:ring-2 hover:ring-indigo-500 transition-all"
+          >
             {profile?.avatar_url ? (
               <img src={profile.avatar_url} alt="Profile" className="w-full h-full object-cover" />
             ) : (
