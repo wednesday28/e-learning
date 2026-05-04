@@ -1,0 +1,47 @@
+[
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Fisika",
+    "topic": "Gerak",
+    "subtopic": "Gerak Lurus",
+    "lesson": "Gerak Lurus Beraturan (GLB)",
+    "content": "Gerak Lurus Beraturan (GLB) adalah gerak suatu benda pada lintasan lurus dengan kecepatan yang konstan atau tetap. Dalam GLB, percepatan benda adalah nol (a = 0). Persamaan utama yang digunakan dalam GLB adalah s = v.t, di mana 's' adalah jarak atau perpindahan, 'v' adalah kecepatan, dan 't' adalah waktu tempuh. Grafik hubungan antara jarak terhadap waktu (s-t) pada GLB berbentuk garis lurus linear yang miring, sedangkan grafik kecepatan terhadap waktu (v-t) berbentuk garis lurus horizontal. Pemahaman mengenai GLB menjadi fondasi dasar dalam mempelajari dinamika gerak yang lebih kompleks dalam fisika mekanika."
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Fisika",
+    "topic": "Gaya",
+    "subtopic": "Hukum Newton",
+    "lesson": "Hukum I Newton",
+    "content": "Hukum I Newton, yang juga dikenal sebagai Hukum Inersia atau Kelembaman, menyatakan bahwa sebuah benda akan tetap diam atau bergerak lurus beraturan jika resultan gaya yang bekerja pada benda tersebut adalah nol (ΣF = 0). Sifat inersia adalah kecenderungan benda untuk mempertahankan keadaannya. Contoh nyata dalam kehidupan sehari-hari adalah ketika kita berada di dalam mobil yang direm mendadak, tubuh kita akan terdorong ke depan karena cenderung mempertahankan gerak majunya. Massa benda merupakan ukuran kelembaman; semakin besar massa benda, semakin besar pula kelembamannya."
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Fisika",
+    "topic": "Energi",
+    "subtopic": "Usaha dan Energi",
+    "lesson": "Energi Potensial Gravitasi",
+    "content": "Energi Potensial Gravitasi adalah energi yang dimiliki oleh suatu benda karena kedudukannya atau ketinggiannya terhadap suatu bidang acuan. Besarnya energi potensial dipengaruhi oleh massa benda (m), percepatan gravitasi (g), dan ketinggian benda (h), yang dirumuskan sebagai EP = m.g.h. Energi ini bersifat relatif tergantung pada titik acuan yang dipilih. Dalam sistem tertutup di mana hanya gaya gravitasi yang bekerja, berlaku Hukum Kekekalan Energi Mekanik, di mana jumlah energi kinetik dan energi potensial di setiap titik sepanjang lintasan gerak benda adalah konstan."
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Fisika",
+    "topic": "Listrik",
+    "subtopic": "Listrik Statis",
+    "lesson": "Hukum Coulomb",
+    "content": "Hukum Coulomb menjelaskan tentang gaya elektrostatik antara dua muatan listrik yang berada pada jarak tertentu. Hukum ini menyatakan bahwa besarnya gaya tarik-menarik atau tolak-menolak antara dua muatan listrik sebanding dengan hasil kali besar kedua muatan dan berbanding terbalik dengan kuadrat jarak antara kedua muatan tersebut. Secara matematis dirumuskan sebagai F = k.q1.q2 / r^2, di mana 'k' adalah konstanta Coulomb yang nilainya bergantung pada medium di sekitar muatan. Gaya Coulomb merupakan besaran vektor, sehingga dalam perhitungannya harus memperhatikan arah interaksi antar muatan."
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Fisika",
+    "topic": "Gelombang",
+    "subtopic": "Gelombang Elektromagnetik",
+    "lesson": "Spektrum Gelombang Elektromagnetik",
+    "content": "Gelombang elektromagnetik adalah gelombang yang dapat merambat tanpa memerlukan medium perantara. Spektrum elektromagnetik mencakup berbagai jenis gelombang yang dikelompokkan berdasarkan frekuensi atau panjang gelombangnya, mulai dari gelombang radio, mikrogelombang, sinar inframerah, cahaya tampak, sinar ultraviolet, sinar-X, hingga sinar gamma. Setiap spektrum memiliki pemanfaatan yang berbeda dalam teknologi modern, seperti gelombang radio untuk komunikasi telekomunikasi dan sinar-X untuk keperluan radiologi medis. Cahaya tampak merupakan satu-satunya bagian dari spektrum yang dapat dideteksi oleh mata manusia."
+  }
+]

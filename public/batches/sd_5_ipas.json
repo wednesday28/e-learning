@@ -1,0 +1,47 @@
+[
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "IPAS",
+    "topic": "Rantai Makanan",
+    "subtopic": "Hubungan Makan dan Dimakan",
+    "lesson": "Aliran Energi di Alam",
+    "content": "Halo ilmuwan cilik! Rantai makanan adalah perjalanan makan dan dimakan antar makhluk hidup dengan urutan tertentu. Dimulai dari produsen (tumbuhan) yang menghasilkan makanan sendiri, lalu dimakan konsumen tingkat I (hewan pemakan tumbuhan), kemudian dimakan konsumen tingkat II, hingga akhirnya diuraikan oleh dekomposer seperti jamur. Setiap makhluk hidup punya peran penting. Jika populasi ular berkurang, maka tikus di sawah akan bertambah banyak dan merusak tanaman padi. Menjaga keseimbangan rantai makanan sangat penting bagi kelestarian alam."
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "IPAS",
+    "topic": "Listrik & Magnet",
+    "subtopic": "Rangkaian Listrik",
+    "lesson": "Seri dan Paralel",
+    "content": "Listrik adalah kebutuhan utama manusia modern. Lampu di rumahmu bisa menyala karena adanya aliran listrik. Ada dua jenis rangkaian listrik sederhana: seri dan paralel. Pada rangkaian seri, lampu dipasang berderet sehingga jika satu mati, semua mati. Sedangkan pada rangkaian paralel, lampu dipasang bercabang sehingga lebih hemat energi dan tidak saling mempengaruhi. Kita harus selalu berhati-hati saat menggunakan alat listrik dan jangan lupa untuk menghemat listrik dengan mematikan alat yang tidak digunakan."
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "IPAS",
+    "topic": "Daur Air & Cuaca",
+    "subtopic": "Siklus Hidrologi",
+    "lesson": "Perjalanan Tetesan Air",
+    "content": "Pernahkah kalian berpikir mengapa air di bumi tidak pernah habis? Itu karena adanya daur air. Air laut menguap karena panas matahari (evaporasi), lalu membentuk awan (kondensasi), dan jatuh kembali ke bumi sebagai hujan (presipitasi). Air tersebut kemudian mengalir ke sungai dan kembali ke laut. Proses ini terjadi secara terus-menerus. Hutan memiliki peran penting dalam menyerap air hujan ke dalam tanah agar tidak terjadi banjir dan persediaan air tanah tetap terjaga."
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "IPAS",
+    "topic": "Kenampakan Alam Indonesia",
+    "subtopic": "Bentang Alam",
+    "lesson": "Gunung, Lembah, dan Lautan",
+    "content": "Indonesia adalah negara kepulauan yang memiliki bentang alam yang sangat indah. Ada gunung-gunung tinggi, lembah yang subur, sungai yang panjang, dan lautan yang luas dengan terumbu karang yang cantik. Kenampakan alam ini mempengaruhi mata pencaharian penduduknya. Orang yang tinggal di daerah pantai biasanya bekerja sebagai nelayan, sedangkan di daerah pegunungan bekerja sebagai petani sayur. Kita harus bangga tinggal di Indonesia dan menjaga keasrian alamnya dari kerusakan."
+  },
+  {
+    "level": "SD",
+    "grade": 5,
+    "subject": "IPAS",
+    "topic": "Proklamasi Kemerdekaan",
+    "subtopic": "Detik-detik Proklamasi",
+    "lesson": "Indonesia Merdeka!",
+    "content": "Tanggal 17 Agustus 1945 adalah hari yang paling bersejarah bagi bangsa Indonesia. Di Jalan Pegangsaan Timur No. 56 Jakarta, Ir. Soekarno didampingi Drs. Moh. Hatta membacakan teks proklamasi kemerdekaan. Peristiwa ini menandakan bahwa Indonesia telah bebas dari penjajahan dan menjadi bangsa yang berdaulat. Sebelumnya, terjadi peristiwa Rengasdengklok dimana para pemuda mendesak Soekarno-Hatta untuk segera memproklamasikan kemerdekaan. Semangat patriotisme ini harus terus kita jaga dalam membangun bangsa."
+  }
+]

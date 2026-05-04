@@ -7,6 +7,8 @@ import {
 } from 'lucide-react';
 import { useAuthStore } from '../../store/useAuthStore';
 import { supabase } from '../../lib/supabase';
+import { AIChatButton } from '../ai/AIChatButton';
+import { AIChatPanel } from '../ai/AIChatPanel';
 
 // ─── Sidebar ──────────────────────────────────────────────────────────────────
 export const Sidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
@@ -153,6 +155,10 @@ export const DashboardLayout = () => {
           <Outlet />
         </main>
       </div>
+
+      {/* AI Tutor Integration */}
+      <AIChatButton />
+      <AIChatPanel />
     </div>
   );
 };

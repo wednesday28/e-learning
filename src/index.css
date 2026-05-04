@@ -5,6 +5,17 @@
   --color-secondary: #22C55E;
   --radius-card: 16px;
   --radius-button: 8px;
+
+  --animate-slide-in-right: slide-in-right 0.3s ease-out;
+
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 }
 
 @layer base {

@@ -6,146 +6,84 @@ Dokumen ini mencatat progres pembangunan, struktur proyek, dan eksekusi penting 
 Membangun platform E-Learning Full-Stack menggunakan React, Vite, Tailwind CSS v4, dan Supabase dengan fitur Role-Based Access Control (RBAC).
 
 ## 🛠️ Tech Stack
-- **Frontend**: React 18, Vite, TypeScript
+- **Frontend**: React 19, Vite, TypeScript
 - **Styling**: Tailwind CSS v4 (Official Plugin)
 - **State Management**: Zustand
 - **Database/Auth**: Supabase
 - **Icons**: Lucide React
-- **Routing**: React Router DOM v6 (Lazy Loading)
+- **Routing**: React Router DOM v7 (Lazy Loading)
 
 ## 📂 Struktur Direktori Penting
 - `/src/components/ui`: Komponen atomik (Button, Card, Input, dll)
 - `/src/components/layout`: DashboardLayout & Sidebar (RBAC)
+- `/src/components/ai`: Fitur AI Tutor Chat
 - `/src/pages`: Halaman per role (Student, Teacher, Admin, Superadmin)
-- `/src/store`: Store Zustand untuk Auth & App state
-- `/src/hooks`: Custom hooks untuk Auth & Supabase data fetching
+- `/src/store`: Store Zustand untuk Auth, App, & AI state
+- `/src/hooks`: Custom hooks untuk Auth, AI Chat, & Supabase
 - `/src/lib`: Inisialisasi Supabase & API helpers
 - `/scripts`: Script otomatisasi (Auto-upload JSON)
+- `/public/batches`: Dataset kurikulum dalam format JSON
 
 ## 📑 Eksekusi & Pencapaian Utama
 
 ### 1. Inisialisasi & Lingkungan
-- [x] Reset total codebase lama.
-- [x] Inisialisasi Vite + React + TypeScript.
-- [x] Konfigurasi Tailwind CSS v4.
-- [x] Membuat `.env.example`.
-- [x] Inisialisasi Git repository.
+- [x] Reset total codebase lama & Inisialisasi Vite + React + TypeScript.
+- [x] Konfigurasi Tailwind CSS v4 (@tailwindcss/vite).
+- [x] Inisialisasi Git repository & Commit awal.
 
 ### 2. Database Schema (Supabase/PostgreSQL)
-- [x] Membuat schema lengkap: `profiles`, `levels`, `grades`, `subjects`, `topics`, `subtopics`, `lessons`, `modules`, `questions`, `classes`, `audit_logs`, dll.
-- [x] Menyiapkan indexes untuk performa.
-- [x] Seeding data awal: Levels (SD, SMP, SMA), Grades (1-12), & Subjects dasar.
+- [x] Membuat schema lengkap: `profiles`, `levels`, `grades`, `subjects`, `topics`, `subtopics`, `lessons`, `questions`, dll.
+- [x] Seeding data awal: Levels (SD, SMP, SMA, SMK, Career), Grades (1-12), & Subjects.
 
-### 3. Core Frontend Logic
-- [x] Konfigurasi Supabase Client (`lib/supabase.ts`).
-- [x] Implementasi Auth Store dengan Zustand.
-- [x] Implementasi `useAuth` hook untuk sinkronisasi profil otomatis.
-- [x] Implementasi `ProtectedRoute` untuk RBAC.
+### 3. Core Frontend & UI
+- [x] Implementasi Auth Store & `useAuth` hook untuk sinkronisasi profil.
+- [x] Implementasi `ProtectedRoute` untuk RBAC (Student, Teacher, Admin, Super Admin).
+- [x] Dashboard Layout dengan Sidebar dinamis & Responsive Design.
+- [x] **New**: AI Tutor Chat floating interface (Bubble UI, Suggested Questions).
 
-### 4. UI & Pages
-- [x] Dashboard Layout dengan Sidebar dinamis (mendukung 4 role).
-- [x] Halaman Auth: Login & Register (Role selection).
-- [x] Halaman Siswa: Dashboard, Learning, Quiz, Tryout, Results.
-- [x] Halaman Guru: Dashboard, Manage Classes, Manage Quizzes.
-- [x] Halaman Admin: Dashboard, Upload JSON, User Management.
-- [x] Halaman Superadmin: Overview, System Settings, Audit Logs, User Control.
-- [x] **New**: Halaman Superadmin `UploadCurriculum` dengan sistem batching (50 items) & real-time log console.
+### 4. Content Generation (Curriculum & Tryouts)
 
-### 5. Otomatisasi
-- [x] Script `scripts/auto-upload.js` untuk upload data kurikulum via CLI dengan retry logic.
+#### 🏫 Sekolah Dasar (SD)
+- [x] **Matematika (Grade 1-6)**: 180 lessons - UPLOADED.
+- [x] **Bahasa Indonesia (Grade 1-6)**: 180 lessons - UPLOADED.
+- [x] **IPAS (Grade 1-6)**: 180 lessons (Integrated IPA & IPS) - GENERATED.
+- [x] **Bahasa Inggris (Grade 3-6)**: 120 lessons - GENERATED.
+- [x] **Koding & AI (Grade 5-6)**: 60 lessons - UPLOADED.
 
-### 6. Content Generation (Curriculum)
-- [x] **SD - Grade 1-6 - Matematika**: 180 lessons - UPLOADED.
-- [x] **SMP - Grade 7-9 - Matematika**: 90 lessons - UPLOADED.
-- [x] **SMA - Grade 10-12 - Matematika**: 90 lessons - UPLOADED.
-- [x] **SD - Grade 1 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 2 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 3 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 4 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 5 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 6 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 7 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 8 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 9 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 10 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 11 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 12 - Bahasa Indonesia**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 1 - IPA**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 2 - IPA**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 3 - IPA**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 4 - IPA**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 5 - IPA**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 6 - IPA**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 7 - IPA**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 8 - IPA**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 9 - IPA**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 10 - IPA**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 11 - IPA**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 12 - IPA**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 1 - IPS**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 2 - IPS**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 3 - IPS**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 4 - IPS**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 5 - IPS**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 6 - IPS**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 7 - IPS**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 8 - IPS**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 9 - IPS**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 10 - IPS**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 11 - IPS**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 12 - IPS**: 30 lessons - UPLOADED.
-  - Files: `public/batches/sma_12_ips.json`.
+#### 🏫 Sekolah Menengah Pertama (SMP)
+- [x] **Matematika, B. Indo, IPA, IPS (Grade 7-9)**: Complete - UPLOADED.
+- [x] **Koding & AI (Grade 7-9)**: 90 lessons - UPLOADED.
 
-## 🤖 Koding dan Kecerdasan Artifisial (AI) - NEW SUBJECT (Permendikdasmen 13/2025)
-- [x] **SD - Grade 5 - Koding & AI**: 30 lessons - UPLOADED.
-- [x] **SD - Grade 6 - Koding & AI**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 7 - Koding & AI**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 8 - Koding & AI**: 30 lessons - UPLOADED.
-- [x] **SMP - Grade 9 - Koding & AI**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 10 - Koding & AI**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 11 - Koding & AI**: 30 lessons - UPLOADED.
-- [x] **SMA - Grade 12 - Koding & AI**: 30 lessons (NLP, Vision, Cloud, Career) - UPLOADED.
-  - Files: `public/batches/sma_12_coding_ai.json`.
+#### 🏫 Sekolah Menengah Atas (SMA)
+- [x] **Matematika, B. Indo (Grade 10-12)**: Complete - UPLOADED.
+- [x] **Fisika, Kimia, Biologi (Grade 10-12)**: 270 lessons total - GENERATED.
+- [x] **Koding & AI (Grade 10-12)**: 90 lessons - UPLOADED.
 
-## 🏫 Kurikulum SMK (Permendikdasmen 13/2025)
-- [x] **SMK - Grade 10, 11, 12 - Agama & Budi Pekerti**: 90 lessons total - UPLOADED.
-- [x] **SMK - Grade 10, 11, 12 - Pendidikan Pancasila**: 90 lessons total - UPLOADED.
-- [x] **SMK - Grade 10, 11, 12 - Bahasa Indonesia**: 90 lessons total - UPLOADED.
-- [x] **SMK - Grade 10, 11, 12 - Matematika**: 90 lessons total - UPLOADED.
-- [x] **SMK - Grade 10, 11, 12 - Bahasa Inggris**: 90 lessons total - UPLOADED.
-- [x] **SMK - Grade 10, 11, 12 - PJOK**: 90 lessons total - UPLOADED.
-- [x] **SMK - Grade 10, 11, 12 - Sejarah**: 90 lessons total - UPLOADED.
-- [x] **SMK - Grade 10, 11, 12 - Informatika**: 90 lessons total - UPLOADED.
-- [x] **SMK - Grade 10, 11, 12 - Koding & AI**: 90 lessons total - UPLOADED.
-- [x] **SMK - Grade 10 - Seni Budaya, IPAS, Kebekerjaan**: Complete - UPLOADED.
-- [x] **SMK - Grade 11, 12 - Projek Kreatif & Kewirausahaan (PKK)**: Complete - UPLOADED.
+#### 🏫 Sekolah Menengah Kejuruan (SMK)
+- [x] **Core Subjects (Pancasila, Agama, MTK, B. Indo, B. Inggris, Sejarah)**: Complete - UPLOADED.
+- [x] **Informatika, Koding & AI**: Complete - UPLOADED.
+- [x] **PKK & IPAS SMK**: Complete - UPLOADED.
 
-## 🏁 CPNS & Career Preparation (NEW)
-- [x] All Grade 12 Batches Uploaded
-- [x] CPNS Tryout (SKD) - 450 Questions Generated
-- [x] UTBK-SNBT - 600 Questions Generated
-- [x] Kedinasan (Pengetahuan Umum) - 150 Questions Generated
-- [x] Polri (Akademik & Psikotes) - 340 Questions Generated
-  - [x] TWK, TIU, TKP - `public/batches/cpns_*.json`
+#### 🏁 Career & Higher Education (New)
+- [x] **CPNS (SKD)**: 450 Questions (TWK, TIU, TKP) - GENERATED.
+- [x] **UTBK-SNBT**: 600 Questions (Tes Skolastik) - GENERATED.
+- [x] **Kedinasan**: 150 Questions (Pengetahuan Umum) - GENERATED.
+- [x] **Polri**: 340 Questions (Akademik & Psikotes) - GENERATED.
 
-- [x] **UTBK-SNBT (Tes Skolastik)**: 600 questions total - GENERATED.
-  - [x] Potensi Kognitif, Penalaran Matematika, Literasi - `public/batches/utbk_snbt.json`
+### 5. 🤖 AI Features
+- [x] **AI Tutor Chat**: Floating interface dengan konteks materi real-time.
+  - [x] Zustand Store & Custom Hook (`useAIChat`).
+  - [x] Backend API Handler (`/api/ai/chat`) dengan OpenAI GPT-4o-mini logic.
 
-  - [x] Pengetahuan Umum - `public/batches/kedinasan_umum.json`
-
-- [x] **Tes Masuk Polisi (Akademik & Psikotes)**: 340 questions total - GENERATED.
-  - [x] Pengetahuan Umum, MTK, B. Indo, Psikotes - `public/batches/polri_batch.json`
-
-## 📋 Perintah Penting yang Telah Dijalankan
-- `npm run build`: Berhasil (dist folder terbuat tanpa error TS/CSS).
-- `git init`: Repository diinisialisasi.
-- `git add . && git commit`: Initial commit dilakukan.
-- `node scripts/upload-batch.js`: Digunakan untuk migrasi konten massal.
+## 📋 Perintah Penting
+- `npm run dev`: Menjalankan aplikasi lokal.
+- `node scripts/upload-batch.js`: Upload dataset JSON ke Supabase secara massal.
+- `git add . ; git commit -m "..."`: Menyimpan perubahan ke Git.
 
 ## 🔜 Langkah Selanjutnya
-1. **Curriculum Final Polish**: Verifikasi visual di dashboard siswa untuk semua level.
-2. **Supabase RLS**: Mengonfigurasi Row Level Security di dashboard Supabase agar data aman.
-3. **Deployment**: Menghubungkan repo ke Vercel untuk CI/CD.
+1. **Bulk Ingestion**: Upload semua file `GENERATED` di `public/batches/` ke database.
+2. **AI Refinement**: Menghubungkan API Chat ke OpenAI API Key asli (saat ini masih mock logic).
+3. **Deployment**: Push ke Vercel untuk hosting produksi.
 
 ---
-*Terakhir diperbarui: 2026-05-04 15:50*
+*Terakhir diperbarui: 2026-05-04 16:45*

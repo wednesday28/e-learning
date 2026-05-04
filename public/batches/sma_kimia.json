@@ -1,0 +1,47 @@
+[
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Kimia",
+    "topic": "Atom",
+    "subtopic": "Struktur Atom",
+    "lesson": "Teori Atom Dalton hingga Modern",
+    "content": "Perkembangan teori atom merupakan dasar penting dalam memahami ilmu kimia. Dimulai dari postulat John Dalton yang menyatakan atom sebagai partikel terkecil yang tidak dapat dibagi lagi, kemudian berkembang menjadi model J.J. Thomson (roti kismis) yang menemukan elektron. Ernest Rutherford melalui eksperimen hamburan sinar alfa menemukan adanya inti atom yang bermuatan positif. Niels Bohr kemudian menyempurnakan model tersebut dengan menyatakan elektron bergerak dalam lintasan atau orbit tertentu. Teori atom modern (Mekanika Kuantum) menjelaskan bahwa posisi elektron tidak dapat ditentukan secara pasti, melainkan hanya berupa probabilitas yang disebut orbital."
+  },
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Kimia",
+    "topic": "Ikatan",
+    "subtopic": "Ikatan Ion",
+    "lesson": "Pembentukan Senyawa Ionik",
+    "content": "Ikatan ion adalah ikatan kimia yang terbentuk akibat adanya gaya tarik elektrostatik antara ion positif (kation) dan ion negatif (anion). Ikatan ini biasanya terjadi antara unsur logam yang melepaskan elektron dengan unsur non-logam yang menangkap elektron. Contoh klasik adalah pembentukan NaCl, di mana atom Natrium melepaskan satu elektron menjadi Na+ dan atom Klorin menangkap elektron tersebut menjadi Cl-. Senyawa ionik umumnya memiliki titik leleh dan titik didih yang tinggi, bersifat keras namun rapuh, serta dapat menghantarkan arus listrik dalam bentuk lelehan atau larutan."
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Kimia",
+    "topic": "Stoikiometri",
+    "subtopic": "Konsep Mol",
+    "lesson": "Massa Molar dan Volume Molar",
+    "content": "Konsep mol adalah jembatan antara dunia mikroskopis atom dengan dunia makroskopis laboratorium. Satu mol didefinisikan sebagai jumlah zat yang mengandung partikel sebanyak bilangan Avogadro (6,02 x 10^23). Massa molar suatu zat adalah massa satu mol zat tersebut yang nilainya sama dengan massa atom relatif (Ar) atau massa molekul relatif (Mr) dalam satuan gram/mol. Untuk gas pada keadaan standar (STP: 0°C, 1 atm), satu mol gas apa pun menempati volume sebesar 22,4 liter. Pemahaman stoikiometri sangat krusial dalam menghitung jumlah reaktan yang dibutuhkan atau produk yang dihasilkan dalam suatu reaksi kimia."
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Kimia",
+    "topic": "Larutan",
+    "subtopic": "Sifat Koligatif Larutan",
+    "lesson": "Penurunan Tekanan Uap",
+    "content": "Sifat koligatif larutan adalah sifat larutan yang hanya bergantung pada jumlah partikel zat terlarut dan tidak bergantung pada jenis zat terlarutnya. Salah satu sifat tersebut adalah penurunan tekanan uap jenuh (ΔP). Menurut Hukum Raoult, tekanan uap larutan (P) adalah hasil kali fraksi mol pelarut dengan tekanan uap pelarut murni. Penambahan zat terlarut non-volatil akan menghalangi molekul pelarut untuk menguap, sehingga tekanan uap larutan selalu lebih rendah dibandingkan tekanan uap pelarut murni. Fenomena ini mendasari berbagai aplikasi teknologi, termasuk dalam sistem pendingin mesin kendaraan."
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Kimia",
+    "topic": "Redoks",
+    "subtopic": "Elektrokimia",
+    "lesson": "Sel Volta dan Sel Galvani",
+    "content": "Sel Volta atau Sel Galvani adalah perangkat elektrokimia yang mengubah energi kimia dari reaksi redoks spontan menjadi energi listrik. Dalam sel ini, terjadi pemisahan reaksi oksidasi di anoda (kutub negatif) dan reaksi reduksi di katoda (kutub positif). Elektron mengalir dari anoda ke katoda melalui sirkuit eksternal. Jembatan garam digunakan untuk menjaga kenetralan listrik di kedua kompartemen sel dengan mengalirkan ion-ion. Contoh aplikasi sel Volta adalah baterai dan aki yang kita gunakan sehari-hari. Potensial sel standar (E° sel) dapat dihitung dari selisih potensial reduksi standar katoda dan anoda."
+  }
+]

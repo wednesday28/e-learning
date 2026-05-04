@@ -1,0 +1,47 @@
+[
+  {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Biologi",
+    "topic": "Ekosistem",
+    "subtopic": "Komponen Biotik dan Abiotik",
+    "lesson": "Aliran Energi dan Daur Biogeokimia",
+    "content": "Ekosistem adalah kesatuan fungsional antara komunitas biotik dengan lingkungan abiotiknya. Komponen abiotik meliputi suhu, cahaya, air, kelembapan, dan tanah, sedangkan komponen biotik meliputi produsen, konsumen, dan pengurai. Aliran energi dalam ekosistem dimulai dari energi matahari yang ditangkap oleh produsen melalui fotosintesis, kemudian dialirkan ke konsumen melalui rantai makanan dan jaring-jaring makanan. Selain aliran energi, terjadi pula daur biogeokimia, yaitu siklus unsur-unsur kimia (seperti karbon, nitrogen, dan fosfor) dari lingkungan ke organisme dan kembali lagi ke lingkungan. Gangguan pada salah satu komponen dapat menyebabkan ketidakseimbangan seluruh ekosistem."
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Biologi",
+    "topic": "Sel",
+    "subtopic": "Struktur Sel",
+    "lesson": "Organel Sel dan Fungsinya",
+    "content": "Sel adalah unit fungsional dan struktural terkecil dari makhluk hidup. Di dalam sel terdapat berbagai organel yang memiliki fungsi spesifik untuk menjaga kelangsungan hidup sel. Nukleus berfungsi sebagai pusat kendali genetik, mitokondria berperan dalam respirasi seluler untuk menghasilkan energi (ATP), ribosom berfungsi untuk sintesis protein, dan retikulum endoplasma berperan dalam transportasi zat. Sel tumbuhan memiliki organel khas seperti kloroplas untuk fotosintesis dan dinding sel untuk proteksi serta penyokong, sementara sel hewan memiliki sentriol yang berperan dalam pembelahan sel. Transportasi zat melalui membran sel dapat terjadi secara pasif (difusi, osmosis) atau aktif menggunakan energi."
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Biologi",
+    "topic": "Metabolisme",
+    "subtopic": "Anabolisme",
+    "lesson": "Proses Fotosintesis: Reaksi Terang dan Gelap",
+    "content": "Fotosintesis adalah proses anabolisme di mana organisme autotrof mengubah energi cahaya menjadi energi kimia dalam bentuk glukosa. Proses ini terjadi di kloroplas dan terdiri dari dua tahapan utama. Reaksi Terang terjadi di tilakoid, di mana energi cahaya digunakan untuk memecah air (fotolisis) dan menghasilkan ATP serta NADPH. Reaksi Gelap atau Siklus Calvin terjadi di stroma, di mana ATP dan NADPH hasil reaksi terang digunakan untuk memfiksasi CO2 menjadi glukosa. Faktor-faktor seperti intensitas cahaya, kadar CO2, dan suhu sangat mempengaruhi laju fotosintesis. Hasil fotosintesis merupakan sumber energi utama bagi hampir seluruh kehidupan di bumi."
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Biologi",
+    "topic": "Genetika",
+    "subtopic": "Substansi Genetika",
+    "lesson": "Struktur DNA dan RNA",
+    "content": "Materi genetik yang membawa informasi keturunan dari induk kepada keturunannya adalah asam nukleat, yaitu DNA (Deoxyribonucleic Acid) dan RNA (Ribonucleic Acid). DNA memiliki struktur double helix (rantai ganda berpilin) yang tersusun atas nukleotida. Setiap nukleotida terdiri dari gugus fosfat, gula deoksiribosa, dan basa nitrogen (Adenin, Timin, Guanin, Sitosin). RNA umumnya merupakan rantai tunggal dan memiliki gula ribosa dengan basa nitrogen Urasil menggantikan Timin. DNA berfungsi sebagai penyimpan informasi genetik permanen, sedangkan RNA berperan dalam sintesis protein melalui proses transkripsi dan translasi. Pemahaman tentang DNA mendasari kemajuan dalam bidang bioteknologi modern seperti rekayasa genetika."
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Biologi",
+    "topic": "Evolusi",
+    "subtopic": "Mekanisme Evolusi",
+    "lesson": "Teori Seleksi Alam Charles Darwin",
+    "content": "Teori evolusi yang paling berpengaruh dikemukakan oleh Charles Darwin melalui bukunya 'The Origin of Species'. Darwin menyatakan bahwa evolusi terjadi melalui mekanisme seleksi alam. Individu yang memiliki variasi sifat yang menguntungkan bagi lingkungannya akan memiliki peluang lebih besar untuk bertahan hidup dan bereproduksi (survival of the fittest). Sifat-sifat menguntungkan tersebut kemudian diwariskan ke generasi berikutnya. Bukti-bukti evolusi didukung oleh temuan fosil, homologi struktur anatomi, perbandingan embriologi, hingga bukti biokimia molekuler. Evolusi adalah proses perubahan komposisi genetik suatu populasi dalam jangka waktu yang sangat lama, bukan perubahan pada tingkat individu."
+  }
+]
