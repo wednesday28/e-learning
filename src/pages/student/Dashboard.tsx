@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
 import { useAuthStore } from '../../store/useAuthStore';
 import { Card, Button, Progress, Spinner } from '../../components/ui';
-import { BookOpen, Trophy, Clock, Star, Play, ChevronRight, GraduationCap, School } from 'lucide-react';
+import { BookOpen, Trophy, Clock, Star, Play, ChevronRight, GraduationCap, School, Trash2 } from 'lucide-react';
 
 const StudentDashboard = () => {
   const { profile } = useAuthStore();
@@ -107,6 +107,26 @@ const StudentDashboard = () => {
     }
   };
 
+  const handleLeaveClass = async (classId: string, className: string) => {
+    if (!confirm(`Apakah Anda yakin ingin keluar dari kelas ${className}?`)) return;
+    setIsLoading(true);
+    try {
+      const { error } = await supabase
+        .from('class_students')
+        .delete()
+        .eq('class_id', classId)
+        .eq('student_id', profile?.id);
+      
+      if (error) throw error;
+      alert(`Berhasil keluar dari kelas ${className}.`);
+      fetchDashboardData();
+    } catch (err: any) {
+      alert('Gagal keluar dari kelas: ' + err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   if (isLoading) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
 
   return (
@@ -165,13 +185,25 @@ const StudentDashboard = () => {
                         <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 font-black text-xl group-hover:bg-indigo-600 group-hover:text-white transition-all">
                           {cls.name.substring(0, 2).toUpperCase()}
                         </div>
-                        <div>
+                        <div className="flex-1">
                           <h3 className="font-black text-slate-900 text-lg tracking-tight">{cls.name}</h3>
                           <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{cls.levels?.name} {cls.grades?.grade_level ? `- Kelas ${cls.grades?.grade_level}` : ''}</p>
                         </div>
+                        <Button 
+                          variant="ghost" 
+                          size="icon" 
+                          className="text-slate-300 hover:text-rose-600 hover:bg-rose-50 rounded-xl"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleLeaveClass(cls.id, cls.name);
+                          }}
+                        >
+                          <Trash2 className="w-5 h-5" />
+                        </Button>
                       </div>
                     </Card>
                   </div>
+
                 ))}
               </div>
             ) : (

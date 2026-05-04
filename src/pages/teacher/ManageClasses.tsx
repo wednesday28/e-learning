@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
 import { Card, Button, Spinner, Input } from '../../components/ui';
-import { PlusCircle, Search, Filter, Users, GraduationCap, ChevronRight, School, X } from 'lucide-react';
+import { PlusCircle, Search, Filter, Users, GraduationCap, School, X, Trash2, Edit, AlertCircle } from 'lucide-react';
 
 const ManageClasses = () => {
   const [classes, setClasses] = useState<any[]>([]);
@@ -12,9 +12,13 @@ const ManageClasses = () => {
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showEnrollModal, setShowEnrollModal] = useState(false);
   const [showStudentsModal, setShowStudentsModal] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
   const [selectedClassForStudents, setSelectedClassForStudents] = useState<any>(null);
+  const [selectedClassForEdit, setSelectedClassForEdit] = useState<any>(null);
   const [studentsInClass, setStudentsInClass] = useState<any[]>([]);
   const [isModalLoading, setIsModalLoading] = useState(false);
+  const [isActionLoading, setIsActionLoading] = useState(false);
+
 
   
   const [newClassName, setNewClassName] = useState('');
@@ -91,6 +95,84 @@ const ManageClasses = () => {
       setIsModalLoading(false);
     }
   };
+
+  const handleRemoveStudent = async (studentEnrollmentId: string) => {
+    if (!confirm('Apakah Anda yakin ingin mengeluarkan siswa ini dari kelas?')) return;
+    setIsActionLoading(true);
+    try {
+      const { error } = await supabase
+        .from('class_students')
+        .delete()
+        .eq('id', studentEnrollmentId);
+      
+      if (error) throw error;
+      
+      // Update local state
+      setStudentsInClass(prev => prev.filter(s => s.id !== studentEnrollmentId));
+      fetchData(); // Update count in main list
+    } catch (err: any) {
+      alert('Gagal mengeluarkan siswa: ' + err.message);
+    } finally {
+      setIsActionLoading(false);
+    }
+  };
+
+  const handleDeleteClass = async (classId: string) => {
+    if (!confirm('Hapus kelas? Semua data pendaftaran siswa di kelas ini juga akan dihapus. Tindakan ini tidak dapat dibatalkan.')) return;
+    setIsActionLoading(true);
+    try {
+      const { error } = await supabase.from('classes').delete().eq('id', classId);
+      if (error) throw error;
+      alert('Kelas berhasil dihapus.');
+      fetchData();
+    } catch (err: any) {
+      alert('Gagal menghapus kelas: ' + err.message);
+    } finally {
+      setIsActionLoading(false);
+    }
+  };
+
+  const handleToggleClassStatus = async (cls: any) => {
+    setIsActionLoading(true);
+    try {
+      const { error } = await supabase
+        .from('classes')
+        .update({ is_active: !cls.is_active })
+        .eq('id', cls.id);
+      
+      if (error) throw error;
+      fetchData();
+    } catch (err: any) {
+      alert('Gagal mengubah status kelas: ' + err.message);
+    } finally {
+      setIsActionLoading(false);
+    }
+  };
+
+  const handleUpdateClass = async () => {
+    if (!newClassName) return;
+    setIsActionLoading(true);
+    try {
+      const { error } = await supabase
+        .from('classes')
+        .update({ 
+          name: newClassName,
+          level_id: selectedLevel,
+          grade_id: selectedGrade
+        })
+        .eq('id', selectedClassForEdit.id);
+      
+      if (error) throw error;
+      alert('Kelas berhasil diperbarui!');
+      setShowEditModal(false);
+      fetchData();
+    } catch (err: any) {
+      alert('Gagal memperbarui kelas: ' + err.message);
+    } finally {
+      setIsActionLoading(false);
+    }
+  };
+
 
 
   const handleCreateClass = async () => {
@@ -261,6 +343,12 @@ const ManageClasses = () => {
                   <h3 className="font-black text-slate-900 text-lg tracking-tight">{cls.name}</h3>
                   <div className="flex flex-wrap items-center gap-2 mt-1">
                     <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">{cls.join_code}</span>
+                    <button 
+                      onClick={() => handleToggleClassStatus(cls)}
+                      className={`text-[10px] px-2 py-0.5 rounded-full font-black uppercase tracking-widest transition-all ${cls.is_active ? 'bg-emerald-100 text-emerald-600' : 'bg-slate-100 text-slate-400'}`}
+                    >
+                      {cls.is_active ? 'Aktif' : 'Nonaktif'}
+                    </button>
                   </div>
                 </div>
               </div>
@@ -274,11 +362,37 @@ const ManageClasses = () => {
                   size="icon" 
                   className="rounded-xl hover:bg-indigo-50 hover:text-indigo-600 transition-colors"
                   onClick={() => fetchStudentsInClass(cls)}
+                  title="Lihat Siswa"
                 >
-                  <ChevronRight className="w-5 h-5" />
+                  <Users className="w-5 h-5" />
+                </Button>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="rounded-xl hover:bg-slate-100 transition-colors"
+                  onClick={() => {
+                    setSelectedClassForEdit(cls);
+                    setNewClassName(cls.name);
+                    setSelectedLevel(cls.level_id);
+                    setSelectedGrade(cls.grade_id);
+                    setShowEditModal(true);
+                  }}
+                  title="Edit Kelas"
+                >
+                  <Edit className="w-5 h-5 text-slate-400" />
+                </Button>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="rounded-xl hover:bg-rose-50 hover:text-rose-600 transition-colors"
+                  onClick={() => handleDeleteClass(cls.id)}
+                  title="Hapus Kelas"
+                >
+                  <Trash2 className="w-5 h-5" />
                 </Button>
               </div>
             </div>
+
 
           )) : (
             <div className="text-center py-20 bg-slate-50 rounded-[40px] border-2 border-dashed border-slate-200">
@@ -439,15 +553,26 @@ const ManageClasses = () => {
                           <p className="text-xs font-medium text-slate-500">{item.profiles.email}</p>
                         </div>
                       </div>
-                      <div className="text-right">
-                        <p className="text-sm font-black text-indigo-600">{item.profiles.total_xp} XP</p>
-                        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                          {new Date(item.joined_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })}
-                        </p>
+                      <div className="text-right flex items-center gap-4">
+                        <div className="hidden sm:block">
+                          <p className="text-sm font-black text-indigo-600">{item.profiles.total_xp} XP</p>
+                          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                            {new Date(item.joined_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'short' })}
+                          </p>
+                        </div>
+                        <Button 
+                          variant="ghost" 
+                          size="icon" 
+                          className="h-10 w-10 text-rose-400 hover:text-rose-600 hover:bg-rose-50 rounded-xl"
+                          onClick={() => handleRemoveStudent(item.id)}
+                        >
+                          <Trash2 className="w-4 h-4" />
+                        </Button>
                       </div>
                     </div>
                   ))}
                 </div>
+
               ) : (
                 <div className="text-center py-20 bg-slate-50 rounded-[32px] border-2 border-dashed border-slate-200">
                   <Users className="w-12 h-12 text-slate-200 mx-auto mb-4" />
@@ -460,6 +585,65 @@ const ManageClasses = () => {
               <Button onClick={() => setShowStudentsModal(false)} className="w-full h-12 rounded-2xl shadow-lg shadow-indigo-100">
                 Tutup
               </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Edit Class Modal */}
+      {showEditModal && selectedClassForEdit && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm">
+          <div className="bg-white rounded-[32px] w-full max-w-md p-8 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <h2 className="text-2xl font-black text-slate-900 tracking-tight">Edit Kelas</h2>
+                <p className="text-sm font-medium text-slate-500">Sesuaikan informasi komunitas belajarmu.</p>
+              </div>
+              <Button variant="ghost" size="icon" onClick={() => setShowEditModal(false)} className="rounded-full">
+                <X className="w-6 h-6" />
+              </Button>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Nama Kelas</label>
+                <Input value={newClassName} onChange={(e) => setNewClassName(e.target.value)} placeholder="Contoh: Super Math Grade 9" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Jenjang</label>
+                  <select 
+                    value={selectedLevel} 
+                    onChange={(e) => setSelectedLevel(e.target.value)}
+                    className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                  >
+                    <option value="">Pilih Jenjang</option>
+                    {levels.map(l => <option key={l.id} value={l.id}>{l.name}</option>)}
+                  </select>
+                </div>
+                <div className="space-y-2">
+                  <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Kelas</label>
+                  <select 
+                    value={selectedGrade} 
+                    onChange={(e) => setSelectedGrade(e.target.value)}
+                    className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                  >
+                    <option value="">Pilih Kelas</option>
+                    {grades.map(g => <option key={g.id} value={g.id}>Kelas {g.grade_level}</option>)}
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 mt-10">
+              <div className="flex-1 flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest">
+                <AlertCircle className="w-4 h-4 text-amber-500" /> Perubahan tersimpan otomatis
+              </div>
+            </div>
+
+            <div className="flex gap-4 mt-8">
+              <Button variant="ghost" onClick={() => setShowEditModal(false)} className="flex-1 h-12 rounded-xl" disabled={isActionLoading}>Batal</Button>
+              <Button onClick={handleUpdateClass} isLoading={isActionLoading} className="flex-1 h-12 rounded-xl shadow-lg shadow-indigo-200">Simpan</Button>
             </div>
           </div>
         </div>
