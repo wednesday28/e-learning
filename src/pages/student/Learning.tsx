@@ -196,10 +196,11 @@ const Learning = () => {
         </span>
       </div>
 
-      <div className="aspect-video bg-slate-900 rounded-[40px] shadow-2xl overflow-hidden flex items-center justify-center relative group">
-        <PlayCircle className="w-24 h-24 text-white opacity-40 group-hover:opacity-100 transition-all scale-90 group-hover:scale-100 cursor-pointer" />
-        <div className="absolute bottom-0 left-0 right-0 p-10 bg-gradient-to-t from-black/90 to-transparent">
-          <h2 className="text-3xl font-black text-white tracking-tight leading-tight">{lesson.title}</h2>
+      <div className="bg-gradient-to-br from-indigo-600 to-violet-700 rounded-[40px] p-12 text-white shadow-2xl relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-80 h-80 bg-white/10 rounded-full -mr-40 -mt-40 blur-3xl" />
+        <div className="relative z-10">
+          <h2 className="text-4xl font-black tracking-tight leading-tight mb-4">{lesson.title}</h2>
+          <p className="text-indigo-100 font-medium text-lg">Pahami materi ini dengan seksama untuk meningkatkan XP-mu!</p>
         </div>
       </div>
 

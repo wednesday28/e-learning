@@ -52,8 +52,9 @@ const StudentDashboard = () => {
             classes (
               id,
               name,
-              levels (name),
-              grades (grade_level)
+              level_id,
+              levels (id, name),
+              grades (id, grade_level)
             )
           `)
           .eq('student_id', profile.id);
@@ -156,17 +157,21 @@ const StudentDashboard = () => {
             {myClasses.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {myClasses.map((cls) => (
-                  <Card key={cls.id} className="p-6 border-slate-100 hover:border-indigo-500 transition-all cursor-pointer group">
-                    <div className="flex items-center gap-4">
-                      <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 font-black text-xl group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                        {cls.name.substring(0, 2).toUpperCase()}
+                  <div key={cls.id} onClick={() => navigate(`/learning?level=${cls.level_id}`)}>
+                    <Card 
+                      className="p-6 border-slate-100 hover:border-indigo-500 transition-all cursor-pointer group h-full"
+                    >
+                      <div className="flex items-center gap-4">
+                        <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 font-black text-xl group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                          {cls.name.substring(0, 2).toUpperCase()}
+                        </div>
+                        <div>
+                          <h3 className="font-black text-slate-900 text-lg tracking-tight">{cls.name}</h3>
+                          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{cls.levels?.name} {cls.grades?.grade_level ? `- Kelas ${cls.grades?.grade_level}` : ''}</p>
+                        </div>
                       </div>
-                      <div>
-                        <h3 className="font-black text-slate-900 text-lg tracking-tight">{cls.name}</h3>
-                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{cls.levels?.name} {cls.grades?.grade_level ? `- Kelas ${cls.grades?.grade_level}` : ''}</p>
-                      </div>
-                    </div>
-                  </Card>
+                    </Card>
+                  </div>
                 ))}
               </div>
             ) : (
