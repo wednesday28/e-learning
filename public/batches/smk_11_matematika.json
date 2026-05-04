@@ -7,7 +7,7 @@
     "subtopic": "Komposisi Fungsi",
     "lesson": {
       "title": "Rantai Proses: Memahami Komposisi Fungsi",
-      "content": "Selamat datang di Matematika kelas 11! Kita mulai dengan **Komposisi Fungsi**. Bayangkan sebuah pabrik di mana bahan mentah diproses oleh mesin A menjadi barang setengah jadi, lalu diproses lagi oleh mesin B menjadi barang jadi. Ini adalah aplikasi nyata dari $(g \\circ f)(x) = g(f(x))$. Fungsi $f$ adalah mesin pertama, and hasilnya dimasukkan ke fungsi $g$ sebagai mesin kedua.\n\nBagi siswa SMK, memahami komposisi fungsi membantu dalam pemodelan sistem produksi yang bertahap. Kamu belajar bagaimana variabel di satu tahap memengaruhi hasil akhir di tahap berikutnya. Matematika membantu kita memprediksi hasil akhir dengan tepat tanpa harus mencoba-coba secara manual. Dengan menguasai konsep ini, kamu sedang melatih logika berpikir sistematis yang sangat dibutuhkan dalam mengelola alur kerja industri yang kompleks and efisien."
+      "content": "Selamat datang di Matematika kelas 11! Kita mulai dengan **Komposisi Fungsi**. Bayangkan sebuah pabrik di mana bahan mentah diproses oleh mesin A menjadi barang setengah jadi, lalu diproses lagi oleh mesin B menjadi barang jadi. Ini adalah aplikasi nyata dari $(g \\ncirc f)(x) = g(f(x))$. Fungsi $f$ adalah mesin pertama, and hasilnya dimasukkan ke fungsi $g$ sebagai mesin kedua.\n\nBagi siswa SMK, memahami komposisi fungsi membantu dalam pemodelan sistem produksi yang bertahap. Kamu belajar bagaimana variabel di satu tahap memengaruhi hasil akhir di tahap berikutnya. Matematika membantu kita memprediksi hasil akhir dengan tepat tanpa harus mencoba-coba secara manual. Dengan menguasai konsep ini, kamu sedang melatih logika berpikir sistematis yang sangat dibutuhkan dalam mengelola alur kerja industri yang kompleks and efisien."
     }
   },
   {
@@ -95,7 +95,7 @@
     "subtopic": "Pernyataan, Negasi, dan Konjungsi/Disjungsi",
     "lesson": {
       "title": "Logika Berpikir: Dasar Pemrograman dan Debugging",
-      "content": "Matematika bukan hanya soal angka, tapi soal kebenaran. Kita belajar **Logika Matematika**: Pernyataan ($p$), Negasi ($\\sim p$), Konjungsi ($p \\wedge q$), and Disjungsi ($p \\vee q$). Logika ini adalah 'otak' dari semua perangkat digital and software yang kita gunakan. Jika kondisi A benar DAN kondisi B benar, maka mesin berjalan.\n\nBagi siswa SMK, logika matematika sangat penting untuk mencari kesalahan sistem (troubleshooting). Kamu belajar untuk berpikir runut and tidak berasumsi. Matematika mengajarkan bahwa kebenaran harus bisa dibuktikan secara logis. Dengan menguasai tabel kebenaran, kamu sedang membangun kemampuan analisis yang tajam, yang akan membuatmu sangat handal dalam mendesain sistem or memecahkan masalah teknis yang rumit di dunia kerja."
+      "content": "Matematika bukan hanya soal angka, tapi soal kebenaran. Kita belajar **Logika Matematika**: Pernyataan ($p$), Negasi ($\\nsim p$), Konjungsi ($p \\nwedge q$), and Disjungsi ($p \\nvee q$). Logika ini adalah 'otak' dari semua perangkat digital and software yang kita gunakan. Jika kondisi A benar DAN kondisi B benar, maka mesin berjalan.\n\nBagi siswa SMK, logika matematika sangat penting untuk mencari kesalahan sistem (troubleshooting). Kamu belajar untuk berpikir runut and tidak berasumsi. Matematika mengajarkan bahwa kebenaran harus bisa dibuktikan secara logis. Dengan menguasai tabel kebenaran, kamu sedang membangun kemampuan analisis yang tajam, yang akan membuatmu sangat handal dalam mendesain sistem or memecahkan masalah teknis yang rumit di dunia kerja."
     }
   },
   {
@@ -161,7 +161,7 @@
     "subtopic": "Luas Juring dan Panjang Busur Lingkaran",
     "lesson": {
       "title": "Potongan Presisi: Menghitung Juring dan Busur",
-      "content": "Dalam pembuatan komponen mesin berbentuk cakram or desain taman, kita sering perlu menghitung luas juring or panjang busur. Rumusnya: $L_{juring} = \\frac{\\alpha}{360} \\times \\pi r^2$. Kita belajar hubungan antara sudut pusat dengan luas area. Pelajaran ini melatih ketelitianmu dalam membagi material secara adil and efisien, meminimalkan limbah (waste) dalam setiap proses produksi industri."
+      "content": "Dalam pembuatan komponen mesin berbentuk cakram or desain taman, kita sering perlu menghitung luas juring or panjang busur. Rumusnya: $L_{juring} = \\frac{\\nalpha}{360} \\times \\npi r^2$. Kita belajar hubungan antara sudut pusat dengan luas area. Pelajaran ini melatih ketelitianmu dalam membagi material secara adil and efisien, meminimalkan limbah (waste) dalam setiap proses produksi industri."
     }
   },
   {

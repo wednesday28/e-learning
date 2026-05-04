@@ -1,5 +1,8 @@
 [
   {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Inggris",
     "topic": "Greetings & Introductions",
     "subtopics": [
       {
@@ -45,6 +48,9 @@
     ]
   },
   {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Inggris",
     "topic": "Descriptive Text (People & Animals)",
     "subtopics": [
       {
@@ -90,6 +96,9 @@
     ]
   },
   {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Inggris",
     "topic": "Procedure Text (Recipe & Manual)",
     "subtopics": [
       {
@@ -135,6 +144,9 @@
     ]
   },
   {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Inggris",
     "topic": "Simple Present Tense",
     "subtopics": [
       {
@@ -180,6 +192,9 @@
     ]
   },
   {
+    "level": "SMP",
+    "grade": 7,
+    "subject": "Bahasa Inggris",
     "topic": "Short Functional Text (Announcement, Notice, Label)",
     "subtopics": [
       {

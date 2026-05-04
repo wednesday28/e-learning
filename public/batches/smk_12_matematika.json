@@ -40,7 +40,7 @@
     "subtopic": "Ukuran Pemusatan Data Kelompok (Mean, Median, Modus)",
     "lesson": {
       "title": "Nilai Representatif: Mean, Median, and Modus Data Kelompok",
-      "content": "Menghitung rata-rata data kelompok berbeda with data tunggal. Kita gunakan rumus $\\bar{x} = \\frac{\\sum f_i \\cdot x_i}{\\sum f_i}$ di mana $x_i$ adalah nilai tengah. Kita juga belajar mencari **Median** (nilai tengah) and **Modus** (nilai paling sering) untuk data yang sudah dikelompokkan. Nilai-nilai ini menjadi standar evaluasi kinerja mesin or karyawan.\n\nMatematika mengajarkan kita untuk mencari 'titik pusat' dari sebuah fenomena. Jika modus kerusakan produk ada di rentang tertentu, maka tim teknis harus fokus memperbaikinya. Pemahaman statistika ini melatih kemampuan analisismu dalam memecahkan masalah industri secara sistematis. With angka yang akurat, saran perbaikanmu akan jauh lebih meyakinkan and berdampak positif bagi efisiensi perusahaan."
+      "content": "Menghitung rata-rata data kelompok berbeda with data tunggal. Kita gunakan rumus $\\bar{x} = \\frac{\\nsum f_i \\ncdot x_i}{\\nsum f_i}$ di mana $x_i$ adalah nilai tengah. Kita juga belajar mencari **Median** (nilai tengah) and **Modus** (nilai paling sering) untuk data yang sudah dikelompokkan. Nilai-nilai ini menjadi standar evaluasi kinerja mesin or karyawan.\n\nMatematika mengajarkan kita untuk mencari 'titik pusat' dari sebuah fenomena. Jika modus kerusakan produk ada di rentang tertentu, maka tim teknis harus fokus memperbaikinya. Pemahaman statistika ini melatih kemampuan analisismu dalam memecahkan masalah industri secara sistematis. With angka yang akurat, saran perbaikanmu akan jauh lebih meyakinkan and berdampak positif bagi efisiensi perusahaan."
     }
   },
   {
@@ -62,7 +62,7 @@
     "subtopic": "Konsep Dasar dan Sifat Limit Fungsi Aljabar",
     "lesson": {
       "title": "Ambang Batas: Memahami Konsep Limit",
-      "content": "Pernahkah kamu bertanya, seberapa dekat sebuah variabel bisa mendekati suatu nilai tanpa harus menyentuhnya? Itulah **Limit**. Limit adalah dasar dari semua Kalkulus. Kita belajar menghitung $\\lim_{x \\to a} f(x)$ menggunakan metode substitusi, faktorisasi, or perkalian sekawan. Limit mengajarkan kita tentang kecenderungan and pendekatan.\n\nDalam dunia teknik, limit digunakan untuk menghitung kekuatan maksimum material sebelum patah or kapasitas maksimal sebuah jaringan komunikasi. Matematika membantu kita mengetahui 'batas aman' operasional sebuah sistem. Memahami limit melatih logika berpikirmu untuk melihat apa yang terjadi di titik-titik kritis. Kemampuan ini sangat penting untuk mencegah kegagalan sistem with menghitung ambang batas toleransi yang diizinkan."
+      "content": "Pernahkah kamu bertanya, seberapa dekat sebuah variabel bisa mendekati suatu nilai tanpa harus menyentuhnya? Itulah **Limit**. Limit adalah dasar dari semua Kalkulus. Kita belajar menghitung $\\nlim_{x \\to a} f(x)$ menggunakan metode substitusi, faktorisasi, or perkalian sekawan. Limit mengajarkan kita tentang kecenderungan and pendekatan.\n\nDalam dunia teknik, limit digunakan untuk menghitung kekuatan maksimum material sebelum patah or kapasitas maksimal sebuah jaringan komunikasi. Matematika membantu kita mengetahui 'batas aman' operasional sebuah sistem. Memahami limit melatih logika berpikirmu untuk melihat apa yang terjadi di titik-titik kritis. Kemampuan ini sangat penting untuk mencegah kegagalan sistem with menghitung ambang batas toleransi yang diizinkan."
     }
   },
   {
@@ -95,7 +95,7 @@
     "subtopic": "Integral Tak Tentu Fungsi Aljabar",
     "lesson": {
       "title": "Kebalikan Turunan: Integral Tak Tentu",
-      "content": "Jika turunan adalah laju perubahan, maka **Integral** adalah akumulasi. Integral ($\\int$) adalah kebalikan dari turunan (Antiturunan). Kita belajar rumus dasar $\\int x^n dx = \\frac{1}{n+1} x^{n+1} + C$. Integral digunakan untuk mencari fungsi asal jika laju perubahannya diketahui. Ini sangat berguna dalam pengolahan sinyal digital and fisika teknik.\n\nBagi siswa SMK, integral membantu dalam menghitung total energi yang digunakan dalam satu hari or total material yang dibutuhkan untuk permukaan yang tidak rata. Matematika integral melatih kemampuanmu dalam melihat 'akumulasi' hasil kerja. With memahami integral, kamu memiliki paket lengkap kalkulus (limit, turunan, integral) yang merupakan bahasa universal dari sains and teknologi modern di seluruh dunia."
+      "content": "Jika turunan adalah laju perubahan, maka **Integral** adalah akumulasi. Integral ($\\nint$) adalah kebalikan dari turunan (Antiturunan). Kita belajar rumus dasar $\\nint x^n dx = \\frac{1}{n+1} x^{n+1} + C$. Integral digunakan untuk mencari fungsi asal jika laju perubahannya diketahui. Ini sangat berguna dalam pengolahan sinyal digital and fisika teknik.\n\nBagi siswa SMK, integral membantu dalam menghitung total energi yang digunakan dalam satu hari or total material yang dibutuhkan untuk permukaan yang tidak rata. Matematika integral melatih kemampuanmu dalam melihat 'akumulasi' hasil kerja. With memahami integral, kamu memiliki paket lengkap kalkulus (limit, turunan, integral) yang merupakan bahasa universal dari sains and teknologi modern di seluruh dunia."
     }
   },
   {
@@ -106,7 +106,7 @@
     "subtopic": "Integral Tentu untuk Menghitung Luas Daerah",
     "lesson": {
       "title": "Menghitung Luas Kompleks: Aplikasi Integral Tentu",
-      "content": "Bagaimana cara menghitung luas area di bawah kurva yang melengkung? Geometri biasa tidak sanggup melakukannya, tapi **Integral Tentu** $\\int_a^b f(x) dx$ bisa. Ini digunakan dalam desain bodi otomotif, sayap pesawat, hingga arsitektur modern yang artistik. Kamu belajar menghitung luas with batasan yang pasti.\n\nBagi siswa SMK Teknik, kemampuan menghitung luas and volume benda yang tidak beraturan sangat penting untuk estimasi kebutuhan bahan (RAB) yang akurat. Matematika memberikan solusi bagi masalah-masalah yang terlihat 'mustahil' diselesaikan with cara manual. Jadilah tenaga ahli yang memiliki 'superpower' matematika untuk membangun dunia with bentuk-bentuk baru yang inovatif, efisien, and indah."
+      "content": "Bagaimana cara menghitung luas area di bawah kurva yang melengkung? Geometri biasa tidak sanggup melakukannya, tapi **Integral Tentu** $\\nint_a^b f(x) dx$ bisa. Ini digunakan dalam desain bodi otomotif, sayap pesawat, hingga arsitektur modern yang artistik. Kamu belajar menghitung luas with batasan yang pasti.\n\nBagi siswa SMK Teknik, kemampuan menghitung luas and volume benda yang tidak beraturan sangat penting untuk estimasi kebutuhan bahan (RAB) yang akurat. Matematika memberikan solusi bagi masalah-masalah yang terlihat 'mustahil' diselesaikan with cara manual. Jadilah tenaga ahli yang memiliki 'superpower' matematika untuk membangun dunia with bentuk-bentuk baru yang inovatif, efisien, and indah."
     }
   },
   {
@@ -150,7 +150,7 @@
     "subtopic": "Limit Fungsi di Ketakhinggaan",
     "lesson": {
       "title": "Analisis Jangka Panjang: Limit Menuju Tak Hingga",
-      "content": "Apa yang terjadi jika sebuah proses berjalan selamanya? Kita belajar $\\lim_{x \\to \\infty} f(x)$. Ini digunakan untuk memprediksi nilai 'jenuh' dari sebuah sistem, seperti suhu maksimum mesin or jumlah pelanggan maksimum dalam sebuah pasar. Matematika ketakhinggaan membantumu merancang sistem yang berkelanjutan (sustainable) and memahami kapasitas jangka panjang dari setiap sumber daya yang kamu kelola secara profesional di industri."
+      "content": "Apa yang terjadi jika sebuah proses berjalan selamanya? Kita belajar $\\nlim_{x \\to \\ninfty} f(x)$. Ini digunakan untuk memprediksi nilai 'jenuh' dari sebuah sistem, seperti suhu maksimum mesin or jumlah pelanggan maksimum dalam sebuah pasar. Matematika ketakhinggaan membantumu merancang sistem yang berkelanjutan (sustainable) and memahami kapasitas jangka panjang dari setiap sumber daya yang kamu kelola secara profesional di industri."
     }
   },
   {
@@ -172,7 +172,7 @@
     "subtopic": "Menghitung Volume Benda Putar",
     "lesson": {
       "title": "Volume Produksi: Aplikasi Integral untuk Benda Putar",
-      "content": "Banyak komponen mesin dibuat with mesin bubut (lathe) yang menghasilkan benda putar (seperti baut, poros, vas). Kita belajar cara menghitung volumenya menggunakan integral $V = \\pi \\int_a^b [f(x)]^2 dx$. Matematika memungkinkan kita menghitung berat and kebutuhan material untuk benda with bentuk melengkung yang rumit. Ini adalah skill esensial bagi teknisi pemesinan and desainer produk untuk menghitung biaya produksi with tingkat akurasi yang sangat tinggi."
+      "content": "Banyak komponen mesin dibuat with mesin bubut (lathe) yang menghasilkan benda putar (seperti baut, poros, vas). Kita belajar cara menghitung volumenya menggunakan integral $V = \\npi \\nint_a^b [f(x)]^2 dx$. Matematika memungkinkan kita menghitung berat and kebutuhan material untuk benda with bentuk melengkung yang rumit. Ini adalah skill esensial bagi teknisi pemesinan and desainer produk untuk menghitung biaya produksi with tingkat akurasi yang sangat tinggi."
     }
   },
   {
@@ -271,7 +271,7 @@
     "subtopic": "Turunan Fungsi Komposisi (Aturan Rantai)",
     "lesson": {
       "title": "Efek Berantai: Menggunakan Aturan Rantai",
-      "content": "Bagaimana menghitung perubahan jika sebuah variabel bergantung pada variabel lain yang juga berubah? Kita belajar **Aturan Rantai** $(f(g(x)))' = f'(g(x)) \\cdot g'(x)$. Aplikasi nyatanya adalah pada sistem transmisi daya di mana putaran mesin memengaruhi putaran gir, yang kemudian memengaruhi kecepatan roda. Matematika membantu kita memetakan hubungan sebab-akibat yang kompleks ini secara akurat. With aturan rantai, kamu bisa menghitung dampak dari perubahan kecil di awal proses terhadap hasil akhir di ujung sistem produksi yang panjang."
+      "content": "Bagaimana menghitung perubahan jika sebuah variabel bergantung pada variabel lain yang juga berubah? Kita belajar **Aturan Rantai** $(f(g(x)))' = f'(g(x)) \\ncdot g'(x)$. Aplikasi nyatanya adalah pada sistem transmisi daya di mana putaran mesin memengaruhi putaran gir, yang kemudian memengaruhi kecepatan roda. Matematika membantu kita memetakan hubungan sebab-akibat yang kompleks ini secara akurat. With aturan rantai, kamu bisa menghitung dampak dari perubahan kecil di awal proses terhadap hasil akhir di ujung sistem produksi yang panjang."
     }
   },
   {
@@ -326,7 +326,7 @@
     "subtopic": "Integral Parsial Sederhana",
     "lesson": {
       "title": "Teknik Integrasi Lanjut: Integral Parsial",
-      "content": "Kita belajar teknik integral parsial $\\int u dv = uv - \\int v du$ untuk menyelesaikan perkalian dua fungsi yang berbeda jenis (misalnya aljabar with trigonometri). Ini melatih ketekunan and ketelitianmu dalam melakukan prosedur yang bertahap. Teknik ini sering digunakan dalam analisis rangkaian listrik AC yang kompleks and mekanika fluida lanjut. Matematika mengajarkanmu bahwa masalah yang paling rumit sekalipun bisa diselesaikan jika kita tahu teknik yang tepat and memiliki kesabaran untuk menguraikannya satu per satu secara logis and sistematis."
+      "content": "Kita belajar teknik integral parsial $\\nint u dv = uv - \\nint v du$ untuk menyelesaikan perkalian dua fungsi yang berbeda jenis (misalnya aljabar with trigonometri). Ini melatih ketekunan and ketelitianmu dalam melakukan prosedur yang bertahap. Teknik ini sering digunakan dalam analisis rangkaian listrik AC yang kompleks and mekanika fluida lanjut. Matematika mengajarkanmu bahwa masalah yang paling rumit sekalipun bisa diselesaikan jika kita tahu teknik yang tepat and memiliki kesabaran untuk menguraikannya satu per satu secara logis and sistematis."
     }
   }
 ]

@@ -1,5 +1,8 @@
 [
   {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Inggris",
     "topic": "Recount Text (Personal Experience)",
     "subtopics": [
       {
@@ -45,6 +48,9 @@
     ]
   },
   {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Inggris",
     "topic": "Narrative Text (Folktale & Legend)",
     "subtopics": [
       {
@@ -90,6 +96,9 @@
     ]
   },
   {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Inggris",
     "topic": "Simple Past Tense & Past Continuous",
     "subtopics": [
       {
@@ -135,6 +144,9 @@
     ]
   },
   {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Inggris",
     "topic": "Comparison Degree (Comparative & Superlative)",
     "subtopics": [
       {
@@ -180,6 +192,9 @@
     ]
   },
   {
+    "level": "SMP",
+    "grade": 8,
+    "subject": "Bahasa Inggris",
     "topic": "Giving Opinion & Agreement/Disagreement",
     "subtopics": [
       {

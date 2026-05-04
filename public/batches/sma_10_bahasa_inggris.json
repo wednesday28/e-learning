@@ -1,5 +1,8 @@
 [
   {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Inggris",
     "topic": "Descriptive Text (Advanced - Tourist Attractions)",
     "subtopics": [
       {
@@ -45,6 +48,9 @@
     ]
   },
   {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Inggris",
     "topic": "Recount Text (Biographical & Historical)",
     "subtopics": [
       {
@@ -90,6 +96,9 @@
     ]
   },
   {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Inggris",
     "topic": "Narrative Text (Advanced - Myth & Fantasy)",
     "subtopics": [
       {
@@ -107,7 +116,7 @@
           },
           {
             "title": "Lesson 15: Symbolism in Myths",
-            "content": "Myths are not just stories; they use symbols to represent deep human truths, nature, or social values. (Mitos bukan sekadar cerita; mitos menggunakan simbol untuk mewakili kebenaran mendalam manusia, alam, atau nilai-nilai sosial).\n\n**Common Symbols:**\n- **Sea/Water**: Represents the unknown, life, or destruction.\n- **Forest**: Represents mystery, danger, or testing ground.\n- **Fire**: Represents knowledge, passion, or rebirth.\n- **Monsters**: Represent human fears or obstacles.\n\n**Grammar Focus: Abstract Nouns**\nMyths often discuss abstract concepts like 'Wisdom', 'Courage', 'Greed', and 'Betrayal'.\n\n**Vocabulary List:**\n1. Symbolism (Simbolisme)\n2. Obstacle (Hambatan)\n3. Wisdom (Kebijaksanaan)\n4. Courage (Keberanian)\n5. Betrayal (Pengkhianatan)\n\n**Example Sentences:**\n1. The dragon in the story symbolizes the character's greed. (Naga dalam cerita tersebut melambangkan keserakahan sang tokoh.)\n2. Light is often used to symbolize truth and goodness. (Cahaya sering digunakan untuk melambangkan kebenaran dan kebaikan.)\n3. Myths help us understand complex human emotions. (Mitos membantu kita memahami emosi manusia yang kompleks.)\n\n**Practice Questions:**\n1. In many myths, a forest symbolizes...\a. Safety\nb. Mystery and danger\nc. Food\nd. Happiness\n\n2. What does a dragon often represent?\na. A pet\nb. Greed or fear\nc. Wisdom\nd. Peace\n\n3. Abstract nouns are nouns that you cannot...\na. See or touch\nb. Understand\nc. Write\nd. Speak",
+            "content": "Myths are not just stories; they use symbols to represent deep human truths, nature, or social values. (Mitos bukan sekadar cerita; mitos menggunakan simbol untuk mewakili kebenaran mendalam manusia, alam, atau nilai-nilai sosial).\n\n**Common Symbols:**\n- **Sea/Water**: Represents the unknown, life, or destruction.\n- **Forest**: Represents mystery, danger, or testing ground.\n- **Fire**: Represents knowledge, passion, or rebirth.\n- **Monsters**: Represent human fears or obstacles.\n\n**Grammar Focus: Abstract Nouns**\nMyths often discuss abstract concepts like 'Wisdom', 'Courage', 'Greed', and 'Betrayal'.\n\n**Vocabulary List:**\n1. Symbolism (Simbolisme)\n2. Obstacle (Hambatan)\n3. Wisdom (Kebijaksanaan)\n4. Courage (Keberanian)\n5. Betrayal (Pengkhianatan)\n\n**Example Sentences:**\n1. The dragon in the story symbolizes the character's greed. (Naga dalam cerita tersebut melambangkan keserakahan sang tokoh.)\n2. Light is often used to symbolize truth and goodness. (Cahaya sering digunakan untuk melambangkan kebenaran dan kebaikan.)\n3. Myths help us understand complex human emotions. (Mitos membantu kita memahami emosi manusia yang kompleks.)\n\n**Practice Questions:**\n1. In many myths, a forest symbolizes...\na. Safety\nb. Mystery and danger\nc. Food\nd. Happiness\n\n2. What does a dragon often represent?\na. A pet\nb. Greed or fear\nc. Wisdom\nd. Peace\n\n3. Abstract nouns are nouns that you cannot...\na. See or touch\nb. Understand\nc. Write\nd. Speak",
             "xp": 100
           }
         ]
@@ -117,7 +126,7 @@
         "lessons": [
           {
             "title": "Lesson 16: Building a Fantasy World",
-            "content": "World-building is the process of creating an imaginary world for a fantasy story, including its geography, magic systems, and history. (World-building adalah proses menciptakan dunia imajiner untuk cerita fantasi, termasuk geografi, sistem sihir, dan sejarahnya).\n\n**Elements of a Fantasy World:**\n- **Magic System**: How does magic work? Is there a cost?\n- **Creatures**: Elves, dwarves, dragons, or original species.\n- **Kingdoms**: Different cultures and conflicts.\n- **Map**: The physical layout of the world.\n\n**Grammar Focus: Prepositional Phrases of Location**\nTo describe a world, use precise prepositions: \"Beyond the mountains\", \"Beneath the ocean\", \"Amidst the forest\".\n\n**Vocabulary List:**\n1. World-building (Pembangunan dunia)\n2. Imaginary (Imajiner/Khayalan)\n3. Conflict (Konflik)\n4. Layout (Tata letak)\n5. Species (Spesies/Jenis)\n\n**Example Sentences:**\n1. The story takes place in a world where magic is forbidden. (Cerita ini berlatar di dunia di mana sihir dilarang.)\n2. Beyond the Dark Mountains lies the Kingdom of Light. (Di balik Pegunungan Kegelapan terdapat Kerajaan Cahaya.)\n3. The writer created a unique language for the elves. (Penulis menciptakan bahasa yang unik untuk para peri.)\n\n**Practice Questions:**\n1. \"Forbidden\" means...\na. Allowed\nb. Not allowed\nc. Expensive\nd. Fast\n\n2. Which is a common fantasy creature?\na. Cat\nb. Elf\nc. Car\nd. Computer\n\n3. World-building includes creating...\a. Only the characters\nb. The environment, rules, and history of the world\nc. Only the ending\nd. The price of the book",
+            "content": "World-building is the process of creating an imaginary world for a fantasy story, including its geography, magic systems, and history. (World-building adalah proses menciptakan dunia imajiner untuk cerita fantasi, termasuk geografi, sistem sihir, dan sejarahnya).\n\n**Elements of a Fantasy World:**\n- **Magic System**: How does magic work? Is there a cost?\n- **Creatures**: Elves, dwarves, dragons, or original species.\n- **Kingdoms**: Different cultures and conflicts.\n- **Map**: The physical layout of the world.\n\n**Grammar Focus: Prepositional Phrases of Location**\nTo describe a world, use precise prepositions: \"Beyond the mountains\", \"Beneath the ocean\", \"Amidst the forest\".\n\n**Vocabulary List:**\n1. World-building (Pembangunan dunia)\n2. Imaginary (Imajiner/Khayalan)\n3. Conflict (Konflik)\n4. Layout (Tata letak)\n5. Species (Spesies/Jenis)\n\n**Example Sentences:**\n1. The story takes place in a world where magic is forbidden. (Cerita ini berlatar di dunia di mana sihir dilarang.)\n2. Beyond the Dark Mountains lies the Kingdom of Light. (Di balik Pegunungan Kegelapan terdapat Kerajaan Cahaya.)\n3. The writer created a unique language for the elves. (Penulis menciptakan bahasa yang unik untuk para peri.)\n\n**Practice Questions:**\n1. \"Forbidden\" means...\na. Allowed\nb. Not allowed\nc. Expensive\nd. Fast\n\n2. Which is a common fantasy creature?\na. Cat\nb. Elf\nc. Car\nd. Computer\n\n3. World-building includes creating...\na. Only the characters\nb. The environment, rules, and history of the world\nc. Only the ending\nd. The price of the book",
             "xp": 100
           },
           {
@@ -135,6 +144,9 @@
     ]
   },
   {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Inggris",
     "topic": "Procedure Text (Complex - Technical Manual)",
     "subtopics": [
       {
@@ -180,6 +192,9 @@
     ]
   },
   {
+    "level": "SMA",
+    "grade": 10,
+    "subject": "Bahasa Inggris",
     "topic": "Tenses Review (Present, Past, Future)",
     "subtopics": [
       {

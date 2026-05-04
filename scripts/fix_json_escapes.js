@@ -1,51 +1,34 @@
 import fs from 'fs';
 import path from 'path';
 
-const directory = './public/batches';
+const batchesDir = './public/batches';
+const files = fs.readdirSync(batchesDir).filter(f => f.endsWith('.json'));
 
-function fixJsonInFile(filePath) {
-  try {
-    let content = fs.readFileSync(filePath, 'utf8');
-    
-    // Fix the systemic issue: backslash followed by a space
-    // This often happens in generated text like "a. Option\ b. Option"
-    // We want to replace it with "\n" if it's meant to be a newline, 
-    // or just a space if it's an accidental escape.
-    // Given the context of the errors, it's usually meant to be a newline before the next option.
-    
-    // Pattern: \ followed by space, then often a letter like a, b, c, d and a dot.
-    // e.g. \ a. or \ b.
-    const fixedContent = content.replace(/\\\s([a-d]\.)/g, '\\n$1');
-    
-    // Also catch any other trailing backslashes followed by spaces that are invalid JSON
-    const furtherFixed = fixedContent.replace(/\\\s/g, ' ');
-
-    if (content !== furtherFixed) {
-      fs.writeFileSync(filePath, furtherFixed, 'utf8');
-      console.log(`Fixed: ${filePath}`);
-    } else {
-      console.log(`No changes needed: ${filePath}`);
-    }
-  } catch (err) {
-    console.error(`Error processing ${filePath}:`, err.message);
-  }
-}
-
-// Read directory
-const files = fs.readdirSync(directory);
 files.forEach(file => {
-  if (file.endsWith('.json')) {
-    fixJsonInFile(path.join(directory, file));
-  }
-});
+  const filePath = path.join(batchesDir, file);
+  let content = fs.readFileSync(filePath, 'utf8');
 
-// Also check root batches/
-const rootBatches = './batches';
-if (fs.existsSync(rootBatches)) {
-  const rootFiles = fs.readdirSync(rootBatches);
-  rootFiles.forEach(file => {
-    if (file.endsWith('.json')) {
-      fixJsonInFile(path.join(rootBatches, file));
-    }
-  });
-}
+  // Fix common malformed escapes from LLM output
+  // 1. Fix backslash followed by space: \  -> \n
+  content = content.replace(/\\\s/g, '\\n');
+
+  // 2. Fix backslash followed by choice letters if they look like newlines were intended
+  // e.g. ...\a. -> ...\na.
+  content = content.replace(/\\\a\./g, '\\na.');
+  content = content.replace(/\\\b\./g, '\\nb.');
+  content = content.replace(/\\\c\./g, '\\nc.');
+  content = content.replace(/\\\d\./g, '\\nd.');
+
+  // 3. General fix for any \x that is not a valid JSON escape
+  // Valid: \" \\ \/ \b \f \n \r \t \u
+  // We'll replace \x with \\nx or just x depending on context. 
+  // In our case, it's almost always a missing newline.
+  content = content.replace(/\\([^"\\\/bfnrtu])/g, '\\n$1');
+
+  // 4. Clean up any double newlines we might have created: \n\n -> \n
+  // Actually, \n\n is fine in JSON, but let's keep it clean.
+  // content = content.replace(/\\n\\n/g, '\\n');
+
+  fs.writeFileSync(filePath, content);
+  console.log(`Fixed escapes in ${file}`);
+});

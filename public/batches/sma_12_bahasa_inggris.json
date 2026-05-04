@@ -1,0 +1,254 @@
+[
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Inggris",
+    "topic": "Discussion Text",
+    "subtopics": [
+      {
+        "name": "Understanding Discussion Structure",
+        "lessons": [
+          {
+            "title": "Lesson 1: Introduction to Discussion Text",
+            "content": "A discussion text is a text which presents at least two points of view about an issue. (Teks diskusi adalah teks yang menyajikan setidaknya dua sudut pandang tentang suatu masalah).\n\n**Purpose:**\nTo present different opinions on a topic so that the reader can make their own informed decision.\n\n**Structure:**\n1. **Issue**: Statement of the topic and a preview of the different views.\n2. **Arguments For**: Supporting points with evidence.\n3. **Arguments Against**: Opposing points with evidence.\n4. **Conclusion/Recommendation**: A balanced summary or the writer's final advice.\n\n**Grammar Focus: Contrastive Conjunctions**\nUsing \"However\", \"On the other hand\", \"In contrast\".\n\n**Vocabulary List:**\n1. Informed (Terinformasi/Berdasarkan fakta)\n2. Opposing (Menentang)\n3. Preview (Pratinjau)\n4. Balanced (Seimbang)\n5. Evidence (Bukti)\n\n**Example Sentences:**\n1. The issue of remote learning has sparked a heated debate. (Masalah pembelajaran jarak jauh telah memicu debat sengit.)\n2. On one hand, it offers flexibility for students. (Di satu sisi, ini menawarkan fleksibilitas bagi siswa.)\n3. However, others argue that it lacks social interaction. (Namun, yang lain berargumen bahwa itu kurang interaksi sosial.)\n\n**Practice Questions:**\n1. How many points of view are usually in a discussion text?\na. One\nb. At least two\nc. None\nd. Five\n\n2. What is the first part of a discussion text called?\na. Conclusion\nb. Issue\nc. Argument\nd. Title\n\n3. \"On the other hand\" is used to show...\na. A similar idea\nb. A contrasting idea\nc. The end of the story\nd. A physical location",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 2: Presenting Balanced Arguments",
+            "content": "A good discussion text must be objective. You should present both sides fairly before giving your own opinion. (Teks diskusi yang baik harus objektif. Anda harus menyajikan kedua sisi secara adil sebelum memberikan pendapat Anda sendiri).\n\n**Techniques for Balance:**\n- Use reporting verbs: \"Some people believe...\", \"It is often argued that...\", \"Proponents state...\".\n- Use evidence for both sides: \"Research shows...\", \"According to statistics...\".\n- Keep the tone neutral: Avoid emotional words like \"terrible\" or \"wonderful\" in the argument sections.\n\n**Grammar Focus: Modal Verbs for Possibility**\nUsing \"may\", \"might\", \"could\" to express that something is possible but not certain. Example: \"This policy **might** lead to higher costs.\"\n\n**Vocabulary List:**\n1. Objective (Objektif)\n2. Proponent (Pendukung/Pihak yang setuju)\n3. Neutral (Netral)\n4. Statistics (Statistik)\n5. Certain (Pasti)\n\n**Example Sentences:**\n1. Proponents of solar energy state that it is environmentally friendly. (Pendukung energi surya menyatakan bahwa itu ramah lingkungan.)\n2. Critics, however, point out the high initial cost. (Namun, para kritikus menunjukkan biaya awal yang tinggi.)\n3. It is generally believed that technology improves life. (Umumnya diyakini bahwa teknologi meningkatkan kehidupan.)\n\n**Practice Questions:**\n1. What does it mean to be \"objective\"?\na. To be angry\nb. To be fair and not biased\nc. To give only one side\nd. To write a poem\n\n2. \"Proponents\" are people who...\na. Disagree\nb. Support an idea\nc. Don't care\nd. Are the writers\n\n3. Why should you avoid emotional words in a discussion?\na. To make it longer\nb. To maintain a neutral and professional tone\nc. Because it's hard to spell\nd. To make it funny",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Review Text",
+        "lessons": [
+          {
+            "title": "Lesson 3: Reviewing Films and Books",
+            "content": "A review text provides an evaluation or critique of a work of art or a product for a public audience. (Teks review memberikan evaluasi atau kritik terhadap karya seni atau produk untuk audiens publik).\n\n**Structure of a Review:**\n1. **Introduction/Orientation**: Background info (title, author/director, genre).\n2. **Interpretative Recount**: Summary of the plot (don't give spoilers!).\n3. **Evaluation**: Your opinion on the quality (acting, writing, visuals).\n4. **Evaluative Summation**: Final rating or recommendation.\n\n**Grammar Focus: Adjectives of Quality**\nUsing words like \"gripping\", \"predictable\", \"masterpiece\", \"disappointing\".\n\n**Vocabulary List:**\n1. Critique (Kritik/Ulasan)\n2. Genre (Genre/Aliran)\n3. Plot (Alur cerita)\n4. Spoiler (Bocoran cerita)\n5. Masterpiece (Mahakarya)\n\n**Example Sentences:**\n1. The movie features a gripping plot and excellent cinematography. (Film ini menampilkan alur cerita yang memikat dan sinematografi yang luar biasa.)\n2. Although the acting was good, the ending was too predictable. (Meskipun aktingnya bagus, akhirnya terlalu mudah ditebak.)\n3. This book is a must-read for all fantasy fans. (Buku ini wajib dibaca bagi semua penggemar fantasi.)\n\n**Practice Questions:**\n1. What is the purpose of a review text?\na. To tell a lie\nb. To evaluate a work or product\nc. To buy a ticket\nd. To meet the actor\n\n2. \"Gripping\" means...\na. Boring\nb. Very exciting/Interesting\nc. Fast\nd. Expensive\n\n3. Should you give spoilers in the summary?\na. Yes, always\nb. No, it ruins the experience\nc. Only if it's a bad movie\nd. Only at the beginning",
+            "xp": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Inggris",
+    "topic": "Grammar: Subjunctive & Wish",
+    "subtopics": [
+      {
+        "name": "Expressing Wishes",
+        "lessons": [
+          {
+            "title": "Lesson 4: Wish about the Present",
+            "content": "We use 'wish' + Simple Past to express a desire for the present situation to be different. (Kita menggunakan 'wish' + Simple Past untuk mengungkapkan keinginan agar situasi saat ini berbeda).\n\n**Formula:**\n- **Subject + wish + Subject + Verb 2**\n\n**Examples:**\n- I am poor -> I wish I **were** rich. (Saya berharap saya kaya - kenyataannya saya miskin).\n- I don't have a car -> I wish I **had** a car.\n\n**Note**: Use \"were\" for all subjects (I, you, he, she, it) in formal English. Example: \"I wish she **were** here.\"\n\n**Vocabulary List:**\n1. Desire (Keinginan)\n2. Present (Masa kini)\n3. Different (Berbeda)\n4. Formal (Resmi)\n5. Fact (Fakta)\n\n**Example Sentences:**\n1. I wish I knew the answer. (Saya berharap saya tahu jawabannya.)\n2. She wishes she could speak French. (Dia berharap dia bisa bicara bahasa Prancis.)\n3. They wish they lived in a bigger house. (Mereka berharap mereka tinggal di rumah yang lebih besar.)\n\n**Practice Questions:**\n1. \"I wish I ... a million dollars now.\"\na. have\nb. has\nc. had\nd. am having\n\n2. \"He wishes he ... taller.\"\na. is\nb. was\nc. were\nd. be\n\n3. A wish about the present uses which tense?\na. Present Tense\nb. Past Tense\nc. Future Tense\nd. Present Perfect",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 5: Wish about the Past (Regret)",
+            "content": "We use 'wish' + Past Perfect to express regret about something that happened or didn't happen in the past. (Kita menggunakan 'wish' + Past Perfect untuk mengungkapkan penyesalan tentang sesuatu di masa lalu).\n\n**Formula:**\n- **Subject + wish + Subject + had + Verb 3**\n\n**Examples:**\n- I didn't study -> I wish I **had studied**. (Saya berharap dulu saya belajar).\n- I failed the test -> I wish I **hadn't failed** the test.\n\n**Grammar Focus: Real vs. Wish**\nThe wish is always the opposite of the past reality.\n\n**Vocabulary List:**\n1. Regret (Penyesalan)\n2. Opposite (Kebalikan)\n3. Reality (Kenyataan)\n4. Fail (Gagal)\n5. Past (Masa lalu)\n\n**Example Sentences:**\n1. I wish I had told her the truth. (Saya berharap dulu saya mengatakan yang sebenarnya padanya.)\n2. They wish they had bought the house last year. (Mereka berharap mereka sudah membeli rumah itu tahun lalu.)\n3. She wishes she hadn't eaten so much cake. (Dia berharap dia tidak makan terlalu banyak kue.)\n\n**Practice Questions:**\n1. \"I wish I ... harder for the exam yesterday.\"\na. study\nb. studied\nc. had studied\nd. have studied\n\n2. \"We wish we ... missed the bus.\"\na. didn't\nb. hadn't\nc. haven't\nd. wouldn't\n\n3. Wish about the past is used for...\na. Future plans\nb. General facts\nc. Regrets about the past\nd. Commands",
+            "xp": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Inggris",
+    "topic": "Exam Preparation: TOEFL",
+    "subtopics": [
+      {
+        "name": "TOEFL Structure & Written Expression",
+        "lessons": [
+          {
+            "title": "Lesson 6: Parallel Structure",
+            "content": "In TOEFL, parallel structure is a common topic. It means that parts of a sentence that are joined by a conjunction should have the same grammatical form. (Dalam TOEFL, struktur paralel adalah topik umum. Bagian kalimat yang dihubungkan kata hubung harus memiliki bentuk gramatikal yang sama).\n\n**Incorrect:** He likes swimming, dancing, and **to run**.\n**Correct:** He likes swimming, dancing, and **running**. (V-ing, V-ing, and V-ing).\n\n**Common Patterns:**\n- Nouns with nouns: \"Apples, oranges, and pears.\"\n- Adjectives with adjectives: \"Smart, kind, and helpful.\"\n- Verbs with verbs: \"Eat, sleep, and work.\"\n\n**Vocabulary List:**\n1. Parallel (Sejajar/Paralel)\n2. Pattern (Pola)\n3. Grammatical (Secara tata bahasa)\n4. Conjunction (Kata hubung)\n5. Joined (Dihubungkan)\n\n**Example Sentences:**\n1. She is not only talented but also hardworking. (Dia tidak hanya berbakat tapi juga pekerja keras.)\n2. You can go by bus, by train, or by plane. (Anda bisa pergi dengan bus, kereta, atau pesawat.)\n3. The movie was long, boring, and expensive. (Filmnya panjang, membosankan, dan mahal.)\n\n**Practice Questions:**\n1. Find the error: \"He is famous for his honesty, his bravery, and being kind.\"\na. famous\nb. honesty\nc. bravery\nd. being kind (should be 'his kindness')\n\n2. \"I like to read, to write, and ...\"\na. talking\nb. to talk\nc. talk\nd. talks\n\n3. Parallel structure uses ... grammatical forms for list items.\na. Different\nb. The same\nc. Random\nd. Future",
+            "xp": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "SMA",
+    "grade": 12,
+    "subject": "Bahasa Inggris",
+    "topic": "Career: Job Interview",
+    "subtopics": [
+      {
+        "name": "Interview Preparation",
+        "lessons": [
+          {
+            "title": "Lesson 7: Common Interview Questions",
+            "content": "A job interview is your chance to show the employer why you are the best candidate. (Wawancara kerja adalah kesempatan Anda untuk menunjukkan mengapa Anda kandidat terbaik).\n\n**Top Questions:**\n1. **Tell me about yourself**: Focus on your professional background and goals.\n2. **What are your strengths?**: Mention skills relevant to the job.\n3. **What is your weakness?**: Mention a real weakness but show how you are improving it.\n4. **Why do you want to work here?**: Show that you have researched the company.\n\n**Tips:**\n- Dress professionally.\n- Maintain eye contact.\n- Be honest and confident.\n\n**Vocabulary List:**\n1. Candidate (Kandidat/Calon)\n2. Strength (Kekuatan/Kelebihan)\n3. Weakness (Kelemahan)\n4. Eye contact (Kontak mata)\n5. Professional (Profesional)\n\n**Example Sentences:**\n1. I am a highly motivated person with a passion for coding. (Saya adalah orang yang sangat termotivasi dengan gairah untuk coding.)\n2. My greatest strength is my ability to solve problems quickly. (Kekuatan terbesar saya adalah kemampuan saya memecahkan masalah dengan cepat.)\n3. I want to work here because your company is a leader in technology. (Saya ingin bekerja di sini karena perusahaan Anda adalah pemimpin dalam teknologi.)\n\n**Practice Questions:**\n1. When asked \"Tell me about yourself\", you should talk about...\na. Your hobbies only\nb. Your professional background and skills\nc. Your favorite food\nd. Your family tree\n\n2. How should you answer \"What is your weakness?\"\na. Say \"I have no weakness\"\nb. Mention a weakness and how you are fixing it\nc. Complain about your old boss\nd. Cry\n\n3. Why should you research the company before an interview?\na. To waste time\nb. To show that you are interested and prepared\nc. To know the price of their coffee\nd. To find out where the nearest park is",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 8: Answering Behavior-Based Questions (STAR Method)",
+            "content": "Many interviewers use behavioral questions like \"Tell me about a time you faced a challenge.\" You can answer these using the STAR method. (Banyak pewawancara menggunakan pertanyaan perilaku. Anda dapat menjawabnya menggunakan metode STAR).\n\n**STAR Method:**\n- **Situation**: Describe the context.\n- **Task**: Explain the goal or problem.\n- **Action**: Describe exactly what YOU did.\n- **Result**: Share the positive outcome.\n\n**Vocabulary List:**\n1. Behavioral (Perilaku)\n2. Challenge (Tantangan)\n3. Outcome (Hasil/Dampak)\n4. Context (Konteks)\n5. STAR (Situation, Task, Action, Result)\n\n**Example Sentences:**\n1. One time, I had to lead a team project with a very tight deadline. (Pernah suatu kali, saya harus memimpin proyek tim dengan tenggat waktu yang sangat ketat.)\n2. I organized a weekly meeting to track our progress. (Saya mengadakan rapat mingguan untuk memantau kemajuan kami.)\n3. As a result, we finished the project two days early. (Hasilnya, kami menyelesaikan proyek dua hari lebih awal.)\n\n**Practice Questions:**\n1. What does the 'S' in STAR stand for?\na. Salary\nb. Situation\nc. Skill\nd. Speed\n\n2. Which part of STAR focus on what YOU did?\na. Situation\nb. Task\nc. Action\nd. Result\n\n3. Why is sharing the 'Result' important?\na. To show the impact of your work\nb. To make the story longer\nc. To talk about other people\nd. To ask for more money",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 9: Asking Smart Questions to the Interviewer",
+            "content": "At the end of the interview, you will usually be asked, \"Do you have any questions for us?\" Always say yes! (Di akhir wawancara, Anda biasanya akan ditanya, \"Apakah Anda punya pertanyaan untuk kami?\" Selalu jawab ya!).\n\n**Good Questions to Ask:**\n- \"What does a typical day look like in this role?\"\n- \"How does the team handle challenges?\"\n- \"What are the opportunities for growth in this company?\"\n- \"What is the company culture like?\"\n\n**Grammar Focus: Indirect Questions**\nUse polite indirect questions: \"Could you tell me more about...\", \"I was wondering if...\".\n\n**Vocabulary List:**\n1. Typical (Tipikal/Biasa)\n2. Role (Peran/Jabatan)\n3. Opportunity (Kesempatan)\n4. Growth (Pertumbuhan/Perkembangan)\n5. Culture (Budaya)\n\n**Example Sentences:**\n1. Could you tell me more about the team I will be working with? (Bisakah Anda memberi tahu saya lebih banyak tentang tim tempat saya akan bekerja?)\n2. I was wondering what the company's goals are for the next year. (Saya ingin tahu apa tujuan perusahaan untuk tahun depan.)\n3. What is the most rewarding part of working here? (Apa bagian yang paling memuaskan dari bekerja di sini?)\n\n**Practice Questions:**\n1. What should you do when asked if you have questions?\na. Say \"No, I'm good\"\nb. Ask at least 2-3 smart questions\nc. Ask about the lunch menu immediately\nd. Ask how soon you can leave\n\n2. \"Growth\" in a company context refers to...\na. The size of the building\nb. Career development opportunities\nc. The height of the employees\nd. The number of plants in the office\n\n3. Which is a good question to ask?\na. How much money will I get exactly?\nb. Can I take a nap at work?\nc. What are the company's expectations for this role?\nd. Do you like my shoes?",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Advanced Review Text",
+        "lessons": [
+          {
+            "title": "Lesson 10: Reviewing Products and Technology",
+            "content": "A product review evaluates the features, usability, and value for money of a gadget or service. (Review produk mengevaluasi fitur, kegunaan, dan nilai ekonomis dari gadget atau layanan).\n\n**Key Evaluation Criteria:**\n- **Build Quality**: Is it durable?\n- **Performance**: Is it fast and reliable?\n- **Pros and Cons**: What is good and what is bad?\n- **Verdict**: Should people buy it?\n\n**Grammar Focus: Comparative and Superlative**\nUse \"Better than\", \"The fastest\", \"Most affordable\".\n\n**Vocabulary List:**\n1. Usability (Kegunaan/Kemudahan penggunaan)\n2. Durable (Awet/Tahan lama)\n3. Reliable (Andal)\n4. Verdict (Keputusan/Kesimpulan akhir)\n5. Feature (Fitur/Ciri)\n\n**Example Sentences:**\n1. This smartphone has the best camera in its price range. (Ponsel pintar ini memiliki kamera terbaik di kelas harganya.)\n2. On the downside, the battery life is quite short. (Sisi negatifnya, daya tahan baterainya cukup singkat.)\n3. Overall, it is a solid choice for students. (Secara keseluruhan, ini adalah pilihan yang mantap untuk siswa.)\n\n**Practice Questions:**\n1. What does \"durable\" mean?\na. Cheap\nb. Long-lasting and strong\nc. Very fast\nd. Colorful\n\n2. A \"Verdict\" in a review is...\na. The title\nb. The final decision/recommendation\nc. The price list\nd. A list of actors\n\n3. \"Value for money\" means...\na. The product is very expensive\nb. The quality is worth the price paid\nc. The product is free\nd. You should save your money",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 11: Using Persuasive Language in Reviews",
+            "content": "To make your review convincing, use descriptive and persuasive language. (Agar review Anda meyakinkan, gunakan bahasa yang deskriptif dan persuasif).\n\n**Positive Adjectives**: \"User-friendly\", \"Revolutionary\", \"Sleek\", \"High-end\".\n**Negative Adjectives**: \"Clunky\", \"Overpriced\", \"Obsolete\", \"Underwhelming\".\n\n**Grammar Focus: Adverbs of Degree**\nUsing \"Extremely\", \"Quite\", \"Barely\", \"Remarkably\". Example: \"The performance is **remarkably** smooth.\"\n\n**Vocabulary List:**\n1. Convincing (Meyakinkan)\n2. Revolutionary (Revolusioner)\n3. Sleek (Ramping/Elegan)\n4. Obsolete (Usang/Ketinggalan zaman)\n5. Underwhelming (Mengecewakan/Biasa saja)\n\n**Example Sentences:**\n1. The new interface is extremely user-friendly. (Antarmuka baru ini sangat ramah pengguna.)\n2. I found the design to be a bit clunky and heavy. (Saya rasa desainnya agak kaku dan berat.)\n3. This gadget is remarkably better than the previous version. (Gadget ini jauh lebih baik daripada versi sebelumnya.)\n\n**Practice Questions:**\n1. Which word is positive?\na. Obsolete\nb. Underwhelming\nc. Sleek\nd. Clunky\n\n2. \"Overpriced\" means...\na. Very cheap\nb. Too expensive for its quality\nc. Free\nd. On sale\n\n3. Why do we use adverbs like \"extremely\"?\na. To make the text harder\nb. To show the intensity of a quality\nc. To name a place\nd. To ask a question",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "TOEFL Reading Strategies",
+        "lessons": [
+          {
+            "title": "Lesson 12: Finding the Main Idea",
+            "content": "In TOEFL Reading, finding the main idea is crucial. It's usually found in the first or last sentence of a paragraph. (Dalam TOEFL Reading, menemukan ide pokok sangatlah penting. Biasanya ditemukan di kalimat pertama atau terakhir paragraf).\n\n**Strategy:**\n- **Skimming**: Read quickly to get the general gist.\n- **Scanning**: Look for specific keywords or numbers.\n\n**Vocabulary List:**\n1. Crucial (Sangat penting)\n2. Gist (Inti/Pokok)\n3. Skimming (Membaca sekilas)\n4. Scanning (Memindai/Mencari kata kunci)\n5. Paragraph (Paragraf)\n\n**Example Sentences:**\n1. The main idea of the passage is the impact of global warming. (Ide pokok dari bacaan tersebut adalah dampak pemanasan global.)\n2. You should skim the text before answering the questions. (Anda harus membaca sekilas teks tersebut sebelum menjawab pertanyaan.)\n3. Scan the paragraph for the year the event happened. (Pindai paragrafnya untuk mencari tahun kejadian tersebut.)\n\n**Practice Questions:**\n1. Where is the main idea usually located?\na. In the middle of the text\nb. In the first or last sentence of a paragraph\nc. Only in the title\nd. Nowhere\n\n2. \"Skimming\" means...\na. Reading every word slowly\nb. Reading quickly to get the general idea\nc. Drawing a picture\nd. Translating the whole text\n\n3. When should you use \"Scanning\"?\na. When you want to enjoy a story\nb. When you are looking for a specific name or date\nc. When you are sleeping\nd. When you are writing a poem",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 13: Vocabulary in Context",
+            "content": "TOEFL often asks for the meaning of a word as used in the passage. You can use context clues to find the answer. (TOEFL sering menanyakan arti sebuah kata. Anda dapat menggunakan petunjuk konteks untuk menemukan jawabannya).\n\n**Context Clues:**\n- **Synonyms**: Words with similar meanings nearby.\n- **Antonyms**: Words with opposite meanings (look for 'but', 'however').\n- **Examples**: Lists that explain the word.\n- **Definition**: The sentence itself defines the word.\n\n**Vocabulary List:**\n1. Context (Konteks)\n2. Clue (Petunjuk)\n3. Synonym (Sinonim)\n4. Antonym (Antonim)\n5. Passage (Bacaan/Teks)\n\n**Example Sentences:**\n1. The word \"dormant\" in line 5 is closest in meaning to \"inactive\". (Kata \"dormant\" di baris 5 paling dekat artinya dengan \"tidak aktif\".)\n2. Use the surrounding sentences to guess the word's meaning. (Gunakan kalimat-kalimat di sekitarnya untuk menebak arti kata tersebut.)\n3. Look for contrast words to find antonym clues. (Cari kata kontras untuk menemukan petunjuk antonim.)\n\n**Practice Questions:**\n1. What is a context clue?\na. A dictionary\nb. Information in the text that helps you find a meaning\nc. A secret code\nd. A title\n\n2. \"Inactive\" is a synonym for...\na. Busy\nb. Dormant\nc. Fast\nd. Loud\n\n3. If you see the word \"but\", you might find an...\na. Synonym clue\nb. Antonym clue\nc. Physical clue\nd. Number",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Advanced Subjunctive and Wish",
+        "lessons": [
+          {
+            "title": "Lesson 14: Subjunctive with 'As If' and 'As Though'",
+            "content": "We use \"as if\" or \"as though\" + Past Tense to describe something that is not true or unlikely in the present. (Kita menggunakan \"as if\" atau \"as though\" + Past Tense untuk menggambarkan sesuatu yang tidak nyata di masa kini).\n\n**Examples:**\n- He talks **as if** he **were** the boss. (Dia bicara seolah-olah dia bos - padahal bukan).\n- She looks **as though** she **had** a secret. (Dia terlihat seolah-olah punya rahasia).\n\n**Note**: Just like with 'wish', we use \"were\" for all subjects. Example: \"It sounds as if he **were** crying.\"\n\n**Vocabulary List:**\n1. Unlikely (Kecil kemungkinannya)\n2. Secret (Rahasia)\n3. Boss (Bos/Atasan)\n4. Sound (Terdengar)\n5. Reality (Kenyataan)\n\n**Example Sentences:**\n1. You act as if you were a millionaire. (Kamu bertingkah seolah-olah kamu seorang jutawan.)\n2. It feels as though we were in a dream. (Rasanya seolah-olah kita sedang dalam mimpi.)\n3. She treats me as if I were a child. (Dia memperlakukanku seolah-olah aku anak kecil.)\n\n**Practice Questions:**\n1. \"He treats the dog as if it ... human.\"\na. is\nb. was\nc. were\nd. be\n\n2. \"As if\" is used to describe something that is...\na. 100% true\nb. Not true or imaginary\nc. In the future\nd. A scientific fact\n\n3. \"She speaks as though she ... everything.\"\na. know\nb. knows\nc. knew\nd. knowing",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 15: Subjunctive in Formal Suggestions",
+            "content": "In very formal English, we use the base form of the verb (without -s, -ed, or -ing) after certain verbs like 'suggest', 'recommend', 'insist', and 'demand'. (Dalam bahasa Inggris formal, kita menggunakan bentuk dasar kata kerja setelah kata kerja tertentu).\n\n**Formula:**\n- **Subject + suggest/insist + that + Subject + Verb 1 (Base Form)**\n\n**Examples:**\n- I suggest that he **study** harder. (NOT studies).\n- The doctor recommended that she **stay** in bed. (NOT stays or stayed).\n- They demand that the rules **be** changed. (NOT are).\n\n**Vocabulary List:**\n1. Insist (Bersikeras)\n2. Demand (Menuntut)\n3. Suggest (Menyarankan)\n4. Base form (Bentuk dasar)\n5. Formal (Resmi)\n\n**Example Sentences:**\n1. It is important that he be on time. (Penting baginya untuk tepat waktu.)\n2. We insist that she tell the truth. (Kami bersikeras agar dia mengatakan yang sebenarnya.)\n3. The manager requested that everyone attend the meeting. (Manajer meminta agar semua orang menghadiri rapat.)\n\n**Practice Questions:**\n1. \"I suggest that he ... to the doctor.\"\na. goes\nb. go\nc. going\nd. went\n\n2. \"The law demands that every citizen ... taxes.\"\na. pay\nb. pays\nc. paid\nd. paying\n\n3. In this formal subjunctive, do we add '-s' for 'he/she/it'?\na. Yes\nb. No, always use base form\nc. Sometimes\nd. Only in the past",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "TOEFL Structure: Inversion and Modifiers",
+        "lessons": [
+          {
+            "title": "Lesson 16: Subject-Verb Inversion",
+            "content": "Inversion happens when the verb comes before the subject. In TOEFL, this often happens after negative expressions. (Inversi terjadi saat kata kerja mendahului subjek. Di TOEFL, ini sering terjadi setelah ungkapan negatif).\n\n**Negative Expressions**: \"Never\", \"Rarely\", \"Seldom\", \"Hardly\", \"Not only\".\n\n**Formula:**\n- **Negative Word + Auxiliary + Subject + Verb**\n\n**Examples:**\n- Never **have I seen** such a beautiful sunset. (Belum pernah saya melihat...).\n- Rarely **does he arrive** late. (Jarang dia datang terlambat).\n\n**Vocabulary List:**\n1. Inversion (Inversi/Pembalikan posisi)\n2. Auxiliary (Kata kerja bantu)\n3. Seldom (Jarang)\n4. Expression (Ungkapan)\n5. Sunset (Matahari terbenam)\n\n**Example Sentences:**\n1. Not only did he win, but he also broke the record. (Tidak hanya dia menang, tapi dia juga memecahkan rekor.)\n2. Seldom do we hear such good news. (Jarang sekali kita mendengar berita sebagus itu.)\n3. Hardlly had I arrived when the phone rang. (Baru saja saya tiba, telepon berdering.)\n\n**Practice Questions:**\n1. \"Never ... such a strange story.\"\na. I have heard\nb. have I heard\nc. I heard\nd. hearing I\n\n2. \"Rarely ... she go to the cinema.\"\na. does\nb. do\nc. is\nd. has\n\n3. Inversion means the ... comes before the subject.\na. Noun\nb. Adjective\nc. Verb/Auxiliary\nd. Preposition",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 17: Misplaced and Dangling Modifiers",
+            "content": "A modifier should be placed next to the word it describes. If it is in the wrong place, it is a misplaced or dangling modifier. (Modifier harus diletakkan di samping kata yang dijelaskannya. Jika salah tempat, itu adalah misplaced atau dangling modifier).\n\n**Incorrect**: Running to the bus, my bag fell. (The bag was running? No!)\n**Correct**: Running to the bus, **I** dropped my bag. (I was running).\n\n**TOEFL Tip**: Always check if the first part of the sentence logically describes the subject that follows the comma.\n\n**Vocabulary List:**\n1. Modifier (Penjelas)\n2. Misplaced (Salah letak)\n3. Dangling (Gantung/Tidak jelas subjeknya)\n4. Logically (Secara logis)\n5. Subject (Subjek)\n\n**Example Sentences:**\n1. Tired after work, the bed felt comfortable to me. (Misplaced - the bed was tired?)\n2. Tired after work, I found the bed comfortable. (Correct).\n3. Covered in chocolate, the child ate the cake. (Correct).\n\n**Practice Questions:**\n1. Find the error: \"Walking down the street, a tree fell on my car.\"\na. Walking\nb. down\nc. the street\nd. a tree (Who was walking? Not the tree!)\n\n2. \"Hungry after the hike, ...\"\na. the pizza was delicious\nb. we ate the pizza quickly\nc. the pizza arrived late\nd. it was time for pizza\n\n3. A modifier should be placed ... the word it describes.\na. Far from\nb. Next to\nc. Below\nd. Above",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Advanced Discussion and Debate",
+        "lessons": [
+          {
+            "title": "Lesson 18: Structuring a Counter-Argument",
+            "content": "A high-level discussion text doesn't just list pros and cons; it analyzes them. (Teks diskusi tingkat tinggi tidak hanya mencantumkan pro dan kontra; ia menganalisisnya).\n\n**Steps:**\n1. **State the opposing view**: \"Opponents argue that...\"\n2. **Provide the reason**: \"Because they believe...\"\n3. **Analyze the weakness**: \"However, this fails to consider...\"\n\n**Vocabulary List:**\n1. Opponent (Lawan/Pihak yang tidak setuju)\n2. Analyze (Menganalisis)\n3. Weakness (Kelemahan)\n4. Pro and Con (Pro dan Kontra)\n5. Consider (Mempertimbangkan)\n\n**Example Sentences:**\n1. While some people prefer city life, others argue that it is too stressful. (Sementara beberapa orang lebih suka kehidupan kota, yang lain berargumen bahwa itu terlalu membuat stres.)\n2. This argument fails to account for the benefits of green spaces. (Argumen ini gagal memperhitungkan manfaat ruang terbuka hijau.)\n3. We must weigh the economic benefits against the environmental costs. (Kita harus menimbang manfaat ekonomi terhadap biaya lingkungan.)\n\n**Practice Questions:**\n1. What is the first step in a counter-argument?\na. Giving your own opinion immediately\nb. Stating the opposing view fairly\nc. Laughing at the other side\nd. Ending the text\n\n2. \"Fails to consider\" means...\na. Did a good job\nb. Forgot or ignored an important point\nc. Is very smart\nd. Is a physical object\n\n3. Why is analyzing counter-arguments important?\na. To make the text shorter\nb. To show that your own position is more logical and well-researched\nc. To name a new place\nd. To ask for help",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 19: Writing a Balanced Conclusion",
+            "content": "The conclusion of a discussion text should summarize the main points and offer a balanced recommendation or final thought. (Kesimpulan teks diskusi harus merangkum poin-poin utama dan menawarkan rekomendasi yang seimbang).\n\n**Phrases for Conclusion:**\n- \"In conclusion, both sides have valid points...\"\n- \"Taking everything into account, it seems that...\"\n- \"A balanced approach would be to...\"\n- \"Ultimately, the decision depends on...\"\n\n**Vocabulary List:**\n1. Balanced (Seimbang)\n2. Approach (Pendekatan)\n3. Ultimately (Pada akhirnya)\n4. Valid (Sah/Berlaku/Benar)\n5. Account (Mempertimbangkan)\n\n**Example Sentences:**\n1. In conclusion, while technology has risks, its benefits are indispensable. (Kesimpulannya, meskipun teknologi memiliki risiko, manfaatnya sangat diperlukan.)\n2. Ultimately, a combination of both methods might be the best solution. (Pada akhirnya, kombinasi kedua metode mungkin merupakan solusi terbaik.)\n3. We should consider all factors before making a final decision. (Kita harus mempertimbangkan semua faktor sebelum membuat keputusan akhir.)\n\n**Practice Questions:**\n1. A conclusion in a discussion text should be...\na. Biased and angry\nb. Balanced and summary-based\nc. Only one sentence\nd. A secret\n\n2. \"Indispensable\" means...\na. Not needed\nb. Absolutely necessary\nc. Cheap\nd. Red\n\n3. \"Taking everything into account\" means...\na. Counting money\nb. Considering all the information mentioned\nc. Deleting the text\nd. Going home",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Professional Communication",
+        "lessons": [
+          {
+            "title": "Lesson 20: Writing Professional Emails",
+            "content": "Professional emails are the standard for communication in the workplace. (Email profesional adalah standar komunikasi di tempat kerja).\n\n**Structure:**\n1. **Subject Line**: Clear and concise.\n2. **Salutation**: Formal (Dear Mr. Smith).\n3. **Opening**: State the purpose.\n4. **Body**: Provide details.\n5. **Closing**: Call to action (I look forward to your reply).\n6. **Sign-off**: Sincerely, Regards.\n\n**Grammar Focus: Avoiding Slang**\nUse \"I would like to\" instead of \"I wanna\".\n\n**Vocabulary List:**\n1. Concise (Singkat dan padat)\n2. Salutation (Salam pembuka)\n3. Sign-off (Salam penutup)\n4. Standard (Standar/Baku)\n5. Workplace (Tempat kerja)\n\n**Example Sentences:**\n1. Subject: Meeting Request - Project Alpha. (Subjek: Permintaan Rapat - Proyek Alpha.)\n2. Dear Team, please find the attached report for your review. (Halo Tim, silakan periksa laporan terlampir untuk ulasan Anda.)\n3. Best regards, Andi Pratama. (Salam hangat, Andi Pratama.)\n\n**Practice Questions:**\n1. Best regards, Andi Pratama. (Salam hangat, Andi Pratama.)\n\n**Practice Questions:**\n1. A subject line should be...\na. Very long and confusing\nb. Clear and concise\nc. Blank\nd. A joke\n\n2. Which sign-off is professional?\na. Cya later\nb. Best regards\nc. Peace out\nd. Bye-bye\n\n3. \"Concise\" means...\na. Writing 10 pages\nb. Using few words to give clear information\nc. Drawing a picture\nd. Being very loud",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 21: Handling Negative Feedback Professionally",
+            "content": "In a job, you will sometimes receive negative feedback. Handling it professionally is a key soft skill. (Dalam pekerjaan, terkadang Anda akan menerima umpan balik negatif. Menanganinya secara profesional adalah soft skill utama).\n\n**Steps:**\n1. **Listen**: Don't interrupt.\n2. **Stay Calm**: Don't get defensive.\n3. **Ask for Clarification**: \"Could you give me an example?\"\n4. **Accept and Improve**: \"Thank you for the feedback, I will work on it.\"\n\n**Vocabulary List:**\n1. Feedback (Umpan balik/Saran)\n2. Defensive (Defensif/Membela diri secara berlebihan)\n3. Clarification (Klarifikasi/Penjelasan)\n4. Interrupt (Memotong pembicaraan)\n5. Professionalism (Profesionalisme)\n\n**Example Sentences:**\n1. I appreciate your feedback on my presentation. (Saya menghargai umpan balik Anda atas presentasi saya.)\n2. Could you clarify which part of the report needs improvement? (Bisakah Anda menjelaskan bagian laporan mana yang perlu diperbaiki?)\n3. I will make the necessary changes by tomorrow. (Saya akan melakukan perubahan yang diperlukan besok.)\n\n**Practice Questions:**\n1. What should you do when getting negative feedback?\na. Shout and get angry\nb. Listen calmly and ask for clarification\nc. Quit your job immediately\nd. Cry in the corner\n\n2. \"Defensive\" in this context means...\na. Playing soccer\nb. Trying too hard to protect yourself from criticism\nc. Being very fast\nd. Sleeping at work\n\n3. Why is feedback useful?\na. To make you feel bad\nb. To help you grow and improve your skills\nc. To waste time\nd. To win a prize",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Advanced TOEFL Vocabulary",
+        "lessons": [
+          {
+            "title": "Lesson 22: Words for Academic Trends",
+            "content": "TOEFL passages often use specific words to describe changes or trends in science and history. (Bacaan TOEFL sering menggunakan kata-kata tertentu untuk menggambarkan tren dalam sains dan sejarah).\n\n**Key Words:**\n- **Fluctuate**: To change frequently (up and down).\n- **Stabilize**: To become steady.\n- **Plummet**: To drop very quickly.\n- **Soar**: To rise very quickly.\n- **Plateau**: To reach a level where there is no more change.\n\n**Vocabulary List:**\n1. Fluctuate (Berfluktuasi/Naik turun)\n2. Stabilize (Stabil/Menjadi tetap)\n3. Plummet (Anjlok/Turun drastis)\n4. Soar (Membumbung/Naik drastis)\n5. Plateau (Mencapai titik datar/Stagnan)\n\n**Example Sentences:**\n1. The temperatures fluctuate during the spring season. (Suhu berfluktuasi selama musim semi.)\n2. After the initial increase, the population reached a plateau. (Setelah kenaikan awal, populasinya mencapai titik stagnan.)\n3. Stock prices plummeted after the news was released. (Harga saham anjlok setelah berita itu dirilis.)\n\n**Practice Questions:**\n1. If something rises very quickly, it...\na. Plummet\nb. Soar\nc. Plateau\nd. Fluctuate\n\n2. \"Stabilize\" means to become...\na. Fast\nb. Steady and unchanging\nc. Broken\nd. Green\n\n3. When numbers go up and down repeatedly, they...\na. Soar\nb. Fluctuate\nc. Plummet\nd. Stabilize",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 23: Abstract Academic Concepts",
+            "content": "Understanding abstract concepts is key to scoring high in TOEFL. (Memahami konsep abstrak adalah kunci untuk mendapat skor tinggi di TOEFL).\n\n**Key Concepts:**\n- **Inherit**: To receive from ancestors (genetics or property).\n- **Acquire**: To get or learn something.\n- **Adapt**: To change to fit a new situation.\n- **Vanish**: To disappear completely.\n- **Evolve**: To develop gradually over time.\n\n**Vocabulary List:**\n1. Inherit (Mewarisi)\n2. Acquire (Memperoleh/Mendapatkan)\n3. Adapt (Beradaptasi)\n4. Vanish (Lenyap/Menghilang)\n5. Evolve (Berevolusi/Berkembang)\n\n**Example Sentences:**\n1. Animals must adapt to their environment to survive. (Hewan harus beradaptasi dengan lingkungannya untuk bertahan hidup.)\n2. Humans acquire language skills during childhood. (Manusia memperoleh keterampilan bahasa selama masa kanak-kanak.)\n3. Many species vanished during the ice age. (Banyak spesies lenyap selama zaman es.)\n\n**Practice Questions:**\n1. To disappear completely is to...\na. Evolve\nb. Vanish\nc. Inherit\nd. Acquire\n\n2. \"Evolve\" means to develop...\na. Very fast in one second\nb. Gradually over time\nc. Only in the future\nd. Backwards\n\n3. If you get a new skill, you ... it.\na. Vanish\nb. Adapt\nc. Acquire\nd. Inherit",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Job Interview: Advanced Scenarios",
+        "lessons": [
+          {
+            "title": "Lesson 24: Explaining Career Gaps",
+            "content": "If you have a period where you weren't working, be honest and positive about what you did during that time. (Jika ada masa di mana Anda tidak bekerja, jujurlah dan bersikaplah positif tentang apa yang Anda lakukan selama itu).\n\n**Positive Explanations:**\n- \"I took time to upgrade my skills through online courses.\"\n- \"I was managing a family matter while doing freelance work.\"\n- \"I took a gap year to travel and gain a broader perspective.\"\n\n**Key Phrase**: \"I am now fully ready and excited to return to a full-time role.\"\n\n**Vocabulary List:**\n1. Career gap (Jeda karir)\n2. Freelance (Kerja lepas)\n3. Perspective (Perspektif/Sudut pandang)\n4. Upgrade (Meningkatkan/Memperbarui)\n5. Perspective (Perspektif)\n\n**Example Sentences:**\n1. I used my career gap to learn Python and Data Analysis. (Saya menggunakan jeda karir saya untuk belajar Python dan Analisis Data.)\n2. During that time, I gained valuable experience as a volunteer. (Selama waktu itu, saya memperoleh pengalaman berharga sebagai sukarelawan.)\n3. I am now looking for a permanent position to apply my skills. (Saya sekarang mencari posisi permanen untuk menerapkan keahlian saya.)\n\n**Practice Questions:**\n1. How should you talk about a career gap?\na. Lie about it\nb. Be honest and show what you learned/did\nc. Cry and say you are sorry\nd. Say you were sleeping\n\n2. \"Freelance\" work is...\na. Working for a company for 40 years\nb. Working independently for different clients\nc. Not working at all\nd. A type of dance\n\n3. Why is \"upgrading skills\" a good explanation?\na. It shows you are proactive and continuous learner\nb. It shows you are lazy\nc. It shows you have too much money\nd. It is a secret",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 25: Negotiating Salary and Benefits",
+            "content": "Salary negotiation is a normal part of the hiring process. Research the market rate for your position first. (Negosiasi gaji adalah bagian normal dari proses perekrutan. Riset harga pasar untuk posisi Anda terlebih dahulu).\n\n**Tips:**\n- Don't bring up salary too early.\n- Focus on the value you bring to the company.\n- Consider the whole package (insurance, leave, training).\n\n**Phrases:**\n- \"Based on my research and experience, I was looking for a range of...\"\n- \"I am open to negotiation depending on the benefits package.\"\n\n**Vocabulary List:**\n1. Negotiate (Negosiasi/Tawar-menawar)\n2. Market rate (Harga pasar)\n3. Package (Paket/Keseluruhan kompensasi)\n4. Insurance (Asuransi)\n5. Range (Rentang)\n\n**Example Sentences:**\n1. I am happy to discuss the salary once we establish my role. (Saya senang mendiskusikan gaji setelah kita menetapkan peran saya.)\n2. Does the company offer health insurance and travel allowance? (Apakah perusahaan menawarkan asuransi kesehatan dan tunjangan perjalanan?)\n3. I believe my skills justify a salary in the upper range. (Saya yakin keahlian saya membenarkan gaji di rentang atas.)\n4. negotiation is a two-way conversation. (Negosiasi adalah percakapan dua arah.)\n\n**Practice Questions:**\n1. What should you do before negotiating salary?\na. Guess a random number\nb. Research the market rate for the role\nc. Ask your mom\nd. Say nothing\n\n2. \"Negotiation\" is a ... conversation.\na. One-way\nb. Two-way\nc. Silent\nd. Angry\n\n3. What is included in a \"benefits package\"?\na. Only the money\nb. Insurance, leave, training, and other perks\nc. Only the desk and chair\nd. A free lunch only",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Final Review: Grade 12 English Mastery",
+        "lessons": [
+          {
+            "title": "Lesson 26: Mastering Complex Sentence Structures",
+            "content": "To score high in writing and TOEFL, you must use complex sentences correctly. (Untuk mendapat nilai tinggi dalam menulis dan TOEFL, Anda harus menggunakan kalimat kompleks dengan benar).\n\n**Types to Use:**\n- **Relative Clauses**: \"The man **who** is standing there...\"\n- **Conditionals**: \"If I **were** you...\"\n- **Inversion**: \"Never **have I**...\"\n- **Subjunctive**: \"I suggest that he **be**...\"\n\n**Grammar Focus: Variety**\nDon't use the same structure twice in a row. (Jangan gunakan struktur yang sama dua kali berturut-turut).\n\n**Vocabulary List:**\n1. Mastery (Penguasaan)\n2. Complex (Kompleks/Rumit)\n3. Variety (Variasi/Keragaman)\n4. Structure (Struktur)\n5. Row (Baris/Urutan)\n\n**Example Sentences:**\n1. The students, who studied hard, passed the test easily. (Para siswa, yang belajar keras, lulus ujian dengan mudah.)\n2. Only after finishing my work did I go home. (Hanya setelah menyelesaikan pekerjaan, saya pulang.)\n3. It is vital that we maintain our focus. (Sangat penting bagi kita untuk menjaga fokus.)\n\n**Practice Questions:**\n1. Why should you use various sentence structures?\na. To make it harder to read\nb. To show your advanced English level and improve flow\nc. To use more paper\nd. To confuse the reader\n\n2. \"Only then did I understand\" is an example of...\na. Inversion\nb. Simple Present\nc. A question\nd. A greeting\n\n3. \"The car which I bought last week\" uses which clause?\na. Relative clause\nb. Conditional clause\nc. Subjunctive clause\nd. Physical clause",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 27: Critical Thinking in Reading & Writing",
+            "content": "Critical thinking means analyzing information rather than just accepting it. (Berpikir kritis berarti menganalisis informasi daripada sekadar menerimanya).\n\n**In Reading**: Identify the author's tone and bias. (Identifikasi nada dan bias penulis).\n**In Writing**: Support your claims with strong, logical evidence. (Dukung klaim Anda dengan bukti yang kuat dan logis).\n\n**Vocabulary List:**\n1. Critical thinking (Berpikir kritis)\n2. Bias (Bias/Keberpihakan)\n3. Claim (Klaim/Pernyataan)\n4. Logic (Logika)\n5. Tone (Nada/Suasana hati teks)\n\n**Example Sentences:**\n1. We need to identify the author's bias in this article. (Kita perlu mengidentifikasi bias penulis dalam artikel ini.)\n2. Critical thinking is a required skill for university students. (Berpikir kritis adalah keterampilan yang wajib bagi mahasiswa.)\n3. Your claim must be supported by reliable evidence. (Klaim Anda harus didukung oleh bukti yang andal.)\n\n**Practice Questions:**\n1. What is \"bias\"?\na. A type of car\nb. A prejudice in favor of or against something\nc. A clear fact\nd. A new technology\n\n2. Critical thinking involves...\na. Believing everything you read immediately\nb. Analyzing and evaluating information\nc. Shouting your opinion\nd. Closing your eyes\n\n3. Why is logic important in writing?\na. To make it more persuasive and clear\nb. To use more words\nc. To name a place\nd. To draw a map",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 28: Preparing for University Level English",
+            "content": "University English is more academic and requires higher precision. (Bahasa Inggris tingkat universitas lebih akademis dan membutuhkan ketepatan yang lebih tinggi).\n\n**Focus Areas:**\n- **Academic Referencing**: Giving credit to sources.\n- **Thesis Development**: Creating complex arguments.\n- **Advanced Vocabulary**: Using precise academic terms.\n- **Critical Analysis**: Evaluating research papers.\n\n**Vocabulary List:**\n1. Precision (Ketepatan/Presisi)\n2. Reference (Referensi/Sumber)\n3. Academic (Akademis)\n4. Source (Sumber)\n5. Analysis (Analisis)\n\n**Example Sentences:**\n1. You must cite your sources to avoid plagiarism. (Anda harus mencantumkan sumber Anda untuk menghindari plagiarisme.)\n2. Academic writing requires a high level of precision. (Penulisan akademis membutuhkan tingkat ketepatan yang tinggi.)\n3. We are analyzing the latest research on AI. (Kami sedang menganalisis penelitian terbaru tentang AI.)\n\n**Practice Questions:**\n1. What is \"plagiarism\"?\na. A type of plant\nb. Using someone else's work without giving credit\nc. Writing very fast\nd. Reading a book\n\n2. \"Precision\" means...\na. Being messy\nb. Being exact and accurate\nc. Being loud\nd. Being slow\n\n3. Why do we cite sources?\na. To make the page look busy\nb. To give credit to original authors and avoid plagiarism\nc. To sell books\nd. To ask for help",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 29: Time Management for English Exams",
+            "content": "Exams like TOEFL or Final Exams have strict time limits. (Ujian seperti TOEFL atau Ujian Akhir memiliki batas waktu yang ketat).\n\n**Strategies:**\n- **Don't get stuck**: If a question is too hard, skip it and come back later.\n- **Allocate time**: Give yourself a set time for each section.\n- **Check your work**: Save 5 minutes at the end for final checking.\n\n**Vocabulary List:**\n1. Allocate (Mengalokasikan/Membagi)\n2. Strict (Ketat)\n3. Stuck (Terjebak/Macet)\n4. Strategy (Strategi)\n5. Limit (Batas)\n\n**Example Sentences:**\n1. You should allocate 20 minutes for the reading section. (Anda harus mengalokasikan 20 menit untuk bagian membaca.)\n2. Don't get stuck on one difficult question for too long. (Jangan terjebak pada satu pertanyaan sulit terlalu lama.)\n3. A good strategy is key to finishing the exam on time. (Strategi yang baik adalah kunci untuk menyelesaikan ujian tepat waktu.)\n\n**Practice Questions:**\n1. What should you do if a question is too difficult?\na. Cry\nb. Spend 30 minutes on it\nc. Skip it and come back later if you have time\nd. Quit the exam\n\n2. \"Allocate\" means to...\na. Delete\nb. Assign or distribute for a purpose\nc. Forget\nd. Eat\n\n3. Why is saving 5 minutes at the end important?\na. To sleep\nb. To check for any errors or missed questions\nc. To talk to friends\nd. To draw a picture",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 30: Course Wrap-Up and Future Goals",
+            "content": "Congratulations! You have successfully completed the Grade 12 English module. (Selamat! Anda telah berhasil menyelesaikan modul Bahasa Inggris Kelas 12).\n\n**What You Have Achieved:**\n- Mastered Discussion and Review texts.\n- Excelled in Subjunctive and Wish forms.\n- Prepared for TOEFL with advanced strategies.\n- Learned professional Job Interview and Communication skills.\n- Enhanced Critical Thinking and Academic Writing.\n\n**The Journey Ahead:**\nEnglish is a lifelong skill. Keep reading, watching, and speaking to maintain your mastery. Good luck with your future career or university studies!\n\n**Vocabulary List:**\n1. Achieve (Mencapai)\n2. Excel (Unggul/Sangat baik)\n3. Enhance (Meningkatkan)\n4. Lifelong (Seumur hidup)\n5. Journey (Perjalanan)\n\n**Example Sentences:**\n1. I am proud of what I have achieved in this course. (Saya bangga dengan apa yang telah saya capai dalam kursus ini.)\n2. This module has enhanced my confidence in speaking English. (Modul ini telah meningkatkan kepercayaan diri saya dalam berbicara bahasa Inggris.)\n3. Learning is a lifelong journey. (Belajar adalah perjalanan seumur hidup.)\n\n**Practice Questions:**\n1. What is the most important thing after finishing this course?\na. To forget everything\nb. To keep practicing and using English regularly\nc. To sell your books\nd. To stop learning\n\n2. \"Enhance\" means to...\na. Make worse\nb. Improve or increase the quality\nc. Delete\nd. Hide\n\n3. How should you maintain your English skills?\na. By never using it again\nb. By reading books, watching movies, and practicing speech\nc. By only sleeping\nd. By deleting all your files",
+            "xp": 100
+          }
+        ]
+      }
+    ]
+  }
+]

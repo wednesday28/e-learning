@@ -50,7 +50,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     // 3. Process Leaf Node (Single Lesson or Single Question)
-    const questionText = item.question || item.question_text || item.text
+    const questionText = item.question || item.question_text || item.text || item.situation
     const isQuestion = !!questionText
     const lessonTitle = item.lesson?.title || item.title || item.judul || item.name
     const lessonContent = item.lesson?.content || item.content || item.konten || item.materi || item.isi
@@ -119,7 +119,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       if (isQuestion) {
         // === PROCESS QUESTION ===
         const options = item.options || item.choices
-        const answer = item.answer || item.correct_answer
+        const answer = item.answer || item.correct_answer || item.recommended_answer
         const explanation = item.explanation || context.explanation
 
         const { data: existingQ } = await supabase.from('questions').select('id').eq('subject_id', subjectId).eq('question_text', questionText).single()

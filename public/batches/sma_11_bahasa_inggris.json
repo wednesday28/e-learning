@@ -1,18 +1,239 @@
-{
-  "level": "SMA",
-  "grade": "Kelas 11",
-  "subject": "Bahasa Inggris",
-  "questions": [
-    {
-      "text": "Choose the correct analytical exposition structure:",
-      "choices": [
-        {"text": "Thesis - Arguments - Reiteration", "is_correct": true},
-        {"text": "Orientation - Complication - Resolution", "is_correct": false},
-        {"text": "Goal - Materials - Steps", "is_correct": false},
-        {"text": "Identification - Description", "is_correct": false}
-      ],
-      "difficulty": "medium",
-      "explanation": "Analytical exposition consists of Thesis, Arguments, and Reiteration."
-    }
-  ]
-}
+[
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Inggris",
+    "topic": "Exposition Texts",
+    "subtopics": [
+      {
+        "name": "Analytical Exposition",
+        "lessons": [
+          {
+            "title": "Lesson 1: Purpose and Social Function",
+            "content": "Analytical exposition is a text that elaborates the writer's idea about the phenomenon surrounding. Its social function is to persuade the reader that the idea is important matter. (Analytical exposition adalah teks yang menguraikan ide penulis tentang fenomena di sekitarnya. Fungsi sosialnya adalah untuk meyakinkan pembaca bahwa ide tersebut adalah masalah penting).\n\n**Key Characteristics:**\n- It focuses on a single topic.\n- It uses logic and evidence to support arguments.\n- It ends with a reiteration (restatement) of the thesis.\n\n**Grammar Focus: Simple Present Tense**\nSince it discusses general truths or opinions, we use the simple present tense. Example: \"Cars create pollution.\"\n\n**Vocabulary List:**\n1. Persuade (Meyakinkan)\n2. Elaborate (Menguraikan)\n3. Phenomenon (Fenomena)\n4. Matter (Masalah/Hal)\n5. Evidence (Bukti)\n\n**Example Sentences:**\n1. I believe that smoking should be banned in public places. (Saya percaya bahwa merokok harus dilarang di tempat umum.)\n2. The government must take action against illegal logging. (Pemerintah harus mengambil tindakan terhadap penebangan liar.)\n3. Education is the most powerful weapon to change the world. (Pendidikan adalah senjata paling ampuh untuk mengubah dunia.)\n\n**Practice Questions:**\n1. What is the main goal of an analytical exposition?\na. To tell a story\nb. To persuade the reader\nc. To describe a person\nd. To explain a process\n\n2. Which tense is commonly used in this text?\na. Past Tense\nb. Present Tense\nc. Future Tense\nd. Past Continuous\n\n3. \"Persuade\" in Bahasa Indonesia means...\na. Menolak\nb. Meyakinkan\nc. Membeli\nd. Lari",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 2: Generic Structure (Thesis, Arguments, Reiteration)",
+            "content": "An analytical exposition consists of three main parts: (Analytical exposition terdiri dari tiga bagian utama):\n\n1. **Thesis**: Introduces the topic and indicates the writer's position. (Memperkenalkan topik dan menunjukkan posisi penulis).\n2. **Arguments**: Explains the arguments to support the writer's position. The more arguments, the more persuasive the text is. (Menjelaskan argumen untuk mendukung posisi penulis).\n3. **Reiteration**: Restates the writer's position to strengthen the thesis. (Menyatakan kembali posisi penulis untuk memperkuat tesis).\n\n**Grammar Focus: Connectives**\nWe use words like \"Firstly\", \"Secondly\", \"Furthermore\", and \"In addition\" to link arguments.\n\n**Vocabulary List:**\n1. Position (Posisi/Pendapat)\n2. Strengthen (Memperkuat)\n3. Furthermore (Selain itu)\n4. Link (Menghubungkan)\n5. Structure (Struktur)\n\n**Example Sentences:**\n1. Firstly, exercise improves your heart health. (Pertama, olahraga meningkatkan kesehatan jantungmu.)\n2. Furthermore, it helps you reduce stress. (Selain itu, ini membantumu mengurangi stres.)\n3. In conclusion, everyone should exercise daily. (Kesimpulannya, setiap orang harus berolahraga setiap hari.)\n\n**Practice Questions:**\n1. The part that introduces the topic is called...\na. Argument\nb. Reiteration\nc. Thesis\nd. Title\n\n2. Where do we find the conclusion/restatement?\na. In the thesis\nb. In the arguments\nc. In the reiteration\nd. In the opening\n\n3. What is the purpose of using \"Firstly\" and \"Secondly\"?\na. To count objects\nb. To organize arguments\nc. To show time\nd. To ask questions",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 3: Language Features (Internal Conjunction, Relational Process)",
+            "content": "To write a good analytical exposition, we use specific language features: (Untuk menulis analytical exposition yang baik, kita menggunakan ciri kebahasaan tertentu):\n\n1. **Internal Conjunction**: Words that connect arguments (but, also, addition, furthermore).\n2. **Relational Processes**: Using 'is', 'are', 'has', 'have' to state qualities.\n3. **Mental Processes**: Using words like 'believe', 'think', 'feel' to state opinions.\n4. **Abstract Nouns**: Words like 'belief', 'consideration', 'pollution'.\n\n**Grammar Focus: Passive Voice (Optional)**\nSometimes we use passive voice to sound more objective. Example: \"It is believed that air pollution causes diseases.\"\n\n**Vocabulary List:**\n1. Conjunction (Kata hubung)\n2. Quality (Kualitas/Sifat)\n3. Objective (Objektif)\n4. Mental (Mental/Pikiran)\n5. Feature (Ciri)\n\n**Example Sentences:**\n1. I think that reading is very beneficial. (Saya pikir membaca itu sangat bermanfaat.)\n2. It is important to keep our environment clean. (Sangat penting untuk menjaga lingkungan kita tetap bersih.)\n3. Air pollution has many negative effects on health. (Polusi udara memiliki banyak efek negatif pada kesehatan.)\n\n**Practice Questions:**\n1. \"I believe\" is an example of...\na. Physical process\nb. Mental process\nc. Relational process\nd. Future tense\n\n2. Which is an internal conjunction?\na. Walk\nb. Red\nc. Furthermore\nd. Happily\n\n3. Why do writers use \"believe\" or \"think\"?\na. To tell a fact\nb. To state an opinion\nc. To describe an animal\nd. To end a story",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Hortatory Exposition",
+        "lessons": [
+          {
+            "title": "Lesson 4: Purpose and Difference from Analytical",
+            "content": "Hortatory exposition is a text that functions to persuade the reader that something **should or should not** be the case. (Hortatory exposition adalah teks yang berfungsi untuk meyakinkan pembaca bahwa sesuatu harus atau tidak harus terjadi).\n\n**The Big Difference:**\n- **Analytical**: Ends with Reiteration (Restating the opinion).\n- **Hortatory**: Ends with a **Recommendation** (Telling the reader what to do).\n\n**Social Function:**\nTo persuade the reader to act in a certain way. (Untuk meyakinkan pembaca agar bertindak dengan cara tertentu).\n\n**Grammar Focus: Modal Auxiliaries**\nWe use \"should\", \"must\", \"ought to\" to give recommendations. Example: \"You **should** wash your hands.\"\n\n**Vocabulary List:**\n1. Recommendation (Rekomendasi/Saran)\n2. Act (Bertindak)\n3. Case (Kasus/Keadaan)\n4. Certain (Tertentu)\n5. Modal (Kata kerja bantu)\n\n**Example Sentences:**\n1. Students should spend less time on social media. (Siswa harus menghabiskan lebih sedikit waktu di media sosial.)\n2. We must protect the endangered animals. (Kita harus melindungi hewan-hewan yang terancam punah.)\n3. Therefore, you should try to eat more vegetables. (Oleh karena itu, Anda harus mencoba makan lebih banyak sayuran.)\n\n**Practice Questions:**\n1. How does a Hortatory Exposition end?\na. With a story\nb. With a recommendation\nc. With a question\nd. With a physical description\n\n2. Which word is used for recommendation?\na. Can\nb. Will\nc. Should\nd. Was\n\n3. What is the main difference from Analytical Exposition?\na. The title\nb. The use of present tense\nc. The ending (Recommendation vs Reiteration)\nd. The number of paragraphs",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 5: Structure (Thesis, Arguments, Recommendation)",
+            "content": "The structure of Hortatory Exposition is: (Struktur Hortatory Exposition adalah):\n\n1. **Thesis**: Announcement of the issue of concern. (Pengumuman masalah yang menjadi perhatian).\n2. **Arguments**: Reasons for concern, leading to recommendation. (Alasan kekhawatiran, yang mengarah ke rekomendasi).\n3. **Recommendation**: Statement of what ought or ought not to happen. (Pernyataan tentang apa yang seharusnya atau tidak seharusnya terjadi).\n\n**Grammar Focus: Connective Words**\nUsing \"Therefore\", \"Consequently\", or \"In conclusion\" to introduce the recommendation.\n\n**Vocabulary List:**\n1. Concern (Perhatian/Kekhawatiran)\n2. Ought to (Seharusnya)\n3. Consequently (Akibatnya)\n4. Leading (Mengarah)\n5. Announcement (Pengumuman)\n\n**Example Sentences:**\n1. Therefore, the school should build a new library. (Oleh karena itu, sekolah harus membangun perpustakaan baru.)\n2. Consequently, we must stop using plastic bags. (Akibatnya, kita harus berhenti menggunakan kantong plastik.)\n3. In conclusion, I recommend that you join the English club. (Kesimpulannya, saya menyarankan Anda untuk bergabung dengan klub Bahasa Inggris.)\n\n**Practice Questions:**\n1. The part that tells the reader what to do is...\na. Thesis\nb. Argument\nc. Recommendation\nd. Title\n\n2. What comes after the thesis?\na. Conclusion\nb. Arguments\nc. Recommendation\nd. Bibliography\n\n3. \"Therefore\" is often used to start which part?\na. Thesis\nb. Arguments\nc. Recommendation\nd. Introduction",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 6: Writing Persuasive Recommendations",
+            "content": "A good recommendation is clear and direct. It tells the reader exactly what action to take. (Rekomendasi yang baik itu jelas dan langsung. Memberi tahu pembaca tindakan apa yang harus diambil).\n\n**Tips for Writing Recommendations:**\n- Use strong verbs: \"Start\", \"Stop\", \"Join\", \"Avoid\".\n- Use modal verbs: \"Should\", \"Must\".\n- Explain the benefit: \"You should do X because it will help Y\".\n\n**Grammar Focus: Passive Voice in Recommendations**\nExample: \"Pollution should be reduced by the government.\"\n\n**Vocabulary List:**\n1. Persuasive (Persuasif/Meyakinkan)\n2. Direct (Langsung)\n3. Benefit (Manfaat)\n4. Reduce (Mengurangi)\n5. Government (Pemerintah)\n\n**Example Sentences:**\n1. Based on the arguments above, the government must ban smoking in all public areas. (Berdasarkan argumen di atas, pemerintah harus melarang merokok di semua area publik.)\n2. I suggest that you start recycling your trash today. (Saya menyarankan agar Anda mulai mendaur ulang sampah Anda hari ini.)\n3. Therefore, it is better for us to save water now. (Oleh karena itu, lebih baik bagi kita untuk menghemat air sekarang.)\n\n**Practice Questions:**\n1. A recommendation should be...\na. Confusing\nb. Clear and direct\nc. Very long\nd. A secret\n\n2. Which verb is strong for a recommendation?\na. Maybe\nb. Stop\nc. Think\nd. Hope\n\n3. \"I suggest that you...\" is a way to start a...\na. Story\nb. Thesis\nc. Recommendation\nd. Question",
+            "xp": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Inggris",
+    "topic": "Passive Voice (All Tenses)",
+    "subtopics": [
+      {
+        "name": "Passive in Present and Past",
+        "lessons": [
+          {
+            "title": "Lesson 7: Simple Present and Past Passive",
+            "content": "Passive voice is used when the focus is on the action, not the doer. (Passive voice digunakan saat fokusnya ada pada tindakan, bukan pelakunya).\n\n**Formula:**\n- **Simple Present**: Object + am/is/are + Verb 3\n- **Simple Past**: Object + was/were + Verb 3\n\n**Examples:**\n- Present: Rice **is grown** by farmers. (Padi ditanam oleh petani).\n- Past: The letter **was sent** yesterday. (Surat itu dikirim kemarin).\n\n**Grammar Focus: The Agent (By...)**\nIf we want to mention who did the action, we use \"by\". Example: \"The cake was made **by** my sister.\"\n\n**Vocabulary List:**\n1. Doer (Pelaku)\n2. Focus (Fokus)\n3. Grow/Grown (Menanam/Tumbuh)\n4. Send/Sent (Mengirim)\n5. Mention (Menyebutkan)\n\n**Example Sentences:**\n1. Many cars are produced in Japan. (Banyak mobil diproduksi di Jepang.)\n2. The bridge was built in 1920. (Jembatan itu dibangun pada tahun 1920.)\n3. English is spoken all over the world. (Bahasa Inggris digunakan di seluruh dunia.)\n\n**Practice Questions:**\n1. Passive of \"He cleans the room\" is...\na. The room is cleaned by him\nb. The room cleans him\nc. The room was cleaned by him\nd. The room is clean\n\n2. \"The window ... broken by the wind last night.\"\na. is\nb. was\nc. were\nd. are\n\n3. What is the Verb 3 of \"build\"?\na. Build\nb. Builded\nc. Built\nd. Building",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 8: Present and Past Continuous Passive",
+            "content": "We use continuous passive for actions that are/were in progress. (Kita menggunakan continuous passive untuk tindakan yang sedang/dulu sedang berlangsung).\n\n**Formula:**\n- **Present Continuous**: Object + am/is/are + **being** + Verb 3\n- **Past Continuous**: Object + was/were + **being** + Verb 3\n\n**Examples:**\n- Present: The house **is being painted** right now. (Rumah itu sedang dicat sekarang).\n- Past: The car **was being repaired** when I arrived. (Mobil itu sedang diperbaiki saat saya sampai).\n\n**Grammar Focus: Using 'Being'**\n'Being' is essential to show that the action is ongoing. Don't forget it!\n\n**Vocabulary List:**\n1. Ongoing (Sedang berlangsung)\n2. Progress (Kemajuan/Proses)\n3. Repair (Memperbaiki)\n4. Essential (Penting/Wajib)\n5. Arrive (Sampai/Tiba)\n\n**Example Sentences:**\n1. Dinner is being prepared at the moment. (Makan malam sedang disiapkan saat ini.)\n2. New roads are being built in our city. (Jalan-jalan baru sedang dibangun di kota kami.)\n3. The documents were being copied when the power went out. (Dokumen-dokumen sedang difotokopi saat listrik mati.)\n\n**Practice Questions:**\n1. \"The project ... worked on right now.\"\na. is\nb. is being\nc. was being\nd. been\n\n2. \"The walls ... being painted yesterday morning.\"\na. was\nb. were\nc. is\nd. are\n\n3. We use \"being\" in passive voice for which tenses?\na. Simple tenses\nb. Continuous tenses\nc. Perfect tenses\nd. Future tenses",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Passive in Perfect and Future",
+        "lessons": [
+          {
+            "title": "Lesson 9: Present Perfect Passive",
+            "content": "Present perfect passive is used for actions that have been completed. (Present perfect passive digunakan untuk tindakan yang telah selesai).\n\n**Formula:**\n- **Object + have/has + been + Verb 3**\n\n**Examples:**\n- I have finished the task -> The task **has been finished**. (Tugas itu telah diselesaikan).\n- They have invited us -> We **have been invited**. (Kami telah diundang).\n\n**Grammar Focus: Have vs Has**\n- **Has been**: for singular objects (It, He, She).\n- **Have been**: for plural objects (They, We, I, You).\n\n**Vocabulary List:**\n1. Completed (Selesai)\n2. Task (Tugas)\n3. Invite (Mengundang)\n4. Singular (Tunggal)\n5. Plural (Jamak)\n\n**Example Sentences:**\n1. The report has been sent to the boss. (Laporan itu telah dikirim ke bos.)\n2. All the tickets have been sold. (Semua tiket telah terjual.)\n3. Has the room been cleaned? (Apakah ruangannya sudah dibersihkan?)\n\n**Practice Questions:**\n1. \"The books ... returned to the library.\"\na. has been\nb. have been\nc. is\nd. was\n\n2. \"My laptop ... fixed.\"\na. have been\nb. has been\nc. is being\nd. was being\n\n3. What word is added in perfect passive?\na. Being\nb. Been\nc. Be\nd. Do",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 10: Future and Modal Passive",
+            "content": "Future passive is used for actions that will happen later. Modal passive is used with words like 'can', 'must', 'should'. (Future passive digunakan untuk tindakan yang akan terjadi nanti. Modal passive digunakan dengan kata-kata seperti 'can', 'must', 'should').\n\n**Formula:**\n- **Future**: Object + will + **be** + Verb 3\n- **Modals**: Object + modal + **be** + Verb 3\n\n**Examples:**\n- Future: The results **will be announced** tomorrow. (Hasilnya akan diumumkan besok).\n- Modal: The rules **must be followed**. (Aturan harus diikuti).\n- Modal: The problem **can be solved**. (Masalah itu bisa diselesaikan).\n\n**Grammar Focus: Using 'Be'**\nAfter 'will' or modals, we use 'be' (not am/is/are/been/being).\n\n**Vocabulary List:**\n1. Announce (Mengumumkan)\n2. Follow (Mengikuti/Mematuhi)\n3. Solve (Memecahkan/Menyelesaikan)\n4. Modal (Kata bantu)\n5. Result (Hasil)\n\n**Example Sentences:**\n1. A new mall will be built next year. (Sebuah mal baru akan dibangun tahun depan.)\n2. Your password should be kept secret. (Kata sandimu harus dijaga kerahasiaannya.)\n3. The work must be finished by 5 PM. (Pekerjaannya harus selesai jam 5 sore.)\n\n**Practice Questions:**\n1. \"The package ... delivered tomorrow.\"\na. will\nb. will be\nc. will been\nd. will being\n\n2. \"The instructions must ... carefully.\"\na. read\nb. be read\nc. being read\nd. been read\n\n3. After \"will\", we use...\na. am\nb. be\nc. been\nd. being",
+            "xp": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Inggris",
+    "topic": "Conditional Sentences (Type 0-3)",
+    "subtopics": [
+      {
+        "name": "General Truths and Real Possibilities",
+        "lessons": [
+          {
+            "title": "Lesson 11: Zero Conditional (Facts)",
+            "content": "Zero conditional is used for general truths, facts, or things that always happen. (Zero conditional digunakan untuk kebenaran umum, fakta, atau hal-hal yang selalu terjadi).\n\n**Formula:**\n- **If + Simple Present, Simple Present**\n\n**Examples:**\n- If you heat ice, it melts. (Jika kamu memanaskan es, ia mencair).\n- If it rains, the grass gets wet. (Jika hujan, rumput menjadi basah).\n\n**Grammar Focus: Using 'When'**\nIn zero conditional, you can replace 'if' with 'when' without changing the meaning. Example: \"When you heat ice, it melts.\"\n\n**Vocabulary List:**\n1. Truth (Kebenaran)\n2. Melt (Mencair)\n3. Heat (Memanaskan)\n4. Fact (Fakta)\n5. Meaning (Arti/Makna)\n\n**Example Sentences:**\n1. If you mix red and blue, you get purple. (Jika kamu mencampur merah dan biru, kamu mendapatkan ungu.)\n2. If I wake up late, I miss the bus. (Jika saya bangun terlambat, saya ketinggalan bus.)\n3. Plants die if they don't get enough water. (Tanaman mati jika tidak mendapat cukup air.)\n\n**Practice Questions:**\n1. Zero conditional is used for...\na. Past dreams\nb. General facts/truths\nc. Future plans\nd. Regrets\n\n2. \"If you touch fire, you ... burned.\"\na. get\nb. got\nc. will get\nd. getting\n\n3. We can replace \"if\" with which word in Type 0?\na. Where\nb. When\nc. Why\nd. Who",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 12: First Conditional (Real Possibility)",
+            "content": "First conditional is used for things that are likely to happen in the future if a condition is met. (First conditional digunakan untuk hal-hal yang mungkin terjadi di masa depan jika suatu syarat terpenuhi).\n\n**Formula:**\n- **If + Simple Present, will + Verb 1**\n\n**Examples:**\n- If I study hard, I will pass the exam. (Jika saya belajar keras, saya akan lulus ujian).\n- If it rains tomorrow, we will stay at home. (Jika besok hujan, kami akan tinggal di rumah).\n\n**Grammar Focus: Future Outcome**\nThe 'if' clause is in the present, but the 'result' clause is in the future (will).\n\n**Vocabulary List:**\n1. Likely (Mungkin/Cenderung)\n2. Condition (Syarat/Kondisi)\n3. Met (Terpenuhi)\n4. Outcome (Hasil/Dampak)\n5. Pass (Lulus)\n\n**Example Sentences:**\n1. If you invite her, she will come. (Jika kamu mengundangnya, dia akan datang.)\n2. If I have enough money, I will buy a new phone. (Jika saya punya cukup uang, saya akan membeli ponsel baru.)\n3. We will be late if we don't leave now. (Kita akan terlambat jika kita tidak berangkat sekarang.)\n\n**Practice Questions:**\n1. \"If she ... early, she will catch the train.\"\na. arrive\nb. arrives\nc. will arrive\nd. arrived\n\n2. \"If I win the lottery, I ... travel the world.\"\na. travel\nb. will travel\nc. would travel\nd. travelled\n\n3. Type 1 is for events that are...\na. Impossible\nb. Possible and likely in the future\nc. Purely imaginary\nd. Already finished in the past",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Imaginary Situations and Regrets",
+        "lessons": [
+          {
+            "title": "Lesson 13: Second Conditional (Hypothetical)",
+            "content": "Second conditional is used for imaginary, unlikely, or impossible situations in the present or future. (Second conditional digunakan untuk situasi imajiner, tidak mungkin, atau mustahil di masa kini atau masa depan).\n\n**Formula:**\n- **If + Simple Past, would + Verb 1**\n\n**Examples:**\n- If I were a bird, I would fly. (Jika saya seekor burung, saya akan terbang - tapi saya bukan burung).\n- If I won 1 billion, I would quit my job. (Jika saya menang 1 miliar, saya akan berhenti kerja - tapi saya belum menang).\n\n**Grammar Focus: Using 'Were' for All Subjects**\nIn formal English, we use \"were\" instead of \"was\" for all subjects in Type 2. Example: \"If I **were** you...\", \"If he **were** here...\".\n\n**Vocabulary List:**\n1. Imaginary (Imajiner/Khayalan)\n2. Unlikely (Kecil kemungkinannya)\n3. Hypothetical (Hipotetis/Andalan)\n4. Quit (Berhenti)\n5. Billion (Miliar)\n\n**Example Sentences:**\n1. If I had wings, I would travel to Mars. (Jika saya punya sayap, saya akan pergi ke Mars.)\n2. If she knew the truth, she would be angry. (Jika dia tahu kebenarannya, dia akan marah.)\n3. I would help you if I had more time. (Saya akan membantumu jika saya punya lebih banyak waktu.)\n\n**Practice Questions:**\n1. \"If I ... a king, I would help the poor.\"\na. am\nb. was\nc. were\nd. be\n\n2. \"If they had more money, they ... a big house.\"\na. buy\nb. will buy\nc. would buy\nd. bought\n\n3. Type 2 describes situations that are...\na. Real and true\nb. Imaginary or unlikely\nc. Already finished\nd. Scientific facts",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 14: Third Conditional (Regrets)",
+            "content": "Third conditional is used for situations that did not happen in the past. It often expresses regret or criticism. (Third conditional digunakan untuk situasi yang tidak terjadi di masa lalu. Sering mengungkapkan penyesalan atau kritik).\n\n**Formula:**\n- **If + Past Perfect (had + V3), would have + Verb 3**\n\n**Examples:**\n- If I had studied harder, I would have passed the exam. (Jika dulu saya belajar lebih keras, saya pasti sudah lulus - tapi kenyataannya saya tidak belajar keras dan gagal).\n- If we had left earlier, we wouldn't have missed the flight.\n\n**Grammar Focus: Past Reality**\nType 3 talks about the opposite of what actually happened in the past.\n\n**Vocabulary List:**\n1. Regret (Penyesalan)\n2. Criticism (Kritik)\n3. Opposite (Kebalikan)\n4. Actually (Sebenarnya)\n5. Miss (Melewatkan/Ketinggalan)\n\n**Example Sentences:**\n1. If she had invited me, I would have come to her party. (Jika dulu dia mengundangku, aku pasti sudah datang ke pestanya.)\n2. We would have won if the referee had been fair. (Kami pasti sudah menang jika wasitnya adil.)\n3. If you hadn't forgotten the key, we wouldn't be outside. (Jika kamu tidak lupa kuncinya, kita tidak akan ada di luar.)\n\n**Practice Questions:**\n1. \"If he ... known about the meeting, he would have attended.\"\na. has\nb. had\nc. would have\nd. did\n\n2. \"We would have arrived on time if it ... rained.\"\na. didn't\nb. hasn't\nc. hadn't\nd. wouldn't\n\n3. Type 3 is used to talk about...\na. The future\nb. The present\nc. The past (imaginary/regret)\nd. Scientific facts",
+            "xp": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "SMA",
+    "grade": 11,
+    "subject": "Bahasa Inggris",
+    "topic": "Career & Professional Writing",
+    "subtopics": [
+      {
+        "name": "Application Letters",
+        "lessons": [
+          {
+            "title": "Lesson 15: Structure and Salutations",
+            "content": "An application letter (cover letter) is a document sent with your CV to provide additional information on your skills and experience. (Surat lamaran adalah dokumen yang dikirim bersama CV untuk memberikan informasi tambahan tentang keahlian dan pengalaman Anda).\n\n**Structure:**\n1. **Sender's Address**\n2. **Date**\n3. **Employer's Address**\n4. **Salutation** (Dear Mr./Ms. [Name] or Dear Sir/Madam)\n5. **Opening Paragraph** (State the position you are applying for)\n6. **Body Paragraphs** (Explain why you are qualified)\n7. **Closing Paragraph** (Request an interview)\n8. **Complimentary Close** (Yours sincerely/faithfully)\n\n**Vocabulary List:**\n1. Employer (Pemberi kerja/Perusahaan)\n2. Qualified (Berkualifikasi/Memenuhi syarat)\n3. Complimentary (Salam penutup)\n4. Position (Posisi/Jabatan)\n5. Skills (Keahlian)\n\n**Example Sentences:**\n1. I am writing to apply for the position of Marketing Assistant. (Saya menulis untuk melamar posisi Asisten Pemasaran.)\n2. I have two years of experience in this field. (Saya memiliki dua tahun pengalaman di bidang ini.)\n3. I look forward to hearing from you soon. (Saya menantikan kabar dari Anda segera.)\n\n**Practice Questions:**\n1. What is the purpose of an application letter?\na. To tell a story about your life\nb. To apply for a job\nc. To invite a friend to a party\nd. To complain about a product\n\n2. If you don't know the employer's name, use...\na. Dear Friend\nb. Dear Sir/Madam\nc. Hi Boss\nd. Hey You\n\n3. Where do you mention the position you want?\na. In the closing\nb. In the opening paragraph\nc. In the address\nd. Only on the envelope",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 16: Describing Skills and Experience",
+            "content": "In the body of your letter, you need to convince the employer that you are the right person for the job. (Di bagian isi surat, Anda perlu meyakinkan pemberi kerja bahwa Anda adalah orang yang tepat untuk pekerjaan tersebut).\n\n**Key Phrases:**\n- \"I am writing in response to your advertisement in...\"\n- \"I have a strong background in...\"\n- \"I am confident that my skills match...\"\n- \"I am capable of working in a team or individually.\"\n\n**Grammar Focus: Formal Language**\nAvoid slang and contractions (don't, can't). Use \"I do not\", \"I am able to\".\n\n**Vocabulary List:**\n1. Advertisement (Iklan)\n2. Background (Latar belakang)\n3. Confident (Percaya diri)\n4. Capable (Mampu)\n5. Individually (Secara individu)\n\n**Example Sentences:**\n1. I am proficient in using Microsoft Office and Photoshop. (Saya mahir dalam menggunakan Microsoft Office dan Photoshop.)\n2. My previous experience has taught me how to handle customers. (Pengalaman saya sebelumnya telah mengajari saya cara menangani pelanggan.)\n3. I am highly motivated and hardworking. (Saya sangat termotivasi dan pekerja keras.)\n\n**Practice Questions:**\n1. \"Proficient\" means...\na. Lazy\nb. Skilled/Expert\nc. New\nd. Bored\n\n2. Which phrase is formal?\na. I'm good at it\nb. I am proficient in this field\nc. I know stuff\nd. I can do it, no worries\n\n3. Why should you avoid contractions in application letters?\na. They are too long\nb. They are not formal\nc. They are hard to read\nd. They are wrong",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Curriculum Vitae (CV) Writing",
+        "lessons": [
+          {
+            "title": "Lesson 17: Essential Components of a CV",
+            "content": "A CV (Curriculum Vitae) is a summary of your personal details, education, and work history. (CV adalah ringkasan detail pribadi, pendidikan, dan riwayat kerja Anda).\n\n**Essential Sections:**\n1. **Personal Information**: Name, phone, email, address.\n2. **Personal Profile/Summary**: A short intro about yourself.\n3. **Work Experience**: Listed from newest to oldest.\n4. **Education**: Schools and degrees.\n5. **Skills**: Languages, software, soft skills.\n6. **References**: People who can recommend you.\n\n**Vocabulary List:**\n1. Summary (Ringkasan)\n2. Experience (Pengalaman)\n3. Degree (Gelar)\n4. Reference (Referensi)\n5. Component (Komponen/Bagian)\n\n**Example Layout:**\nName: Andi Pratama\nEmail: andi@email.com\nEducation: S1 English Literature, University of Indonesia (2018-2022)\nSkills: Fluent English, Public Speaking.\n\n**Practice Questions:**\n1. CV stands for...\na. Career Video\nb. Curriculum Vitae\nc. Company Vision\nd. Creative Value\n\n2. Which section includes your phone number?\na. Education\nb. Work Experience\nc. Personal Information\nd. References\n\n3. How should you list your work history?\na. Oldest to newest\nb. Newest to oldest (Reverse chronological)\nc. Alphabetical order\nd. Randomly",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 18: Highlighting Achievements and Soft Skills",
+            "content": "To make your CV stand out, you should highlight your achievements and soft skills. (Agar CV Anda menonjol, Anda harus menonjolkan prestasi dan soft skill Anda).\n\n**Hard Skills vs. Soft Skills:**\n- **Hard Skills**: Technical abilities (Coding, Accounting, Language).\n- **Soft Skills**: Interpersonal skills (Communication, Leadership, Problem Solving).\n\n**Using Action Verbs:**\nInstead of saying \"I was responsible for...\", say \"I **managed**...\", \"I **created**...\", \"I **improved**...\".\n\n**Vocabulary List:**\n1. Achievement (Prestasi/Pencapaian)\n2. Interpersonal (Antar pribadi)\n3. Stand out (Menonjol)\n4. Leadership (Kepemimpinan)\n5. Responsible (Bertanggung jawab)\n\n**Example Sentences:**\n1. I successfully managed a team of five people. (Saya berhasil mengelola tim yang terdiri dari lima orang.)\n2. I improved the company's sales by 20%. (Saya meningkatkan penjualan perusahaan sebesar 20%.)\n3. My soft skills include excellent time management. (Soft skill saya mencakup manajemen waktu yang sangat baik.)\n\n**Practice Questions:**\n1. Leadership is an example of a...\na. Hard skill\nb. Soft skill\nc. Tool\nd. Software\n\n2. \"Improved\" is an example of an...\na. Action verb\nb. Adjective\nc. Noun\nd. Preposition\n\n3. Why should you use action verbs?\na. To make the CV look colorful\nb. To show your impact and results\nc. To make it harder to read\nd. To save space",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 19: Drafting a CV (Formatting & Layout)",
+            "content": "A well-formatted CV is easy to read and professional. (CV yang diformat dengan baik mudah dibaca dan profesional).\n\n**Formatting Rules:**\n- Use a professional font (Arial, Calibri, Times New Roman).\n- Use bullet points for readability.\n- Keep it to 1-2 pages maximum.\n- Save as a PDF to preserve formatting.\n\n**Grammar Focus: Consistency**\nIf you use action verbs for one job, use them for all. Example: \"Managed...\", \"Led...\", \"Organized...\".\n\n**Vocabulary List:**\n1. Format (Format/Bentuk)\n2. Readability (Keterbacaan)\n3. Preserve (Menjaga/Mempertahankan)\n4. Consistent (Konsisten)\n5. Maximum (Maksimal)\n\n**Example Sentences:**\n1. You should use a clear font for your CV. (Anda harus menggunakan font yang jelas untuk CV Anda.)\n2. Bullet points help the employer find information quickly. (Poin-poin membantu pemberi kerja menemukan informasi dengan cepat.)\n3. Always proofread your CV for spelling errors. (Selalu periksa kembali CV Anda untuk kesalahan ejaan.)\n\n**Practice Questions:**\n1. Which font is considered professional?\na. Comic Sans\nb. Arial\nc. Wingdings\nd. Cursive\n\n2. Why should you save a CV as a PDF?\na. To make it bigger\nb. To prevent layout changes when opened\nc. To hide the text\nd. To make it colorful\n\n3. \"Proofread\" means...\na. To delete the file\nb. To read and check for errors\nc. To send the file\nd. To print the file",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 20: Digital CVs and Portfolio",
+            "content": "In the modern era, many employers look for digital CVs or portfolios on platforms like LinkedIn. (Di era modern, banyak pemberi kerja mencari CV digital atau portofolio di platform seperti LinkedIn).\n\n**What to Include in a Portfolio:**\n- Samples of your work (articles, designs, code).\n- Certificates of achievement.\n- Links to projects you have completed.\n\n**Grammar Focus: Online Presence**\nUse professional language in your online profiles. Example: \"Experienced in...\", \"Passionate about...\".\n\n**Vocabulary List:**\n1. Portfolio (Portofolio/Kumpulan karya)\n2. Platform (Platform/Wadah)\n3. Certificate (Sertifikat)\n4. Presence (Kehadiran/Eksistensi)\n5. Passionate (Bersemangat/Gairah)\n\n**Example Sentences:**\n1. I updated my LinkedIn profile with my latest skills. (Saya memperbarui profil LinkedIn saya dengan keahlian terbaru saya.)\n2. A portfolio showcases your actual work samples. (Portofolio menampilkan sampel kerja nyata Anda.)\n3. You can attach a link to your digital portfolio in your email. (Anda dapat melampirkan tautan ke portofolio digital Anda di email Anda.)\n\n**Practice Questions:**\n1. Where can you host a digital CV?\na. In a secret box\nb. On LinkedIn\nc. On a TV screen\nd. In a grocery store\n\n2. What is a portfolio?\na. A type of food\nb. A collection of your work samples\nc. A new smartphone\nd. A holiday trip\n\n3. Why is a digital portfolio useful?\na. It shows evidence of your skills visually\nb. It is heavier than paper\nc. It is harder to find\nd. It is only for artists",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Advanced Conditional Sentences",
+        "lessons": [
+          {
+            "title": "Lesson 21: Mixed Conditionals (Past to Present)",
+            "content": "Mixed conditionals are used to show how a past situation affects the present. (Mixed conditionals digunakan untuk menunjukkan bagaimana situasi masa lalu memengaruhi masa kini).\n\n**Formula:**\n- **If + Past Perfect (had + V3), would + Verb 1**\n\n**Example:**\n- If I had studied harder (Past), I would be a doctor now (Present). (Jika dulu saya belajar lebih keras, saya akan jadi dokter sekarang).\n- If we hadn't missed the flight, we would be in Paris now.\n\n**Grammar Focus: Time Frames**\nNotice that the 'if' part is about the past, but the 'result' part is about the present.\n\n**Vocabulary List:**\n1. Mixed (Campuran)\n2. Affect (Memengaruhi)\n3. Frame (Bingkai/Konteks)\n4. Result (Hasil)\n5. Past (Masa lalu)\n\n**Example Sentences:**\n1. If she had taken the job, she would be rich today. (Jika dulu dia mengambil pekerjaan itu, dia akan kaya hari ini.)\n2. If I had slept earlier, I wouldn't be so tired now. (Jika dulu saya tidur lebih awal, saya tidak akan begitu lelah sekarang.)\n3. We would be happy if they had arrived on time. (Kami akan senang jika dulu mereka datang tepat waktu.)\n\n**Practice Questions:**\n1. Mixed conditional connects which two time frames?\na. Future and Present\nb. Past and Present\nc. Future and Past\nd. Present and Present\n\n2. \"If I ... eaten breakfast, I wouldn't be hungry now.\"\na. have\nb. had\nc. am\nd. was\n\n3. \"If they had won the match, they ... the champions now.\"\na. will be\nb. would be\nc. were\nd. are",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 22: Unless and As Long As",
+            "content": "We can use \"unless\" and \"as long as\" to replace \"if\" in certain conditions. (Kita dapat menggunakan \"unless\" dan \"as long as\" untuk menggantikan \"if\" dalam kondisi tertentu).\n\n- **Unless** = If not. (Kecuali jika).\n- **As long as** = Only if. (Selama/Asalkan).\n\n**Examples:**\n- I won't go **unless** it stops raining. (Saya tidak akan pergi kecuali jika hujan reda).\n- You can go out **as long as** you finish your homework. (Kamu boleh keluar asalkan kamu menyelesaikan PR-mu).\n\n**Grammar Focus: Negative Condition**\n\"Unless\" already has a negative meaning, so don't use another \"not\" after it. (Unless sudah bermakna negatif, jadi jangan gunakan 'not' lagi setelahnya).\n\n**Vocabulary List:**\n1. Unless (Kecuali jika)\n2. As long as (Selama/Asalkan)\n3. Replace (Menggantikan)\n4. Condition (Kondisi)\n5. Negative (Negatif)\n\n**Example Sentences:**\n1. Unless you study, you will fail. (Kecuali jika kamu belajar, kamu akan gagal.)\n2. I will help you as long as you are honest. (Saya akan membantumu asalkan kamu jujur.)\n3. We will stay here unless he calls us. (Kita akan tetap di sini kecuali jika dia menelepon kita.)\n\n**Practice Questions:**\n1. \"Unless\" is equal to...\na. If\nb. If not\nc. Because\nd. Although\n\n2. \"I will buy it ... it is not too expensive.\"\na. unless\nb. as long as\nc. until\nd. before\n\n3. \"You can't enter ... you have a ticket.\"\na. as long as\nb. unless\nc. if\nd. because",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 23: Wish and If Only (Regret)",
+            "content": "We use \"If only\" to express a strong wish or regret, similar to \"I wish\". (Kita menggunakan \"If only\" untuk mengungkapkan keinginan kuat atau penyesalan, mirip dengan \"I wish\").\n\n**Usage:**\n- **If only + Past Tense**: Wish for the present. (If only I were rich).\n- **If only + Past Perfect**: Regret for the past. (If only I had studied).\n\n**Grammar Focus: Intensity**\n\"If only\" is usually more emotional or intense than \"I wish\".\n\n**Vocabulary List:**\n1. Intensity (Intensitas/Kekuatan)\n2. Emotional (Emosional)\n3. Similar (Mirip)\n4. Regret (Penyesalan)\n5. Strong (Kuat)\n\n**Example Sentences:**\n1. If only I had more money! (Andai saja saya punya lebih banyak uang!)\n2. If only she hadn't left so soon. (Andai saja dia tidak pergi begitu cepat.)\n3. If only it were weekend now. (Andai saja sekarang akhir pekan.)\n\n**Practice Questions:**\n1. \"If only\" is similar to...\na. I hope\nb. I wish\nc. I think\nd. I know\n\n2. \"If only I ... the truth before.\"\na. know\nb. knew\nc. had known\ d. have known\n\n3. \"If only it ... raining.\"\na. stop\nb. stops\nc. would stop\nd. stopping",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Advanced Exposition Analysis",
+        "lessons": [
+          {
+            "title": "Lesson 24: Analyzing Argument Strength",
+            "content": "In an exposition text, the quality of arguments determines how persuasive the text is. (Dalam teks eksposisi, kualitas argumen menentukan seberapa persuasif teks tersebut).\n\n**Types of Evidence:**\n- **Statistics**: Numbers and data.\n- **Expert Opinions**: Quotes from professionals.\n- **Examples**: Real-life situations.\n- **Logical Reasoning**: Cause and effect.\n\n**Grammar Focus: Evaluative Adjectives**\nUse adjectives to evaluate the issue: \"Crucial\", \"Insignificant\", \"Urgent\", \"Alarming\".\n\n**Vocabulary List:**\n1. Persuasive (Meyakinkan)\n2. Expert (Ahli)\n3. Quote (Kutipan)\n4. Reasoning (Penalaran)\n5. Alarming (Mengkhawatirkan)\n\n**Example Sentences:**\n1. The statistics prove that plastic waste is a major problem. (Statistik membuktikan bahwa sampah plastik adalah masalah besar.)\n2. According to Professor Smith, climate change is urgent. (Menurut Profesor Smith, perubahan iklim sangat mendesak.)\n3. A crucial point to consider is the economic impact. (Poin penting yang perlu dipertimbangkan adalah dampak ekonomi.)\n\n**Practice Questions:**\n1. Which is a strong type of evidence?\na. A rumor\nb. Statistics and data\nc. A guess\nd. A dream\n\n2. \"Crucial\" means...\na. Not important\nb. Very important\nc. Small\nd. Funny\n\n3. Why do we use expert opinions?\na. To make the text shorter\nb. To add authority and credibility to the arguments\nc. To tell a story\nd. To ask a question",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 25: Counter-Arguments and Rebuttals",
+            "content": "A sophisticated exposition text acknowledges opposing views and explains why they are wrong. This is called a rebuttal. (Teks eksposisi yang canggih mengakui pandangan yang berlawanan dan menjelaskan mengapa pandangan itu salah. Ini disebut sanggahan).\n\n**Steps:**\n1. **Acknowledge**: \"Some people may argue that...\"\n2. **Rebut**: \"However, this is not true because...\"\n\n**Grammar Focus: Contrastive Connectors**\n\"Nevertheless\", \"On the contrary\", \"Despite this\".\n\n**Vocabulary List:**\n1. Sophisticated (Canggih/Berbobot)\n2. Acknowledge (Mengakui)\n3. Rebuttal (Sanggahan)\n4. Nevertheless (Namun demikian)\n5. Contrary (Sebaliknya)\n\n**Example Sentences:**\n1. Nevertheless, the benefits outweigh the risks. (Namun demikian, manfaatnya lebih besar daripada risikonya.)\n2. On the contrary, research suggests the opposite. (Sebaliknya, penelitian menunjukkan hal yang sebaliknya.)\n3. Despite this argument, we must continue the project. (Meskipun ada argumen ini, kita harus melanjutkan proyeknya.)\n\n**Practice Questions:**\n1. What is a rebuttal?\na. Agreeing with everyone\nb. Explaining why an opposing argument is wrong\nc. Writing a title\nd. Drawing a map\n\n2. Which word is used for contrast?\na. And\nb. Furthermore\nc. Nevertheless\nd. Because\n\n3. Acknowledging opposing views makes your text...\na. Weaker\nb. More balanced and stronger\nc. Shorter\nd. Boring",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 26: Developing a Strong Thesis Statement",
+            "content": "The thesis statement is the heart of your exposition. it must be clear, specific, and debatable. (Pernyataan tesis adalah inti dari eksposisi Anda. Ia harus jelas, spesifik, dan dapat diperdebatkan).\n\n**Good vs. Bad Thesis:**\n- **Bad**: Smoking is bad. (Too general).\n- **Good**: Smoking should be banned in all public areas to protect children's health. (Specific and clear).\n\n**Grammar Focus: Strong Verbs**\nUse verbs like \"Advocate\", \"Propose\", \"Maintain\", \"Argue\".\n\n**Vocabulary List:**\n1. Heart (Inti/Pusat)\n2. Debatable (Dapat diperdebatkan)\n3. General (Umum)\n4. Advocate (Mendukung/Membela)\n5. Propose (Mengusulkan)\n\n**Example Sentences:**\n1. This essay maintains that digital literacy is essential for students. (Esai ini menyatakan bahwa literasi digital sangat penting bagi siswa.)\n2. I advocate for a stricter law on animal cruelty. (Saya membela hukum yang lebih ketat tentang kekejaman terhadap hewan.)\n3. The writer proposes a new solution to traffic congestion. (Penulis mengusulkan solusi baru untuk kemacetan lalu lintas.)\n\n**Practice Questions:**\n1. A thesis statement should be...\na. Vague and confusing\nb. Clear, specific, and debatable\nc. A secret\nd. A physical description\n\n2. Which is a strong thesis?\na. Computers are okay\nb. Social media should be restricted for users under 13 to prevent cyberbullying\nc. I have a computer\nd. Writing is fun\n\n3. \"Advocate\" means...\na. To oppose\nb. To support or speak in favor of\nc. To run away\nd. To sleep",
+            "xp": 100
+          }
+        ]
+      },
+      {
+        "name": "Exposition in Practice: Debate and Discussion",
+        "lessons": [
+          {
+            "title": "Lesson 27: Useful Phrases for Formal Debate",
+            "content": "In a formal debate, you use specific phrases to state your opinion, agree, or disagree politely. (Dalam debat formal, Anda menggunakan frasa tertentu untuk menyatakan pendapat, setuju, atau tidak setuju secara sopan).\n\n**Key Phrases:**\n- \"In my opinion...\"\n- \"I strongly disagree with the previous speaker...\"\n- \"I would like to point out that...\"\n- \"I see your point, but...\"\n- \"Furthermore, we should consider...\"\n\n**Grammar Focus: Politeness Markers**\nUse \"I'm afraid I disagree\" instead of \"You are wrong\".\n\n**Vocabulary List:**\n1. Debate (Debat)\n2. Politely (Secara sopan)\n3. Previous (Sebelumnya)\n4. Marker (Penanda)\n5. Consider (Mempertimbangkan)\n\n**Example Sentences:**\n1. I'm afraid I disagree with your statement about technology. (Maaf, saya tidak setuju dengan pernyataan Anda tentang teknologi.)\n2. I would like to point out that education is a human right. (Saya ingin menunjukkan bahwa pendidikan adalah hak asasi manusia.)\n3. Furthermore, the cost is too high for the government. (Selain itu, biayanya terlalu tinggi bagi pemerintah.)\n\n**Practice Questions:**\n1. How should you disagree in a formal debate?\na. Shout \"You are wrong!\"\nb. Say \"I'm afraid I disagree with that point\"\nc. Walk away\nd. Laugh\n\n2. \"I see your point\" means...\na. I am looking at your eyes\nb. I understand your argument\nc. I have a map\nd. I am pointing at you\n\n3. Why do we use formal phrases in debate?\na. To make it longer\nb. To show respect and maintain professionalism\nc. To confuse the audience\nd. Because it is a rule of the gym",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 28: Analyzing Sample Exposition Texts",
+            "content": "Reading and analyzing high-quality exposition texts helps you understand how professionals organize their ideas. (Membaca dan menganalisis teks eksposisi berkualitas tinggi membantu Anda memahami bagaimana para profesional mengatur ide-ide mereka).\n\n**What to Look For:**\n- How is the thesis introduced?\n- Are the arguments supported by facts?\n- Is the conclusion/reiteration strong?\n- What connectives are used?\n\n**Grammar Focus: Cohesion and Coherence**\nCohesion is the link between sentences. Coherence is the flow of ideas.\n\n**Vocabulary List:**\n1. Analyze (Menganalisis)\n2. Cohesion (Kepaduan/Hubungan antar kalimat)\n3. Coherence (Koherensi/Alur ide)\n4. Quality (Kualitas)\n5. Connective (Kata hubung)\n\n**Example Sentences:**\n1. The text has good cohesion because of the transition words. (Teks ini memiliki kepaduan yang baik karena kata-kata transisinya.)\n2. We need to analyze the arguments in this article. (Kita perlu menganalisis argumen-argumen dalam artikel ini.)\n3. The flow of ideas in this exposition is very logical. (Alur ide dalam eksposisi ini sangat logis.)\n\n**Practice Questions:**\n1. Cohesion refers to...\na. The color of the text\nb. The links between sentences\nc. The length of the book\nd. The price of the paper\n\n2. A logical flow of ideas is called...\na. Coherence\nb. Confusion\nc. Complexity\nd. Contradiction\n\n3. Analyzing samples helps you...\na. Sleep better\nb. Improve your own writing skills\nc. Forget the topic\nd. Buy more books",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 29: Writing Your Own Exposition (Step-by-Step)",
+            "content": "Now it's time to write your own exposition! (Sekarang saatnya menulis eksposisi Anda sendiri!).\n\n**Steps:**\n1. **Choose a Topic**: Something you feel strongly about.\n2. **Research**: Find at least 3 strong arguments and evidence.\n3. **Outline**: Plan your thesis, arguments, and reiteration.\n4. **Draft**: Write the full text using formal language and connectives.\n5. **Edit**: Check for grammar, spelling, and clarity.\n\n**Grammar Focus: Self-Correction**\nRead your text aloud to find awkward sentences.\n\n**Vocabulary List:**\n1. Outline (Kerangka)\n2. Draft (Draf/Rancangan)\n3. Edit (Mengedit/Menyunting)\n4. Clarity (Kejelasan)\n5. Awkward (Canggung/Aneh)\n\n**Example Sentences:**\n1. I am writing a draft of my essay about plastic pollution. (Saya sedang menulis draf esai saya tentang polusi plastik.)\n2. First, you should create an outline of your arguments. (Pertama, Anda harus membuat kerangka argumen Anda.)\n3. Always edit your work before submitting it. (Selalu edit pekerjaan Anda sebelum mengumpulkannya.)\n\n**Practice Questions:**\n1. What is the first step in writing an exposition?\na. Writing the conclusion\nb. Choosing a topic\nc. Printing the paper\nd. Giving it to a teacher\n\n2. Why should you create an outline?\na. To waste time\nb. To organize your thoughts before writing\nc. To draw pictures\nd. To use more ink\n\n3. \"Edit\" means to...\na. Delete everything\nb. Check and improve the text\nc. Send an email\nd. Close the computer",
+            "xp": 100
+          },
+          {
+            "title": "Lesson 30: Final Review and Summary",
+            "content": "Congratulations! You have completed the Grade 11 Exposition and Career Writing module. (Selamat! Anda telah menyelesaikan modul Eksposisi dan Penulisan Karir Kelas 11).\n\n**Summary of Key Skills:**\n- Writing persuasive Analytical and Hortatory texts.\n- Mastering Passive Voice across all tenses.\n- Using Conditionals (Type 0-3 and Mixed).\n- Drafting professional Application Letters and CVs.\n- Analyzing and debating complex issues.\n\n**Final Advice:**\nKeep practicing your writing and reading. Use the formal language and connectives you've learned in your daily English.\n\n**Vocabulary List:**\n1. Congratulations (Selamat)\n2. Complete (Menyelesaikan)\n3. Master (Menguasai)\n4. Advice (Saran/Nasihat)\n5. Module (Modul)\n\n**Example Sentences:**\n1. I have mastered the use of conditional sentences. (Saya telah menguasai penggunaan kalimat pengandaian.)\n2. This module has improved my professional writing skills. (Modul ini telah meningkatkan keterampilan menulis profesional saya.)\n3. Congratulations on finishing the course! (Selamat atas penyelesaian kursusnya!)\n\n**Practice Questions:**\n1. Which type of exposition ends with a recommendation?\na. Analytical\nb. Hortatory\nc. Descriptive\nd. Narrative\n\n2. \"CV\" stands for...\na. Career Video\nb. Curriculum Vitae\nc. Company Vision\nd. Creative Value\n\n3. What should you do to improve your English skills?\na. Stop reading\nb. Practice regularly and use new vocabulary\nc. Only watch TV without subtitles\nd. Never talk to anyone",
+            "xp": 100
+          }
+        ]
+      }
+    ]
+  }
+]
