@@ -1,0 +1,242 @@
+[
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 9999" },
+    "subtopic": "Mengenal dan Menulis Bilangan",
+    "lesson": { "title": "Membaca Bilangan 1000-9999" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 9999" },
+    "subtopic": "Mengenal dan Menulis Bilangan",
+    "lesson": { "title": "Menulis Lambang Bilangan Empat Angka" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 9999" },
+    "subtopic": "Mengenal dan Menulis Bilangan",
+    "lesson": { "title": "Nilai Tempat Ribuan, Ratusan, Puluhan, Satuan" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 9999" },
+    "subtopic": "Membandingkan dan Mengurutkan",
+    "lesson": { "title": "Membandingkan Dua Bilangan Ribuan" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 9999" },
+    "subtopic": "Membandingkan dan Mengurutkan",
+    "lesson": { "title": "Mengurutkan Bilangan dari Terkecil" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 9999" },
+    "subtopic": "Membandingkan dan Mengurutkan",
+    "lesson": { "title": "Pola Bilangan Loncat Ribuan" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran" },
+    "subtopic": "Penjumlahan dan Pengurangan Ribuan",
+    "lesson": { "title": "Penjumlahan Ribuan dengan Teknik Menyimpan" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran" },
+    "subtopic": "Penjumlahan dan Pengurangan Ribuan",
+    "lesson": { "title": "Pengurangan Ribuan dengan Teknik Meminjam" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran" },
+    "subtopic": "Penjumlahan dan Pengurangan Ribuan",
+    "lesson": { "title": "Soal Cerita Operasi Hitung Ribuan" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran" },
+    "subtopic": "Perkalian dan Pembagian Lanjutan",
+    "lesson": { "title": "Perkalian Bilangan Dua Angka dengan Satu Angka" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran" },
+    "subtopic": "Perkalian dan Pembagian Lanjutan",
+    "lesson": { "title": "Pembagian Bilangan Dua Angka" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Operasi Hitung Campuran" },
+    "subtopic": "Perkalian dan Pembagian Lanjutan",
+    "lesson": { "title": "Menyelesaikan Operasi Hitung Campuran Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Sederhana" },
+    "subtopic": "Mengenal Pecahan",
+    "lesson": { "title": "Arti Pecahan (Setengah, Sepertiga, Seperempat)" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Sederhana" },
+    "subtopic": "Mengenal Pecahan",
+    "lesson": { "title": "Menulis dan Membaca Lambang Pecahan" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Sederhana" },
+    "subtopic": "Mengenal Pecahan",
+    "lesson": { "title": "Penyajian Pecahan dengan Gambar" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Sederhana" },
+    "subtopic": "Membandingkan Pecahan",
+    "lesson": { "title": "Membandingkan Pecahan Pembilang Sama" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Sederhana" },
+    "subtopic": "Membandingkan Pecahan",
+    "lesson": { "title": "Membandingkan Pecahan Penyebut Sama" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pecahan Sederhana" },
+    "subtopic": "Membandingkan Pecahan",
+    "lesson": { "title": "Pecahan Senilai Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar (Keliling & Luas)" },
+    "subtopic": "Keliling Bangun Datar",
+    "lesson": { "title": "Menghitung Keliling Persegi" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar (Keliling & Luas)" },
+    "subtopic": "Keliling Bangun Datar",
+    "lesson": { "title": "Menghitung Keliling Persegi Panjang" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar (Keliling & Luas)" },
+    "subtopic": "Keliling Bangun Datar",
+    "lesson": { "title": "Keliling Segitiga Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar (Keliling & Luas)" },
+    "subtopic": "Luas dengan Satuan Tak Baku",
+    "lesson": { "title": "Menghitung Luas dengan Petak Satuan" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar (Keliling & Luas)" },
+    "subtopic": "Luas dengan Satuan Tak Baku",
+    "lesson": { "title": "Membandingkan Luas Bangun Datar" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar (Keliling & Luas)" },
+    "subtopic": "Luas dengan Satuan Tak Baku",
+    "lesson": { "title": "Menyusun Bangun Datar Menjadi Bentuk Baru" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Panjang, Berat, Waktu)" },
+    "subtopic": "Hubungan Satuan Panjang dan Berat",
+    "lesson": { "title": "Konversi Satuan Panjang (m ke cm)" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Panjang, Berat, Waktu)" },
+    "subtopic": "Hubungan Satuan Panjang dan Berat",
+    "lesson": { "title": "Konversi Satuan Berat (kg ke gram)" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Panjang, Berat, Waktu)" },
+    "subtopic": "Hubungan Satuan Panjang dan Berat",
+    "lesson": { "title": "Timbangan dan Alat Ukur di Sekitar Kita" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Panjang, Berat, Waktu)" },
+    "subtopic": "Lama Waktu Kegiatan",
+    "lesson": { "title": "Membaca Jam Menit (Kelipatan 5)" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Panjang, Berat, Waktu)" },
+    "subtopic": "Lama Waktu Kegiatan",
+    "lesson": { "title": "Menghitung Selisih Waktu" }
+  },
+  {
+    "level": "SD",
+    "grade": 3,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Panjang, Berat, Waktu)" },
+    "subtopic": "Lama Waktu Kegiatan",
+    "lesson": { "title": "Menentukan Waktu Selesai Kegiatan" }
+  }
+]

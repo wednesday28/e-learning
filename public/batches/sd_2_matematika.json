@@ -1,0 +1,242 @@
+[
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 999" },
+    "subtopic": "Membilang dan Membandingkan",
+    "lesson": { "title": "Membaca Bilangan 100-999" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 999" },
+    "subtopic": "Membilang dan Membandingkan",
+    "lesson": { "title": "Menulis Lambang Bilangan" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 999" },
+    "subtopic": "Membilang dan Membandingkan",
+    "lesson": { "title": "Membandingkan Dua Bilangan" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 999" },
+    "subtopic": "Nilai Tempat dan Urutan",
+    "lesson": { "title": "Menentukan Nilai Tempat" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 999" },
+    "subtopic": "Nilai Tempat dan Urutan",
+    "lesson": { "title": "Mengurutkan Bilangan" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah sampai 999" },
+    "subtopic": "Nilai Tempat dan Urutan",
+    "lesson": { "title": "Pola Bilangan Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan" },
+    "subtopic": "Penjumlahan Bilangan",
+    "lesson": { "title": "Penjumlahan Tanpa Menyimpan" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan" },
+    "subtopic": "Penjumlahan Bilangan",
+    "lesson": { "title": "Penjumlahan Dengan Menyimpan" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan" },
+    "subtopic": "Penjumlahan Bilangan",
+    "lesson": { "title": "Soal Cerita Penjumlahan" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan" },
+    "subtopic": "Pengurangan Bilangan",
+    "lesson": { "title": "Pengurangan Tanpa Meminjam" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan" },
+    "subtopic": "Pengurangan Bilangan",
+    "lesson": { "title": "Pengurangan Dengan Meminjam" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan" },
+    "subtopic": "Pengurangan Bilangan",
+    "lesson": { "title": "Operasi Campuran (+ dan -)" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Perkalian dan Pembagian Dasar" },
+    "subtopic": "Konsep Perkalian",
+    "lesson": { "title": "Perkalian Sebagai Penjumlahan Berulang" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Perkalian dan Pembagian Dasar" },
+    "subtopic": "Konsep Perkalian",
+    "lesson": { "title": "Mengenal Tabel Perkalian 2, 5, dan 10" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Perkalian dan Pembagian Dasar" },
+    "subtopic": "Konsep Perkalian",
+    "lesson": { "title": "Soal Cerita Perkalian Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Perkalian dan Pembagian Dasar" },
+    "subtopic": "Konsep Pembagian",
+    "lesson": { "title": "Pembagian Sebagai Pengurangan Berulang" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Perkalian dan Pembagian Dasar" },
+    "subtopic": "Konsep Pembagian",
+    "lesson": { "title": "Hubungan Perkalian dan Pembagian" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Perkalian dan Pembagian Dasar" },
+    "subtopic": "Konsep Pembagian",
+    "lesson": { "title": "Pembagian Bilangan Dengan 1 dan Dirinya Sendiri" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Waktu, Panjang, Berat)" },
+    "subtopic": "Satuan Waktu",
+    "lesson": { "title": "Mengenal Jarum Jam" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Waktu, Panjang, Berat)" },
+    "subtopic": "Satuan Waktu",
+    "lesson": { "title": "Membaca dan Menulis Waktu" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Waktu, Panjang, Berat)" },
+    "subtopic": "Satuan Waktu",
+    "lesson": { "title": "Durasi Waktu Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Waktu, Panjang, Berat)" },
+    "subtopic": "Panjang dan Berat",
+    "lesson": { "title": "Mengenal Satuan Panjang (cm, m)" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Waktu, Panjang, Berat)" },
+    "subtopic": "Panjang dan Berat",
+    "lesson": { "title": "Mengukur Berat Benda (kg, gr)" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran (Waktu, Panjang, Berat)" },
+    "subtopic": "Panjang dan Berat",
+    "lesson": { "title": "Membandingkan Berat Benda" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Bangun Ruang" },
+    "subtopic": "Ciri-ciri Bangun Datar",
+    "lesson": { "title": "Mengenal Segitiga, Segiempat, Lingkaran" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Bangun Ruang" },
+    "subtopic": "Ciri-ciri Bangun Datar",
+    "lesson": { "title": "Menghitung Ruas Garis pada Bangun Datar" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Bangun Ruang" },
+    "subtopic": "Ciri-ciri Bangun Datar",
+    "lesson": { "title": "Mengelompokkan Bangun Datar" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Bangun Ruang" },
+    "subtopic": "Pengenalan Bangun Ruang",
+    "lesson": { "title": "Mengenal Kubus dan Balok" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Bangun Ruang" },
+    "subtopic": "Pengenalan Bangun Ruang",
+    "lesson": { "title": "Sisi, Rusuk, dan Titik Sudut" }
+  },
+  {
+    "level": "SD",
+    "grade": 2,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Bangun Ruang" },
+    "subtopic": "Pengenalan Bangun Ruang",
+    "lesson": { "title": "Benda di Sekitar Berbentuk Bangun Ruang" }
+  }
+]

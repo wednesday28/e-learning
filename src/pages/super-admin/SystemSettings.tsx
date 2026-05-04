@@ -1,6 +1,5 @@
-import React from 'react';
 import { Card, Button, Input } from '../../components/ui';
-import { Settings, Save, Globe, Lock, Mail, Bell } from 'lucide-react';
+import { Save, Globe, Lock, Mail, Bell } from 'lucide-react';
 
 const SystemSettings = () => (
   <div className="max-w-4xl mx-auto space-y-8">

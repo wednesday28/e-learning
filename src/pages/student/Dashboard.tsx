@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Card, Button, Progress } from '../../components/ui';
 import { BookOpen, Trophy, Clock, Star, Play, ChevronRight } from 'lucide-react';
 import { useAuthStore } from '../../store/useAuthStore';

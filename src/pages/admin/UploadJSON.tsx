@@ -1,6 +1,5 @@
-import React from 'react';
 import { Card, Button } from '../../components/ui';
-import { Upload, FileJson, AlertCircle, CheckCircle } from 'lucide-react';
+import { Upload, FileJson, AlertCircle } from 'lucide-react';
 
 const UploadJSON = () => (
   <div className="max-w-2xl mx-auto space-y-8">

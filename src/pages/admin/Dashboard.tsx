@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Card, Button } from '../../components/ui';
 import { Shield, Users, Upload, FileText, AlertTriangle } from 'lucide-react';
 

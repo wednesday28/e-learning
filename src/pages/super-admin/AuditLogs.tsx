@@ -1,6 +1,5 @@
-import React from 'react';
 import { Card, Button } from '../../components/ui';
-import { Activity, Search, Download, Clock } from 'lucide-react';
+import { Search, Download, Clock } from 'lucide-react';
 
 const AuditLogs = () => (
   <div className="space-y-6">

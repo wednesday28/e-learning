@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Card, Button } from '../../components/ui';
 import { PlayCircle, ChevronLeft } from 'lucide-react';
 

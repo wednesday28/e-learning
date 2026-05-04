@@ -1,0 +1,242 @@
+[
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah 1-20" },
+    "subtopic": "Mengenal Bilangan",
+    "lesson": { "title": "Menghitung Benda 1-10" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah 1-20" },
+    "subtopic": "Mengenal Bilangan",
+    "lesson": { "title": "Menulis Angka 1-10" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah 1-20" },
+    "subtopic": "Mengenal Bilangan",
+    "lesson": { "title": "Bilangan 11-20" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah 1-20" },
+    "subtopic": "Membandingkan Bilangan",
+    "lesson": { "title": "Lebih Banyak dan Lebih Sedikit" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah 1-20" },
+    "subtopic": "Membandingkan Bilangan",
+    "lesson": { "title": "Mengurutkan Bilangan" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bilangan Cacah 1-20" },
+    "subtopic": "Membandingkan Bilangan",
+    "lesson": { "title": "Nilai Tempat Dasar" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan (1-20)" },
+    "subtopic": "Konsep Penjumlahan",
+    "lesson": { "title": "Penjumlahan Dengan Gambar" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan (1-20)" },
+    "subtopic": "Konsep Penjumlahan",
+    "lesson": { "title": "Menambah Bilangan 1-10" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan (1-20)" },
+    "subtopic": "Konsep Penjumlahan",
+    "lesson": { "title": "Soal Cerita Penjumlahan" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan (1-20)" },
+    "subtopic": "Konsep Pengurangan",
+    "lesson": { "title": "Pengurangan Dengan Gambar" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan (1-20)" },
+    "subtopic": "Konsep Pengurangan",
+    "lesson": { "title": "Mengurangi Bilangan 1-10" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Penjumlahan dan Pengurangan (1-20)" },
+    "subtopic": "Konsep Pengurangan",
+    "lesson": { "title": "Soal Cerita Pengurangan" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Mengenal Waktu dan Hari" },
+    "subtopic": "Waktu (Jam)",
+    "lesson": { "title": "Mengenal Pagi, Siang, Malam" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Mengenal Waktu dan Hari" },
+    "subtopic": "Waktu (Jam)",
+    "lesson": { "title": "Membaca Jam Tepat" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Mengenal Waktu dan Hari" },
+    "subtopic": "Waktu (Jam)",
+    "lesson": { "title": "Kegiatan Berdasarkan Waktu" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Mengenal Waktu dan Hari" },
+    "subtopic": "Nama Hari dan Bulan",
+    "lesson": { "title": "Menghafal Nama Hari" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Mengenal Waktu dan Hari" },
+    "subtopic": "Nama Hari dan Bulan",
+    "lesson": { "title": "Urutan Nama Bulan" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Mengenal Waktu dan Hari" },
+    "subtopic": "Nama Hari dan Bulan",
+    "lesson": { "title": "Kemarin, Hari Ini, Besok" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Ruang Dasar" },
+    "subtopic": "Mengenal Bentuk",
+    "lesson": { "title": "Lingkaran dan Segitiga" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Ruang Dasar" },
+    "subtopic": "Mengenal Bentuk",
+    "lesson": { "title": "Segiempat dan Persegi" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Ruang Dasar" },
+    "subtopic": "Mengenal Bentuk",
+    "lesson": { "title": "Bentuk di Sekitar Kita" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Ruang Dasar" },
+    "subtopic": "Pola Bentuk",
+    "lesson": { "title": "Melanjutkan Pola Warna" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Ruang Dasar" },
+    "subtopic": "Pola Bentuk",
+    "lesson": { "title": "Melanjutkan Pola Bentuk" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Bangun Datar dan Ruang Dasar" },
+    "subtopic": "Pola Bentuk",
+    "lesson": { "title": "Membuat Pola Sendiri" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran Panjang dan Berat (Non-baku)" },
+    "subtopic": "Mengukur Panjang",
+    "lesson": { "title": "Mengukur dengan Jengkal" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran Panjang dan Berat (Non-baku)" },
+    "subtopic": "Mengukur Panjang",
+    "lesson": { "title": "Mengukur dengan Langkah" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran Panjang dan Berat (Non-baku)" },
+    "subtopic": "Mengukur Panjang",
+    "lesson": { "title": "Membandingkan Panjang Benda" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran Panjang dan Berat (Non-baku)" },
+    "subtopic": "Mengukur Berat",
+    "lesson": { "title": "Berat dan Ringan" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran Panjang dan Berat (Non-baku)" },
+    "subtopic": "Mengukur Berat",
+    "lesson": { "title": "Menimbang dengan Timbangan Sederhana" }
+  },
+  {
+    "level": "SD",
+    "grade": 1,
+    "subject": "Matematika",
+    "topic": { "name": "Pengukuran Panjang dan Berat (Non-baku)" },
+    "subtopic": "Mengukur Berat",
+    "lesson": { "title": "Mengurutkan Benda dari Terberat" }
+  }
+]

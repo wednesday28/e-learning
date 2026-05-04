@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react'
+import { Suspense, lazy } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useAuthStore } from './store/useAuthStore'
 import { useAuth } from './hooks/useAuth'
@@ -31,23 +31,18 @@ const SuperAdminOverview = lazy(() => import('./pages/super-admin/Overview'))
 const UserControl = lazy(() => import('./pages/super-admin/UserControl'))
 const SystemSettings = lazy(() => import('./pages/super-admin/SystemSettings'))
 const AuditLogs = lazy(() => import('./pages/super-admin/AuditLogs'))
+const UploadCurriculum = lazy(() => import('./pages/super-admin/UploadCurriculum'))
 
-// ─── Protected Route Component ───────────────────────────────────────────────
 const ProtectedRoute = ({ children, allowedRoles }: { children: React.ReactNode; allowedRoles?: string[] }) => {
   const { user, profile, isLoading } = useAuthStore()
-
   if (isLoading) return <div className="h-screen w-full flex items-center justify-center"><Spinner /></div>
-
   if (!user) return <Navigate to="/login" />
-  
   if (allowedRoles && profile && !allowedRoles.includes(profile.role)) {
     return <Navigate to="/dashboard" />
   }
-
   return <>{children}</>
 }
 
-// ─── App Component ────────────────────────────────────────────────────────────
 const App = () => {
   useAuth()
 
@@ -88,6 +83,7 @@ const App = () => {
             <Route path="users" element={<UserControl />} />
             <Route path="settings" element={<SystemSettings />} />
             <Route path="audit" element={<AuditLogs />} />
+            <Route path="upload" element={<UploadCurriculum />} />
           </Route>
 
           <Route path="*" element={<Navigate to="/dashboard" />} />

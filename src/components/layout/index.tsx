@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavLink, useNavigate, Outlet } from 'react-router-dom';
 import { 
   Home, BookOpen, Target, Trophy, Settings, 
-  Users, Shield, LogOut, Menu, X, Bell, User,
-  ChevronRight, LayoutDashboard, Database, Activity
+  Users, Shield, LogOut, Menu, Bell, User,
+  ChevronRight, LayoutDashboard, Database, Activity, Upload
 } from 'lucide-react';
 import { useAuthStore } from '../../store/useAuthStore';
-import { Button } from '../ui';
 import { supabase } from '../../lib/supabase';
 
 // ─── Sidebar ──────────────────────────────────────────────────────────────────
@@ -33,8 +32,10 @@ export const Sidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
     ],
     super_admin: [
       { name: 'Overview', path: '/super-admin', icon: Shield },
+      { name: 'Upload Curriculum', path: '/super-admin/upload', icon: Upload },
       { name: 'System', path: '/super-admin/settings', icon: Settings },
       { name: 'Audit Logs', path: '/super-admin/audit', icon: Activity },
+      { name: 'User Control', path: '/super-admin/users', icon: Users },
     ]
   };
 
