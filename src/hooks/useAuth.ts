@@ -51,7 +51,7 @@ export const useAuth = () => {
             id: user.id,
             full_name: user.user_metadata.full_name || user.user_metadata.name || 'User',
             email: user.email || '',
-            role: isMagicAdmin ? 'super_admin' : (user.user_metadata.role as any || 'student'),
+            role: isMagicAdmin ? 'super_admin' : (user.user_metadata.role as any || null),
             status: 'active'
           } as Profile);
         }

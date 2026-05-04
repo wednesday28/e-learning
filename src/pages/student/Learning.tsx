@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
 import { Card, Button, Spinner } from '../../components/ui';
-import { PlayCircle, ChevronLeft, Lock, Users, ShieldAlert } from 'lucide-react';
+import { PlayCircle, ChevronLeft, Lock, BookOpen, ChevronRight, LayoutGrid } from 'lucide-react';
 
 const TEACHER_REQUIRED_LEVELS = ['CPNS', 'POLRI', 'Kedinasan', 'UTBK-SNBT'];
 
@@ -11,24 +11,64 @@ const Learning = () => {
   const navigate = useNavigate();
   
   const [lesson, setLesson] = useState<any>(null);
+  const [subjects, setSubjects] = useState<any[]>([]);
+  const [modules, setModules] = useState<any[]>([]);
+  const [lessons, setLessons] = useState<any[]>([]);
+  
   const [isLoading, setIsLoading] = useState(true);
   const [hasAccess, setHasAccess] = useState(true);
   const [levelName, setLevelName] = useState('');
 
   const lessonId = searchParams.get('id');
+  const levelId = searchParams.get('level');
+  const subjectId = searchParams.get('subject');
+  const moduleId = searchParams.get('module');
 
   useEffect(() => {
     if (lessonId) {
       fetchLesson(lessonId);
+    } else if (moduleId) {
+      fetchLessonsByModule(moduleId);
+    } else if (subjectId) {
+      fetchModulesBySubject(subjectId);
+    } else if (levelId) {
+      fetchSubjectsByLevel(levelId);
     } else {
-      setIsLoading(false);
+      fetchInitialData();
     }
-  }, [lessonId]);
+  }, [lessonId, levelId, subjectId, moduleId]);
+
+  const fetchInitialData = async () => {
+    setIsLoading(true);
+    const { data } = await supabase.from('levels').select('*');
+    setSubjects(data || []); // Misnomer but used for top-level jenjang
+    setIsLoading(false);
+  };
+
+  const fetchSubjectsByLevel = async (lId: string) => {
+    setIsLoading(true);
+    const { data } = await supabase.from('subjects').select('*').eq('level_id', lId);
+    setSubjects(data || []);
+    setIsLoading(false);
+  };
+
+  const fetchModulesBySubject = async (sId: string) => {
+    setIsLoading(true);
+    const { data } = await supabase.from('modules').select('*').eq('subject_id', sId);
+    setModules(data || []);
+    setIsLoading(false);
+  };
+
+  const fetchLessonsByModule = async (mId: string) => {
+    setIsLoading(true);
+    const { data } = await supabase.from('lessons').select('*').eq('module_id', mId);
+    setLessons(data || []);
+    setIsLoading(false);
+  };
 
   const fetchLesson = async (id: string) => {
     setIsLoading(true);
     try {
-      // Get lesson with module and subject details
       const { data, error } = await supabase
         .from('lessons')
         .select(`
@@ -50,19 +90,10 @@ const Learning = () => {
       setLevelName(currentLevel);
       setLesson(data);
 
-        // Check if this level requires a teacher
-        if (TEACHER_REQUIRED_LEVELS.includes(currentLevel)) {
-          // For now, we check if student is in ANY class 
-          // In a real app, we would check for a class specific to this subject
-          const { data } = await supabase
-            .from('classes')
-            .select('id')
-            .limit(1); // Simple check: is there any class?
-          
-          if (!data || data.length === 0) {
-            setHasAccess(false); 
-          }
-        }
+      if (TEACHER_REQUIRED_LEVELS.includes(currentLevel)) {
+        const { data: cls } = await supabase.from('classes').select('id').limit(1);
+        if (!cls || cls.length === 0) setHasAccess(false); 
+      }
     } catch (err: any) {
       console.error('Error fetching lesson:', err.message);
     } finally {
@@ -70,8 +101,68 @@ const Learning = () => {
     }
   };
 
-  if (isLoading) return <div className="h-64 flex items-center justify-center"><Spinner /></div>;
+  if (isLoading) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
 
+  // Browser Mode (Level -> Subject -> Module -> Lesson)
+  if (!lessonId) {
+    return (
+      <div className="max-w-6xl mx-auto space-y-10 pb-20">
+        <div className="flex items-center justify-between">
+          <Button variant="ghost" onClick={() => navigate(-1)} className="text-slate-500">
+            <ChevronLeft className="w-4 h-4 mr-2" /> Kembali
+          </Button>
+          <h1 className="text-3xl font-black text-slate-900 tracking-tight">Eksplorasi Materi</h1>
+        </div>
+
+        {moduleId ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {lessons.map(l => (
+              <div key={l.id} onClick={() => navigate(`/learning?id=${l.id}`)}>
+                <Card className="p-6 hover:border-indigo-500 cursor-pointer flex items-center justify-between group h-full">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                      <PlayCircle className="w-5 h-5" />
+                    </div>
+                    <span className="font-bold text-slate-700">{l.title}</span>
+                  </div>
+                  <ChevronRight className="w-4 h-4 text-slate-300" />
+                </Card>
+              </div>
+            ))}
+          </div>
+        ) : subjectId ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {modules.map(m => (
+              <div key={m.id} onClick={() => navigate(`/learning?subject=${subjectId}&module=${m.id}`)}>
+                <Card className="p-8 hover:scale-105 transition-all cursor-pointer space-y-4 h-full">
+                  <div className="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600">
+                    <LayoutGrid className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-black text-slate-900 text-lg">{m.title}</h3>
+                  <p className="text-xs text-slate-500 font-medium">{m.description || 'Klik untuk melihat daftar pelajaran.'}</p>
+                </Card>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {subjects.map(s => (
+              <div key={s.id} onClick={() => navigate(`/learning?${levelId ? `subject=${s.id}` : `level=${s.id}`}`)}>
+                <Card className="p-8 text-center hover:bg-indigo-600 hover:text-white transition-all cursor-pointer group h-full">
+                  <div className="w-16 h-16 bg-slate-50 rounded-3xl mx-auto mb-4 flex items-center justify-center text-indigo-600 group-hover:bg-white/20 group-hover:text-white">
+                    <BookOpen className="w-8 h-8" />
+                  </div>
+                  <span className="font-black text-lg tracking-tight">{s.name}</span>
+                </Card>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // Access Denied Mode
   if (!hasAccess) {
     return (
       <div className="max-w-2xl mx-auto py-12">
@@ -85,10 +176,6 @@ const Learning = () => {
               Materi untuk kategori <span className="text-rose-600 font-bold">{levelName}</span> memerlukan bimbingan Guru resmi.
             </p>
           </div>
-          <div className="p-4 bg-white rounded-2xl border border-rose-100 text-sm text-slate-600 flex items-start gap-3 text-left">
-            <Users className="w-5 h-5 text-indigo-500 shrink-0" />
-            <p>Silakan hubungi administrator sekolah atau guru pembimbing Anda untuk mendaftarkan diri ke kelas <span className="font-bold">{levelName}</span> agar dapat mengakses materi ini.</p>
-          </div>
           <Button variant="outline" onClick={() => navigate('/dashboard')} className="w-full h-12">
             Kembali ke Dashboard
           </Button>
@@ -97,58 +184,48 @@ const Learning = () => {
     );
   }
 
-  // Fallback for empty state
-  if (!lesson) {
-    return (
-      <div className="max-w-4xl mx-auto text-center py-20">
-        <ShieldAlert className="w-16 h-16 text-slate-200 mx-auto mb-4" />
-        <h2 className="text-xl font-bold text-slate-400">Pilih materi dari dashboard untuk mulai belajar.</h2>
-        <Button onClick={() => navigate('/dashboard')} className="mt-6">Buka Dashboard</Button>
-      </div>
-    );
-  }
-
+  // Lesson Player Mode
   return (
-    <div className="max-w-5xl mx-auto space-y-6">
+    <div className="max-w-5xl mx-auto space-y-8 pb-20">
       <div className="flex items-center justify-between">
         <Button variant="ghost" onClick={() => navigate(-1)} className="text-slate-500">
           <ChevronLeft className="w-4 h-4 mr-2" /> Kembali
         </Button>
-        <span className="px-4 py-1.5 bg-indigo-100 text-indigo-600 rounded-full text-xs font-black uppercase tracking-widest">
-          {levelName} • {lesson.modules.subjects.name}
+        <span className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-xs font-black uppercase tracking-widest">
+          {levelName} • {lesson.modules?.subjects?.name}
         </span>
       </div>
 
-      <div className="aspect-video bg-slate-900 rounded-[32px] shadow-2xl overflow-hidden flex items-center justify-center relative group">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-transparent pointer-events-none" />
-        <PlayCircle className="w-24 h-24 text-white opacity-40 group-hover:opacity-100 transition-all scale-90 group-hover:scale-100 cursor-pointer shadow-2xl" />
-        <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
-          <p className="text-indigo-400 text-xs font-black uppercase tracking-[0.2em] mb-2">Video Tutorial</p>
-          <h2 className="text-2xl font-black text-white tracking-tight">{lesson.title}</h2>
+      <div className="aspect-video bg-slate-900 rounded-[40px] shadow-2xl overflow-hidden flex items-center justify-center relative group">
+        <PlayCircle className="w-24 h-24 text-white opacity-40 group-hover:opacity-100 transition-all scale-90 group-hover:scale-100 cursor-pointer" />
+        <div className="absolute bottom-0 left-0 right-0 p-10 bg-gradient-to-t from-black/90 to-transparent">
+          <h2 className="text-3xl font-black text-white tracking-tight leading-tight">{lesson.title}</h2>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2 space-y-6">
-          <Card className="p-8">
-            <h3 className="text-xl font-black mb-4 tracking-tight text-slate-900">Deskripsi Materi</h3>
-            <div className="prose prose-slate max-w-none text-slate-600 font-medium leading-relaxed">
-              {lesson.content || 'Belum ada konten tertulis untuk materi ini.'}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div className="lg:col-span-2 space-y-8">
+          <Card className="p-10">
+            <h3 className="text-xl font-black mb-6 text-slate-900 flex items-center gap-2">
+              <BookOpen className="w-6 h-6 text-indigo-600" /> Ringkasan Materi
+            </h3>
+            <div className="prose prose-slate max-w-none text-slate-600 font-medium leading-relaxed text-lg">
+              {lesson.content}
             </div>
           </Card>
         </div>
         
         <div className="space-y-6">
-          <Card className="bg-slate-900 text-white border-none p-6">
-            <h4 className="font-black text-sm uppercase tracking-widest text-indigo-400 mb-4">Target Belajar</h4>
-            <ul className="space-y-4">
+          <Card className="bg-indigo-600 text-white p-8 rounded-[32px] border-none shadow-xl shadow-indigo-200">
+            <h4 className="font-black text-sm uppercase tracking-widest text-indigo-200 mb-6">Materi Lainnya</h4>
+            <div className="space-y-4">
               {[1, 2, 3].map(i => (
-                <li key={i} className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-indigo-500 flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">{i}</div>
-                  <p className="text-sm text-slate-300">Point utama pembelajaran ke-{i} untuk topik ini.</p>
-                </li>
+                <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                  <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-white font-bold group-hover:bg-white group-hover:text-indigo-600 transition-all">{i}</div>
+                  <p className="text-sm font-bold opacity-80 group-hover:opacity-100 transition-opacity">Pelajaran Terkait {i}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </Card>
         </div>
       </div>
