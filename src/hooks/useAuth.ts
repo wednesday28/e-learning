@@ -39,12 +39,25 @@ export const useAuth = () => {
         .eq('id', userId)
         .single()
 
-      if (error) throw error
-      setProfile(data as Profile)
+      if (error || !data) {
+        console.warn('Profile not found, using auth metadata fallback');
+        const { data: { user } } = await supabase.auth.getUser();
+        if (user) {
+          setProfile({
+            id: user.id,
+            full_name: user.user_metadata.full_name || user.user_metadata.name || 'User',
+            email: user.email || '',
+            role: (user.user_metadata.role as any) || 'student',
+            status: 'active'
+          } as Profile);
+        }
+      } else {
+        setProfile(data as Profile);
+      }
     } catch (err) {
-      console.error('Error fetching profile:', err)
+      console.error('Error fetching profile:', err);
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
   }
 
