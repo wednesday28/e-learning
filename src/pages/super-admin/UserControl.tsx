@@ -20,8 +20,6 @@ const UserControl = () => {
       
       if (filter === 'pending') {
         query = query.eq('role', 'teacher').eq('status', 'pending');
-      } else {
-        query = query.order('created_at', { ascending: false });
       }
 
       const { data, error } = await query;
