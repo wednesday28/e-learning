@@ -177,7 +177,7 @@ const StudentDashboard = () => {
             {myClasses.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {myClasses.map((cls) => (
-                  <div key={cls.id} onClick={() => navigate(`/learning?level=${cls.level_id}`)}>
+                  <div key={cls.id} onClick={() => navigate(`/class/${cls.id}`)}>
                     <Card 
                       className="p-6 border-slate-100 hover:border-indigo-500 transition-all cursor-pointer group h-full"
                     >

@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
 import { Card, Button, Spinner, Input } from '../../components/ui';
 import { PlusCircle, Search, Filter, Users, GraduationCap, School, X, Trash2, Edit, AlertCircle } from 'lucide-react';
 
 const ManageClasses = () => {
+  const navigate = useNavigate();
+
   const [classes, setClasses] = useState<any[]>([]);
   const [levels, setLevels] = useState<any[]>([]);
   const [grades, setGrades] = useState<any[]>([]);
@@ -339,12 +342,18 @@ const ManageClasses = () => {
                 <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center text-slate-600 font-black text-xl group-hover:bg-indigo-600 group-hover:text-white transition-all">
                   {cls.name.substring(0, 2).toUpperCase()}
                 </div>
-                <div>
-                  <h3 className="font-black text-slate-900 text-lg tracking-tight">{cls.name}</h3>
+                <div 
+                  className="flex-1 cursor-pointer group-hover:translate-x-1 transition-transform"
+                  onClick={() => navigate(`/teacher/classes/${cls.id}`)}
+                >
+                  <h3 className="font-black text-slate-900 text-lg tracking-tight group-hover:text-indigo-600 transition-colors">{cls.name}</h3>
                   <div className="flex flex-wrap items-center gap-2 mt-1">
                     <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">{cls.join_code}</span>
                     <button 
-                      onClick={() => handleToggleClassStatus(cls)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleToggleClassStatus(cls);
+                      }}
                       className={`text-[10px] px-2 py-0.5 rounded-full font-black uppercase tracking-widest transition-all ${cls.is_active ? 'bg-emerald-100 text-emerald-600' : 'bg-slate-100 text-slate-400'}`}
                     >
                       {cls.is_active ? 'Aktif' : 'Nonaktif'}

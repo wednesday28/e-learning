@@ -35,6 +35,8 @@ const SystemSettings = lazy(() => import('./pages/super-admin/SystemSettings'))
 const AuditLogs = lazy(() => import('./pages/super-admin/AuditLogs'))
 const UploadCurriculum = lazy(() => import('./pages/super-admin/UploadCurriculum'))
 const Profile = lazy(() => import('./pages/shared/Profile'))
+const ClassDetails = lazy(() => import('./pages/shared/ClassDetails'))
+
 
 const ProtectedRoute = ({ children, allowedRoles }: { children: React.ReactNode; allowedRoles?: string[] }) => {
   const { user, profile, isLoading } = useAuthStore()
@@ -85,12 +87,14 @@ const App = () => {
             <Route path="quiz" element={<Quiz />} />
             <Route path="tryout" element={<Tryout />} />
             <Route path="results" element={<Results />} />
+            <Route path="class/:id" element={<ClassDetails />} />
           </Route>
 
           {/* Teacher */}
           <Route path="/teacher" element={<ProtectedRoute allowedRoles={['teacher']}><DashboardLayout /></ProtectedRoute>}>
             <Route index element={<TeacherDashboard />} />
             <Route path="classes" element={<ManageClasses />} />
+            <Route path="classes/:id" element={<ClassDetails />} />
             <Route path="quizzes" element={<ManageQuizzes />} />
           </Route>
 
