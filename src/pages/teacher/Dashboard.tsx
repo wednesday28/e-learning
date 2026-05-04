@@ -56,7 +56,7 @@ const TeacherDashboard = () => {
       const classIds = classes?.map(c => c.id) || [];
       
       const { count: studentCount } = await supabase
-        .from('class_enrollments')
+        .from('class_students')
         .select('*', { count: 'exact', head: true })
         .in('class_id', classIds);
 
