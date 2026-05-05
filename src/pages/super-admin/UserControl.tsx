@@ -41,15 +41,19 @@ const UserControl = () => {
 
   const handleUpdateRole = async (userId: string, newRole: 'student' | 'teacher' | 'super_admin') => {
     try {
-      const { error } = await supabase
-        .from('profiles')
-        .update({ role: newRole })
-        .eq('id', userId);
+      const response = await fetch('/api/v1/admin/update-role', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId, newRole })
+      });
+      
+      const result = await response.json();
+      if (!result.success) throw new Error(result.message);
 
-      if (error) throw error;
       setUsers(prev => prev.map(u => u.id === userId ? { ...u, role: newRole } : u));
+      alert('Peran berhasil diperbarui!');
     } catch (err: any) {
-      alert('Gagal memperbarui peran.');
+      alert('Gagal memperbarui peran: ' + err.message);
     }
   };
 
@@ -134,16 +138,16 @@ const UserControl = () => {
           ) : (
             <div className="divide-y divide-slate-100">
               {users.map((u) => (
-                <div key={u.id} className="p-8 hover:bg-slate-50/50 transition-all flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-                  <div className="flex items-center gap-6">
-                    <div className={`w-16 h-16 rounded-[24px] flex items-center justify-center border-4 border-white shadow-xl font-black text-2xl ${
+                <div key={u.id} className="p-4 sm:p-8 hover:bg-slate-50/50 transition-all flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+                  <div className="flex items-center gap-4 sm:gap-6">
+                    <div className={`w-12 h-12 sm:w-16 sm:h-16 rounded-[18px] sm:rounded-[24px] flex items-center justify-center border-4 border-white shadow-xl font-black text-lg sm:text-2xl shrink-0 ${
                       u.role === 'teacher' ? 'bg-amber-100 text-amber-600' : 
                       u.role === 'super_admin' ? 'bg-indigo-600 text-white' : 'bg-emerald-100 text-emerald-600'
                     }`}>
                       {u.avatar_url ? (
-                        <img src={u.avatar_url} alt="" className="w-full h-full object-cover rounded-[20px]" />
+                        <img src={u.avatar_url} alt="" className="w-full h-full object-cover rounded-[16px] sm:rounded-[20px]" />
                       ) : (
-                        u.full_name?.charAt(0) || <User className="w-8 h-8" />
+                        u.full_name?.charAt(0) || <User className="w-6 h-6 sm:w-8 sm:h-8" />
                       )}
                     </div>
                     <div className="space-y-1">

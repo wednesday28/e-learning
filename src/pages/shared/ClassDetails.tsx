@@ -244,6 +244,16 @@ const ClassDetails = () => {
     }
   };
 
+  const handleDeleteQuiz = async (quizId: string) => {
+    if (!window.confirm('Hapus kuis ini dari kelas?')) return;
+    const { error } = await supabase.from('class_quizzes').delete().eq('id', quizId);
+    if (!error) {
+      fetchClassQuizzes();
+    } else {
+      alert('Gagal menghapus kuis: ' + error.message);
+    }
+  };
+
 
 
 
@@ -476,7 +486,19 @@ const ClassDetails = () => {
                    <div className="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600">
                      <Award className="w-6 h-6" />
                    </div>
-                   <span className="text-[10px] font-black text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-100">Kuis Kelas</span>
+                    <div className="flex items-center gap-2">
+                       <span className="text-[10px] font-black text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-100">Kuis Kelas</span>
+                       {isTeacher && (
+                         <Button 
+                           variant="ghost" 
+                           size="icon" 
+                           onClick={() => handleDeleteQuiz(q.id)}
+                           className="h-8 w-8 text-slate-300 hover:text-rose-500"
+                         >
+                           <Trash2 className="w-4 h-4" />
+                         </Button>
+                       )}
+                    </div>
                 </div>
                 <div className="relative z-10">
                   <h4 className="text-xl font-black text-slate-900 mb-1">{q.quiz_packages?.title || q.subjects?.name}</h4>

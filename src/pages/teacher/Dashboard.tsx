@@ -72,6 +72,26 @@ const TeacherDashboard = () => {
     }
   };
 
+  const handleDownload = () => {
+    const data = [
+      ['Statistik', 'Nilai'],
+      ['Total Siswa', stats.totalStudents],
+      ['Total Kelas', stats.totalClasses],
+      ['Rata-rata Skor', `${stats.avgScore}%`],
+      ['Engagement', '92%']
+    ];
+    
+    const csvContent = data.map(e => e.join(",")).join("\n");
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", `laporan_dashboard_${new Date().toLocaleDateString()}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   if (isPending) {
     return (
       <div className="max-w-4xl mx-auto py-12">
@@ -123,8 +143,8 @@ const TeacherDashboard = () => {
           <p className="text-slate-500 font-medium italic">Selamat datang kembali, mari bimbing siswa kita hari ini.</p>
         </div>
         <div className="flex gap-3">
-           <Button variant="outline" className="h-12 rounded-xl">Laporan Lengkap</Button>
-           <Button className="h-12 shadow-lg shadow-indigo-200 rounded-xl">Download Data</Button>
+           <Button variant="outline" onClick={() => alert('Laporan lengkap sedang disiapkan...')} className="h-12 rounded-xl">Laporan Lengkap</Button>
+           <Button onClick={handleDownload} className="h-12 shadow-lg shadow-indigo-200 rounded-xl">Download Data</Button>
         </div>
       </div>
 

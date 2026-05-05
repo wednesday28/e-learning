@@ -20,9 +20,31 @@ const results = []
 
 async function processRecursive(item, context) {
   // 1. Inherit or override context
-  const level = item.level || context.level || (item.category ? 'EXAM_PREPARATION' : null)
-  const grade = item.grade || context.grade
-  const subject = item.subject || item.category || context.subject
+  const knownSpecificLevels = ['POLICE_ACADEMIC', 'POLICE_PSYCHOLOGY', 'CPNS', 'Kedinasan', 'POLRI', 'UTBK-SNBT'];
+  let level = item.level || context.level;
+  if (!level && item.category) {
+    if (knownSpecificLevels.includes(item.category)) {
+      level = item.category;
+    } else {
+      level = 'EXAM_PREPARATION';
+    }
+  }
+
+  const grade = item.grade || context.grade;
+  
+  // Subject resolution
+  let subject = item.subject || context.subject;
+  if (!subject) {
+    if (item.category && !knownSpecificLevels.includes(item.category)) {
+      subject = item.category;
+    } else if (item.package_name) {
+      // Try to extract a clean subject from "Paket A - Pengetahuan Umum"
+      subject = item.package_name.split('-').pop()?.trim() || item.package_name;
+    } else {
+      subject = item.category || 'General';
+    }
+  }
+
   const topic = item.topic || item.package_name || context.topic
   const subtopic = item.subtopic || item.name || context.subtopic
 

@@ -90,10 +90,19 @@ const ManageQuizzes = () => {
       resetForm();
       fetchPackages();
       setView('list');
-    } catch (err: any) {
-      alert('Gagal membuat paket: ' + err.message);
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  const handleDeletePackage = async (pkgId: string) => {
+    if (!window.confirm('Hapus paket kuis ini?')) return;
+    try {
+      const { error } = await supabase.from('quiz_packages').delete().eq('id', pkgId);
+      if (error) throw error;
+      setPackages(prev => prev.filter(p => p.id !== pkgId));
+    } catch (err: any) {
+      alert('Gagal menghapus: ' + err.message);
     }
   };
 
@@ -146,9 +155,14 @@ const ManageQuizzes = () => {
                     <div className="flex items-center gap-2 text-[10px] font-black text-indigo-600 uppercase tracking-widest">
                       <Target className="w-4 h-4" /> Paket Kustom
                     </div>
-                    <Button variant="ghost" size="sm" className="text-slate-400 hover:text-rose-500">
-                      <Trash2 className="w-4 h-4" />
-                    </Button>
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      onClick={() => handleDeletePackage(pkg.id)}
+                      className="text-slate-300 hover:text-rose-500 hover:bg-rose-50 rounded-lg"
+                    >
+                       <Trash2 className="w-4 h-4" />
+                     </Button>
                   </div>
                 </div>
               </Card>
