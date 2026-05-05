@@ -50,6 +50,11 @@ const ClassDetails = () => {
   const [selectedSubjectId, setSelectedSubjectId] = useState('');
   const [selectedPackageId, setSelectedPackageId] = useState('');
   const [assignType, setAssignType] = useState<'subject' | 'package'>('subject');
+  const [materialSource, setMaterialSource] = useState<'upload' | 'bank'>('upload');
+  const [selectedModuleId, setSelectedModuleId] = useState('');
+  const [selectedLessonId, setSelectedLessonId] = useState('');
+  const [bankModules, setBankModules] = useState<any[]>([]);
+  const [bankLessons, setBankLessons] = useState<any[]>([]);
 
 
 
@@ -157,6 +162,16 @@ const ClassDetails = () => {
     setTeacherPackages(data || []);
   };
 
+  const fetchBankModules = async (subjectId: string) => {
+    const { data } = await supabase.from('modules').select('*').eq('subject_id', subjectId);
+    setBankModules(data || []);
+  };
+
+  const fetchBankLessons = async (moduleId: string) => {
+    const { data } = await supabase.from('lessons').select('*').eq('module_id', moduleId);
+    setBankLessons(data || []);
+  };
+
 
 
   const handlePostAnnouncement = async () => {
@@ -209,14 +224,27 @@ const ClassDetails = () => {
   };
 
   const handlePostMaterial = async () => {
-    if (!newMaterial.title) return;
-    const { error } = await supabase.from('class_materials').insert({
+    if (materialSource === 'upload' && !newMaterial.title) return;
+    if (materialSource === 'bank' && !selectedLessonId) return;
+
+    let payload: any = {
       class_id: id,
-      title: newMaterial.title,
-      content_type: newMaterial.content_type
-    });
+    };
+
+    if (materialSource === 'bank') {
+      const lesson = bankLessons.find(l => l.id === selectedLessonId);
+      payload.title = lesson?.title || 'Materi Pelajaran';
+      payload.content_type = 'lesson';
+      payload.file_url = selectedLessonId; // Link to lesson id
+    } else {
+      payload.title = newMaterial.title;
+      payload.content_type = newMaterial.content_type;
+    }
+
+    const { error } = await supabase.from('class_materials').insert(payload);
     if (!error) {
       setNewMaterial({ title: '', content_type: 'pdf' });
+      setSelectedLessonId('');
       setShowCreateModal(false);
       fetchMaterials();
     } else {
@@ -459,13 +487,19 @@ const ClassDetails = () => {
             {materials.map(m => (
               <Card key={m.id} className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 transition-all cursor-pointer">
                 <div className="w-16 h-16 bg-slate-50 rounded-3xl flex items-center justify-center text-indigo-600">
-                  <FileIcon className="w-8 h-8" />
+                  {m.content_type === 'lesson' ? <BookOpen className="w-8 h-8" /> : <FileIcon className="w-8 h-8" />}
                 </div>
                 <div>
                   <h4 className="font-black text-slate-900">{m.title}</h4>
-                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type || 'Dokumen'}</p>
+                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type === 'lesson' ? 'Materi Pelajaran' : m.content_type || 'Dokumen'}</p>
                 </div>
-                <Button variant="outline" className="w-full rounded-xl"><Download className="w-4 h-4 mr-2" /> Download</Button>
+                <Button 
+                  variant="outline" 
+                  onClick={() => m.content_type === 'lesson' ? navigate(`/learning?id=${m.file_url}`) : window.open(m.file_url)}
+                  className="w-full rounded-xl"
+                >
+                  {m.content_type === 'lesson' ? 'Buka Materi' : 'Download'}
+                </Button>
               </Card>
             ))}
             {materials.length === 0 && (
@@ -616,28 +650,89 @@ const ClassDetails = () => {
                     Posting Tugas
                   </Button>
                 </>
-              )}
-
-              {contentType === 'material' && (
+                          {contentType === 'material' && (
                 <>
-                  <div className="space-y-2">
-                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Judul Materi</label>
-                    <Input value={newMaterial.title} onChange={(e) => setNewMaterial({...newMaterial, title: e.target.value})} placeholder="Contoh: Modul Rumus Cepat Matematika" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Tipe Materi</label>
-                    <select 
-                      value={newMaterial.content_type} 
-                      onChange={(e) => setNewMaterial({...newMaterial, content_type: e.target.value})}
-                      className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                  <div className="flex gap-2 mb-6 p-1 bg-slate-100 rounded-xl">
+                    <button 
+                      onClick={() => setMaterialSource('upload')}
+                      className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg transition-all ${materialSource === 'upload' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}
                     >
-                      <option value="pdf">PDF / Dokumen</option>
-                      <option value="video">Link Video</option>
-                      <option value="link">Link Eksternal</option>
-                    </select>
+                      Upload File
+                    </button>
+                    <button 
+                      onClick={() => setMaterialSource('bank')}
+                      className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg transition-all ${materialSource === 'bank' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}
+                    >
+                      Bank Materi
+                    </button>
                   </div>
-                  <Button onClick={handlePostMaterial} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
-                    Posting Materi
+
+                  {materialSource === 'upload' ? (
+                    <>
+                      <div className="space-y-2">
+                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Judul Materi</label>
+                        <Input value={newMaterial.title} onChange={(e) => setNewMaterial({...newMaterial, title: e.target.value})} placeholder="Contoh: Modul Pembelajaran" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Tipe Konten</label>
+                        <select 
+                          value={newMaterial.content_type} 
+                          onChange={(e) => setNewMaterial({...newMaterial, content_type: e.target.value})}
+                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900 focus:ring-indigo-500 focus:bg-white"
+                        >
+                          <option value="pdf">PDF Dokumen</option>
+                          <option value="video">Video Materi</option>
+                          <option value="link">Link Eksternal</option>
+                        </select>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="space-y-2">
+                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Mata Pelajaran</label>
+                        <select 
+                          value={selectedSubjectId} 
+                          onChange={(e) => {
+                            setSelectedSubjectId(e.target.value);
+                            fetchBankModules(e.target.value);
+                          }}
+                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900"
+                        >
+                          <option value="">Pilih Mata Pelajaran...</option>
+                          {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
+                        </select>
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Modul</label>
+                        <select 
+                          disabled={!selectedSubjectId}
+                          value={selectedModuleId} 
+                          onChange={(e) => {
+                            setSelectedModuleId(e.target.value);
+                            fetchBankLessons(e.target.value);
+                          }}
+                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900"
+                        >
+                          <option value="">Pilih Modul...</option>
+                          {bankModules.map(m => <option key={m.id} value={m.id}>{m.title}</option>)}
+                        </select>
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pelajaran</label>
+                        <select 
+                          disabled={!selectedModuleId}
+                          value={selectedLessonId} 
+                          onChange={(e) => setSelectedLessonId(e.target.value)}
+                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900"
+                        >
+                          <option value="">Pilih Materi...</option>
+                          {bankLessons.map(l => <option key={l.id} value={l.id}>{l.title}</option>)}
+                        </select>
+                      </div>
+                    </>
+                  )}
+                  <Button onClick={handlePostMaterial} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100 mt-4">
+                    Simpan Materi
                   </Button>
                 </>
               )}
