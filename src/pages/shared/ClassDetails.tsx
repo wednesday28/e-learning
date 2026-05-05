@@ -17,7 +17,9 @@ import {
   X,
   FileIcon,
   ChevronRight,
-  Award
+  Award,
+  BookOpen,
+  Trash2
 } from 'lucide-react';
 
 
