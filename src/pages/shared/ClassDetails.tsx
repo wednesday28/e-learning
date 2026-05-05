@@ -650,7 +650,8 @@ const ClassDetails = () => {
                     Posting Tugas
                   </Button>
                 </>
-                          {contentType === 'material' && (
+              )}
+              {contentType === 'material' && (
                 <>
                   <div className="flex gap-2 mb-6 p-1 bg-slate-100 rounded-xl">
                     <button 
