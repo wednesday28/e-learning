@@ -1,13 +1,13 @@
 {
   "name": "E-Learning Platform",
   "short_name": "E-Learning",
-  "description": "Platform e-learning modern untuk semua jenjang pendidikan.",
-  "id": "com.elearning.app",
+  "description": "Platform e-learning modern untuk semua jenjang pendidikan dari SD hingga SMA.",
+  "id": "com.elearning.premium.app",
   "start_url": "/",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4f46e5",
-  "orientation": "portrait",
+  "orientation": "any",
   "scope": "/",
   "lang": "id",
   "prefer_related_applications": false,
@@ -37,5 +37,5 @@
       "purpose": "maskable"
     }
   ],
-  "categories": ["education", "books"]
+  "categories": ["education"]
 }
