@@ -66,12 +66,15 @@ const ClassDetails = () => {
       fetchMessages();
       fetchStudents();
       fetchClassQuizzes();
-      if (isTeacher) {
-        fetchAvailableSubjects();
-        fetchTeacherPackages();
-      }
     }
-  }, [id, profile]);
+  }, [id]);
+
+  useEffect(() => {
+    if (isTeacher && classData?.level_id) {
+      fetchAvailableSubjects();
+      fetchTeacherPackages();
+    }
+  }, [isTeacher, classData?.level_id]);
 
 
 
