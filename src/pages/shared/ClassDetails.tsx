@@ -470,10 +470,8 @@ const ClassDetails = () => {
 
 
   // ID Safety Check
-  const effectiveId = id || classData?.id;
-
-  if (!effectiveId || effectiveId === 'null') {
-    // Immediate escape to prevent "ID Kelas Tidak Valid" flickering
+  // ONLY redirect if it's explicitly the string 'null' or if we've finished loading and STILL have no ID
+  if (id === 'null' || (!isLoading && !id && !classData)) {
     window.location.replace('/dashboard');
     return null;
   }
