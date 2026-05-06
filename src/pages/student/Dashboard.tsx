@@ -59,7 +59,10 @@ const StudentDashboard = () => {
           `)
           .eq('student_id', profile.id);
         
-        setMyClasses(myClassesData?.map(item => item.classes) || []);
+        setMyClasses(
+          myClassesData?.map(item => item.classes)
+            .filter(cls => cls !== null && cls.id !== null) || []
+        );
       }
     } catch (err) {
       console.error('Error fetching dashboard data:', err);

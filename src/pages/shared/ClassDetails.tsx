@@ -469,10 +469,32 @@ const ClassDetails = () => {
 
 
 
-  if (isLoading) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
-  if (!classData) return <div className="p-20 text-center">Kelas tidak ditemukan.</div>;
+  if (!id || id === 'null') {
+    return (
+      <div className="max-w-md mx-auto py-20 text-center space-y-6">
+        <Card className="p-10 border-rose-100 bg-rose-50/30">
+          <div className="w-16 h-16 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+             <X className="w-8 h-8" />
+          </div>
+          <h2 className="text-xl font-black text-slate-900">ID Kelas Tidak Valid</h2>
+          <p className="text-sm text-slate-500 mt-2 font-medium">Sistem tidak menemukan ID kelas. Silakan kembali ke dashboard dan coba lagi.</p>
+          <Button onClick={() => navigate('/dashboard')} className="w-full mt-6">Kembali ke Dashboard</Button>
+        </Card>
+      </div>
+    );
+  }
 
-  if (!classData) return <div className="p-20 text-center">Kelas tidak ditemukan.</div>;
+  if (isLoading) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
+
+  if (!classData) return (
+    <div className="max-w-md mx-auto py-20 text-center space-y-6">
+      <Card className="p-10 border-slate-200">
+        <h2 className="text-xl font-black text-slate-900">Kelas Tidak Ditemukan</h2>
+        <p className="text-sm text-slate-500 mt-2 font-medium">Kelas mungkin telah dihapus atau Anda tidak memiliki akses.</p>
+        <Button onClick={() => navigate('/dashboard')} className="w-full mt-6">Ke Dashboard</Button>
+      </Card>
+    </div>
+  );
 
   const tabs = [
 
