@@ -75,7 +75,8 @@ const ClassDetails = () => {
     questionCount: 5,
     duration: 15,
     materialId: '',
-    title: '',
+    materialTitle: '',
+    quizTitle: '',
     fileUrl: '',
     file: null as File | null
   });
@@ -255,7 +256,7 @@ const ClassDetails = () => {
           fileUrl,
           fileName: file?.name || fileUrl.split('/').pop() || 'document.pdf',
           fileType: file?.type || (fileUrl.toLowerCase().includes('.pdf') ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'),
-          topic: title,
+          topic: title, // This is the Quiz Title
           questionCount: count
         })
       });
@@ -278,7 +279,10 @@ const ClassDetails = () => {
 
       // 2. Save Questions & Choices
       const questionIds = [];
-      const defaultSubjectId = availableSubjects[0]?.id || null;
+      
+      // Fetch material details to get subject_id
+      const { data: material } = await supabase.from('class_materials').select('subject_id').eq('id', materialId).single();
+      const subjectId = material?.subject_id || availableSubjects[0]?.id || null;
 
       for (const q of questions) {
          const { data: qData, error: qError } = await supabase
@@ -287,7 +291,7 @@ const ClassDetails = () => {
              question_text: q.question_text,
              difficulty_level: q.difficulty_level || 'medium',
              type: 'multiple_choice',
-             subject_id: defaultSubjectId
+             subject_id: subjectId
            })
            .select()
            .single();
@@ -307,9 +311,10 @@ const ClassDetails = () => {
         // 3. Create Quiz Package
         const { data: pkg, error: pkgError } = await supabase.from('quiz_packages').insert({
           teacher_id: profile?.id,
-          title: `AI Quiz: ${title}`,
-          description: `Dibuat otomatis dari materi "${title}".`,
+          title: title, // Use the user-defined Quiz Title
+          description: `Dibuat otomatis dari materi "${aiSettings.materialTitle}".`,
           level_id: classData?.level_id || null,
+          subject_id: subjectId,
           duration: duration // In minutes
         }).select().single();
 
@@ -408,6 +413,7 @@ const ClassDetails = () => {
         payload.title = newMaterial.title;
         payload.content_type = newMaterial.content_type;
         payload.file_url = finalFileUrl;
+        payload.subject_id = selectedSubjectId || null;
         if (uploadFile) {
            payload.file_name = uploadFile.name;
            payload.file_size = uploadFile.size;
@@ -793,7 +799,8 @@ const ClassDetails = () => {
                             questionCount: 5,
                             duration: 15,
                             materialId: m.id,
-                            title: m.title,
+                            materialTitle: m.title,
+                            quizTitle: `Kuis ${m.title}`,
                             fileUrl: finalUrl,
                             file: null
                           });
@@ -901,11 +908,20 @@ const ClassDetails = () => {
                 </div>
                 <div>
                    <h2 className="text-xl font-black text-slate-900">Konfigurasi AI</h2>
-                   <p className="text-xs font-bold text-slate-400">Atur kuis untuk materi: {aiSettings.title}</p>
+                   <p className="text-xs font-bold text-slate-400">Referensi: {aiSettings.materialTitle}</p>
                 </div>
               </div>
 
               <div className="space-y-6">
+                <div className="space-y-3">
+                   <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Judul Kuis</label>
+                   <Input 
+                     value={aiSettings.quizTitle}
+                     onChange={(e) => setAiSettings({...aiSettings, quizTitle: e.target.value})}
+                     placeholder="Contoh: Kuis Harian Matematika"
+                     className="h-12 rounded-xl bg-slate-50 border-none px-4 font-bold outline-none focus:ring-2 focus:ring-indigo-500"
+                   />
+                </div>
                  <div className="space-y-3">
                     <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Jumlah Soal</label>
                     <div className="flex gap-2">
@@ -939,11 +955,11 @@ const ClassDetails = () => {
                  <div className="pt-4 flex gap-3">
                     <Button variant="ghost" onClick={() => setShowAiSettingsModal(false)} className="flex-1 h-14 rounded-2xl font-black">Batal</Button>
                     <Button 
-                      onClick={() => generateQuizFromMaterial(aiSettings.materialId, aiSettings.title, aiSettings.fileUrl, aiSettings.file, aiSettings.questionCount, aiSettings.duration)}
-                      className="flex-1 h-14 rounded-2xl bg-indigo-600 shadow-xl shadow-indigo-100 font-black"
-                    >
-                      Genereate Kuis
-                    </Button>
+                       onClick={() => generateQuizFromMaterial(aiSettings.materialId, aiSettings.quizTitle, aiSettings.fileUrl, aiSettings.file, aiSettings.questionCount, aiSettings.duration)}
+                       className="flex-1 h-14 rounded-2xl bg-indigo-600 shadow-xl shadow-indigo-100 font-black"
+                     >
+                       Generate Kuis
+                     </Button>
                  </div>
               </div>
            </Card>
@@ -1002,6 +1018,17 @@ const ClassDetails = () => {
 
                   {materialSource === 'upload' ? (
                     <div className="space-y-4">
+                       <div className="space-y-2">
+                          <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Pilih Mata Pelajaran</label>
+                          <select 
+                            value={selectedSubjectId} 
+                            onChange={(e) => setSelectedSubjectId(e.target.value)} 
+                            className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold outline-none focus:ring-2 focus:ring-indigo-500"
+                          >
+                            <option value="">-- Pilih Mata Pelajaran --</option>
+                            {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
+                          </select>
+                       </div>
                        <Input value={newMaterial.title} onChange={(e) => setNewMaterial({...newMaterial, title: e.target.value})} placeholder="Judul Materi" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
                        <select value={newMaterial.content_type} onChange={(e) => setNewMaterial({...newMaterial, content_type: e.target.value})} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
                           <option value="pdf">PDF Dokumen</option>

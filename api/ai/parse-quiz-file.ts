@@ -64,29 +64,32 @@ export default async function handler(
     }
 
     let prompt = '';
-    const formatInstruction = `Format wajib JSON array murni tanpa markdown:
+    const formatInstruction = `Format wajib JSON array murni tanpa markdown. 
+      PENTING: Harus berupa pilihan ganda dengan TEPAT 4 pilihan (A, B, C, D).
       [
         {
           "question_text": "...",
           "difficulty_level": "medium",
           "choices": [
-            {"text": "...", "is_correct": true},
-            {"text": "...", "is_correct": false},
-            {"text": "...", "is_correct": false},
-            {"text": "...", "is_correct": false}
+            {"text": "Jawaban A", "is_correct": true},
+            {"text": "Jawaban B", "is_correct": false},
+            {"text": "Jawaban C", "is_correct": false},
+            {"text": "Jawaban D", "is_correct": false}
           ]
         }
       ]`;
 
     if (extractedText && extractedText.trim().length > 20) {
-      prompt = `Buatkan ${questionCount} soal pilihan ganda dari teks berikut. 
+      prompt = `Buatkan ${questionCount} soal pilihan ganda (A/B/C/D) berdasarkan teks berikut. 
+      Judul Kuis: "${topic}"
+      
       ${formatInstruction}
 
       TEKS MATERI:
       ${extractedText.substring(0, 7000)}`;
     } else if (topic) {
       console.log('Falling back to topic-based generation');
-      prompt = `Buatkan ${questionCount} soal kuis pilihan ganda tentang topik: "${topic}".
+      prompt = `Buatkan ${questionCount} soal kuis pilihan ganda (A/B/C/D) tentang topik: "${topic}".
       ${formatInstruction}`;
     } else {
       return res.status(400).json({ 
