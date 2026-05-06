@@ -433,7 +433,6 @@ const ClassDetails = () => {
       setSelectedLessonId('');
       setUploadFile(null);
       setUploadUrl('');
-      setShowCreateModal(false);
       fetchMaterials();
 
       // 4. Trigger AI Settings if auto-gen enabled
@@ -442,7 +441,8 @@ const ClassDetails = () => {
            questionCount: 5,
            duration: 15,
            materialId: newMaterialRecord.id,
-           title: newMaterial.title,
+           materialTitle: newMaterial.title,
+           quizTitle: `Kuis ${newMaterial.title}`,
            fileUrl: finalFileUrl,
            file: uploadFile
          });
