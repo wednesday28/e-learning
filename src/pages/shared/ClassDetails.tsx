@@ -19,7 +19,8 @@ import {
   ChevronRight,
   Award,
   BookOpen,
-  Trash2
+  Trash2,
+  CheckCircle2
 } from 'lucide-react';
 
 
