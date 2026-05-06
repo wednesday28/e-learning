@@ -558,15 +558,15 @@ const ClassDetails = () => {
       </div>
 
       {/* Tabs */}
-      <div className="flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-visible gap-2 pb-2 scrollbar-hide">
+      <div className="flex flex-wrap gap-2 pb-2">
         {tabs.map(tab => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`flex items-center gap-2 px-6 py-3 rounded-2xl font-bold transition-all whitespace-nowrap ${
+            className={`flex items-center gap-2 px-4 md:px-6 py-2.5 md:py-3 rounded-xl md:rounded-2xl font-bold transition-all whitespace-nowrap text-sm ${
               activeTab === tab.id 
               ? 'bg-indigo-600 text-white shadow-xl shadow-indigo-100' 
-              : 'bg-white text-slate-500 hover:bg-slate-50'
+              : 'bg-white text-slate-500 hover:bg-slate-50 border border-slate-100'
             }`}
           >
             <tab.icon className="w-4 h-4" />
