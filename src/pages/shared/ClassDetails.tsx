@@ -473,31 +473,12 @@ const ClassDetails = () => {
   const effectiveId = id || classData?.id;
 
   if (!effectiveId || effectiveId === 'null') {
-    // Immediate escape to prevent "ID Kelas Tidak Valid" flickering if possible
+    // Immediate escape to prevent "ID Kelas Tidak Valid" flickering
     window.location.replace('/dashboard');
     return null;
   }
 
   if (isLoading && !classData) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
-    // Only show error if we really don't have an ID and we're not loading
-    if (!isLoading) {
-      return (
-        <div className="max-w-md mx-auto py-20 text-center space-y-6">
-          <Card className="p-10 border-rose-100 bg-rose-50/30">
-            <div className="w-16 h-16 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-               <X className="w-8 h-8" />
-            </div>
-            <h2 className="text-xl font-black text-slate-900">ID Kelas Tidak Valid</h2>
-            <p className="text-sm text-slate-500 mt-2 font-medium">Sistem kehilangan jejak ID kelas. Silakan kembali ke dashboard.</p>
-            <Button onClick={() => navigate('/dashboard')} className="w-full mt-6">Kembali ke Dashboard</Button>
-          </Card>
-        </div>
-      );
-    }
-    return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
-  }
-
-  if (isLoading) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
 
   if (!classData) return (
     <div className="max-w-md mx-auto py-20 text-center space-y-6">
