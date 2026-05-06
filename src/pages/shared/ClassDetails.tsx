@@ -676,13 +676,25 @@ const ClassDetails = () => {
                   <h4 className="font-black text-slate-900">{m.title}</h4>
                   <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type === 'lesson' ? 'Materi Pelajaran' : m.content_type || 'Dokumen'}</p>
                 </div>
-                <Button 
-                  variant="outline" 
-                  onClick={() => m.content_type === 'lesson' ? navigate(`/learning?id=${m.file_url}`) : window.open(m.file_url)}
-                  className="w-full rounded-xl"
-                >
-                  {m.content_type === 'lesson' ? 'Buka Materi' : 'Download'}
-                </Button>
+                {m.content_type === 'lesson' ? (
+                  <Button 
+                    variant="outline" 
+                    onClick={() => navigate(`/learning?id=${m.file_url}`)}
+                    className="w-full rounded-xl"
+                  >
+                    Buka Materi
+                  </Button>
+                ) : (
+                  <a 
+                    href={m.file_url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    download
+                    className="w-full inline-flex items-center justify-center h-10 px-4 py-2 rounded-xl border border-slate-200 bg-white text-sm font-bold text-slate-700 hover:bg-slate-50 transition-all no-underline"
+                  >
+                    Download
+                  </a>
+                )}
               </Card>
             ))}
 
