@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
 import { Card, Button, Spinner, Input } from '../../components/ui';
-import { PlusCircle, Search, Filter, Users, GraduationCap, School, X, Trash2, Edit, AlertCircle } from 'lucide-react';
+import { useAuthStore } from '../../store/useAuthStore';
+import { PlusCircle, Search, Filter, Users, GraduationCap, School, X, Trash2, Edit, AlertCircle, Share2 } from 'lucide-react';
 
 const ManageClasses = () => {
+  const { profile: teacherProfile } = useAuthStore();
   const navigate = useNavigate();
 
   const [classes, setClasses] = useState<any[]>([]);
@@ -150,6 +152,10 @@ const ManageClasses = () => {
     } finally {
       setIsActionLoading(false);
     }
+  const handleShareClass = (joinCode: string) => {
+    const shareLink = `${window.location.origin}/join/${joinCode}`;
+    navigator.clipboard.writeText(shareLink);
+    alert(`Link pendaftaran berhasil disalin!\n${shareLink}\n\nBagikan link ini kepada siswa.`);
   };
 
   const handleUpdateClass = async () => {
@@ -239,6 +245,7 @@ const ManageClasses = () => {
     setIsLoading(true);
     try {
       // 1. Find user by email
+      // 1. Find user by email
       const { data: profile, error: profileError } = await supabase
         .from('profiles')
         .select('id')
@@ -246,7 +253,26 @@ const ManageClasses = () => {
         .single();
 
       if (profileError || !profile) {
-        throw new Error('Siswa dengan email tersebut tidak ditemukan. Pastikan siswa sudah mendaftar akun.');
+        // Siswa belum terdaftar, masukkan ke pending_enrollments
+        const { error: pendingError } = await supabase
+          .from('pending_enrollments')
+          .insert({
+            email: enrollEmail,
+            class_id: enrollClassId,
+            teacher_id: teacherProfile?.id
+          });
+
+        if (pendingError) {
+          if (pendingError.code === '23505') throw new Error('Undangan untuk email ini di kelas tersebut sudah ada.');
+          throw pendingError;
+        }
+
+        alert('Siswa belum memiliki akun. Undangan telah disimpan dan siswa akan otomatis masuk ke kelas saat mendaftar nanti.');
+        setShowEnrollModal(false);
+        setEnrollEmail('');
+        setEnrollClassId('');
+        fetchData();
+        return;
       }
 
       // 2. Check if already enrolled
@@ -366,6 +392,15 @@ const ManageClasses = () => {
                   <p className="text-sm font-black text-slate-900">{cls.class_students?.[0]?.count || 0} Siswa</p>
                   <p className="text-[10px] font-bold text-emerald-500 uppercase tracking-widest">Aktif</p>
                 </div>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="rounded-xl hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
+                  onClick={() => handleShareClass(cls.join_code)}
+                  title="Bagikan Link"
+                >
+                  <Share2 className="w-5 h-5" />
+                </Button>
                 <Button 
                   variant="ghost" 
                   size="icon" 

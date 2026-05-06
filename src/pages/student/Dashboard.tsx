@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
 import { useAuthStore } from '../../store/useAuthStore';
 import { Card, Button, Progress, Spinner } from '../../components/ui';
-import { BookOpen, Trophy, Clock, Star, Play, ChevronRight, GraduationCap, School, Trash2 } from 'lucide-react';
+import { BookOpen, Trophy, Clock, Star, Play, ChevronRight, GraduationCap, School, Trash2, PlusCircle } from 'lucide-react';
 
 const StudentDashboard = () => {
   const { profile } = useAuthStore();
@@ -169,8 +169,8 @@ const StudentDashboard = () => {
               <h2 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-3">
                 <School className="w-8 h-8 text-indigo-600" /> Kelas Saya
               </h2>
-              <Button onClick={() => setShowJoinModal(true)} size="sm" className="h-10 px-6 rounded-xl shadow-lg shadow-indigo-200">
-                Gabung Kelas
+              <Button onClick={() => setShowJoinModal(true)} variant="outline" className="h-10 border-indigo-200 text-indigo-600 hover:bg-indigo-50 rounded-xl px-4 text-xs font-black uppercase tracking-widest flex items-center gap-2">
+                <PlusCircle className="w-4 h-4" /> Masukkan Kode Kelas
               </Button>
             </div>
             
@@ -210,10 +210,7 @@ const StudentDashboard = () => {
               <Card className="p-10 text-center border-2 border-dashed border-slate-200 bg-slate-50 rounded-[32px]">
                 <School className="w-12 h-12 text-slate-300 mx-auto mb-4" />
                 <h3 className="font-black text-slate-900 mb-2">Belum Ada Kelas</h3>
-                <p className="text-sm font-medium text-slate-500 mb-6">Kamu belum bergabung dengan kelas manapun.</p>
-                <Button onClick={() => setShowJoinModal(true)} variant="outline" className="h-12 border-indigo-200 text-indigo-600">
-                  Masukkan Kode Kelas
-                </Button>
+                <p className="text-sm font-medium text-slate-500">Kamu belum bergabung dengan kelas manapun. Klik "Masukkan Kode Kelas" di atas.</p>
               </Card>
             )}
           </section>

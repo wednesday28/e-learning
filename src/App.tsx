@@ -36,6 +36,7 @@ const AuditLogs = lazy(() => import('./pages/super-admin/AuditLogs'))
 const UploadCurriculum = lazy(() => import('./pages/super-admin/UploadCurriculum'))
 const Profile = lazy(() => import('./pages/shared/Profile'))
 const ClassDetails = lazy(() => import('./pages/shared/ClassDetails'))
+const JoinClass = lazy(() => import('./pages/shared/JoinClass'))
 
 
 const ProtectedRoute = ({ children, allowedRoles }: { children: React.ReactNode; allowedRoles?: string[] }) => {
@@ -77,6 +78,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/auth/callback" element={<AuthCallback />} />
+          <Route path="/join/:code" element={<JoinClass />} />
           <Route path="/role-selection" element={<ProtectedRoute><RoleSelection /></ProtectedRoute>} />
 
           {/* Student */}
