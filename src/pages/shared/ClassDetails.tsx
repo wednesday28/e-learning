@@ -236,61 +236,25 @@ const ClassDetails = () => {
   const generateQuizFromMaterial = async (materialId: string, title: string, fileUrl: string, file: File | null) => {
     setGeneratingMaterialId(materialId);
     try {
-      let questions = [];
+      // Call the server-side API for ALL generation (parsing + fallback)
+      const res = await fetch('/api/ai/parse-quiz-file', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fileUrl,
+          fileName: file?.name || fileUrl.split('/').pop() || 'document.pdf',
+          fileType: file?.type || (fileUrl.toLowerCase().includes('.pdf') ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'),
+          topic: title // Used as fallback if parsing fails
+        })
+      });
 
-      // If it's a parseable file, use the parsing API
-      const isParseable = (file && (file.type === 'application/pdf' || file.name.endsWith('.docx') || file.name.endsWith('.pdf'))) || 
-                         (fileUrl && (fileUrl.toLowerCase().includes('.pdf') || fileUrl.toLowerCase().includes('.docx')));
-
-      if (isParseable) {
-        try {
-          const res = await fetch('/api/ai/parse-quiz-file', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              fileUrl,
-              fileName: file?.name || fileUrl.split('/').pop() || 'document.pdf',
-              fileType: file?.type || (fileUrl.toLowerCase().includes('.pdf') ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document')
-            })
-          });
-          const data = await res.json();
-          if (res.ok && data.questions) {
-            questions = data.questions;
-          } else {
-            console.warn('Parsing API failed or returned no questions, falling back to title-based gen');
-          }
-        } catch (parseErr) {
-          console.error('Parsing API Error:', parseErr);
-        }
+      const data = await res.json();
+      
+      if (!res.ok) {
+        throw new Error(data.message || 'Gagal generate soal kuis');
       }
 
-      // Fallback to title-based generation if no questions extracted
-      if (questions.length === 0) {
-        const groqApiKey = import.meta.env.VITE_GROQ_API_KEY;
-        if (!groqApiKey) {
-          alert('Error: API Key AI tidak ditemukan. Silakan hubungi admin.');
-          return;
-        }
-
-        const prompt = `Buatkan 5 soal pilihan ganda (A, B, C, D) dalam bahasa Indonesia tentang "${title}".
-        Format wajib JSON array murni tanpa markdown:
-        [{"question_text": "...", "choices": [{"text": "...", "is_correct": true}, ...]}]`;
-
-        const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-          method: 'POST',
-          headers: { 'Authorization': `Bearer ${groqApiKey}`, 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: 'llama-3.3-70b-versatile',
-            messages: [{ role: 'user', content: prompt }],
-            temperature: 0.7
-          })
-        });
-        const data = await res.json();
-        if (data.choices && data.choices[0]) {
-          const content = data.choices[0].message.content.replace(/```json/g, '').replace(/```/g, '').trim();
-          questions = JSON.parse(content);
-        }
-      }
+      const questions = data.questions || [];
       
       if (questions.length === 0) {
         alert('AI tidak dapat menghasilkan soal untuk materi ini. Coba lagi nanti.');
@@ -298,7 +262,6 @@ const ClassDetails = () => {
       }
 
       const questionIds = [];
-      // Use the first subject of the class as default
       const defaultSubjectId = availableSubjects[0]?.id || null;
 
       for (const q of questions) {
@@ -331,14 +294,14 @@ const ClassDetails = () => {
           .eq('id', materialId);
         
         alert(`Sukses! AI berhasil membuat ${questionIds.length} soal kuis dari materi "${title}".`);
-        fetchMaterials(); // Refresh to update UI if needed
+        fetchMaterials();
       } else {
         alert('Gagal menyimpan soal ke database.');
       }
 
     } catch (err: any) {
       console.error('AI Generation Error:', err);
-      alert('Terjadi kesalahan saat membuat kuis: ' + err.message);
+      alert('Kesalahan: ' + err.message);
     } finally {
       setGeneratingMaterialId(null);
     }
@@ -378,7 +341,7 @@ const ClassDetails = () => {
 
         if (uploadError) {
           console.error('Storage Upload Error:', uploadError);
-          throw new Error(`Gagal mengunggah file ke storage: ${uploadError.message}. Pastikan bucket 'class-materials' tersedia.`);
+          throw new Error(`Gagal mengunggah file ke storage: ${uploadError.message}.`);
         }
 
         const { data: publicUrlData } = supabase.storage
@@ -415,8 +378,7 @@ const ClassDetails = () => {
         .single();
 
       if (insertError) {
-        console.error('Database Insert Error:', insertError);
-        throw new Error(`Gagal menyimpan data materi ke database: ${insertError.message}.`);
+        throw new Error(`Gagal menyimpan data materi: ${insertError.message}.`);
       }
 
       // 3. Reset state & refresh
