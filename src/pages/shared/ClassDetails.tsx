@@ -239,14 +239,17 @@ const ClassDetails = () => {
       let questions = [];
 
       // If it's a parseable file, use the parsing API
-      if (file && (file.type === 'application/pdf' || file.name.endsWith('.docx') || file.name.endsWith('.pdf'))) {
+      const isParseable = (file && (file.type === 'application/pdf' || file.name.endsWith('.docx') || file.name.endsWith('.pdf'))) || 
+                         (fileUrl && (fileUrl.toLowerCase().endsWith('.pdf') || fileUrl.toLowerCase().endsWith('.docx')));
+
+      if (isParseable) {
         const res = await fetch('/api/ai/parse-quiz-file', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             fileUrl,
-            fileName: file.name,
-            fileType: file.type
+            fileName: file?.name || fileUrl.split('/').pop(),
+            fileType: file?.type || (fileUrl.toLowerCase().endsWith('.pdf') ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document')
           })
         });
         const data = await res.json();
@@ -654,19 +657,36 @@ const ClassDetails = () => {
               const finalUrl = getFullUrl(m.file_url);
 
               return (
-                <Card 
-                  key={m.id} 
-                  onClick={() => isLesson ? navigate(`/learning?id=${m.file_url}`) : window.open(finalUrl, '_blank')}
-                  className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group"
-                >
-                  <div className="w-16 h-16 bg-slate-50 group-hover:bg-white rounded-3xl flex items-center justify-center text-indigo-600 shadow-sm transition-all">
-                    {isLesson ? <BookOpen className="w-8 h-8" /> : <FileIcon className="w-8 h-8" />}
-                  </div>
-                  <div>
-                    <h4 className="font-black text-slate-900">{m.title}</h4>
-                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type || 'Dokumen'}</p>
-                  </div>
-                </Card>
+                <div key={m.id} className="relative group">
+                  <Card 
+                    onClick={() => isLesson ? navigate(`/learning?id=${m.file_url}`) : window.open(finalUrl, '_blank')}
+                    className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group h-full"
+                  >
+                    <div className="w-16 h-16 bg-slate-50 group-hover:bg-white rounded-3xl flex items-center justify-center text-indigo-600 shadow-sm transition-all">
+                      {isLesson ? <BookOpen className="w-8 h-8" /> : <FileIcon className="w-8 h-8" />}
+                    </div>
+                    <div>
+                      <h4 className="font-black text-slate-900">{m.title}</h4>
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type || 'Dokumen'}</p>
+                    </div>
+                  </Card>
+                  
+                  {isTeacher && !isLesson && (
+                    <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <Button 
+                        size="sm" 
+                        variant="ghost"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          generateQuizFromMaterial(m.id, m.title, finalUrl, null);
+                        }}
+                        className="bg-white/80 backdrop-blur-sm border border-indigo-100 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-xl text-[10px] font-black py-1 px-3 shadow-sm"
+                      >
+                        <Sparkles className="w-3 h-3 mr-1" /> Buat Kuis
+                      </Button>
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>
