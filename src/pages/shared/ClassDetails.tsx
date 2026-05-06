@@ -248,7 +248,15 @@ const ClassDetails = () => {
         })
       });
 
-      const data = await res.json();
+      const contentType = res.headers.get('content-type');
+      let data;
+      if (contentType && contentType.includes('application/json')) {
+        data = await res.json();
+      } else {
+        const text = await res.text();
+        console.error('Non-JSON Response:', text);
+        throw new Error('Respon server tidak valid (Bukan JSON). Pastikan GROQ_API_KEY sudah diset di Vercel.');
+      }
       
       if (!res.ok) {
         throw new Error(data.message || 'Gagal generate soal kuis');

@@ -2,12 +2,20 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import mammoth from 'mammoth';
 
 // Use require for pdf-parse to avoid ESM default export issues in Vercel
-const pdf = require('pdf-parse');
+let pdf: any;
+try {
+  pdf = require('pdf-parse');
+} catch (e) {
+  console.error('Failed to load pdf-parse:', e);
+}
 
 export default async function handler(
   req: VercelRequest,
   res: VercelResponse
 ) {
+  // Ensure we always return JSON
+  res.setHeader('Content-Type', 'application/json');
+
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
   }
@@ -16,7 +24,7 @@ export default async function handler(
   const groqApiKey = process.env.VITE_GROQ_API_KEY || process.env.GROQ_API_KEY;
 
   if (!groqApiKey) {
-    return res.status(500).json({ message: 'API Key AI (GROQ_API_KEY) tidak ditemukan di environment server.' });
+    return res.status(500).json({ message: 'API Key AI (GROQ_API_KEY) tidak ditemukan di environment server. Pastikan sudah ditambahkan di Vercel Dashboard.' });
   }
 
   try {
@@ -25,29 +33,38 @@ export default async function handler(
     // 1. If fileUrl is provided, try to parse it
     if (fileUrl) {
       try {
+        console.log('Fetching file from URL:', fileUrl);
         const response = await fetch(fileUrl);
+        if (!response.ok) {
+           throw new Error(`Gagal mendownload file: ${response.statusText}`);
+        }
+        
         const buffer = Buffer.from(await response.arrayBuffer());
+        const lowerName = fileName?.toLowerCase() || '';
 
-        if (fileType === 'application/pdf' || fileName?.toLowerCase().endsWith('.pdf')) {
+        if (fileType === 'application/pdf' || lowerName.endsWith('.pdf')) {
+          if (!pdf) throw new Error('Library pdf-parse tidak termuat dengan benar.');
           const data = await pdf(buffer);
           extractedText = data.text;
         } else if (
           fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || 
-          fileName?.toLowerCase().endsWith('.docx')
+          lowerName.endsWith('.docx')
         ) {
           const result = await mammoth.extractRawText({ buffer });
           extractedText = result.value;
-        } else if (fileType === 'text/plain' || fileName?.toLowerCase().endsWith('.txt')) {
+        } else if (fileType === 'text/plain' || lowerName.endsWith('.txt')) {
           extractedText = buffer.toString('utf-8');
         }
-      } catch (err) {
-        console.warn('Failed to parse file, will fallback to topic-based generation', err);
+      } catch (err: any) {
+        console.warn('File parsing failed:', err.message);
+        // We continue to topic-based generation if parsing fails
       }
     }
 
     // 2. Prepare Prompt
     let prompt = '';
-    if (extractedText && extractedText.trim().length > 100) {
+    if (extractedText && extractedText.trim().length > 50) {
+      console.log('Extracted text length:', extractedText.length);
       prompt = `Analisis teks berikut dan ekstrak pertanyaan pilihan ganda untuk kuis. 
       Buat minimal 5-10 soal jika memungkinkan.
       Format wajib JSON array murni tanpa markdown:
@@ -68,6 +85,7 @@ export default async function handler(
       TEKS MATERI:
       ${extractedText.substring(0, 6000)}`;
     } else if (topic) {
+      console.log('Using topic for generation:', topic);
       prompt = `Buatkan 5 soal kuis pilihan ganda tentang topik: "${topic}".
       Format wajib JSON array murni tanpa markdown:
       [
@@ -84,10 +102,10 @@ export default async function handler(
         }
       ]`;
     } else {
-      return res.status(400).json({ message: 'Tidak ada teks yang diekstrak dan tidak ada topik yang diberikan.' });
+      return res.status(400).json({ message: 'Tidak ada teks yang dapat diekstrak dan tidak ada topik kuis yang diberikan.' });
     }
 
-    // 3. Call AI
+    // 3. Call AI (Groq)
     const aiRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -103,17 +121,28 @@ export default async function handler(
 
     const aiData = await aiRes.json();
     if (!aiRes.ok) {
-       throw new Error(aiData.error?.message || 'Gagal memanggil AI');
+       console.error('Groq AI Error:', aiData);
+       throw new Error(aiData.error?.message || 'Gagal mendapatkan respon dari AI Groq.');
     }
 
-    const content = aiData.choices[0].message.content;
-    const cleanedContent = content.replace(/```json/g, '').replace(/```/g, '').trim();
-    const questions = JSON.parse(cleanedContent);
+    const content = aiData.choices[0]?.message?.content;
+    if (!content) {
+      throw new Error('AI tidak memberikan jawaban yang valid.');
+    }
 
-    res.status(200).json({ questions });
+    const cleanedContent = content.replace(/```json/g, '').replace(/```/g, '').trim();
+    let questions;
+    try {
+      questions = JSON.parse(cleanedContent);
+    } catch (parseErr) {
+      console.error('JSON Parse Error from AI:', cleanedContent);
+      throw new Error('Hasil AI bukan format JSON yang valid.');
+    }
+
+    return res.status(200).json({ questions });
 
   } catch (error: any) {
-    console.error('AI Quiz Gen Error:', error);
-    res.status(500).json({ message: 'Error: ' + error.message });
+    console.error('Final API Error:', error);
+    return res.status(500).json({ message: 'Terjadi kesalahan internal: ' + error.message });
   }
 }
