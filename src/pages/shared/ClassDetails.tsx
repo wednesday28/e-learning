@@ -679,7 +679,14 @@ const ClassDetails = () => {
                 {m.content_type === 'lesson' ? (
                   <Button 
                     variant="outline" 
-                    onClick={() => navigate(`/learning?id=${m.file_url}`)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      try {
+                        navigate(`/learning?id=${m.file_url}`);
+                      } catch (err) {
+                        window.location.href = `/learning?id=${m.file_url}`;
+                      }
+                    }}
                     className="w-full rounded-xl"
                   >
                     Buka Materi
@@ -689,6 +696,7 @@ const ClassDetails = () => {
                     href={m.file_url} 
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     download
                     className="w-full inline-flex items-center justify-center h-10 px-4 py-2 rounded-xl border border-slate-200 bg-white text-sm font-bold text-slate-700 hover:bg-slate-50 transition-all no-underline"
                   >
@@ -712,7 +720,14 @@ const ClassDetails = () => {
                         {mod.lessons?.map((les: any) => (
                           <div 
                             key={les.id} 
-                            onClick={() => navigate(`/learning?id=${les.id}`)}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              try {
+                                navigate(`/learning?id=${les.id}`);
+                              } catch (err) {
+                                window.location.href = `/learning?id=${les.id}`;
+                              }
+                            }}
                             className="flex items-center justify-between p-3 bg-white rounded-xl hover:shadow-md transition-all cursor-pointer group"
                           >
                             <span className="text-sm font-bold text-slate-700 group-hover:text-indigo-600">{les.title}</span>
