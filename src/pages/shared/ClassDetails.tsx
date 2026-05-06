@@ -21,8 +21,7 @@ import {
   BookOpen,
   Trash2,
   CheckCircle2,
-  Sparkles,
-  Target
+  Sparkles
 } from 'lucide-react';
 
 
