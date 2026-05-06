@@ -153,9 +153,39 @@ export const Header = ({ onMenuClick }: { onMenuClick: () => void }) => {
 // ─── DashboardLayout ──────────────────────────────────────────────────────────
 export const DashboardLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const { profile } = useAuthStore();
+  const role = profile?.role || 'student';
+
+  const menuItems: any = {
+    student: [
+      { name: 'Dashboard', path: '/dashboard', icon: Home },
+      { name: 'Learning', path: '/learning', icon: BookOpen },
+      { name: 'Quiz', path: '/quiz', icon: Target },
+      { name: 'Tryout', path: '/tryout', icon: Trophy },
+    ],
+    teacher: [
+      { name: 'Dashboard', path: '/teacher', icon: LayoutDashboard },
+      { name: 'Classes', path: '/teacher/classes', icon: Users },
+      { name: 'Quizzes', path: '/teacher/quizzes', icon: BookOpen },
+    ],
+    admin: [
+      { name: 'Dashboard', path: '/admin', icon: Shield },
+      { name: 'Upload JSON', path: '/admin/upload', icon: Database },
+      { name: 'Users', path: '/admin/users', icon: Users },
+    ],
+    super_admin: [
+      { name: 'Overview', path: '/super-admin', icon: Shield },
+      { name: 'Upload Curriculum', path: '/super-admin/upload', icon: Upload },
+      { name: 'System', path: '/super-admin/settings', icon: Settings },
+      { name: 'Audit Logs', path: '/super-admin/audit', icon: Activity },
+      { name: 'User Control', path: '/super-admin/users', icon: Users },
+    ]
+  };
+
+  const currentMenu = menuItems[role] || menuItems.student;
 
   return (
-    <div className="min-h-screen bg-slate-50 flex">
+    <div className="min-h-screen bg-slate-50 flex pb-16 lg:pb-0"> {/* Added pb-16 for mobile bottom nav */}
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       <div className="flex-1 flex flex-col lg:pl-64">
         <Header onMenuClick={() => setIsSidebarOpen(true)} />
@@ -167,6 +197,23 @@ export const DashboardLayout = () => {
       {/* AI Tutor Integration */}
       <AIChatButton />
       <AIChatPanel />
+
+      {/* Mobile Bottom Navigation */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 z-40 flex justify-around items-center p-2 pb-safe">
+        {currentMenu.slice(0, 5).map((item: any) => (
+          <NavLink
+            key={item.path}
+            to={item.path}
+            className={({ isActive }) => `
+              flex flex-col items-center justify-center w-full py-2 gap-1 rounded-xl transition-all
+              ${isActive ? 'text-indigo-600' : 'text-slate-400 hover:text-slate-600'}
+            `}
+          >
+            <item.icon className="w-5 h-5" />
+            <span className="text-[10px] font-bold tracking-tight">{item.name}</span>
+          </NavLink>
+        ))}
+      </div>
     </div>
   );
 };

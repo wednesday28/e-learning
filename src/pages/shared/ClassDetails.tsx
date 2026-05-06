@@ -58,7 +58,11 @@ const ClassDetails = () => {
   const [bankModules, setBankModules] = useState<any[]>([]);
   const [bankLessons, setBankLessons] = useState<any[]>([]);
 
-
+  // File Upload & AI Generation States
+  const [uploadFile, setUploadFile] = useState<File | null>(null);
+  const [uploadUrl, setUploadUrl] = useState('');
+  const [isUploading, setIsUploading] = useState(false);
+  const [isGeneratingQuiz, setIsGeneratingQuiz] = useState(false);
 
 
 
@@ -148,11 +152,12 @@ const ClassDetails = () => {
   };
 
   const fetchAvailableSubjects = async () => {
-    if (!classData?.level_id) return;
+    // Ambil semua subject beserta informasi jenjangnya (levels)
     const { data } = await supabase
       .from('subjects')
-      .select('*')
-      .eq('level_id', classData.level_id);
+      .select('*, levels(name)')
+      .order('level_id', { ascending: true })
+      .order('name', { ascending: true });
     setAvailableSubjects(data || []);
   };
 
@@ -226,31 +231,182 @@ const ClassDetails = () => {
   };
 
   const handlePostMaterial = async () => {
-    if (materialSource === 'upload' && !newMaterial.title) return;
-    if (materialSource === 'bank' && !selectedLessonId) return;
-
-    let payload: any = {
-      class_id: id,
-    };
-
-    if (materialSource === 'bank') {
-      const lesson = bankLessons.find(l => l.id === selectedLessonId);
-      payload.title = lesson?.title || 'Materi Pelajaran';
-      payload.content_type = 'lesson';
-      payload.file_url = selectedLessonId; // Link to lesson id
-    } else {
-      payload.title = newMaterial.title;
-      payload.content_type = newMaterial.content_type;
+    if (materialSource === 'upload' && !newMaterial.title) {
+      alert('Judul materi harus diisi.');
+      return;
+    }
+    if (materialSource === 'upload' && newMaterial.content_type !== 'link' && !uploadFile) {
+      alert('Silakan pilih file untuk diunggah.');
+      return;
+    }
+    if (materialSource === 'upload' && newMaterial.content_type === 'link' && !uploadUrl) {
+      alert('Silakan masukkan URL.');
+      return;
+    }
+    if (materialSource === 'bank' && !selectedLessonId) {
+      alert('Silakan pilih materi dari bank.');
+      return;
     }
 
-    const { error } = await supabase.from('class_materials').insert(payload);
-    if (!error) {
+    setIsUploading(true);
+    let finalFileUrl = uploadUrl;
+
+    try {
+      // 1. Upload File if needed
+      if (materialSource === 'upload' && uploadFile && newMaterial.content_type !== 'link') {
+        const fileExt = uploadFile.name.split('.').pop();
+        const fileName = `${Math.random().toString(36).substring(2, 15)}_${Date.now()}.${fileExt}`;
+        const filePath = `${id}/${fileName}`;
+
+        const { error: uploadError } = await supabase.storage
+          .from('class-materials')
+          .upload(filePath, uploadFile);
+
+        if (uploadError) throw uploadError;
+
+        const { data: publicUrlData } = supabase.storage
+          .from('class-materials')
+          .getPublicUrl(filePath);
+          
+        finalFileUrl = publicUrlData.publicUrl;
+      }
+
+      // 2. Insert Material Record
+      let payload: any = {
+        class_id: id,
+        teacher_id: profile?.id,
+      };
+
+      if (materialSource === 'bank') {
+        const lesson = bankLessons.find(l => l.id === selectedLessonId);
+        payload.title = lesson?.title || 'Materi Pelajaran';
+        payload.content_type = 'lesson';
+        payload.file_url = selectedLessonId;
+      } else {
+        payload.title = newMaterial.title;
+        payload.content_type = newMaterial.content_type;
+        payload.file_url = finalFileUrl;
+        if (uploadFile) {
+           payload.file_name = uploadFile.name;
+           payload.file_size = uploadFile.size;
+        }
+      }
+
+      const { data: newMaterialRecord, error: insertError } = await supabase
+        .from('class_materials')
+        .insert(payload)
+        .select()
+        .single();
+
+      if (insertError) throw insertError;
+
+      // 3. Reset state & refresh
       setNewMaterial({ title: '', content_type: 'pdf' });
       setSelectedLessonId('');
+      setUploadFile(null);
+      setUploadUrl('');
       setShowCreateModal(false);
       fetchMaterials();
-    } else {
-      alert('Gagal posting materi: ' + error.message);
+
+      // 4. Trigger AI Generation if it's a file upload
+      if (materialSource === 'upload' && uploadFile) {
+         generateQuizFromMaterial(newMaterialRecord.id, newMaterial.title);
+      }
+
+    } catch (err: any) {
+      alert('Gagal posting materi: ' + err.message);
+    } finally {
+      setIsUploading(false);
+    }
+  };
+
+  const generateQuizFromMaterial = async (materialId: string, title: string) => {
+    setIsGeneratingQuiz(true);
+    try {
+      const groqApiKey = import.meta.env.VITE_GROQ_API_KEY;
+      if (!groqApiKey) {
+        console.warn('Groq API Key tidak ditemukan. Melewati auto-generate kuis.');
+        return;
+      }
+
+      const prompt = `Buatkan 5 soal pilihan ganda (A, B, C, D) dalam bahasa Indonesia tentang "${title}".
+      Format wajib JSON array murni tanpa markdown, tanpa teks lain:
+      [
+        {
+          "question_text": "Pertanyaan",
+          "difficulty_level": "medium",
+          "type": "multiple_choice",
+          "choices": [
+            {"text": "Opsi A", "is_correct": true},
+            {"text": "Opsi B", "is_correct": false},
+            {"text": "Opsi C", "is_correct": false},
+            {"text": "Opsi D", "is_correct": false}
+          ]
+        }
+      ]`;
+
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${groqApiKey}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          model: 'llama3-8b-8192',
+          messages: [{ role: 'user', content: prompt }],
+          temperature: 0.7
+        })
+      });
+
+      const data = await res.json();
+      const content = data.choices[0].message.content;
+      
+      // Clean markdown if exists
+      const cleanedContent = content.replace(/```json/g, '').replace(/```/g, '').trim();
+      const questions = JSON.parse(cleanedContent);
+
+      // We could directly save, but showing preview is better UX
+      // For this implementation, we will auto-save to simplify
+      
+      const questionIds = [];
+      for (const q of questions) {
+         const { data: qData, error: qError } = await supabase
+           .from('questions')
+           .insert({
+             question_text: q.question_text,
+             difficulty_level: q.difficulty_level,
+             type: q.type,
+             subject_id: classData?.level_id ? availableSubjects[0]?.id : null // fallback subject
+           })
+           .select()
+           .single();
+
+         if (!qError && qData) {
+            questionIds.push(qData.id);
+            const choicesToInsert = q.choices.map((c: any) => ({
+              question_id: qData.id,
+              choice_text: c.text,
+              is_correct: c.is_correct
+            }));
+            await supabase.from('choices').insert(choicesToInsert);
+         }
+      }
+
+      // Update material with generated questions
+      if (questionIds.length > 0) {
+        await supabase
+          .from('class_materials')
+          .update({ generated_question_ids: questionIds })
+          .eq('id', materialId);
+        
+        alert(`AI berhasil membuat ${questionIds.length} soal kuis dari materi "${title}"!`);
+      }
+
+    } catch (err) {
+      console.error('AI Generation Error:', err);
+      // Silent fail for user, as the material is already uploaded
+    } finally {
+      setIsGeneratingQuiz(false);
     }
   };
 
@@ -680,7 +836,11 @@ const ClassDetails = () => {
                         <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Tipe Konten</label>
                         <select 
                           value={newMaterial.content_type} 
-                          onChange={(e) => setNewMaterial({...newMaterial, content_type: e.target.value})}
+                          onChange={(e) => {
+                             setNewMaterial({...newMaterial, content_type: e.target.value});
+                             setUploadFile(null);
+                             setUploadUrl('');
+                          }}
                           className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900 focus:ring-indigo-500 focus:bg-white"
                         >
                           <option value="pdf">PDF Dokumen</option>
@@ -688,6 +848,34 @@ const ClassDetails = () => {
                           <option value="link">Link Eksternal</option>
                         </select>
                       </div>
+
+                      {newMaterial.content_type === 'link' ? (
+                        <div className="space-y-2">
+                          <label className="text-xs font-black text-slate-400 uppercase tracking-widest">URL Tautan</label>
+                          <Input 
+                            value={uploadUrl} 
+                            onChange={(e) => setUploadUrl(e.target.value)} 
+                            placeholder="https://..." 
+                            className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" 
+                          />
+                        </div>
+                      ) : (
+                        <div className="space-y-2">
+                          <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pilih File ({newMaterial.content_type.toUpperCase()})</label>
+                          <div className="relative">
+                            <input 
+                              type="file" 
+                              accept={newMaterial.content_type === 'pdf' ? '.pdf' : 'video/*'}
+                              onChange={(e) => setUploadFile(e.target.files?.[0] || null)}
+                              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                            />
+                            <div className="h-14 rounded-2xl bg-slate-50 border-2 border-dashed border-slate-200 flex items-center justify-center font-medium text-slate-500 px-4">
+                              {uploadFile ? uploadFile.name : `Klik untuk pilih file ${newMaterial.content_type.toUpperCase()}`}
+                            </div>
+                          </div>
+                          {uploadFile && <p className="text-[10px] text-slate-400 mt-1 flex items-center gap-1"><FileIcon className="w-3 h-3" /> {(uploadFile.size / 1024 / 1024).toFixed(2)} MB</p>}
+                        </div>
+                      )}
                     </>
                   ) : (
                     <>
@@ -701,8 +889,22 @@ const ClassDetails = () => {
                           }}
                           className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900"
                         >
-                          <option value="">Pilih Mata Pelajaran...</option>
-                          {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
+                          <option value="">Pilih Mata Pelajaran Lintas Jenjang...</option>
+                          {/* Group subjects by level */}
+                          {Object.entries(
+                            availableSubjects.reduce((acc: any, sub) => {
+                              const levelName = sub.levels?.name || 'Lainnya';
+                              if (!acc[levelName]) acc[levelName] = [];
+                              acc[levelName].push(sub);
+                              return acc;
+                            }, {})
+                          ).map(([level, subjects]: [string, any]) => (
+                            <optgroup key={level} label={level}>
+                              {subjects.map((s: any) => (
+                                <option key={s.id} value={s.id}>{s.name}</option>
+                              ))}
+                            </optgroup>
+                          ))}
                         </select>
                       </div>
                       <div className="space-y-2">
@@ -734,9 +936,23 @@ const ClassDetails = () => {
                       </div>
                     </>
                   )}
-                  <Button onClick={handlePostMaterial} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100 mt-4">
-                    Simpan Materi
+                  <Button 
+                    onClick={handlePostMaterial} 
+                    disabled={isUploading}
+                    className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100 mt-4"
+                  >
+                    {isUploading ? <><Spinner className="w-5 h-5 mr-2" /> Mengunggah...</> : 'Simpan Materi'}
                   </Button>
+                  
+                  {isGeneratingQuiz && (
+                    <div className="mt-4 p-4 bg-amber-50 rounded-2xl border border-amber-100 flex items-center gap-3 animate-pulse">
+                       <Award className="w-5 h-5 text-amber-500" />
+                       <div>
+                         <p className="text-xs font-bold text-amber-800">AI sedang memproses materi...</p>
+                         <p className="text-[10px] text-amber-600">Membuat soal kuis otomatis (ini butuh beberapa detik).</p>
+                       </div>
+                    </div>
+                  )}
                 </>
               )}
 
@@ -762,9 +978,20 @@ const ClassDetails = () => {
                           onChange={(e) => setSelectedSubjectId(e.target.value)}
                           className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
                         >
-                          <option value="">Pilih Subjek...</option>
-                          {availableSubjects.map(s => (
-                            <option key={s.id} value={s.id}>{s.name}</option>
+                          <option value="">Pilih Subjek Lintas Jenjang...</option>
+                          {Object.entries(
+                            availableSubjects.reduce((acc: any, sub) => {
+                              const levelName = sub.levels?.name || 'Lainnya';
+                              if (!acc[levelName]) acc[levelName] = [];
+                              acc[levelName].push(sub);
+                              return acc;
+                            }, {})
+                          ).map(([level, subjects]: [string, any]) => (
+                            <optgroup key={level} label={level}>
+                              {subjects.map((s: any) => (
+                                <option key={s.id} value={s.id}>{s.name}</option>
+                              ))}
+                            </optgroup>
                           ))}
                         </select>
                       </div>
