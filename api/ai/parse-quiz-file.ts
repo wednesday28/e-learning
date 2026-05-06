@@ -1,6 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import pdf from 'pdf-parse';
 import mammoth from 'mammoth';
+
+// Use require for pdf-parse to avoid ESM default export issues in Vercel
+const pdf = require('pdf-parse');
 
 export default async function handler(
   req: VercelRequest,
@@ -24,16 +26,16 @@ export default async function handler(
     let extractedText = '';
 
     // 2. Extract text based on file type
-    if (fileType === 'application/pdf' || fileName.endsWith('.pdf')) {
+    if (fileType === 'application/pdf' || fileName.toLowerCase().endsWith('.pdf')) {
       const data = await pdf(buffer);
       extractedText = data.text;
     } else if (
       fileType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || 
-      fileName.endsWith('.docx')
+      fileName.toLowerCase().endsWith('.docx')
     ) {
       const result = await mammoth.extractRawText({ buffer });
       extractedText = result.value;
-    } else if (fileType === 'text/plain' || fileName.endsWith('.txt')) {
+    } else if (fileType === 'text/plain' || fileName.toLowerCase().endsWith('.txt')) {
       extractedText = buffer.toString('utf-8');
     } else {
       return res.status(400).json({ message: 'Unsupported file type. Please upload PDF, DOCX, or TXT.' });
@@ -43,7 +45,7 @@ export default async function handler(
       return res.status(400).json({ message: 'Could not extract enough text from the file.' });
     }
 
-    // 3. Send to AI (Groq for speed and cost-effectiveness in this demo)
+    // 3. Send to AI
     const groqApiKey = process.env.VITE_GROQ_API_KEY;
     if (!groqApiKey) {
       return res.status(200).json({ 
