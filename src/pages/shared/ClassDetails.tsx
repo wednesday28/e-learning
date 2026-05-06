@@ -67,6 +67,7 @@ const ClassDetails = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [isGeneratingQuiz, setIsGeneratingQuiz] = useState(false);
   const [autoGenerateQuiz, setAutoGenerateQuiz] = useState(true);
+  const [generatingMaterialId, setGeneratingMaterialId] = useState<string | null>(null);
 
 
 
@@ -234,32 +235,43 @@ const ClassDetails = () => {
   };
 
   const generateQuizFromMaterial = async (materialId: string, title: string, fileUrl: string, file: File | null) => {
-    setIsGeneratingQuiz(true);
+    setGeneratingMaterialId(materialId);
     try {
       let questions = [];
 
       // If it's a parseable file, use the parsing API
       const isParseable = (file && (file.type === 'application/pdf' || file.name.endsWith('.docx') || file.name.endsWith('.pdf'))) || 
-                         (fileUrl && (fileUrl.toLowerCase().endsWith('.pdf') || fileUrl.toLowerCase().endsWith('.docx')));
+                         (fileUrl && (fileUrl.toLowerCase().includes('.pdf') || fileUrl.toLowerCase().includes('.docx')));
 
       if (isParseable) {
-        const res = await fetch('/api/ai/parse-quiz-file', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            fileUrl,
-            fileName: file?.name || fileUrl.split('/').pop(),
-            fileType: file?.type || (fileUrl.toLowerCase().endsWith('.pdf') ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document')
-          })
-        });
-        const data = await res.json();
-        if (res.ok) questions = data.questions;
+        try {
+          const res = await fetch('/api/ai/parse-quiz-file', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              fileUrl,
+              fileName: file?.name || fileUrl.split('/').pop() || 'document.pdf',
+              fileType: file?.type || (fileUrl.toLowerCase().includes('.pdf') ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+            })
+          });
+          const data = await res.json();
+          if (res.ok && data.questions) {
+            questions = data.questions;
+          } else {
+            console.warn('Parsing API failed or returned no questions, falling back to title-based gen');
+          }
+        } catch (parseErr) {
+          console.error('Parsing API Error:', parseErr);
+        }
       }
 
       // Fallback to title-based generation if no questions extracted
       if (questions.length === 0) {
         const groqApiKey = import.meta.env.VITE_GROQ_API_KEY;
-        if (!groqApiKey) return;
+        if (!groqApiKey) {
+          alert('Error: API Key AI tidak ditemukan. Silakan hubungi admin.');
+          return;
+        }
 
         const prompt = `Buatkan 5 soal pilihan ganda (A, B, C, D) dalam bahasa Indonesia tentang "${title}".
         Format wajib JSON array murni tanpa markdown:
@@ -275,11 +287,21 @@ const ClassDetails = () => {
           })
         });
         const data = await res.json();
-        const content = data.choices[0].message.content.replace(/```json/g, '').replace(/```/g, '').trim();
-        questions = JSON.parse(content);
+        if (data.choices && data.choices[0]) {
+          const content = data.choices[0].message.content.replace(/```json/g, '').replace(/```/g, '').trim();
+          questions = JSON.parse(content);
+        }
       }
       
+      if (questions.length === 0) {
+        alert('AI tidak dapat menghasilkan soal untuk materi ini. Coba lagi nanti.');
+        return;
+      }
+
       const questionIds = [];
+      // Use the first subject of the class as default
+      const defaultSubjectId = availableSubjects[0]?.id || null;
+
       for (const q of questions) {
          const { data: qData, error: qError } = await supabase
            .from('questions')
@@ -287,7 +309,7 @@ const ClassDetails = () => {
              question_text: q.question_text,
              difficulty_level: q.difficulty_level || 'medium',
              type: 'multiple_choice',
-             subject_id: availableSubjects[0]?.id || null
+             subject_id: defaultSubjectId
            })
            .select()
            .single();
@@ -309,13 +331,17 @@ const ClassDetails = () => {
           .update({ generated_question_ids: questionIds })
           .eq('id', materialId);
         
-        alert(`AI berhasil membuat ${questionIds.length} soal kuis dari materi "${title}"!`);
+        alert(`Sukses! AI berhasil membuat ${questionIds.length} soal kuis dari materi "${title}".`);
+        fetchMaterials(); // Refresh to update UI if needed
+      } else {
+        alert('Gagal menyimpan soal ke database.');
       }
 
-    } catch (err) {
+    } catch (err: any) {
       console.error('AI Generation Error:', err);
+      alert('Terjadi kesalahan saat membuat kuis: ' + err.message);
     } finally {
-      setIsGeneratingQuiz(false);
+      setGeneratingMaterialId(null);
     }
   };
 
@@ -676,13 +702,19 @@ const ClassDetails = () => {
                       <Button 
                         size="sm" 
                         variant="ghost"
+                        disabled={generatingMaterialId === m.id}
                         onClick={(e) => {
                           e.stopPropagation();
                           generateQuizFromMaterial(m.id, m.title, finalUrl, null);
                         }}
                         className="bg-white/80 backdrop-blur-sm border border-indigo-100 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-xl text-[10px] font-black py-1 px-3 shadow-sm"
                       >
-                        <Sparkles className="w-3 h-3 mr-1" /> Buat Kuis
+                        {generatingMaterialId === m.id ? (
+                          <Spinner className="w-3 h-3 mr-1" />
+                        ) : (
+                          <Sparkles className="w-3 h-3 mr-1" />
+                        )}
+                        {generatingMaterialId === m.id ? 'Memproses...' : 'Buat Kuis'}
                       </Button>
                     </div>
                   )}
