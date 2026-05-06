@@ -480,6 +480,26 @@ const ClassDetails = () => {
     }
   };
 
+  const handleDeleteMaterial = async (material: any) => {
+    if (!window.confirm(`Hapus materi "${material.title}"?`)) return;
+    
+    try {
+      // 1. If it's an uploaded file, we might want to delete from storage too
+      // But for safety and simplicity, we just delete the record first.
+      // If file_url contains our bucket, we can try to delete it.
+      if (material.file_url && !material.file_url.startsWith('http')) {
+         await supabase.storage.from('class-materials').remove([material.file_url]);
+      }
+
+      const { error } = await supabase.from('class_materials').delete().eq('id', material.id);
+      if (error) throw error;
+
+      fetchMaterials();
+    } catch (err: any) {
+      alert('Gagal menghapus materi: ' + err.message);
+    }
+  };
+
 
   if (id === 'null') {
     return (
@@ -707,7 +727,7 @@ const ClassDetails = () => {
                   </Card>
                   
                   {isTeacher && !isLesson && (
-                    <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-2">
                       <Button 
                         size="sm" 
                         variant="ghost"
@@ -732,6 +752,18 @@ const ClassDetails = () => {
                           <Sparkles className="w-3 h-3 mr-1" />
                         )}
                         {generatingMaterialId === m.id ? 'Memproses...' : 'Buat Kuis'}
+                      </Button>
+                      
+                      <Button 
+                        size="sm" 
+                        variant="ghost"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleDeleteMaterial(m);
+                        }}
+                        className="bg-white/80 backdrop-blur-sm border border-rose-100 text-rose-500 hover:bg-rose-500 hover:text-white rounded-xl p-2 shadow-sm"
+                      >
+                        <Trash2 className="w-3.5 h-3.5" />
                       </Button>
                     </div>
                   )}
