@@ -558,7 +558,7 @@ const ClassDetails = () => {
       </div>
 
       {/* Tabs */}
-      <div className="flex overflow-x-auto gap-2 pb-2 scrollbar-hide">
+      <div className="flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-visible gap-2 pb-2 scrollbar-hide">
         {tabs.map(tab => (
           <button
             key={tab.id}
