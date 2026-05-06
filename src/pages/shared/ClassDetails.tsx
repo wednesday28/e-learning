@@ -100,7 +100,7 @@ const ClassDetails = () => {
       .single();
     setClassData(data);
     if (data.level_id) {
-      fetchCurriculumMaterials(data.level_id, data.grade_id);
+      fetchCurriculumMaterials(data.level_id);
     }
     setIsLoading(false);
   };
@@ -132,17 +132,8 @@ const ClassDetails = () => {
     setMaterials(data || []);
   };
 
-  const fetchCurriculumMaterials = async (lId: string, gId: string) => {
-    const { data: modulesData } = await supabase
-      .from('modules')
-      .select(`
-        *,
-        lessons (*)
-      `)
-      .eq('subject_id', (await supabase.from('subjects').select('id').eq('level_id', lId)).data?.[0]?.id || '') // Simplification for now
-      .order('title');
-    
-    // Better logic: fetch all subjects for this level, then all modules for those subjects
+  const fetchCurriculumMaterials = async (lId: string) => {
+    // Fetch all subjects for this level, then all modules for those subjects
     const { data: subjectsForLevel } = await supabase.from('subjects').select('id').eq('level_id', lId);
     const sIds = subjectsForLevel?.map(s => s.id) || [];
     
