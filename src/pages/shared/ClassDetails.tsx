@@ -688,30 +688,50 @@ const ClassDetails = () => {
         {activeTab === 'materials' && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {materials.map(m => (
-              <Card 
-                key={m.id} 
-                onClick={(e: React.MouseEvent) => {
-                  e.stopPropagation();
-                  const url = m.content_type === 'lesson' ? `/learning?id=${m.file_url}` : m.file_url;
-                  if (m.content_type === 'lesson') {
+              m.content_type === 'lesson' ? (
+                <Card 
+                  key={m.id} 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    const url = `/learning?id=${m.file_url}`;
                     try { navigate(url); } catch { window.location.href = url; }
-                  } else {
-                    window.open(url, '_blank');
-                  }
-                }}
-                className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group"
-              >
-                <div className="w-16 h-16 bg-slate-50 group-hover:bg-white rounded-3xl flex items-center justify-center text-indigo-600 shadow-sm transition-all">
-                  {m.content_type === 'lesson' ? <BookOpen className="w-8 h-8" /> : <FileIcon className="w-8 h-8" />}
-                </div>
-                <div>
-                  <h4 className="font-black text-slate-900">{m.title}</h4>
-                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type === 'lesson' ? 'Materi Pelajaran' : m.content_type || 'Dokumen'}</p>
-                </div>
-                <div className="w-full py-2 rounded-xl border border-slate-200 bg-white text-xs font-black uppercase tracking-widest text-slate-400 group-hover:border-indigo-600 group-hover:text-indigo-600 transition-all">
-                  {m.content_type === 'lesson' ? 'Buka Materi' : 'Download'}
-                </div>
-              </Card>
+                  }}
+                  className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group"
+                >
+                  <div className="w-16 h-16 bg-slate-50 group-hover:bg-white rounded-3xl flex items-center justify-center text-indigo-600 shadow-sm transition-all">
+                    <BookOpen className="w-8 h-8" />
+                  </div>
+                  <div>
+                    <h4 className="font-black text-slate-900">{m.title}</h4>
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">Materi Pelajaran</p>
+                  </div>
+                  <div className="w-full py-2 rounded-xl border border-slate-200 bg-white text-xs font-black uppercase tracking-widest text-slate-400 group-hover:border-indigo-600 group-hover:text-indigo-600 transition-all">
+                    Buka Materi
+                  </div>
+                </Card>
+              ) : (
+                <a 
+                  key={m.id}
+                  href={m.file_url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  download
+                  className="no-underline block"
+                >
+                  <Card className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group h-full">
+                    <div className="w-16 h-16 bg-slate-50 group-hover:bg-white rounded-3xl flex items-center justify-center text-indigo-600 shadow-sm transition-all">
+                      <FileIcon className="w-8 h-8" />
+                    </div>
+                    <div>
+                      <h4 className="font-black text-slate-900">{m.title}</h4>
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type || 'Dokumen'}</p>
+                    </div>
+                    <div className="w-full py-2 rounded-xl border border-slate-200 bg-white text-xs font-black uppercase tracking-widest text-slate-400 group-hover:border-indigo-600 group-hover:text-indigo-600 transition-all">
+                      Download
+                    </div>
+                  </Card>
+                </a>
+              )
             ))}
 
             {curriculumMaterials.length > 0 && (
