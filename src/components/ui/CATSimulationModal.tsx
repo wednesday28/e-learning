@@ -161,7 +161,7 @@ export const CATSimulationModal: React.FC<CATSimulationModalProps> = ({
                          {letter}
                        </div>
                        <div className={`pt-1 font-semibold ${isSelected ? 'text-indigo-900' : 'text-slate-700'}`}>
-                         {choice.text}
+                         {choice.choice_text || choice.text}
                        </div>
                     </button>
                   );

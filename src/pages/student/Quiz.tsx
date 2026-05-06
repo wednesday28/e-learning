@@ -354,7 +354,7 @@ const Quiz = () => {
                   }`}>
                     {String.fromCharCode(65 + q.choices.indexOf(choice))}
                   </div>
-                  <span className="text-sm sm:text-base">{choice.text}</span>
+                  <span className="text-sm sm:text-base">{choice.choice_text || choice.text}</span>
                 </div>
               </button>
             ))}
