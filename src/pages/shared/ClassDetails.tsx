@@ -21,7 +21,7 @@ import {
   BookOpen,
   Trash2,
   CheckCircle2,
-  PlayCircle
+  Sparkles
 } from 'lucide-react';
 
 
@@ -38,7 +38,6 @@ const ClassDetails = () => {
   const [announcements, setAnnouncements] = useState<any[]>([]);
   const [assignments, setAssignments] = useState<any[]>([]);
   const [materials, setMaterials] = useState<any[]>([]);
-  const [curriculumMaterials, setCurriculumMaterials] = useState<any[]>([]);
   const [messages, setMessages] = useState<any[]>([]);
   const [students, setStudents] = useState<any[]>([]);
 
@@ -67,6 +66,7 @@ const ClassDetails = () => {
   const [uploadUrl, setUploadUrl] = useState('');
   const [isUploading, setIsUploading] = useState(false);
   const [isGeneratingQuiz, setIsGeneratingQuiz] = useState(false);
+  const [autoGenerateQuiz, setAutoGenerateQuiz] = useState(true);
 
 
 
@@ -100,9 +100,6 @@ const ClassDetails = () => {
       .eq('id', id)
       .single();
     setClassData(data);
-    if (data.level_id) {
-      fetchCurriculumMaterials(data.level_id);
-    }
     setIsLoading(false);
   };
 
@@ -133,25 +130,6 @@ const ClassDetails = () => {
     setMaterials(data || []);
   };
 
-  const fetchCurriculumMaterials = async (lId: string) => {
-    // Fetch all subjects for this level, then all modules for those subjects
-    const { data: subjectsForLevel } = await supabase.from('subjects').select('id').eq('level_id', lId);
-    const sIds = subjectsForLevel?.map(s => s.id) || [];
-    
-    if (sIds.length > 0) {
-      const { data: curData } = await supabase
-        .from('modules')
-        .select(`
-          id,
-          title,
-          lessons (id, title)
-        `)
-        .in('subject_id', sIds)
-        .order('title');
-      setCurriculumMaterials(curData || []);
-    }
-  };
-
   const fetchMessages = async () => {
     const { data } = await supabase
       .from('class_messages')
@@ -172,13 +150,12 @@ const ClassDetails = () => {
   const fetchClassQuizzes = async () => {
     const { data } = await supabase
       .from('class_quizzes')
-      .select('*, subjects(name)')
+      .select('*, subjects(name), quiz_packages(title)')
       .eq('class_id', id);
     setClassQuizzes(data || []);
   };
 
   const fetchAvailableSubjects = async () => {
-    // Ambil semua subject beserta informasi jenjangnya (levels)
     const { data } = await supabase
       .from('subjects')
       .select('*, levels(name)')
@@ -256,6 +233,89 @@ const ClassDetails = () => {
     }
   };
 
+  const generateQuizFromMaterial = async (materialId: string, title: string, fileUrl: string, file: File | null) => {
+    setIsGeneratingQuiz(true);
+    try {
+      let questions = [];
+
+      // If it's a parseable file, use the parsing API
+      if (file && (file.type === 'application/pdf' || file.name.endsWith('.docx') || file.name.endsWith('.pdf'))) {
+        const res = await fetch('/api/ai/parse-quiz-file', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fileUrl,
+            fileName: file.name,
+            fileType: file.type
+          })
+        });
+        const data = await res.json();
+        if (res.ok) questions = data.questions;
+      }
+
+      // Fallback to title-based generation if no questions extracted
+      if (questions.length === 0) {
+        const groqApiKey = import.meta.env.VITE_GROQ_API_KEY;
+        if (!groqApiKey) return;
+
+        const prompt = `Buatkan 5 soal pilihan ganda (A, B, C, D) dalam bahasa Indonesia tentang "${title}".
+        Format wajib JSON array murni tanpa markdown:
+        [{"question_text": "...", "choices": [{"text": "...", "is_correct": true}, ...]}]`;
+
+        const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${groqApiKey}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            model: 'llama-3.3-70b-versatile',
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.7
+          })
+        });
+        const data = await res.json();
+        const content = data.choices[0].message.content.replace(/```json/g, '').replace(/```/g, '').trim();
+        questions = JSON.parse(content);
+      }
+      
+      const questionIds = [];
+      for (const q of questions) {
+         const { data: qData, error: qError } = await supabase
+           .from('questions')
+           .insert({
+             question_text: q.question_text,
+             difficulty_level: q.difficulty_level || 'medium',
+             type: 'multiple_choice',
+             subject_id: availableSubjects[0]?.id || null
+           })
+           .select()
+           .single();
+
+         if (!qError && qData) {
+            questionIds.push(qData.id);
+            const choicesToInsert = q.choices.map((c: any) => ({
+              question_id: qData.id,
+              choice_text: c.text || c.choice_text,
+              is_correct: c.is_correct
+            }));
+            await supabase.from('choices').insert(choicesToInsert);
+         }
+      }
+
+      if (questionIds.length > 0) {
+        await supabase
+          .from('class_materials')
+          .update({ generated_question_ids: questionIds })
+          .eq('id', materialId);
+        
+        alert(`AI berhasil membuat ${questionIds.length} soal kuis dari materi "${title}"!`);
+      }
+
+    } catch (err) {
+      console.error('AI Generation Error:', err);
+    } finally {
+      setIsGeneratingQuiz(false);
+    }
+  };
+
   const handlePostMaterial = async () => {
     if (materialSource === 'upload' && !newMaterial.title) {
       alert('Judul materi harus diisi.');
@@ -288,7 +348,10 @@ const ClassDetails = () => {
           .from('class-materials')
           .upload(filePath, uploadFile);
 
-        if (uploadError) throw uploadError;
+        if (uploadError) {
+          console.error('Storage Upload Error:', uploadError);
+          throw new Error(`Gagal mengunggah file ke storage: ${uploadError.message}. Pastikan bucket 'class-materials' tersedia.`);
+        }
 
         const { data: publicUrlData } = supabase.storage
           .from('class-materials')
@@ -323,7 +386,10 @@ const ClassDetails = () => {
         .select()
         .single();
 
-      if (insertError) throw insertError;
+      if (insertError) {
+        console.error('Database Insert Error:', insertError);
+        throw new Error(`Gagal menyimpan data materi ke database: ${insertError.message}.`);
+      }
 
       // 3. Reset state & refresh
       setNewMaterial({ title: '', content_type: 'pdf' });
@@ -333,105 +399,15 @@ const ClassDetails = () => {
       setShowCreateModal(false);
       fetchMaterials();
 
-      // 4. Trigger AI Generation if it's a file upload
-      if (materialSource === 'upload' && uploadFile) {
-         generateQuizFromMaterial(newMaterialRecord.id, newMaterial.title);
+      // 4. Trigger AI Generation if enabled
+      if (materialSource === 'upload' && uploadFile && autoGenerateQuiz) {
+         generateQuizFromMaterial(newMaterialRecord.id, newMaterial.title, finalFileUrl, uploadFile);
       }
 
     } catch (err: any) {
-      alert('Gagal posting materi: ' + err.message);
+      alert(err.message);
     } finally {
       setIsUploading(false);
-    }
-  };
-
-  const generateQuizFromMaterial = async (materialId: string, title: string) => {
-    setIsGeneratingQuiz(true);
-    try {
-      const groqApiKey = import.meta.env.VITE_GROQ_API_KEY;
-      if (!groqApiKey) {
-        console.warn('Groq API Key tidak ditemukan. Melewati auto-generate kuis.');
-        return;
-      }
-
-      const prompt = `Buatkan 5 soal pilihan ganda (A, B, C, D) dalam bahasa Indonesia tentang "${title}".
-      Format wajib JSON array murni tanpa markdown, tanpa teks lain:
-      [
-        {
-          "question_text": "Pertanyaan",
-          "difficulty_level": "medium",
-          "type": "multiple_choice",
-          "choices": [
-            {"text": "Opsi A", "is_correct": true},
-            {"text": "Opsi B", "is_correct": false},
-            {"text": "Opsi C", "is_correct": false},
-            {"text": "Opsi D", "is_correct": false}
-          ]
-        }
-      ]`;
-
-      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${groqApiKey}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          model: 'llama3-8b-8192',
-          messages: [{ role: 'user', content: prompt }],
-          temperature: 0.7
-        })
-      });
-
-      const data = await res.json();
-      const content = data.choices[0].message.content;
-      
-      // Clean markdown if exists
-      const cleanedContent = content.replace(/```json/g, '').replace(/```/g, '').trim();
-      const questions = JSON.parse(cleanedContent);
-
-      // We could directly save, but showing preview is better UX
-      // For this implementation, we will auto-save to simplify
-      
-      const questionIds = [];
-      for (const q of questions) {
-         const { data: qData, error: qError } = await supabase
-           .from('questions')
-           .insert({
-             question_text: q.question_text,
-             difficulty_level: q.difficulty_level,
-             type: q.type,
-             subject_id: classData?.level_id ? availableSubjects[0]?.id : null // fallback subject
-           })
-           .select()
-           .single();
-
-         if (!qError && qData) {
-            questionIds.push(qData.id);
-            const choicesToInsert = q.choices.map((c: any) => ({
-              question_id: qData.id,
-              choice_text: c.text,
-              is_correct: c.is_correct
-            }));
-            await supabase.from('choices').insert(choicesToInsert);
-         }
-      }
-
-      // Update material with generated questions
-      if (questionIds.length > 0) {
-        await supabase
-          .from('class_materials')
-          .update({ generated_question_ids: questionIds })
-          .eq('id', materialId);
-        
-        alert(`AI berhasil membuat ${questionIds.length} soal kuis dari materi "${title}"!`);
-      }
-
-    } catch (err) {
-      console.error('AI Generation Error:', err);
-      // Silent fail for user, as the material is already uploaded
-    } finally {
-      setIsGeneratingQuiz(false);
     }
   };
 
@@ -467,9 +443,6 @@ const ClassDetails = () => {
   };
 
 
-
-
-  // ID Safety Check
   if (id === 'null') {
     return (
       <div className="max-w-md mx-auto py-20 text-center space-y-6">
@@ -494,7 +467,6 @@ const ClassDetails = () => {
   );
 
   const tabs = [
-
     { id: 'overview', label: 'Ringkasan', icon: ClipboardList },
     { id: 'announcements', label: 'Pengumuman', icon: Megaphone },
     { id: 'assignments', label: 'Tugas', icon: FileText },
@@ -562,7 +534,6 @@ const ClassDetails = () => {
                     <p className="text-sm text-slate-500 line-clamp-2 mt-1">{a.content}</p>
                   </div>
                 ))}
-                {announcements.length === 0 && <p className="text-slate-400 italic text-center py-10">Belum ada aktivitas.</p>}
               </div>
             </Card>
             <div className="space-y-6">
@@ -596,17 +567,11 @@ const ClassDetails = () => {
                     </div>
                   </div>
                 </div>
-                <div className="prose prose-slate max-w-none text-slate-600 font-medium">
+                <div className="prose prose-slate max-w-none text-slate-600 font-medium whitespace-pre-wrap">
                   {a.content}
                 </div>
               </Card>
             ))}
-            {announcements.length === 0 && (
-              <div className="text-center py-20 bg-slate-50 rounded-[40px] border-2 border-dashed border-slate-200">
-                <Megaphone className="w-16 h-16 text-slate-200 mx-auto mb-4" />
-                <p className="text-slate-400 font-black">Belum ada pengumuman.</p>
-              </div>
-            )}
           </div>
         )}
 
@@ -625,8 +590,8 @@ const ClassDetails = () => {
                    </div>
                 </div>
                 <div>
-                  <h4 className="text-xl font-black text-slate-900 mb-2">{a.title}</h4>
-                  <p className="text-sm text-slate-500 line-clamp-3">{a.instructions}</p>
+                   <h4 className="text-xl font-black text-slate-900 mb-2">{a.title}</h4>
+                   <p className="text-sm text-slate-500 line-clamp-3">{a.instructions}</p>
                 </div>
                 <div className="flex items-center justify-between pt-4 border-t border-slate-100">
                   <span className="text-xs font-bold text-slate-400">{isTeacher ? `${a.class_submissions?.[0]?.count || 0} Pengumpulan` : 'Belum Dikerjakan'}</span>
@@ -634,12 +599,6 @@ const ClassDetails = () => {
                 </div>
               </Card>
             ))}
-            {assignments.length === 0 && (
-              <div className="md:col-span-2 text-center py-20 bg-slate-50 rounded-[40px] border-2 border-dashed border-slate-200">
-                <FileText className="w-16 h-16 text-slate-200 mx-auto mb-4" />
-                <p className="text-slate-400 font-black">Belum ada tugas.</p>
-              </div>
-            )}
           </div>
         )}
 
@@ -653,7 +612,7 @@ const ClassDetails = () => {
                {messages.map(m => (
                  <div key={m.id} className={`flex gap-4 ${m.user_id === profile?.id ? 'flex-row-reverse' : ''}`}>
                     <div className="w-10 h-10 bg-white rounded-full border border-slate-100 flex items-center justify-center font-black overflow-hidden flex-shrink-0">
-                      {m.profiles?.avatar_url ? <img src={m.profiles.avatar_url} /> : m.profiles?.full_name?.[0]}
+                      {m.profiles?.avatar_url ? <img src={m.profiles.avatar_url} alt="avatar" /> : m.profiles?.full_name?.[0]}
                     </div>
                     <div className={`max-w-[70%] space-y-1 ${m.user_id === profile?.id ? 'items-end' : ''}`}>
                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{m.profiles?.full_name}</p>
@@ -664,12 +623,10 @@ const ClassDetails = () => {
                        }`}>
                          {m.content}
                        </div>
-                       <p className="text-[9px] font-bold text-slate-300">{new Date(m.created_at).toLocaleTimeString()}</p>
                     </div>
                  </div>
                ))}
             </div>
-
             <div className="p-6 border-t border-slate-100 bg-white flex gap-4">
                <Input 
                  value={newMessage} 
@@ -689,105 +646,29 @@ const ClassDetails = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {materials.map(m => {
               const isLesson = m.content_type === 'lesson';
-              // Safety: Ensure URL is absolute
               const getFullUrl = (url: string) => {
-                if (!url) return '#';
-                if (url.startsWith('http')) return url;
-                
-                // Construct public URL manually to ensure it's absolute
+                if (!url || url.startsWith('http')) return url;
                 const baseUrl = import.meta.env.VITE_SUPABASE_URL;
-                const cleanUrl = url.replace(/^\/+/, ''); // Remove leading slashes
-                return `${baseUrl}/storage/v1/object/public/class-materials/${cleanUrl}`;
+                return `${baseUrl}/storage/v1/object/public/class-materials/${url.replace(/^\/+/, '')}`;
               };
               const finalUrl = getFullUrl(m.file_url);
 
-              return isLesson ? (
+              return (
                 <Card 
                   key={m.id} 
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    try { navigate(`/learning?id=${m.file_url}`); } catch { window.location.href = `/learning?id=${m.file_url}`; }
-                  }}
+                  onClick={() => isLesson ? navigate(`/learning?id=${m.file_url}`) : window.open(finalUrl, '_blank')}
                   className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group"
                 >
                   <div className="w-16 h-16 bg-slate-50 group-hover:bg-white rounded-3xl flex items-center justify-center text-indigo-600 shadow-sm transition-all">
-                    <BookOpen className="w-8 h-8" />
-                  </div>
-                  <div>
-                    <h4 className="font-black text-slate-900">{m.title}</h4>
-                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">Materi Pelajaran</p>
-                  </div>
-                  <div className="w-full py-2 rounded-xl border border-slate-200 bg-white text-xs font-black uppercase tracking-widest text-slate-400 group-hover:border-indigo-600 group-hover:text-indigo-600 transition-all">
-                    Buka Materi
-                  </div>
-                </Card>
-              ) : (
-                <Card 
-                  key={m.id}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    console.log('Downloading file from:', finalUrl);
-                    window.open(finalUrl, '_blank');
-                  }}
-                  className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group"
-                >
-                  <div className="w-16 h-16 bg-slate-50 group-hover:bg-white rounded-3xl flex items-center justify-center text-indigo-600 shadow-sm transition-all">
-                    <FileIcon className="w-8 h-8" />
+                    {isLesson ? <BookOpen className="w-8 h-8" /> : <FileIcon className="w-8 h-8" />}
                   </div>
                   <div>
                     <h4 className="font-black text-slate-900">{m.title}</h4>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type || 'Dokumen'}</p>
                   </div>
-                  <div className="w-full py-2 rounded-xl border border-slate-200 bg-white text-xs font-black uppercase tracking-widest text-slate-400 group-hover:border-indigo-600 group-hover:text-indigo-600 transition-all">
-                    Download
-                  </div>
                 </Card>
               );
             })}
-
-            {curriculumMaterials.length > 0 && (
-              <div className="md:col-span-3 space-y-6">
-                <div className="flex items-center gap-3 py-4 border-b border-slate-100">
-                  <BookOpen className="w-6 h-6 text-indigo-600" />
-                  <h3 className="text-xl font-black text-slate-900">Materi Kurikulum</h3>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {curriculumMaterials.map(mod => (
-                    <Card key={mod.id} className="p-6 space-y-4 border-none shadow-sm bg-indigo-50/50">
-                      <h4 className="font-black text-indigo-900">{mod.title}</h4>
-                      <div className="space-y-2">
-                        {mod.lessons?.map((les: any) => (
-                          <div 
-                            key={les.id} 
-                            onClick={(e: React.MouseEvent) => {
-                              e.stopPropagation();
-                              const url = `/learning?id=${les.id}`;
-                              try { navigate(url); } catch { window.location.href = url; }
-                            }}
-                            className="flex items-center justify-between p-4 bg-white rounded-2xl hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all cursor-pointer group border border-transparent hover:border-indigo-200"
-                          >
-                            <div className="flex items-center gap-3">
-                              <div className="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                                <PlayCircle className="w-4 h-4" />
-                              </div>
-                              <span className="text-sm font-black text-slate-700 group-hover:text-indigo-600">{les.title}</span>
-                            </div>
-                            <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />
-                          </div>
-                        ))}
-                      </div>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {materials.length === 0 && curriculumMaterials.length === 0 && (
-              <div className="md:col-span-3 text-center py-20 bg-slate-50 rounded-[40px] border-2 border-dashed border-slate-200">
-                <Download className="w-16 h-16 text-slate-200 mx-auto mb-4" />
-                <p className="text-slate-400 font-black">Belum ada materi eksklusif.</p>
-              </div>
-            )}
           </div>
         )}
 
@@ -798,25 +679,15 @@ const ClassDetails = () => {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-full -mr-16 -mt-16 group-hover:bg-amber-100 transition-colors" />
                 <div className="flex justify-between items-start relative z-10">
                    <div className="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600">
-                     <Award className="w-6 h-6" />
+                      <Award className="w-6 h-6" />
                    </div>
-                    <div className="flex items-center gap-2">
-                       <span className="text-[10px] font-black text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-100">Kuis Kelas</span>
-                       {isTeacher && (
-                         <Button 
-                           variant="ghost" 
-                           size="icon" 
-                           onClick={() => handleDeleteQuiz(q.id)}
-                           className="h-8 w-8 text-slate-300 hover:text-rose-500"
-                         >
-                           <Trash2 className="w-4 h-4" />
-                         </Button>
-                       )}
-                    </div>
+                   {isTeacher && (
+                      <Button variant="ghost" size="icon" onClick={() => handleDeleteQuiz(q.id)} className="h-8 w-8 text-slate-300 hover:text-rose-500"><Trash2 className="w-4 h-4" /></Button>
+                   )}
                 </div>
                 <div className="relative z-10">
                   <h4 className="text-xl font-black text-slate-900 mb-1">{q.quiz_packages?.title || q.subjects?.name}</h4>
-                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{q.package_id ? 'Paket Tes' : 'Mata Pelajaran'} • Diberikan {new Date(q.assigned_at).toLocaleDateString()}</p>
+                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{q.package_id ? 'Paket Tes' : 'Mata Pelajaran'}</p>
                 </div>
                 <Button 
                   onClick={() => navigate(`/quiz?${q.package_id ? `packageId=${q.package_id}` : `subjectId=${q.subject_id}`}`)}
@@ -824,33 +695,25 @@ const ClassDetails = () => {
                 >
                   Mulai Kerjakan Kuis
                 </Button>
-
               </Card>
             ))}
-            {classQuizzes.length === 0 && (
-              <div className="md:col-span-2 text-center py-20 bg-slate-50 rounded-[40px] border-2 border-dashed border-slate-200">
-                <Award className="w-16 h-16 text-slate-200 mx-auto mb-4" />
-                <p className="text-slate-400 font-black">Belum ada kuis yang diberikan guru.</p>
-              </div>
-            )}
           </div>
         )}
-
+        
         {activeTab === 'students' && (
-
           <Card className="p-8">
             <h3 className="text-xl font-black text-slate-900 mb-8 flex items-center gap-3">
               <Users className="w-6 h-6 text-indigo-600" /> Anggota Kelas ({students.length})
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                {students.map(s => (
-                 <div key={s.id} className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl border border-transparent hover:border-slate-200 transition-all">
-                    <div className="w-12 h-12 bg-white rounded-xl border border-slate-100 flex items-center justify-center font-black text-indigo-600">
+                 <div key={s.id} className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl">
+                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center font-black text-indigo-600">
                        {s.profiles?.full_name?.[0]}
                     </div>
                     <div>
                        <p className="font-black text-slate-900 leading-none">{s.profiles?.full_name}</p>
-                       <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Siswa • {s.profiles?.total_xp} XP</p>
+                       <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Siswa • {s.profiles?.total_xp || 0} XP</p>
                     </div>
                  </div>
                ))}
@@ -859,10 +722,10 @@ const ClassDetails = () => {
         )}
       </div>
 
-      {/* Create Content Modal (Simplified for now) */}
+      {/* Create Content Modal */}
       {showCreateModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm">
-          <div className="bg-white rounded-[32px] w-full max-w-md p-8 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+          <div className="bg-white rounded-[32px] w-full max-w-md p-8 shadow-2xl relative animate-in fade-in zoom-in duration-200 overflow-y-auto max-h-[90vh]">
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-2xl font-black text-slate-900">Tambah Konten</h2>
               <Button variant="ghost" size="icon" onClick={() => setShowCreateModal(false)} className="rounded-full">
@@ -884,272 +747,111 @@ const ClassDetails = () => {
                ))}
             </div>
 
-
             <div className="space-y-6">
               {contentType === 'announcement' && (
                 <>
-                  <div className="space-y-2">
-                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Judul</label>
-                    <Input value={newAnnouncement.title} onChange={(e) => setNewAnnouncement({...newAnnouncement, title: e.target.value})} placeholder="Contoh: Info Ujian Tengah Semester" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Konten</label>
-                    <textarea 
-                      value={newAnnouncement.content} 
-                      onChange={(e) => setNewAnnouncement({...newAnnouncement, content: e.target.value})}
-                      className="w-full min-h-[120px] bg-slate-50 border-transparent rounded-2xl p-4 font-medium text-slate-900 focus:ring-indigo-500 focus:bg-white"
-                      placeholder="Ketik pengumuman di sini..."
-                    />
-                  </div>
-                  <Button onClick={handlePostAnnouncement} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
-                    Posting Pengumuman
-                  </Button>
+                  <Input value={newAnnouncement.title} onChange={(e) => setNewAnnouncement({...newAnnouncement, title: e.target.value})} placeholder="Judul Pengumuman" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                  <textarea value={newAnnouncement.content} onChange={(e) => setNewAnnouncement({...newAnnouncement, content: e.target.value})} className="w-full min-h-[120px] bg-slate-50 border-none rounded-2xl p-4 text-sm font-medium" placeholder="Konten pengumuman..." />
+                  <Button onClick={handlePostAnnouncement} className="w-full h-14 rounded-2xl shadow-lg">Posting Info</Button>
                 </>
               )}
 
               {contentType === 'assignment' && (
                 <>
-                  <div className="space-y-2">
-                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Judul Tugas</label>
-                    <Input value={newAssignment.title} onChange={(e) => setNewAssignment({...newAssignment, title: e.target.value})} placeholder="Contoh: Latihan Aljabar Dasar" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Instruksi</label>
-                    <textarea 
-                      value={newAssignment.instructions} 
-                      onChange={(e) => setNewAssignment({...newAssignment, instructions: e.target.value})}
-                      className="w-full min-h-[120px] bg-slate-50 border-transparent rounded-2xl p-4 font-medium text-slate-900 focus:ring-indigo-500 focus:bg-white"
-                      placeholder="Ketik instruksi tugas di sini..."
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Batas Waktu (Opsional)</label>
-                    <Input type="date" value={newAssignment.due_date} onChange={(e) => setNewAssignment({...newAssignment, due_date: e.target.value})} className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
-                  </div>
-                  <Button onClick={handlePostAssignment} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
-                    Posting Tugas
-                  </Button>
+                  <Input value={newAssignment.title} onChange={(e) => setNewAssignment({...newAssignment, title: e.target.value})} placeholder="Judul Tugas" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                  <textarea value={newAssignment.instructions} onChange={(e) => setNewAssignment({...newAssignment, instructions: e.target.value})} className="w-full min-h-[120px] bg-slate-50 border-none rounded-2xl p-4 text-sm font-medium" placeholder="Instruksi tugas..." />
+                  <Input type="date" value={newAssignment.due_date} onChange={(e) => setNewAssignment({...newAssignment, due_date: e.target.value})} className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                  <Button onClick={handlePostAssignment} className="w-full h-14 rounded-2xl shadow-lg">Posting Tugas</Button>
                 </>
               )}
+
               {contentType === 'material' && (
                 <>
                   <div className="flex gap-2 mb-6 p-1 bg-slate-100 rounded-xl">
-                    <button 
-                      onClick={() => setMaterialSource('upload')}
-                      className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg transition-all ${materialSource === 'upload' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}
-                    >
-                      Upload File
-                    </button>
-                    <button 
-                      onClick={() => setMaterialSource('bank')}
-                      className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg transition-all ${materialSource === 'bank' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}
-                    >
-                      Bank Materi
-                    </button>
+                    <button onClick={() => setMaterialSource('upload')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${materialSource === 'upload' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Upload File</button>
+                    <button onClick={() => setMaterialSource('bank')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${materialSource === 'bank' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Bank Materi</button>
                   </div>
 
                   {materialSource === 'upload' ? (
-                    <>
-                      <div className="space-y-2">
-                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Judul Materi</label>
-                        <Input value={newMaterial.title} onChange={(e) => setNewMaterial({...newMaterial, title: e.target.value})} placeholder="Contoh: Modul Pembelajaran" className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" />
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Tipe Konten</label>
-                        <select 
-                          value={newMaterial.content_type} 
-                          onChange={(e) => {
-                             setNewMaterial({...newMaterial, content_type: e.target.value});
-                             setUploadFile(null);
-                             setUploadUrl('');
-                          }}
-                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900 focus:ring-indigo-500 focus:bg-white"
-                        >
+                    <div className="space-y-4">
+                       <Input value={newMaterial.title} onChange={(e) => setNewMaterial({...newMaterial, title: e.target.value})} placeholder="Judul Materi" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                       <select value={newMaterial.content_type} onChange={(e) => setNewMaterial({...newMaterial, content_type: e.target.value})} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
                           <option value="pdf">PDF Dokumen</option>
                           <option value="video">Video Materi</option>
                           <option value="link">Link Eksternal</option>
-                        </select>
-                      </div>
-
-                      {newMaterial.content_type === 'link' ? (
-                        <div className="space-y-2">
-                          <label className="text-xs font-black text-slate-400 uppercase tracking-widest">URL Tautan</label>
-                          <Input 
-                            value={uploadUrl} 
-                            onChange={(e) => setUploadUrl(e.target.value)} 
-                            placeholder="https://..." 
-                            className="h-14 rounded-2xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" 
-                          />
-                        </div>
-                      ) : (
-                        <div className="space-y-2">
-                          <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pilih File ({newMaterial.content_type.toUpperCase()})</label>
-                          <div className="relative">
-                            <input 
-                              type="file" 
-                              accept={newMaterial.content_type === 'pdf' ? '.pdf' : 'video/*'}
-                              onChange={(e) => setUploadFile(e.target.files?.[0] || null)}
-                              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                            />
-                            <div className="h-14 rounded-2xl bg-slate-50 border-2 border-dashed border-slate-200 flex items-center justify-center font-medium text-slate-500 px-4">
-                              {uploadFile ? uploadFile.name : `Klik untuk pilih file ${newMaterial.content_type.toUpperCase()}`}
-                            </div>
+                       </select>
+                       {newMaterial.content_type !== 'link' ? (
+                          <div className="relative h-20 border-2 border-dashed border-slate-200 rounded-2xl flex items-center justify-center">
+                             <input type="file" onChange={(e) => setUploadFile(e.target.files?.[0] || null)} className="absolute inset-0 opacity-0 cursor-pointer" />
+                             <p className="text-sm text-slate-400 font-bold">{uploadFile ? uploadFile.name : 'Klik untuk pilih file'}</p>
                           </div>
-                          {uploadFile && <p className="text-[10px] text-slate-400 mt-1 flex items-center gap-1"><FileIcon className="w-3 h-3" /> {(uploadFile.size / 1024 / 1024).toFixed(2)} MB</p>}
-                        </div>
-                      )}
-                    </>
-                  ) : (
-                    <>
-                      <div className="space-y-2">
-                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Mata Pelajaran</label>
-                        <select 
-                          value={selectedSubjectId} 
-                          onChange={(e) => {
-                            setSelectedSubjectId(e.target.value);
-                            fetchBankModules(e.target.value);
-                          }}
-                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900"
-                        >
-                          <option value="">Pilih Mata Pelajaran Lintas Jenjang...</option>
-                          {/* Group subjects by level */}
-                          {Object.entries(
-                            availableSubjects.reduce((acc: any, sub) => {
-                              const levelName = sub.levels?.name || 'Lainnya';
-                              if (!acc[levelName]) acc[levelName] = [];
-                              acc[levelName].push(sub);
-                              return acc;
-                            }, {})
-                          ).map(([level, subjects]: [string, any]) => (
-                            <optgroup key={level} label={level}>
-                              {subjects.map((s: any) => (
-                                <option key={s.id} value={s.id}>{s.name}</option>
-                              ))}
-                            </optgroup>
-                          ))}
-                        </select>
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Modul</label>
-                        <select 
-                          disabled={!selectedSubjectId}
-                          value={selectedModuleId} 
-                          onChange={(e) => {
-                            setSelectedModuleId(e.target.value);
-                            fetchBankLessons(e.target.value);
-                          }}
-                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900"
-                        >
-                          <option value="">Pilih Modul...</option>
-                          {bankModules.map(m => <option key={m.id} value={m.id}>{m.title}</option>)}
-                        </select>
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pelajaran</label>
-                        <select 
-                          disabled={!selectedModuleId}
-                          value={selectedLessonId} 
-                          onChange={(e) => setSelectedLessonId(e.target.value)}
-                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-medium text-slate-900"
-                        >
-                          <option value="">Pilih Materi...</option>
-                          {bankLessons.map(l => <option key={l.id} value={l.id}>{l.title}</option>)}
-                        </select>
-                      </div>
-                    </>
-                  )}
-                  <Button 
-                    onClick={handlePostMaterial} 
-                    disabled={isUploading}
-                    className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100 mt-4"
-                  >
-                    {isUploading ? <><Spinner className="w-5 h-5 mr-2" /> Mengunggah...</> : 'Simpan Materi'}
-                  </Button>
-                  
-                  {isGeneratingQuiz && (
-                    <div className="mt-4 p-4 bg-amber-50 rounded-2xl border border-amber-100 flex items-center gap-3 animate-pulse">
-                       <Award className="w-5 h-5 text-amber-500" />
-                       <div>
-                         <p className="text-xs font-bold text-amber-800">AI sedang memproses materi...</p>
-                         <p className="text-[10px] text-amber-600">Membuat soal kuis otomatis (ini butuh beberapa detik).</p>
+                       ) : (
+                          <Input value={uploadUrl} onChange={(e) => setUploadUrl(e.target.value)} placeholder="https://..." className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                       )}
+                       
+                       <div className="flex items-center gap-3 p-4 bg-indigo-50/50 rounded-2xl cursor-pointer" onClick={() => setAutoGenerateQuiz(!autoGenerateQuiz)}>
+                          <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${autoGenerateQuiz ? 'bg-indigo-600 border-indigo-600' : 'bg-white border-slate-300'}`}>
+                             {autoGenerateQuiz && <CheckCircle2 className="w-3 h-3 text-white" />}
+                          </div>
+                          <div>
+                            <p className="text-xs font-black text-indigo-900 flex items-center gap-1.5"><Sparkles className="w-3 h-3" /> Auto-Generate Kuis (AI)</p>
+                            <p className="text-[10px] text-indigo-600 font-medium">Sistem akan otomatis membuat soal latihan dari materi ini.</p>
+                          </div>
                        </div>
                     </div>
+                  ) : (
+                    <div className="space-y-4">
+                       <select value={selectedSubjectId} onChange={(e) => { setSelectedSubjectId(e.target.value); fetchBankModules(e.target.value); }} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                          <option value="">Pilih Mata Pelajaran...</option>
+                          {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name})</option>)}
+                       </select>
+                       <select disabled={!selectedSubjectId} value={selectedModuleId} onChange={(e) => { setSelectedModuleId(e.target.value); fetchBankLessons(e.target.value); }} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                          <option value="">Pilih Modul...</option>
+                          {bankModules.map(m => <option key={m.id} value={m.id}>{m.title}</option>)}
+                       </select>
+                       <select disabled={!selectedModuleId} value={selectedLessonId} onChange={(e) => setSelectedLessonId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                          <option value="">Pilih Materi...</option>
+                          {bankLessons.map(l => <option key={l.id} value={l.id}>{l.title}</option>)}
+                       </select>
+                    </div>
                   )}
+                  <Button onClick={handlePostMaterial} disabled={isUploading} className="w-full h-14 rounded-2xl shadow-lg">
+                    {isUploading ? <><Spinner className="mr-2" /> Menyimpan...</> : 'Posting Materi'}
+                  </Button>
+                  {isGeneratingQuiz && <p className="text-center text-[10px] font-bold text-amber-600 animate-pulse mt-2">AI sedang menyiapkan kuis otomatis...</p>}
                 </>
               )}
 
               {contentType === 'quiz' && (
-                <>
-                  <div className="space-y-4">
-                    <div className="flex gap-2 p-1 bg-slate-100 rounded-xl">
-                       <button 
-                        onClick={() => setAssignType('subject')}
-                        className={`flex-1 py-2 text-[9px] font-black uppercase tracking-widest rounded-lg transition-all ${assignType === 'subject' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}
-                       >Mata Pelajaran</button>
-                       <button 
-                        onClick={() => setAssignType('package')}
-                        className={`flex-1 py-2 text-[9px] font-black uppercase tracking-widest rounded-lg transition-all ${assignType === 'package' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}
-                       >Paket Tes Saya</button>
-                    </div>
-
-                    {assignType === 'subject' ? (
-                      <div className="space-y-2">
-                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pilih Mata Pelajaran</label>
-                        <select 
-                          value={selectedSubjectId} 
-                          onChange={(e) => setSelectedSubjectId(e.target.value)}
-                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
-                        >
-                          <option value="">Pilih Subjek Lintas Jenjang...</option>
-                          {Object.entries(
-                            availableSubjects.reduce((acc: any, sub) => {
-                              const levelName = sub.levels?.name || 'Lainnya';
-                              if (!acc[levelName]) acc[levelName] = [];
-                              acc[levelName].push(sub);
-                              return acc;
-                            }, {})
-                          ).map(([level, subjects]: [string, any]) => (
-                            <optgroup key={level} label={level}>
-                              {subjects.map((s: any) => (
-                                <option key={s.id} value={s.id}>{s.name}</option>
-                              ))}
-                            </optgroup>
-                          ))}
-                        </select>
-                      </div>
-                    ) : (
-                      <div className="space-y-2">
-                        <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Pilih Paket Tes</label>
-                        <select 
-                          value={selectedPackageId} 
-                          onChange={(e) => setSelectedPackageId(e.target.value)}
-                          className="w-full h-14 bg-slate-50 border-transparent rounded-2xl px-4 font-bold text-slate-900 focus:ring-indigo-500 focus:bg-white"
-                        >
-                          <option value="">Pilih Paket...</option>
-                          {teacherPackages.map(p => (
-                            <option key={p.id} value={p.id}>{p.title}</option>
-                          ))}
-                        </select>
-                      </div>
-                    )}
-                    <div className="flex items-center gap-3 p-4 bg-slate-50 border border-slate-100 rounded-2xl cursor-pointer hover:border-indigo-300 transition-colors" onClick={() => setIsCatMode(!isCatMode)}>
+                <div className="space-y-4">
+                   <div className="flex gap-2 p-1 bg-slate-100 rounded-xl">
+                      <button onClick={() => setAssignType('subject')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${assignType === 'subject' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Subjek</button>
+                      <button onClick={() => setAssignType('package')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${assignType === 'package' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Paket Saya</button>
+                   </div>
+                   {assignType === 'subject' ? (
+                      <select value={selectedSubjectId} onChange={(e) => setSelectedSubjectId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                        <option value="">Pilih Subjek...</option>
+                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name})</option>)}
+                      </select>
+                   ) : (
+                      <select value={selectedPackageId} onChange={(e) => setSelectedPackageId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                        <option value="">Pilih Paket...</option>
+                        {teacherPackages.map(p => <option key={p.id} value={p.id}>{p.title}</option>)}
+                      </select>
+                   )}
+                   <div className="flex items-center gap-3 p-4 bg-slate-50 border border-slate-100 rounded-2xl cursor-pointer hover:border-indigo-300 transition-colors" onClick={() => setIsCatMode(!isCatMode)}>
                       <div className={`w-6 h-6 rounded border-2 flex items-center justify-center shrink-0 transition-colors ${isCatMode ? 'bg-indigo-600 border-indigo-600' : 'bg-white border-slate-300'}`}>
                          {isCatMode && <CheckCircle2 className="w-4 h-4 text-white" />}
                       </div>
                       <div>
                         <p className="text-sm font-bold text-slate-800">Aktifkan Mode Simulasi CAT</p>
-                        <p className="text-[10px] text-slate-500 font-medium">Siswa akan mengerjakan kuis ini dengan antarmuka dan timer seperti ujian BKN asli.</p>
+                        <p className="text-[10px] text-slate-500 font-medium">Siswa akan mengerjakan kuis ini dengan antarmuka CAT.</p>
                       </div>
                     </div>
-                  </div>
-                  <Button onClick={handleAssignQuiz} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
-                    Berikan Kuis ke Kelas
-                  </Button>
-                </>
+                   <Button onClick={handleAssignQuiz} className="w-full h-14 rounded-2xl shadow-lg">Berikan Kuis</Button>
+                </div>
               )}
-
             </div>
-
           </div>
         </div>
       )}
