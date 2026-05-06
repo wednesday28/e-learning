@@ -693,8 +693,11 @@ const ClassDetails = () => {
               const getFullUrl = (url: string) => {
                 if (!url) return '#';
                 if (url.startsWith('http')) return url;
-                // Fallback to Supabase public URL if it's just a path
-                return `${import.meta.env.VITE_SUPABASE_URL}/storage/v1/object/public/class-materials/${url}`;
+                
+                // Construct public URL manually to ensure it's absolute
+                const baseUrl = import.meta.env.VITE_SUPABASE_URL;
+                const cleanUrl = url.replace(/^\/+/, ''); // Remove leading slashes
+                return `${baseUrl}/storage/v1/object/public/class-materials/${cleanUrl}`;
               };
               const finalUrl = getFullUrl(m.file_url);
 
