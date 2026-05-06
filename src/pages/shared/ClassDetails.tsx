@@ -470,10 +470,15 @@ const ClassDetails = () => {
 
 
   // ID Safety Check
-  // ONLY redirect if it's explicitly the string 'null' or if we've finished loading and STILL have no ID
-  if (id === 'null' || (!isLoading && !id && !classData)) {
-    window.location.replace('/dashboard');
-    return null;
+  if (id === 'null') {
+    return (
+      <div className="max-w-md mx-auto py-20 text-center space-y-6">
+        <Card className="p-10 border-rose-100 bg-rose-50/30">
+          <h2 className="text-xl font-black text-slate-900">ID Kelas Tidak Valid</h2>
+          <Button onClick={() => navigate('/dashboard')} className="w-full mt-6">Kembali ke Dashboard</Button>
+        </Card>
+      </div>
+    );
   }
 
   if (isLoading && !classData) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
