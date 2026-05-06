@@ -89,6 +89,7 @@ const App = () => {
             <Route path="quiz" element={<Quiz />} />
             <Route path="tryout" element={<Tryout />} />
             <Route path="results" element={<Results />} />
+            <Route path="class/null" element={<Navigate to="/dashboard" replace />} />
             <Route path="class/:id" element={<ClassDetails />} />
           </Route>
 
@@ -96,6 +97,7 @@ const App = () => {
           <Route path="/teacher" element={<ProtectedRoute allowedRoles={['teacher']}><DashboardLayout /></ProtectedRoute>}>
             <Route index element={<TeacherDashboard />} />
             <Route path="classes" element={<ManageClasses />} />
+            <Route path="classes/null" element={<Navigate to="/teacher" replace />} />
             <Route path="classes/:id" element={<ClassDetails />} />
             <Route path="quizzes" element={<ManageQuizzes />} />
           </Route>

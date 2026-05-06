@@ -180,7 +180,17 @@ const StudentDashboard = () => {
             {myClasses.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {myClasses.map((cls) => (
-                  <div key={cls.id} onClick={() => navigate(`/class/${cls.id}`)}>
+                  <div 
+                    key={cls.id} 
+                    onClick={() => {
+                      if (cls.id && cls.id !== 'null') {
+                        navigate(`/class/${cls.id}`);
+                      } else {
+                        console.error('Tentative navigation to null class ID blocked:', cls);
+                        alert('Data kelas tidak valid. Mohon hubungi admin.');
+                      }
+                    }}
+                  >
                     <Card 
                       className="p-6 border-slate-100 hover:border-indigo-500 transition-all cursor-pointer group h-full"
                     >

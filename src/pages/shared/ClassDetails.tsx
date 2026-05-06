@@ -472,9 +472,13 @@ const ClassDetails = () => {
   // ID Safety Check
   const effectiveId = id || classData?.id;
 
-  if (isLoading && !classData) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
-
   if (!effectiveId || effectiveId === 'null') {
+    // Immediate escape to prevent "ID Kelas Tidak Valid" flickering if possible
+    window.location.replace('/dashboard');
+    return null;
+  }
+
+  if (isLoading && !classData) return <div className="h-screen flex items-center justify-center"><Spinner /></div>;
     // Only show error if we really don't have an ID and we're not loading
     if (!isLoading) {
       return (
