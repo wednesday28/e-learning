@@ -60,8 +60,8 @@ const StudentDashboard = () => {
           .eq('student_id', profile.id);
         
         setMyClasses(
-          myClassesData?.map(item => item.classes)
-            .filter(cls => cls !== null && cls.id !== null) || []
+          (myClassesData?.map(item => item.classes) || [])
+            .filter((cls: any) => cls !== null && cls?.id)
         );
       }
     } catch (err) {
