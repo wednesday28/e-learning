@@ -109,3 +109,5 @@ export const Modal = ({ isOpen, onClose, title, children }: { isOpen: boolean; o
 export const Spinner = ({ className }: { className?: string }) => (
   <div className={cn('animate-spin border-4 border-indigo-100 border-t-indigo-600 rounded-full w-10 h-10', className)} />
 );
+
+export * from './CATSimulationModal';

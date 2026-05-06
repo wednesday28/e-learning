@@ -185,7 +185,7 @@ export const DashboardLayout = () => {
   const currentMenu = menuItems[role] || menuItems.student;
 
   return (
-    <div className="min-h-screen bg-slate-50 flex pb-16 lg:pb-0"> {/* Added pb-16 for mobile bottom nav */}
+    <div className="min-h-screen bg-slate-50 flex pb-20 lg:pb-0"> {/* Added pb-20 for mobile bottom nav */}
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       <div className="flex-1 flex flex-col lg:pl-64">
         <Header onMenuClick={() => setIsSidebarOpen(true)} />
@@ -199,7 +199,7 @@ export const DashboardLayout = () => {
       <AIChatPanel />
 
       {/* Mobile Bottom Navigation */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 z-40 flex justify-around items-center p-2 pb-safe">
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 z-40 flex justify-around items-center px-2 pt-2 pb-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
         {currentMenu.slice(0, 5).map((item: any) => (
           <NavLink
             key={item.path}

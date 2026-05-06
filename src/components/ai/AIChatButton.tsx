@@ -6,7 +6,7 @@ export const AIChatButton: React.FC = () => {
   const { isOpen, toggleChat, unreadCount } = useAIStore()
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
+    <div className="fixed bottom-24 lg:bottom-6 right-4 lg:right-6 z-50 flex flex-col items-end gap-4">
       {unreadCount > 0 && !isOpen && (
         <div className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg animate-bounce">
           {unreadCount} pesan baru

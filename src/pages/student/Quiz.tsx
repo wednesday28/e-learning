@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
-import { Card, Button, Progress, Spinner } from '../../components/ui';
+import { Card, Button, Progress, Spinner, CATSimulationModal } from '../../components/ui';
 import { ChevronLeft, Timer, Award, BookOpen, ChevronRight, Target } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuthStore } from '../../store/useAuthStore';
@@ -60,7 +60,10 @@ const Quiz = () => {
     setIsLoading(false);
   };
 
-  const startQuiz = async (id: string, type: 'subject' | 'package' = 'subject') => {
+  const [isCatMode, setIsCatMode] = useState(false);
+  const [currentAssignmentTitle, setCurrentAssignmentTitle] = useState('');
+
+  const startQuiz = async (id: string, type: 'subject' | 'package' = 'subject', title: string = 'Latihan Kuis', catMode: boolean = false) => {
     setIsLoading(true);
     try {
       let qData: any[] = [];
@@ -88,6 +91,8 @@ const Quiz = () => {
       setTimeLeft(15 * 60);
       setCurrentIndex(0);
       setAnswers({});
+      setIsCatMode(catMode);
+      setCurrentAssignmentTitle(title);
       setStep('quiz');
     } catch (err) {
       console.error('Error starting quiz:', err);
@@ -154,10 +159,10 @@ const Quiz = () => {
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  const calculateResult = () => {
+  const calculateResult = (finalAnswers = answers) => {
     let correctCount = 0;
     questions.forEach(q => {
-      const selectedChoiceId = answers[q.id];
+      const selectedChoiceId = finalAnswers[q.id];
       const correctChoice = q.choices.find((c: any) => c.is_correct);
       if (selectedChoiceId === correctChoice?.id) {
         correctCount++;
@@ -212,7 +217,7 @@ const Quiz = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
            {classAssignments.map(as => (
-             <div key={as.id} onClick={() => startQuiz(as.package_id || as.subject_id, as.package_id ? 'package' : 'subject')}>
+             <div key={as.id} onClick={() => startQuiz(as.package_id || as.subject_id, as.package_id ? 'package' : 'subject', as.quiz_packages?.title || as.subjects?.name, as.is_cat_mode)}>
                 <Card className="p-8 space-y-6 hover:shadow-2xl transition-all cursor-pointer relative overflow-hidden group">
                    <div className="absolute top-0 right-0 w-24 h-24 bg-amber-50 rounded-full -mr-12 -mt-12 group-hover:bg-amber-500 transition-colors" />
                    <div className="relative z-10">
@@ -300,6 +305,21 @@ const Quiz = () => {
   }
 
   if (step === 'quiz') {
+    if (isCatMode) {
+      return (
+        <CATSimulationModal 
+          questions={questions} 
+          title={currentAssignmentTitle} 
+          durationMinutes={15} 
+          onFinish={(finalAnswers) => {
+             setAnswers(finalAnswers);
+             calculateResult(finalAnswers);
+          }} 
+          onClose={() => setStep('selection')} 
+        />
+      );
+    }
+
     const q = questions[currentIndex];
     return (
       <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8 py-6 sm:py-10">

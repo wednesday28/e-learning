@@ -52,6 +52,7 @@ const ClassDetails = () => {
   const [selectedSubjectId, setSelectedSubjectId] = useState('');
   const [selectedPackageId, setSelectedPackageId] = useState('');
   const [assignType, setAssignType] = useState<'subject' | 'package'>('subject');
+  const [isCatMode, setIsCatMode] = useState(false);
   const [materialSource, setMaterialSource] = useState<'upload' | 'bank'>('upload');
   const [selectedModuleId, setSelectedModuleId] = useState('');
   const [selectedLessonId, setSelectedLessonId] = useState('');
@@ -417,7 +418,8 @@ const ClassDetails = () => {
       class_id: id,
       subject_id: assignType === 'subject' ? selectedSubjectId : null,
       package_id: assignType === 'package' ? selectedPackageId : null,
-      teacher_id: profile?.id
+      teacher_id: profile?.id,
+      is_cat_mode: isCatMode
     });
     if (!error) {
       setSelectedSubjectId('');
@@ -1009,7 +1011,15 @@ const ClassDetails = () => {
                         </select>
                       </div>
                     )}
-                    <p className="text-[10px] text-slate-400 font-medium px-2 italic text-center">Berikan tugas evaluasi kustom atau reguler ke kelas ini.</p>
+                    <div className="flex items-center gap-3 p-4 bg-slate-50 border border-slate-100 rounded-2xl cursor-pointer hover:border-indigo-300 transition-colors" onClick={() => setIsCatMode(!isCatMode)}>
+                      <div className={`w-6 h-6 rounded border-2 flex items-center justify-center shrink-0 transition-colors ${isCatMode ? 'bg-indigo-600 border-indigo-600' : 'bg-white border-slate-300'}`}>
+                         {isCatMode && <CheckCircle2 className="w-4 h-4 text-white" />}
+                      </div>
+                      <div>
+                        <p className="text-sm font-bold text-slate-800">Aktifkan Mode Simulasi CAT</p>
+                        <p className="text-[10px] text-slate-500 font-medium">Siswa akan mengerjakan kuis ini dengan antarmuka dan timer seperti ujian BKN asli.</p>
+                      </div>
+                    </div>
                   </div>
                   <Button onClick={handleAssignQuiz} className="w-full h-14 rounded-2xl shadow-xl shadow-indigo-100">
                     Berikan Kuis ke Kelas
