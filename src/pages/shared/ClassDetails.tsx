@@ -274,7 +274,6 @@ const ClassDetails = () => {
       // 2. Insert Material Record
       let payload: any = {
         class_id: id,
-        teacher_id: profile?.id,
       };
 
       if (materialSource === 'bank') {
