@@ -668,41 +668,29 @@ const ClassDetails = () => {
         {activeTab === 'materials' && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {materials.map(m => (
-              <Card key={m.id} className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 transition-all cursor-pointer">
-                <div className="w-16 h-16 bg-slate-50 rounded-3xl flex items-center justify-center text-indigo-600">
+              <Card 
+                key={m.id} 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  const url = m.content_type === 'lesson' ? `/learning?id=${m.file_url}` : m.file_url;
+                  if (m.content_type === 'lesson') {
+                    try { navigate(url); } catch { window.location.href = url; }
+                  } else {
+                    window.open(url, '_blank');
+                  }
+                }}
+                className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group"
+              >
+                <div className="w-16 h-16 bg-slate-50 group-hover:bg-white rounded-3xl flex items-center justify-center text-indigo-600 shadow-sm transition-all">
                   {m.content_type === 'lesson' ? <BookOpen className="w-8 h-8" /> : <FileIcon className="w-8 h-8" />}
                 </div>
                 <div>
                   <h4 className="font-black text-slate-900">{m.title}</h4>
                   <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type === 'lesson' ? 'Materi Pelajaran' : m.content_type || 'Dokumen'}</p>
                 </div>
-                {m.content_type === 'lesson' ? (
-                  <Button 
-                    variant="outline" 
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      try {
-                        navigate(`/learning?id=${m.file_url}`);
-                      } catch (err) {
-                        window.location.href = `/learning?id=${m.file_url}`;
-                      }
-                    }}
-                    className="w-full rounded-xl"
-                  >
-                    Buka Materi
-                  </Button>
-                ) : (
-                  <a 
-                    href={m.file_url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    download
-                    className="w-full inline-flex items-center justify-center h-10 px-4 py-2 rounded-xl border border-slate-200 bg-white text-sm font-bold text-slate-700 hover:bg-slate-50 transition-all no-underline"
-                  >
-                    Download
-                  </a>
-                )}
+                <div className="w-full py-2 rounded-xl border border-slate-200 bg-white text-xs font-black uppercase tracking-widest text-slate-400 group-hover:border-indigo-600 group-hover:text-indigo-600 transition-all">
+                  {m.content_type === 'lesson' ? 'Buka Materi' : 'Download'}
+                </div>
               </Card>
             ))}
 
