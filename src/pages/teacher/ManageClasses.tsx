@@ -152,6 +152,8 @@ const ManageClasses = () => {
     } finally {
       setIsActionLoading(false);
     }
+  };
+
   const handleShareClass = (joinCode: string) => {
     const shareLink = `${window.location.origin}/join/${joinCode}`;
     navigator.clipboard.writeText(shareLink);
