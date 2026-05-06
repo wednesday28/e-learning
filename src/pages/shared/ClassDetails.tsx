@@ -65,7 +65,6 @@ const ClassDetails = () => {
   const [uploadFile, setUploadFile] = useState<File | null>(null);
   const [uploadUrl, setUploadUrl] = useState('');
   const [isUploading, setIsUploading] = useState(false);
-  const [isGeneratingQuiz, setIsGeneratingQuiz] = useState(false);
   const [autoGenerateQuiz, setAutoGenerateQuiz] = useState(true);
   const [generatingMaterialId, setGeneratingMaterialId] = useState<string | null>(null);
 
@@ -870,7 +869,7 @@ const ClassDetails = () => {
                   <Button onClick={handlePostMaterial} disabled={isUploading} className="w-full h-14 rounded-2xl shadow-lg">
                     {isUploading ? <><Spinner className="mr-2" /> Menyimpan...</> : 'Posting Materi'}
                   </Button>
-                  {isGeneratingQuiz && <p className="text-center text-[10px] font-bold text-amber-600 animate-pulse mt-2">AI sedang menyiapkan kuis otomatis...</p>}
+                  {generatingMaterialId && <p className="text-center text-[10px] font-bold text-amber-600 animate-pulse mt-2">AI sedang menyiapkan kuis otomatis...</p>}
                 </>
               )}
 
