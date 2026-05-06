@@ -8,7 +8,7 @@ import { School, CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
 const JoinClass = () => {
   const { code } = useParams();
   const [searchParams] = useSearchParams();
-  const { user, profile } = useAuthStore();
+  const { user } = useAuthStore();
   const navigate = useNavigate();
   const [status, setStatus] = useState<'loading' | 'success' | 'error' | 'already_joined'>('loading');
   const [className, setClassName] = useState('');
