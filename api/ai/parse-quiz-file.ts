@@ -1,19 +1,19 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import mammoth from 'mammoth';
+import { createRequire } from 'module';
 
-// Use require for pdf-parse to avoid ESM default export issues in Vercel
+const require = createRequire(import.meta.url);
 let pdf: any;
 try {
   pdf = require('pdf-parse');
 } catch (e) {
-  console.error('Failed to load pdf-parse:', e);
+  console.error('Failed to load pdf-parse via createRequire:', e);
 }
 
 export default async function handler(
   req: VercelRequest,
   res: VercelResponse
 ) {
-  // Ensure we always return JSON
   res.setHeader('Content-Type', 'application/json');
 
   if (req.method !== 'POST') {
@@ -24,7 +24,7 @@ export default async function handler(
   const groqApiKey = process.env.VITE_GROQ_API_KEY || process.env.GROQ_API_KEY;
 
   if (!groqApiKey) {
-    return res.status(500).json({ message: 'API Key AI (GROQ_API_KEY) tidak ditemukan di environment server.' });
+    return res.status(500).json({ message: 'API Key AI tidak ditemukan.' });
   }
 
   console.log('Processing Quiz Gen:', { fileName, fileType, topic, hasUrl: !!fileUrl });
@@ -33,7 +33,6 @@ export default async function handler(
     let extractedText = '';
     let parseError = '';
 
-    // 1. If fileUrl is provided, try to parse it
     if (fileUrl) {
       try {
         const response = await fetch(fileUrl);
@@ -49,7 +48,7 @@ export default async function handler(
             extractedText = data.text || '';
             console.log('PDF Extracted text length:', extractedText.length);
           } else {
-             parseError = 'Library PDF tidak tersedia.';
+             parseError = 'Library PDF tidak tersedia di server.';
           }
         } else if (fileType?.includes('word') || lowerName.endsWith('.docx')) {
           console.log('Parsing Word...');
@@ -64,7 +63,6 @@ export default async function handler(
       }
     }
 
-    // 2. Prepare Prompt
     let prompt = '';
     const formatInstruction = `Format wajib JSON array murni tanpa markdown:
       [
@@ -92,13 +90,10 @@ export default async function handler(
       ${formatInstruction}`;
     } else {
       return res.status(400).json({ 
-        message: `Gagal mengekstrak teks dari file. ${parseError ? `Detail: ${parseError}` : 'File mungkin kosong atau tidak terbaca.'} 
-        Pastikan file PDF bukan hasil scan gambar.` 
+        message: `Gagal mengekstrak teks dari file. ${parseError ? `Detail: ${parseError}` : 'File mungkin kosong atau tidak terbaca.'} Pastikan file PDF bukan hasil scan gambar.` 
       });
     }
 
-    // 3. Call AI
-    console.log('Calling Groq AI...');
     const aiRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: {
