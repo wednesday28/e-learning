@@ -21,7 +21,8 @@ import {
   BookOpen,
   Trash2,
   CheckCircle2,
-  Sparkles
+  Sparkles,
+  Target
 } from 'lucide-react';
 
 
@@ -68,6 +69,16 @@ const ClassDetails = () => {
   const [autoGenerateQuiz, setAutoGenerateQuiz] = useState(true);
   const [generatingMaterialId, setGeneratingMaterialId] = useState<string | null>(null);
 
+  // AI Settings Modal States
+  const [showAiSettingsModal, setShowAiSettingsModal] = useState(false);
+  const [aiSettings, setAiSettings] = useState({
+    questionCount: 5,
+    duration: 15,
+    materialId: '',
+    title: '',
+    fileUrl: '',
+    file: null as File | null
+  });
 
 
   const isTeacher = profile?.role === 'teacher' || profile?.role === 'admin' || profile?.role === 'super_admin';
@@ -233,10 +244,10 @@ const ClassDetails = () => {
     }
   };
 
-  const generateQuizFromMaterial = async (materialId: string, title: string, fileUrl: string, file: File | null) => {
+  const generateQuizFromMaterial = async (materialId: string, title: string, fileUrl: string, file: File | null, count: number, duration: number) => {
     setGeneratingMaterialId(materialId);
     try {
-      // Call the server-side API for ALL generation (parsing + fallback)
+      // 1. AI Generation
       const res = await fetch('/api/ai/parse-quiz-file', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -244,7 +255,8 @@ const ClassDetails = () => {
           fileUrl,
           fileName: file?.name || fileUrl.split('/').pop() || 'document.pdf',
           fileType: file?.type || (fileUrl.toLowerCase().includes('.pdf') ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'),
-          topic: title // Used as fallback if parsing fails
+          topic: title,
+          questionCount: count
         })
       });
 
@@ -253,22 +265,18 @@ const ClassDetails = () => {
       if (contentType && contentType.includes('application/json')) {
         data = await res.json();
       } else {
-        const text = await res.text();
-        console.error('Non-JSON Response:', text);
-        throw new Error('Respon server tidak valid (Bukan JSON). Pastikan GROQ_API_KEY sudah diset di Vercel.');
+        throw new Error('Respon server tidak valid. Pastikan GROQ_API_KEY sudah diset.');
       }
       
-      if (!res.ok) {
-        throw new Error(data.message || 'Gagal generate soal kuis');
-      }
+      if (!res.ok) throw new Error(data.message || 'Gagal generate soal kuis');
 
       const questions = data.questions || [];
-      
       if (questions.length === 0) {
-        alert('AI tidak dapat menghasilkan soal untuk materi ini. Coba lagi nanti.');
+        alert('AI tidak dapat menghasilkan soal untuk materi ini.');
         return;
       }
 
+      // 2. Save Questions & Choices
       const questionIds = [];
       const defaultSubjectId = availableSubjects[0]?.id || null;
 
@@ -296,15 +304,44 @@ const ClassDetails = () => {
       }
 
       if (questionIds.length > 0) {
+        // 3. Create Quiz Package
+        const { data: pkg, error: pkgError } = await supabase.from('quiz_packages').insert({
+          teacher_id: profile?.id,
+          title: `AI Quiz: ${title}`,
+          description: `Dibuat otomatis dari materi "${title}".`,
+          level_id: classData?.level_id || null,
+          duration: duration // In minutes
+        }).select().single();
+
+        if (pkgError) throw pkgError;
+
+        // 4. Link questions to package
+        const links = questionIds.map((qid, index) => ({
+          package_id: pkg.id,
+          question_id: qid,
+          order_index: index
+        }));
+        await supabase.from('quiz_package_questions').insert(links);
+
+        // 5. Assign package to class
+        const { error: assignError } = await supabase.from('class_quizzes').insert({
+          class_id: id,
+          package_id: pkg.id,
+          teacher_id: profile?.id,
+          is_cat_mode: true
+        });
+
+        if (assignError) throw assignError;
+
+        // 6. Update material record
         await supabase
           .from('class_materials')
           .update({ generated_question_ids: questionIds })
           .eq('id', materialId);
         
-        alert(`Sukses! AI berhasil membuat ${questionIds.length} soal kuis dari materi "${title}".`);
+        alert(`Sukses! AI berhasil membuat ${questionIds.length} soal dan kuis sudah ditambahkan ke daftar kuis kelas.`);
         fetchMaterials();
-      } else {
-        alert('Gagal menyimpan soal ke database.');
+        fetchClassQuizzes();
       }
 
     } catch (err: any) {
@@ -312,6 +349,7 @@ const ClassDetails = () => {
       alert('Kesalahan: ' + err.message);
     } finally {
       setGeneratingMaterialId(null);
+      setShowAiSettingsModal(false);
     }
   };
 
@@ -347,10 +385,7 @@ const ClassDetails = () => {
           .from('class-materials')
           .upload(filePath, uploadFile);
 
-        if (uploadError) {
-          console.error('Storage Upload Error:', uploadError);
-          throw new Error(`Gagal mengunggah file ke storage: ${uploadError.message}.`);
-        }
+        if (uploadError) throw new Error(`Gagal mengunggah file: ${uploadError.message}.`);
 
         const { data: publicUrlData } = supabase.storage
           .from('class-materials')
@@ -385,9 +420,7 @@ const ClassDetails = () => {
         .select()
         .single();
 
-      if (insertError) {
-        throw new Error(`Gagal menyimpan data materi: ${insertError.message}.`);
-      }
+      if (insertError) throw new Error(`Gagal menyimpan data materi: ${insertError.message}.`);
 
       // 3. Reset state & refresh
       setNewMaterial({ title: '', content_type: 'pdf' });
@@ -397,9 +430,17 @@ const ClassDetails = () => {
       setShowCreateModal(false);
       fetchMaterials();
 
-      // 4. Trigger AI Generation if enabled
+      // 4. Trigger AI Settings if auto-gen enabled
       if (materialSource === 'upload' && uploadFile && autoGenerateQuiz) {
-         generateQuizFromMaterial(newMaterialRecord.id, newMaterial.title, finalFileUrl, uploadFile);
+         setAiSettings({
+           questionCount: 5,
+           duration: 15,
+           materialId: newMaterialRecord.id,
+           title: newMaterial.title,
+           fileUrl: finalFileUrl,
+           file: uploadFile
+         });
+         setShowAiSettingsModal(true);
       }
 
     } catch (err: any) {
@@ -674,7 +715,15 @@ const ClassDetails = () => {
                         disabled={generatingMaterialId === m.id}
                         onClick={(e) => {
                           e.stopPropagation();
-                          generateQuizFromMaterial(m.id, m.title, finalUrl, null);
+                          setAiSettings({
+                            questionCount: 5,
+                            duration: 15,
+                            materialId: m.id,
+                            title: m.title,
+                            fileUrl: finalUrl,
+                            file: null
+                          });
+                          setShowAiSettingsModal(true);
                         }}
                         className="bg-white/80 backdrop-blur-sm border border-indigo-100 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-xl text-[10px] font-black py-1 px-3 shadow-sm"
                       >
@@ -742,6 +791,65 @@ const ClassDetails = () => {
           </Card>
         )}
       </div>
+
+      {/* AI Settings Modal */}
+      {showAiSettingsModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md">
+           <Card className="w-full max-w-sm p-8 bg-white rounded-[40px] shadow-2xl animate-in zoom-in fade-in duration-300">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600">
+                   <Sparkles className="w-6 h-6" />
+                </div>
+                <div>
+                   <h2 className="text-xl font-black text-slate-900">Konfigurasi AI</h2>
+                   <p className="text-xs font-bold text-slate-400">Atur kuis untuk materi: {aiSettings.title}</p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                 <div className="space-y-3">
+                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Jumlah Soal</label>
+                    <div className="flex gap-2">
+                       {[5, 10, 15, 20].map(n => (
+                         <button 
+                           key={n}
+                           onClick={() => setAiSettings({...aiSettings, questionCount: n})}
+                           className={`flex-1 h-12 rounded-xl font-black text-sm transition-all ${
+                             aiSettings.questionCount === n ? 'bg-indigo-600 text-white shadow-lg' : 'bg-slate-50 text-slate-400'
+                           }`}
+                         >
+                           {n}
+                         </button>
+                       ))}
+                    </div>
+                 </div>
+
+                 <div className="space-y-3">
+                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Durasi Pengerjaan (Menit)</label>
+                    <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl">
+                       <Clock className="w-5 h-5 text-indigo-600" />
+                       <input 
+                         type="number" 
+                         value={aiSettings.duration}
+                         onChange={(e) => setAiSettings({...aiSettings, duration: parseInt(e.target.value) || 1})}
+                         className="bg-transparent border-none outline-none font-black text-slate-700 w-full"
+                       />
+                    </div>
+                 </div>
+
+                 <div className="pt-4 flex gap-3">
+                    <Button variant="ghost" onClick={() => setShowAiSettingsModal(false)} className="flex-1 h-14 rounded-2xl font-black">Batal</Button>
+                    <Button 
+                      onClick={() => generateQuizFromMaterial(aiSettings.materialId, aiSettings.title, aiSettings.fileUrl, aiSettings.file, aiSettings.questionCount, aiSettings.duration)}
+                      className="flex-1 h-14 rounded-2xl bg-indigo-600 shadow-xl shadow-indigo-100 font-black"
+                    >
+                      Genereate Kuis
+                    </Button>
+                 </div>
+              </div>
+           </Card>
+        </div>
+      )}
 
       {/* Create Content Modal */}
       {showCreateModal && (
