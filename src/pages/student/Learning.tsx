@@ -171,14 +171,24 @@ const Learning = () => {
       // Access Control Check
       const { data: user } = await supabase.auth.getUser();
       if (user?.user && !PUBLIC_LEVELS.includes(currentLevel)) {
-        const { data: enrollment } = await supabase
+        // Check if student is in ANY class that matches this lesson's level
+        const { data: enrollments } = await supabase
           .from('class_students')
-          .select('id, classes!inner(level_id)')
+          .select('class_id, classes!inner(level_id)')
           .eq('student_id', user.user.id)
-          .eq('classes.level_id', data.modules.subjects.level_id)
-          .maybeSingle();
+          .eq('classes.level_id', data.modules.subjects.level_id);
         
-        if (!enrollment) setHasAccess(false);
+        if (!enrollments || enrollments.length === 0) {
+          // Additional check: maybe it's explicitly assigned as a class_material
+          const { data: explicitMaterial } = await supabase
+            .from('class_materials')
+            .select('id, class_id, class_students!inner(student_id)')
+            .eq('file_url', id)
+            .eq('class_students.student_id', user.user.id)
+            .maybeSingle();
+
+          if (!explicitMaterial) setHasAccess(false);
+        }
       }
 
     } catch (err: any) {

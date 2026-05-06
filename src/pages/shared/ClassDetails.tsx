@@ -37,6 +37,7 @@ const ClassDetails = () => {
   const [announcements, setAnnouncements] = useState<any[]>([]);
   const [assignments, setAssignments] = useState<any[]>([]);
   const [materials, setMaterials] = useState<any[]>([]);
+  const [curriculumMaterials, setCurriculumMaterials] = useState<any[]>([]);
   const [messages, setMessages] = useState<any[]>([]);
   const [students, setStudents] = useState<any[]>([]);
 
@@ -98,6 +99,9 @@ const ClassDetails = () => {
       .eq('id', id)
       .single();
     setClassData(data);
+    if (data.level_id) {
+      fetchCurriculumMaterials(data.level_id, data.grade_id);
+    }
     setIsLoading(false);
   };
 
@@ -126,6 +130,34 @@ const ClassDetails = () => {
       .eq('class_id', id)
       .order('created_at', { ascending: false });
     setMaterials(data || []);
+  };
+
+  const fetchCurriculumMaterials = async (lId: string, gId: string) => {
+    const { data: modulesData } = await supabase
+      .from('modules')
+      .select(`
+        *,
+        lessons (*)
+      `)
+      .eq('subject_id', (await supabase.from('subjects').select('id').eq('level_id', lId)).data?.[0]?.id || '') // Simplification for now
+      .order('title');
+    
+    // Better logic: fetch all subjects for this level, then all modules for those subjects
+    const { data: subjectsForLevel } = await supabase.from('subjects').select('id').eq('level_id', lId);
+    const sIds = subjectsForLevel?.map(s => s.id) || [];
+    
+    if (sIds.length > 0) {
+      const { data: curData } = await supabase
+        .from('modules')
+        .select(`
+          id,
+          title,
+          lessons (id, title)
+        `)
+        .in('subject_id', sIds)
+        .order('title');
+      setCurriculumMaterials(curData || []);
+    }
   };
 
   const fetchMessages = async () => {
@@ -662,7 +694,36 @@ const ClassDetails = () => {
                 </Button>
               </Card>
             ))}
-            {materials.length === 0 && (
+
+            {curriculumMaterials.length > 0 && (
+              <div className="md:col-span-3 space-y-6">
+                <div className="flex items-center gap-3 py-4 border-b border-slate-100">
+                  <BookOpen className="w-6 h-6 text-indigo-600" />
+                  <h3 className="text-xl font-black text-slate-900">Materi Kurikulum</h3>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {curriculumMaterials.map(mod => (
+                    <Card key={mod.id} className="p-6 space-y-4 border-none shadow-sm bg-indigo-50/50">
+                      <h4 className="font-black text-indigo-900">{mod.title}</h4>
+                      <div className="space-y-2">
+                        {mod.lessons?.map((les: any) => (
+                          <div 
+                            key={les.id} 
+                            onClick={() => navigate(`/learning?id=${les.id}`)}
+                            className="flex items-center justify-between p-3 bg-white rounded-xl hover:shadow-md transition-all cursor-pointer group"
+                          >
+                            <span className="text-sm font-bold text-slate-700 group-hover:text-indigo-600">{les.title}</span>
+                            <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-indigo-600" />
+                          </div>
+                        ))}
+                      </div>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {materials.length === 0 && curriculumMaterials.length === 0 && (
               <div className="md:col-span-3 text-center py-20 bg-slate-50 rounded-[40px] border-2 border-dashed border-slate-200">
                 <Download className="w-16 h-16 text-slate-200 mx-auto mb-4" />
                 <p className="text-slate-400 font-black">Belum ada materi eksklusif.</p>
