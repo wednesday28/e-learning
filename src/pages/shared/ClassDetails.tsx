@@ -67,6 +67,7 @@ const ClassDetails = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [autoGenerateQuiz, setAutoGenerateQuiz] = useState(true);
   const [generatingMaterialId, setGeneratingMaterialId] = useState<string | null>(null);
+  const [generatingFromQuizId, setGeneratingFromQuizId] = useState<string | null>(null);
 
   // AI Settings Modal States
   const [showAiSettingsModal, setShowAiSettingsModal] = useState(false);
@@ -449,6 +450,60 @@ const ClassDetails = () => {
     }
   };
 
+  const generateMaterialFromQuiz = async (quiz: any) => {
+    if (!quiz.package_id) {
+      alert('Fitur ini saat ini hanya tersedia untuk kuis berbasis Paket Tes.');
+      return;
+    }
+
+    setGeneratingFromQuizId(quiz.id);
+    try {
+      // 1. Fetch Questions for the package
+      const { data: questions, error: qError } = await supabase
+        .from('quiz_package_questions')
+        .select('questions(*, choices(*))')
+        .eq('package_id', quiz.package_id);
+
+      if (qError) throw qError;
+      
+      const parsedQuestions = questions?.map(q => q.questions) || [];
+      if (parsedQuestions.length === 0) throw new Error('Tidak ada soal ditemukan dalam paket ini.');
+
+      // 2. Call AI API
+      const res = await fetch('/api/ai/generate-material-from-quiz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          quizTitle: quiz.quiz_packages?.title || 'Kuis',
+          questions: parsedQuestions
+        })
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message || 'Gagal generate materi');
+
+      // 3. Save as new Material
+      const { error: mError } = await supabase.from('class_materials').insert({
+        class_id: id,
+        title: `Materi: ${quiz.quiz_packages?.title || 'Baru'}`,
+        content_type: 'text',
+        file_url: 'ai_generated',
+        description: data.content
+      });
+
+      if (mError) throw mError;
+
+      alert('Sukses! Materi pembelajaran baru telah dibuat berdasarkan kuis ini. Silakan cek tab Materi.');
+      setActiveTab('materials');
+      fetchMaterials();
+
+    } catch (err: any) {
+      alert('Gagal membuat materi: ' + err.message);
+    } finally {
+      setGeneratingFromQuizId(null);
+    }
+  };
+
   const handleAssignQuiz = async () => {
     if (assignType === 'subject' && !selectedSubjectId) return;
     if (assignType === 'package' && !selectedPackageId) return;
@@ -790,12 +845,25 @@ const ClassDetails = () => {
                   <h4 className="text-xl font-black text-slate-900 mb-1">{q.quiz_packages?.title || q.subjects?.name}</h4>
                   <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{q.package_id ? 'Paket Tes' : 'Mata Pelajaran'}</p>
                 </div>
-                <Button 
-                  onClick={() => navigate(`/quiz?${q.package_id ? `packageId=${q.package_id}` : `subjectId=${q.subject_id}`}`)}
-                  className="w-full h-12 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white font-black shadow-lg relative z-10"
-                >
-                  Mulai Kerjakan Kuis
-                </Button>
+                <div className="flex gap-2 relative z-10">
+                  <Button 
+                    onClick={() => navigate(`/quiz?${q.package_id ? `packageId=${q.package_id}` : `subjectId=${q.subject_id}`}`)}
+                    className="flex-1 h-12 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white font-black shadow-lg"
+                  >
+                    Mulai Kerjakan
+                  </Button>
+                  {isTeacher && q.package_id && (
+                    <Button 
+                      variant="ghost" 
+                      disabled={generatingFromQuizId === q.id}
+                      onClick={() => generateMaterialFromQuiz(q)}
+                      className="h-12 w-12 p-0 rounded-xl bg-indigo-50 text-indigo-600 hover:bg-indigo-600 hover:text-white"
+                      title="Generate Materi dari Kuis ini"
+                    >
+                      {generatingFromQuizId === q.id ? <Spinner className="w-5 h-5" /> : <Sparkles className="w-5 h-5" />}
+                    </Button>
+                  )}
+                </div>
               </Card>
             ))}
           </div>
