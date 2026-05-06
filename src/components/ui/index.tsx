@@ -49,8 +49,12 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 // ─── Card ─────────────────────────────────────────────────────────────────────
-export const Card = ({ className, children }: { className?: string; children: React.ReactNode }) => (
-  <div className={cn('bg-white rounded-[16px] shadow-sm border border-slate-100 p-6', className)}>
+interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode;
+}
+
+export const Card = ({ className, children, ...props }: CardProps) => (
+  <div className={cn('bg-white rounded-[16px] shadow-sm border border-slate-100 p-6', className)} {...props}>
     {children}
   </div>
 );

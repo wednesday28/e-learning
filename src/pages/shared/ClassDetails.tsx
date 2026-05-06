@@ -20,7 +20,8 @@ import {
   Award,
   BookOpen,
   Trash2,
-  CheckCircle2
+  CheckCircle2,
+  PlayCircle
 } from 'lucide-react';
 
 
@@ -670,7 +671,7 @@ const ClassDetails = () => {
             {materials.map(m => (
               <Card 
                 key={m.id} 
-                onClick={(e) => {
+                onClick={(e: React.MouseEvent) => {
                   e.stopPropagation();
                   const url = m.content_type === 'lesson' ? `/learning?id=${m.file_url}` : m.file_url;
                   if (m.content_type === 'lesson') {
@@ -708,18 +709,20 @@ const ClassDetails = () => {
                         {mod.lessons?.map((les: any) => (
                           <div 
                             key={les.id} 
-                            onClick={(e) => {
+                            onClick={(e: React.MouseEvent) => {
                               e.stopPropagation();
-                              try {
-                                navigate(`/learning?id=${les.id}`);
-                              } catch (err) {
-                                window.location.href = `/learning?id=${les.id}`;
-                              }
+                              const url = `/learning?id=${les.id}`;
+                              try { navigate(url); } catch { window.location.href = url; }
                             }}
-                            className="flex items-center justify-between p-3 bg-white rounded-xl hover:shadow-md transition-all cursor-pointer group"
+                            className="flex items-center justify-between p-4 bg-white rounded-2xl hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all cursor-pointer group border border-transparent hover:border-indigo-200"
                           >
-                            <span className="text-sm font-bold text-slate-700 group-hover:text-indigo-600">{les.title}</span>
-                            <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-indigo-600" />
+                            <div className="flex items-center gap-3">
+                              <div className="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                                <PlayCircle className="w-4 h-4" />
+                              </div>
+                              <span className="text-sm font-black text-slate-700 group-hover:text-indigo-600">{les.title}</span>
+                            </div>
+                            <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />
                           </div>
                         ))}
                       </div>
