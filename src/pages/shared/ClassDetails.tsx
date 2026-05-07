@@ -454,6 +454,7 @@ const ClassDetails = () => {
         payload.title = newMaterial.title;
         payload.content_type = newMaterial.content_type;
         payload.file_url = finalFileUrl;
+        payload.subject_id = newMaterial.subject_id || null;
         if (uploadFile) {
           payload.file_name = uploadFile.name;
           payload.file_size = uploadFile.size;
@@ -959,8 +960,8 @@ const ClassDetails = () => {
 
             <div className="space-y-6">
               <div className="space-y-3">
-                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Judul Kuis</label>
-                <Input value={aiSettings.title} onChange={(e) => setAiSettings({ ...aiSettings, title: e.target.value })} placeholder="Judul Kuis..." className="h-14 rounded-2xl bg-slate-50 border-none px-4 font-bold" />
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Judul Paket Kuis</label>
+                <Input value={aiSettings.title} onChange={(e) => setAiSettings({ ...aiSettings, title: e.target.value })} placeholder="Judul Paket Kuis..." className="h-14 rounded-2xl bg-slate-50 border-none px-4 font-bold" />
               </div>
 
               <div className="space-y-3">

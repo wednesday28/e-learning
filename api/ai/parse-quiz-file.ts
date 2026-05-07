@@ -73,7 +73,7 @@ export default async function handler(
     }
 
     // AI Generation
-    const prompt = `Buatkan ${questionCount} soal kuis pilihan ganda (A,B,C,D) tentang ${topic || 'materi ini'}.
+    const prompt = `Buatkan TEPAT ${questionCount} soal kuis pilihan ganda (A,B,C,D) tentang ${topic || 'materi ini'}.
     Mata Pelajaran: ${subject || 'Umum'}
     PENTING: Hanya berikan output JSON array murni.
     Format JSON: [{"question_text":"...","choices":[{"text":"A. ...","is_correct":true},...]}]
