@@ -81,7 +81,6 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
             question_text: q.question_text || q.question,
             difficulty_level: q.difficulty_level || 'medium',
             type: 'multiple_choice',
-            teacher_id: profile?.id,  // tag as teacher-owned
           })
           .select()
           .single();

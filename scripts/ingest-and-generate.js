@@ -32,26 +32,17 @@ const cache = {
 async function generateQuestions(lessonContent, subjectName) {
   if (!lessonContent || lessonContent.length < 50) return null;
   
-  const subjectContext = subjectName ? `Mata Pelajaran: ${subjectName}\n\n` : '';
-  const prompt = `Buatkan 5 soal pilihan ganda berdasarkan teks materi berikut.
-PENTING: Anda harus menghasilkan tepat 5 soal pilihan ganda dengan 4 opsi (A, B, C, D).
-Format wajib JSON array murni tanpa markdown:
-[
-  {
-    "question_text": "...",
-    "difficulty_level": "medium",
-    "explanation": "...",
-    "choices": [
-      {"text": "A. ...", "is_correct": true},
-      {"text": "B. ...", "is_correct": false},
-      {"text": "C. ...", "is_correct": false},
-      {"text": "D. ...", "is_correct": false}
-    ]
-  }
-]
+  const subjectContext = subjectName ? `Mata Pelajaran: ${subjectName}` : '';
+  const prompt = `You are a JSON-only API. You must output ONLY a valid JSON array. No explanations, no markdown, no extra text.
 
-${subjectContext}TEKS MATERI:
-${lessonContent.substring(0, 30000)}`;
+Output exactly 5 multiple choice questions based on this educational material.
+${subjectContext}
+
+Required JSON format:
+[{"question_text":"...","difficulty_level":"medium","choices":[{"text":"A. ...","is_correct":true},{"text":"B. ...","is_correct":false},{"text":"C. ...","is_correct":false},{"text":"D. ...","is_correct":false}]}]
+
+MATERI:
+${lessonContent.substring(0, 8000)}`;
 
   try {
     const res = await fetch('https://api.cerebras.ai/v1/chat/completions', {
@@ -62,8 +53,11 @@ ${lessonContent.substring(0, 30000)}`;
       },
       body: JSON.stringify({
         model: 'llama3.1-8b',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.3
+        messages: [
+          { role: 'system', content: 'You are a JSON API. Output ONLY valid JSON arrays. Never include explanatory text, markdown, or code fences.' },
+          { role: 'user', content: prompt }
+        ],
+        temperature: 0.2
       })
     });
     
@@ -71,8 +65,15 @@ ${lessonContent.substring(0, 30000)}`;
     if (!res.ok) throw new Error(data.error?.message || 'Cerebras API Error');
     
     let content = data.choices[0]?.message?.content || '';
-    content = content.replace(/```json/g, '').replace(/```/g, '').trim();
-    return JSON.parse(content);
+    // Strip any markdown fences
+    content = content.replace(/```json/gi, '').replace(/```/g, '').trim();
+    // Extract JSON array if there's surrounding text
+    const jsonMatch = content.match(/(\[\s*\{[\s\S]*\}\s*\])/);
+    if (jsonMatch) content = jsonMatch[1];
+    
+    const parsed = JSON.parse(content);
+    if (!Array.isArray(parsed)) throw new Error('Response is not an array');
+    return parsed;
   } catch (err) {
     console.error("  -> AI Generation Failed:", err.message);
     return null;
@@ -203,8 +204,8 @@ async function processRecursive(item, context) {
     console.log(`  -> FAILED: Could not generate questions.`);
   }
   
-  // Rate limiting Cerebras
-  await new Promise(r => setTimeout(r, 1500));
+  // Rate limiting - 3s delay to stay within Cerebras limits
+  await new Promise(r => setTimeout(r, 3000));
 }
 
 async function main() {
