@@ -1,18 +1,12 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import mammoth from 'mammoth';
+// @ts-ignore
+import * as pdf from 'pdf-parse';
 
 export default async function handler(
   req: VercelRequest,
   res: VercelResponse
 ) {
-  // Dynamic import for pdf-parse to avoid build-time issues
-  let pdf: any;
-  try {
-    pdf = await import('pdf-parse').then(m => m.default || m);
-  } catch (e) {
-    console.error('Failed to load pdf-parse:', e);
-  }
-
   res.setHeader('Content-Type', 'application/json');
 
   if (req.method !== 'POST') {
@@ -42,13 +36,16 @@ export default async function handler(
         const lowerName = fileName?.toLowerCase() || '';
 
         if (fileType?.includes('pdf') || lowerName.endsWith('.pdf')) {
-          if (typeof pdf === 'function') {
+          // Robust resolver for CJS module in ESM
+          const pdfParser = typeof pdf === 'function' ? pdf : (pdf as any).default;
+          
+          if (typeof pdfParser === 'function') {
             console.log('Parsing PDF...');
-            const data = await pdf(buffer);
+            const data = await pdfParser(buffer);
             extractedText = data.text || '';
             console.log('PDF Extracted text length:', extractedText.length);
           } else {
-             parseError = 'Library PDF tidak terdeteksi sebagai fungsi di server.';
+             parseError = `Library PDF tidak terdeteksi sebagai fungsi (Tipe: ${typeof pdf}).`;
           }
         } else if (fileType?.includes('word') || lowerName.endsWith('.docx')) {
           console.log('Parsing Word...');
