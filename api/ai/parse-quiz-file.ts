@@ -39,13 +39,16 @@ export default async function handler(
 
         if (fileType?.includes('pdf') || lowerName.endsWith('.pdf')) {
           try {
-            // Lazy load pdf-parse only when needed to avoid initialization crashes
-            const pdf = await import('pdf-parse').then(m => m.default || m);
+            const { createRequire } = await import('node:module');
+            const localRequire = createRequire(import.meta.url);
+            const pdfParserRaw = localRequire('pdf-parse');
+            const pdf = typeof pdfParserRaw === 'function' ? pdfParserRaw : pdfParserRaw.default || pdfParserRaw;
+            
             if (typeof pdf === 'function') {
               const data = await pdf(buffer);
               extractedText = data.text || '';
             } else {
-              throw new Error('PDF library is not a function');
+              throw new Error(`PDF library resolved to ${typeof pdf}`);
             }
           } catch (pdfErr: any) {
             console.error('PDF Parse Error:', pdfErr);
