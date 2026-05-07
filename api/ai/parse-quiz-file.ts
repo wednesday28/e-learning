@@ -1,5 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import mammoth from 'mammoth';
+// @ts-ignore
+import pdfModule from 'pdf-parse';
 
 // Polyfill for pdf-parse in Node environments (Vercel)
 if (typeof global !== 'undefined') {
@@ -12,7 +14,6 @@ export default async function handler(
   req: VercelRequest,
   res: VercelResponse
 ) {
-  // Set headers early
   res.setHeader('Content-Type', 'application/json');
 
   try {
@@ -22,7 +23,6 @@ export default async function handler(
 
     const { fileUrl, fileName, fileType, topic, questionCount = 5, subject = '' } = req.body;
     
-    // API Keys
     const cerebrasApiKey = process.env.CEREBRAS_API_KEY || process.env.VITE_CEREBRAS_API_KEY || 'csk-48rn5nyym4cmkjtj4ttx5cre828h6dncehcf964vcrdt8dnn';
     const groqApiKey = process.env.VITE_GROQ_API_KEY || process.env.GROQ_API_KEY;
 
@@ -39,20 +39,18 @@ export default async function handler(
 
         if (fileType?.includes('pdf') || lowerName.endsWith('.pdf')) {
           try {
-            const { createRequire } = await import('node:module');
-            const localRequire = createRequire(import.meta.url);
-            const pdfParserRaw = localRequire('pdf-parse');
-            const pdf = typeof pdfParserRaw === 'function' ? pdfParserRaw : pdfParserRaw.default || pdfParserRaw;
+            // Robust resolver for pdf-parse
+            const pdf = (pdfModule as any).default || pdfModule;
             
             if (typeof pdf === 'function') {
               const data = await pdf(buffer);
               extractedText = data.text || '';
             } else {
-              throw new Error(`PDF library resolved to ${typeof pdf}`);
+              throw new Error(`PDF library type is ${typeof pdf}`);
             }
           } catch (pdfErr: any) {
             console.error('PDF Parse Error:', pdfErr);
-            parseError = `Gagal memproses PDF: ${pdfErr.message}. Gunakan file Word atau Teks sebagai alternatif.`;
+            parseError = `Gagal memproses PDF: ${pdfErr.message}`;
           }
         } else if (fileType?.includes('word') || lowerName.endsWith('.docx')) {
           const result = await mammoth.extractRawText({ buffer });
@@ -65,7 +63,6 @@ export default async function handler(
       }
     }
 
-    // AI Generation Logic
     if (!extractedText && !topic) {
       return res.status(400).json({ 
         message: `Gagal mengekstrak materi. ${parseError}` 
