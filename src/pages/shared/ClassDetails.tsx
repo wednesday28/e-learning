@@ -3,15 +3,15 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
 import { useAuthStore } from '../../store/useAuthStore';
 import { Card, Button, Spinner, Input } from '../../components/ui';
-import { 
+import {
   ChevronLeft,
-  Megaphone, 
-  ClipboardList, 
-  FileText, 
-  MessagesSquare, 
-  Users, 
-  Clock, 
-  PlusCircle, 
+  Megaphone,
+  ClipboardList,
+  FileText,
+  MessagesSquare,
+  Users,
+  Clock,
+  PlusCircle,
   Send,
   Download,
   X,
@@ -29,11 +29,11 @@ const ClassDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { profile } = useAuthStore();
-  
+
   const [activeTab, setActiveTab] = useState('overview');
   const [classData, setClassData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
-  
+
   // Feature States
   const [announcements, setAnnouncements] = useState<any[]>([]);
   const [assignments, setAssignments] = useState<any[]>([]);
@@ -44,7 +44,7 @@ const ClassDetails = () => {
   // Input States
   const [newAnnouncement, setNewAnnouncement] = useState({ title: '', content: '' });
   const [newAssignment, setNewAssignment] = useState({ title: '', instructions: '', due_date: '' });
-  const [newMaterial, setNewMaterial] = useState({ title: '', content_type: 'pdf' });
+  const [newMaterial, setNewMaterial] = useState({ title: '', content_type: 'pdf', subject_id: '' });
   const [newMessage, setNewMessage] = useState('');
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [contentType, setContentType] = useState<'announcement' | 'assignment' | 'material' | 'quiz'>('announcement');
@@ -75,10 +75,10 @@ const ClassDetails = () => {
     questionCount: 5,
     duration: 15,
     materialId: '',
-    materialTitle: '',
-    quizTitle: '',
+    title: '',
     fileUrl: '',
-    file: null as File | null
+    file: null as File | null,
+    subjectId: ''
   });
 
 
@@ -168,10 +168,11 @@ const ClassDetails = () => {
   };
 
   const fetchAvailableSubjects = async () => {
+    if (!classData?.level_id) return;
     const { data } = await supabase
       .from('subjects')
       .select('*, levels(name)')
-      .order('level_id', { ascending: true })
+      .eq('level_id', classData.level_id)
       .order('name', { ascending: true });
     setAvailableSubjects(data || []);
   };
@@ -245,10 +246,11 @@ const ClassDetails = () => {
     }
   };
 
-  const generateQuizFromMaterial = async (materialId: string, title: string, fileUrl: string, file: File | null, count: number, duration: number) => {
+  const generateQuizFromMaterial = async (materialId: string, title: string, fileUrl: string, file: File | null, count: number, duration: number, subjectId: string) => {
     setGeneratingMaterialId(materialId);
     try {
       // 1. AI Generation
+      const subjectName = availableSubjects.find(s => s.id === subjectId)?.name || '';
       const res = await fetch('/api/ai/parse-quiz-file', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -256,8 +258,9 @@ const ClassDetails = () => {
           fileUrl,
           fileName: file?.name || fileUrl.split('/').pop() || 'document.pdf',
           fileType: file?.type || (fileUrl.toLowerCase().includes('.pdf') ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'),
-          topic: title, // This is the Quiz Title
-          questionCount: count
+          topic: title,
+          questionCount: count,
+          subject: subjectName
         })
       });
 
@@ -268,7 +271,7 @@ const ClassDetails = () => {
       } else {
         throw new Error('Respon server tidak valid. Pastikan GROQ_API_KEY sudah diset.');
       }
-      
+
       if (!res.ok) throw new Error(data.message || 'Gagal generate soal kuis');
 
       const questions = data.questions || [];
@@ -279,42 +282,38 @@ const ClassDetails = () => {
 
       // 2. Save Questions & Choices
       const questionIds = [];
-      
-      // Fetch material details to get subject_id
-      const { data: material } = await supabase.from('class_materials').select('subject_id').eq('id', materialId).single();
-      const subjectId = material?.subject_id || availableSubjects[0]?.id || null;
+      const defaultSubjectId = subjectId || availableSubjects[0]?.id || null;
 
       for (const q of questions) {
-         const { data: qData, error: qError } = await supabase
-           .from('questions')
-           .insert({
-             question_text: q.question_text,
-             difficulty_level: q.difficulty_level || 'medium',
-             type: 'multiple_choice',
-             subject_id: subjectId
-           })
-           .select()
-           .single();
+        const { data: qData, error: qError } = await supabase
+          .from('questions')
+          .insert({
+            question_text: q.question_text,
+            difficulty_level: q.difficulty_level || 'medium',
+            type: 'multiple_choice',
+            subject_id: defaultSubjectId
+          })
+          .select()
+          .single();
 
-         if (!qError && qData) {
-            questionIds.push(qData.id);
-            const choicesToInsert = q.choices.map((c: any) => ({
-              question_id: qData.id,
-              choice_text: c.text || c.choice_text,
-              is_correct: c.is_correct
-            }));
-            await supabase.from('choices').insert(choicesToInsert);
-         }
+        if (!qError && qData) {
+          questionIds.push(qData.id);
+          const choicesToInsert = q.choices.map((c: any) => ({
+            question_id: qData.id,
+            choice_text: c.text || c.choice_text,
+            is_correct: c.is_correct
+          }));
+          await supabase.from('choices').insert(choicesToInsert);
+        }
       }
 
       if (questionIds.length > 0) {
         // 3. Create Quiz Package
         const { data: pkg, error: pkgError } = await supabase.from('quiz_packages').insert({
           teacher_id: profile?.id,
-          title: title, // Use the user-defined Quiz Title
-          description: `Dibuat otomatis dari materi "${aiSettings.materialTitle}".`,
+          title: `AI Quiz: ${title}`,
+          description: `Dibuat otomatis dari materi "${title}".`,
           level_id: classData?.level_id || null,
-          subject_id: subjectId,
           duration: duration // In minutes
         }).select().single();
 
@@ -343,7 +342,7 @@ const ClassDetails = () => {
           .from('class_materials')
           .update({ generated_question_ids: questionIds })
           .eq('id', materialId);
-        
+
         alert(`Sukses! AI berhasil membuat ${questionIds.length} soal dan kuis sudah ditambahkan ke daftar kuis kelas.`);
         fetchMaterials();
         fetchClassQuizzes();
@@ -395,7 +394,7 @@ const ClassDetails = () => {
         const { data: publicUrlData } = supabase.storage
           .from('class-materials')
           .getPublicUrl(filePath);
-          
+
         finalFileUrl = publicUrlData.publicUrl;
       }
 
@@ -413,10 +412,9 @@ const ClassDetails = () => {
         payload.title = newMaterial.title;
         payload.content_type = newMaterial.content_type;
         payload.file_url = finalFileUrl;
-        payload.subject_id = selectedSubjectId || null;
         if (uploadFile) {
-           payload.file_name = uploadFile.name;
-           payload.file_size = uploadFile.size;
+          payload.file_name = uploadFile.name;
+          payload.file_size = uploadFile.size;
         }
       }
 
@@ -429,24 +427,25 @@ const ClassDetails = () => {
       if (insertError) throw new Error(`Gagal menyimpan data materi: ${insertError.message}.`);
 
       // 3. Reset state & refresh
-      setNewMaterial({ title: '', content_type: 'pdf' });
+      setNewMaterial({ title: '', content_type: 'pdf', subject_id: '' });
       setSelectedLessonId('');
       setUploadFile(null);
       setUploadUrl('');
+      setShowCreateModal(false);
       fetchMaterials();
 
       // 4. Trigger AI Settings if auto-gen enabled
       if (materialSource === 'upload' && uploadFile && autoGenerateQuiz) {
-         setAiSettings({
-           questionCount: 5,
-           duration: 15,
-           materialId: newMaterialRecord.id,
-           materialTitle: newMaterial.title,
-           quizTitle: `Kuis ${newMaterial.title}`,
-           fileUrl: finalFileUrl,
-           file: uploadFile
-         });
-         setShowAiSettingsModal(true);
+        setAiSettings({
+          questionCount: 5,
+          duration: 15,
+          materialId: newMaterialRecord.id,
+          title: newMaterial.title,
+          fileUrl: finalFileUrl,
+          file: uploadFile,
+          subjectId: newMaterial.subject_id
+        });
+        setShowAiSettingsModal(true);
       }
 
     } catch (err: any) {
@@ -471,7 +470,7 @@ const ClassDetails = () => {
         .eq('package_id', quiz.package_id);
 
       if (qError) throw qError;
-      
+
       const parsedQuestions = questions?.map(q => q.questions) || [];
       if (parsedQuestions.length === 0) throw new Error('Tidak ada soal ditemukan dalam paket ini.');
 
@@ -543,13 +542,13 @@ const ClassDetails = () => {
 
   const handleDeleteMaterial = async (material: any) => {
     if (!window.confirm(`Hapus materi "${material.title}"?`)) return;
-    
+
     try {
       // 1. If it's an uploaded file, we might want to delete from storage too
       // But for safety and simplicity, we just delete the record first.
       // If file_url contains our bucket, we can try to delete it.
       if (material.file_url && !material.file_url.startsWith('http')) {
-         await supabase.storage.from('class-materials').remove([material.file_url]);
+        await supabase.storage.from('class-materials').remove([material.file_url]);
       }
 
       const { error } = await supabase.from('class_materials').delete().eq('id', material.id);
@@ -611,9 +610,9 @@ const ClassDetails = () => {
         </div>
         {isTeacher && (
           <div className="flex gap-3">
-             <Button onClick={() => setShowCreateModal(true)} className="rounded-2xl h-12 px-6 shadow-lg shadow-indigo-100">
-               <PlusCircle className="w-5 h-5 mr-2" /> Tambah Konten
-             </Button>
+            <Button onClick={() => setShowCreateModal(true)} className="rounded-2xl h-12 px-6 shadow-lg shadow-indigo-100">
+              <PlusCircle className="w-5 h-5 mr-2" /> Tambah Konten
+            </Button>
           </div>
         )}
       </div>
@@ -624,11 +623,10 @@ const ClassDetails = () => {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`flex items-center gap-2 px-4 md:px-6 py-2.5 md:py-3 rounded-xl md:rounded-2xl font-bold transition-all whitespace-nowrap text-sm ${
-              activeTab === tab.id 
-              ? 'bg-indigo-600 text-white shadow-xl shadow-indigo-100' 
-              : 'bg-white text-slate-500 hover:bg-slate-50 border border-slate-100'
-            }`}
+            className={`flex items-center gap-2 px-4 md:px-6 py-2.5 md:py-3 rounded-xl md:rounded-2xl font-bold transition-all whitespace-nowrap text-sm ${activeTab === tab.id
+                ? 'bg-indigo-600 text-white shadow-xl shadow-indigo-100'
+                : 'bg-white text-slate-500 hover:bg-slate-50 border border-slate-100'
+              }`}
           >
             <tab.icon className="w-4 h-4" />
             {tab.label}
@@ -659,14 +657,14 @@ const ClassDetails = () => {
               <Card className="p-8 bg-indigo-50 border-none">
                 <h4 className="font-black text-slate-900 mb-4">Statistik Kelas</h4>
                 <div className="space-y-4">
-                   <div className="flex justify-between items-center">
-                     <span className="text-sm font-bold text-slate-500">Total Siswa</span>
-                     <span className="font-black text-indigo-600">{students.length}</span>
-                   </div>
-                   <div className="flex justify-between items-center">
-                     <span className="text-sm font-bold text-slate-500">Tugas Aktif</span>
-                     <span className="font-black text-indigo-600">{assignments.length}</span>
-                   </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm font-bold text-slate-500">Total Siswa</span>
+                    <span className="font-black text-indigo-600">{students.length}</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm font-bold text-slate-500">Tugas Aktif</span>
+                    <span className="font-black text-indigo-600">{assignments.length}</span>
+                  </div>
                 </div>
               </Card>
             </div>
@@ -699,18 +697,18 @@ const ClassDetails = () => {
             {assignments.map(a => (
               <Card key={a.id} className="p-8 space-y-6 hover:border-indigo-500 transition-all group">
                 <div className="flex justify-between items-start">
-                   <div className="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                     <ClipboardList className="w-6 h-6" />
-                   </div>
-                   <div className="text-right">
-                     <span className="text-[10px] font-black text-rose-500 uppercase tracking-widest bg-rose-50 px-2 py-1 rounded-md flex items-center gap-1">
-                       <Clock className="w-3 h-3" /> {a.due_date ? new Date(a.due_date).toLocaleDateString() : 'No Due'}
-                     </span>
-                   </div>
+                  <div className="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                    <ClipboardList className="w-6 h-6" />
+                  </div>
+                  <div className="text-right">
+                    <span className="text-[10px] font-black text-rose-500 uppercase tracking-widest bg-rose-50 px-2 py-1 rounded-md flex items-center gap-1">
+                      <Clock className="w-3 h-3" /> {a.due_date ? new Date(a.due_date).toLocaleDateString() : 'No Due'}
+                    </span>
+                  </div>
                 </div>
                 <div>
-                   <h4 className="text-xl font-black text-slate-900 mb-2">{a.title}</h4>
-                   <p className="text-sm text-slate-500 line-clamp-3">{a.instructions}</p>
+                  <h4 className="text-xl font-black text-slate-900 mb-2">{a.title}</h4>
+                  <p className="text-sm text-slate-500 line-clamp-3">{a.instructions}</p>
                 </div>
                 <div className="flex items-center justify-between pt-4 border-t border-slate-100">
                   <span className="text-xs font-bold text-slate-400">{isTeacher ? `${a.class_submissions?.[0]?.count || 0} Pengumpulan` : 'Belum Dikerjakan'}</span>
@@ -728,35 +726,34 @@ const ClassDetails = () => {
               <h3 className="font-black text-slate-900">Diskusi Kelas</h3>
             </div>
             <div className="flex-1 overflow-y-auto p-8 space-y-6 bg-slate-50/50">
-               {messages.map(m => (
-                 <div key={m.id} className={`flex gap-4 ${m.user_id === profile?.id ? 'flex-row-reverse' : ''}`}>
-                    <div className="w-10 h-10 bg-white rounded-full border border-slate-100 flex items-center justify-center font-black overflow-hidden flex-shrink-0">
-                      {m.profiles?.avatar_url ? <img src={m.profiles.avatar_url} alt="avatar" /> : m.profiles?.full_name?.[0]}
+              {messages.map(m => (
+                <div key={m.id} className={`flex gap-4 ${m.user_id === profile?.id ? 'flex-row-reverse' : ''}`}>
+                  <div className="w-10 h-10 bg-white rounded-full border border-slate-100 flex items-center justify-center font-black overflow-hidden flex-shrink-0">
+                    {m.profiles?.avatar_url ? <img src={m.profiles.avatar_url} alt="avatar" /> : m.profiles?.full_name?.[0]}
+                  </div>
+                  <div className={`max-w-[70%] space-y-1 ${m.user_id === profile?.id ? 'items-end' : ''}`}>
+                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{m.profiles?.full_name}</p>
+                    <div className={`p-4 rounded-2xl text-sm font-medium ${m.user_id === profile?.id
+                        ? 'bg-indigo-600 text-white rounded-tr-none'
+                        : 'bg-white text-slate-700 rounded-tl-none shadow-sm'
+                      }`}>
+                      {m.content}
                     </div>
-                    <div className={`max-w-[70%] space-y-1 ${m.user_id === profile?.id ? 'items-end' : ''}`}>
-                       <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{m.profiles?.full_name}</p>
-                       <div className={`p-4 rounded-2xl text-sm font-medium ${
-                         m.user_id === profile?.id 
-                         ? 'bg-indigo-600 text-white rounded-tr-none' 
-                         : 'bg-white text-slate-700 rounded-tl-none shadow-sm'
-                       }`}>
-                         {m.content}
-                       </div>
-                    </div>
-                 </div>
-               ))}
+                  </div>
+                </div>
+              ))}
             </div>
             <div className="p-6 border-t border-slate-100 bg-white flex gap-4">
-               <Input 
-                 value={newMessage} 
-                 onChange={(e) => setNewMessage(e.target.value)}
-                 onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                 placeholder="Ketik pesan diskusi..." 
-                 className="flex-1 h-12 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500" 
-               />
-               <Button onClick={handleSendMessage} className="h-12 w-12 p-0 rounded-xl">
-                 <Send className="w-5 h-5" />
-               </Button>
+              <Input
+                value={newMessage}
+                onChange={(e) => setNewMessage(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+                placeholder="Ketik pesan diskusi..."
+                className="flex-1 h-12 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:ring-indigo-500"
+              />
+              <Button onClick={handleSendMessage} className="h-12 w-12 p-0 rounded-xl">
+                <Send className="w-5 h-5" />
+              </Button>
             </div>
           </Card>
         )}
@@ -774,7 +771,7 @@ const ClassDetails = () => {
 
               return (
                 <div key={m.id} className="relative group">
-                  <Card 
+                  <Card
                     onClick={() => isLesson ? navigate(`/learning?id=${m.file_url}`) : window.open(finalUrl, '_blank')}
                     className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group h-full"
                   >
@@ -786,11 +783,11 @@ const ClassDetails = () => {
                       <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type || 'Dokumen'}</p>
                     </div>
                   </Card>
-                  
+
                   {isTeacher && !isLesson && (
                     <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-2">
-                      <Button 
-                        size="sm" 
+                      <Button
+                        size="sm"
                         variant="ghost"
                         disabled={generatingMaterialId === m.id}
                         onClick={(e) => {
@@ -799,10 +796,10 @@ const ClassDetails = () => {
                             questionCount: 5,
                             duration: 15,
                             materialId: m.id,
-                            materialTitle: m.title,
-                            quizTitle: `Kuis ${m.title}`,
+                            title: m.title,
                             fileUrl: finalUrl,
-                            file: null
+                            file: null,
+                            subjectId: ''
                           });
                           setShowAiSettingsModal(true);
                         }}
@@ -815,9 +812,9 @@ const ClassDetails = () => {
                         )}
                         {generatingMaterialId === m.id ? 'Memproses...' : 'Buat Kuis'}
                       </Button>
-                      
-                      <Button 
-                        size="sm" 
+
+                      <Button
+                        size="sm"
                         variant="ghost"
                         onClick={(e) => {
                           e.stopPropagation();
@@ -841,27 +838,27 @@ const ClassDetails = () => {
               <Card key={q.id} className="p-8 space-y-6 hover:border-amber-500 transition-all group relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-full -mr-16 -mt-16 group-hover:bg-amber-100 transition-colors" />
                 <div className="flex justify-between items-start relative z-10">
-                   <div className="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600">
-                      <Award className="w-6 h-6" />
-                   </div>
-                   {isTeacher && (
-                      <Button variant="ghost" size="icon" onClick={() => handleDeleteQuiz(q.id)} className="h-8 w-8 text-slate-300 hover:text-rose-500"><Trash2 className="w-4 h-4" /></Button>
-                   )}
+                  <div className="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600">
+                    <Award className="w-6 h-6" />
+                  </div>
+                  {isTeacher && (
+                    <Button variant="ghost" size="icon" onClick={() => handleDeleteQuiz(q.id)} className="h-8 w-8 text-slate-300 hover:text-rose-500"><Trash2 className="w-4 h-4" /></Button>
+                  )}
                 </div>
                 <div className="relative z-10">
                   <h4 className="text-xl font-black text-slate-900 mb-1">{q.quiz_packages?.title || q.subjects?.name}</h4>
                   <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{q.package_id ? 'Paket Tes' : 'Mata Pelajaran'}</p>
                 </div>
                 <div className="flex gap-2 relative z-10">
-                  <Button 
+                  <Button
                     onClick={() => navigate(`/quiz?${q.package_id ? `packageId=${q.package_id}` : `subjectId=${q.subject_id}`}`)}
                     className="flex-1 h-12 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white font-black shadow-lg"
                   >
                     Mulai Kerjakan
                   </Button>
                   {isTeacher && q.package_id && (
-                    <Button 
-                      variant="ghost" 
+                    <Button
+                      variant="ghost"
                       disabled={generatingFromQuizId === q.id}
                       onClick={() => generateMaterialFromQuiz(q)}
                       className="h-12 w-12 p-0 rounded-xl bg-indigo-50 text-indigo-600 hover:bg-indigo-600 hover:text-white"
@@ -875,24 +872,24 @@ const ClassDetails = () => {
             ))}
           </div>
         )}
-        
+
         {activeTab === 'students' && (
           <Card className="p-8">
             <h3 className="text-xl font-black text-slate-900 mb-8 flex items-center gap-3">
               <Users className="w-6 h-6 text-indigo-600" /> Anggota Kelas ({students.length})
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-               {students.map(s => (
-                 <div key={s.id} className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl">
-                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center font-black text-indigo-600">
-                       {s.profiles?.full_name?.[0]}
-                    </div>
-                    <div>
-                       <p className="font-black text-slate-900 leading-none">{s.profiles?.full_name}</p>
-                       <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Siswa • {s.profiles?.total_xp || 0} XP</p>
-                    </div>
-                 </div>
-               ))}
+              {students.map(s => (
+                <div key={s.id} className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center font-black text-indigo-600">
+                    {s.profiles?.full_name?.[0]}
+                  </div>
+                  <div>
+                    <p className="font-black text-slate-900 leading-none">{s.profiles?.full_name}</p>
+                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Siswa • {s.profiles?.total_xp || 0} XP</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </Card>
         )}
@@ -901,68 +898,71 @@ const ClassDetails = () => {
       {/* AI Settings Modal */}
       {showAiSettingsModal && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md">
-           <Card className="w-full max-w-sm p-8 bg-white rounded-[40px] shadow-2xl animate-in zoom-in fade-in duration-300">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600">
-                   <Sparkles className="w-6 h-6" />
-                </div>
-                <div>
-                   <h2 className="text-xl font-black text-slate-900">Konfigurasi AI</h2>
-                   <p className="text-xs font-bold text-slate-400">Referensi: {aiSettings.materialTitle}</p>
+          <Card className="w-full max-w-sm p-8 bg-white rounded-[40px] shadow-2xl animate-in zoom-in fade-in duration-300">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600">
+                <Sparkles className="w-6 h-6" />
+              </div>
+              <div>
+                <h2 className="text-xl font-black text-slate-900">Konfigurasi AI</h2>
+                <p className="text-xs font-bold text-slate-400">Atur kuis untuk materi: {aiSettings.title}</p>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Judul Kuis</label>
+                <Input value={aiSettings.title} onChange={(e) => setAiSettings({ ...aiSettings, title: e.target.value })} placeholder="Judul Kuis..." className="h-14 rounded-2xl bg-slate-50 border-none px-4 font-bold" />
+              </div>
+
+              <div className="space-y-3">
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Mata Pelajaran</label>
+                <select value={aiSettings.subjectId} onChange={(e) => setAiSettings({ ...aiSettings, subjectId: e.target.value })} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                  <option value="">Pilih Mata Pelajaran...</option>
+                  {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name} - Kelas {classData?.grades?.grade_level || '-'})</option>)}
+                </select>
+              </div>
+
+              <div className="space-y-3">
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Jumlah Soal</label>
+                <div className="flex gap-2">
+                  {[5, 10, 15, 20].map(n => (
+                    <button
+                      key={n}
+                      onClick={() => setAiSettings({ ...aiSettings, questionCount: n })}
+                      className={`flex-1 h-12 rounded-xl font-black text-sm transition-all ${aiSettings.questionCount === n ? 'bg-indigo-600 text-white shadow-lg' : 'bg-slate-50 text-slate-400'
+                        }`}
+                    >
+                      {n}
+                    </button>
+                  ))}
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <div className="space-y-3">
-                   <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Judul Kuis</label>
-                   <Input 
-                     value={aiSettings.quizTitle}
-                     onChange={(e) => setAiSettings({...aiSettings, quizTitle: e.target.value})}
-                     placeholder="Contoh: Kuis Harian Matematika"
-                     className="h-12 rounded-xl bg-slate-50 border-none px-4 font-bold outline-none focus:ring-2 focus:ring-indigo-500"
-                   />
+              <div className="space-y-3">
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Durasi Pengerjaan (Menit)</label>
+                <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl">
+                  <Clock className="w-5 h-5 text-indigo-600" />
+                  <input
+                    type="number"
+                    value={aiSettings.duration}
+                    onChange={(e) => setAiSettings({ ...aiSettings, duration: parseInt(e.target.value) || 1 })}
+                    className="bg-transparent border-none outline-none font-black text-slate-700 w-full"
+                  />
                 </div>
-                 <div className="space-y-3">
-                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Jumlah Soal</label>
-                    <div className="flex gap-2">
-                       {[5, 10, 15, 20].map(n => (
-                         <button 
-                           key={n}
-                           onClick={() => setAiSettings({...aiSettings, questionCount: n})}
-                           className={`flex-1 h-12 rounded-xl font-black text-sm transition-all ${
-                             aiSettings.questionCount === n ? 'bg-indigo-600 text-white shadow-lg' : 'bg-slate-50 text-slate-400'
-                           }`}
-                         >
-                           {n}
-                         </button>
-                       ))}
-                    </div>
-                 </div>
-
-                 <div className="space-y-3">
-                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Durasi Pengerjaan (Menit)</label>
-                    <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl">
-                       <Clock className="w-5 h-5 text-indigo-600" />
-                       <input 
-                         type="number" 
-                         value={aiSettings.duration}
-                         onChange={(e) => setAiSettings({...aiSettings, duration: parseInt(e.target.value) || 1})}
-                         className="bg-transparent border-none outline-none font-black text-slate-700 w-full"
-                       />
-                    </div>
-                 </div>
-
-                 <div className="pt-4 flex gap-3">
-                    <Button variant="ghost" onClick={() => setShowAiSettingsModal(false)} className="flex-1 h-14 rounded-2xl font-black">Batal</Button>
-                    <Button 
-                       onClick={() => generateQuizFromMaterial(aiSettings.materialId, aiSettings.quizTitle, aiSettings.fileUrl, aiSettings.file, aiSettings.questionCount, aiSettings.duration)}
-                       className="flex-1 h-14 rounded-2xl bg-indigo-600 shadow-xl shadow-indigo-100 font-black"
-                     >
-                       Generate Kuis
-                     </Button>
-                 </div>
               </div>
-           </Card>
+
+              <div className="pt-4 flex gap-3">
+                <Button variant="ghost" onClick={() => setShowAiSettingsModal(false)} className="flex-1 h-14 rounded-2xl font-black">Batal</Button>
+                <Button
+                  onClick={() => generateQuizFromMaterial(aiSettings.materialId, aiSettings.title, aiSettings.fileUrl, aiSettings.file, aiSettings.questionCount, aiSettings.duration, aiSettings.subjectId)}
+                  className="flex-1 h-14 rounded-2xl bg-indigo-600 shadow-xl shadow-indigo-100 font-black"
+                >
+                  Genereate Kuis
+                </Button>
+              </div>
+            </div>
+          </Card>
         </div>
       )}
 
@@ -976,35 +976,34 @@ const ClassDetails = () => {
                 <X className="w-6 h-6" />
               </Button>
             </div>
-            
+
             <div className="flex gap-2 mb-8 bg-slate-50 p-1.5 rounded-2xl">
-               {(['announcement', 'assignment', 'material', 'quiz'] as const).map(type => (
-                 <button
-                   key={type}
-                   onClick={() => setContentType(type)}
-                   className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-xl transition-all ${
-                     contentType === type ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'
-                   }`}
-                 >
-                   {type === 'announcement' ? 'Info' : type === 'assignment' ? 'Tugas' : type === 'material' ? 'Materi' : 'Kuis'}
-                 </button>
-               ))}
+              {(['announcement', 'assignment', 'material', 'quiz'] as const).map(type => (
+                <button
+                  key={type}
+                  onClick={() => setContentType(type)}
+                  className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-xl transition-all ${contentType === type ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'
+                    }`}
+                >
+                  {type === 'announcement' ? 'Info' : type === 'assignment' ? 'Tugas' : type === 'material' ? 'Materi' : 'Kuis'}
+                </button>
+              ))}
             </div>
 
             <div className="space-y-6">
               {contentType === 'announcement' && (
                 <>
-                  <Input value={newAnnouncement.title} onChange={(e) => setNewAnnouncement({...newAnnouncement, title: e.target.value})} placeholder="Judul Pengumuman" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
-                  <textarea value={newAnnouncement.content} onChange={(e) => setNewAnnouncement({...newAnnouncement, content: e.target.value})} className="w-full min-h-[120px] bg-slate-50 border-none rounded-2xl p-4 text-sm font-medium" placeholder="Konten pengumuman..." />
+                  <Input value={newAnnouncement.title} onChange={(e) => setNewAnnouncement({ ...newAnnouncement, title: e.target.value })} placeholder="Judul Pengumuman" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                  <textarea value={newAnnouncement.content} onChange={(e) => setNewAnnouncement({ ...newAnnouncement, content: e.target.value })} className="w-full min-h-[120px] bg-slate-50 border-none rounded-2xl p-4 text-sm font-medium" placeholder="Konten pengumuman..." />
                   <Button onClick={handlePostAnnouncement} className="w-full h-14 rounded-2xl shadow-lg">Posting Info</Button>
                 </>
               )}
 
               {contentType === 'assignment' && (
                 <>
-                  <Input value={newAssignment.title} onChange={(e) => setNewAssignment({...newAssignment, title: e.target.value})} placeholder="Judul Tugas" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
-                  <textarea value={newAssignment.instructions} onChange={(e) => setNewAssignment({...newAssignment, instructions: e.target.value})} className="w-full min-h-[120px] bg-slate-50 border-none rounded-2xl p-4 text-sm font-medium" placeholder="Instruksi tugas..." />
-                  <Input type="date" value={newAssignment.due_date} onChange={(e) => setNewAssignment({...newAssignment, due_date: e.target.value})} className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                  <Input value={newAssignment.title} onChange={(e) => setNewAssignment({ ...newAssignment, title: e.target.value })} placeholder="Judul Tugas" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                  <textarea value={newAssignment.instructions} onChange={(e) => setNewAssignment({ ...newAssignment, instructions: e.target.value })} className="w-full min-h-[120px] bg-slate-50 border-none rounded-2xl p-4 text-sm font-medium" placeholder="Instruksi tugas..." />
+                  <Input type="date" value={newAssignment.due_date} onChange={(e) => setNewAssignment({ ...newAssignment, due_date: e.target.value })} className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
                   <Button onClick={handlePostAssignment} className="w-full h-14 rounded-2xl shadow-lg">Posting Tugas</Button>
                 </>
               )}
@@ -1018,56 +1017,49 @@ const ClassDetails = () => {
 
                   {materialSource === 'upload' ? (
                     <div className="space-y-4">
-                       <div className="space-y-2">
-                          <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Pilih Mata Pelajaran</label>
-                          <select 
-                            value={selectedSubjectId} 
-                            onChange={(e) => setSelectedSubjectId(e.target.value)} 
-                            className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold outline-none focus:ring-2 focus:ring-indigo-500"
-                          >
-                            <option value="">-- Pilih Mata Pelajaran --</option>
-                            {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
-                          </select>
-                       </div>
-                       <Input value={newMaterial.title} onChange={(e) => setNewMaterial({...newMaterial, title: e.target.value})} placeholder="Judul Materi" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
-                       <select value={newMaterial.content_type} onChange={(e) => setNewMaterial({...newMaterial, content_type: e.target.value})} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
-                          <option value="pdf">PDF Dokumen</option>
-                          <option value="video">Video Materi</option>
-                          <option value="link">Link Eksternal</option>
-                       </select>
-                       {newMaterial.content_type !== 'link' ? (
-                          <div className="relative h-20 border-2 border-dashed border-slate-200 rounded-2xl flex items-center justify-center">
-                             <input type="file" onChange={(e) => setUploadFile(e.target.files?.[0] || null)} className="absolute inset-0 opacity-0 cursor-pointer" />
-                             <p className="text-sm text-slate-400 font-bold">{uploadFile ? uploadFile.name : 'Klik untuk pilih file'}</p>
-                          </div>
-                       ) : (
-                          <Input value={uploadUrl} onChange={(e) => setUploadUrl(e.target.value)} placeholder="https://..." className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
-                       )}
-                       
-                       <div className="flex items-center gap-3 p-4 bg-indigo-50/50 rounded-2xl cursor-pointer" onClick={() => setAutoGenerateQuiz(!autoGenerateQuiz)}>
-                          <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${autoGenerateQuiz ? 'bg-indigo-600 border-indigo-600' : 'bg-white border-slate-300'}`}>
-                             {autoGenerateQuiz && <CheckCircle2 className="w-3 h-3 text-white" />}
-                          </div>
-                          <div>
-                            <p className="text-xs font-black text-indigo-900 flex items-center gap-1.5"><Sparkles className="w-3 h-3" /> Auto-Generate Kuis (AI)</p>
-                            <p className="text-[10px] text-indigo-600 font-medium">Sistem akan otomatis membuat soal latihan dari materi ini.</p>
-                          </div>
-                       </div>
+                      <select value={newMaterial.subject_id} onChange={(e) => setNewMaterial({ ...newMaterial, subject_id: e.target.value })} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                        <option value="">Pilih Mata Pelajaran (Opsional)...</option>
+                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name} - Kelas {classData?.grades?.grade_level || '-'})</option>)}
+                      </select>
+                      <Input value={newMaterial.title} onChange={(e) => setNewMaterial({ ...newMaterial, title: e.target.value })} placeholder="Judul Materi" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                      <select value={newMaterial.content_type} onChange={(e) => setNewMaterial({ ...newMaterial, content_type: e.target.value })} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                        <option value="pdf">PDF Dokumen</option>
+                        <option value="video">Video Materi</option>
+                        <option value="link">Link Eksternal</option>
+                      </select>
+                      {newMaterial.content_type !== 'link' ? (
+                        <div className="relative h-20 border-2 border-dashed border-slate-200 rounded-2xl flex items-center justify-center">
+                          <input type="file" onChange={(e) => setUploadFile(e.target.files?.[0] || null)} className="absolute inset-0 opacity-0 cursor-pointer" />
+                          <p className="text-sm text-slate-400 font-bold">{uploadFile ? uploadFile.name : 'Klik untuk pilih file'}</p>
+                        </div>
+                      ) : (
+                        <Input value={uploadUrl} onChange={(e) => setUploadUrl(e.target.value)} placeholder="https://..." className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                      )}
+
+                      <div className="flex items-center gap-3 p-4 bg-indigo-50/50 rounded-2xl cursor-pointer" onClick={() => setAutoGenerateQuiz(!autoGenerateQuiz)}>
+                        <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${autoGenerateQuiz ? 'bg-indigo-600 border-indigo-600' : 'bg-white border-slate-300'}`}>
+                          {autoGenerateQuiz && <CheckCircle2 className="w-3 h-3 text-white" />}
+                        </div>
+                        <div>
+                          <p className="text-xs font-black text-indigo-900 flex items-center gap-1.5"><Sparkles className="w-3 h-3" /> Auto-Generate Kuis (AI)</p>
+                          <p className="text-[10px] text-indigo-600 font-medium">Sistem akan otomatis membuat soal latihan dari materi ini.</p>
+                        </div>
+                      </div>
                     </div>
                   ) : (
                     <div className="space-y-4">
-                       <select value={selectedSubjectId} onChange={(e) => { setSelectedSubjectId(e.target.value); fetchBankModules(e.target.value); }} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
-                          <option value="">Pilih Mata Pelajaran...</option>
-                          {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name})</option>)}
-                       </select>
-                       <select disabled={!selectedSubjectId} value={selectedModuleId} onChange={(e) => { setSelectedModuleId(e.target.value); fetchBankLessons(e.target.value); }} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
-                          <option value="">Pilih Modul...</option>
-                          {bankModules.map(m => <option key={m.id} value={m.id}>{m.title}</option>)}
-                       </select>
-                       <select disabled={!selectedModuleId} value={selectedLessonId} onChange={(e) => setSelectedLessonId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
-                          <option value="">Pilih Materi...</option>
-                          {bankLessons.map(l => <option key={l.id} value={l.id}>{l.title}</option>)}
-                       </select>
+                      <select value={selectedSubjectId} onChange={(e) => { setSelectedSubjectId(e.target.value); fetchBankModules(e.target.value); }} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                        <option value="">Pilih Mata Pelajaran...</option>
+                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name} - Kelas {classData?.grades?.grade_level || '-'})</option>)}
+                      </select>
+                      <select disabled={!selectedSubjectId} value={selectedModuleId} onChange={(e) => { setSelectedModuleId(e.target.value); fetchBankLessons(e.target.value); }} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                        <option value="">Pilih Modul...</option>
+                        {bankModules.map(m => <option key={m.id} value={m.id}>{m.title}</option>)}
+                      </select>
+                      <select disabled={!selectedModuleId} value={selectedLessonId} onChange={(e) => setSelectedLessonId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                        <option value="">Pilih Materi...</option>
+                        {bankLessons.map(l => <option key={l.id} value={l.id}>{l.title}</option>)}
+                      </select>
                     </div>
                   )}
                   <Button onClick={handlePostMaterial} disabled={isUploading} className="w-full h-14 rounded-2xl shadow-lg">
@@ -1079,31 +1071,31 @@ const ClassDetails = () => {
 
               {contentType === 'quiz' && (
                 <div className="space-y-4">
-                   <div className="flex gap-2 p-1 bg-slate-100 rounded-xl">
-                      <button onClick={() => setAssignType('subject')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${assignType === 'subject' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Subjek</button>
-                      <button onClick={() => setAssignType('package')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${assignType === 'package' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Paket Saya</button>
-                   </div>
-                   {assignType === 'subject' ? (
-                      <select value={selectedSubjectId} onChange={(e) => setSelectedSubjectId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
-                        <option value="">Pilih Subjek...</option>
-                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name})</option>)}
-                      </select>
-                   ) : (
-                      <select value={selectedPackageId} onChange={(e) => setSelectedPackageId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
-                        <option value="">Pilih Paket...</option>
-                        {teacherPackages.map(p => <option key={p.id} value={p.id}>{p.title}</option>)}
-                      </select>
-                   )}
-                   <div className="flex items-center gap-3 p-4 bg-slate-50 border border-slate-100 rounded-2xl cursor-pointer hover:border-indigo-300 transition-colors" onClick={() => setIsCatMode(!isCatMode)}>
-                      <div className={`w-6 h-6 rounded border-2 flex items-center justify-center shrink-0 transition-colors ${isCatMode ? 'bg-indigo-600 border-indigo-600' : 'bg-white border-slate-300'}`}>
-                         {isCatMode && <CheckCircle2 className="w-4 h-4 text-white" />}
-                      </div>
-                      <div>
-                        <p className="text-sm font-bold text-slate-800">Aktifkan Mode Simulasi CAT</p>
-                        <p className="text-[10px] text-slate-500 font-medium">Siswa akan mengerjakan kuis ini dengan antarmuka CAT.</p>
-                      </div>
+                  <div className="flex gap-2 p-1 bg-slate-100 rounded-xl">
+                    <button onClick={() => setAssignType('subject')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${assignType === 'subject' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Subjek</button>
+                    <button onClick={() => setAssignType('package')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${assignType === 'package' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Paket Saya</button>
+                  </div>
+                  {assignType === 'subject' ? (
+                    <select value={selectedSubjectId} onChange={(e) => setSelectedSubjectId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                      <option value="">Pilih Subjek...</option>
+                      {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name} - Kelas {classData?.grades?.grade_level || '-'})</option>)}
+                    </select>
+                  ) : (
+                    <select value={selectedPackageId} onChange={(e) => setSelectedPackageId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                      <option value="">Pilih Paket...</option>
+                      {teacherPackages.map(p => <option key={p.id} value={p.id}>{p.title}</option>)}
+                    </select>
+                  )}
+                  <div className="flex items-center gap-3 p-4 bg-slate-50 border border-slate-100 rounded-2xl cursor-pointer hover:border-indigo-300 transition-colors" onClick={() => setIsCatMode(!isCatMode)}>
+                    <div className={`w-6 h-6 rounded border-2 flex items-center justify-center shrink-0 transition-colors ${isCatMode ? 'bg-indigo-600 border-indigo-600' : 'bg-white border-slate-300'}`}>
+                      {isCatMode && <CheckCircle2 className="w-4 h-4 text-white" />}
                     </div>
-                   <Button onClick={handleAssignQuiz} className="w-full h-14 rounded-2xl shadow-lg">Berikan Kuis</Button>
+                    <div>
+                      <p className="text-sm font-bold text-slate-800">Aktifkan Mode Simulasi CAT</p>
+                      <p className="text-[10px] text-slate-500 font-medium">Siswa akan mengerjakan kuis ini dengan antarmuka CAT.</p>
+                    </div>
+                  </div>
+                  <Button onClick={handleAssignQuiz} className="w-full h-14 rounded-2xl shadow-lg">Berikan Kuis</Button>
                 </div>
               )}
             </div>

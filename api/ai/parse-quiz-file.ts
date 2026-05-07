@@ -20,10 +20,11 @@ export default async function handler(
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  const { fileUrl, fileName, fileType, topic, questionCount = 5 } = req.body;
+  const { fileUrl, fileName, fileType, topic, questionCount = 5, subject = '' } = req.body;
+  const cerebrasApiKey = process.env.CEREBRAS_API_KEY || process.env.VITE_CEREBRAS_API_KEY || 'csk-48rn5nyym4cmkjtj4ttx5cre828h6dncehcf964vcrdt8dnn';
   const groqApiKey = process.env.VITE_GROQ_API_KEY || process.env.GROQ_API_KEY;
 
-  if (!groqApiKey) {
+  if (!cerebrasApiKey && !groqApiKey) {
     return res.status(500).json({ message: 'API Key AI tidak ditemukan.' });
   }
 
@@ -64,54 +65,57 @@ export default async function handler(
     }
 
     let prompt = '';
-    const formatInstruction = `Format wajib JSON array murni tanpa markdown. 
-      PENTING: Harus berupa pilihan ganda dengan TEPAT 4 pilihan (A, B, C, D).
+    const subjectContext = subject ? `Mata Pelajaran: ${subject}\n\n` : '';
+    const formatInstruction = `PENTING: Anda harus menghasilkan soal pilihan ganda (Multiple Choice) dengan tepat 4 opsi jawaban (A, B, C, D) yang disesuaikan dengan isi materi dan mata pelajaran terkait.
+Format wajib JSON array murni tanpa markdown:
       [
         {
           "question_text": "...",
           "difficulty_level": "medium",
           "choices": [
-            {"text": "Jawaban A", "is_correct": true},
-            {"text": "Jawaban B", "is_correct": false},
-            {"text": "Jawaban C", "is_correct": false},
-            {"text": "Jawaban D", "is_correct": false}
+            {"text": "A. ...", "is_correct": true},
+            {"text": "B. ...", "is_correct": false},
+            {"text": "C. ...", "is_correct": false},
+            {"text": "D. ...", "is_correct": false}
           ]
         }
       ]`;
 
     if (extractedText && extractedText.trim().length > 20) {
-      prompt = `Buatkan ${questionCount} soal pilihan ganda (A/B/C/D) berdasarkan teks berikut. 
-      Judul Kuis: "${topic}"
-      
-      ${formatInstruction}
+      prompt = `Buatkan ${questionCount} soal pilihan ganda dari teks berikut. 
+      ${subjectContext}${formatInstruction}
 
       TEKS MATERI:
-      ${extractedText.substring(0, 7000)}`;
+      ${extractedText.substring(0, 30000)}`;
     } else if (topic) {
       console.log('Falling back to topic-based generation');
-      prompt = `Buatkan ${questionCount} soal kuis pilihan ganda (A/B/C/D) tentang topik: "${topic}".
-      ${formatInstruction}`;
+      prompt = `Buatkan ${questionCount} soal kuis pilihan ganda tentang topik: "${topic}".
+      ${subjectContext}${formatInstruction}`;
     } else {
       return res.status(400).json({ 
         message: `Gagal mengekstrak teks dari file. ${parseError ? `Detail: ${parseError}` : 'File mungkin kosong atau tidak terbaca.'} Pastikan file PDF bukan hasil scan gambar.` 
       });
     }
 
-    const aiRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    const apiKey = cerebrasApiKey || groqApiKey;
+    const apiUrl = cerebrasApiKey ? 'https://api.cerebras.ai/v1/chat/completions' : 'https://api.groq.com/openai/v1/chat/completions';
+    const model = cerebrasApiKey ? 'llama3.1-70b' : 'llama-3.3-70b-versatile';
+
+    const aiRes = await fetch(apiUrl, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${groqApiKey}`,
+        'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model: model,
         messages: [{ role: 'user', content: prompt }],
         temperature: 0.3
       })
     });
 
     const aiData = await aiRes.json();
-    if (!aiRes.ok) throw new Error(aiData.error?.message || 'Gagal memanggil Groq AI');
+    if (!aiRes.ok) throw new Error(aiData.error?.message || 'Gagal memanggil AI API');
 
     const content = aiData.choices[0]?.message?.content || '';
     if (!content) throw new Error('AI tidak memberikan respon teks.');
