@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { Bot, User, X, RefreshCw, Sparkles, Save, CheckCircle } from 'lucide-react'
+import { Bot, User, X, RefreshCw, Sparkles, Save, CheckCircle, BookOpen } from 'lucide-react'
 import { useAIStore } from '../../store/useAIStore'
 import { useAIChat } from '../../hooks/useAIChat'
 import { AIChatInput } from './AIChatInput'
@@ -12,7 +12,7 @@ interface AIChatPanelProps {
 }
 
 export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lessonId }) => {
-  const { isOpen, setOpen, messages, isLoading, isTyping, error, setError } = useAIStore()
+  const { isOpen, setOpen, messages, isLoading, isTyping, error, setError, lessonContext } = useAIStore()
   const { sendMessage } = useAIChat()
   const scrollRef = useRef<HTMLDivElement>(null)
   const [savedMessageIds, setSavedMessageIds] = useState<Record<string, boolean>>({})
@@ -52,25 +52,39 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
   return (
     <div className="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white shadow-2xl z-[60] flex flex-col animate-slide-in-right border-l border-gray-100">
       {/* Header */}
-      <div className="bg-indigo-600 p-4 flex items-center justify-between text-white shadow-md">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
-            <Bot className="w-6 h-6 text-white" />
-          </div>
-          <div>
-            <h3 className="font-bold text-sm">AI Guru Pembimbing</h3>
-            <div className="flex items-center gap-1.5">
-              <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <p className="text-[10px] text-indigo-100 uppercase tracking-widest font-medium">Online</p>
+      <div className="bg-indigo-600 p-4 flex flex-col gap-2 text-white shadow-md">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+              <Bot className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h3 className="font-bold text-sm">AI Guru Pembimbing</h3>
+              <div className="flex items-center gap-1.5">
+                <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                <p className="text-[10px] text-indigo-100 uppercase tracking-widest font-medium">Online</p>
+              </div>
             </div>
           </div>
+          <button 
+            onClick={() => setOpen(false)}
+            className="p-1.5 hover:bg-white/10 rounded-full transition-colors"
+          >
+            <X className="w-6 h-6" />
+          </button>
         </div>
-        <button 
-          onClick={() => setOpen(false)}
-          className="p-1.5 hover:bg-white/10 rounded-full transition-colors"
-        >
-          <X className="w-6 h-6" />
-        </button>
+
+        {/* Active Lesson Context Banner */}
+        {lessonContext?.lessonTitle && (
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl px-3 py-2 flex items-center gap-2">
+            <BookOpen className="w-3.5 h-3.5 text-indigo-200 flex-shrink-0" />
+            <div className="min-w-0">
+              <p className="text-[10px] text-indigo-300 font-bold uppercase tracking-widest">Sedang Membaca</p>
+              <p className="text-xs text-white font-semibold truncate">{lessonContext.lessonTitle}</p>
+              {lessonContext.subject && <p className="text-[10px] text-indigo-200">{lessonContext.subject} • {lessonContext.grade}</p>}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Messages Area */}

@@ -7,6 +7,14 @@ export interface Message {
   timestamp: number
 }
 
+export interface LessonContext {
+  subject?: string
+  grade?: number | string
+  lessonId?: string
+  lessonTitle?: string
+  content?: string
+}
+
 interface AIState {
   isOpen: boolean
   messages: Message[]
@@ -14,6 +22,7 @@ interface AIState {
   isTyping: boolean
   error: string | null
   unreadCount: number
+  lessonContext: LessonContext | null
   toggleChat: () => void
   setOpen: (isOpen: boolean) => void
   addMessage: (message: Omit<Message, 'id' | 'timestamp'>) => void
@@ -22,6 +31,7 @@ interface AIState {
   setError: (error: string | null) => void
   clearMessages: () => void
   resetUnread: () => void
+  setLessonContext: (ctx: LessonContext | null) => void
 }
 
 export const useAIStore = create<AIState>((set) => ({
@@ -31,6 +41,7 @@ export const useAIStore = create<AIState>((set) => ({
   isTyping: false,
   error: null,
   unreadCount: 0,
+  lessonContext: null,
 
   toggleChat: () => set((state) => ({ 
     isOpen: !state.isOpen,
@@ -55,4 +66,5 @@ export const useAIStore = create<AIState>((set) => ({
   setError: (error) => set({ error }),
   clearMessages: () => set({ messages: [], unreadCount: 0, error: null }),
   resetUnread: () => set({ unreadCount: 0 }),
+  setLessonContext: (ctx) => set({ lessonContext: ctx }),
 }))

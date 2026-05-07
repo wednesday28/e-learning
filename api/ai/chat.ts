@@ -11,7 +11,7 @@ export default async function handler(
     return res.status(405).json({ message: 'Method not allowed' })
   }
 
-  const { message, subject, grade, lessonId, content } = req.body
+  const { message, subject, grade, lessonId, lessonTitle, content } = req.body
 
   try {
     // SYSTEM PROMPT CONSTRUCTION
@@ -20,9 +20,9 @@ Tugas Anda adalah membantu siswa memahami materi pelajaran dengan cara yang saba
 
 KONTEKS SAAT INI:
 - Mata Pelajaran: ${subject || 'Umum'}
-- Kelas: ${grade || 'Semua Kelas'}
-- Materi ID: ${lessonId || 'Tidak spesifik'}
-${content ? `- Konten Materi: ${content.substring(0, 500)}...` : ''}
+- Kelas/Jenjang: ${grade || 'Semua Kelas'}
+- Materi yang Dibaca: ${lessonTitle || lessonId || 'Tidak spesifik'}
+${content ? `- Isi Materi (cuplikan): ${content.substring(0, 800)}` : ''}
 
 PEDOMAN JAWABAN:
 1. Gunakan Bahasa Indonesia yang baik, benar, dan ramah (semi-formal).

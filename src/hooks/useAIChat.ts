@@ -3,8 +3,9 @@ import { useAIStore } from '../store/useAIStore'
 
 interface ChatContext {
   subject?: string
-  grade?: number
+  grade?: number | string
   lessonId?: string
+  lessonTitle?: string
   content?: string
 }
 
@@ -15,11 +16,12 @@ export const useAIChat = () => {
     setLoading, 
     setTyping, 
     setError, 
-    isLoading 
+    isLoading,
+    lessonContext,
   } = useAIStore()
 
-  const sendMessage = useCallback(async (content: string, context?: ChatContext) => {
-    if (!content.trim() || isLoading) return
+  const sendMessage = useCallback(async (userContent: string, overrideContext?: ChatContext) => {
+    if (!userContent.trim() || isLoading) return
 
     // Rate limiting: 20 messages per session
     if (messages.filter(m => m.role === 'user').length >= 20) {
@@ -27,8 +29,14 @@ export const useAIChat = () => {
       return
     }
 
+    // Merge: prioritize overrideContext, then fall back to global lessonContext from store
+    const ctx: ChatContext = {
+      ...lessonContext,
+      ...overrideContext,
+    }
+
     // Add user message
-    addMessage({ role: 'user', content })
+    addMessage({ role: 'user', content: userContent })
     setLoading(true)
     setTyping(true)
     setError(null)
@@ -38,13 +46,18 @@ export const useAIChat = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          message: content,
-          ...context
+          message: userContent,
+          subject: ctx.subject,
+          grade: ctx.grade,
+          lessonId: ctx.lessonId,
+          lessonTitle: ctx.lessonTitle,
+          content: ctx.content,
         })
       })
 
       if (!response.ok) {
-        throw new Error('Gagal menghubungi AI Tutor.')
+        const errData = await response.json().catch(() => ({}))
+        throw new Error(errData.reply || errData.message || 'Gagal menghubungi AI Tutor.')
       }
 
       const data = await response.json()
@@ -60,7 +73,7 @@ export const useAIChat = () => {
       setLoading(false)
       setTyping(false)
     }
-  }, [messages, addMessage, setLoading, setTyping, setError, isLoading])
+  }, [messages, addMessage, setLoading, setTyping, setError, isLoading, lessonContext])
 
   return { sendMessage, isLoading }
 }

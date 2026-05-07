@@ -3,6 +3,7 @@ import { useSearchParams, useNavigate } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
 import { Card, Button, Spinner } from '../../components/ui';
 import { PlayCircle, ChevronLeft, Lock, BookOpen, ChevronRight, LayoutGrid } from 'lucide-react';
+import { useAIStore } from '../../store/useAIStore';
 
 const PUBLIC_LEVELS = ['SD', 'SMP', 'SMA', 'SMK'];
 
@@ -20,6 +21,13 @@ const Learning = () => {
   const [hasAccess, setHasAccess] = useState(true);
   const [levelName, setLevelName] = useState('');
   const [relatedLessons, setRelatedLessons] = useState<any[]>([]);
+
+  const { setLessonContext } = useAIStore();
+
+  // Clear context when leaving
+  useEffect(() => {
+    return () => setLessonContext(null);
+  }, []);
 
 
   const lessonId = searchParams.get('id');
@@ -157,6 +165,15 @@ const Learning = () => {
       const currentLevel = data.modules.subjects.levels.name;
       setLevelName(currentLevel);
       setLesson(data);
+
+      // Set AI Tutor context so it can see the current lesson
+      setLessonContext({
+        lessonId: data.id,
+        lessonTitle: data.title,
+        subject: data.modules?.subjects?.name,
+        grade: data.modules?.subjects?.levels?.name,
+        content: typeof data.content === 'string' ? data.content.replace(/<[^>]*>/g, '').substring(0, 2000) : ''
+      });
 
       // Fetch related lessons in the same module
       const { data: related } = await supabase
