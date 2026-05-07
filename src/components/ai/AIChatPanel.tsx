@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from 'react'
-import { Bot, User, X, RefreshCw, Sparkles } from 'lucide-react'
+import React, { useRef, useEffect, useState } from 'react'
+import { Bot, User, X, RefreshCw, Sparkles, Save, CheckCircle } from 'lucide-react'
 import { useAIStore } from '../../store/useAIStore'
 import { useAIChat } from '../../hooks/useAIChat'
 import { AIChatInput } from './AIChatInput'
@@ -15,6 +15,30 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
   const { isOpen, setOpen, messages, isLoading, isTyping, error, setError } = useAIStore()
   const { sendMessage } = useAIChat()
   const scrollRef = useRef<HTMLDivElement>(null)
+  const [savedMessageIds, setSavedMessageIds] = useState<Record<string, boolean>>({})
+
+  const parseQuizJSON = (content: string) => {
+    try {
+      const match = content.match(/```json\s*([\s\S]*?)\s*```/);
+      if (match && match[1]) {
+        const data = JSON.parse(match[1]);
+        if (Array.isArray(data) && data[0] && data[0].question_text) {
+          return data;
+        }
+      }
+    } catch (e) {
+      // Not a valid JSON or doesn't exist
+    }
+    return null;
+  }
+
+  const handleSaveToBank = async (msgId: string, questions: any[]) => {
+    // In a real implementation, this would trigger a modal to select Subject/Class 
+    // and then save to Supabase `questions` table.
+    // For this demo, we mark it as saved.
+    setSavedMessageIds(prev => ({ ...prev, [msgId]: true }))
+    alert(`Berhasil menyimpan ${questions.length} soal ke Bank Soal! (Simulasi)`);
+  }
 
   // Auto-scroll to bottom
   useEffect(() => {
@@ -68,28 +92,66 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
           </div>
         )}
 
-        {messages.map((msg) => (
-          <div 
-            key={msg.id}
-            className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
-          >
-            <div className={`flex gap-2 max-w-[85%] ${msg.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
-              <div className={`w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center ${
-                msg.role === 'user' ? 'bg-indigo-100' : 'bg-white shadow-sm border border-gray-100'
-              }`}>
-                {msg.role === 'user' ? <User className="w-4 h-4 text-indigo-600" /> : <Bot className="w-4 h-4 text-indigo-600" />}
-              </div>
-              
-              <div className={`rounded-2xl px-4 py-2 text-sm shadow-sm ${
-                msg.role === 'user' 
-                  ? 'bg-indigo-600 text-white rounded-tr-none' 
-                  : 'bg-white text-gray-800 border border-gray-100 rounded-tl-none'
-              }`}>
-                {msg.content}
+        {messages.map((msg) => {
+          const quizData = msg.role === 'assistant' ? parseQuizJSON(msg.content) : null;
+          
+          return (
+            <div 
+              key={msg.id}
+              className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+            >
+              <div className={`flex gap-2 max-w-[90%] ${msg.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
+                <div className={`w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center ${
+                  msg.role === 'user' ? 'bg-indigo-100' : 'bg-white shadow-sm border border-gray-100'
+                }`}>
+                  {msg.role === 'user' ? <User className="w-4 h-4 text-indigo-600" /> : <Bot className="w-4 h-4 text-indigo-600" />}
+                </div>
+                
+                <div className={`rounded-2xl px-4 py-2 text-sm shadow-sm ${
+                  msg.role === 'user' 
+                    ? 'bg-indigo-600 text-white rounded-tr-none' 
+                    : 'bg-white text-gray-800 border border-gray-100 rounded-tl-none'
+                }`}>
+                  {quizData ? (
+                    <div className="space-y-3 min-w-[200px]">
+                      <div className="flex items-center gap-2 text-indigo-600 font-bold">
+                        <Sparkles className="w-5 h-5" />
+                        <span>Kuis AI Ditemukan!</span>
+                      </div>
+                      <p className="text-xs text-gray-600">
+                        AI telah berhasil men-generate <strong>{quizData.length} Soal Pilihan Ganda</strong> dari materi yang Anda berikan.
+                      </p>
+                      
+                      <button 
+                        onClick={() => handleSaveToBank(msg.id, quizData)}
+                        disabled={savedMessageIds[msg.id]}
+                        className={`w-full py-2 px-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-all ${
+                          savedMessageIds[msg.id] 
+                            ? 'bg-green-100 text-green-700' 
+                            : 'bg-indigo-600 text-white hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-200'
+                        }`}
+                      >
+                        {savedMessageIds[msg.id] ? (
+                          <>
+                            <CheckCircle className="w-4 h-4" />
+                            Tersimpan ke Bank Soal
+                          </>
+                        ) : (
+                          <>
+                            <Save className="w-4 h-4" />
+                            Simpan ke Bank Soal
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="whitespace-pre-wrap">{msg.content}</div>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
 
         {isTyping && (
           <div className="flex justify-start">
