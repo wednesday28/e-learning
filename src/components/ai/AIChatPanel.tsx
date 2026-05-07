@@ -81,21 +81,24 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
             question_text: q.question_text || q.question,
             difficulty_level: q.difficulty_level || 'medium',
             type: 'multiple_choice',
+            // Note: removed teacher_id as it doesn't exist in schema
           })
           .select()
           .single();
 
-        if (qErr) throw qErr;
+        if (qErr) throw new Error(`Gagal simpan soal: ${qErr.message}`);
         insertedIds.push(qData.id);
 
         // Insert choices
         const choices = (q.choices || []).map((c: any) => ({
           question_id: qData.id,
-          choice_text: c.text,
+          text: c.text, // Fix: column name is 'text'
           is_correct: !!c.is_correct,
         }));
+        
         if (choices.length > 0) {
-          await supabase.from('choices').insert(choices);
+          const { error: cErr } = await supabase.from('choices').insert(choices);
+          if (cErr) throw new Error(`Gagal simpan pilihan: ${cErr.message}`);
         }
       }
 
@@ -105,7 +108,9 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
         question_id: id,
         order_index: index,
       }));
-      await supabase.from('quiz_package_questions').insert(links);
+      
+      const { error: linkErr } = await supabase.from('quiz_package_questions').insert(links);
+      if (linkErr) throw new Error(`Gagal menghubungkan soal ke paket: ${linkErr.message}`);
 
       // 4. Mark as saved and close modal
       setSavedMessageIds(prev => ({ ...prev, [savingModal.msgId]: true }));

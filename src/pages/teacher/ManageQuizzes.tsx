@@ -207,7 +207,7 @@ const ManageQuizzes = () => {
         // 2. Insert choices
         const choices = q.choices.map((c: any) => ({
           question_id: qData.id,
-          choice_text: c.text,
+          text: c.text,
           is_correct: c.is_correct
         }));
         

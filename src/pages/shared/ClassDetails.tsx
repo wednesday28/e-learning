@@ -344,7 +344,7 @@ const ClassDetails = () => {
           questionIds.push(qData.id);
           const choicesToInsert = q.choices.map((c: any) => ({
             question_id: qData.id,
-            choice_text: c.text || c.choice_text,
+            text: c.text || c.choice_text,
             is_correct: c.is_correct
           }));
           await supabase.from('choices').insert(choicesToInsert);
