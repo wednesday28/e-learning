@@ -1,9 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { Bot, User, X, RefreshCw, Sparkles, Save, CheckCircle, BookOpen } from 'lucide-react'
+import { Bot, User, X, RefreshCw, Sparkles, Save, CheckCircle, BookOpen, Package } from 'lucide-react'
 import { useAIStore } from '../../store/useAIStore'
 import { useAIChat } from '../../hooks/useAIChat'
 import { AIChatInput } from './AIChatInput'
 import { AISuggestedQuestions } from './AISuggestedQuestions'
+import { useAuthStore } from '../../store/useAuthStore'
+import { supabase } from '../../lib/supabase'
 
 interface AIChatPanelProps {
   subject?: string
@@ -14,8 +16,24 @@ interface AIChatPanelProps {
 export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lessonId }) => {
   const { isOpen, setOpen, messages, isLoading, isTyping, error, setError, lessonContext } = useAIStore()
   const { sendMessage } = useAIChat()
+  const { profile } = useAuthStore()
   const scrollRef = useRef<HTMLDivElement>(null)
+
+  // Per-message saved state
   const [savedMessageIds, setSavedMessageIds] = useState<Record<string, boolean>>({})
+  // Saving modal state
+  const [savingModal, setSavingModal] = useState<{ msgId: string; questions: any[] } | null>(null)
+  const [packageName, setPackageName] = useState('')
+  const [levels, setLevels] = useState<any[]>([])
+  const [selectedLevelId, setSelectedLevelId] = useState('')
+  const [isSaving, setIsSaving] = useState(false)
+
+  useEffect(() => {
+    if (savingModal) {
+      supabase.from('levels').select('*').then(({ data }) => setLevels(data || []))
+      setPackageName(lessonContext?.lessonTitle ? `Kuis: ${lessonContext.lessonTitle}` : 'Kuis AI Baru')
+    }
+  }, [savingModal])
 
   const parseQuizJSON = (content: string) => {
     try {
@@ -32,13 +50,78 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
     return null;
   }
 
-  const handleSaveToBank = async (msgId: string, questions: any[]) => {
-    // In a real implementation, this would trigger a modal to select Subject/Class 
-    // and then save to Supabase `questions` table.
-    // For this demo, we mark it as saved.
-    setSavedMessageIds(prev => ({ ...prev, [msgId]: true }))
-    alert(`Berhasil menyimpan ${questions.length} soal ke Bank Soal! (Simulasi)`);
-  }
+  const handleSaveToPackage = async () => {
+    if (!savingModal || !packageName || !selectedLevelId) {
+      alert('Mohon isi nama paket dan pilih jenjang.');
+      return;
+    }
+
+    setIsSaving(true);
+    try {
+      // 1. Create the quiz package under teacher's account
+      const { data: pkg, error: pkgErr } = await supabase
+        .from('quiz_packages')
+        .insert({
+          teacher_id: profile?.id,
+          title: packageName,
+          description: `Dibuat dari Chat AI Tutor${lessonContext?.subject ? ` • ${lessonContext.subject}` : ''}`,
+          level_id: selectedLevelId,
+        })
+        .select()
+        .single();
+
+      if (pkgErr) throw pkgErr;
+
+      // 2. Insert questions + choices, then link to package
+      const insertedIds: string[] = [];
+      for (const q of savingModal.questions) {
+        const { data: qData, error: qErr } = await supabase
+          .from('questions')
+          .insert({
+            question_text: q.question_text || q.question,
+            difficulty_level: q.difficulty_level || 'medium',
+            type: 'multiple_choice',
+            teacher_id: profile?.id,  // tag as teacher-owned
+          })
+          .select()
+          .single();
+
+        if (qErr) throw qErr;
+        insertedIds.push(qData.id);
+
+        // Insert choices
+        const choices = (q.choices || []).map((c: any) => ({
+          question_id: qData.id,
+          choice_text: c.text,
+          is_correct: !!c.is_correct,
+        }));
+        if (choices.length > 0) {
+          await supabase.from('choices').insert(choices);
+        }
+      }
+
+      // 3. Link all questions to the package
+      const links = insertedIds.map((id, index) => ({
+        package_id: pkg.id,
+        question_id: id,
+        order_index: index,
+      }));
+      await supabase.from('quiz_package_questions').insert(links);
+
+      // 4. Mark as saved and close modal
+      setSavedMessageIds(prev => ({ ...prev, [savingModal.msgId]: true }));
+      setSavingModal(null);
+      setPackageName('');
+      setSelectedLevelId('');
+
+      alert(`✅ Berhasil! ${insertedIds.length} soal tersimpan ke Paket Tes "${packageName}".\nBuka menu Quizzes untuk menggunakannya!`);
+
+    } catch (err: any) {
+      alert('Gagal menyimpan: ' + err.message);
+    } finally {
+      setIsSaving(false);
+    }
+  };
 
   // Auto-scroll to bottom
   useEffect(() => {
@@ -100,7 +183,7 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
             <div>
               <h4 className="text-gray-800 font-bold">Halo! Saya AI Guru Anda</h4>
               <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                Tanyakan apa saja tentang pelajaran hari ini. Saya siap membantu Anda memahami materi lebih dalam.
+                Tanyakan apa saja tentang pelajaran hari ini. Jika Anda Guru, ketik "Buatkan soal kuis dari: [teks materi]" untuk membuat kuis instan!
               </p>
             </div>
           </div>
@@ -130,15 +213,15 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
                     <div className="space-y-3 min-w-[200px]">
                       <div className="flex items-center gap-2 text-indigo-600 font-bold">
                         <Sparkles className="w-5 h-5" />
-                        <span>Kuis AI Ditemukan!</span>
+                        <span>Kuis AI Siap!</span>
                       </div>
                       <p className="text-xs text-gray-600">
-                        AI telah berhasil men-generate <strong>{quizData.length} Soal Pilihan Ganda</strong> dari materi yang Anda berikan.
+                        AI berhasil membuat <strong>{quizData.length} Soal Pilihan Ganda</strong>. Simpan ke Paket Tes Anda?
                       </p>
                       
                       <button 
-                        onClick={() => handleSaveToBank(msg.id, quizData)}
-                        disabled={savedMessageIds[msg.id]}
+                        onClick={() => !savedMessageIds[msg.id] && setSavingModal({ msgId: msg.id, questions: quizData })}
+                        disabled={!!savedMessageIds[msg.id]}
                         className={`w-full py-2 px-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-all ${
                           savedMessageIds[msg.id] 
                             ? 'bg-green-100 text-green-700' 
@@ -148,12 +231,12 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
                         {savedMessageIds[msg.id] ? (
                           <>
                             <CheckCircle className="w-4 h-4" />
-                            Tersimpan ke Bank Soal
+                            Tersimpan ke Paket Tes
                           </>
                         ) : (
                           <>
-                            <Save className="w-4 h-4" />
-                            Simpan ke Bank Soal
+                            <Package className="w-4 h-4" />
+                            Simpan ke Paket Tes Saya
                           </>
                         )}
                       </button>
@@ -206,6 +289,67 @@ export const AIChatPanel: React.FC<AIChatPanelProps> = ({ subject, grade, lesson
         onSend={(msg) => sendMessage(msg, { subject, grade, lessonId })} 
         disabled={isLoading}
       />
+
+      {/* Save to Package Modal */}
+      {savingModal && (
+        <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm z-10 flex items-end sm:items-center justify-center p-4 animate-in fade-in duration-200">
+          <div className="bg-white w-full rounded-3xl shadow-2xl p-6 space-y-4 animate-in slide-in-from-bottom-4 duration-300">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600">
+                <Package className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="font-black text-slate-900">Simpan ke Paket Tes</h3>
+                <p className="text-xs text-slate-500">{savingModal.questions.length} soal pilihan ganda</p>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <div>
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Nama Paket Tes</label>
+                <input
+                  value={packageName}
+                  onChange={(e) => setPackageName(e.target.value)}
+                  className="w-full mt-1 h-12 bg-slate-50 rounded-xl px-4 text-sm font-bold border-none outline-none"
+                  placeholder="Contoh: Kuis Bab 1 - Fotosintesis"
+                />
+              </div>
+              <div>
+                <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Jenjang</label>
+                <select
+                  value={selectedLevelId}
+                  onChange={(e) => setSelectedLevelId(e.target.value)}
+                  className="w-full mt-1 h-12 bg-slate-50 rounded-xl px-4 text-sm font-bold border-none outline-none"
+                >
+                  <option value="">Pilih Jenjang...</option>
+                  {levels.map(l => <option key={l.id} value={l.id}>{l.name}</option>)}
+                </select>
+              </div>
+            </div>
+
+            <div className="flex gap-3 pt-2">
+              <button
+                onClick={() => { setSavingModal(null); setSelectedLevelId(''); }}
+                className="flex-1 h-12 rounded-xl border-2 border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-colors"
+              >
+                Batal
+              </button>
+              <button
+                onClick={handleSaveToPackage}
+                disabled={isSaving || !packageName || !selectedLevelId}
+                className="flex-1 h-12 rounded-xl bg-indigo-600 text-white font-bold text-sm hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
+              >
+                {isSaving ? (
+                  <div className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
+                ) : (
+                  <Save className="w-4 h-4" />
+                )}
+                {isSaving ? 'Menyimpan...' : 'Simpan'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
