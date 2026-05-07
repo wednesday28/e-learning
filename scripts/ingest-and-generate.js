@@ -20,7 +20,27 @@ if (!supabaseUrl || !supabaseKey) {
 }
 
 const supabase = createClient(supabaseUrl, supabaseKey);
-const cerebrasApiKey = process.env.CEREBRAS_API_KEY || process.env.VITE_CEREBRAS_API_KEY || 'csk-48rn5nyym4cmkjtj4ttx5cre828h6dncehcf964vcrdt8dnn';
+const groqApiKey = process.env.VITE_GROQ_API_KEY || process.env.GROQ_API_KEY;
+const cerebrasKeys = (process.env.CEREBRAS_API_KEYS || '').split(',').filter(Boolean);
+let currentCerebrasIdx = 0;
+
+function getAiConfig() {
+  // Prefer Cerebras if we have keys and rotate them, otherwise fallback to Groq
+  if (cerebrasKeys.length > 0) {
+    const key = cerebrasKeys[currentCerebrasIdx];
+    currentCerebrasIdx = (currentCerebrasIdx + 1) % cerebrasKeys.length;
+    return {
+      apiKey: key,
+      apiUrl: 'https://api.cerebras.ai/v1/chat/completions',
+      modelName: 'llama3.1-8b'
+    };
+  }
+  return {
+    apiKey: groqApiKey,
+    apiUrl: 'https://api.groq.com/openai/v1/chat/completions',
+    modelName: 'llama-3.3-70b-versatile'
+  };
+}
 
 const cache = {
   levels: {},
@@ -32,6 +52,7 @@ const cache = {
 async function generateQuestions(lessonContent, subjectName) {
   if (!lessonContent || lessonContent.length < 50) return null;
   
+  const config = getAiConfig();
   const subjectContext = subjectName ? `Mata Pelajaran: ${subjectName}` : '';
   const prompt = `You are a JSON-only API. You must output ONLY a valid JSON array. No explanations, no markdown, no extra text.
 
@@ -45,14 +66,14 @@ MATERI:
 ${lessonContent.substring(0, 8000)}`;
 
   try {
-    const res = await fetch('https://api.cerebras.ai/v1/chat/completions', {
+    const res = await fetch(config.apiUrl, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${cerebrasApiKey}`,
+        'Authorization': `Bearer ${config.apiKey}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'llama3.1-8b',
+        model: config.modelName,
         messages: [
           { role: 'system', content: 'You are a JSON API. Output ONLY valid JSON arrays. Never include explanatory text, markdown, or code fences.' },
           { role: 'user', content: prompt }

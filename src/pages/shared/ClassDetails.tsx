@@ -819,7 +819,7 @@ const ClassDetails = () => {
                     onClick={() => {
                       if (isLesson) navigate(`/learning?id=${m.file_url}`);
                       else if (isArticle) setShowArticleReader({ title: m.title, content: m.description });
-                      else window.open(finalUrl, '_blank');
+                      else if (finalUrl) window.open(finalUrl, '_blank');
                     }}
                     className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group h-full"
                   >
@@ -845,7 +845,7 @@ const ClassDetails = () => {
                             duration: 15,
                             materialId: m.id,
                             title: m.title,
-                            fileUrl: finalUrl,
+                            fileUrl: finalUrl || '',
                             file: null,
                             subjectId: ''
                           });
