@@ -11,9 +11,13 @@ export default async function handler(
   }
 
   const { quizTitle, questions } = req.body;
+  const cerebrasApiKey = process.env.CEREBRAS_API_KEY || process.env.VITE_CEREBRAS_API_KEY || 'csk-48rn5nyym4cmkjtj4ttx5cre828h6dncehcf964vcrdt8dnn';
   const groqApiKey = process.env.VITE_GROQ_API_KEY || process.env.GROQ_API_KEY;
+  const apiKey = cerebrasApiKey || groqApiKey;
+  const apiUrl = cerebrasApiKey ? 'https://api.cerebras.ai/v1/chat/completions' : 'https://api.groq.com/openai/v1/chat/completions';
+  const model = cerebrasApiKey ? 'llama3.1-8b' : 'llama-3.3-70b-versatile';
 
-  if (!groqApiKey) {
+  if (!apiKey) {
     return res.status(500).json({ message: 'API Key AI tidak ditemukan.' });
   }
 
@@ -41,14 +45,14 @@ export default async function handler(
     Hasilkan materi pembelajaran dalam bahasa Indonesia yang lengkap.`;
 
     // 3. Call AI
-    const aiRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    const aiRes = await fetch(apiUrl, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${groqApiKey}`,
+        'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model: model,
         messages: [{ role: 'user', content: prompt }],
         temperature: 0.5
       })
