@@ -55,7 +55,9 @@ const ClassDetails = () => {
   const [selectedPackageId, setSelectedPackageId] = useState('');
   const [assignType, setAssignType] = useState<'subject' | 'package'>('subject');
   const [isCatMode, setIsCatMode] = useState(false);
-  const [materialSource, setMaterialSource] = useState<'upload' | 'bank'>('upload');
+  const [materialSource, setMaterialSource] = useState<'upload' | 'bank' | 'ai'>('upload');
+  const [showArticleReader, setShowArticleReader] = useState<{title: string, content: string} | null>(null);
+  const [aiMaterial, setAiMaterial] = useState({ subject_id: '', title: '', summary: '', content: '', isGenerating: false });
   const [selectedModuleId, setSelectedModuleId] = useState('');
   const [selectedLessonId, setSelectedLessonId] = useState('');
   const [bankModules, setBankModules] = useState<any[]>([]);
@@ -231,18 +233,60 @@ const ClassDetails = () => {
 
   const handlePostAssignment = async () => {
     if (!newAssignment.title || !newAssignment.instructions) return;
-    const { error } = await supabase.from('class_assignments').insert({
-      class_id: id,
-      title: newAssignment.title,
-      instructions: newAssignment.instructions,
-      due_date: newAssignment.due_date || null
-    });
-    if (!error) {
+    try {
+      const { error } = await supabase.from('class_assignments').insert({
+        class_id: id,
+        title: newAssignment.title,
+        instructions: newAssignment.instructions,
+        due_date: newAssignment.due_date || null,
+        created_by: profile?.id
+      });
+      if (error) throw error;
       setNewAssignment({ title: '', instructions: '', due_date: '' });
       setShowCreateModal(false);
       fetchAssignments();
-    } else {
-      alert('Gagal posting tugas: ' + error.message);
+    } catch (err: any) {
+      alert('Gagal posting tugas: ' + err.message);
+    }
+  };
+
+  const generateAiArticle = async () => {
+    setAiMaterial(p => ({ ...p, isGenerating: true }));
+    try {
+      const subjectName = availableSubjects.find(s => s.id === aiMaterial.subject_id)?.name || '';
+      const res = await fetch('/api/ai/generate-article', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ topic: aiMaterial.title, summary: aiMaterial.summary, subject: subjectName })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message || 'Gagal generate AI');
+      setAiMaterial(p => ({ ...p, content: data.article, isGenerating: false }));
+    } catch (err: any) {
+      alert(err.message);
+      setAiMaterial(p => ({ ...p, isGenerating: false }));
+    }
+  };
+
+  const handlePostAiMaterial = async () => {
+    if (!aiMaterial.title || !aiMaterial.content) return;
+    try {
+      const { error: insertError } = await supabase.from('class_materials').insert({
+        class_id: id,
+        title: aiMaterial.title,
+        content_type: 'article',
+        file_url: 'ai-generated',
+        description: aiMaterial.content,
+        created_by: profile?.id
+      });
+
+      if (insertError) throw insertError;
+      
+      setAiMaterial({ subject_id: '', title: '', summary: '', content: '', isGenerating: false });
+      setShowCreateModal(false);
+      fetchMaterials();
+    } catch (err: any) {
+      alert('Gagal memposting materi AI: ' + err.message);
     }
   };
 
@@ -762,6 +806,7 @@ const ClassDetails = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {materials.map(m => {
               const isLesson = m.content_type === 'lesson';
+              const isArticle = m.content_type === 'article';
               const getFullUrl = (url: string) => {
                 if (!url || url.startsWith('http')) return url;
                 const baseUrl = import.meta.env.VITE_SUPABASE_URL;
@@ -772,19 +817,23 @@ const ClassDetails = () => {
               return (
                 <div key={m.id} className="relative group">
                   <Card
-                    onClick={() => isLesson ? navigate(`/learning?id=${m.file_url}`) : window.open(finalUrl, '_blank')}
+                    onClick={() => {
+                      if (isLesson) navigate(`/learning?id=${m.file_url}`);
+                      else if (isArticle) setShowArticleReader({ title: m.title, content: m.description });
+                      else window.open(finalUrl, '_blank');
+                    }}
                     className="p-6 flex flex-col items-center text-center space-y-4 hover:border-indigo-500 hover:shadow-xl hover:bg-slate-50/50 transition-all cursor-pointer group h-full"
                   >
                     <div className="w-16 h-16 bg-slate-50 group-hover:bg-white rounded-3xl flex items-center justify-center text-indigo-600 shadow-sm transition-all">
-                      {isLesson ? <BookOpen className="w-8 h-8" /> : <FileIcon className="w-8 h-8" />}
+                      {isLesson ? <BookOpen className="w-8 h-8" /> : isArticle ? <Sparkles className="w-8 h-8" /> : <FileIcon className="w-8 h-8" />}
                     </div>
                     <div>
                       <h4 className="font-black text-slate-900">{m.title}</h4>
-                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{m.content_type || 'Dokumen'}</p>
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">{isArticle ? 'Artikel AI' : m.content_type || 'Dokumen'}</p>
                     </div>
                   </Card>
 
-                  {isTeacher && !isLesson && (
+                  {isTeacher && !isLesson && !isArticle && (
                     <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-2">
                       <Button
                         size="sm"
@@ -1010,12 +1059,35 @@ const ClassDetails = () => {
 
               {contentType === 'material' && (
                 <>
-                  <div className="flex gap-2 mb-6 p-1 bg-slate-100 rounded-xl">
-                    <button onClick={() => setMaterialSource('upload')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${materialSource === 'upload' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Upload File</button>
-                    <button onClick={() => setMaterialSource('bank')} className={`flex-1 py-2 text-[10px] font-black uppercase tracking-widest rounded-lg ${materialSource === 'bank' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400'}`}>Bank Materi</button>
+                  <div className="flex gap-2 mb-6 p-1 bg-slate-100 rounded-xl overflow-x-auto hide-scrollbar">
+                    <button onClick={() => setMaterialSource('upload')} className={`flex-1 min-w-[100px] py-2 text-[10px] font-black uppercase tracking-widest rounded-lg transition-all ${materialSource === 'upload' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400 hover:bg-slate-200/50'}`}>Upload File</button>
+                    <button onClick={() => setMaterialSource('ai')} className={`flex-1 min-w-[100px] py-2 text-[10px] font-black uppercase tracking-widest rounded-lg transition-all ${materialSource === 'ai' ? 'bg-indigo-600 text-white shadow-sm shadow-indigo-200' : 'text-slate-400 hover:bg-slate-200/50'}`}>✨ Generate AI</button>
+                    <button onClick={() => setMaterialSource('bank')} className={`flex-1 min-w-[100px] py-2 text-[10px] font-black uppercase tracking-widest rounded-lg transition-all ${materialSource === 'bank' ? 'bg-white text-indigo-600 shadow-sm' : 'text-slate-400 hover:bg-slate-200/50'}`}>Bank Materi</button>
                   </div>
 
-                  {materialSource === 'upload' ? (
+                  {materialSource === 'ai' ? (
+                    <div className="space-y-4 animate-in fade-in zoom-in-95 duration-300">
+                      <select value={aiMaterial.subject_id} onChange={(e) => setAiMaterial({ ...aiMaterial, subject_id: e.target.value })} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
+                        <option value="">Pilih Mata Pelajaran...</option>
+                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name} - Kelas {classData?.grades?.grade_level || '-'})</option>)}
+                      </select>
+                      <Input value={aiMaterial.title} onChange={(e) => setAiMaterial({ ...aiMaterial, title: e.target.value })} placeholder="Topik / Judul Materi" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
+                      <textarea value={aiMaterial.summary} onChange={(e) => setAiMaterial({ ...aiMaterial, summary: e.target.value })} className="w-full min-h-[100px] bg-slate-50 border-none rounded-2xl p-4 text-sm font-medium" placeholder="Ringkasan materi (contoh: Jelaskan tentang fotosintesis pada tumbuhan hijau...)" />
+                      
+                      {!aiMaterial.content ? (
+                        <Button disabled={aiMaterial.isGenerating || !aiMaterial.title} onClick={generateAiArticle} className="w-full h-14 rounded-2xl shadow-lg bg-indigo-600">
+                          {aiMaterial.isGenerating ? <Spinner className="w-5 h-5 mr-2" /> : <Sparkles className="w-5 h-5 mr-2" />}
+                          Generate Materi Komprehensif
+                        </Button>
+                      ) : (
+                        <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4">
+                          <div className="p-3 bg-green-50 text-green-700 text-xs font-bold rounded-xl flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Materi berhasil dibuat. Anda dapat merevisinya di bawah ini.</div>
+                          <textarea value={aiMaterial.content} onChange={(e) => setAiMaterial({ ...aiMaterial, content: e.target.value })} className="w-full min-h-[300px] bg-slate-50 border border-slate-200 rounded-2xl p-4 text-sm font-mono leading-relaxed" placeholder="Hasil tulisan AI..." />
+                          <Button onClick={handlePostAiMaterial} className="w-full h-14 rounded-2xl shadow-lg bg-green-600 hover:bg-green-700">Posting Materi AI ke Kelas</Button>
+                        </div>
+                      )}
+                    </div>
+                  ) : materialSource === 'upload' ? (
                     <div className="space-y-4">
                       <select value={newMaterial.subject_id} onChange={(e) => setNewMaterial({ ...newMaterial, subject_id: e.target.value })} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
                         <option value="">Pilih Mata Pelajaran (Opsional)...</option>
@@ -1098,6 +1170,26 @@ const ClassDetails = () => {
                   <Button onClick={handleAssignQuiz} className="w-full h-14 rounded-2xl shadow-lg">Berikan Kuis</Button>
                 </div>
               )}
+            </div>
+          </div>
+        </div>
+      )}
+      {showArticleReader && (
+        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 md:p-8 animate-in fade-in duration-200">
+          <div className="bg-white w-full max-w-4xl max-h-[90vh] rounded-3xl flex flex-col shadow-2xl overflow-hidden">
+            <div className="px-6 py-4 border-b border-slate-100 flex items-center justify-between bg-white sticky top-0">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600">
+                  <Sparkles className="w-5 h-5" />
+                </div>
+                <h3 className="font-black text-slate-900 text-lg">{showArticleReader.title}</h3>
+              </div>
+              <button onClick={() => setShowArticleReader(null)} className="p-2 hover:bg-slate-100 rounded-xl transition-colors">
+                <X className="w-5 h-5 text-slate-400" />
+              </button>
+            </div>
+            <div className="flex-1 overflow-y-auto p-6 md:p-10 text-slate-700 leading-relaxed max-w-none">
+              <div className="whitespace-pre-wrap font-medium">{showArticleReader.content}</div>
             </div>
           </div>
         </div>
