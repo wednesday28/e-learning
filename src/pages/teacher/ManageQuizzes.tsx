@@ -27,11 +27,20 @@ const ManageQuizzes = () => {
   const [parsedQuestions, setParsedQuestions] = useState<any[]>([]);
   const [showPreviewModal, setShowPreviewModal] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
+  const [allSubjects, setAllSubjects] = useState<any[]>([]);
+  const [aiQuestionCount, setAiQuestionCount] = useState(10);
+  const [aiPackageTitle, setAiPackageTitle] = useState('');
 
   useEffect(() => {
     fetchPackages();
     fetchLevels();
+    fetchAllSubjects();
   }, []);
+
+  const fetchAllSubjects = async () => {
+    const { data } = await supabase.from('subjects').select('*, levels(name)');
+    setAllSubjects(data || []);
+  };
 
   const fetchPackages = async () => {
     setIsLoading(true);
@@ -159,7 +168,8 @@ const ManageQuizzes = () => {
         body: JSON.stringify({
           fileUrl: publicUrl,
           fileName: file.name,
-          fileType: file.type
+          fileType: file.type,
+          questionCount: aiQuestionCount
         })
       });
 
@@ -220,9 +230,9 @@ const ManageQuizzes = () => {
       // 3. Create Package automatically
       const { data: pkg, error: pkgError } = await supabase.from('quiz_packages').insert({
         teacher_id: profile?.id,
-        title: `Hasil Scan: ${new Date().toLocaleDateString()}`,
-        description: `Dibuat otomatis dari file unggahan.`,
-        level_id: levels[0]?.id // Fallback to first level if not selected
+        title: aiPackageTitle || `Hasil Scan: ${new Date().toLocaleDateString()}`,
+        description: `Dibuat otomatis dari file "${title || 'dokumen'}".`,
+        level_id: allSubjects.find(s => s.id === selectedSubjectId)?.level_id || levels[0]?.id
       }).select().single();
 
       if (pkgError) throw pkgError;
@@ -268,9 +278,19 @@ const ManageQuizzes = () => {
                 />
                 <Button variant="outline" className="h-14 px-8 rounded-2xl border-indigo-200 text-indigo-600 hover:bg-indigo-50 shadow-sm" disabled={isParsing}>
                   {isParsing ? <Spinner className="w-5 h-5 mr-2" /> : <Upload className="w-5 h-5 mr-2" />}
-                  Upload Kuis (PDF/Word/JSON)
+                  Upload Kuis (PDF/Word)
                 </Button>
               </div>
+              <select 
+                value={aiQuestionCount} 
+                onChange={(e) => setAiQuestionCount(parseInt(e.target.value))}
+                className="h-14 px-4 rounded-2xl border border-indigo-200 text-indigo-600 bg-white font-bold text-sm"
+              >
+                <option value={5}>5 Soal</option>
+                <option value={10}>10 Soal</option>
+                <option value={15}>15 Soal</option>
+                <option value={20}>20 Soal</option>
+              </select>
               <Button onClick={() => setView('create')} className="h-14 px-8 rounded-2xl shadow-xl shadow-indigo-200">
                 <PlusCircle className="w-5 h-5 mr-2" /> Buat Paket Baru
               </Button>
@@ -515,28 +535,38 @@ const ManageQuizzes = () => {
                  ))}
               </div>
 
-              <div className="p-8 border-t border-slate-100 bg-white grid grid-cols-2 gap-4">
-                 <div className="space-y-2">
-                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Simpan ke Mata Pelajaran</label>
-                    <select 
-                      value={selectedSubjectId} 
-                      onChange={(e) => setSelectedSubjectId(e.target.value)}
-                      className="w-full h-12 bg-slate-50 border-none rounded-xl px-4 text-xs font-bold"
-                    >
-                      <option value="">Pilih Subjek...</option>
-                      {/* In a real app, you'd load all subjects here. For now, we use a simple list or fallback */}
-                      <option value="temp">Subjects will load here...</option>
-                    </select>
+              <div className="p-8 border-t border-slate-100 bg-white space-y-6">
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                       <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Simpan ke Mata Pelajaran</label>
+                       <select 
+                         value={selectedSubjectId} 
+                         onChange={(e) => setSelectedSubjectId(e.target.value)}
+                         className="w-full h-12 bg-slate-50 border-none rounded-xl px-4 text-xs font-bold"
+                       >
+                         <option value="">Pilih Subjek...</option>
+                         {allSubjects.map(s => (
+                           <option key={s.id} value={s.id}>{s.name} - {s.levels?.name}</option>
+                         ))}
+                       </select>
+                    </div>
+                    <div className="space-y-2">
+                       <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Judul Paket Kuis</label>
+                       <Input 
+                         value={aiPackageTitle} 
+                         onChange={(e) => setAiPackageTitle(e.target.value)}
+                         placeholder="Contoh: Tryout Paket A..."
+                         className="h-12 bg-slate-50 border-none rounded-xl"
+                       />
+                    </div>
                  </div>
-                 <div className="flex items-end">
-                    <Button 
-                      onClick={saveParsedQuestions} 
-                      disabled={!selectedSubjectId || parsedQuestions.length === 0}
-                      className="w-full h-12 rounded-xl bg-indigo-600 shadow-xl shadow-indigo-100"
-                    >
-                       Simpan ke Bank Soal & Buat Paket
-                    </Button>
-                 </div>
+                 <Button 
+                   onClick={saveParsedQuestions} 
+                   disabled={!selectedSubjectId || parsedQuestions.length === 0}
+                   className="w-full h-14 rounded-2xl bg-indigo-600 shadow-xl shadow-indigo-100 font-black"
+                 >
+                    Simpan ke Bank Soal & Buat Paket Kuis
+                 </Button>
               </div>
            </Card>
         </div>
