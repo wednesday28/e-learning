@@ -535,7 +535,7 @@ const ClassDetails = () => {
       const { error: mError } = await supabase.from('class_materials').insert({
         class_id: id,
         title: `Materi: ${quiz.quiz_packages?.title || 'Baru'}`,
-        content_type: 'text',
+        content_type: 'article', // Use 'article' to trigger Reader Modal
         file_url: 'ai_generated',
         description: data.content
       });
@@ -808,7 +808,8 @@ const ClassDetails = () => {
               const isLesson = m.content_type === 'lesson';
               const isArticle = m.content_type === 'article';
               const getFullUrl = (url: string) => {
-                if (!url || url.startsWith('http')) return url;
+                if (!url || url === 'ai_generated') return null;
+                if (url.startsWith('http')) return url;
                 const baseUrl = import.meta.env.VITE_SUPABASE_URL;
                 return `${baseUrl}/storage/v1/object/public/class-materials/${url.replace(/^\/+/, '')}`;
               };

@@ -1,14 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import mammoth from 'mammoth';
-import { createRequire } from 'module';
-
-const require = createRequire(import.meta.url);
-let pdf: any;
-try {
-  pdf = require('pdf-parse');
-} catch (e) {
-  console.error('Failed to load pdf-parse via createRequire:', e);
-}
+import pdf from 'pdf-parse/lib/pdf-parse.js';
 
 export default async function handler(
   req: VercelRequest,
