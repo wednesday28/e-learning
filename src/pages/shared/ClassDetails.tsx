@@ -170,11 +170,9 @@ const ClassDetails = () => {
   };
 
   const fetchAvailableSubjects = async () => {
-    if (!classData?.level_id) return;
     const { data } = await supabase
       .from('subjects')
       .select('*, levels(name)')
-      .eq('level_id', classData.level_id)
       .order('name', { ascending: true });
     setAvailableSubjects(data || []);
   };
@@ -1070,7 +1068,7 @@ const ClassDetails = () => {
                     <div className="space-y-4 animate-in fade-in zoom-in-95 duration-300">
                       <select value={aiMaterial.subject_id} onChange={(e) => setAiMaterial({ ...aiMaterial, subject_id: e.target.value })} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
                         <option value="">Pilih Mata Pelajaran...</option>
-                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name} - Kelas {classData?.grades?.grade_level || '-'})</option>)}
+                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} - {s.levels?.name}</option>)}
                       </select>
                       <Input value={aiMaterial.title} onChange={(e) => setAiMaterial({ ...aiMaterial, title: e.target.value })} placeholder="Topik / Judul Materi" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
                       <textarea value={aiMaterial.summary} onChange={(e) => setAiMaterial({ ...aiMaterial, summary: e.target.value })} className="w-full min-h-[100px] bg-slate-50 border-none rounded-2xl p-4 text-sm font-medium" placeholder="Ringkasan materi (contoh: Jelaskan tentang fotosintesis pada tumbuhan hijau...)" />
@@ -1092,7 +1090,7 @@ const ClassDetails = () => {
                     <div className="space-y-4">
                       <select value={newMaterial.subject_id} onChange={(e) => setNewMaterial({ ...newMaterial, subject_id: e.target.value })} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
                         <option value="">Pilih Mata Pelajaran (Opsional)...</option>
-                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name} - Kelas {classData?.grades?.grade_level || '-'})</option>)}
+                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} - {s.levels?.name}</option>)}
                       </select>
                       <Input value={newMaterial.title} onChange={(e) => setNewMaterial({ ...newMaterial, title: e.target.value })} placeholder="Judul Materi" className="h-14 rounded-2xl bg-slate-50 border-none px-4" />
                       <select value={newMaterial.content_type} onChange={(e) => setNewMaterial({ ...newMaterial, content_type: e.target.value })} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
@@ -1123,7 +1121,7 @@ const ClassDetails = () => {
                     <div className="space-y-4">
                       <select value={selectedSubjectId} onChange={(e) => { setSelectedSubjectId(e.target.value); fetchBankModules(e.target.value); }} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
                         <option value="">Pilih Mata Pelajaran...</option>
-                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name} - Kelas {classData?.grades?.grade_level || '-'})</option>)}
+                        {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} - {s.levels?.name}</option>)}
                       </select>
                       <select disabled={!selectedSubjectId} value={selectedModuleId} onChange={(e) => { setSelectedModuleId(e.target.value); fetchBankLessons(e.target.value); }} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
                         <option value="">Pilih Modul...</option>
@@ -1151,7 +1149,7 @@ const ClassDetails = () => {
                   {assignType === 'subject' ? (
                     <select value={selectedSubjectId} onChange={(e) => setSelectedSubjectId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">
                       <option value="">Pilih Subjek...</option>
-                      {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} ({s.levels?.name} - Kelas {classData?.grades?.grade_level || '-'})</option>)}
+                      {availableSubjects.map(s => <option key={s.id} value={s.id}>{s.name} - {s.levels?.name}</option>)}
                     </select>
                   ) : (
                     <select value={selectedPackageId} onChange={(e) => setSelectedPackageId(e.target.value)} className="w-full h-14 bg-slate-50 border-none rounded-2xl px-4 text-sm font-bold">

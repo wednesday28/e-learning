@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import mammoth from 'mammoth';
 // @ts-ignore
-import pdf from 'pdf-parse/lib/pdf-parse.js';
+import pdf from 'pdf-parse';
 
 export default async function handler(
   req: VercelRequest,
@@ -36,13 +36,14 @@ export default async function handler(
         const lowerName = fileName?.toLowerCase() || '';
 
         if (fileType?.includes('pdf') || lowerName.endsWith('.pdf')) {
-          if (pdf) {
+          const pdfParser = (pdf as any).default || pdf;
+          if (typeof pdfParser === 'function') {
             console.log('Parsing PDF...');
-            const data = await pdf(buffer);
+            const data = await pdfParser(buffer);
             extractedText = data.text || '';
             console.log('PDF Extracted text length:', extractedText.length);
           } else {
-             parseError = 'Library PDF tidak tersedia di server.';
+             parseError = 'Library PDF tidak terdeteksi sebagai fungsi di server.';
           }
         } else if (fileType?.includes('word') || lowerName.endsWith('.docx')) {
           console.log('Parsing Word...');

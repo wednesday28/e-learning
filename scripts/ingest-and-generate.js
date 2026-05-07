@@ -81,8 +81,12 @@ ${lessonContent.substring(0, 8000)}`;
 }
 
 async function processRecursive(item, context) {
-  const level = item.level || context.level || (item.category ? 'EXAM_PREPARATION' : null);
-  const grade = item.grade || context.grade;
+  let level = item.level || context.level;
+  if (!level && item.category) {
+    if (item.category.includes('POLICE')) level = 'POLRI';
+    else level = 'EXAM_PREPARATION';
+  }
+  const grade = item.grade || context.grade || 'Umum'; // Default grade for POLRI/EXAM
   const subject = item.subject || item.category || context.subject;
   const topic = item.topic || item.package_name || context.topic;
   const subtopic = item.subtopic || item.name || context.subtopic;
