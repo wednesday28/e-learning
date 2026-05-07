@@ -1,13 +1,18 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import mammoth from 'mammoth';
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-const pdf = require('pdf-parse');
 
 export default async function handler(
   req: VercelRequest,
   res: VercelResponse
 ) {
+  // Dynamic import for pdf-parse to avoid build-time issues
+  let pdf: any;
+  try {
+    pdf = await import('pdf-parse').then(m => m.default || m);
+  } catch (e) {
+    console.error('Failed to load pdf-parse:', e);
+  }
+
   res.setHeader('Content-Type', 'application/json');
 
   if (req.method !== 'POST') {
@@ -37,10 +42,9 @@ export default async function handler(
         const lowerName = fileName?.toLowerCase() || '';
 
         if (fileType?.includes('pdf') || lowerName.endsWith('.pdf')) {
-          const pdfParser = (pdf as any).default || pdf;
-          if (typeof pdfParser === 'function') {
+          if (typeof pdf === 'function') {
             console.log('Parsing PDF...');
-            const data = await pdfParser(buffer);
+            const data = await pdf(buffer);
             extractedText = data.text || '';
             console.log('PDF Extracted text length:', extractedText.length);
           } else {
