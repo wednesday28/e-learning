@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import mammoth from 'mammoth';
+// @ts-ignore
 import pdf from 'pdf-parse/lib/pdf-parse.js';
 
 export default async function handler(
