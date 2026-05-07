@@ -53,7 +53,7 @@ Jangan tambahkan teks pengantar apapun selain JSON di atas jika diminta membuat 
     const groqApiKey = process.env.VITE_GROQ_API_KEY || process.env.GROQ_API_KEY;
     const apiKey = cerebrasApiKey || groqApiKey;
     const apiUrl = cerebrasApiKey ? 'https://api.cerebras.ai/v1/chat/completions' : 'https://api.groq.com/openai/v1/chat/completions';
-    const modelName = cerebrasApiKey ? 'llama3.1-70b' : 'llama-3.3-70b-versatile';
+    const modelName = cerebrasApiKey ? 'llama3.1-8b' : 'llama-3.3-70b-versatile';
 
     if (!apiKey) {
       return res.status(500).json({ reply: 'API Key AI tidak ditemukan.', error: true });

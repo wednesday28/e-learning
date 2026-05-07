@@ -61,7 +61,7 @@ ${lessonContent.substring(0, 30000)}`;
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'llama3.1-70b',
+        model: 'llama3.1-8b',
         messages: [{ role: 'user', content: prompt }],
         temperature: 0.3
       })

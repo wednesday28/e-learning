@@ -99,7 +99,7 @@ Format wajib JSON array murni tanpa markdown:
 
     const apiKey = cerebrasApiKey || groqApiKey;
     const apiUrl = cerebrasApiKey ? 'https://api.cerebras.ai/v1/chat/completions' : 'https://api.groq.com/openai/v1/chat/completions';
-    const model = cerebrasApiKey ? 'llama3.1-70b' : 'llama-3.3-70b-versatile';
+    const model = cerebrasApiKey ? 'llama3.1-8b' : 'llama-3.3-70b-versatile';
 
     const aiRes = await fetch(apiUrl, {
       method: 'POST',
