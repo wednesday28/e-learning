@@ -1,6 +1,13 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import mammoth from 'mammoth';
 
+// Polyfill for pdf-parse in Node environments (Vercel)
+if (typeof global !== 'undefined') {
+  if (!(global as any).DOMMatrix) (global as any).DOMMatrix = class {};
+  if (!(global as any).DOMPoint) (global as any).DOMPoint = class {};
+  if (!(global as any).DOMRect) (global as any).DOMRect = class {};
+}
+
 export default async function handler(
   req: VercelRequest,
   res: VercelResponse
